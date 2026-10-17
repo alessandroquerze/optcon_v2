@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574:p0008",
+  "document_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574",
+  "source": {
+    "pdf_sha256": "937db0d7a574f549eb1181f22207ccfa886ae6d79206720718692bfd6015bd97",
+    "page_index": 7,
+    "physical_page_number": 8,
+    "pdf_label_raw": "<FEFF0037>",
+    "pdf_label": "7",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Unconstrained optimal control problem (discrete-time)",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      328.8807067871094,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 7,
+        "total": 18,
+        "raw": "7 |18",
+        "bbox": [
+          102.9229965209961,
+          247.8778533935547,
+          447.8712158203125,
+          253.93292236328125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/pages/0008/text.txt",
+      "sha256": "f2da5a1e036b85c8dcc520db6cacd10dc695b56588ad0015d75b2d342587e60e"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/pages/0008/text.reading-order.txt",
+      "sha256": "977e079f1e4142432aceca984eeb805d0dc693fa4e222909a1cc395c39bc956b"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/pages/0008/layout.json",
+      "sha256": "77533c17d604365e27a8b557b164cc40b4e0675957d31ea15cf061a52fe5bde0"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/pages/0008/render.png",
+      "sha256": "19df3e79c0f72b695255a4e1883479ddb65ab7437d4485eaa5bff6edb1bf058b",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "3dac94da0b57cfcb740c8e40b1cb4f4cf48e1de1e3316377eba8c5ac6cda0849"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574:p0007",
+    "next_page_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574:p0009"
+  },
+  "relations": [
+    {
+      "page_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574:p0009",
+      "kind": "progressive_candidate",
+      "confidence": 0.9,
+      "review_status": "candidate",
+      "reason": "Etichetta PDF ripetuta su pagine adiacenti con raster differenti: possibile overlay, da verificare anche a testo identico.",
+      "metrics": {
+        "text_jaccard": 0.640449,
+        "text_containment": 0.820144,
+        "left_tokens": 139,
+        "right_tokens": 153,
+        "visual_difference": 0.006412,
+        "ink_overlap": 0.862191,
+        "dhash_distance": 4
+      },
+      "delta_in_physical_order": {
+        "text": {
+          "added_lines": [
+            "From now on, we will use the following assumption.",
+            "Assumption Functions ℓt(·, ·), ℓT (·), ft(·, ·) are twice continuously differentiable, i.e., they are class C2."
+          ],
+          "removed_lines": [
+            "Remark An optimal control problem constrained only through the dynamics (without boundary and path",
+            "constraints) is named unconstrained optimal control. This notation will be clarified in the following."
+          ],
+          "semantic_interpretation": "pending_visual_analysis"
+        },
+        "visual": {
+          "changed_bbox_px": [
+            57,
+            285,
+            849,
+            326
+          ],
+          "pixel_threshold": 16,
+          "changed_pixel_fraction": 0.021826
+        }
+      }
+    }
+  ],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "pending",
+    "result": null
+  }
+}

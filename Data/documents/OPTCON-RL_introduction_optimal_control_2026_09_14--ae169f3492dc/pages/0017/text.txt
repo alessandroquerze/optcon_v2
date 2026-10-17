@@ -1,0 +1,24 @@
+Examples of constraint sets
+Inequality constraint
+z ∈R2, such that az2
+1 + bz2
+2 −c ≤0, for some given
+parameters a ∈R, b ∈R, c ∈R.
+Then, the constraint set Z is
+Z = {z ∈R2 | az2
+1 + bz2
+2 −c ≤0}.
+z1
+z2
+az2
+1 + bz2
+2 −c ≤0
+Equality constraint
+z ∈Rd, such that z⊤Qz + q⊤z −c = 0, for some given
+parameters Q ∈Rd×d, q ∈Rd, c ∈R.
+Then, the constraints set X is
+Z = {z ∈Rd | z⊤Qz + q⊤z −c = 0}.
+z⊤Qz + q⊤z −c = 0
+z1
+z2
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 16 |35

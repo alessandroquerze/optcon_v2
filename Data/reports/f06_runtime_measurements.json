@@ -1,0 +1,70 @@
+{
+  "verified_at": "2026-10-17T20:41:52.464Z",
+  "base_url": "http://127.0.0.1:4173",
+  "environment": "Chrome headless / SwiftShader; not a physical GPU benchmark",
+  "grid": [
+    49,
+    49
+  ],
+  "updates": [
+    {
+      "w2": 1,
+      "input_to_updated_plot_ms": 257
+    },
+    {
+      "w2": 2,
+      "input_to_updated_plot_ms": 173
+    },
+    {
+      "w2": 3,
+      "input_to_updated_plot_ms": 153
+    },
+    {
+      "w2": 4,
+      "input_to_updated_plot_ms": 160
+    },
+    {
+      "w2": 5,
+      "input_to_updated_plot_ms": 154
+    }
+  ],
+  "preserved": {
+    "dom_instance": true,
+    "camera": true
+  },
+  "navigation": [
+    {
+      "page": 12,
+      "scene_count": 1,
+      "gl_canvas_count": 1
+    },
+    {
+      "page": 17,
+      "scene_count": 1,
+      "gl_canvas_count": 0
+    },
+    {
+      "page": 27,
+      "scene_count": 1,
+      "gl_canvas_count": 1
+    },
+    {
+      "page": 30,
+      "scene_count": 0,
+      "gl_canvas_count": 0
+    },
+    {
+      "page": 34,
+      "scene_count": 1,
+      "gl_canvas_count": 1
+    },
+    {
+      "page": 1,
+      "scene_count": 0,
+      "gl_canvas_count": 0
+    }
+  ],
+  "usedJSHeapBefore": 45777790,
+  "usedJSHeapAfterUnmount": 69162409,
+  "interpretation": "Times include automation and software rendering. No forced GC; heap samples do not prove absence of leaks. No lesson scene or WebGL canvas remains on placeholder page 1."
+}

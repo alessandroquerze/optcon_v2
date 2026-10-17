@@ -1,0 +1,839 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0025",
+  "document_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc",
+  "source": {
+    "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+    "page_index": 24,
+    "physical_page_number": 25,
+    "pdf_label_raw": "<FEFF00320034>",
+    "pdf_label": "24",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Optimal control for trajectory generation",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      249.02972412109375,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 24,
+        "total": 35,
+        "raw": "24 |35",
+        "bbox": [
+          126.9540023803711,
+          247.92860412597656,
+          447.8712158203125,
+          258.29376220703125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0025/text.txt",
+      "sha256": "5c8b7695467cdc3e7f8fa616ee6919a1cf9357763ca01308a86bf74fc091c0e9"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0025/text.reading-order.txt",
+      "sha256": "e6ab5e372a44c2aa54fb30ea30469bc1988fd108db5d5c7650f2e3ee39cb8f11"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0025/layout.json",
+      "sha256": "689c1f314c5b3903ad255642b9de0548d7f12a940ffdb3a8e01bc34e2f59a9a6"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0025/render.png",
+      "sha256": "83ac7fc1a2e4062c5441f2cd9286d2df865d53eea3b75a3862cdc77a96c7de77",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "7660374e2ae51d01510733b8d0d95924c25f9eb8e9a9ff7d187a35b347459846"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0024",
+    "next_page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0026"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "proposed_after_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "c9732fee5bf06f418665f4743472e28641dd873915a27ff4c0d29fe403574aee",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0025",
+      "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+      "artifact_sha256": {
+        "text": "5c8b7695467cdc3e7f8fa616ee6919a1cf9357763ca01308a86bf74fc091c0e9",
+        "layout": "689c1f314c5b3903ad255642b9de0548d7f12a940ffdb3a8e01bc34e2f59a9a6",
+        "render": "83ac7fc1a2e4062c5441f2cd9286d2df865d53eea3b75a3862cdc77a96c7de77"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "Codex (identificatore esatto del modello non esposto nella sessione)",
+        "run_id": "page-analysis-ce370a19242e4173828aef04d60c36ee"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0025",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0024",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0026"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0025",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0024",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0026"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0025",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0024",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0026"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Optimal control for trajectory generation",
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Non sono presenti path constraints o endpoint terminali aggiuntivi nella formulazione di questa pagina.",
+          "Il legame tramite h_t non prova che una curva desiderata di stato-ingresso esista per ogni y^{des}, né che sia unica.",
+          "Non dichiarare che tracking perfetto o costo zero siano sempre realizzabili.",
+          "Non è assegnato un algoritmo di soluzione."
+        ],
+        "prerequisites": [
+          {
+            "concept": "OCP e tracking quadratico",
+            "why": "Ingredienti già introdotti e qui specializzati.",
+            "origin": "source_context",
+            "page_numbers": [
+              22,
+              23
+            ]
+          },
+          {
+            "concept": "Performance output",
+            "why": "Per leggere la relazione con y^{des}.",
+            "origin": "source_context",
+            "page_numbers": [
+              24
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\begin{aligned}\\min_{\\mathbf{x}\\in\\mathbb{R}^{nT},\\mathbf{u}\\in\\mathbb{R}^{mT}}\\;&\\sum_{t=0}^{T-1}\\left[\\frac12\\|x_t-x_t^{\\mathrm{des}}\\|_Q^2+\\frac12\\|u_t-u_t^{\\mathrm{des}}\\|_R^2\\right]+\\frac12\\|x_T-x_T^{\\mathrm{des}}\\|_{Q_T}^2\\\\\\text{subj.to }&x_{t+1}=f_t(x_t,u_t),\\quad t=0,\\ldots,T-1\\\\&x_0=x^0\\end{aligned}",
+            "anchor": "We can pose a trajectory generation problem",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          },
+          {
+            "latex": "y_t^{\\mathrm{des}}=h_t(x_t^{\\mathrm{des}},u_t^{\\mathrm{des}}),\\quad t\\in\\mathbb{N}_0",
+            "anchor": "is related to the performance output",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "example-1",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "Enrichment a un passo: x⁰=0, x₁=u₀, x₀^{des}=0,x₁^{des}=1,u₀^{des}=0, Q=0,R=1,Q_T=1.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Qui il costo è esplicito: cambiare i pesi può ricalcolare davvero l'ottimo della sola istanza scalare, distinguendolo dalla rivalutazione fissa della pagina 22.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "id": "visualization",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Termine ingresso, termine terminale e somma nel caso scalare; mostrare la traiettoria ammissibile corrispondente al minimo.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Mostrare un compromesso ottimo in un'istanza calcolabile.",
+            "setup": "Enrichment a un passo: x⁰=0, x₁=u₀, x₀^{des}=0,x₁^{des}=1,u₀^{des}=0, Q=0,R=1,Q_T=1.",
+            "parameters": [
+              {
+                "symbol": "T",
+                "value": "1"
+              },
+              {
+                "symbol": "R,Q_T",
+                "value": "1,1"
+              },
+              {
+                "symbol": "target x_1",
+                "value": "1"
+              }
+            ],
+            "derivation": [
+              "Il costo è ½u₀²+½(u₀−1)².",
+              "Derivando nell'esempio: 2u₀−1=0.",
+              "u₀*=x₁*=0.5, costo=0.25.",
+              "La curva desiderata (1,0) non è dinamicamente coerente, mentre la soluzione sì."
+            ],
+            "expected_outcome": "La soluzione bilancia deviazione dal target e deviazione dell'ingresso, senza copiare un riferimento irrealizzabile.",
+            "limitations": [
+              "Istanza, derivata e soluzione sono enrichment; nessuna soluzione generale viene attribuita alla slide."
+            ],
+            "enrichment_id": "example-1",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "OneStepTrackingTradeoffPlot",
+          "description": "Termine ingresso, termine terminale e somma nel caso scalare; mostrare la traiettoria ammissibile corrispondente al minimo.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Qui il costo è esplicito: cambiare i pesi può ricalcolare davvero l'ottimo della sola istanza scalare, distinguendolo dalla rivalutazione fissa della pagina 22.",
+          "component": "ClosedFormOneStepTrackingExample",
+          "parameters": [
+            {
+              "name": "Peso ingresso",
+              "symbol": "R",
+              "origin": "source",
+              "range": "[0.1,5]",
+              "default": "1",
+              "effect_on_change": "Ricalcolare u₀*=Q_T a/(R+Q_T), x₁* e costo; aumentando R rispetto a Q_T si privilegia l'ingresso vicino a zero.",
+              "edge_cases": [
+                "R resta positivo"
+              ]
+            },
+            {
+              "name": "Peso terminale",
+              "symbol": "Q_T",
+              "origin": "source",
+              "range": "[0,5]",
+              "default": "1",
+              "effect_on_change": "Ricalcolare soluzione e costo; con Q_T=0 si ottiene u₀*=0.",
+              "edge_cases": [
+                "Q_T=0"
+              ]
+            },
+            {
+              "name": "Target aggiunto",
+              "symbol": "a",
+              "origin": "enrichment",
+              "range": "[−2,2]",
+              "default": "1",
+              "effect_on_change": "Cambiare x₁^{des}=a e ricalcolare soluzione, errore e costo; non modificare x⁰.",
+              "edge_cases": [
+                "a=0: soluzione nulla"
+              ]
+            }
+          ],
+          "outputs": [
+            "u₀*, x₁*",
+            "Errore terminale",
+            "Costo e suoi contributi"
+          ],
+          "invariants": [
+            "Dinamica x₁=u₀ e T=1",
+            "Q=0",
+            "Formula chiusa valida solo per l'esempio",
+            "Range/default sono enrichment"
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "R+Q_T=0 se si estendesse il dominio",
+            "expected_behavior": "La formula chiusa divide per zero; il controllo proposto lo evita imponendo R>0.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "case": "Riferimento dinamicamente non fattibile",
+            "expected_behavior": "Non imporre simultaneamente x₁=1 e u₀=0 al modello x₁=u₀.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          }
+        ],
+        "expansion_rationale": "Il problema è una specializzazione di ingredienti già noti; un solo esempio a un passo esplica il compromesso.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Una traiettoria ottima si avvicina a un riferimento desiderato rispettando la dinamica.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ],
+            "enrichment_ids": [
+              "example-1",
+              "interaction",
+              "visualization"
+            ]
+          }
+        ]
+      },
+      "observations": [
+        {
+          "id": "s01",
+          "category": "equation",
+          "description": "Si minimizza sulle variabili impilate 𝐱∈R^{nT}, 𝐮∈R^{mT} un costo quadratico di tracking di stati e ingressi più un termine terminale.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0025",
+            "modality": "both",
+            "text_quote": "We can pose a trajectory generation problem as",
+            "bbox": [
+              88,
+              49,
+              424,
+              83
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s02",
+          "category": "equation",
+          "description": "I vincoli espliciti della pagina sono x_{t+1}=f_t(x_t,u_t), t=0,…,T−1 e x₀=x⁰ con x⁰ assegnato.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0025",
+            "modality": "both",
+            "text_quote": "with x0 a given initial condition.",
+            "bbox": [
+              27,
+              82,
+              329,
+              134
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s03",
+          "category": "assumption",
+          "description": "La curva desiderata (x_t^{des},u_t^{des}) rappresenta il comportamento desiderato e in generale NON soddisfa la dinamica.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0025",
+            "modality": "both",
+            "text_quote": "does NOT satisfy the dynamics.",
+            "bbox": [
+              27,
+              143,
+              444,
+              169
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s04",
+          "category": "equation",
+          "description": "L'uscita desiderata è collegata alla curva stato-ingresso da y_t^{des}=h_t(x_t^{des},u_t^{des}).",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0025",
+            "modality": "both",
+            "text_quote": "is related to the performance output",
+            "bbox": [
+              27,
+              181,
+              445,
+              197
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-05",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Optimal control for trajectory generation",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0025",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              10.35200023651123,
+              6.720991134643555,
+              249.02972412109375,
+              21.06719207763672
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-06",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: We can pose a trajectory generation problem as",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0025",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              28.34600067138672,
+              34.63948059082031,
+              212.64134216308594,
+              43.60588073730469
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-07",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 24 |35",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0025",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              126.9540023803711,
+              247.92860412597656,
+              447.8712158203125,
+              255.1179962158203
+            ]
+          },
+          "confidence": 0.98
+        }
+      ],
+      "contextual_role": "Formula un problema specifico di generazione a partire dal task qualitativo della pagina 24.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0024",
+          "role": "previous",
+          "note": "La pagina 24 chiede y≈y^{des}; qui si assegna un costo sulle curve stato-ingresso che producono il desiderato d'uscita."
+        },
+        {
+          "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0026",
+          "role": "next",
+          "note": "La pagina 26 introduce una dinamica concreta di drone, ancora continua e da discretizzare."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\mathbf{x},\\mathbf{u}",
+          "meaning": "Variabili impilate, in grassetto nella fonte",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        {
+          "symbol": "x^0",
+          "meaning": "Condizione iniziale assegnata",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        {
+          "symbol": "Q,R,Q_T",
+          "meaning": "Pesi del tracking intermedio, ingresso e terminale",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        {
+          "symbol": "x_t^{\\mathrm{des}},u_t^{\\mathrm{des}},y_t^{\\mathrm{des}}",
+          "meaning": "Riferimenti desiderati, distinti dalla traiettoria ammissibile",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ],
+        "rationale": "Pagina con contenuto autonomo nella sequenza; nessun candidato automatico da confermare."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              10.35200023651123,
+              6.720991134643555,
+              249.02972412109375,
+              21.06719207763672
+            ],
+            "description": "Regione testuale sorgente: Optimal control for trajectory generation",
+            "observation_ids": [
+              "transcription-05"
+            ]
+          },
+          {
+            "bbox": [
+              28.34600067138672,
+              34.63948059082031,
+              212.64134216308594,
+              43.60588073730469
+            ],
+            "description": "Regione testuale sorgente: We can pose a trajectory generation problem as",
+            "observation_ids": [
+              "transcription-06"
+            ]
+          },
+          {
+            "bbox": [
+              88.50699615478516,
+              61.671478271484375,
+              138.49447631835938,
+              80.95976257324219
+            ],
+            "description": "Regione testuale sorgente: min\nx∈RnT ,u∈RmT",
+            "observation_ids": [
+              "s01"
+            ]
+          },
+          {
+            "bbox": [
+              145.49099731445312,
+              52.73860168457031,
+              160.23831176757812,
+              68.54080963134766
+            ],
+            "description": "Regione testuale sorgente: T −1\nX",
+            "observation_ids": [
+              "s01"
+            ]
+          },
+          {
+            "bbox": [
+              146.8179931640625,
+              74.55079650878906,
+              158.9103546142578,
+              80.52839660644531
+            ],
+            "description": "Regione testuale sorgente: t=0",
+            "observation_ids": [
+              "s01"
+            ]
+          },
+          {
+            "bbox": [
+              162.9709930419922,
+              55.872467041015625,
+              216.75930786132812,
+              76.7188720703125
+            ],
+            "description": "Regione testuale sorgente: 1\n2||xt −xdes\nt ||2",
+            "observation_ids": [
+              "s01"
+            ]
+          },
+          {
+            "bbox": [
+              213.10699462890625,
+              55.87248229980469,
+              236.44972229003906,
+              72.21487426757812
+            ],
+            "description": "Regione testuale sorgente: Q + 1",
+            "observation_ids": [
+              "s01"
+            ]
+          },
+          {
+            "bbox": [
+              231.84100341796875,
+              59.699317932128906,
+              285.7882995605469,
+              76.7188720703125
+            ],
+            "description": "Regione testuale sorgente: 2||ut −udes\nt ||2",
+            "observation_ids": [
+              "s01"
+            ]
+          },
+          {
+            "bbox": [
+              282.135986328125,
+              55.87248229980469,
+              305.2357177734375,
+              72.21487426757812
+            ],
+            "description": "Regione testuale sorgente: R + 1",
+            "observation_ids": [
+              "s01"
+            ]
+          },
+          {
+            "bbox": [
+              300.62701416015625,
+              59.699317932128906,
+              356.9043273925781,
+              76.7188720703125
+            ],
+            "description": "Regione testuale sorgente: 2||xT −xdes\nT ||2",
+            "observation_ids": [
+              "s01"
+            ]
+          },
+          {
+            "bbox": [
+              353.25201416015625,
+              65.77279663085938,
+              363.1734619140625,
+              72.68925476074219
+            ],
+            "description": "Regione testuale sorgente: QT",
+            "observation_ids": [
+              "s01"
+            ]
+          },
+          {
+            "bbox": [
+              113.85601806640625,
+              84.56327056884766,
+              286.90576171875,
+              94.64187622070312
+            ],
+            "description": "Regione testuale sorgente: subj.to xt+1 = ft(xt, ut),\nt = 0, . . . , T −1",
+            "observation_ids": [
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              143.9550323486328,
+              98.32879638671875,
+              177.55543518066406,
+              110.07388305664062
+            ],
+            "description": "Regione testuale sorgente: x0 = x0,",
+            "observation_ids": [
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              28.346038818359375,
+              116.21748352050781,
+              153.18753051757812,
+              128.99288940429688
+            ],
+            "description": "Regione testuale sorgente: with x0 a given initial condition.",
+            "observation_ids": [
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              28.34603500366211,
+              145.4523468017578,
+              202.5390625,
+              155.8918914794922
+            ],
+            "description": "Regione testuale sorgente: The state-input curve (function of time) (xdes",
+            "observation_ids": [
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              194.0030517578125,
+              145.4523468017578,
+              220.9730682373047,
+              157.4698944091797
+            ],
+            "description": "Regione testuale sorgente: t , udes",
+            "observation_ids": [
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              28.3460693359375,
+              144.96661376953125,
+              425.21124267578125,
+              166.85089111328125
+            ],
+            "description": "Regione testuale sorgente: t ), t ∈N0, represents a desired behavior of the system\nand (in general) does NOT satisfy the dynamics.",
+            "observation_ids": [
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              28.3460693359375,
+              183.3103485107422,
+              87.33207702636719,
+              193.74989318847656
+            ],
+            "description": "Regione testuale sorgente: The curve (xdes",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              78.79606628417969,
+              183.3103485107422,
+              105.76508331298828,
+              195.32789611816406
+            ],
+            "description": "Regione testuale sorgente: t , udes",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              97.22907257080078,
+              182.82461547851562,
+              319.9261169433594,
+              195.32789611816406
+            ],
+            "description": "Regione testuale sorgente: t ), t ∈N0 is related to the performance output, i.e., ydes",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              311.0680847167969,
+              183.3103485107422,
+              358.714111328125,
+              194.86341857910156
+            ],
+            "description": "Regione testuale sorgente: t\n= ht(xdes",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              350.1780700683594,
+              183.3103485107422,
+              377.1481018066406,
+              195.32789611816406
+            ],
+            "description": "Regione testuale sorgente: t , udes",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              368.612060546875,
+              184.7834930419922,
+              383.7944641113281,
+              195.32789611816406
+            ],
+            "description": "Regione testuale sorgente: t ).",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              126.9540023803711,
+              247.92860412597656,
+              447.8712158203125,
+              255.1179962158203
+            ],
+            "description": "Regione testuale sorgente: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 24 |35",
+            "observation_ids": [
+              "transcription-07"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Il problema è una specializzazione di ingredienti già noti; un solo esempio a un passo esplica il compromesso.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
+}

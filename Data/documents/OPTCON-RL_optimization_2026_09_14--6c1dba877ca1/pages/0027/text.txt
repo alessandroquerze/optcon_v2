@@ -1,0 +1,12 @@
+Optimization algorithms (unconstrained): iterative descent methods
+We consider optimization algorithms relying on the iterative descent idea.
+Notation We denote zk ∈Rd an estimate of a local minimum at iteration k ∈N.
+The algorithm starts at a given initial guess z0 and iteratively generates vectors z1, z2, . . . such that ℓis
+decreased at each iteration, i.e.,
+ℓ(zk+1) < ℓ(zk)
+k = 1, 2, . . .
+ℓ(z)
+z⋆
+zk
+zk+1
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 26 |73

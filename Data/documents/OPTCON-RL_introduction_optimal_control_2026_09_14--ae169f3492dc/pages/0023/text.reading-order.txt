@@ -1,0 +1,21 @@
+Discrete-time optimal control problem
+
+
+   A discrete-time optimal control problem can be written as
+
+                                       T −1
+                          min X ℓt(xt, ut) + ℓT (xT )
+                                       x0,x1,...,xT
+                                       u0,...,uT −1  t=0
+
+                                     subj.to xt+1 = ft(xt, ut),   t = 0, . . . , T −1
+                                          r(x0, xT ) = 0,
+                                             gt(xt, ut) ≤0,   t = 0, . . . , T −1
+
+    where ℓt : Rn × Rm →R is the so-called stage cost while ℓT  : Rn →R is the terminal cost.
+
+
+
+
+
+                                            Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 22 |35

@@ -1,0 +1,1016 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0027",
+  "document_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc",
+  "source": {
+    "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+    "page_index": 26,
+    "physical_page_number": 27,
+    "pdf_label_raw": "<FEFF00320036>",
+    "pdf_label": "26",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Example: trajectory generation for an autonomous drone (I)",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      362.29296875,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 26,
+        "total": 35,
+        "raw": "26 |35",
+        "bbox": [
+          126.95406341552734,
+          247.92869567871094,
+          447.87127685546875,
+          258.2938537597656
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0027/text.txt",
+      "sha256": "4b0b00d2650e3e6e8b952ac5efe1df890171ffd03ee0f107728225174247655a"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0027/text.reading-order.txt",
+      "sha256": "3224ac6b5cc73c80b37fd3e027a8c18a39340029ac31e2e7095533e8e432ca8c"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0027/layout.json",
+      "sha256": "5c021f690e95cbef27992b4298647a8952f33517e63ef3713977f49b8d9da75d"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0027/render.png",
+      "sha256": "b39e4cea1f3f300d0a77425b984d3ec708c51abd45bef977dbe94c41b057680b",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "a6be80d6b0c4d15ac0b1253ca67b37713a695813e0b37c044b39f0111b226a6a"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0026",
+    "next_page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0028"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "c6982872d1a6c04ecb56612ddced8e4a92d5c6493bdfe1f25f4ad0cc611d221a",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0027",
+      "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+      "artifact_sha256": {
+        "text": "4b0b00d2650e3e6e8b952ac5efe1df890171ffd03ee0f107728225174247655a",
+        "layout": "5c021f690e95cbef27992b4298647a8952f33517e63ef3713977f49b8d9da75d",
+        "render": "b39e4cea1f3f300d0a77425b984d3ec708c51abd45bef977dbe94c41b057680b"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "Codex (identificatore esatto del modello non esposto nella sessione)",
+        "run_id": "page-analysis-5778cca7472a4e6993ee17430b2e0e50"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0027",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0026",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0028"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0027",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0026",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0028"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0027",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0026",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0028"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Drone (I) — discretizzazione e ordine delle variabili",
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "La fonte non assegna un valore a δ né una soglia quantitativa per 'sufficientemente piccolo'.",
+          "Forward Euler è un esempio, non l'unica discretizzazione consentita.",
+          "Non scambiare p_y=x₃ con x₂: l'ordine alterna posizione e velocità per asse.",
+          "Non includere automaticamente un termine ½δ²a nell'aggiornamento di posizione di forward Euler."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Modello planare continuo",
+            "why": "Per conoscere le accelerazioni da inserire in f_CT.",
+            "origin": "source_context",
+            "page_numbers": [
+              26
+            ]
+          },
+          {
+            "concept": "Notazione discreta e vettori",
+            "why": "Per interpretare la mappa f_t e le sei componenti.",
+            "origin": "source_context",
+            "page_numbers": [
+              9,
+              10
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "x_{t+1}=\\underbrace{x_t+\\delta f_{\\mathrm{CT}}(x_t,u_t,t)}_{f_t(x_t,u_t)}",
+            "anchor": "xt+1 = xt + δfCT",
+            "notes": "L'estensione della parentesi graffa è verificata a 288 DPI: comprende anche x_t."
+          },
+          {
+            "latex": "\\delta>0",
+            "anchor": "δ > 0",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          },
+          {
+            "latex": "x_t=\\begin{bmatrix}p_{x,t}\\\\v_{x,t}\\\\p_{y,t}\\\\v_{y,t}\\\\\\theta_t\\\\\\omega_t\\end{bmatrix}=\\begin{bmatrix}x_{1,t}\\\\x_{2,t}\\\\x_{3,t}\\\\x_{4,t}\\\\x_{5,t}\\\\x_{6,t}\\end{bmatrix},\\qquad u_t=\\begin{bmatrix}u_{1,t}\\\\u_{2,t}\\end{bmatrix}",
+            "anchor": "The state and input vector",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explain-1",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Espansione derivata, etichettata enrichment: f_CT=col(v_x,−(u₁+u₂)sinθ/M,v_y,(u₁+u₂)cosθ/M−g,ω,L(u₁−u₂)/(2J)). La pagina assegna lo stato e la forma Euler, ma non stampa questo vettore espanso.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "id": "example-1",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "Enrichment con M=1,g=9.81,u₁=u₂=6, θ=ω=0 e p_y=v_y=0 iniziali; accelerazione verticale costante 2.19. Scegliere δ=0.1 s.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Un passo selezionabile rende visibile l'errore numerico e il significato di 'sufficientemente piccolo'.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "id": "visualization",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Dizionario delle sei componenti e confronto fra campioni Euler e soluzione continua del moto verticale esemplificativo.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Controllare l'aggiornamento Euler di posizione e velocità.",
+            "setup": "Enrichment con M=1,g=9.81,u₁=u₂=6, θ=ω=0 e p_y=v_y=0 iniziali; accelerazione verticale costante 2.19. Scegliere δ=0.1 s.",
+            "parameters": [
+              {
+                "symbol": "δ",
+                "value": "0.1 s"
+              },
+              {
+                "symbol": "accelerazione verticale",
+                "value": "2.19 m/s²"
+              }
+            ],
+            "derivation": [
+              "Primo passo Euler: p_{y,1}=0+0.1·0=0, v_{y,1}=0.219.",
+              "Secondo passo: p_{y,2}=0.0219, v_{y,2}=0.438.",
+              "Dopo 1 s e 10 passi: p_y=0.9855; soluzione continua=½·2.19·1²=1.095."
+            ],
+            "expected_outcome": "Ridurre δ riduce qui l'errore di posizione; il primo passo usa la velocità precedente.",
+            "limitations": [
+              "Numeri e confronto con la soluzione continua sono enrichment.",
+              "Non è un risultato di ottimalità o una garanzia generale di stabilità di Euler."
+            ],
+            "enrichment_id": "example-1",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "DroneStateOrderingAndEulerStepPlot",
+          "description": "Dizionario delle sei componenti e confronto fra campioni Euler e soluzione continua del moto verticale esemplificativo.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Un passo selezionabile rende visibile l'errore numerico e il significato di 'sufficientemente piccolo'.",
+          "component": "EulerDiscretizationStepExplorer",
+          "parameters": [
+            {
+              "name": "Passo",
+              "symbol": "δ",
+              "origin": "source",
+              "range": "{0.01,0.02,0.05,0.1,0.2} s",
+              "default": "0.1 s",
+              "effect_on_change": "Ricalcolare il numero di passi per la durata fisica fissa di 1 s, i campioni Euler e l'errore finale rispetto alla soluzione continua.",
+              "edge_cases": [
+                "δ>0",
+                "Ogni scelta divide esattamente 1 s"
+              ]
+            }
+          ],
+          "outputs": [
+            "Campioni di p_y e v_y",
+            "Curva continua di riferimento",
+            "Errore finale"
+          ],
+          "invariants": [
+            "Durata fisica di 1 s e accelerazione 2.19",
+            "Ingressi uguali, quindi θ=ω=0",
+            "Ordine dello stato della fonte",
+            "Range/default sono enrichment"
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "δ=0 o negativo",
+            "expected_behavior": "Escludere come passo non consentito.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "case": "Passo grande",
+            "expected_behavior": "Mostrare possibile inaccuratezza senza promettere stabilità o fedeltà della traiettoria.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "case": "Cambiare numero di passi confondendolo con durata",
+            "expected_behavior": "Mantenere fissa la durata fisica nel confronto di accuratezza.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          }
+        ],
+        "expansion_rationale": "Forma Euler e dizionario dello stato sono inseparabili per leggere il modello; un solo esempio verticale mantiene il carico gestibile.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Da f_CT alla mappa discreta completa, con ordine esatto delle sei componenti.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ],
+            "enrichment_ids": [
+              "explain-1",
+              "example-1",
+              "interaction",
+              "visualization"
+            ]
+          }
+        ]
+      },
+      "observations": [
+        {
+          "id": "s01",
+          "category": "equation",
+          "description": "È mostrata la discretizzazione, per esempio forward Euler: x_{t+1}=x_t+δf_CT(x_t,u_t,t); l'intero termine x_t+δf_CT è indicato con f_t(x_t,u_t).",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0027",
+            "modality": "both",
+            "text_quote": "xt+1 = xt + δfCT(xt, ut, t)",
+            "bbox": [
+              138.14498901367188,
+              54.365478515625,
+              278.59454345703125,
+              170.56993103027344
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s02",
+          "category": "assumption",
+          "description": "δ>0 è un passo di discretizzazione sufficientemente piccolo; f_CT indica la dinamica continua.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0027",
+            "modality": "both",
+            "text_quote": "δ > 0 sufficiently small discretization step",
+            "bbox": [
+              28.34600830078125,
+              87.7632827758789,
+              376.1984558105469,
+              97.25592803955078
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s03",
+          "category": "definition",
+          "description": "L'ordine esatto dello stato è x_t=col(p_{x,t},v_{x,t},p_{y,t},v_{y,t},θ_t,ω_t)=col(x_{1,t},…,x_{6,t}).",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0027",
+            "modality": "both",
+            "text_quote": "The state and input vector are:",
+            "bbox": [
+              28.346023559570312,
+              114.77848815917969,
+              148.58547973632812,
+              123.74488830566406
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s04",
+          "category": "definition",
+          "description": "L'ingresso è u_t=col(u_{1,t},u_{2,t}).",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0027",
+            "modality": "both",
+            "text_quote": "ut =",
+            "bbox": [
+              138.14498901367188,
+              161.60353088378906,
+              317.960205078125,
+              171.56594848632812
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-05",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Example: trajectory generation for an autonomous drone (I)",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0027",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              10.35200023651123,
+              6.720991134643555,
+              362.29296875,
+              21.06719207763672
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-06",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Consider the discrete-time version of the drone dynamics (discretized via, e.g., forward Euler), i.e.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0027",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              28.34600067138672,
+              35.43647766113281,
+              405.0425109863281,
+              44.40287780761719
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-07",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: xt =",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0027",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              88.02300262451172,
+              161.60354614257812,
+              106.31915283203125,
+              171.56594848632812
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-08",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: ",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0027",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              108.88199615478516,
+              133.8814697265625,
+              115.02397918701172,
+              142.84786987304688
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-09",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: ",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0027",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              108.88199615478516,
+              149.64247131347656,
+              115.02397918701172,
+              191.26686096191406
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-10",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: px,t\nvx,t\npy,t\nvy,t",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0027",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              115.02599334716797,
+              134.15553283691406,
+              128.94715881347656,
+              176.53045654296875
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-11",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: θt\nωt",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0027",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              117.69297790527344,
+              177.9915313720703,
+              126.27729797363281,
+              198.44845581054688
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-12",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: ",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0027",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              129.44198608398438,
+              133.88145446777344,
+              135.58396911621094,
+              142.8478546142578
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-13",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: ",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0027",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              129.44198608398438,
+              149.64247131347656,
+              135.58396911621094,
+              191.26686096191406
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-14",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: \u0014u1,t",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0027",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              320.5240478515625,
+              155.40147399902344,
+              339.46588134765625,
+              165.57147216796875
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-15",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: u2,t",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0027",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              325.3870849609375,
+              167.0325469970703,
+              339.4659118652344,
+              176.5304718017578
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-16",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: \u0015",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0027",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              339.96112060546875,
+              155.40147399902344,
+              344.8209228515625,
+              164.3678741455078
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-17",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 26 |35",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0027",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              126.95406341552734,
+              247.92869567871094,
+              447.87127685546875,
+              255.1179962158203
+            ]
+          },
+          "confidence": 0.98
+        }
+      ],
+      "contextual_role": "Produce il ponte continuo→discreto e il dizionario delle componenti utilizzato nel costo e nei vincoli successivi.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0026",
+          "role": "previous",
+          "note": "La pagina 26 dà accelerazioni del drone: per Euler vanno interpretate in uno stato di primo ordine, chiarimento di enrichment."
+        },
+        {
+          "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0028",
+          "role": "next",
+          "note": "La pagina 28 descrive gli obiettivi di tracking per posizione, velocità, angolo, velocità angolare e ingressi."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\delta",
+          "meaning": "Passo positivo di discretizzazione, non la variazione Δ della linearizzazione",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        {
+          "symbol": "f_{\\mathrm{CT}}",
+          "meaning": "Dinamica continua in forma di primo ordine",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        {
+          "symbol": "f_t",
+          "meaning": "Mappa discreta completa x_t+δf_CT",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        {
+          "symbol": "x_{1,t},x_{2,t},x_{3,t},x_{4,t},x_{5,t},x_{6,t}",
+          "meaning": "Rispettivamente p_x,v_x,p_y,v_y,θ,ω",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        {
+          "symbol": "\\omega_t",
+          "meaning": "Componente di velocità angolare",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ],
+        "rationale": "Pagina con contenuto autonomo nella sequenza; nessun candidato automatico da confermare."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              10.35200023651123,
+              6.720991134643555,
+              362.29296875,
+              21.06719207763672
+            ],
+            "description": "Regione testuale sorgente: Example: trajectory generation for an autonomous drone (I)",
+            "observation_ids": [
+              "transcription-05"
+            ]
+          },
+          {
+            "bbox": [
+              28.34600067138672,
+              35.43647766113281,
+              405.0425109863281,
+              44.40287780761719
+            ],
+            "description": "Regione testuale sorgente: Consider the discrete-time version of the drone dynamics (discretized via, e.g., forward Euler), i.e.",
+            "observation_ids": [
+              "transcription-06"
+            ]
+          },
+          {
+            "bbox": [
+              174.95199584960938,
+              54.365478515625,
+              278.59454345703125,
+              78.79826354980469
+            ],
+            "description": "Regione testuale sorgente: xt+1 = xt + δfCT(xt, ut, t)\n|\n{z\n}\nft(xt,ut)",
+            "observation_ids": [
+              "s01"
+            ]
+          },
+          {
+            "bbox": [
+              28.34600830078125,
+              87.7632827758789,
+              376.1984558105469,
+              97.25592803955078
+            ],
+            "description": "Regione testuale sorgente: where δ > 0 sufficiently small discretization step and fCT(·, ·, ·) continuous-time dynamics.",
+            "observation_ids": [
+              "s01",
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              28.346023559570312,
+              114.77848815917969,
+              148.58547973632812,
+              123.74488830566406
+            ],
+            "description": "Regione testuale sorgente: The state and input vector are:",
+            "observation_ids": [
+              "s01",
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              88.02300262451172,
+              161.60354614257812,
+              106.31915283203125,
+              171.56594848632812
+            ],
+            "description": "Regione testuale sorgente: xt =",
+            "observation_ids": [
+              "transcription-07"
+            ]
+          },
+          {
+            "bbox": [
+              108.88199615478516,
+              133.8814697265625,
+              115.02397918701172,
+              142.84786987304688
+            ],
+            "description": "Regione testuale sorgente: ",
+            "observation_ids": [
+              "transcription-08"
+            ]
+          },
+          {
+            "bbox": [
+              108.88199615478516,
+              149.64247131347656,
+              115.02397918701172,
+              191.26686096191406
+            ],
+            "description": "Regione testuale sorgente: ",
+            "observation_ids": [
+              "transcription-09"
+            ]
+          },
+          {
+            "bbox": [
+              115.02599334716797,
+              134.15553283691406,
+              128.94715881347656,
+              176.53045654296875
+            ],
+            "description": "Regione testuale sorgente: px,t\nvx,t\npy,t\nvy,t",
+            "observation_ids": [
+              "transcription-10"
+            ]
+          },
+          {
+            "bbox": [
+              117.69297790527344,
+              177.9915313720703,
+              126.27729797363281,
+              198.44845581054688
+            ],
+            "description": "Regione testuale sorgente: θt\nωt",
+            "observation_ids": [
+              "transcription-11"
+            ]
+          },
+          {
+            "bbox": [
+              129.44198608398438,
+              133.88145446777344,
+              135.58396911621094,
+              142.8478546142578
+            ],
+            "description": "Regione testuale sorgente: ",
+            "observation_ids": [
+              "transcription-12"
+            ]
+          },
+          {
+            "bbox": [
+              129.44198608398438,
+              149.64247131347656,
+              135.58396911621094,
+              191.26686096191406
+            ],
+            "description": "Regione testuale sorgente: ",
+            "observation_ids": [
+              "transcription-13"
+            ]
+          },
+          {
+            "bbox": [
+              138.14498901367188,
+              161.60353088378906,
+              145.30914306640625,
+              170.56993103027344
+            ],
+            "description": "Regione testuale sorgente: =",
+            "observation_ids": [
+              "s01",
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              147.8719940185547,
+              133.88145446777344,
+              154.01397705078125,
+              142.8478546142578
+            ],
+            "description": "Regione testuale sorgente: ",
+            "observation_ids": [
+              "s01"
+            ]
+          },
+          {
+            "bbox": [
+              147.8719940185547,
+              149.6424560546875,
+              154.01397705078125,
+              191.266845703125
+            ],
+            "description": "Regione testuale sorgente: ",
+            "observation_ids": [
+              "s01",
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              154.0159912109375,
+              134.155517578125,
+              168.01480102539062,
+              198.4484405517578
+            ],
+            "description": "Regione testuale sorgente: x1,t\nx2,t\nx3,t\nx4,t\nx5,t\nx6,t",
+            "observation_ids": [
+              "s01",
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              168.50999450683594,
+              133.88145446777344,
+              174.6519775390625,
+              142.8478546142578
+            ],
+            "description": "Regione testuale sorgente: ",
+            "observation_ids": [
+              "s01"
+            ]
+          },
+          {
+            "bbox": [
+              168.50999450683594,
+              149.64244079589844,
+              174.6519775390625,
+              191.26683044433594
+            ],
+            "description": "Regione testuale sorgente: ",
+            "observation_ids": [
+              "s01",
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              299.5850524902344,
+              161.60354614257812,
+              317.960205078125,
+              171.56594848632812
+            ],
+            "description": "Regione testuale sorgente: ut =",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              320.5240478515625,
+              155.40147399902344,
+              339.46588134765625,
+              165.57147216796875
+            ],
+            "description": "Regione testuale sorgente: \u0014u1,t",
+            "observation_ids": [
+              "transcription-14"
+            ]
+          },
+          {
+            "bbox": [
+              325.3870849609375,
+              167.0325469970703,
+              339.4659118652344,
+              176.5304718017578
+            ],
+            "description": "Regione testuale sorgente: u2,t",
+            "observation_ids": [
+              "transcription-15"
+            ]
+          },
+          {
+            "bbox": [
+              339.96112060546875,
+              155.40147399902344,
+              344.8209228515625,
+              164.3678741455078
+            ],
+            "description": "Regione testuale sorgente: \u0015",
+            "observation_ids": [
+              "transcription-16"
+            ]
+          },
+          {
+            "bbox": [
+              126.95406341552734,
+              247.92869567871094,
+              447.87127685546875,
+              255.1179962158203
+            ],
+            "description": "Regione testuale sorgente: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 26 |35",
+            "observation_ids": [
+              "transcription-17"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Forma Euler e dizionario dello stato sono inseparabili per leggere il modello; un solo esempio verticale mantiene il carico gestibile.",
+        "subpages": []
+      }
+    }
+  }
+}

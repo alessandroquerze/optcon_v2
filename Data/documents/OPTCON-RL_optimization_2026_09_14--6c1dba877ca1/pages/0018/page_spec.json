@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0018",
+  "document_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1",
+  "source": {
+    "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+    "page_index": 17,
+    "physical_page_number": 18,
+    "pdf_label_raw": "<FEFF00310037>",
+    "pdf_label": "17",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Strong convexity and Lipschitz continuity of the gradient",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      343.6141662597656,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 17,
+        "total": 73,
+        "raw": "17 |73",
+        "bbox": [
+          150.68800354003906,
+          247.92860412597656,
+          447.8712158203125,
+          258.29376220703125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0018/text.txt",
+      "sha256": "2647ac672b45ba74bc5b6bd9e4e4e712fa90551e2c8298ee2f5452d54b48c8ae"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0018/text.reading-order.txt",
+      "sha256": "0d658615e6050ce8a52ab09850c5c7e1707d3dd7811ca1dc6378c9be44293f3c"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0018/layout.json",
+      "sha256": "1c31e0644bf199307d4188e470c11cf19fad39e83b882bfce67e95c78929b4bb"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0018/render.png",
+      "sha256": "195298f0fdf17b47634f11cb828a74c5f4d1e65e49d1a6c0026fddcc0dc560f3",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "e56dd02be49306c2a38feafc213a66cbcff0e7ecf9dd434c8092bffe8a6ecc15"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0017",
+    "next_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0019"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "pending",
+    "result": null
+  }
+}

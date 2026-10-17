@@ -1,0 +1,12 @@
+Optimal Control: motivating domains
+Robotic systems
+Performance index
+• distance from desired “behavior”
+(evolution of end-effector, position path,...)
+• minimum time
+• ...
+Constraints
+• geometric (workspace, obstacles, payload geometry, ...)
+• inputs (motor saturations)
+• internal systems (joint constraints, velocities,...)
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 3 |35

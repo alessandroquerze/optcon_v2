@@ -1,0 +1,12 @@
+Optimization algorithms: two-step procedure
+We consider a general two-step procedure that reads as follows
+zk+1 = zk + γkdk,
+k = 1, 2, . . .
+in which
+1. each γk > 0 is a “step-size”,
+2. dk ∈Rd is a “direction”.
+The goal is to
+1. choose a direction dk along which the cost decreases for γk sufficiently small;
+2. select a step-size γk guaranteeing a sufficient decrease.
+Notation In other references these are called line-search methods.
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 27 |73

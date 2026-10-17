@@ -1,0 +1,10 @@
+System trajectories and trajectory manifold
+We can now define the trajectory manifold T ⊂RnT × RmT of (1) as
+T := {(x, u) ∈RnT × RmT | h(x, u) = 0} = {(x, u) ∈RnT × RmT | xt+1 = ft(xt, ut), t = 0, . . . , T −1}.
+(3)
+µ
+α
+T
+T(¯x,¯u)T
+(¯x, ¯u)
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Optimality Conditions for Optimal Control 4 |18

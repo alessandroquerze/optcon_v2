@@ -1,0 +1,46 @@
+{
+  "name": "optcon-study-foundation",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prepare:assets": "node scripts/prepare-assets.mjs",
+    "predev": "npm run prepare:assets",
+    "dev": "vite --configLoader runner --host 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --reporter=default --reporter=json --outputFile=test-reports/unit-results.json",
+    "test:browser": "playwright test",
+    "prebuild": "npm run prepare:assets",
+    "build": "tsc --noEmit && vite build --configLoader runner",
+    "preview": "vite preview --configLoader runner --host 127.0.0.1",
+    "verify:sources": "node scripts/verify-sources.mjs"
+  },
+  "dependencies": {
+    "katex": "0.19.0",
+    "pdfjs-dist": "6.4.299",
+    "plotly.js-dist-min": "4.1.2",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "react-plotly.js": "4.1.0",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "@testing-library/dom": "10.4.2",
+    "@testing-library/jest-dom": "7.0.1",
+    "@testing-library/react": "16.3.3",
+    "@testing-library/user-event": "14.6.8",
+    "@types/katex": "0.16.8",
+    "@types/node": "26.6.5",
+    "@types/plotly.js": "3.0.15",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@types/react-plotly.js": "2.6.4",
+    "@vitejs/plugin-react": "6.1.2",
+    "esbuild": "0.28.2",
+    "jsdom": "29.1.1",
+    "typescript": "7.0.2",
+    "vite": "8.3.4",
+    "vitest": "5.0.5"
+  }
+}

@@ -1,0 +1,7 @@
+Active constraints and regular points
+Set of active inequality constraints
+For a point z, the set of active inequality constraints at z is A(z) = {j ∈{1, . . . , r} | gj(z) = 0}.
+Regular point
+A point z is regular if the vectors ∇hi(z), i ∈{1, . . . , m}, and ∇gj(z), j ∈A(z), are linearly indepen-
+dent.
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 53 |73

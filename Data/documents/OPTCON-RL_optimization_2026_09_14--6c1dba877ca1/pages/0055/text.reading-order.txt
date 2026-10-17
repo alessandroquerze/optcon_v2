@@ -1,0 +1,2 @@
+Constrained optimization (equality and inequality constraints):
+                     optimality conditions

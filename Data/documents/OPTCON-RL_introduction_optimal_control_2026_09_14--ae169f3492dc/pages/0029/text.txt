@@ -1,0 +1,45 @@
+Example: trajectory generation for an autonomous drone (III)
+We can choose diagonal weighting matrices
+Q =
+
+
+q1
+...
+q6
+
+, QT =
+
+
+qT 1
+...
+qT 6
+
+, R =
+r1
+r2
+
+.
+The cost function then reads
+ℓ(x, u) =
+T −1
+X
+t=0
+1
+2
+
+q1(x1,t −pdes
+x,t)2 + q2(x2,t −vdes
+x,t)2 + q3(x3,t −pdes
+y,t)2 + q4(x4,t −vdes
+y,t)2
++ q5x2
+5,t + q6x2
+6,t + r1u2
+1,t + r2u2
+2,t
+
++ 1
+2∥xT −xdes
+T ∥2
+QT
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 28 |35

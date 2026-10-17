@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574:p0010",
+  "document_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574",
+  "source": {
+    "pdf_sha256": "937db0d7a574f549eb1181f22207ccfa886ae6d79206720718692bfd6015bd97",
+    "page_index": 9,
+    "physical_page_number": 10,
+    "pdf_label_raw": "<FEFF0038>",
+    "pdf_label": "8",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Unconstrained optimal control problem (compact notation)",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      356.98486328125,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 8,
+        "total": 18,
+        "raw": "8 |18",
+        "bbox": [
+          102.9229965209961,
+          247.8778533935547,
+          447.8712158203125,
+          253.93292236328125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/pages/0010/text.txt",
+      "sha256": "d61cc91527fe3ef0283aed4ff8f89a8727c9028335d90e0c3d1882f2375dcda7"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/pages/0010/text.reading-order.txt",
+      "sha256": "1436298d606bc7007fa647c29ba0ab7a22b6f626be8f3e6d54ffd61cc05f5baa"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/pages/0010/layout.json",
+      "sha256": "73451cc82ef740c891d01e67fdbf0e4cb594150b8a87b0f55774c4436137a747"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/pages/0010/render.png",
+      "sha256": "9f6ba87470b664319ef75287e27191f5badc75e692476e6ccab4a0e7f4e812c5",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "a815ff11f35de72de3ead43f19c3b0858e9c0874b62d603ee4546a6bbe16a915"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574:p0009",
+    "next_page_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574:p0011"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "pending",
+    "result": null
+  }
+}

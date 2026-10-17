@@ -1,0 +1,16 @@
+Warning on notation in Optimization and Optimal Control
+Notation xt
+Consider a discrete-time system in standard control notation x(t + 1) = ft(x(t), u(t)) with t ∈N.
+We denote xt := x(t) and ut := u(t) the state and the input respectively, so that the dynamics is
+written as
+xt+1 = ft(xt, ut)
+Notation (x, u), (xk, uk), (xk
+t , uk
+t )
+The decision vector in optimal control problems is (x, u) and we will denote (xk, uk) the solution
+estimate at iteration k of an optimal control algorithm.
+We will also use (xk
+t , uk
+t ) to denote the vector component of (xk, uk) associated to the state and input
+at time t.
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 73 |73

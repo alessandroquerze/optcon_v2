@@ -1,0 +1,988 @@
+{
+  "protocol_version": "1.0.0",
+  "request_sha256": "b0581f27b85ff35e45dfc94cab9da75c70201d421c07a955daf77c9cf4971811",
+  "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0029",
+  "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+  "artifact_sha256": {
+    "text": "16d6fc067c2344470489231836022766915744a4d0169a4a98e58570c2809f5f",
+    "layout": "3ac35752dcf00af44de21d469f6e1f13f35280db8891ca1311f22e3d2d852f1c",
+    "render": "4d980806add46459010a440e4bc405e34172aca9f1f8d7d88d968533022d1f51"
+  },
+  "agent": {
+    "provider": "OpenAI",
+    "model": "Codex (identificatore esatto del modello non esposto nella sessione)",
+    "run_id": "page-analysis-ce370a19242e4173828aef04d60c36ee"
+  },
+  "inspection": {
+    "text_page_ids": [
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0029",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0028",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0030"
+    ],
+    "layout_page_ids": [
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0029",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0028",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0030"
+    ],
+    "image_page_ids": [
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0029",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0028",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0030"
+    ],
+    "source_content_treated_as_data": true
+  },
+  "title": "Drone (III) — costo con pesi diagonali",
+  "companionPageCount": 1,
+  "didactic_plan": {
+    "source_scope_limits": [
+      "La slide non assegna valori numerici ai pesi.",
+      "Penalizzare u₁,u₂ rispetto a zero non equivale a penalizzare deviazioni da una spinta di hover; non sostituire i termini con u−u_hover.",
+      "Non viene garantito che pesi grandi rispettino soglie hard.",
+      "Il terminal target x_T^{des} resta generale; non imporre componenti terminali aggiuntive non specificate."
+    ],
+    "prerequisites": [
+      {
+        "concept": "Ordine esatto dello stato",
+        "why": "Indispensabile per leggere q₁,…,q₆ senza scambiare posizione e velocità.",
+        "origin": "source_context",
+        "page_numbers": [
+          27
+        ]
+      },
+      {
+        "concept": "Requisiti di tracking",
+        "why": "Spiegano i primi quattro errori e le ultime penalità.",
+        "origin": "source_context",
+        "page_numbers": [
+          28
+        ]
+      },
+      {
+        "concept": "Costo additivo e pesato",
+        "why": "Per separare contributi di stadio e terminali.",
+        "origin": "source_context",
+        "page_numbers": [
+          20,
+          22
+        ]
+      }
+    ],
+    "source_math": [
+      {
+        "latex": "Q=\\begin{bmatrix}q_1&&\\\\&\\ddots&\\\\&&q_6\\end{bmatrix},\\quad Q_T=\\begin{bmatrix}q_{T1}&&\\\\&\\ddots&\\\\&&q_{T6}\\end{bmatrix},\\quad R=\\begin{bmatrix}r_1&0\\\\0&r_2\\end{bmatrix}",
+        "anchor": "We can choose diagonal weighting matrices",
+        "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+      },
+      {
+        "latex": "\\begin{aligned}\\ell(\\mathbf{x},\\mathbf{u})=\\sum_{t=0}^{T-1}\\frac12\\big[&q_1(x_{1,t}-p_{x,t}^{\\mathrm{des}})^2+q_2(x_{2,t}-v_{x,t}^{\\mathrm{des}})^2+q_3(x_{3,t}-p_{y,t}^{\\mathrm{des}})^2+q_4(x_{4,t}-v_{y,t}^{\\mathrm{des}})^2\\\\&+q_5x_{5,t}^2+q_6x_{6,t}^2+r_1u_{1,t}^2+r_2u_{2,t}^2\\big]+\\frac12\\|x_T-x_T^{\\mathrm{des}}\\|_{Q_T}^2\\end{aligned}",
+        "anchor": "The cost function then reads",
+        "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+      }
+    ],
+    "enrichments": [
+      {
+        "id": "example-1",
+        "label": "enrichment",
+        "type": "worked_example",
+        "proposal": "Enrichment su un singolo stadio normalizzato: errori delle prime quattro componenti (1,0,0,0), x₅=0.1,x₆=0, u₁=u₂=2; q₁=2,q₅=10,r₁=r₂=0.5 e altri q=1.",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ]
+      },
+      {
+        "id": "interaction",
+        "label": "enrichment",
+        "type": "interaction_design",
+        "proposal": "Variare pochi pesi sulla stessa candidata chiarisce le priorità e la differenza fra penalità e vincolo.",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ]
+      },
+      {
+        "id": "visualization",
+        "label": "enrichment",
+        "type": "visualization_design",
+        "proposal": "Otto barre di costo di stadio con colori collegati alle sei componenti dello stato e ai due ingressi; terminale separato.",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "id": "example-1",
+        "origin": "enrichment",
+        "purpose": "Attribuire un valore a ciascun contributo, senza fingere una soluzione ottima.",
+        "setup": "Enrichment su un singolo stadio normalizzato: errori delle prime quattro componenti (1,0,0,0), x₅=0.1,x₆=0, u₁=u₂=2; q₁=2,q₅=10,r₁=r₂=0.5 e altri q=1.",
+        "parameters": [
+          {
+            "symbol": "q_1,q_5",
+            "value": "2,10"
+          },
+          {
+            "symbol": "r_1,r_2",
+            "value": "0.5,0.5"
+          },
+          {
+            "symbol": "x_5",
+            "value": "0.1"
+          },
+          {
+            "symbol": "u_1,u_2",
+            "value": "2,2"
+          }
+        ],
+        "derivation": [
+          "Posizione orizzontale: ½·2·1²=1.",
+          "Angolo: ½·10·0.1²=0.05.",
+          "Ciascun ingresso: ½·0.5·2²=1.",
+          "Gli altri contributi sono zero; stage cost=3.05."
+        ],
+        "expected_outcome": "Ogni peso modifica il contributo della sua componente; questa è una valutazione di costo, non un'ottimizzazione.",
+        "limitations": [
+          "Valori e normalizzazione sono enrichment.",
+          "Il singolo punto non è certificato come parte di una traiettoria dinamicamente ammissibile."
+        ],
+        "enrichment_id": "example-1",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ]
+      }
+    ],
+    "example_omission_reason": null,
+    "visualization": {
+      "component": "DroneQuadraticCostContributionBars",
+      "description": "Otto barre di costo di stadio con colori collegati alle sei componenti dello stato e ai due ingressi; terminale separato.",
+      "origin": "enrichment",
+      "source_observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    },
+    "interactivity": {
+      "recommended": true,
+      "rationale": "Variare pochi pesi sulla stessa candidata chiarisce le priorità e la differenza fra penalità e vincolo.",
+      "component": "DroneFixedStageWeightInspector",
+      "parameters": [
+        {
+          "name": "Peso posizione orizzontale",
+          "symbol": "q_1",
+          "origin": "source",
+          "range": "[0,10]",
+          "default": "2",
+          "effect_on_change": "Aggiornare solo la barra ½q₁·1² e il totale; non spostare il drone né dichiarare un nuovo ottimo.",
+          "edge_cases": [
+            "q₁=0: errore non penalizzato nello stadio"
+          ]
+        },
+        {
+          "name": "Peso angolo",
+          "symbol": "q_5",
+          "origin": "source",
+          "range": "[0,20]",
+          "default": "10",
+          "effect_on_change": "Aggiornare solo ½q₅·0.1² e il totale; x₅ resta invariato.",
+          "edge_cases": [
+            "q₅=0"
+          ]
+        },
+        {
+          "name": "Peso primo ingresso",
+          "symbol": "r_1",
+          "origin": "source",
+          "range": "[0.01,2]",
+          "default": "0.5",
+          "effect_on_change": "Aggiornare ½r₁·2² e il totale, mantenendo u₁ fissato.",
+          "edge_cases": [
+            "Mantenere r₁>0 secondo il contesto della pagina 22"
+          ]
+        },
+        {
+          "name": "Peso secondo ingresso",
+          "symbol": "r_2",
+          "origin": "source",
+          "range": "[0.01,2]",
+          "default": "0.5",
+          "effect_on_change": "Aggiornare ½r₂·2² e il totale senza rinominare r₂ come r₁.",
+          "edge_cases": [
+            "Mantenere r₂>0"
+          ]
+        }
+      ],
+      "outputs": [
+        "Contributi di stadio",
+        "Totale dello stadio"
+      ],
+      "invariants": [
+        "Tutte le componenti candidate fisse",
+        "Nessuna saturazione aggiunta",
+        "Nessun ottimizzatore eseguito",
+        "Pesi non controllati restano ai valori dichiarati dell'esempio"
+      ],
+      "enrichment_id": "interaction"
+    },
+    "edge_cases": [
+      {
+        "case": "Errore nullo in una componente",
+        "expected_behavior": "Cambiarne il peso non cambia il costo della candidata.",
+        "origin": "enrichment",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ]
+      },
+      {
+        "case": "Angolo grande con peso piccolo",
+        "expected_behavior": "Può avere un contributo piccolo senza rispettare eventuali limiti hard.",
+        "origin": "enrichment",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ]
+      },
+      {
+        "case": "Hover con ingressi non nulli",
+        "expected_behavior": "La penalità sugli ingressi può essere positiva anche quando la forza bilancia la gravità.",
+        "origin": "enrichment",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ]
+      }
+    ],
+    "expansion_rationale": "Una tabella componente→peso e otto barre rendono leggibile l'unica formula, senza dividere artificialmente la stessa decomposizione.",
+    "blueprint": [
+      {
+        "companion_suffix": null,
+        "focus": "Quale errore viene pesato da ciascun q e r; penalità soft e riferimento zero dove effettivamente scritto.",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ],
+        "enrichment_ids": [
+          "example-1",
+          "interaction",
+          "visualization"
+        ]
+      }
+    ]
+  },
+  "observations": [
+    {
+      "id": "s01",
+      "category": "definition",
+      "description": "Sono scelte matrici diagonali Q con q₁,…,q₆, Q_T con q_{T1},…,q_{T6} e R con r₁,r₂.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0029",
+        "modality": "both",
+        "text_quote": "We can choose diagonal weighting matrices",
+        "bbox": [
+          27,
+          31,
+          277,
+          99
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "s02",
+      "category": "equation",
+      "description": "Il costo di stadio contiene q₁(x_{1,t}−p_{x,t}^{des})², q₂(x_{2,t}−v_{x,t}^{des})², q₃(x_{3,t}−p_{y,t}^{des})² e q₄(x_{4,t}−v_{y,t}^{des})², tutti nel fattore 1/2.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0029",
+        "modality": "both",
+        "text_quote": "q1(x1,t",
+        "bbox": [
+          55,
+          112,
+          444,
+          181
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "s03",
+      "category": "equation",
+      "description": "Gli ulteriori termini di stadio sono q₅x_{5,t}²+q₆x_{6,t}²+r₁u_{1,t}²+r₂u_{2,t}²: qui sono penalizzati i valori stessi, senza sottrarre un riferimento.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0029",
+        "modality": "both",
+        "text_quote": "+ q5x2",
+        "bbox": [
+          55,
+          112,
+          444,
+          181
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "s04",
+      "category": "equation",
+      "description": "Alla somma di stadio si aggiunge ½‖x_T−x_T^{des}‖²_{Q_T}.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0029",
+        "modality": "both",
+        "text_quote": "The cost function then reads",
+        "bbox": [
+          55,
+          112,
+          444,
+          181
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "transcription-05",
+      "category": "structure",
+      "description": "Trascrizione di una regione visibile della fonte: Example: trajectory generation for an autonomous drone (III)",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0029",
+        "modality": "visual",
+        "text_quote": null,
+        "bbox": [
+          10.35200023651123,
+          6.720991134643555,
+          370.69989013671875,
+          21.06719207763672
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "transcription-06",
+      "category": "structure",
+      "description": "Trascrizione di una regione visibile della fonte: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 28 |35",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0029",
+        "modality": "visual",
+        "text_quote": null,
+        "bbox": [
+          126.9540023803711,
+          247.92860412597656,
+          447.8712158203125,
+          255.1179962158203
+        ]
+      },
+      "confidence": 0.98
+    }
+  ],
+  "contextual_role": "Converte i requisiti qualitativi della pagina 28 in contributi quadratici distinti.",
+  "context_notes": [
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0028",
+      "role": "previous",
+      "note": "La pagina 28 elenca posizione, velocità, angoli e ingressi; qui viene assegnata la forma del costo."
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0030",
+      "role": "next",
+      "note": "La pagina 30 distingue i limiti espliciti di path dalle penalizzazioni di questa pagina."
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "q_1,q_2,q_3,q_4",
+      "meaning": "Pesi degli errori di p_x,v_x,p_y,v_y, nello stesso ordine dello stato",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    },
+    {
+      "symbol": "q_5,q_6",
+      "meaning": "Pesi dei valori θ e ω rispetto a zero nel costo di stadio",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    },
+    {
+      "symbol": "q_{T1},\\ldots,q_{T6}",
+      "meaning": "Pesi terminali diagonali",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    },
+    {
+      "symbol": "r_1,r_2",
+      "meaning": "Pesi degli ingressi u₁ e u₂ rispetto a zero",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    },
+    {
+      "symbol": "Q_T",
+      "meaning": "Matrice terminale, distinta da Q",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    }
+  ],
+  "uncertainties": [],
+  "progression": {
+    "assessment": "unique",
+    "related_page_ids": [],
+    "added": [],
+    "removed": [],
+    "changed": [],
+    "observation_ids": [
+      "s01",
+      "s02",
+      "s03",
+      "s04"
+    ],
+    "rationale": "Pagina con contenuto autonomo nella sequenza; nessun candidato automatico da confermare."
+  },
+  "coverage": {
+    "all_visible_regions_accounted_for": true,
+    "regions": [
+      {
+        "bbox": [
+          10.35200023651123,
+          6.720991134643555,
+          370.69989013671875,
+          21.06719207763672
+        ],
+        "description": "Regione testuale sorgente: Example: trajectory generation for an autonomous drone (III)",
+        "observation_ids": [
+          "transcription-05"
+        ]
+      },
+      {
+        "bbox": [
+          28.34600067138672,
+          35.43647766113281,
+          196.2418212890625,
+          44.40287780761719
+        ],
+        "description": "Regione testuale sorgente: We can choose diagonal weighting matrices",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          28.34600067138672,
+          65.16348266601562,
+          45.33915710449219,
+          74.1298828125
+        ],
+        "description": "Regione testuale sorgente: Q =",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          47.90200424194336,
+          50.892417907714844,
+          54.04398727416992,
+          59.85881805419922
+        ],
+        "description": "Regione testuale sorgente: ",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          47.90200424194336,
+          66.6534194946289,
+          54.04398727416992,
+          81.37781524658203
+        ],
+        "description": "Regione testuale sorgente: ",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          54.045005798339844,
+          50.629486083984375,
+          61.8153190612793,
+          60.127410888671875
+        ],
+        "description": "Regione testuale sorgente: q1",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          72.78900909423828,
+          61.66548156738281,
+          82.52040100097656,
+          76.60987854003906
+        ],
+        "description": "Regione testuale sorgente: ...",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          92.99101257324219,
+          79.59848022460938,
+          100.76032257080078,
+          89.09640502929688
+        ],
+        "description": "Regione testuale sorgente: q6",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          101.2590103149414,
+          50.892417907714844,
+          107.40099334716797,
+          59.85881805419922
+        ],
+        "description": "Regione testuale sorgente: ",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          101.2590103149414,
+          65.16348266601562,
+          135.86415100097656,
+          81.37781524658203
+        ],
+        "description": "Regione testuale sorgente: , QT =",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          138.427001953125,
+          50.892417907714844,
+          144.56898498535156,
+          59.85881805419922
+        ],
+        "description": "Regione testuale sorgente: ",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          138.427001953125,
+          66.6534194946289,
+          144.56898498535156,
+          81.37781524658203
+        ],
+        "description": "Regione testuale sorgente: ",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          144.57000732421875,
+          50.629486083984375,
+          157.6793212890625,
+          60.127410888671875
+        ],
+        "description": "Regione testuale sorgente: qT 1",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          168.65301513671875,
+          61.66548156738281,
+          178.3843994140625,
+          76.60987854003906
+        ],
+        "description": "Regione testuale sorgente: ...",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          188.85501098632812,
+          79.59848022460938,
+          201.9633331298828,
+          89.09640502929688
+        ],
+        "description": "Regione testuale sorgente: qT 6",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          202.46202087402344,
+          50.892417907714844,
+          208.60400390625,
+          59.85881805419922
+        ],
+        "description": "Regione testuale sorgente: ",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          202.46202087402344,
+          65.16348266601562,
+          230.99716186523438,
+          81.37781524658203
+        ],
+        "description": "Regione testuale sorgente: , R =",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          233.5600128173828,
+          58.96141815185547,
+          246.2343292236328,
+          69.13240051269531
+        ],
+        "description": "Regione testuale sorgente: \u0014r1",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          256.6960144042969,
+          70.59347534179688,
+          264.5063171386719,
+          80.09140014648438
+        ],
+        "description": "Regione testuale sorgente: r2",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          265.0050048828125,
+          58.96141815185547,
+          269.86480712890625,
+          67.92781829833984
+        ],
+        "description": "Regione testuale sorgente: \u0015",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          269.8680114746094,
+          65.16348266601562,
+          272.4324035644531,
+          74.1298828125
+        ],
+        "description": "Regione testuale sorgente: .",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          28.34600830078125,
+          106.04948425292969,
+          139.5921630859375,
+          115.01588439941406
+        ],
+        "description": "Regione testuale sorgente: The cost function then reads",
+        "observation_ids": [
+          "s02",
+          "s03",
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          57.65900802612305,
+          131.3374786376953,
+          93.95211029052734,
+          140.3038787841797
+        ],
+        "description": "Regione testuale sorgente: ℓ(x, u) =",
+        "observation_ids": [
+          "s02",
+          "s03",
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          96.50800323486328,
+          122.40560913085938,
+          111.25531005859375,
+          138.20680236816406
+        ],
+        "description": "Regione testuale sorgente: T −1\nX",
+        "observation_ids": [
+          "s02",
+          "s03",
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          97.83599853515625,
+          144.21780395507812,
+          109.9273681640625,
+          150.19540405273438
+        ],
+        "description": "Regione testuale sorgente: t=0",
+        "observation_ids": [
+          "s02",
+          "s03",
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          113.98799896240234,
+          130.1887969970703,
+          117.64031219482422,
+          142.8824005126953
+        ],
+        "description": "Regione testuale sorgente: 1\n2",
+        "observation_ids": [
+          "s02",
+          "s03",
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          118.83599853515625,
+          125.13541412353516,
+          123.69578552246094,
+          134.101806640625
+        ],
+        "description": "Regione testuale sorgente: \u0014",
+        "observation_ids": [
+          "s02",
+          "s03",
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          123.69999694824219,
+          129.36631774902344,
+          174.4720001220703,
+          141.1836700439453
+        ],
+        "description": "Regione testuale sorgente: q1(x1,t −pdes",
+        "observation_ids": [
+          "s02",
+          "s03",
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          165.9359893798828,
+          127.03047180175781,
+          245.66700744628906,
+          141.4174041748047
+        ],
+        "description": "Regione testuale sorgente: x,t)2 + q2(x2,t −vdes",
+        "observation_ids": [
+          "s02",
+          "s03",
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          236.80899047851562,
+          127.03047180175781,
+          316.36907958984375,
+          141.4174041748047
+        ],
+        "description": "Regione testuale sorgente: x,t)2 + q3(x3,t −pdes",
+        "observation_ids": [
+          "s02",
+          "s03",
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          307.8330383300781,
+          127.03047180175781,
+          387.39111328125,
+          141.4174041748047
+        ],
+        "description": "Regione testuale sorgente: y,t)2 + q4(x4,t −vdes",
+        "observation_ids": [
+          "s02",
+          "s03",
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          378.5330810546875,
+          129.55479431152344,
+          395.38641357421875,
+          141.4174041748047
+        ],
+        "description": "Regione testuale sorgente: y,t)2",
+        "observation_ids": [
+          "s02",
+          "s03",
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          126.00408935546875,
+          157.89280700683594,
+          152.3634033203125,
+          169.1743927001953
+        ],
+        "description": "Regione testuale sorgente: + q5x2",
+        "observation_ids": [
+          "s02",
+          "s03",
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          148.71109008789062,
+          157.89280700683594,
+          259.8049011230469,
+          170.21987915039062
+        ],
+        "description": "Regione testuale sorgente: 5,t + q6x2\n6,t + r1u2\n1,t + r2u2\n2,t",
+        "observation_ids": [
+          "s02",
+          "s03",
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          260.3000793457031,
+          153.4744110107422,
+          265.1598815917969,
+          162.44081115722656
+        ],
+        "description": "Regione testuale sorgente: \u0015",
+        "observation_ids": [
+          "s02",
+          "s03",
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          267.2110900878906,
+          158.5268096923828,
+          281.2744140625,
+          168.6418914794922
+        ],
+        "description": "Regione testuale sorgente: + 1",
+        "observation_ids": [
+          "s02",
+          "s03",
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          277.62200927734375,
+          157.70433044433594,
+          331.9203186035156,
+          171.22039794921875
+        ],
+        "description": "Regione testuale sorgente: 2∥xT −xdes\nT ∥2",
+        "observation_ids": [
+          "s02",
+          "s03",
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          328.26800537109375,
+          163.77780151367188,
+          338.189453125,
+          170.6942596435547
+        ],
+        "description": "Regione testuale sorgente: QT",
+        "observation_ids": [
+          "s02",
+          "s03",
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          126.9540023803711,
+          247.92860412597656,
+          447.8712158203125,
+          255.1179962158203
+        ],
+        "description": "Regione testuale sorgente: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 28 |35",
+        "observation_ids": [
+          "transcription-06"
+        ]
+      }
+    ]
+  },
+  "mapping_recommendation": {
+    "mode": "one_to_one",
+    "rationale": "Una tabella componente→peso e otto barre rendono leggibile l'unica formula, senza dividere artificialmente la stessa decomposizione.",
+    "subpages": []
+  }
+}

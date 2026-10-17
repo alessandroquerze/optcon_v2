@@ -1,0 +1,22 @@
+Stepsize selection for constrained optimization (II): Armijo rule
+
+
+    Armijo rule (Backtracking line-search) with M1 merit function
+
+     Step-size is selected following the procedure:
+        1. Set ¯γ0 > 0, β ∈(0, 1), c ∈(0, 1)
+
+                                                                  derivative of M1(zk;s) along dk
+                                                   z           }|           {        2. While M1(zk + ¯γidk; s) ≥M1(zk; s) + c¯γi ∇ℓ(zk)⊤dk −s∥h(zk)∥1  :
+
+                                                            ¯γi+1 = β¯γi
+
+        3. Set γk = ¯γi
+
+   Good practice: to move towards exact merit function, adapt s at each iteration, i.e., set sk > ∥λk∥∞
+
+
+
+
+
+                                                      Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 68 |73

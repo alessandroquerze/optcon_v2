@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0048",
+  "document_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1",
+  "source": {
+    "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+    "page_index": 47,
+    "physical_page_number": 48,
+    "pdf_label_raw": "<FEFF00340034>",
+    "pdf_label": "44",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Optimization over convex sets",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      186.29380798339844,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 44,
+        "total": 73,
+        "raw": "44 |73",
+        "bbox": [
+          150.68800354003906,
+          247.92860412597656,
+          447.8712158203125,
+          258.29376220703125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0048/text.txt",
+      "sha256": "e4b9a304a4de62153e01bd714613ea2871f3e708b11275d89ffef7ac48f2d7df"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0048/text.reading-order.txt",
+      "sha256": "e04d65190a8810ffeb4149f2e3227706a7f3c11cdf2b862f6b25c2991b2b552d"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0048/layout.json",
+      "sha256": "ce37b977fd2582c5426c36d9cfa3488e447f5b9198153e22ff90b616c9eef5bd"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0048/render.png",
+      "sha256": "b28c169e21a33857fdee123c079e214a268fb60afc313035f895bb0d3ac14591",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "f56babe0d50e12cd50ae10b7986a5df79b905ae96d4817f3f05e29021d2186ca"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0047",
+    "next_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0049"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "pending",
+    "result": null
+  }
+}

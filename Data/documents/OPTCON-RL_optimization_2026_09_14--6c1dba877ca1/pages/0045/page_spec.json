@@ -1,0 +1,138 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0045",
+  "document_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1",
+  "source": {
+    "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+    "page_index": 44,
+    "physical_page_number": 45,
+    "pdf_label_raw": "<FEFF00340031>",
+    "pdf_label": "41",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Gradient methods: remarks",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      170.12564086914062,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 41,
+        "total": 73,
+        "raw": "41 |73",
+        "bbox": [
+          150.68800354003906,
+          247.92860412597656,
+          447.8712158203125,
+          258.29376220703125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0045/text.txt",
+      "sha256": "3c4d8f6f3e4af60910df60d7c7c6c0f4f7e53b6054af01dea610a3bf1be82a60"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0045/text.reading-order.txt",
+      "sha256": "14dcac6146b6e1c855887ce6518697217d5a7133602146d17bf96532f8abce54"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0045/layout.json",
+      "sha256": "ce1e431dc128c9c8bc3cb0c7c4bbdc25b951ea282ab9692f17ee2e05206c6d40"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0045/render.png",
+      "sha256": "8c9c1ae75743d2e13f8eaf0be0c1838f8cb3ef90cb1521a99251cde31c5b92ee",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "238c0ac6593c3b7a48ce67415b49cb0faf65d55689e000855ef404d533bf8ec0"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0044",
+    "next_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0046"
+  },
+  "relations": [
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0044",
+      "kind": "progressive_candidate",
+      "confidence": 0.9,
+      "review_status": "candidate",
+      "reason": "Etichetta PDF ripetuta su pagine adiacenti con raster differenti: possibile overlay, da verificare anche a testo identico.",
+      "metrics": {
+        "text_jaccard": 0.814978,
+        "text_containment": 0.915842,
+        "left_tokens": 202,
+        "right_tokens": 210,
+        "visual_difference": 0.012304,
+        "ink_overlap": 0.726968,
+        "dhash_distance": 9
+      },
+      "delta_in_physical_order": {
+        "text": {
+          "added_lines": [
+            "Remark For convex programs, assuming coercivity, convergence (of subsequences) to global minima is",
+            "guaranteed since necessary conditions of optimality are also sufficient.",
+            "□"
+          ],
+          "removed_lines": [
+            "5",
+            "10",
+            "−1",
+            "0",
+            "1",
+            "{(−1)n}n>0",
+            "{(−1)k}k>0,k=2n"
+          ],
+          "semantic_interpretation": "pending_visual_analysis"
+        },
+        "visual": {
+          "changed_bbox_px": [
+            57,
+            327,
+            850,
+            482
+          ],
+          "pixel_threshold": 16,
+          "changed_pixel_fraction": 0.018511
+        }
+      }
+    }
+  ],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "pending",
+    "result": null
+  }
+}

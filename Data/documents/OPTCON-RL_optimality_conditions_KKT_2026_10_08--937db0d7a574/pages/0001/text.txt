@@ -1,0 +1,8 @@
+Optimal Control and Reinforcement Learning
+Optimality conditions for Optimal Control
+Prof. Giuseppe Notarstefano
+Department of Electrical, Electronic, and Information Engineering
+Alma Mater Studiorum Universit`a di Bologna
+giuseppe.notarstefano@unibo.it
+The present slides are for internal use of the course
+Optimal Control and Reinforcement Learning @ University of Bologna.

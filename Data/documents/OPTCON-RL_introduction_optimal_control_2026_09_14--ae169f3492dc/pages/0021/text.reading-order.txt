@@ -1,0 +1,17 @@
+Discrete-time optimal control: main ingredients (III)
+
+
+    End-point constraints: function of the state variable prescribed at initial and/or final point
+
+                                               r(x0, xT ) = 0.
+
+    Path constraints: point-wise (in time) constraints representing possible limits on states and inputs at
+    each time t
+
+                                        gt(xt, ut) ≤0,   t = 0, . . . , T −1.
+
+
+
+
+
+                                            Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 20 |35

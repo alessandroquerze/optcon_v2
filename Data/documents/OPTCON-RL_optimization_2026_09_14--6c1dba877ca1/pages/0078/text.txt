@@ -1,0 +1,22 @@
+Barrier function strategy for inequality constraints
+Consider the inequality constrained optimization problem
+min
+z∈Rd ℓ(z)
+subj.to gj(z) ≤0
+j ∈{1, . . . , r}
+h(z) = 0
+Inequality constraints can be embedded in the cost function
+by means of a barrier function −ε log(z)
+The resulting unconstrained problem reads as
+min
+z∈Rd ℓ(z) + ε
+r
+X
+j=1
+−log(−gj(z))
+h(z) = 0
+ε →0
+z
+−ε log(z)
+Implementation: every few iterations shrink the barrier parameters ε.
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 70 |73

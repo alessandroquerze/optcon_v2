@@ -1,0 +1,10 @@
+Karush-Kuhn-Tucker (KKT) necessary conditions
+Let z⋆be a regular local minimum of
+min
+z∈Rd ℓ(z)
+subj.to gj(z) ≤0
+j ∈{1, . . . , r}
+hi(z) = 0
+i ∈{1, . . . , m}
+where ℓ, gj and hi are C1.
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 55 |73

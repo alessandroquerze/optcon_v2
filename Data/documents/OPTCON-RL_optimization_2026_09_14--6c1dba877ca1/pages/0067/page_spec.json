@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0067",
+  "document_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1",
+  "source": {
+    "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+    "page_index": 66,
+    "physical_page_number": 67,
+    "pdf_label_raw": "<FEFF00350039>",
+    "pdf_label": "59",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Quadratic Programming (constrained): optimality conditions",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      365.6068420410156,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 59,
+        "total": 73,
+        "raw": "59 |73",
+        "bbox": [
+          150.68800354003906,
+          247.92860412597656,
+          447.8712158203125,
+          258.29376220703125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0067/text.txt",
+      "sha256": "78a42fcb7815a45bdb498bea08ae7dce89eaa26292d580946ef5bbab50f69402"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0067/text.reading-order.txt",
+      "sha256": "3065661c1bcd7216ae31cd579debd447ea9f8425bd398b40d099087adbd65736"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0067/layout.json",
+      "sha256": "cacdaf0d76465ca582c57e1be822f527b0f5a84e3cec7c10f329710fee2ab411"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0067/render.png",
+      "sha256": "5dee37abfd8811ac47edf647544cae28f068ea551972b6b1ed7e181311ea4153",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "6c64e7c35bc93a99f3a5757bc2a1e9c5749d6871cf596fd5ac1bb3ceec4f57d8"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0066",
+    "next_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0068"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "pending",
+    "result": null
+  }
+}

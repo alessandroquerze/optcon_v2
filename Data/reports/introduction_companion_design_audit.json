@@ -1,0 +1,1161 @@
+{
+  "ok": true,
+  "document_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc",
+  "missing_pages": [],
+  "checks": {
+    "physical_coverage": {
+      "ok": true,
+      "detail": "Esattamente 36 entry distinte, in ordine fisico 1…36."
+    },
+    "complete_page_fields": {
+      "ok": true,
+      "detail": "Tutte le 20 proprietà richieste."
+    },
+    "mapping_one_to_one": {
+      "ok": true,
+      "detail": "36 companion, zero sottopagine aggiuntive."
+    },
+    "warning_pages_CORRECTION_WARNING": {
+      "ok": true,
+      "detail": "[16, 30, 34]"
+    },
+    "warning_pages_INFO_WARNING": {
+      "ok": true,
+      "detail": "[14, 17, 19, 22, 26]"
+    },
+    "p01_control_effects": {
+      "ok": true,
+      "detail": "Ogni controllo ha dominio, default, effetto, output e casi limite."
+    },
+    "p01_interaction": {
+      "ok": true,
+      "detail": "Solo interazioni motivate; le pagine statiche non espongono parametri."
+    },
+    "p01_neighbors": {
+      "ok": true,
+      "detail": "Vicini fisici corretti."
+    },
+    "p01_structural_height_budget": {
+      "ok": true,
+      "detail": "Budget 656/1200 px; wrapping reale da verificare nel vertical slice."
+    },
+    "p02_control_effects": {
+      "ok": true,
+      "detail": "Ogni controllo ha dominio, default, effetto, output e casi limite."
+    },
+    "p02_interaction": {
+      "ok": true,
+      "detail": "Solo interazioni motivate; le pagine statiche non espongono parametri."
+    },
+    "p02_neighbors": {
+      "ok": true,
+      "detail": "Vicini fisici corretti."
+    },
+    "p02_structural_height_budget": {
+      "ok": true,
+      "detail": "Budget 908/1200 px; wrapping reale da verificare nel vertical slice."
+    },
+    "p03_control_effects": {
+      "ok": true,
+      "detail": "Ogni controllo ha dominio, default, effetto, output e casi limite."
+    },
+    "p03_interaction": {
+      "ok": true,
+      "detail": "Solo interazioni motivate; le pagine statiche non espongono parametri."
+    },
+    "p03_neighbors": {
+      "ok": true,
+      "detail": "Vicini fisici corretti."
+    },
+    "p03_structural_height_budget": {
+      "ok": true,
+      "detail": "Budget 718/1200 px; wrapping reale da verificare nel vertical slice."
+    },
+    "p04_control_effects": {
+      "ok": true,
+      "detail": "Ogni controllo ha dominio, default, effetto, output e casi limite."
+    },
+    "p04_interaction": {
+      "ok": true,
+      "detail": "Solo interazioni motivate; le pagine statiche non espongono parametri."
+    },
+    "p04_neighbors": {
+      "ok": true,
+      "detail": "Vicini fisici corretti."
+    },
+    "p04_structural_height_budget": {
+      "ok": true,
+      "detail": "Budget 718/1200 px; wrapping reale da verificare nel vertical slice."
+    },
+    "p05_control_effects": {
+      "ok": true,
+      "detail": "Ogni controllo ha dominio, default, effetto, output e casi limite."
+    },
+    "p05_interaction": {
+      "ok": true,
+      "detail": "Solo interazioni motivate; le pagine statiche non espongono parametri."
+    },
+    "p05_neighbors": {
+      "ok": true,
+      "detail": "Vicini fisici corretti."
+    },
+    "p05_structural_height_budget": {
+      "ok": true,
+      "detail": "Budget 718/1200 px; wrapping reale da verificare nel vertical slice."
+    },
+    "p06_control_effects": {
+      "ok": true,
+      "detail": "Ogni controllo ha dominio, default, effetto, output e casi limite."
+    },
+    "p06_interaction": {
+      "ok": true,
+      "detail": "Solo interazioni motivate; le pagine statiche non espongono parametri."
+    },
+    "p06_neighbors": {
+      "ok": true,
+      "detail": "Vicini fisici corretti."
+    },
+    "p06_structural_height_budget": {
+      "ok": true,
+      "detail": "Budget 718/1200 px; wrapping reale da verificare nel vertical slice."
+    },
+    "p07_control_effects": {
+      "ok": true,
+      "detail": "Ogni controllo ha dominio, default, effetto, output e casi limite."
+    },
+    "p07_interaction": {
+      "ok": true,
+      "detail": "Solo interazioni motivate; le pagine statiche non espongono parametri."
+    },
+    "p07_neighbors": {
+      "ok": true,
+      "detail": "Vicini fisici corretti."
+    },
+    "p07_structural_height_budget": {
+      "ok": true,
+      "detail": "Budget 718/1200 px; wrapping reale da verificare nel vertical slice."
+    },
+    "p08_control_effects": {
+      "ok": true,
+      "detail": "Ogni controllo ha dominio, default, effetto, output e casi limite."
+    },
+    "p08-control-1_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p08-control-2_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p08-control-3_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p08_interaction": {
+      "ok": true,
+      "detail": "Solo interazioni motivate; le pagine statiche non espongono parametri."
+    },
+    "p08_neighbors": {
+      "ok": true,
+      "detail": "Vicini fisici corretti."
+    },
+    "p08_structural_height_budget": {
+      "ok": true,
+      "detail": "Budget 1112/1200 px; wrapping reale da verificare nel vertical slice."
+    },
+    "p09_control_effects": {
+      "ok": true,
+      "detail": "Ogni controllo ha dominio, default, effetto, output e casi limite."
+    },
+    "p09-control-1_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p09-control-2_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p09-control-3_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p09_interaction": {
+      "ok": true,
+      "detail": "Solo interazioni motivate; le pagine statiche non espongono parametri."
+    },
+    "p09_neighbors": {
+      "ok": true,
+      "detail": "Vicini fisici corretti."
+    },
+    "p09_structural_height_budget": {
+      "ok": true,
+      "detail": "Budget 1092/1200 px; wrapping reale da verificare nel vertical slice."
+    },
+    "p10_control_effects": {
+      "ok": true,
+      "detail": "Ogni controllo ha dominio, default, effetto, output e casi limite."
+    },
+    "p10-control-1_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p10-control-2_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p10-control-3_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p10_interaction": {
+      "ok": true,
+      "detail": "Solo interazioni motivate; le pagine statiche non espongono parametri."
+    },
+    "p10_neighbors": {
+      "ok": true,
+      "detail": "Vicini fisici corretti."
+    },
+    "p10_structural_height_budget": {
+      "ok": true,
+      "detail": "Budget 1092/1200 px; wrapping reale da verificare nel vertical slice."
+    },
+    "p11_control_effects": {
+      "ok": true,
+      "detail": "Ogni controllo ha dominio, default, effetto, output e casi limite."
+    },
+    "p11-control-1_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p11-control-2_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p11_interaction": {
+      "ok": true,
+      "detail": "Solo interazioni motivate; le pagine statiche non espongono parametri."
+    },
+    "p11_neighbors": {
+      "ok": true,
+      "detail": "Vicini fisici corretti."
+    },
+    "p11_structural_height_budget": {
+      "ok": true,
+      "detail": "Budget 1092/1200 px; wrapping reale da verificare nel vertical slice."
+    },
+    "p12_control_effects": {
+      "ok": true,
+      "detail": "Ogni controllo ha dominio, default, effetto, output e casi limite."
+    },
+    "p12-control-1_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p12-control-2_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p12_interaction": {
+      "ok": true,
+      "detail": "Solo interazioni motivate; le pagine statiche non espongono parametri."
+    },
+    "p12_neighbors": {
+      "ok": true,
+      "detail": "Vicini fisici corretti."
+    },
+    "p12_structural_height_budget": {
+      "ok": true,
+      "detail": "Budget 1092/1200 px; wrapping reale da verificare nel vertical slice."
+    },
+    "p13_control_effects": {
+      "ok": true,
+      "detail": "Ogni controllo ha dominio, default, effetto, output e casi limite."
+    },
+    "p13_interaction": {
+      "ok": true,
+      "detail": "Solo interazioni motivate; le pagine statiche non espongono parametri."
+    },
+    "p13_neighbors": {
+      "ok": true,
+      "detail": "Vicini fisici corretti."
+    },
+    "p13_structural_height_budget": {
+      "ok": true,
+      "detail": "Budget 918/1200 px; wrapping reale da verificare nel vertical slice."
+    },
+    "p14_control_effects": {
+      "ok": true,
+      "detail": "Ogni controllo ha dominio, default, effetto, output e casi limite."
+    },
+    "p14_interaction": {
+      "ok": true,
+      "detail": "Solo interazioni motivate; le pagine statiche non espongono parametri."
+    },
+    "p14_neighbors": {
+      "ok": true,
+      "detail": "Vicini fisici corretti."
+    },
+    "p14_structural_height_budget": {
+      "ok": true,
+      "detail": "Budget 1080/1200 px; wrapping reale da verificare nel vertical slice."
+    },
+    "p15_control_effects": {
+      "ok": true,
+      "detail": "Ogni controllo ha dominio, default, effetto, output e casi limite."
+    },
+    "p15-control-1_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p15-control-2_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p15_interaction": {
+      "ok": true,
+      "detail": "Solo interazioni motivate; le pagine statiche non espongono parametri."
+    },
+    "p15_neighbors": {
+      "ok": true,
+      "detail": "Vicini fisici corretti."
+    },
+    "p15_structural_height_budget": {
+      "ok": true,
+      "detail": "Budget 1092/1200 px; wrapping reale da verificare nel vertical slice."
+    },
+    "p16_control_effects": {
+      "ok": true,
+      "detail": "Ogni controllo ha dominio, default, effetto, output e casi limite."
+    },
+    "p16-control-1_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p16-control-2_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p16_interaction": {
+      "ok": true,
+      "detail": "Solo interazioni motivate; le pagine statiche non espongono parametri."
+    },
+    "p16_neighbors": {
+      "ok": true,
+      "detail": "Vicini fisici corretti."
+    },
+    "p16_structural_height_budget": {
+      "ok": true,
+      "detail": "Budget 1162/1200 px; wrapping reale da verificare nel vertical slice."
+    },
+    "p17_control_effects": {
+      "ok": true,
+      "detail": "Ogni controllo ha dominio, default, effetto, output e casi limite."
+    },
+    "p17-control-1_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p17-control-2_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p17-control-3_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p17_interaction": {
+      "ok": true,
+      "detail": "Solo interazioni motivate; le pagine statiche non espongono parametri."
+    },
+    "p17_neighbors": {
+      "ok": true,
+      "detail": "Vicini fisici corretti."
+    },
+    "p17_structural_height_budget": {
+      "ok": true,
+      "detail": "Budget 1132/1200 px; wrapping reale da verificare nel vertical slice."
+    },
+    "p18_control_effects": {
+      "ok": true,
+      "detail": "Ogni controllo ha dominio, default, effetto, output e casi limite."
+    },
+    "p18-control-1_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p18-control-2_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p18_interaction": {
+      "ok": true,
+      "detail": "Solo interazioni motivate; le pagine statiche non espongono parametri."
+    },
+    "p18_neighbors": {
+      "ok": true,
+      "detail": "Vicini fisici corretti."
+    },
+    "p18_structural_height_budget": {
+      "ok": true,
+      "detail": "Budget 1092/1200 px; wrapping reale da verificare nel vertical slice."
+    },
+    "p19_control_effects": {
+      "ok": true,
+      "detail": "Ogni controllo ha dominio, default, effetto, output e casi limite."
+    },
+    "p19-control-1_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p19_interaction": {
+      "ok": true,
+      "detail": "Solo interazioni motivate; le pagine statiche non espongono parametri."
+    },
+    "p19_neighbors": {
+      "ok": true,
+      "detail": "Vicini fisici corretti."
+    },
+    "p19_structural_height_budget": {
+      "ok": true,
+      "detail": "Budget 1092/1200 px; wrapping reale da verificare nel vertical slice."
+    },
+    "p20_control_effects": {
+      "ok": true,
+      "detail": "Ogni controllo ha dominio, default, effetto, output e casi limite."
+    },
+    "p20-control-1_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p20-control-2_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p20-control-3_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p20_interaction": {
+      "ok": true,
+      "detail": "Solo interazioni motivate; le pagine statiche non espongono parametri."
+    },
+    "p20_neighbors": {
+      "ok": true,
+      "detail": "Vicini fisici corretti."
+    },
+    "p20_structural_height_budget": {
+      "ok": true,
+      "detail": "Budget 1102/1200 px; wrapping reale da verificare nel vertical slice."
+    },
+    "p21_control_effects": {
+      "ok": true,
+      "detail": "Ogni controllo ha dominio, default, effetto, output e casi limite."
+    },
+    "p21-control-1_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p21_interaction": {
+      "ok": true,
+      "detail": "Solo interazioni motivate; le pagine statiche non espongono parametri."
+    },
+    "p21_neighbors": {
+      "ok": true,
+      "detail": "Vicini fisici corretti."
+    },
+    "p21_structural_height_budget": {
+      "ok": true,
+      "detail": "Budget 1092/1200 px; wrapping reale da verificare nel vertical slice."
+    },
+    "p22_control_effects": {
+      "ok": true,
+      "detail": "Ogni controllo ha dominio, default, effetto, output e casi limite."
+    },
+    "p22-control-1_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p22-control-2_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p22_interaction": {
+      "ok": true,
+      "detail": "Solo interazioni motivate; le pagine statiche non espongono parametri."
+    },
+    "p22_neighbors": {
+      "ok": true,
+      "detail": "Vicini fisici corretti."
+    },
+    "p22_structural_height_budget": {
+      "ok": true,
+      "detail": "Budget 1102/1200 px; wrapping reale da verificare nel vertical slice."
+    },
+    "p23_control_effects": {
+      "ok": true,
+      "detail": "Ogni controllo ha dominio, default, effetto, output e casi limite."
+    },
+    "p23-control-1_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p23-control-2_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p23_interaction": {
+      "ok": true,
+      "detail": "Solo interazioni motivate; le pagine statiche non espongono parametri."
+    },
+    "p23_neighbors": {
+      "ok": true,
+      "detail": "Vicini fisici corretti."
+    },
+    "p23_structural_height_budget": {
+      "ok": true,
+      "detail": "Budget 1162/1200 px; wrapping reale da verificare nel vertical slice."
+    },
+    "p24_control_effects": {
+      "ok": true,
+      "detail": "Ogni controllo ha dominio, default, effetto, output e casi limite."
+    },
+    "p24_interaction": {
+      "ok": true,
+      "detail": "Solo interazioni motivate; le pagine statiche non espongono parametri."
+    },
+    "p24_neighbors": {
+      "ok": true,
+      "detail": "Vicini fisici corretti."
+    },
+    "p24_structural_height_budget": {
+      "ok": true,
+      "detail": "Budget 1080/1200 px; wrapping reale da verificare nel vertical slice."
+    },
+    "p25_control_effects": {
+      "ok": true,
+      "detail": "Ogni controllo ha dominio, default, effetto, output e casi limite."
+    },
+    "p25-control-1_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p25-control-2_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p25-control-3_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p25_interaction": {
+      "ok": true,
+      "detail": "Solo interazioni motivate; le pagine statiche non espongono parametri."
+    },
+    "p25_neighbors": {
+      "ok": true,
+      "detail": "Vicini fisici corretti."
+    },
+    "p25_structural_height_budget": {
+      "ok": true,
+      "detail": "Budget 1142/1200 px; wrapping reale da verificare nel vertical slice."
+    },
+    "p26_control_effects": {
+      "ok": true,
+      "detail": "Ogni controllo ha dominio, default, effetto, output e casi limite."
+    },
+    "p26-control-1_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p26-control-2_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p26-control-3_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p26_interaction": {
+      "ok": true,
+      "detail": "Solo interazioni motivate; le pagine statiche non espongono parametri."
+    },
+    "p26_neighbors": {
+      "ok": true,
+      "detail": "Vicini fisici corretti."
+    },
+    "p26_structural_height_budget": {
+      "ok": true,
+      "detail": "Budget 1092/1200 px; wrapping reale da verificare nel vertical slice."
+    },
+    "p27_control_effects": {
+      "ok": true,
+      "detail": "Ogni controllo ha dominio, default, effetto, output e casi limite."
+    },
+    "p27-control-1_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p27_interaction": {
+      "ok": true,
+      "detail": "Solo interazioni motivate; le pagine statiche non espongono parametri."
+    },
+    "p27_neighbors": {
+      "ok": true,
+      "detail": "Vicini fisici corretti."
+    },
+    "p27_structural_height_budget": {
+      "ok": true,
+      "detail": "Budget 1102/1200 px; wrapping reale da verificare nel vertical slice."
+    },
+    "p28_control_effects": {
+      "ok": true,
+      "detail": "Ogni controllo ha dominio, default, effetto, output e casi limite."
+    },
+    "p28_interaction": {
+      "ok": true,
+      "detail": "Solo interazioni motivate; le pagine statiche non espongono parametri."
+    },
+    "p28_neighbors": {
+      "ok": true,
+      "detail": "Vicini fisici corretti."
+    },
+    "p28_structural_height_budget": {
+      "ok": true,
+      "detail": "Budget 1080/1200 px; wrapping reale da verificare nel vertical slice."
+    },
+    "p29_control_effects": {
+      "ok": true,
+      "detail": "Ogni controllo ha dominio, default, effetto, output e casi limite."
+    },
+    "p29-control-1_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p29-control-2_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p29-control-3_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p29-control-4_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p29_interaction": {
+      "ok": true,
+      "detail": "Solo interazioni motivate; le pagine statiche non espongono parametri."
+    },
+    "p29_neighbors": {
+      "ok": true,
+      "detail": "Vicini fisici corretti."
+    },
+    "p29_structural_height_budget": {
+      "ok": true,
+      "detail": "Budget 1102/1200 px; wrapping reale da verificare nel vertical slice."
+    },
+    "p30_control_effects": {
+      "ok": true,
+      "detail": "Ogni controllo ha dominio, default, effetto, output e casi limite."
+    },
+    "p30-control-1_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p30-control-2_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p30-control-3_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p30_interaction": {
+      "ok": true,
+      "detail": "Solo interazioni motivate; le pagine statiche non espongono parametri."
+    },
+    "p30_neighbors": {
+      "ok": true,
+      "detail": "Vicini fisici corretti."
+    },
+    "p30_structural_height_budget": {
+      "ok": true,
+      "detail": "Budget 1092/1200 px; wrapping reale da verificare nel vertical slice."
+    },
+    "p31_control_effects": {
+      "ok": true,
+      "detail": "Ogni controllo ha dominio, default, effetto, output e casi limite."
+    },
+    "p31-control-1_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p31-control-2_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p31_interaction": {
+      "ok": true,
+      "detail": "Solo interazioni motivate; le pagine statiche non espongono parametri."
+    },
+    "p31_neighbors": {
+      "ok": true,
+      "detail": "Vicini fisici corretti."
+    },
+    "p31_structural_height_budget": {
+      "ok": true,
+      "detail": "Budget 1182/1200 px; wrapping reale da verificare nel vertical slice."
+    },
+    "p32_control_effects": {
+      "ok": true,
+      "detail": "Ogni controllo ha dominio, default, effetto, output e casi limite."
+    },
+    "p32_interaction": {
+      "ok": true,
+      "detail": "Solo interazioni motivate; le pagine statiche non espongono parametri."
+    },
+    "p32_neighbors": {
+      "ok": true,
+      "detail": "Vicini fisici corretti."
+    },
+    "p32_structural_height_budget": {
+      "ok": true,
+      "detail": "Budget 920/1200 px; wrapping reale da verificare nel vertical slice."
+    },
+    "p33_control_effects": {
+      "ok": true,
+      "detail": "Ogni controllo ha dominio, default, effetto, output e casi limite."
+    },
+    "p33-control-1_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p33-control-2_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p33_interaction": {
+      "ok": true,
+      "detail": "Solo interazioni motivate; le pagine statiche non espongono parametri."
+    },
+    "p33_neighbors": {
+      "ok": true,
+      "detail": "Vicini fisici corretti."
+    },
+    "p33_structural_height_budget": {
+      "ok": true,
+      "detail": "Budget 1092/1200 px; wrapping reale da verificare nel vertical slice."
+    },
+    "p34_control_effects": {
+      "ok": true,
+      "detail": "Ogni controllo ha dominio, default, effetto, output e casi limite."
+    },
+    "p34-control-1_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p34-control-2_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p34_interaction": {
+      "ok": true,
+      "detail": "Solo interazioni motivate; le pagine statiche non espongono parametri."
+    },
+    "p34_neighbors": {
+      "ok": true,
+      "detail": "Vicini fisici corretti."
+    },
+    "p34_structural_height_budget": {
+      "ok": true,
+      "detail": "Budget 1152/1200 px; wrapping reale da verificare nel vertical slice."
+    },
+    "p35_control_effects": {
+      "ok": true,
+      "detail": "Ogni controllo ha dominio, default, effetto, output e casi limite."
+    },
+    "p35-control-1_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p35-control-2_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p35-control-3_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p35_interaction": {
+      "ok": true,
+      "detail": "Solo interazioni motivate; le pagine statiche non espongono parametri."
+    },
+    "p35_neighbors": {
+      "ok": true,
+      "detail": "Vicini fisici corretti."
+    },
+    "p35_structural_height_budget": {
+      "ok": true,
+      "detail": "Budget 1092/1200 px; wrapping reale da verificare nel vertical slice."
+    },
+    "p36_control_effects": {
+      "ok": true,
+      "detail": "Ogni controllo ha dominio, default, effetto, output e casi limite."
+    },
+    "p36-control-1_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p36-control-2_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p36-control-3_domain": {
+      "ok": true,
+      "detail": "Default nel dominio, passo valido e unità esplicite; intervallo attribuito all'enrichment."
+    },
+    "p36_interaction": {
+      "ok": true,
+      "detail": "Solo interazioni motivate; le pagine statiche non espongono parametri."
+    },
+    "p36_neighbors": {
+      "ok": true,
+      "detail": "Vicini fisici corretti."
+    },
+    "p36_structural_height_budget": {
+      "ok": true,
+      "detail": "Budget 1102/1200 px; wrapping reale da verificare nel vertical slice."
+    },
+    "exact_f03_notice_text": {
+      "ok": true,
+      "detail": "Solo short_warning, testo esatto; nessun avviso per issue NO_WARNING."
+    },
+    "formula_provenance_and_corrections": {
+      "ok": true,
+      "detail": "Fonte→F03→display e calculation_policy; source_expression resta nei metadata."
+    },
+    "page_specs_byte_integrity": {
+      "ok": true,
+      "detail": "I 36 PAGE_SPEC, inclusa tutta l'analisi, sono identici agli input di F04."
+    },
+    "primary_reports_unchanged": {
+      "ok": true,
+      "detail": "Report PAGE ANALYSIS e review F03 immutati."
+    },
+    "original_sources_and_analysis_integrity": {
+      "ok": true,
+      "detail": "Baseline F03: 821 file immutabili, 137 PAGE_SPEC originali; errori=[]."
+    },
+    "reusable_components": {
+      "ok": true,
+      "detail": "13 componenti generali configurabili; specializzazioni richieste composte o motivate come differite."
+    },
+    "math_module_references": {
+      "ok": true,
+      "detail": "Ogni riferimento risolve un contratto di modulo."
+    },
+    "calculation_policy_16": {
+      "ok": true,
+      "detail": "Nessuna formula del costo con w₁ sul secondo scarto."
+    },
+    "calculation_policy_30": {
+      "ok": true,
+      "detail": "Ingressi e quote hanno domini temporali distinti."
+    },
+    "calculation_policy_34": {
+      "ok": true,
+      "detail": "La velocità è nulla; l'angolo può essere non nullo."
+    },
+    "pendulum_no_half": {
+      "ok": true,
+      "detail": "Nessun fattore ½ nel costo di p36."
+    },
+    "numerical_fixture_oracles": {
+      "ok": true,
+      "detail": "38/38 controlli aritmetici; nessun renderer, simulatore o solver implementato."
+    }
+  },
+  "numerical_fixture_checks": [
+    {
+      "id": "p2_cost",
+      "computed": 0.16000000000000003,
+      "expected": 0.16,
+      "tolerance": 1e-09,
+      "ok": true
+    },
+    {
+      "id": "p8_continuous",
+      "computed": 0.6321205588285577,
+      "expected": 0.6321205588285577,
+      "tolerance": 1e-09,
+      "ok": true
+    },
+    {
+      "id": "p9_update",
+      "computed": 1.0,
+      "expected": 1,
+      "tolerance": 1e-09,
+      "ok": true
+    },
+    {
+      "id": "p10_stack_terminal",
+      "computed": 1.25,
+      "expected": 1.25,
+      "tolerance": 1e-09,
+      "ok": true
+    },
+    {
+      "id": "p11_equilibrium",
+      "computed": 0.0,
+      "expected": 0,
+      "tolerance": 1e-09,
+      "ok": true
+    },
+    {
+      "id": "p12_exact",
+      "computed": 0.2100000000000002,
+      "expected": 0.21,
+      "tolerance": 1e-09,
+      "ok": true
+    },
+    {
+      "id": "p12_linear",
+      "computed": 0.2,
+      "expected": 0.2,
+      "tolerance": 1e-09,
+      "ok": true
+    },
+    {
+      "id": "p12_error",
+      "computed": 0.010000000000000002,
+      "expected": 0.01,
+      "tolerance": 1e-09,
+      "ok": true
+    },
+    {
+      "id": "p14_cost",
+      "computed": 0.25,
+      "expected": 0.25,
+      "tolerance": 1e-09,
+      "ok": true
+    },
+    {
+      "id": "p15_cost",
+      "computed": 0.5,
+      "expected": 0.5,
+      "tolerance": 1e-09,
+      "ok": true
+    },
+    {
+      "id": "p16_corrected_cost_matrix",
+      "computed": 2.5,
+      "expected": 2.5,
+      "tolerance": 1e-09,
+      "ok": true
+    },
+    {
+      "id": "p16_second_coordinate_only",
+      "computed": 2.0,
+      "expected": 2,
+      "tolerance": 1e-09,
+      "ok": true
+    },
+    {
+      "id": "p17_residual_exterior",
+      "computed": 3,
+      "expected": 3,
+      "tolerance": 1e-09,
+      "ok": true
+    },
+    {
+      "id": "p18_constrained_cost",
+      "computed": 0.5,
+      "expected": 0.5,
+      "tolerance": 1e-09,
+      "ok": true
+    },
+    {
+      "id": "p19_residual",
+      "computed": -0.30000000000000004,
+      "expected": -0.3,
+      "tolerance": 1e-09,
+      "ok": true
+    },
+    {
+      "id": "p20_total",
+      "computed": 1.25,
+      "expected": 1.25,
+      "tolerance": 1e-09,
+      "ok": true
+    },
+    {
+      "id": "p21_reachable_upper",
+      "computed": 0.8,
+      "expected": 0.8,
+      "tolerance": 1e-09,
+      "ok": true
+    },
+    {
+      "id": "p22_fixed_cost",
+      "computed": 0.25,
+      "expected": 0.25,
+      "tolerance": 1e-09,
+      "ok": true
+    },
+    {
+      "id": "p23_optimal_cost",
+      "computed": 0.25,
+      "expected": 0.25,
+      "tolerance": 1e-09,
+      "ok": true
+    },
+    {
+      "id": "p25_optimal_input",
+      "computed": 0.5,
+      "expected": 0.5,
+      "tolerance": 1e-09,
+      "ok": true
+    },
+    {
+      "id": "p26_hover_vertical",
+      "computed": 0.0,
+      "expected": 0,
+      "tolerance": 1e-09,
+      "ok": true
+    },
+    {
+      "id": "p26_asymmetric_vertical",
+      "computed": -0.8100000000000005,
+      "expected": -0.81,
+      "tolerance": 1e-09,
+      "ok": true
+    },
+    {
+      "id": "p26_asymmetric_angular",
+      "computed": 10.0,
+      "expected": 10,
+      "tolerance": 1e-09,
+      "ok": true
+    },
+    {
+      "id": "p27_euler_step1_position",
+      "computed": 0.0,
+      "expected": 0,
+      "tolerance": 1e-09,
+      "ok": true
+    },
+    {
+      "id": "p27_euler_step1_velocity",
+      "computed": 0.219,
+      "expected": 0.219,
+      "tolerance": 1e-09,
+      "ok": true
+    },
+    {
+      "id": "p27_euler_step2_position",
+      "computed": 0.021900000000000003,
+      "expected": 0.0219,
+      "tolerance": 1e-09,
+      "ok": true
+    },
+    {
+      "id": "p27_euler_final_position_closed_form",
+      "computed": 0.9855000000000002,
+      "expected": 0.9855,
+      "tolerance": 1e-09,
+      "ok": true
+    },
+    {
+      "id": "p27_continuous_final_position",
+      "computed": 1.095,
+      "expected": 1.095,
+      "tolerance": 1e-09,
+      "ok": true
+    },
+    {
+      "id": "p29_stage_cost",
+      "computed": 3.05,
+      "expected": 3.05,
+      "tolerance": 1e-09,
+      "ok": true
+    },
+    {
+      "id": "p30_upper_violation",
+      "computed": 0.20000000000000018,
+      "expected": 0.2,
+      "tolerance": 1e-09,
+      "ok": true
+    },
+    {
+      "id": "p31_functional",
+      "computed": 1.0,
+      "expected": 1,
+      "tolerance": 1e-09,
+      "ok": true
+    },
+    {
+      "id": "p32_terminal",
+      "computed": 0,
+      "expected": 0,
+      "tolerance": 1e-09,
+      "ok": true
+    },
+    {
+      "id": "p33_acceleration",
+      "computed": -4.904999999999999,
+      "expected": -4.905,
+      "tolerance": 1e-09,
+      "ok": true
+    },
+    {
+      "id": "p34_equilibrium_torque",
+      "computed": 4.904999999999999,
+      "expected": 4.905,
+      "tolerance": 1e-09,
+      "ok": true
+    },
+    {
+      "id": "p34_correct_velocity_condition",
+      "computed": 0,
+      "expected": 0,
+      "tolerance": 1e-09,
+      "ok": true
+    },
+    {
+      "id": "p34_dynamic_second_residual",
+      "computed": 8.881784197001252e-16,
+      "expected": 0,
+      "tolerance": 1e-09,
+      "ok": true
+    },
+    {
+      "id": "p35_second_branch_torque",
+      "computed": 4.904999999999999,
+      "expected": 4.905,
+      "tolerance": 1e-09,
+      "ok": true
+    },
+    {
+      "id": "p36_cost_no_half",
+      "computed": 3.228369533424113,
+      "expected": 3.228369533424113,
+      "tolerance": 1e-09,
+      "ok": true
+    }
+  ],
+  "limitations": [
+    "Budget di spazio strutturale, non prova di wrapping o accessibilità nel browser: gate della futura vertical slice.",
+    "Audit matematico dei fixture e dei contratti; grafici, simulazioni e solver non sono implementati né collaudati in F04.",
+    "Nessuna revisione umana dichiarata."
+  ],
+  "errors": [],
+  "DESIGNED_PAGES": "36/36",
+  "COMPANION_SUBPAGES": 0,
+  "INTERACTIVE_PAGES": 24,
+  "STATIC_PAGES": 12,
+  "REUSABLE_COMPONENTS": 13,
+  "UNRESOLVED_DESIGN_ISSUES": 0,
+  "READY_FOR_VERTICAL_SLICE": "YES",
+  "readiness_scope": "Autorizza a pianificare la successiva implementazione; F04 non la esegue."
+}

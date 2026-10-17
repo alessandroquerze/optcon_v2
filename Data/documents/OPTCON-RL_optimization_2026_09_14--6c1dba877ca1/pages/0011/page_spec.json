@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0011",
+  "document_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1",
+  "source": {
+    "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+    "page_index": 10,
+    "physical_page_number": 11,
+    "pdf_label_raw": "<FEFF00310030>",
+    "pdf_label": "10",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Convex functions",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      110.25894165039062,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 10,
+        "total": 73,
+        "raw": "10 |73",
+        "bbox": [
+          150.68800354003906,
+          247.92860412597656,
+          447.8712158203125,
+          258.29376220703125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0011/text.txt",
+      "sha256": "36fedeca33896087613f03d0d8391c08d1ebb658a4fe13e3f43047f78a563fa2"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0011/text.reading-order.txt",
+      "sha256": "7d3333afda82da1c8de1d3ec6cb006d8bd1a41cdb897acf3f6de6541fb090bae"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0011/layout.json",
+      "sha256": "cb2ed69cb0809ce44f13848f2c634d8b0fa58b2a838f219c22b9c67a862121f6"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0011/render.png",
+      "sha256": "5be73a1400a77ff7465dc6e971fc9a8e1aaf0c6e2a1267b764490b9867abbea3",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "e5827f3590d03888877502db24dc61b8514e78d6a556c33102f5a0936dbd74dc"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0010",
+    "next_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0012"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "pending",
+    "result": null
+  }
+}

@@ -1,0 +1,919 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0036",
+  "document_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc",
+  "source": {
+    "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+    "page_index": 35,
+    "physical_page_number": 36,
+    "pdf_label_raw": "<FEFF00330035>",
+    "pdf_label": "35",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Example: trajectory generation for a pendulum (IV)",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      313.30072021484375,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 35,
+        "total": 35,
+        "raw": "35 |35",
+        "bbox": [
+          126.9540023803711,
+          247.92860412597656,
+          447.8712158203125,
+          258.29376220703125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0036/text.txt",
+      "sha256": "fad688e02b088f9f172bc18570e7584f24b6904e22b6a3976efb66758058b462"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0036/text.reading-order.txt",
+      "sha256": "4b924da8dc56f9c971e9b42b4d78de0ec1d76378d24a53afbfbe1ced5be9270b"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0036/layout.json",
+      "sha256": "37f7f67e89e768ea5b0fb6ed5f4e521ae3a03233e64145f543c7a8fc526bf3f2"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0036/render.png",
+      "sha256": "42f90a411374e11c63db2d9d86a2a838533cc52f3ac40a3904f1ba38df349d3a",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "7b64c549b3f17b14b3d0736d3588b9716008d5c018ee26ef15eeff4711abb34a"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0035",
+    "next_page_id": null
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "proposed_after_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "needs_review",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "5464cb36ab28625f76bced83a27bbad8e76dbee1d6315048ccef49eb56d3c694",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0036",
+      "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+      "artifact_sha256": {
+        "text": "fad688e02b088f9f172bc18570e7584f24b6904e22b6a3976efb66758058b462",
+        "layout": "37f7f67e89e768ea5b0fb6ed5f4e521ae3a03233e64145f543c7a8fc526bf3f2",
+        "render": "42f90a411374e11c63db2d9d86a2a838533cc52f3ac40a3904f1ba38df349d3a"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "Codex (identificatore esatto del modello non esposto nella sessione)",
+        "run_id": "page-analysis-ce370a19242e4173828aef04d60c36ee"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0036",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0035"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0036",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0035"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0036",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0035"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Pendulum (IV) — problema di controllo ottimo",
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Non è mostrata una soluzione, una simulazione, un algoritmo o un risultato di convergenza.",
+          "Non sono imposti esplicitamente x(T)=x_e², saturazioni o altri path constraints: il terminale qui è penalizzato, non fissato.",
+          "Nessun peso o dato iniziale numerico è assegnato.",
+          "Non inserire fattori 1/2 né sostituire sinx₁ con x₁.",
+          "Mantenere la variazione l/ℓ e dichiarare l'identificazione negli esempi."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Funzionale continuo e 𝓕",
+            "why": "Per leggere la variabile funzionale e l'integrale.",
+            "origin": "source_context",
+            "page_numbers": [
+              31,
+              32
+            ]
+          },
+          {
+            "concept": "Dinamica del pendolo",
+            "why": "Per leggere i vincoli.",
+            "origin": "source_context",
+            "page_numbers": [
+              33
+            ]
+          },
+          {
+            "concept": "Curva desiderata a gradino",
+            "why": "Determina le funzioni di riferimento del costo.",
+            "origin": "source_context",
+            "page_numbers": [
+              35
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\begin{aligned}\\min_{(x(\\cdot),u(\\cdot))\\in\\mathcal F}\\;&\\int_0^T\\big[q_1(x_1(\\tau)-x_1^{\\mathrm{des}}(\\tau))^2+q_2x_2(\\tau)^2+r(u(\\tau)-u^{\\mathrm{des}}(\\tau))^2\\big]d\\tau\\\\&+q_{T1}(x_1(T)-x_1^{\\mathrm{des}}(T))^2+q_{T2}x_2(T)^2\\\\\\text{subj.to }&\\dot x_1(t)=x_2(t)\\\\&\\dot x_2(t)=-\\frac{g}{l}\\sin x_1(t)+\\frac{1}{m\\ell^2}u(t)\\\\&x(0)=x^0\\end{aligned}",
+            "anchor": "The optimal control problem then reads",
+            "notes": "Fattori esattamente come nella fonte: nessun 1/2."
+          },
+          {
+            "latex": "Q=\\begin{bmatrix}q_1&0\\\\0&q_2\\end{bmatrix},\\quad Q_T=\\begin{bmatrix}q_{T1}&0\\\\0&q_{T2}\\end{bmatrix},\\quad R=r",
+            "anchor": "where we chose as weight matrices",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "example-1",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "Enrichment: l=ℓ=m=1,g=9.81,T=2,x⁰=(0,0); riferimento di pagina 35 da θ_e¹=0 a θ_e²=π/6 a t=1, con u_e¹=0,u_e²=4.905. Candidata costante x=(0,0),u=0; q₁=q₂=q_{T2}=1,r=0.1,q_{T1}=2.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Su una candidata esattamente fattibile e analitica si possono modificare alcuni pesi e vedere quali addendi cambiano, senza simulare un ottimizzatore inesistente.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "id": "visualization",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Formula con zone obiettivo/dinamica/inizializzazione e registro del costo della sola candidata dichiarata; nessuna curva ottima inventata.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Valutare il costo di una traiettoria fattibile senza spacciarla per ottima e mantenere l'assenza di 1/2.",
+            "setup": "Enrichment: l=ℓ=m=1,g=9.81,T=2,x⁰=(0,0); riferimento di pagina 35 da θ_e¹=0 a θ_e²=π/6 a t=1, con u_e¹=0,u_e²=4.905. Candidata costante x=(0,0),u=0; q₁=q₂=q_{T2}=1,r=0.1,q_{T1}=2.",
+            "parameters": [
+              {
+                "symbol": "α=θ_e²",
+                "value": "π/6"
+              },
+              {
+                "symbol": "r,q_1,q_{T1}",
+                "value": "0.1,1,2"
+              },
+              {
+                "symbol": "T",
+                "value": "2"
+              }
+            ],
+            "derivation": [
+              "La candidata soddisfa la dinamica e l'inizializzazione; non raggiunge il secondo equilibrio, ma non esiste un vincolo terminale hard in questa istanza.",
+              "Primo secondo: costo corrente zero.",
+              "Secondo secondo: q₁α²+r·4.905²≈2.68005818.",
+              "Termine terminale: q_{T1}α²≈0.54831136.",
+              "Totale≈3.22836953; i termini su x₂ sono nulli."
+            ],
+            "expected_outcome": "Un costo finito non certifica raggiungimento esatto né ottimalità; il fattore 1/2 cambierebbe erroneamente il valore riportato dalla formula sorgente.",
+            "limitations": [
+              "Tutti i numeri e la candidata sono enrichment.",
+              "Non è una soluzione dell'OCP.",
+              "La scelta degli equilibri usa la dinamica e le identificazioni esplicite, tenendo distinto il refuso della pagina 34."
+            ],
+            "enrichment_id": "example-1",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "PendulumOCPAnnotatedFormulaAndCostLedger",
+          "description": "Formula con zone obiettivo/dinamica/inizializzazione e registro del costo della sola candidata dichiarata; nessuna curva ottima inventata.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Su una candidata esattamente fattibile e analitica si possono modificare alcuni pesi e vedere quali addendi cambiano, senza simulare un ottimizzatore inesistente.",
+          "component": "FixedPendulumCandidateCostInspector",
+          "parameters": [
+            {
+              "name": "Peso tracking angolare",
+              "symbol": "q_1",
+              "origin": "source",
+              "range": "[0,5]",
+              "default": "1",
+              "effect_on_change": "Aggiornare il contributo integrale q₁α² su un secondo e il totale; la candidata resta ferma.",
+              "edge_cases": [
+                "q₁=0: quel contributo scompare"
+              ]
+            },
+            {
+              "name": "Peso ingresso",
+              "symbol": "r",
+              "origin": "source",
+              "range": "[0.01,2]",
+              "default": "0.1",
+              "effect_on_change": "Aggiornare il contributo r·4.905² sul secondo intervallo; non cambiare u della candidata.",
+              "edge_cases": [
+                "Ingresso della candidata diverso dal desiderato, non oltre un limite hard"
+              ]
+            },
+            {
+              "name": "Peso terminale angolare",
+              "symbol": "q_{T1}",
+              "origin": "source",
+              "range": "[0,5]",
+              "default": "2",
+              "effect_on_change": "Aggiornare il solo contributo q_{T1}α² e il totale.",
+              "edge_cases": [
+                "q_{T1}=0: nessuna penalità terminale angolare in questo esempio"
+              ]
+            }
+          ],
+          "outputs": [
+            "Contributi correnti e terminali",
+            "Costo totale",
+            "Etichetta 'candidata fattibile, non ottima'"
+          ],
+          "invariants": [
+            "Candidata x=0,u=0 e riferimento fissati",
+            "q₂ e q_{T2} fissati con contributo zero perché x₂=0",
+            "Nessun ricalcolo di ottimo",
+            "Nessun fattore 1/2",
+            "Range/default sono enrichment"
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "Terminal target non raggiunto",
+            "expected_behavior": "Può ancora essere una candidata ammissibile perché qui c'è penalità e non uguaglianza terminale.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "case": "Pesi nulli su alcune componenti",
+            "expected_behavior": "Non garantire unicità o tracking esatto.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "case": "Sostituire il riferimento a gradino alla soluzione",
+            "expected_behavior": "Viola la dinamica per equilibri distinti, anche se darebbe basso costo formale.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "case": "Fattori 1/2 aggiunti per abitudine",
+            "expected_behavior": "Non cambiare la formula sorgente; ogni eventuale normalizzazione va dichiarata come enrichment.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          }
+        ],
+        "expansion_rationale": "È la sintesi finale di dinamica, desiderato e pesi già introdotti: una formula annotata e una valutazione semplice sono sufficienti senza espansione.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Cercare una traiettoria fisica vicina al desiderato mediante un costo integrale e terminale, senza inventare una soluzione.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ],
+            "enrichment_ids": [
+              "example-1",
+              "interaction",
+              "visualization"
+            ]
+          }
+        ]
+      },
+      "observations": [
+        {
+          "id": "s01",
+          "category": "equation",
+          "description": "Il costo integrale somma q₁(x₁−x₁^{des})², q₂x₂² e r(u−u^{des})²; sono aggiunti q_{T1}(x₁(T)−x₁^{des}(T))² e q_{T2}x₂(T)².",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0036",
+            "modality": "both",
+            "text_quote": "q1(x1(τ)",
+            "bbox": [
+              81,
+              51,
+              425,
+              96
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s02",
+          "category": "structure",
+          "description": "Nel costo mostrato non compaiono fattori 1/2: non vanno introdotti automaticamente dalla convenzione delle pagine quadratiche precedenti.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0036",
+            "modality": "both",
+            "text_quote": "The optimal control problem then reads",
+            "bbox": [
+              81,
+              51,
+              425,
+              96
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s03",
+          "category": "equation",
+          "description": "La traiettoria cercata deve soddisfare ẋ₁=x₂, ẋ₂=−(g/l)sinx₁+u/(mℓ²) e x(0)=x⁰.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0036",
+            "modality": "both",
+            "text_quote": "x(0) = x0",
+            "bbox": [
+              108,
+              97,
+              291,
+              137
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s04",
+          "category": "definition",
+          "description": "La pagina sceglie Q=diag(q₁,q₂), Q_T=diag(q_{T1},q_{T2}) e R=r.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0036",
+            "modality": "both",
+            "text_quote": "where we chose as weight matrices",
+            "bbox": [
+              27,
+              145,
+              422,
+              171
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-05",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Example: trajectory generation for a pendulum (IV)",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0036",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              10.35200023651123,
+              6.720991134643555,
+              313.30072021484375,
+              21.06719207763672
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-06",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: The optimal control problem then reads",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0036",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              28.34600067138672,
+              35.43647766113281,
+              181.98526000976562,
+              44.40287780761719
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-07",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 35 |35",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0036",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              126.9540023803711,
+              247.92860412597656,
+              447.8712158203125,
+              255.1179962158203
+            ]
+          },
+          "confidence": 0.98
+        }
+      ],
+      "contextual_role": "Chiude il documento formulando l'OCP che approssima il riferimento non fattibile senza violare la dinamica del pendolo.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0035",
+          "role": "previous",
+          "note": "La pagina 35 definisce x₁^{des},x₂^{des}=0 e u^{des}; il costo usa i riferimenti, non li impone come traiettoria."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "q_1",
+          "meaning": "Peso del tracking angolare corrente",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        {
+          "symbol": "q_2",
+          "meaning": "Peso della velocità angolare corrente",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        {
+          "symbol": "r",
+          "meaning": "Peso scalare della deviazione dell'ingresso, non la funzione di endpoint delle pagine generali",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        {
+          "symbol": "q_{T1},q_{T2}",
+          "meaning": "Pesi terminali di errore angolare e velocità",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        {
+          "symbol": "x^0",
+          "meaning": "Dato iniziale; non è assegnato numericamente nella fonte",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        {
+          "symbol": "\\tau",
+          "meaning": "Variabile d'integrazione, mentre l'ingresso meccanico è qui u",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        {
+          "symbol": "l,\\ell",
+          "meaning": "Glifi della lunghezza conservati nei denominatori",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        }
+      ],
+      "uncertainties": [
+        {
+          "description": "Il modello ripete i glifi l e ℓ; i calcoli esemplificativi assumono esplicitamente che rappresentino la stessa lunghezza. Nessuna uniformazione viene applicata alla trascrizione.",
+          "blocking": false,
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        }
+      ],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ],
+        "rationale": "Pagina con contenuto autonomo nella sequenza; nessun candidato automatico da confermare."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              10.35200023651123,
+              6.720991134643555,
+              313.30072021484375,
+              21.06719207763672
+            ],
+            "description": "Regione testuale sorgente: Example: trajectory generation for a pendulum (IV)",
+            "observation_ids": [
+              "transcription-05"
+            ]
+          },
+          {
+            "bbox": [
+              28.34600067138672,
+              35.43647766113281,
+              181.98526000976562,
+              44.40287780761719
+            ],
+            "description": "Regione testuale sorgente: The optimal control problem then reads",
+            "observation_ids": [
+              "transcription-06"
+            ]
+          },
+          {
+            "bbox": [
+              85.12000274658203,
+              59.97247314453125,
+              128.01461791992188,
+              78.62376403808594
+            ],
+            "description": "Regione testuale sorgente: min\n(x(·),u(·))∈F",
+            "observation_ids": [
+              "s01",
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              135.27798461914062,
+              50.29180908203125,
+              148.86361694335938,
+              63.154823303222656
+            ],
+            "description": "Regione testuale sorgente: Z T",
+            "observation_ids": [
+              "s01",
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              140.3979949951172,
+              58.000328063964844,
+              210.3679962158203,
+              76.69340515136719
+            ],
+            "description": "Regione testuale sorgente: 0\nq1(x1(τ) −xdes",
+            "observation_ids": [
+              "s01",
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              201.8319854736328,
+              55.66448974609375,
+              367.39703369140625,
+              70.51588439941406
+            ],
+            "description": "Regione testuale sorgente: 1 (τ))2 + q2x2(τ)2 + r(u(τ) −udes(τ))2dτ",
+            "observation_ids": [
+              "s01",
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              135.79013061523438,
+              78.91231536865234,
+              210.4181671142578,
+              90.38140869140625
+            ],
+            "description": "Regione testuale sorgente: + qT 1(x1(T) −xdes",
+            "observation_ids": [
+              "s01",
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              201.8821563720703,
+              76.57646179199219,
+              284.19549560546875,
+              91.42787170410156
+            ],
+            "description": "Regione testuale sorgente: 1 (T))2 + qT 2x2(T)2",
+            "observation_ids": [
+              "s01",
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              102.61918640136719,
+              103.84745788574219,
+              128.63072204589844,
+              112.81385803222656
+            ],
+            "description": "Regione testuale sorgente: subj.to",
+            "observation_ids": [
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              135.27818298339844,
+              94.95539093017578,
+              142.70236206054688,
+              103.92179107666016
+            ],
+            "description": "Regione testuale sorgente: (",
+            "observation_ids": [
+              "s01",
+              "s02",
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              142.70217895507812,
+              97.66046142578125,
+              194.7317657470703,
+              120.30938720703125
+            ],
+            "description": "Regione testuale sorgente: ˙x1(t) = x2(t)\n˙x2(t) = −g",
+            "observation_ids": [
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              183.94500732421875,
+              109.66180419921875,
+              265.5015563964844,
+              122.82087707519531
+            ],
+            "description": "Regione testuale sorgente: l sin x1(t) +\n1\nmℓ2 u(t)",
+            "observation_ids": [
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              133.74200439453125,
+              125.41679382324219,
+              171.90431213378906,
+              136.16688537597656
+            ],
+            "description": "Regione testuale sorgente: x(0) = x0",
+            "observation_ids": [
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              28.345993041992188,
+              152.65447998046875,
+              182.5301513671875,
+              161.62088012695312
+            ],
+            "description": "Regione testuale sorgente: where we chose as weight matrices Q =",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              185.09300231933594,
+              146.45240783691406,
+              215.95831298828125,
+              167.58241271972656
+            ],
+            "description": "Regione testuale sorgente: \u0014q1\n0\n0\nq2",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              216.45700073242188,
+              146.45240783691406,
+              221.31678771972656,
+              155.41880798339844
+            ],
+            "description": "Regione testuale sorgente: \u0015",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              221.32000732421875,
+              152.65447998046875,
+              249.7811737060547,
+              162.61688232421875
+            ],
+            "description": "Regione testuale sorgente: , QT =",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              252.3450164794922,
+              146.45240783691406,
+              293.8873291015625,
+              167.58241271972656
+            ],
+            "description": "Regione testuale sorgente: \u0014qT 1\n0\n0\nqT 2",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              294.3860168457031,
+              146.45240783691406,
+              299.2458190917969,
+              155.41880798339844
+            ],
+            "description": "Regione testuale sorgente: \u0015",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              299.2500305175781,
+              152.65447998046875,
+              331.18243408203125,
+              161.62088012695312
+            ],
+            "description": "Regione testuale sorgente: , R = r.",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              126.9540023803711,
+              247.92860412597656,
+              447.8712158203125,
+              255.1179962158203
+            ],
+            "description": "Regione testuale sorgente: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 35 |35",
+            "observation_ids": [
+              "transcription-07"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "È la sintesi finale di dinamica, desiderato e pesi già introdotti: una formula annotata e una valutazione semplice sono sufficienti senza espansione.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1,
+  "source_warning": {
+    "policy_version": "1.0.0",
+    "scope": "companion_only",
+    "type": "NO_WARNING",
+    "review_status": "resolved",
+    "issues": [
+      {
+        "issue_id": "intro-p36-issue-1",
+        "source_issue_index": 0,
+        "issue": "Glifi della lunghezza nel modello finale",
+        "type": "NO_WARNING",
+        "source_expression": "g/l;\\qquad 1/(m\\ell^2).",
+        "corrected_expression": null,
+        "companion_uses": "Equazioni e costo della fonte conservati; l≡ℓ è un solo parametro di lunghezza.",
+        "short_warning": null,
+        "correction_reason": "La variazione tipografica è la stessa del modello di pagina 33 e non introduce un nuovo grado di libertà. La convenzione di lunghezza unica risolve la valutazione numerica senza un ulteriore avviso. Restano intatti i fattori di costo della fonte, inclusa l'assenza di 1/2.",
+        "use_corrected_value_for_examples": false,
+        "use_corrected_value_for_simulation": false,
+        "resolved": true,
+        "source_references": [
+          "/analysis/result/didactic_plan/source_math/0"
+        ],
+        "context_pages_consulted": [
+          33,
+          34
+        ],
+        "calculation_policy": "Usare la stessa lunghezza positiva nei due denominatori e nella coppia desiderata delle pagine 34–35. Nessun fattore 1/2 aggiunto al costo; nessun warning tipografico ridondante.",
+        "ui": {
+          "show": false,
+          "color": null,
+          "placement": null,
+          "when": null,
+          "student_text_field": "short_warning"
+        }
+      }
+    ],
+    "companion_overrides": [],
+    "technical_only_legacy_paths": [],
+    "original_analysis_sha256": "6323eebc6319b9cb9430516176cba4d58505aae85320156847d270c64c101110"
+  }
+}

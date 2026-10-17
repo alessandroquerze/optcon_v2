@@ -1,0 +1,23 @@
+Quadratic Programming (unconstrained): optimality conditions
+
+     First-order necessary condition for optimality:  if z⋆is a minimum then
+
+                                  ∇ℓ(z⋆) = 0 =⇒Qz⋆+ q = 0
+
+
+    Second-order necessary condition for optimality:  if z⋆is a minimum then
+
+                                     ∇2ℓ(z⋆) ≥0 =⇒Q ≥0
+
+
+
+
+                                     Important
+       A necessary condition for the existence of minima for a quadratic program is that Q ≥0.
+         Thus, quadratic programs admitting at least a minimum are convex optimization problems.
+
+
+
+
+
+                                                      Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 23 |73

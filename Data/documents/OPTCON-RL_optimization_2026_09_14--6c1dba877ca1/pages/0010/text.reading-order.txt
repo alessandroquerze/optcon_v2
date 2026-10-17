@@ -1,0 +1,24 @@
+Convex sets
+
+    Convex set
+   A set Z ⊂Rd is convex if for any two points zA and zB in Z and for all θ ∈[0, 1], then
+
+                                    θzA + (1 −θ)zB ∈Z.
+
+
+
+
+
+                                      zB
+
+
+                               Z                               zA
+
+
+                                Convex set              Nonconvex set
+
+
+
+
+
+                                                       Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 9 |73

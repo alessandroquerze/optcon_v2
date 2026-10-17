@@ -1,0 +1,12 @@
+Unconstrained optimization: introduction
+Consider the unconstrained optimization problem
+min
+z∈Rd ℓ(z),
+with ℓ: Rd →R a cost function to be minimized and z a decision vector.
+We say that z⋆is a
+• global minimum if ℓ(z⋆) ≤ℓ(z) for all z ∈Rd
+• strict global minimum if ℓ(z⋆) < ℓ(z) for all z̸ = z⋆
+• local minimum if there exists ϵ > 0 such that ℓ(z⋆) ≤ℓ(z) for all
+z ∈B(z⋆, ϵ) = {z ∈Rd | ∥z −z⋆∥< ϵ}
+• strict local minimum if there exists ϵ > 0 such that ℓ(z⋆) < ℓ(z) for all z ∈B(z⋆, ϵ) and z̸ = z⋆.
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 2 |73

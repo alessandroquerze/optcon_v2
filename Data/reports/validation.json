@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "document_count": 3,
+  "page_count": 137,
+  "validated_pages": 137,
+  "analysis_status_counts": {
+    "analyzed": 25,
+    "needs_review": 11,
+    "pending": 101
+  },
+  "requests_checked": true,
+  "validated_requests": 137,
+  "relation_pair_counts": {
+    "progressive_candidate": 10,
+    "near_duplicate": 1
+  },
+  "extraction_warnings": [],
+  "errors": [],
+  "companion_generation_enabled": false,
+  "all_pages_individually_analyzed": false,
+  "all_pages_have_analysis": false,
+  "human_review_performed": false
+}

@@ -1,0 +1,23 @@
+Example: trajectory generation for a pendulum (II)
+
+
+  Task
+  Transfer the pendulum from an equilibrium to another one.
+
+  Equilibrium conditions
+
+                 0 = x1,e                                              θ1e                          θ2e                                                             How to?
+                 0 = −g sin x1,e +  1  ue                           u1e                     u2e
+                                      l         mℓ2
+
+  then, the first equilibrium is
+
+                    θ1e            x1e =               u1e = mgℓsin θ1e                  0
+
+ A similar reasoning holds for the second equilibrium (x2e, u2e).
+
+
+
+
+
+                                            Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 33 |35

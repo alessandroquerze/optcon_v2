@@ -1,0 +1,577 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0007",
+  "document_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc",
+  "source": {
+    "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+    "page_index": 6,
+    "physical_page_number": 7,
+    "pdf_label_raw": "<FEFF0036>",
+    "pdf_label": "6",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Optimal Control: motivating domains",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      230.5518035888672,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 6,
+        "total": 35,
+        "raw": "6 |35",
+        "bbox": [
+          130.12982177734375,
+          247.92860412597656,
+          447.87103271484375,
+          258.29376220703125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0007/text.txt",
+      "sha256": "ef2da4d5100f6315f17495e5783189100085ee17499a2bcf922668ea82e93d9b"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0007/text.reading-order.txt",
+      "sha256": "a2cbad02eec5eb5fa18afcc1686415e5608467325f4999d12bf2fca0b06f834e"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0007/layout.json",
+      "sha256": "9ef7b35d59d05d48038241c3d5da9b6d3ccd89430ba121328c758e4874a4bb21"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0007/render.png",
+      "sha256": "ba888133344a6f10b21b3951202eaf8c29fb0b13a4863fe8a7cbf2bcf2aed1ce",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "81e88e455109b3845f604aad35cdb3ec3af1b3c7fe5a1445b5723774d7b24f09"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0006",
+    "next_page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0008"
+  },
+  "relations": [
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0006",
+      "kind": "progressive_candidate",
+      "confidence": 0.7,
+      "review_status": "candidate",
+      "reason": "Pagine adiacenti con titolo/label condiviso e contenuto compatibile con un overlay; direzione da confermare visivamente.",
+      "metrics": {
+        "text_jaccard": 0.6375,
+        "text_containment": 0.836066,
+        "left_tokens": 70,
+        "right_tokens": 61,
+        "visual_difference": 0.055664,
+        "ink_overlap": 0.30695,
+        "dhash_distance": 11
+      },
+      "delta_in_physical_order": {
+        "text": {
+          "added_lines": [
+            "Space systems",
+            "(desired orbit, velocities,...)",
+            "• energy consumption",
+            "• geometric (orbit, orientation wrt sun/Earth, ...)",
+            "Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 6 |35"
+          ],
+          "removed_lines": [
+            "Autonomous aerial vehicles (drones)",
+            "(given 3D path, velocities,...)",
+            "• fuel/battery consumption",
+            "• exploration cost",
+            "• geometric (buildings, other obstacles, attitude,...)",
+            "Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 5 |35"
+          ],
+          "semantic_interpretation": "pending_visual_analysis"
+        },
+        "visual": {
+          "changed_bbox_px": [
+            57,
+            69,
+            874,
+            505
+          ],
+          "pixel_threshold": 16,
+          "changed_pixel_fraction": 0.113231
+        }
+      }
+    }
+  ],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "proposed_after_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "276c1dea7c32d2a56005070538b75adb5a6ec525e7d86df06ea72b02f64e5070",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0007",
+      "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+      "artifact_sha256": {
+        "text": "ef2da4d5100f6315f17495e5783189100085ee17499a2bcf922668ea82e93d9b",
+        "layout": "9ef7b35d59d05d48038241c3d5da9b6d3ccd89430ba121328c758e4874a4bb21",
+        "render": "ba888133344a6f10b21b3951202eaf8c29fb0b13a4863fe8a7cbf2bcf2aed1ce"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "Codex (identificatore esatto del modello non esposto nella sessione)",
+        "run_id": "page-analysis-ce370a19242e4173828aef04d60c36ee"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0007",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0006",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0008"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0007",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0006",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0008"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0007",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0006",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0008"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Motivating domains — Space systems",
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Nessuna orbita, costante gravitazionale, modello energetico o legge di orientamento viene assegnata.",
+          "Non si può dedurre che il satellite raffigurato sia la soluzione di un problema ottimo presentato nella slide."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Performance index e constraints",
+            "why": "Per interpretare l'ultimo esempio applicativo.",
+            "origin": "source_context",
+            "page_numbers": [
+              2
+            ]
+          },
+          {
+            "concept": "Orbita e orientamento",
+            "why": "Vocabolario illustrativo; non serve introdurre dinamica orbitale completa.",
+            "origin": "enrichment",
+            "page_numbers": []
+          }
+        ],
+        "source_math": [],
+        "enrichments": [
+          {
+            "id": "example-1",
+            "label": "enrichment",
+            "type": "conceptual_example",
+            "proposal": "Enrichment: confrontare due manovre di assetto, una energeticamente più economica ma incompatibile con un orientamento imposto verso Sole/Terra e una ammissibile.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Distinguere orientamento consentito e consumo da minimizzare.",
+            "setup": "Enrichment: confrontare due manovre di assetto, una energeticamente più economica ma incompatibile con un orientamento imposto verso Sole/Terra e una ammissibile.",
+            "parameters": [],
+            "derivation": [
+              "Verificare prima l'orientamento richiesto.",
+              "Confrontare consumo o tempo soltanto fra le manovre ammissibili."
+            ],
+            "expected_outcome": "Un indice energetico favorevole non elimina il vincolo di orientamento.",
+            "limitations": [
+              "Esempio concettuale; non è un modello orbitale o un dato della fonte."
+            ],
+            "enrichment_id": "example-1",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "SpaceMissionObjectiveConstraintMap",
+          "description": "Schema statico obiettivi/vincoli con riferimenti alle immagini originali.",
+          "origin": "source_derived",
+          "source_observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        "interactivity": {
+          "recommended": false,
+          "rationale": "Una simulazione orbitale aggiungerebbe quasi tutto il modello fisico; la pagina richiede soltanto una lettura concettuale.",
+          "component": null,
+          "parameters": [],
+          "outputs": [],
+          "invariants": [],
+          "enrichment_id": null
+        },
+        "edge_cases": [
+          {
+            "case": "Orientamenti incompatibili simultaneamente",
+            "expected_behavior": "Dichiarare che i requisiti potrebbero non essere realizzabili, senza inventare una soluzione.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un solo dominio applicativo, senza derivazioni o risultati numerici da distribuire.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Sistemi spaziali: scegliere una prestazione rispettando vincoli di orbita e orientamento.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ],
+            "enrichment_ids": [
+              "example-1"
+            ]
+          }
+        ]
+      },
+      "observations": [
+        {
+          "id": "s01",
+          "category": "structure",
+          "description": "Il dominio applicativo è Space systems.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0007",
+            "modality": "both",
+            "text_quote": "Space systems",
+            "bbox": [
+              28.34600067138672,
+              34.63948059082031,
+              83.5162582397461,
+              43.60588073730469
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s02",
+          "category": "concept",
+          "description": "Gli indici citati sono distanza dal comportamento desiderato (orbita e velocità), consumo energetico e tempo minimo.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0007",
+            "modality": "both",
+            "text_quote": "desired orbit, velocities,...",
+            "bbox": [
+              28,
+              52,
+              295,
+              118
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s03",
+          "category": "assumption",
+          "description": "I vincoli geometrici riguardano orbita e orientamento rispetto a Sole/Terra; l'ingresso citato è thrust e i limiti interni riguardano velocità angolari e lineari.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0007",
+            "modality": "both",
+            "text_quote": "geometric (orbit, orientation wrt sun/Earth, ...)",
+            "bbox": [
+              28,
+              123,
+              297,
+              179
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s04",
+          "category": "diagram",
+          "description": "Le immagini mostrano un satellite con pannelli e un oggetto con riferimenti di orientamento: illustrano sistemi spaziali, senza specificare equazioni orbitali o dati di una missione.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0007",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              298,
+              50,
+              386,
+              178
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-05",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Optimal Control: motivating domains",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0007",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              10.35200023651123,
+              6.720991134643555,
+              230.5518035888672,
+              21.06719207763672
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-06",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 6 |35",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0007",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              130.12982177734375,
+              247.92860412597656,
+              447.87103271484375,
+              255.1179962158203
+            ]
+          },
+          "confidence": 0.98
+        }
+      ],
+      "contextual_role": "Conclude la rassegna motivazionale prima della formalizzazione dei sistemi dinamici.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0006",
+          "role": "previous",
+          "note": "La pagina 6 tratta droni; qui cambiano dominio, esempi di indice, vincoli geometrici e immagini. Il candidato di somiglianza non è un overlay."
+        },
+        {
+          "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0008",
+          "role": "next",
+          "note": "La pagina 8 introduce stato, ingresso, uscita ed equazioni a tempo continuo; queste equazioni non sono ancora specifiche del satellite."
+        }
+      ],
+      "notation": [],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0006"
+        ],
+        "added": [],
+        "removed": [],
+        "changed": [
+          "Droni → sistemi spaziali; percorso 3D/esplorazione → orbita/orientamento Sole-Terra."
+        ],
+        "observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ],
+        "rationale": "Il candidato 6↔7 è respinto dopo confronto di testo e immagini: struttura condivisa ma contenuto distinto."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              10.35200023651123,
+              6.720991134643555,
+              230.5518035888672,
+              21.06719207763672
+            ],
+            "description": "Regione testuale sorgente: Optimal Control: motivating domains",
+            "observation_ids": [
+              "transcription-05"
+            ]
+          },
+          {
+            "bbox": [
+              28.34600067138672,
+              34.63948059082031,
+              83.5162582397461,
+              43.60588073730469
+            ],
+            "description": "Regione testuale sorgente: Space systems",
+            "observation_ids": [
+              "s01"
+            ]
+          },
+          {
+            "bbox": [
+              32.125,
+              51.575439453125,
+              103.15682983398438,
+              60.541839599609375
+            ],
+            "description": "Regione testuale sorgente: Performance index",
+            "observation_ids": [
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              43.88100051879883,
+              66.40323638916016,
+              180.3064727783203,
+              86.44483947753906
+            ],
+            "description": "Regione testuale sorgente: • distance from desired “behavior”\n(desired orbit, velocities,...)",
+            "observation_ids": [
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              43.88100051879883,
+              92.30623626708984,
+              130.70436096191406,
+              101.38883972167969
+            ],
+            "description": "Regione testuale sorgente: • energy consumption",
+            "observation_ids": [
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              43.88100051879883,
+              107.25023651123047,
+              109.82162475585938,
+              116.33283996582031
+            ],
+            "description": "Regione testuale sorgente: • minimum time",
+            "observation_ids": [
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              32.125,
+              122.31044006347656,
+              75.63894653320312,
+              131.27684020996094
+            ],
+            "description": "Regione testuale sorgente: Constraints",
+            "observation_ids": [
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              43.88100051879883,
+              137.1382293701172,
+              237.1534423828125,
+              146.22084045410156
+            ],
+            "description": "Regione testuale sorgente: • geometric (orbit, orientation wrt sun/Earth, ...)",
+            "observation_ids": [
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              43.88100051879883,
+              152.0822296142578,
+              110.37754821777344,
+              161.1648406982422
+            ],
+            "description": "Regione testuale sorgente: • inputs (thrust)",
+            "observation_ids": [
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              43.88100051879883,
+              167.02622985839844,
+              242.6946563720703,
+              176.1088409423828
+            ],
+            "description": "Regione testuale sorgente: • internal systems (angular and linear velocities,...)",
+            "observation_ids": [
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              130.12982177734375,
+              247.92860412597656,
+              447.87103271484375,
+              255.1179962158203
+            ],
+            "description": "Regione testuale sorgente: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 6 |35",
+            "observation_ids": [
+              "transcription-06"
+            ]
+          },
+          {
+            "bbox": [
+              298,
+              50,
+              386,
+              178
+            ],
+            "description": "Le immagini mostrano un satellite con pannelli e un oggetto con riferimenti di orientamento: illustrano sistemi spaziali, senza specificare equazioni orbitali o dati di una missione.",
+            "observation_ids": [
+              "s04"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un solo dominio applicativo, senza derivazioni o risultati numerici da distribuire.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
+}

@@ -1,0 +1,1035 @@
+{
+  "schema_version": "1.0.0",
+  "document_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1",
+  "source": {
+    "path": "OPTCON-RL_optimization_2026_09_14.pdf",
+    "filename": "OPTCON-RL_optimization_2026_09_14.pdf",
+    "sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+    "size_bytes": 441837
+  },
+  "page_count": 81,
+  "metadata": {
+    "format": "PDF 1.5",
+    "title": "Optimal Control and Reinforcement Learning  Nonlinear Optimization",
+    "author": "Giuseppe Notarstefano",
+    "subject": "",
+    "keywords": "",
+    "creator": "LaTeX with Beamer class",
+    "producer": "pdfTeX-1.40.25",
+    "creationDate": "D:20260914113248+02'00'",
+    "modDate": "D:20260914113248+02'00'",
+    "trapped": "",
+    "encryption": null
+  },
+  "pdf_page_label_rules": [
+    {
+      "startpage": 0,
+      "prefix": "<FEFF0030>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 1,
+      "prefix": "<FEFF0031>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 2,
+      "prefix": "<FEFF0032>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 3,
+      "prefix": "<FEFF0033>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 4,
+      "prefix": "<FEFF0034>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 5,
+      "prefix": "<FEFF0035>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 6,
+      "prefix": "<FEFF0036>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 7,
+      "prefix": "<FEFF0037>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 8,
+      "prefix": "<FEFF0038>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 9,
+      "prefix": "<FEFF0039>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 10,
+      "prefix": "<FEFF00310030>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 11,
+      "prefix": "<FEFF00310031>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 12,
+      "prefix": "<FEFF00310032>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 13,
+      "prefix": "<FEFF00310033>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 14,
+      "prefix": "<FEFF00310034>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 15,
+      "prefix": "<FEFF00310035>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 16,
+      "prefix": "<FEFF00310036>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 17,
+      "prefix": "<FEFF00310037>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 18,
+      "prefix": "<FEFF00310038>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 19,
+      "prefix": "<FEFF00310039>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 20,
+      "prefix": "<FEFF00320030>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 21,
+      "prefix": "<FEFF00320031>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 22,
+      "prefix": "<FEFF00320032>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 23,
+      "prefix": "<FEFF00320033>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 24,
+      "prefix": "<FEFF00320034>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 25,
+      "prefix": "<FEFF00320035>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 26,
+      "prefix": "<FEFF00320036>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 27,
+      "prefix": "<FEFF00320037>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 28,
+      "prefix": "<FEFF00320038>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 29,
+      "prefix": "<FEFF00320039>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 30,
+      "prefix": "<FEFF00330030>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 31,
+      "prefix": "<FEFF00330031>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 32,
+      "prefix": "<FEFF00330032>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 33,
+      "prefix": "<FEFF00330033>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 34,
+      "prefix": "<FEFF00330034>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 35,
+      "prefix": "<FEFF00330035>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 36,
+      "prefix": "<FEFF00330036>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 37,
+      "prefix": "<FEFF00330037>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 40,
+      "prefix": "<FEFF00330038>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 41,
+      "prefix": "<FEFF00330039>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 42,
+      "prefix": "<FEFF00340030>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 43,
+      "prefix": "<FEFF00340031>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 45,
+      "prefix": "<FEFF00340032>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 46,
+      "prefix": "<FEFF00340033>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 47,
+      "prefix": "<FEFF00340034>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 48,
+      "prefix": "<FEFF00340035>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 49,
+      "prefix": "<FEFF00340036>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 50,
+      "prefix": "<FEFF00340037>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 51,
+      "prefix": "<FEFF00340038>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 52,
+      "prefix": "<FEFF00340039>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 53,
+      "prefix": "<FEFF00350030>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 54,
+      "prefix": "<FEFF00350031>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 55,
+      "prefix": "<FEFF00350032>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 56,
+      "prefix": "<FEFF00350033>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 57,
+      "prefix": "<FEFF00350034>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 58,
+      "prefix": "<FEFF00350035>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 62,
+      "prefix": "<FEFF00350036>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 63,
+      "prefix": "<FEFF00350037>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 65,
+      "prefix": "<FEFF00350038>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 66,
+      "prefix": "<FEFF00350039>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 67,
+      "prefix": "<FEFF00360030>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 68,
+      "prefix": "<FEFF00360031>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 69,
+      "prefix": "<FEFF00360032>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 70,
+      "prefix": "<FEFF00360033>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 71,
+      "prefix": "<FEFF00360034>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 72,
+      "prefix": "<FEFF00360035>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 73,
+      "prefix": "<FEFF00360036>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 74,
+      "prefix": "<FEFF00360037>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 75,
+      "prefix": "<FEFF00360038>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 76,
+      "prefix": "<FEFF00360039>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 77,
+      "prefix": "<FEFF00370030>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 78,
+      "prefix": "<FEFF00370031>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 79,
+      "prefix": "<FEFF00370032>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 80,
+      "prefix": "<FEFF00370033>",
+      "firstpagenum": 1
+    }
+  ],
+  "config": {
+    "pipeline_version": "1.0.0",
+    "dpi": 144,
+    "renderer": "PyMuPDF",
+    "pymupdf_version": "1.28.2",
+    "pillow_version": "12.3.0",
+    "relations_algorithm": "text-visual-v1",
+    "thresholds": {
+      "min_body_tokens": 8,
+      "near_text_jaccard": 0.88,
+      "near_visual_difference": 0.075,
+      "progressive_containment": 0.8,
+      "progressive_visual_difference": 0.14
+    }
+  },
+  "created_at": "2026-10-17T14:33:09.114441+00:00",
+  "pages": [
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0001",
+      "physical_page_number": 1,
+      "pdf_label": "0",
+      "title": "Optimal Control and Reinforcement Learning",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0001/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0002",
+      "physical_page_number": 2,
+      "pdf_label": "1",
+      "title": "Unconstrained optimization: definitions, optimality conditions and",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0002/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0003",
+      "physical_page_number": 3,
+      "pdf_label": "2",
+      "title": "Unconstrained optimization: introduction",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0003/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0004",
+      "physical_page_number": 4,
+      "pdf_label": "3",
+      "title": "Unconstrained optimization: introduction",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0004/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0005",
+      "physical_page_number": 5,
+      "pdf_label": "4",
+      "title": "Notation",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0005/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0006",
+      "physical_page_number": 6,
+      "pdf_label": "5",
+      "title": "Remarks on notation: gradient and Hessian matrix of a function",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0006/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0007",
+      "physical_page_number": 7,
+      "pdf_label": "6",
+      "title": "Remarks on notation: gradient of a vector-valued function",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0007/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0008",
+      "physical_page_number": 8,
+      "pdf_label": "7",
+      "title": "Necessary conditions of optimality (unconstrainted)",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0008/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0009",
+      "physical_page_number": 9,
+      "pdf_label": "8",
+      "title": "Second order sufficient conditions of optimality",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0009/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0010",
+      "physical_page_number": 10,
+      "pdf_label": "9",
+      "title": "Convex sets",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0010/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0011",
+      "physical_page_number": 11,
+      "pdf_label": "10",
+      "title": "Convex functions",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0011/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0012",
+      "physical_page_number": 12,
+      "pdf_label": "11",
+      "title": "Inequality constraints and convex sets",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0012/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0013",
+      "physical_page_number": 13,
+      "pdf_label": "12",
+      "title": "Equality constraints and convex sets",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0013/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0014",
+      "physical_page_number": 14,
+      "pdf_label": "13",
+      "title": "Convexity and gradient monotonicity",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0014/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0015",
+      "physical_page_number": 15,
+      "pdf_label": "14",
+      "title": "Strict convexity and gradient monotonicity",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0015/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0016",
+      "physical_page_number": 16,
+      "pdf_label": "15",
+      "title": "Strong convexity and gradient monotonicity",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0016/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0017",
+      "physical_page_number": 17,
+      "pdf_label": "16",
+      "title": "Convexity and Lipschitz continuity of the gradient",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0017/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0018",
+      "physical_page_number": 18,
+      "pdf_label": "17",
+      "title": "Strong convexity and Lipschitz continuity of the gradient",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0018/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0019",
+      "physical_page_number": 19,
+      "pdf_label": "18",
+      "title": "Graphical interpretation of convexity",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0019/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0020",
+      "physical_page_number": 20,
+      "pdf_label": "19",
+      "title": "Graphical interpretation of Lipschitz continuity of the gradient",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0020/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0021",
+      "physical_page_number": 21,
+      "pdf_label": "20",
+      "title": "Minimization of convex functions",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0021/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0022",
+      "physical_page_number": 22,
+      "pdf_label": "21",
+      "title": "Minimization of convex functions",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0022/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0023",
+      "physical_page_number": 23,
+      "pdf_label": "22",
+      "title": "Quadratic Programming (unconstrained)",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0023/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0024",
+      "physical_page_number": 24,
+      "pdf_label": "23",
+      "title": "Quadratic Programming (unconstrained): optimality conditions",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0024/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0025",
+      "physical_page_number": 25,
+      "pdf_label": "24",
+      "title": "Quadratic Programming (unconstrained): properties",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0025/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0026",
+      "physical_page_number": 26,
+      "pdf_label": "25",
+      "title": "Unconstrained optimization: algorithms",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0026/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0027",
+      "physical_page_number": 27,
+      "pdf_label": "26",
+      "title": "Optimization algorithms (unconstrained): iterative descent methods",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0027/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0028",
+      "physical_page_number": 28,
+      "pdf_label": "27",
+      "title": "Optimization algorithms: two-step procedure",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0028/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0029",
+      "physical_page_number": 29,
+      "pdf_label": "28",
+      "title": "Gradient methods: introduction",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0029/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0030",
+      "physical_page_number": 30,
+      "pdf_label": "29",
+      "title": "Gradient methods: introduction",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0030/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0031",
+      "physical_page_number": 31,
+      "pdf_label": "30",
+      "title": "Gradient methods: selecting the descent direction",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0031/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0032",
+      "physical_page_number": 32,
+      "pdf_label": "31",
+      "title": "Gradient methods: selecting the descent direction",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0032/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0033",
+      "physical_page_number": 33,
+      "pdf_label": "32",
+      "title": "Steepest descent (gradient method)",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0033/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0034",
+      "physical_page_number": 34,
+      "pdf_label": "33",
+      "title": "Newton’s method for root finding",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0034/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0035",
+      "physical_page_number": 35,
+      "pdf_label": "34",
+      "title": "Newton’s Method for Unconstrained Optimization",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0035/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0036",
+      "physical_page_number": 36,
+      "pdf_label": "35",
+      "title": "Newton’s Method via Quadratic Optimization",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0036/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0037",
+      "physical_page_number": 37,
+      "pdf_label": "36",
+      "title": "Gradient methods via quadratic optimization",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0037/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0038",
+      "physical_page_number": 38,
+      "pdf_label": "37",
+      "title": "Gradient methods: step-size selection rules (I)",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0038/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0039",
+      "physical_page_number": 39,
+      "pdf_label": "37",
+      "title": "Gradient methods: step-size selection rules (I)",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0039/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0040",
+      "physical_page_number": 40,
+      "pdf_label": "37",
+      "title": "Gradient methods: step-size selection rules (I)",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0040/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0041",
+      "physical_page_number": 41,
+      "pdf_label": "38",
+      "title": "Gradient methods: step-size selection rules (II)",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0041/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0042",
+      "physical_page_number": 42,
+      "pdf_label": "39",
+      "title": "Gradient methods: convergence result (Armijo)",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0042/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0043",
+      "physical_page_number": 43,
+      "pdf_label": "40",
+      "title": "Gradient methods: convergence result (constant/diminishing)",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0043/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0044",
+      "physical_page_number": 44,
+      "pdf_label": "41",
+      "title": "Gradient methods: remarks",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0044/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0045",
+      "physical_page_number": 45,
+      "pdf_label": "41",
+      "title": "Gradient methods: remarks",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0045/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0046",
+      "physical_page_number": 46,
+      "pdf_label": "42",
+      "title": "Example: Gradient Method applied to Quadratic Programs",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0046/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0047",
+      "physical_page_number": 47,
+      "pdf_label": "43",
+      "title": "Optimization (constrained) over convex sets: optimality conditions and algorithms",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0047/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0048",
+      "physical_page_number": 48,
+      "pdf_label": "44",
+      "title": "Optimization over convex sets",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0048/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0049",
+      "physical_page_number": 49,
+      "pdf_label": "45",
+      "title": "Optimization over convex sets",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0049/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0050",
+      "physical_page_number": 50,
+      "pdf_label": "46",
+      "title": "Projected gradient",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0050/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0051",
+      "physical_page_number": 51,
+      "pdf_label": "47",
+      "title": "Feasible direction method",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0051/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0052",
+      "physical_page_number": 52,
+      "pdf_label": "48",
+      "title": "Example: Projected Gradient Method for Quadratic Programs",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0052/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0053",
+      "physical_page_number": 53,
+      "pdf_label": "49",
+      "title": "Examples of cost functions",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0053/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0054",
+      "physical_page_number": 54,
+      "pdf_label": "50",
+      "title": "Barrier function strategy for inequality constraints",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0054/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0055",
+      "physical_page_number": 55,
+      "pdf_label": "51",
+      "title": "Constrained optimization (equality and inequality constraints): optimality conditions",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0055/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0056",
+      "physical_page_number": 56,
+      "pdf_label": "52",
+      "title": "Constrained optimization problem set-up",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0056/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0057",
+      "physical_page_number": 57,
+      "pdf_label": "53",
+      "title": "Active constraints and regular points",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0057/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0058",
+      "physical_page_number": 58,
+      "pdf_label": "54",
+      "title": "Lagrangian function",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0058/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0059",
+      "physical_page_number": 59,
+      "pdf_label": "55",
+      "title": "Karush-Kuhn-Tucker (KKT) necessary conditions",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0059/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0060",
+      "physical_page_number": 60,
+      "pdf_label": "55",
+      "title": "Karush-Kuhn-Tucker (KKT) necessary conditions",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0060/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0061",
+      "physical_page_number": 61,
+      "pdf_label": "55",
+      "title": "Karush-Kuhn-Tucker (KKT) necessary conditions",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0061/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0062",
+      "physical_page_number": 62,
+      "pdf_label": "55",
+      "title": "Karush-Kuhn-Tucker (KKT) necessary conditions",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0062/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0063",
+      "physical_page_number": 63,
+      "pdf_label": "56",
+      "title": "Remarks on Karush-Kuhn-Tucker (KKT) necessary conditions",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0063/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0064",
+      "physical_page_number": 64,
+      "pdf_label": "57",
+      "title": "Karush-Kuhn-Tucker (KKT) necessary conditions (second order)",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0064/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0065",
+      "physical_page_number": 65,
+      "pdf_label": "57",
+      "title": "Karush-Kuhn-Tucker (KKT) necessary conditions (second order)",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0065/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0066",
+      "physical_page_number": 66,
+      "pdf_label": "58",
+      "title": "Quadratic Programming (constrained)",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0066/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0067",
+      "physical_page_number": 67,
+      "pdf_label": "59",
+      "title": "Quadratic Programming (constrained): optimality conditions",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0067/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0068",
+      "physical_page_number": 68,
+      "pdf_label": "60",
+      "title": "Quadratic Programming (constrained): optimality conditions",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0068/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0069",
+      "physical_page_number": 69,
+      "pdf_label": "61",
+      "title": "Constrained optimization (equality and inequality constraints): optimization algorithms",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0069/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0070",
+      "physical_page_number": 70,
+      "pdf_label": "62",
+      "title": "Optimality conditions for equality constrained problems (refresh)",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0070/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0071",
+      "physical_page_number": 71,
+      "pdf_label": "63",
+      "title": "Newton’s method for equality constrained problems",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0071/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0072",
+      "physical_page_number": 72,
+      "pdf_label": "64",
+      "title": "Newton’s method for equality constrained problems",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0072/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0073",
+      "physical_page_number": 73,
+      "pdf_label": "65",
+      "title": "Newton’s method via Quadratic Programming",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0073/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0074",
+      "physical_page_number": 74,
+      "pdf_label": "66",
+      "title": "Newton’s Method via Sequential Quadratic Programming (SQP)",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0074/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0075",
+      "physical_page_number": 75,
+      "pdf_label": "67",
+      "title": "Stepsize selection for constrained optimization (I): Merit function",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0075/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0076",
+      "physical_page_number": 76,
+      "pdf_label": "68",
+      "title": "Stepsize selection for constrained optimization (II): Armijo rule",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0076/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0077",
+      "physical_page_number": 77,
+      "pdf_label": "69",
+      "title": "Sequential Quadratic Programming (SQP)",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0077/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0078",
+      "physical_page_number": 78,
+      "pdf_label": "70",
+      "title": "Barrier function strategy for inequality constraints",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0078/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0079",
+      "physical_page_number": 79,
+      "pdf_label": "71",
+      "title": "Concluding Remarks on Notation",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0079/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0080",
+      "physical_page_number": 80,
+      "pdf_label": "72",
+      "title": "Warning on notation in Optimization and Optimal Control",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0080/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0081",
+      "physical_page_number": 81,
+      "pdf_label": "73",
+      "title": "Warning on notation in Optimization and Optimal Control",
+      "spec_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0081/page_spec.json"
+    }
+  ],
+  "relation_groups": [
+    {
+      "group_id": "group-0001",
+      "page_ids": [
+        "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0038",
+        "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0039",
+        "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0040"
+      ],
+      "status": "candidate_cluster",
+      "collapse_pages": false
+    },
+    {
+      "group_id": "group-0002",
+      "page_ids": [
+        "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0044",
+        "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0045"
+      ],
+      "status": "candidate_cluster",
+      "collapse_pages": false
+    },
+    {
+      "group_id": "group-0003",
+      "page_ids": [
+        "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0059",
+        "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0060",
+        "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0061",
+        "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0062"
+      ],
+      "status": "candidate_cluster",
+      "collapse_pages": false
+    },
+    {
+      "group_id": "group-0004",
+      "page_ids": [
+        "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0064",
+        "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0065"
+      ],
+      "status": "candidate_cluster",
+      "collapse_pages": false
+    },
+    {
+      "group_id": "group-0005",
+      "page_ids": [
+        "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0071",
+        "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0072"
+      ],
+      "status": "candidate_cluster",
+      "collapse_pages": false
+    }
+  ],
+  "coverage": {
+    "extracted_pages": 81,
+    "rendered_pages": 81
+  }
+}

@@ -1,0 +1,592 @@
+[
+  {
+    "page": 28,
+    "title": "Drone (II) — requisiti della traiettoria",
+    "observations": [
+      {
+        "category": "concept",
+        "claim": "La traiettoria del centro di massa deve essere vicina alla posizione desiderata (p_{x,t}^{des},p_{y,t}^{des}) per t=1,…,T.",
+        "anchor": "the time-evolution of the center of mass is close",
+        "bbox": [
+          38,
+          47,
+          442,
+          62
+        ]
+      },
+      {
+        "category": "concept",
+        "claim": "La velocità deve essere vicina al corrispondente profilo desiderato (v_{x,t}^{des},v_{y,t}^{des}) per t=1,…,T.",
+        "anchor": "the velocity is close",
+        "bbox": [
+          38,
+          63,
+          441,
+          78
+        ]
+      },
+      {
+        "category": "concept",
+        "claim": "Angolo θ_t e velocità angolare ω_t devono essere 'not too high'.",
+        "anchor": "angle and angular velocity",
+        "bbox": [
+          38,
+          80,
+          325,
+          93
+        ]
+      },
+      {
+        "category": "concept",
+        "claim": "Gli ingressi u_{1,t},u_{2,t} devono essere 'not too high'.",
+        "anchor": "inputs u1,t, u2,t",
+        "bbox": [
+          38,
+          94,
+          325,
+          106
+        ]
+      }
+    ],
+    "math": [
+      [
+        "(p_{x,t}^{\\mathrm{des}},p_{y,t}^{\\mathrm{des}}),\\quad t=1,\\ldots,T",
+        "the time-evolution"
+      ],
+      [
+        "(v_{x,t}^{\\mathrm{des}},v_{y,t}^{\\mathrm{des}}),\\quad t=1,\\ldots,T",
+        "the velocity is close"
+      ],
+      [
+        "\\theta_t,\\omega_t;\\qquad u_{1,t},u_{2,t}",
+        "angle and angular velocity"
+      ]
+    ],
+    "notation": [
+      [
+        "p_{x,t}^{\\mathrm{des}},p_{y,t}^{\\mathrm{des}}",
+        "Posizione desiderata"
+      ],
+      [
+        "v_{x,t}^{\\mathrm{des}},v_{y,t}^{\\mathrm{des}}",
+        "Velocità desiderata"
+      ],
+      [
+        "\\theta_t,\\omega_t",
+        "Angolo e velocità angolare da mantenere non elevati"
+      ],
+      [
+        "u_{1,t},u_{2,t}",
+        "Ingressi da mantenere non elevati"
+      ]
+    ],
+    "role": "Traduce il task del drone in quattro requisiti prima della scelta esplicita dei pesi.",
+    "previous": "La pagina 27 fissa l'ordine x=(p_x,v_x,p_y,v_y,θ,ω) che permette di associare i requisiti alle componenti.",
+    "next": "La pagina 29 sceglie un costo diagonale che penalizza questi errori e valori; la presente pagina non assegna ancora i pesi.",
+    "scope_limits": [
+      "'Not too high' non è un limite numerico né una disuguaglianza hard.",
+      "La pagina non assegna esplicitamente θ^{des}=ω^{des}=0: lo si riconoscerà dalla forma del costo nella pagina 29.",
+      "I requisiti non costituiscono da soli una soluzione o un algoritmo."
+    ],
+    "prerequisites": [
+      [
+        "Dizionario dello stato e degli ingressi del drone",
+        "Per associare correttamente le quattro famiglie di requisiti.",
+        [
+          27
+        ]
+      ],
+      [
+        "Desiderato contro traiettoria realizzabile",
+        "I requisiti non cancellano la dinamica.",
+        [
+          22,
+          25
+        ]
+      ]
+    ],
+    "examples": [
+      {
+        "purpose": "Mostrare che il solo errore di posizione non esaurisce il task.",
+        "setup": "Enrichment concettuale: confrontare candidate con errori di posizione simili ma diversa velocità desiderata, oscillazione angolare e ampiezza degli ingressi.",
+        "steps": [
+          "Valutare separatamente errore di posizione ed errore di velocità.",
+          "Controllare anche θ,ω e ingressi.",
+          "Per ordinarle serve una scelta esplicita di costo o vincoli, non presente in questa pagina."
+        ],
+        "expected": "Non dichiarare migliore una candidata soltanto perché passa vicino ai punti desiderati.",
+        "limitations": [
+          "Non si afferma l'esistenza o fattibilità dinamica delle candidate senza verifica.",
+          "Nessun peso o soglia è attribuito alla fonte."
+        ]
+      }
+    ],
+    "visual": {
+      "component": "DroneTaskToStateComponentMap",
+      "description": "Tabella statica: posizione→x₁,x₃; velocità→x₂,x₄; angolo/velocità angolare→x₅,x₆; ingressi→u₁,u₂. La corrispondenza usa esplicitamente la pagina 27."
+    },
+    "no_interaction_reason": "Qui i requisiti sono qualitativi; i controlli sui pesi sono progettati nella pagina 29, dove il costo è esplicito.",
+    "edges": [
+      [
+        "Peso elevato confuso con limite hard",
+        "Non anticipare che una grande penalità garantisca una soglia, che qui non è assegnata."
+      ],
+      [
+        "Percorso geometrico senza velocità temporali",
+        "Evidenziare che il task richiede anche un profilo temporale e di velocità."
+      ]
+    ],
+    "single_page_rationale": "Quattro requisiti paralleli corrispondono allo stesso stato e si comprendono con una sola tabella.",
+    "focus": "Posizione e velocità vicine al desiderato, con angolo, velocità angolare e ingressi contenuti."
+  },
+  {
+    "page": 29,
+    "title": "Drone (III) — costo con pesi diagonali",
+    "observations": [
+      {
+        "category": "definition",
+        "claim": "Sono scelte matrici diagonali Q con q₁,…,q₆, Q_T con q_{T1},…,q_{T6} e R con r₁,r₂.",
+        "anchor": "We can choose diagonal weighting matrices",
+        "bbox": [
+          27,
+          31,
+          277,
+          99
+        ]
+      },
+      {
+        "category": "equation",
+        "claim": "Il costo di stadio contiene q₁(x_{1,t}−p_{x,t}^{des})², q₂(x_{2,t}−v_{x,t}^{des})², q₃(x_{3,t}−p_{y,t}^{des})² e q₄(x_{4,t}−v_{y,t}^{des})², tutti nel fattore 1/2.",
+        "anchor": "q1(x1,t",
+        "bbox": [
+          55,
+          112,
+          444,
+          181
+        ]
+      },
+      {
+        "category": "equation",
+        "claim": "Gli ulteriori termini di stadio sono q₅x_{5,t}²+q₆x_{6,t}²+r₁u_{1,t}²+r₂u_{2,t}²: qui sono penalizzati i valori stessi, senza sottrarre un riferimento.",
+        "anchor": "+ q5x2",
+        "bbox": [
+          55,
+          112,
+          444,
+          181
+        ]
+      },
+      {
+        "category": "equation",
+        "claim": "Alla somma di stadio si aggiunge ½‖x_T−x_T^{des}‖²_{Q_T}.",
+        "anchor": "The cost function then reads",
+        "bbox": [
+          55,
+          112,
+          444,
+          181
+        ]
+      }
+    ],
+    "math": [
+      [
+        "Q=\\begin{bmatrix}q_1&&\\\\&\\ddots&\\\\&&q_6\\end{bmatrix},\\quad Q_T=\\begin{bmatrix}q_{T1}&&\\\\&\\ddots&\\\\&&q_{T6}\\end{bmatrix},\\quad R=\\begin{bmatrix}r_1&0\\\\0&r_2\\end{bmatrix}",
+        "We can choose diagonal weighting matrices"
+      ],
+      [
+        "\\begin{aligned}\\ell(\\mathbf{x},\\mathbf{u})=\\sum_{t=0}^{T-1}\\frac12\\big[&q_1(x_{1,t}-p_{x,t}^{\\mathrm{des}})^2+q_2(x_{2,t}-v_{x,t}^{\\mathrm{des}})^2+q_3(x_{3,t}-p_{y,t}^{\\mathrm{des}})^2+q_4(x_{4,t}-v_{y,t}^{\\mathrm{des}})^2\\\\&+q_5x_{5,t}^2+q_6x_{6,t}^2+r_1u_{1,t}^2+r_2u_{2,t}^2\\big]+\\frac12\\|x_T-x_T^{\\mathrm{des}}\\|_{Q_T}^2\\end{aligned}",
+        "The cost function then reads"
+      ]
+    ],
+    "notation": [
+      [
+        "q_1,q_2,q_3,q_4",
+        "Pesi degli errori di p_x,v_x,p_y,v_y, nello stesso ordine dello stato"
+      ],
+      [
+        "q_5,q_6",
+        "Pesi dei valori θ e ω rispetto a zero nel costo di stadio"
+      ],
+      [
+        "q_{T1},\\ldots,q_{T6}",
+        "Pesi terminali diagonali"
+      ],
+      [
+        "r_1,r_2",
+        "Pesi degli ingressi u₁ e u₂ rispetto a zero"
+      ],
+      [
+        "Q_T",
+        "Matrice terminale, distinta da Q"
+      ]
+    ],
+    "role": "Converte i requisiti qualitativi della pagina 28 in contributi quadratici distinti.",
+    "previous": "La pagina 28 elenca posizione, velocità, angoli e ingressi; qui viene assegnata la forma del costo.",
+    "next": "La pagina 30 distingue i limiti espliciti di path dalle penalizzazioni di questa pagina.",
+    "scope_limits": [
+      "La slide non assegna valori numerici ai pesi.",
+      "Penalizzare u₁,u₂ rispetto a zero non equivale a penalizzare deviazioni da una spinta di hover; non sostituire i termini con u−u_hover.",
+      "Non viene garantito che pesi grandi rispettino soglie hard.",
+      "Il terminal target x_T^{des} resta generale; non imporre componenti terminali aggiuntive non specificate."
+    ],
+    "prerequisites": [
+      [
+        "Ordine esatto dello stato",
+        "Indispensabile per leggere q₁,…,q₆ senza scambiare posizione e velocità.",
+        [
+          27
+        ]
+      ],
+      [
+        "Requisiti di tracking",
+        "Spiegano i primi quattro errori e le ultime penalità.",
+        [
+          28
+        ]
+      ],
+      [
+        "Costo additivo e pesato",
+        "Per separare contributi di stadio e terminali.",
+        [
+          20,
+          22
+        ]
+      ]
+    ],
+    "examples": [
+      {
+        "purpose": "Attribuire un valore a ciascun contributo, senza fingere una soluzione ottima.",
+        "setup": "Enrichment su un singolo stadio normalizzato: errori delle prime quattro componenti (1,0,0,0), x₅=0.1,x₆=0, u₁=u₂=2; q₁=2,q₅=10,r₁=r₂=0.5 e altri q=1.",
+        "parameters": [
+          [
+            "q_1,q_5",
+            "2,10"
+          ],
+          [
+            "r_1,r_2",
+            "0.5,0.5"
+          ],
+          [
+            "x_5",
+            "0.1"
+          ],
+          [
+            "u_1,u_2",
+            "2,2"
+          ]
+        ],
+        "steps": [
+          "Posizione orizzontale: ½·2·1²=1.",
+          "Angolo: ½·10·0.1²=0.05.",
+          "Ciascun ingresso: ½·0.5·2²=1.",
+          "Gli altri contributi sono zero; stage cost=3.05."
+        ],
+        "expected": "Ogni peso modifica il contributo della sua componente; questa è una valutazione di costo, non un'ottimizzazione.",
+        "limitations": [
+          "Valori e normalizzazione sono enrichment.",
+          "Il singolo punto non è certificato come parte di una traiettoria dinamicamente ammissibile."
+        ]
+      }
+    ],
+    "visual": {
+      "component": "DroneQuadraticCostContributionBars",
+      "origin": "enrichment",
+      "description": "Otto barre di costo di stadio con colori collegati alle sei componenti dello stato e ai due ingressi; terminale separato."
+    },
+    "interaction": {
+      "component": "DroneFixedStageWeightInspector",
+      "rationale": "Variare pochi pesi sulla stessa candidata chiarisce le priorità e la differenza fra penalità e vincolo.",
+      "parameters": [
+        [
+          "Peso posizione orizzontale",
+          "q_1",
+          "[0,10]",
+          "2",
+          "Aggiornare solo la barra ½q₁·1² e il totale; non spostare il drone né dichiarare un nuovo ottimo.",
+          [
+            "q₁=0: errore non penalizzato nello stadio"
+          ],
+          "source"
+        ],
+        [
+          "Peso angolo",
+          "q_5",
+          "[0,20]",
+          "10",
+          "Aggiornare solo ½q₅·0.1² e il totale; x₅ resta invariato.",
+          [
+            "q₅=0"
+          ],
+          "source"
+        ],
+        [
+          "Peso primo ingresso",
+          "r_1",
+          "[0.01,2]",
+          "0.5",
+          "Aggiornare ½r₁·2² e il totale, mantenendo u₁ fissato.",
+          [
+            "Mantenere r₁>0 secondo il contesto della pagina 22"
+          ],
+          "source"
+        ],
+        [
+          "Peso secondo ingresso",
+          "r_2",
+          "[0.01,2]",
+          "0.5",
+          "Aggiornare ½r₂·2² e il totale senza rinominare r₂ come r₁.",
+          [
+            "Mantenere r₂>0"
+          ],
+          "source"
+        ]
+      ],
+      "outputs": [
+        "Contributi di stadio",
+        "Totale dello stadio"
+      ],
+      "invariants": [
+        "Tutte le componenti candidate fisse",
+        "Nessuna saturazione aggiunta",
+        "Nessun ottimizzatore eseguito",
+        "Pesi non controllati restano ai valori dichiarati dell'esempio"
+      ]
+    },
+    "edges": [
+      [
+        "Errore nullo in una componente",
+        "Cambiarne il peso non cambia il costo della candidata."
+      ],
+      [
+        "Angolo grande con peso piccolo",
+        "Può avere un contributo piccolo senza rispettare eventuali limiti hard."
+      ],
+      [
+        "Hover con ingressi non nulli",
+        "La penalità sugli ingressi può essere positiva anche quando la forza bilancia la gravità."
+      ]
+    ],
+    "single_page_rationale": "Una tabella componente→peso e otto barre rendono leggibile l'unica formula, senza dividere artificialmente la stessa decomposizione.",
+    "focus": "Quale errore viene pesato da ciascun q e r; penalità soft e riferimento zero dove effettivamente scritto."
+  },
+  {
+    "page": 30,
+    "title": "Example: path constraints — saturazioni e limiti di quota",
+    "observations": [
+      {
+        "category": "definition",
+        "claim": "La prosa descrive g(𝐱,𝐮)≤0 come restrizioni da imporre a ogni tempo t=1,…,T.",
+        "anchor": "each time t = 1, . . . , T.",
+        "bbox": [
+          27,
+          31,
+          441,
+          55
+        ]
+      },
+      {
+        "category": "equation",
+        "claim": "L'esempio di saturazione è u_t^{min}≤u_t≤u_t^{max}.",
+        "anchor": "Saturation of the inputs",
+        "bbox": [
+          202,
+          73,
+          299,
+          91
+        ]
+      },
+      {
+        "category": "equation",
+        "claim": "Nel drone è proposto p_{y,t}^{min}≤p_{y,t}≤p_{y,t}^{max}, equivalente a p_{y,t}^{min}≤x_{3,t}≤p_{y,t}^{max}.",
+        "anchor": "pmin",
+        "bbox": [
+          145,
+          119,
+          328,
+          143
+        ]
+      },
+      {
+        "category": "diagram",
+        "claim": "Il disegno del drone e della curva desiderata è racchiuso fra due linee rosse orizzontali etichettate p_{y,t}^{max} e p_{y,t}^{min}.",
+        "bbox": [
+          104,
+          151,
+          338,
+          225
+        ]
+      }
+    ],
+    "math": [
+      [
+        "g(\\mathbf{x},\\mathbf{u})\\leq0,\\quad t=1,\\ldots,T\\ \\text{nella prosa}",
+        "each time t = 1, . . . , T."
+      ],
+      [
+        "u_t^{\\min}\\leq u_t\\leq u_t^{\\max}",
+        "Saturation of the inputs"
+      ],
+      [
+        "p_{y,t}^{\\min}\\leq p_{y,t}\\leq p_{y,t}^{\\max}\\qquad(p_{y,t}^{\\min}\\leq x_{3,t}\\leq p_{y,t}^{\\max})",
+        "pmin"
+      ]
+    ],
+    "notation": [
+      [
+        "u_t^{\\min},u_t^{\\max}",
+        "Limiti inferiori e superiori degli ingressi, anche tempo-dipendenti"
+      ],
+      [
+        "p_{y,t}^{\\min},p_{y,t}^{\\max}",
+        "Limiti verticali"
+      ],
+      [
+        "x_{3,t}",
+        "Coordinata p_y nell'ordine dello stato della pagina 27"
+      ],
+      [
+        "g(\\mathbf{x},\\mathbf{u})",
+        "Notazione compatta usata nella prosa della pagina"
+      ]
+    ],
+    "role": "Distingue il contenimento esplicito di ingressi e stato dalle penalità quadratiche della pagina precedente.",
+    "previous": "La pagina 29 può scoraggiare valori elevati ma non impone i limiti di questa pagina.",
+    "next": "La pagina 31 passa al controllo ottimo continuo e introduce un funzionale su uno spazio di funzioni.",
+    "scope_limits": [
+      "La fonte non fornisce numeri per i limiti.",
+      "Il range temporale 1,…,T scritto nella prosa non coincide con 0,…,T−1 usato prima per gli ingressi; non inventare u_T.",
+      "Un semplice limite su p_y non rappresenta tutte le possibili collisioni o la geometria completa del drone."
+    ],
+    "prerequisites": [
+      [
+        "Path constraints",
+        "Definiti alla pagina 21.",
+        [
+          21
+        ]
+      ],
+      [
+        "Ordine dello stato del drone",
+        "Per verificare p_y=x₃.",
+        [
+          27
+        ]
+      ],
+      [
+        "Penalità di costo",
+        "Serve a distinguerle da limiti hard.",
+        [
+          29
+        ]
+      ]
+    ],
+    "examples": [
+      {
+        "purpose": "Verificare la soddisfazione di un limite di quota.",
+        "setup": "Enrichment a un istante di stato t valido: p_y^{min}=1,p_y^{max}=3; confrontare p_y=2 con p_y=3.2.",
+        "parameters": [
+          [
+            "p_y^{min},p_y^{max}",
+            "1,3"
+          ],
+          [
+            "p_y candidati",
+            "2 e 3.2"
+          ]
+        ],
+        "steps": [
+          "p_y=2 è compreso fra i limiti.",
+          "p_y=3.2 viola il limite superiore di 0.2.",
+          "Il bordo p_y=3 è ammissibile perché ≤ è non stretta."
+        ],
+        "expected": "Una penalità piccola di quota non può rendere ammissibile un punto fuori dal limite imposto.",
+        "limitations": [
+          "Limiti e valori sono enrichment.",
+          "Verifica puntuale, non certificazione di una traiettoria o di assenza di collisioni."
+        ]
+      }
+    ],
+    "visual": {
+      "component": "DroneAltitudeBandConstraintPlot",
+      "description": "Banda verticale ammissibile, centro di massa e valori min/max; l'interpretazione dell'ingombro del corpo rimane distinta."
+    },
+    "interaction": {
+      "component": "AltitudeConstraintInspector",
+      "rationale": "Spostare stato e limiti chiarisce inclusione del bordo, violazione e vincoli incompatibili senza una simulazione dinamica.",
+      "parameters": [
+        [
+          "Limite inferiore",
+          "p_y^{min}",
+          "[0,4]",
+          "1",
+          "Muovere il bordo inferiore, ricalcolare appartenenza e violazione; se supera il massimo, mostrare banda vuota.",
+          [
+            "min>max: infeasible"
+          ],
+          "source"
+        ],
+        [
+          "Limite superiore",
+          "p_y^{max}",
+          "[0,4]",
+          "3",
+          "Muovere il bordo superiore e aggiornare lo stato di ammissibilità.",
+          [
+            "min=max: singola quota ammessa"
+          ],
+          "source"
+        ],
+        [
+          "Quota candidata",
+          "p_y",
+          "[0,4]",
+          "2",
+          "Spostare il centro di massa e aggiornare i residui min−p_y e p_y−max.",
+          [
+            "Quota sul bordo ammessa"
+          ],
+          "source"
+        ]
+      ],
+      "outputs": [
+        "Banda e punto candidato",
+        "Residui di entrambi i limiti",
+        "Indicatore di ammissibilità puntuale"
+      ],
+      "invariants": [
+        "Un solo istante t di stato",
+        "p_y=x₃",
+        "Nessun u_T aggiunto",
+        "Nessuna integrazione del drone",
+        "Range/default sono enrichment"
+      ]
+    },
+    "edges": [
+      [
+        "min=max",
+        "Il centro di massa deve coincidere con la quota unica."
+      ],
+      [
+        "min>max",
+        "Insieme ammissibile vuoto."
+      ],
+      [
+        "Vincoli soddisfatti ai campioni",
+        "Non dichiarare sicurezza fra campioni senza un controllo ulteriore, non trattato dalla fonte."
+      ],
+      [
+        "Centro di massa entro limiti",
+        "Non certifica che tutto l'ingombro del drone sia lontano dagli ostacoli."
+      ]
+    ],
+    "uncertainties": [
+      {
+        "description": "Discrepanza di indicizzazione: la prosa usa t=1,…,T anche per le saturazioni, mentre gli ingressi sono definiti u₀,…,u_{T−1}. Occorre una decisione editoriale prima di implementare vincoli sull'intera sequenza; nessun u_T viene creato nell'analisi.",
+        "blocking": true
+      }
+    ],
+    "single_page_rationale": "Due esempi di box constraints e una banda di quota sono una stessa unità; l'indice ambiguo è una nota da risolvere, non un motivo di espansione.",
+    "focus": "I vincoli hard limitano direttamente ingressi e quota, con indici temporali da revisionare."
+  }
+]

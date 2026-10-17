@@ -1,0 +1,27 @@
+Discrete-time optimal control: main ingredients (II)
+
+
+    Decision variable: state-input vector (x, u) and, if not given, initial state x0.
+
+
+    Cost function: a cost “to be payed” for a chosen trajectory. We consider an additive structure in time
+
+                                             T −1
+                                     ℓ(x0, x, u) = X ℓt(xt, ut) + ℓT (xT )
+
+                                                 t=0
+
+    where ℓt : Rn × Rm →R is the so-called stage cost, while ℓT  : Rn →R is the terminal cost.
+
+    Notation:  if the initial state is given, i.e., x0 = x0, we lighten the notation and write
+
+                                            T −1
+                                       ℓ(x, u) = X ℓt(xt, ut) + ℓT (xT )
+
+                                                t=0
+
+
+
+
+
+                                            Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 19 |35

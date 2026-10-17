@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0076",
+  "document_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1",
+  "source": {
+    "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+    "page_index": 75,
+    "physical_page_number": 76,
+    "pdf_label_raw": "<FEFF00360038>",
+    "pdf_label": "68",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Stepsize selection for constrained optimization (II): Armijo rule",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      378.575927734375,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 68,
+        "total": 73,
+        "raw": "68 |73",
+        "bbox": [
+          150.68800354003906,
+          247.92860412597656,
+          447.8712158203125,
+          258.29376220703125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0076/text.txt",
+      "sha256": "ee88c76be7886a2964c683c6c990967a9f0d596ff43759758efbb0a9b997f64e"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0076/text.reading-order.txt",
+      "sha256": "0c23460c034506e3338bd8a061b6a2abdb8f5a29fabbe3ae4a856b3eed7d9358"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0076/layout.json",
+      "sha256": "fc2088621310f84e3401b63cc5f6d73b18bd94dddddb3911c6ec2c2dceab398a"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0076/render.png",
+      "sha256": "166f86afc343d4dce6a56ea22d7cf750c9a86f816ace00022865c5f2c4c17cdb",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "dd8e5d988c1797c3e96e4d44439d4ae8ce261813ab7b3da19d367e4220267005"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0075",
+    "next_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0077"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "pending",
+    "result": null
+  }
+}

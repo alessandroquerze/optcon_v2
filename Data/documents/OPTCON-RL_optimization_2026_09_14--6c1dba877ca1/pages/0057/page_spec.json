@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0057",
+  "document_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1",
+  "source": {
+    "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+    "page_index": 56,
+    "physical_page_number": 57,
+    "pdf_label_raw": "<FEFF00350033>",
+    "pdf_label": "53",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Active constraints and regular points",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      225.41587829589844,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 53,
+        "total": 73,
+        "raw": "53 |73",
+        "bbox": [
+          150.68800354003906,
+          247.92860412597656,
+          447.8712158203125,
+          258.29376220703125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0057/text.txt",
+      "sha256": "1a45bc45e7887177aa5fa80564364ec8b1cdbf823915e259565aaa1c7491782e"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0057/text.reading-order.txt",
+      "sha256": "9f071588fd25c28116d696725f8f57470a6c18fb937c7fa31f541582f0e4e3e5"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0057/layout.json",
+      "sha256": "1a69365b7fb20902cb799be5110683e0db54d9e204f8ff35642fd7f73f7cff22"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0057/render.png",
+      "sha256": "c2fc5aec0a1615bbd505a259b3a98e133194aaf5e7ebf4c651a52d69a0e46386",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "09ab8f867b4c691d47333ef7782bb09231381a732e10d9ba73146ad58b60b624"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0056",
+    "next_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0058"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "pending",
+    "result": null
+  }
+}

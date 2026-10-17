@@ -1,0 +1,17 @@
+Trajectory generation
+Consider the nonlinear, discrete-time system
+xt+1 = ft(xt, ut)
+t ∈N0
+and let
+yt = ht(xt, ut)
+t ∈N0
+be a performance output of the system.
+We would like the (performance) output to follow a desired time law ydes
+t , for t ∈N0.
+Optimal Control Task
+Find a (state-input) trajectory (x, u)
+i.e., a function of time (xt, ut), t ∈N0, satisfying xt+1 = ft(xt, ut), for all t ∈N0, such that
+yt ≈ydes
+t
+for all t ∈N0.
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 23 |35

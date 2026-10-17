@@ -1,0 +1,26 @@
+Continuous-time Optimal Control problem (I)
+
+   A continuous-time optimal control problem, i.e., t ∈R, can be written as
+
+                                  Z T
+                           min         ℓτ(x(τ), u(τ))dτ + ℓT (x(T)))
+                                      (x(·),u(·))∈F   0
+                                      subj.to  ˙x(t) = ft(x(t), u(t))      t ∈[0, T]
+                                            r(x(0), x(T)) = 0
+
+                                               gt(x(t), u(t)) ≤0      t ∈[0, T)
+
+    Note F is a space of functions (function space).
+
+      • Cost functional ℓ: F →R
+
+                                     Z T
+                                      ℓ(x(·), u(·)) =     ℓτ(x(τ), u(τ))dτ + ℓT (x(T))
+                                                      0
+
+      • Space of trajectories (or trajectory manifold)
+
+                      n                               o                       T =  (x(·), u(·))) ∈F | ˙x(t) = ft(x(t), u(t)), t ∈[0, T]
+
+
+                                            Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 30 |35

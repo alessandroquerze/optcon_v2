@@ -1,0 +1,24 @@
+Inequality constraints and convex sets
+
+    Let g : Rd →Rp, we can define a set Zineq ⊂Rd as
+
+                                               Zineq = {z ∈Rd | g(z) ≤0}
+
+
+    The set Zineq is convex if and only if g is a quasi-convex function (e.g., monotone functions on the axis).
+
+     Corollary:  If g is convex, then Zineq is convex.
+
+
+                 z2                                                    z2
+                     az21 + bz22 −c ≤0
+                                                           a⊤z −c ≤0
+
+
+
+                                       z1                                                    z1
+
+
+
+
+                                                      Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 11 |73

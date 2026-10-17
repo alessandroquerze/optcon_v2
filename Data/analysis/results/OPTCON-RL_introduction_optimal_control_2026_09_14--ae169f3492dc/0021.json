@@ -1,0 +1,432 @@
+{
+  "protocol_version": "1.0.0",
+  "request_sha256": "8514464d33f9100f456ce5625e1f1f056d4c70617dfd3c49a98f779bd723a910",
+  "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0021",
+  "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+  "artifact_sha256": {
+    "text": "1491a461341f1e842e7392d0fb41da7bef557bd55c8c197541e172ae86b4fcea",
+    "layout": "3e5be2807a14c0064bac778f72a088804fc9177bd64dd151dad5e381dbbaa7a9",
+    "render": "39c29e42223b11d7a174c3744480da05647882fa84bbb3180911f34fc2a5258b"
+  },
+  "agent": {
+    "provider": "OpenAI",
+    "model": "Codex (identificatore esatto del modello non esposto nella sessione)",
+    "run_id": "page-analysis-ce370a19242e4173828aef04d60c36ee"
+  },
+  "inspection": {
+    "text_page_ids": [
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0021",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0020",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0022"
+    ],
+    "layout_page_ids": [
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0021",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0020",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0022"
+    ],
+    "image_page_ids": [
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0021",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0020",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0022"
+    ],
+    "source_content_treated_as_data": true
+  },
+  "title": "Discrete-time optimal control: main ingredients (III)",
+  "companionPageCount": 1,
+  "didactic_plan": {
+    "source_scope_limits": [
+      "L'intervallo scritto per g_t si ferma a T−1: non affermare che imponga automaticamente un vincolo su x_T.",
+      "r è un'uguaglianza; la slide non enumera tutti i possibili vincoli terminali di altri tipi.",
+      "Nessuna condizione di raggiungibilità è garantita."
+    ],
+    "prerequisites": [
+      {
+        "concept": "Uguaglianze e disuguaglianze",
+        "why": "Per capire il diverso ruolo di r e g_t.",
+        "origin": "source_context",
+        "page_numbers": [
+          14,
+          18
+        ]
+      },
+      {
+        "concept": "Stati iniziale e terminale e orizzonte",
+        "why": "Per localizzare dove viene controllato ciascun vincolo.",
+        "origin": "source_context",
+        "page_numbers": [
+          10
+        ]
+      }
+    ],
+    "source_math": [
+      {
+        "latex": "r(x_0,x_T)=0",
+        "anchor": "r(x0, xT ) = 0.",
+        "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+      },
+      {
+        "latex": "g_t(x_t,u_t)\\leq0,\\quad t=0,\\ldots,T-1",
+        "anchor": "gt(xt, ut) ≤0,",
+        "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+      }
+    ],
+    "enrichments": [
+      {
+        "id": "example-1",
+        "label": "enrichment",
+        "type": "worked_example",
+        "proposal": "Enrichment: x_{t+1}=x_t+u_t, T=2, r=col(x₀,x₂−1), g_t=col(u_t−b,−u_t−b), b=0.4.",
+        "source_observation_ids": [
+          "s01",
+          "s02"
+        ]
+      },
+      {
+        "id": "interaction",
+        "label": "enrichment",
+        "type": "interaction_design",
+        "proposal": "Variare il limite d'ingresso mostra quando i vincoli agli estremi sono compatibili con quelli lungo il percorso.",
+        "source_observation_ids": [
+          "s01",
+          "s02"
+        ]
+      },
+      {
+        "id": "visualization",
+        "label": "enrichment",
+        "type": "visualization_design",
+        "proposal": "Endpoint fissati ai nodi estremi, limiti sugli ingressi lungo gli archi e intervallo raggiungibile in due passi.",
+        "source_observation_ids": [
+          "s01",
+          "s02"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "id": "example-1",
+        "origin": "enrichment",
+        "purpose": "Separare endpoint e path e mostrare possibile incompatibilità.",
+        "setup": "Enrichment: x_{t+1}=x_t+u_t, T=2, r=col(x₀,x₂−1), g_t=col(u_t−b,−u_t−b), b=0.4.",
+        "parameters": [
+          {
+            "symbol": "T",
+            "value": "2"
+          },
+          {
+            "symbol": "b",
+            "value": "0.4"
+          },
+          {
+            "symbol": "target x_2",
+            "value": "1"
+          }
+        ],
+        "derivation": [
+          "r=0 impone x₀=0 e x₂=1.",
+          "g_t≤0 impone |u_t|≤0.4.",
+          "In due passi x₂≤0.8: endpoint irraggiungibile.",
+          "Con b=0.5, u₀=u₁=0.5 soddisfa entrambi i tipi di vincolo."
+        ],
+        "expected_outcome": "End-point e path constraints possono essere singolarmente comprensibili ma congiuntamente infeasible.",
+        "limitations": [
+          "Modello e valori sono enrichment; la fonte non assegna questi limiti."
+        ],
+        "enrichment_id": "example-1",
+        "source_observation_ids": [
+          "s01",
+          "s02"
+        ]
+      }
+    ],
+    "example_omission_reason": null,
+    "visualization": {
+      "component": "EndpointAndPathConstraintTimeline",
+      "description": "Endpoint fissati ai nodi estremi, limiti sugli ingressi lungo gli archi e intervallo raggiungibile in due passi.",
+      "origin": "enrichment",
+      "source_observation_ids": [
+        "s01",
+        "s02"
+      ]
+    },
+    "interactivity": {
+      "recommended": true,
+      "rationale": "Variare il limite d'ingresso mostra quando i vincoli agli estremi sono compatibili con quelli lungo il percorso.",
+      "component": "TwoStepReachabilityConstraintDemo",
+      "parameters": [
+        {
+          "name": "Limite di ingresso",
+          "symbol": "b",
+          "origin": "enrichment",
+          "range": "[0,1]",
+          "default": "0.4",
+          "effect_on_change": "Aggiornare la regione raggiungibile x₂∈[−2b,2b] e l'indicatore di fattibilità per il target 1.",
+          "edge_cases": [
+            "b=0.5: target sul bordo",
+            "b=0: nessuno spostamento"
+          ]
+        }
+      ],
+      "outputs": [
+        "Endpoint richiesto",
+        "Intervallo raggiungibile",
+        "Compatibilità dei vincoli"
+      ],
+      "invariants": [
+        "Dinamica integratore e T=2",
+        "Stato iniziale 0 e terminale richiesto 1",
+        "Non viene valutato un costo"
+      ],
+      "enrichment_id": "interaction"
+    },
+    "edge_cases": [
+      {
+        "case": "Nessun terminal path constraint esplicito",
+        "expected_behavior": "Non marcare x_T come automaticamente limitato da g_t indicizzato fino a T−1.",
+        "origin": "enrichment",
+        "source_observation_ids": [
+          "s01",
+          "s02"
+        ]
+      },
+      {
+        "case": "b esattamente alla soglia",
+        "expected_behavior": "Il vincolo ≤ include il valore di bordo.",
+        "origin": "enrichment",
+        "source_observation_ids": [
+          "s01",
+          "s02"
+        ]
+      },
+      {
+        "case": "Endpoint impossibile",
+        "expected_behavior": "Mostrare infeasibilità, non una traiettoria approssimata spacciata per ammissibile.",
+        "origin": "enrichment",
+        "source_observation_ids": [
+          "s01",
+          "s02"
+        ]
+      }
+    ],
+    "expansion_rationale": "Le due famiglie si confrontano sulla stessa timeline e sullo stesso esempio.",
+    "blueprint": [
+      {
+        "companion_suffix": null,
+        "focus": "Endpoint agli estremi, path a ogni t: condizioni diverse che devono essere soddisfatte insieme.",
+        "source_observation_ids": [
+          "s01",
+          "s02"
+        ],
+        "enrichment_ids": [
+          "example-1",
+          "interaction",
+          "visualization"
+        ]
+      }
+    ]
+  },
+  "observations": [
+    {
+      "id": "s01",
+      "category": "definition",
+      "description": "Gli end-point constraints sono funzioni dello stato iniziale e/o finale, espressi come r(x₀,x_T)=0.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0021",
+        "modality": "both",
+        "text_quote": "r(x0, xT ) = 0.",
+        "bbox": [
+          27,
+          32,
+          444,
+          65
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "s02",
+      "category": "definition",
+      "description": "I path constraints sono vincoli point-wise nel tempo su stati e ingressi: g_t(x_t,u_t)≤0, t=0,…,T−1.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0021",
+        "modality": "both",
+        "text_quote": "gt(xt, ut) ≤0,",
+        "bbox": [
+          27,
+          69,
+          444,
+          114
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "transcription-03",
+      "category": "structure",
+      "description": "Trascrizione di una regione visibile della fonte: Discrete-time optimal control: main ingredients (III)",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0021",
+        "modality": "visual",
+        "text_quote": null,
+        "bbox": [
+          10.35200023651123,
+          6.720991134643555,
+          315.82568359375,
+          21.06719207763672
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "transcription-04",
+      "category": "structure",
+      "description": "Trascrizione di una regione visibile della fonte: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 20 |35",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0021",
+        "modality": "visual",
+        "text_quote": null,
+        "bbox": [
+          126.9540023803711,
+          247.92860412597656,
+          447.8712158203125,
+          255.1179962158203
+        ]
+      },
+      "confidence": 0.98
+    }
+  ],
+  "contextual_role": "Completa i tre ingredienti del problema discreto distinguendo condizioni agli estremi e limiti lungo il percorso.",
+  "context_notes": [
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0020",
+      "role": "previous",
+      "note": "La pagina 20 ha definito variabili e costo: i vincoli di questa pagina sono condizioni aggiuntive, non termini di costo."
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0022",
+      "role": "next",
+      "note": "La pagina 22 specifica un costo di tracking prima del problema completo della pagina 23."
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "r",
+      "meaning": "Mappa dei vincoli agli estremi, non il conteggio di disuguaglianze usato nelle pagine di ottimizzazione astratta",
+      "observation_ids": [
+        "s01",
+        "s02"
+      ]
+    },
+    {
+      "symbol": "g_t",
+      "meaning": "Mappa dei vincoli puntuali a ogni istante",
+      "observation_ids": [
+        "s01",
+        "s02"
+      ]
+    },
+    {
+      "symbol": "x_T",
+      "meaning": "Stato terminale, argomento di r",
+      "observation_ids": [
+        "s01",
+        "s02"
+      ]
+    }
+  ],
+  "uncertainties": [],
+  "progression": {
+    "assessment": "unique",
+    "related_page_ids": [],
+    "added": [],
+    "removed": [],
+    "changed": [],
+    "observation_ids": [
+      "s01",
+      "s02"
+    ],
+    "rationale": "Pagina con contenuto autonomo nella sequenza; nessun candidato automatico da confermare."
+  },
+  "coverage": {
+    "all_visible_regions_accounted_for": true,
+    "regions": [
+      {
+        "bbox": [
+          10.35200023651123,
+          6.720991134643555,
+          315.82568359375,
+          21.06719207763672
+        ],
+        "description": "Regione testuale sorgente: Discrete-time optimal control: main ingredients (III)",
+        "observation_ids": [
+          "transcription-03"
+        ]
+      },
+      {
+        "bbox": [
+          28.34600067138672,
+          35.43647766113281,
+          377.40814208984375,
+          44.40287780761719
+        ],
+        "description": "Regione testuale sorgente: End-point constraints: function of the state variable prescribed at initial and/or final point",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          198.98800659179688,
+          54.365478515625,
+          254.55941772460938,
+          64.327880859375
+        ],
+        "description": "Regione testuale sorgente: r(x0, xT ) = 0.",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          28.346023559570312,
+          73.29447937011719,
+          425.1902160644531,
+          93.21987915039062
+        ],
+        "description": "Regione testuale sorgente: Path constraints: point-wise (in time) constraints representing possible limits on states and inputs at\neach time t",
+        "observation_ids": [
+          "s02"
+        ]
+      },
+      {
+        "bbox": [
+          160.6600341796875,
+          103.06627655029297,
+          292.8874206542969,
+          112.68040466308594
+        ],
+        "description": "Regione testuale sorgente: gt(xt, ut) ≤0,\nt = 0, . . . , T −1.",
+        "observation_ids": [
+          "s02"
+        ]
+      },
+      {
+        "bbox": [
+          126.9540023803711,
+          247.92860412597656,
+          447.8712158203125,
+          255.1179962158203
+        ],
+        "description": "Regione testuale sorgente: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 20 |35",
+        "observation_ids": [
+          "transcription-04"
+        ]
+      }
+    ]
+  },
+  "mapping_recommendation": {
+    "mode": "one_to_one",
+    "rationale": "Le due famiglie si confrontano sulla stessa timeline e sullo stesso esempio.",
+    "subpages": []
+  }
+}

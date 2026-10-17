@@ -1,0 +1,604 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0002",
+  "document_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc",
+  "source": {
+    "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+    "page_index": 1,
+    "physical_page_number": 2,
+    "pdf_label_raw": "<FEFF0031>",
+    "pdf_label": "1",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Optimal Control",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      105.49600219726562,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 1,
+        "total": 35,
+        "raw": "1 |35",
+        "bbox": [
+          130.12982177734375,
+          247.92860412597656,
+          447.87103271484375,
+          258.29376220703125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0002/text.txt",
+      "sha256": "96ac6ea1910ec8b991be33ef9cd11dcd17918ca6d74c41e6a888a804b4a8a6c6"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0002/text.reading-order.txt",
+      "sha256": "6b61a2eb1755c0f34895ac2b63650bf41edea9ac0942636d09e6ead55fef85f6"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0002/layout.json",
+      "sha256": "cf49c254e6415e236271f341f50da99b45431da1a4371ce9695a54bbc82616bc"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0002/render.png",
+      "sha256": "3ec8a5a4e43877db17f5735b743518b7029c5db2ec45dc41090ab5ac6253edb5",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "0d7dbabe3519ee8125ee58635a50d1c88502049a5c6a51c82ae17076f7e39db5"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0001",
+    "next_page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0003"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "af2a13b437f07a23c22860c2086833be88d9b02a6eb35e10452b896085b4f9a9",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0002",
+      "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+      "artifact_sha256": {
+        "text": "96ac6ea1910ec8b991be33ef9cd11dcd17918ca6d74c41e6a888a804b4a8a6c6",
+        "layout": "cf49c254e6415e236271f341f50da99b45431da1a4371ce9695a54bbc82616bc",
+        "render": "3ec8a5a4e43877db17f5735b743518b7029c5db2ec45dc41090ab5ac6253edb5"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "Codex (identificatore esatto del modello non esposto nella sessione)",
+        "run_id": "page-analysis-2cfa14d822274e148142566d51037b35"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0002",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0001",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0003"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0002",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0001",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0003"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0002",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0001",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0003"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Optimal Control: feedback, performance index e constraints",
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "La fonte non afferma che ogni tradizionale controllore sia incapace di trattare performance o vincoli: descrive il paradigma didattico discusso finora.",
+          "Non sono forniti funzionale di costo, algoritmo ottimizzatore, garanzie di stabilità o legge di feedback."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Feedback, tracking, equilibrio",
+            "why": "Servono per comprendere il paradigma richiamato e il diagramma ad anello chiuso.",
+            "origin": "enrichment",
+            "page_numbers": []
+          }
+        ],
+        "source_math": [],
+        "enrichments": [
+          {
+            "id": "explain-1",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Separare la domanda 'quale comportamento desidero?' dalla scelta dell'indice con cui confrontare decisioni ammissibili; questa esplicitazione è un enrichment.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04",
+              "s05"
+            ]
+          },
+          {
+            "id": "example-1",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "Enrichment scalare: desiderare u=1, confrontando J(u)=(u−1)^2 con il limite |u|≤0.6; i simboli e i valori sono introdotti solo per l'esempio.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04",
+              "s05"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Distinguere prestazione desiderata e ammissibilità.",
+            "setup": "Enrichment scalare: desiderare u=1, confrontando J(u)=(u−1)^2 con il limite |u|≤0.6; i simboli e i valori sono introdotti solo per l'esempio.",
+            "parameters": [
+              {
+                "symbol": "u desiderato",
+                "value": "1"
+              },
+              {
+                "symbol": "limite ingresso",
+                "value": "0.6"
+              }
+            ],
+            "derivation": [
+              "Senza vincolo il minimo è u=1 e J=0.",
+              "Con |u|≤0.6 il punto ammissibile più vicino a 1 è u=0.6.",
+              "J(0.6)=0.16."
+            ],
+            "expected_outcome": "Il migliore ingresso ammissibile può avere costo positivo; questo non è ancora un problema di controllo dinamico.",
+            "limitations": [
+              "Non è una formula né un esempio della fonte.",
+              "Nessuna conclusione sulla stabilità del sistema."
+            ],
+            "enrichment_id": "example-1",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04",
+              "s05"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "FeedbackLoopWithOptimizationAnnotations",
+          "description": "Ridisegno fedele dell'anello con callout statici su indice e vincoli; non aggiungere un blocco ottimizzatore con una posizione non specificata dalla fonte.",
+          "origin": "source_derived",
+          "source_observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04",
+            "s05"
+          ]
+        },
+        "interactivity": {
+          "recommended": false,
+          "rationale": "Un diagramma annotato e il piccolo esempio statico chiariscono il messaggio; una simulazione richiederebbe un modello assente.",
+          "component": null,
+          "parameters": [],
+          "outputs": [],
+          "invariants": [],
+          "enrichment_id": null
+        },
+        "edge_cases": [
+          {
+            "case": "Nessuna decisione soddisfa i vincoli",
+            "expected_behavior": "Segnalare infeasibilità; non presentare come ammissibile la decisione meno costosa.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04",
+              "s05"
+            ]
+          },
+          {
+            "case": "Più decisioni con lo stesso indice",
+            "expected_behavior": "L'indice da solo può non selezionare una soluzione unica.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04",
+              "s05"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un unico confronto concettuale: feedback più indice e vincoli; diagramma e piccolo esempio restano nello stesso nucleo.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Dal feedback al controllo ottimo: confrontare decisioni soltanto dentro l'insieme ammissibile.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04",
+              "s05"
+            ],
+            "enrichment_ids": [
+              "explain-1",
+              "example-1"
+            ]
+          }
+        ]
+      },
+      "observations": [
+        {
+          "id": "s01",
+          "category": "concept",
+          "description": "Il paradigma di feedback parte da un modello del sistema, mira al tracking di un'uscita di riferimento o alla stabilizzazione di un equilibrio e progetta l'ingresso come funzione dell'uscita/stato.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0002",
+            "modality": "both",
+            "text_quote": "design input as function of output/state",
+            "bbox": [
+              43.882999420166016,
+              91.4807357788086,
+              439.52032470703125,
+              106.61880493164062
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s02",
+          "category": "concept",
+          "description": "Sono evidenziati due ingredienti mancanti nel paradigma finora discusso: un performance index e constraints, con esempi di limiti sugli ingressi e vincoli geometrici.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0002",
+            "modality": "both",
+            "text_quote": "Two ingredients are mainly missing",
+            "bbox": [
+              32.12699890136719,
+              112.59640502929688,
+              167.55551147460938,
+              121.56280517578125
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s03",
+          "category": "definition",
+          "description": "L'ottimizzazione è presentata come teoria per trovare la decisione migliore gestendo vincoli.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0002",
+            "modality": "both",
+            "text_quote": "theory to find “best” decision while handling constraints",
+            "bbox": [
+              28.3458251953125,
+              181.8374786376953,
+              245.3595428466797,
+              190.8038787841797
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s04",
+          "category": "concept",
+          "description": "Il controllo ottimo combina ottimizzazione e controllo, includendo il feedback.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0002",
+            "modality": "both",
+            "text_quote": "Optimal Control: combine optimization with (feedback) control!",
+            "bbox": [
+              10.35200023651123,
+              6.720991134643555,
+              350.84100341796875,
+              229.41087341308594
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s05",
+          "category": "diagram",
+          "description": "Il diagramma mostra reference → controller → input → system → output, con ritorno dell'uscita al controller e un disturbo che entra nel sistema; non specifica una legge di controllo.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0002",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              261,
+              63,
+              444,
+              133
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-06",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 1 |35",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0002",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              130.12982177734375,
+              247.92860412597656,
+              447.87103271484375,
+              255.1179962158203
+            ]
+          },
+          "confidence": 0.98
+        }
+      ],
+      "contextual_role": "Motiva l'introduzione dell'ottimizzazione nel controllo prima degli esempi applicativi.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0001",
+          "role": "previous",
+          "note": "La pagina 1 fornisce solo identità e crediti, non una definizione del controllo ottimo."
+        },
+        {
+          "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0003",
+          "role": "next",
+          "note": "La pagina 3 concretizza indice e vincoli negli aircraft systems, senza ancora equazioni di dinamica."
+        }
+      ],
+      "notation": [],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ],
+        "rationale": "Pagina con contenuto autonomo nella sequenza; nessun candidato automatico da confermare."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              10.35200023651123,
+              6.720991134643555,
+              105.49600219726562,
+              21.06719207763672
+            ],
+            "description": "Regione testuale sorgente: Optimal Control",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              32.12699890136719,
+              30.903409957885742,
+              189.56800842285156,
+              39.86981201171875
+            ],
+            "description": "Regione testuale sorgente: So far, feedback control design paradigm",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              43.882999420166016,
+              45.731204986572266,
+              166.08778381347656,
+              65.77281188964844
+            ],
+            "description": "Regione testuale sorgente: • given a “control system”\n(model of an actual systems)",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              43.882999420166016,
+              71.63420867919922,
+              200.69805908203125,
+              91.6748046875
+            ],
+            "description": "Regione testuale sorgente: • goal: track a desired/reference output\n(or stabilize an equilibrium)",
+            "observation_ids": [
+              "s01",
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              43.882999420166016,
+              97.53620147705078,
+              208.65127563476562,
+              106.61880493164062
+            ],
+            "description": "Regione testuale sorgente: • design input as function of output/state",
+            "observation_ids": [
+              "s01",
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              32.12699890136719,
+              112.59640502929688,
+              167.55551147460938,
+              121.56280517578125
+            ],
+            "description": "Regione testuale sorgente: Two ingredients are mainly missing",
+            "observation_ids": [
+              "s02",
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              43.882999420166016,
+              127.42420196533203,
+              124.35816955566406,
+              136.50680541992188
+            ],
+            "description": "Regione testuale sorgente: • performance index",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              43.882999420166016,
+              142.36819458007812,
+              222.26226806640625,
+              162.40980529785156
+            ],
+            "description": "Regione testuale sorgente: • constraints\n(input limitations, geometric constraints,...)",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              264.32122802734375,
+              91.4807357788086,
+              439.52032470703125,
+              99.7590560913086
+            ],
+            "description": "Regione testuale sorgente: SYSTEM\nCONTROLLER\nreference\noutput",
+            "observation_ids": [
+              "s01",
+              "s04",
+              "s05"
+            ]
+          },
+          {
+            "bbox": [
+              400.59320068359375,
+              73.68283081054688,
+              422.61065673828125,
+              78.02981567382812
+            ],
+            "description": "Regione testuale sorgente: disturbance",
+            "observation_ids": [
+              "s05"
+            ]
+          },
+          {
+            "bbox": [
+              350.6312255859375,
+              91.4807357788086,
+              360.78143310546875,
+              95.82772064208984
+            ],
+            "description": "Regione testuale sorgente: input",
+            "observation_ids": [
+              "s01",
+              "s04",
+              "s05"
+            ]
+          },
+          {
+            "bbox": [
+              28.3458251953125,
+              170.8784637451172,
+              245.3595428466797,
+              190.8038787841797
+            ],
+            "description": "Regione testuale sorgente: Optimization:\ntheory to find “best” decision while handling constraints",
+            "observation_ids": [
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              103.1488265991211,
+              195.7844696044922,
+              299.12744140625,
+              204.75086975097656
+            ],
+            "description": "Regione testuale sorgente: pervasive in Engineering... and several other fields!",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              102.6958236694336,
+              220.44447326660156,
+              350.84100341796875,
+              229.41087341308594
+            ],
+            "description": "Regione testuale sorgente: Optimal Control: combine optimization with (feedback) control!",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              130.12982177734375,
+              247.92860412597656,
+              447.87103271484375,
+              255.1179962158203
+            ],
+            "description": "Regione testuale sorgente: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 1 |35",
+            "observation_ids": [
+              "transcription-06"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un unico confronto concettuale: feedback più indice e vincoli; diagramma e piccolo esempio restano nello stesso nucleo.",
+        "subpages": []
+      }
+    }
+  }
+}

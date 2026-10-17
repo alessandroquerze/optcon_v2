@@ -1,0 +1,18 @@
+       Optimal Control and Reinforcement Learning
+                    Introduction to Optimal Control
+
+
+
+                               Prof. Giuseppe Notarstefano
+
+
+            Department of Electrical, Electronic, and Information Engineering
+                   Alma Mater Studiorum Universit`a di Bologna
+                        giuseppe.notarstefano@unibo.it
+
+
+
+A special thank to L. Sforni, S. Baroncini, M. Falotico for the support on the slide preparation
+
+                The present slides are for internal use of the course
+          Optimal Control and Reinforcement Learning @ University of Bologna.

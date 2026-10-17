@@ -1,0 +1,29 @@
+Optimality conditions (Refresh from “Optimization” part)
+
+    Let z∗be a regular local minimum of the equality-constrained minimization problem:
+
+                                      min  ℓ(z)
+                                            z∈Rn
+
+                                                 subj.to h(z) = 0
+
+    where ℓ: Rn →R and h : Rn →Rn.
+    Then
+
+                                     ∇ℓ(z∗) + ∇h(z∗)λ∗= 0
+                                                    h(z∗) = 0
+
+    which can be written as
+
+                                           ∇ℓ(z∗) + ∇h(z∗)λ∗
+                   ∇L z∗, λ∗ =             = 0.
+                                                    h(z∗)
+
+
+    Remark If you have doubts go back to Part “Equality and Inequality Constrained Optimization”.
+
+
+
+
+
+                                  Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Optimality Conditions for Optimal Control 10 |18

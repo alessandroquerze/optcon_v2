@@ -1,0 +1,23 @@
+Newton’s Method via Sequential Quadratic Programming (SQP)
+
+
+     Start from a tentative solution z0
+    For k = 0, 1, . . . (up to convergence)
+        1. Compute ∇ℓ(zk), Bk, ∇h(zk)
+        2. Obtain (∆zk, ∆λkQP) from
+
+                          ∆zk = argmin ∇ℓ(zk)⊤∆z + 12∆z⊤Bk∆z
+                                      ∆z
+                                               subj.to h(zk) + ∇h(zk)⊤∆z = 0.                         (2)
+
+          with ∆λkQP the Lagrange multiplier associated to the optimal solution of (2).
+
+        3. Update
+
+                                           zk+1 = zk + ∆zk
+                                            λk+1 = ∆λkQP
+
+
+
+
+                                                      Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 66 |73

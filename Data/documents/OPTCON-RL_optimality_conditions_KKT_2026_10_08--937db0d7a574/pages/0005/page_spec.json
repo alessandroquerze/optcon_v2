@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574:p0005",
+  "document_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574",
+  "source": {
+    "pdf_sha256": "937db0d7a574f549eb1181f22207ccfa886ae6d79206720718692bfd6015bd97",
+    "page_index": 4,
+    "physical_page_number": 5,
+    "pdf_label_raw": "<FEFF0034>",
+    "pdf_label": "4",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "System trajectories and trajectory manifold",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      262.2712707519531,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 4,
+        "total": 18,
+        "raw": "4 |18",
+        "bbox": [
+          102.92296600341797,
+          247.8778533935547,
+          447.8711853027344,
+          253.93292236328125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/pages/0005/text.txt",
+      "sha256": "ec6a1e829e9af138f93733fa0881f9f6131023a9f3bf4c2bc69da20d95a4239b"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/pages/0005/text.reading-order.txt",
+      "sha256": "53899d9a5dc24de1e8a62d3890af418395c464416f91c8f64a889889e1dc628d"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/pages/0005/layout.json",
+      "sha256": "0a0006ca8b7432e15502218ec541dae3741c18556dbade02fc006bacc06f4918"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/pages/0005/render.png",
+      "sha256": "6b24f973fd7ecc21b58799b142ee8638877a33e5635ab2d6c52c51e411c6ec5e",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "b1599795b4270f3456324b6f71d784f12b1703e6784be72e9b53c903e6e527e7"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574:p0004",
+    "next_page_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574:p0006"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "pending",
+    "result": null
+  }
+}

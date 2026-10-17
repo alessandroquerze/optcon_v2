@@ -1,0 +1,28 @@
+Karush-Kuhn-Tucker (KKT) necessary conditions (second order)
+Let z⋆be a regular local minimum of
+min
+z∈Rd ℓ(z)
+subj.to gj(z) ≤0
+j ∈{1, . . . , r}
+hi(z) = 0
+i ∈{1, . . . , m}
+where ℓ, gj and hi are C1.
+Then ∃unique µ⋆
+j and λ⋆
+i , called Lagrange multipliers, s.t.
+∇1L(z⋆, µ⋆, λ⋆) = 0,
+µ⋆
+j ≥0,
+µ⋆
+j gj(z⋆) = 0
+j ∈{1, . . . , r}
+Moreover, if ℓ, gj and hi are C2 it holds
+y⊤∇2
+11L(z⋆, µ⋆, λ⋆)y ≥0
+for all y ∈Rd such that
+∇hi(z)⊤y = 0,
+i ∈{1, . . . , m},
+∇gj(z)⊤y = 0,
+j ∈A(z)
+(i.e. j ∈{1, . . . , r} s.t. gj(z) = 0)
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 57 |73

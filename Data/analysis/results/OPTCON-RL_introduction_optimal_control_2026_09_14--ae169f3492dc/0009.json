@@ -1,0 +1,546 @@
+{
+  "protocol_version": "1.0.0",
+  "request_sha256": "9d544263adf2e99e0515a15eec8b9fced8fb412c023bf0256f0eeae8dbb0632f",
+  "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0009",
+  "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+  "artifact_sha256": {
+    "text": "ee0cd7a48717bf8b26222f23066759b842ec7afbc8f1d178142ee2b3e5ddbadc",
+    "layout": "419dd6c3eef9847405da40bcf376fded1b3269e36b178a121c92e4a1841fa27a",
+    "render": "c25386041e6045553033b508392025cd7810f610759dde81562024e1261ac620"
+  },
+  "agent": {
+    "provider": "OpenAI",
+    "model": "Codex (identificatore esatto del modello non esposto nella sessione)",
+    "run_id": "page-analysis-ce370a19242e4173828aef04d60c36ee"
+  },
+  "inspection": {
+    "text_page_ids": [
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0009",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0008",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0010"
+    ],
+    "layout_page_ids": [
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0009",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0008",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0010"
+    ],
+    "image_page_ids": [
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0009",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0008",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0010"
+    ],
+    "source_content_treated_as_data": true
+  },
+  "title": "Discrete-time control systems and notation — forma compatta",
+  "companionPageCount": 1,
+  "didactic_plan": {
+    "source_scope_limits": [
+      "Non è indicato un tempo di campionamento o uno schema di integrazione.",
+      "fₜ può dipendere dal tempo; il sottoscritto non è una derivata.",
+      "Nessuna condizione di stabilità è formulata."
+    ],
+    "prerequisites": [
+      {
+        "concept": "Funzione e successione",
+        "why": "Per leggere un aggiornamento da t a t+1.",
+        "origin": "enrichment",
+        "page_numbers": []
+      },
+      {
+        "concept": "Stato e ingresso",
+        "why": "Ruoli e dimensioni sono stati introdotti alla pagina 8.",
+        "origin": "source_context",
+        "page_numbers": [
+          8
+        ]
+      }
+    ],
+    "source_math": [
+      {
+        "latex": "x(t+1)=f(x(t),u(t),t),\\quad x(0)=x^0,\\quad t\\in\\mathbb{N}_0",
+        "anchor": "x(t + 1)",
+        "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+      },
+      {
+        "latex": "x_{t+1}=f_t(x_t,u_t),\\quad x_0=x^0,\\quad t\\in\\mathbb{N}_0",
+        "anchor": "xt+1 = ft(xt, ut),",
+        "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+      },
+      {
+        "latex": "x_t\\in\\mathbb{R}^n,\\quad u_t\\in\\mathbb{R}^m",
+        "anchor": "where xt",
+        "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+      }
+    ],
+    "enrichments": [
+      {
+        "id": "example-1",
+        "label": "enrichment",
+        "type": "worked_example",
+        "proposal": "Enrichment scalare xₜ₊₁=0.8xₜ+uₜ, con x⁰=1 e uₜ=0.2 costante.",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ]
+      },
+      {
+        "id": "interaction",
+        "label": "enrichment",
+        "type": "interaction_design",
+        "proposal": "Un passo alla volta rende concreto l'indice t+1 e la dipendenza dall'ingresso al tempo t.",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ]
+      },
+      {
+        "id": "visualization",
+        "label": "enrichment",
+        "type": "visualization_design",
+        "proposal": "Timeline x₀ → x₁ → x₂ con u₀ e u₁ sugli archi; allineare le due notazioni della fonte.",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "id": "example-1",
+        "origin": "enrichment",
+        "purpose": "Eseguire un aggiornamento discreto e leggere correttamente gli indici.",
+        "setup": "Enrichment scalare xₜ₊₁=0.8xₜ+uₜ, con x⁰=1 e uₜ=0.2 costante.",
+        "parameters": [
+          {
+            "symbol": "a",
+            "value": "0.8"
+          },
+          {
+            "symbol": "x^0",
+            "value": "1"
+          },
+          {
+            "symbol": "u_t",
+            "value": "0.2"
+          }
+        ],
+        "derivation": [
+          "x₀=x⁰=1.",
+          "x₁=0.8·1+0.2=1.",
+          "x₂=0.8·1+0.2=1."
+        ],
+        "expected_outcome": "Il dato iniziale è assegnato; ogni nuovo stato dipende dallo stato e dall'ingresso precedenti.",
+        "limitations": [
+          "La ricorrenza lineare è aggiunta per l'esempio, non sostituisce la fₜ generale della fonte."
+        ],
+        "enrichment_id": "example-1",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ]
+      }
+    ],
+    "example_omission_reason": null,
+    "visualization": {
+      "component": "DiscreteUpdateTimeline",
+      "description": "Timeline x₀ → x₁ → x₂ con u₀ e u₁ sugli archi; allineare le due notazioni della fonte.",
+      "origin": "enrichment",
+      "source_observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    },
+    "interactivity": {
+      "recommended": true,
+      "rationale": "Un passo alla volta rende concreto l'indice t+1 e la dipendenza dall'ingresso al tempo t.",
+      "component": "DiscreteScalarStepper",
+      "parameters": [
+        {
+          "name": "Coefficiente aggiunto",
+          "symbol": "a",
+          "origin": "enrichment",
+          "range": "[−1.2,1.2]",
+          "default": "0.8",
+          "effect_on_change": "Ricalcolare sei aggiornamenti xₜ₊₁=a xₜ+u e mostrare i valori nella timeline.",
+          "edge_cases": [
+            "|a|≥1 può produrre crescita o oscillazioni"
+          ]
+        },
+        {
+          "name": "Ingresso costante",
+          "symbol": "u",
+          "origin": "enrichment",
+          "range": "[−1,1]",
+          "default": "0.2",
+          "effect_on_change": "Aggiornare tutti gli stati successivi, lasciando invariato x₀.",
+          "edge_cases": [
+            "u=0: evoluzione libera"
+          ]
+        },
+        {
+          "name": "Dato iniziale",
+          "symbol": "x^0",
+          "origin": "enrichment",
+          "range": "[−2,2]",
+          "default": "1",
+          "effect_on_change": "Cambiare x₀ e propagare nuovamente la ricorrenza.",
+          "edge_cases": [
+            "Stato iniziale di equilibrio"
+          ]
+        }
+      ],
+      "outputs": [
+        "Sei aggiornamenti e relativi valori",
+        "Stato precedente, ingresso corrente e stato nuovo evidenziati"
+      ],
+      "invariants": [
+        "Numero di aggiornamenti fissato per l'esempio",
+        "Indici interi a partire da zero",
+        "La fonte non fornisce a"
+      ],
+      "enrichment_id": "interaction"
+    },
+    "edge_cases": [
+      {
+        "case": "a=0 nell'esempio",
+        "expected_behavior": "Il nuovo stato coincide con l'ingresso corrente, indipendentemente dallo stato precedente.",
+        "origin": "enrichment",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ]
+      },
+      {
+        "case": "a=1 e ingresso non nullo",
+        "expected_behavior": "Mostrare l'accumulo, senza etichettare ogni sistema discreto come convergente.",
+        "origin": "enrichment",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ]
+      }
+    ],
+    "expansion_rationale": "Si spiega una sola trasformazione di notazione con una timeline e un esempio minimo.",
+    "blueprint": [
+      {
+        "companion_suffix": null,
+        "focus": "Leggere xₜ₊₁=fₜ(xₜ,uₜ) e distinguere x₀ da x⁰.",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ],
+        "enrichment_ids": [
+          "example-1",
+          "interaction",
+          "visualization"
+        ]
+      }
+    ]
+  },
+  "observations": [
+    {
+      "id": "s01",
+      "category": "equation",
+      "description": "La forma discreta è x(t+1)=f(x(t),u(t),t), x(0)=x⁰, t∈N₀.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0009",
+        "modality": "both",
+        "text_quote": "x(t + 1) = f(x(t), u(t), t),",
+        "bbox": [
+          118,
+          49,
+          333,
+          65
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "s02",
+      "category": "definition",
+      "description": "Da questo punto il corso adotta la notazione compatta xₜ₊₁=fₜ(xₜ,uₜ), x₀=x⁰, t∈N₀.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0009",
+        "modality": "both",
+        "text_quote": "xt+1 = ft(xt, ut),",
+        "bbox": [
+          116,
+          87,
+          331,
+          104
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "s03",
+      "category": "definition",
+      "description": "xₜ∈Rⁿ e uₜ∈Rᵐ sono rispettivamente stato e ingresso al tempo t.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0009",
+        "modality": "both",
+        "text_quote": "are the state and the input of the system at time t.",
+        "bbox": [
+          28,
+          109,
+          419,
+          122
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "s04",
+      "category": "structure",
+      "description": "La pagina presenta le due forme una sopra l'altra come equivalenza di notazione; non mostra un passaggio di discretizzazione da un'ODE.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0009",
+        "modality": "both",
+        "text_quote": "but from now on we will use the (more compact) notation",
+        "bbox": [
+          27,
+          32,
+          335,
+          106
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "transcription-05",
+      "category": "structure",
+      "description": "Trascrizione di una regione visibile della fonte: Discrete-time control systems and notation",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0009",
+        "modality": "visual",
+        "text_quote": null,
+        "bbox": [
+          10.35200023651123,
+          6.720991134643555,
+          262.25689697265625,
+          21.06719207763672
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "transcription-06",
+      "category": "structure",
+      "description": "Trascrizione di una regione visibile della fonte: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 8 |35",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0009",
+        "modality": "visual",
+        "text_quote": null,
+        "bbox": [
+          130.1300048828125,
+          247.92860412597656,
+          447.8712158203125,
+          255.1179962158203
+        ]
+      },
+      "confidence": 0.98
+    }
+  ],
+  "contextual_role": "Fissa la notazione usata nelle pagine discrete successive e previene la confusione fra sottoscritto temporale e dato iniziale.",
+  "context_notes": [
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0008",
+      "role": "previous",
+      "note": "La pagina 8 era a tempo continuo; la fonte qui introduce un altro modello generale, senza indicare Euler o un passo di campionamento."
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0010",
+      "role": "next",
+      "note": "La pagina 10 limita il tempo a un orizzonte finito e impila stati e ingressi."
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "x_t",
+      "meaning": "Stato al tempo discreto t",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    },
+    {
+      "symbol": "u_t",
+      "meaning": "Ingresso al tempo discreto t",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    },
+    {
+      "symbol": "f_t",
+      "meaning": "Mappa di aggiornamento indicizzata dal tempo",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    },
+    {
+      "symbol": "x_0",
+      "meaning": "Stato all'indice zero",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    },
+    {
+      "symbol": "x^0",
+      "meaning": "Dato iniziale; il simbolo è in apice",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    },
+    {
+      "symbol": "\\mathbb{N}_0",
+      "meaning": "Indici discreti comprendenti zero",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    }
+  ],
+  "uncertainties": [],
+  "progression": {
+    "assessment": "unique",
+    "related_page_ids": [],
+    "added": [],
+    "removed": [],
+    "changed": [],
+    "observation_ids": [
+      "s01",
+      "s02",
+      "s03",
+      "s04"
+    ],
+    "rationale": "Pagina con contenuto autonomo nella sequenza; nessun candidato automatico da confermare."
+  },
+  "coverage": {
+    "all_visible_regions_accounted_for": true,
+    "regions": [
+      {
+        "bbox": [
+          10.35200023651123,
+          6.720991134643555,
+          262.25689697265625,
+          21.06719207763672
+        ],
+        "description": "Regione testuale sorgente: Discrete-time control systems and notation",
+        "observation_ids": [
+          "transcription-05"
+        ]
+      },
+      {
+        "bbox": [
+          28.34600067138672,
+          34.63948059082031,
+          251.12515258789062,
+          43.60588073730469
+        ],
+        "description": "Regione testuale sorgente: We consider nonlinear, discrete-time systems described by",
+        "observation_ids": [
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          122.54199981689453,
+          51.60960388183594,
+          330.5033264160156,
+          63.06640625
+        ],
+        "description": "Regione testuale sorgente: x(t + 1) = f(x(t), u(t), t),\nx(0) = x0,\nt ∈N0",
+        "observation_ids": [
+          "s01",
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          28.347015380859375,
+          72.49748229980469,
+          252.9194793701172,
+          81.46388244628906
+        ],
+        "description": "Regione testuale sorgente: but from now on we will use the (more compact) notation",
+        "observation_ids": [
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          142.91302490234375,
+          89.46760559082031,
+          310.1313781738281,
+          101.38888549804688
+        ],
+        "description": "Regione testuale sorgente: xt+1 = ft(xt, ut),\nx0 = x0,\nt ∈N0",
+        "observation_ids": [
+          "s02",
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          28.347076416015625,
+          106.54647827148438,
+          340.10546875,
+          120.2016830444336
+        ],
+        "description": "Regione testuale sorgente: where xt ∈Rn and ut ∈Rm are the state and the input of the system at time t.",
+        "observation_ids": [
+          "s03"
+        ]
+      },
+      {
+        "bbox": [
+          130.1300048828125,
+          247.92860412597656,
+          447.8712158203125,
+          255.1179962158203
+        ],
+        "description": "Regione testuale sorgente: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 8 |35",
+        "observation_ids": [
+          "transcription-06"
+        ]
+      }
+    ]
+  },
+  "mapping_recommendation": {
+    "mode": "one_to_one",
+    "rationale": "Si spiega una sola trasformazione di notazione con una timeline e un esempio minimo.",
+    "subpages": []
+  }
+}

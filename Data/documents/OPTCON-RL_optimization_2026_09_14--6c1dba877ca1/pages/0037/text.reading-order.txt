@@ -1,0 +1,24 @@
+Gradient methods via quadratic optimization
+
+     Similarly to the Newton’s method, a descent direction ∆zk = Dk∇ℓ(zk) can be seen as the direction
+     that minimizes at each iteration a different quadratic approximation of ℓabout zk.
+
+     In fact, consider the quadratic approximation ℓk(z) of ℓabout zk given by
+                       ℓk(z) = ℓ(zk) + ∇ℓ(zk)⊤(z −zk) + 12(z −zk)⊤(Dk)−1(z −zk)
+
+   By setting the derivative to zero, we have
+                                  ∇ℓ(zk) + (Dk)−1(z −zk) = 0
+
+    we can calculate the minimum of ℓk(z) and set it as the next iterate zk+1
+
+                                      zk+1 = zk −Dk∇ℓ(zk)
+
+    namely,
+
+                                 ∆zk = −Dk∇ℓ(zk)
+
+    Remark Direction ∆zk can be computed by solving the quadratic approximation.  This can be very
+     helpful in optimization problems in which a gradient is not (easily) available, but it is to solve a quadratic
+     optimization problem. It is useful also in case the domain is a compact convex set.
+
+                                                      Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 36 |73

@@ -1,0 +1,563 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0032",
+  "document_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc",
+  "source": {
+    "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+    "page_index": 31,
+    "physical_page_number": 32,
+    "pdf_label_raw": "<FEFF00330031>",
+    "pdf_label": "31",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Continuous-time Optimal Control problem (II)",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      280.96441650390625,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 31,
+        "total": 35,
+        "raw": "31 |35",
+        "bbox": [
+          126.9540023803711,
+          247.92860412597656,
+          447.8712158203125,
+          258.29376220703125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0032/text.txt",
+      "sha256": "1345768456e5b0b9e83f21ac25dc7a262e22f77ce9045669be1b28d454607ab9"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0032/text.reading-order.txt",
+      "sha256": "a619c7327b613b25a1e6d818e9a029b9ece59013c3a87b7d8d387988ebf272a7"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0032/layout.json",
+      "sha256": "5db8eafca705f080d94d8e4badb4c0291f8df2dcfc27738169368e87dc2f8b7d"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0032/render.png",
+      "sha256": "584a7206a3cf381e7e707c14b3a16ddc4000c7c8275ad421811f14649207401f",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "ef3f3dd3e9816958260da614feec85e77e4470150d6b80fda12a769f3496cbcd"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0031",
+    "next_page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0033"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "799e6ddadc70d6a25a8736a9928f70666296168b09806944959de99928e958ac",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0032",
+      "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+      "artifact_sha256": {
+        "text": "1345768456e5b0b9e83f21ac25dc7a262e22f77ce9045669be1b28d454607ab9",
+        "layout": "5db8eafca705f080d94d8e4badb4c0291f8df2dcfc27738169368e87dc2f8b7d",
+        "render": "584a7206a3cf381e7e707c14b3a16ddc4000c7c8275ad421811f14649207401f"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "Codex (identificatore esatto del modello non esposto nella sessione)",
+        "run_id": "page-analysis-f393ee05e58340ae95ddaeda6ccf69d9"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0032",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0031",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0033"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0032",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0031",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0033"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0032",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0031",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0033"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Continuous-time Optimal Control problem (II)",
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Trascurare terminal constraints non significa rimuovere il terminal cost dal funzionale.",
+          "Infinito-dimensionale non significa orizzonte T infinito: anche su un intervallo finito si scelgono funzioni.",
+          "La fonte non specifica una parametrizzazione finita o un algoritmo numerico.",
+          "La formula compatta non mostra una condizione iniziale separata; non aggiungerla come se fosse stampata."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Funzionale e insieme delle traiettorie",
+            "why": "Definiti immediatamente prima.",
+            "origin": "source_context",
+            "page_numbers": [
+              31
+            ]
+          },
+          {
+            "concept": "Vettore finito contro funzione",
+            "why": "Per comprendere il numero di gradi di libertà.",
+            "origin": "enrichment",
+            "page_numbers": []
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\begin{aligned}\\min_{(x(\\cdot),u(\\cdot))\\in\\mathcal F}\\;&\\ell(x(\\cdot),u(\\cdot))\\\\\\text{subj.to }&(x(\\cdot),u(\\cdot))\\in\\mathcal T\\end{aligned}",
+            "anchor": "subj.to (x(·), u(·)) ∈T",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "example-1",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "Enrichment: ẋ=u,x(0)=0 su [0,2]; restringere u a due tratti costanti, u=1 su [0,1), u=−1 su [1,2].",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Aumentare il numero di coefficienti rende concreta la differenza tra una famiglia finita e lo spazio di funzioni completo.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03"
+            ]
+          },
+          {
+            "id": "visualization",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Contrasto tra coppia di funzioni su intervallo continuo e u a K tratti, con x ottenuta integrando.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Distinguere problema infinito-dimensionale e sua famiglia parametrizzata.",
+            "setup": "Enrichment: ẋ=u,x(0)=0 su [0,2]; restringere u a due tratti costanti, u=1 su [0,1), u=−1 su [1,2].",
+            "parameters": [
+              {
+                "symbol": "Numero tratti aggiunto K",
+                "value": "2"
+              },
+              {
+                "symbol": "Coefficienti",
+                "value": "1,−1"
+              }
+            ],
+            "derivation": [
+              "Integrare la dinamica: x sale da 0 a 1 e poi ritorna a 0.",
+              "Questa coppia appartiene all'insieme dinamico dell'esempio.",
+              "I due coefficienti descrivono solo una sott famiglia finita, non tutte le funzioni ammesse dal problema generale."
+            ],
+            "expected_outcome": "Una rappresentazione con K parametri è un'approssimazione/restrizione aggiunta, non la dimensione della formulazione originaria.",
+            "limitations": [
+              "Modello e parametrizzazione sono enrichment.",
+              "Non è una dimostrazione di convergenza di una discretizzazione."
+            ],
+            "enrichment_id": "example-1",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "FunctionSpaceVersusFiniteParameterFamily",
+          "description": "Contrasto tra coppia di funzioni su intervallo continuo e u a K tratti, con x ottenuta integrando.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "s01",
+            "s02",
+            "s03"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Aumentare il numero di coefficienti rende concreta la differenza tra una famiglia finita e lo spazio di funzioni completo.",
+          "component": "PiecewiseConstantFunctionFamilyExplorer",
+          "parameters": [
+            {
+              "name": "Numero di tratti aggiunto",
+              "symbol": "K",
+              "origin": "enrichment",
+              "range": "Interi 1…8",
+              "default": "2",
+              "effect_on_change": "Suddividere [0,2] in K intervalli e reinizializzare i coefficienti a zero dichiaratamente; mostrare K gradi di libertà nell'approssimazione.",
+              "edge_cases": [
+                "K=1: un ingresso costante"
+              ]
+            },
+            {
+              "name": "Tratto selezionato",
+              "symbol": "k",
+              "origin": "enrichment",
+              "range": "Interi 1…K",
+              "default": "1",
+              "effect_on_change": "Evidenziare il tratto e caricarne il coefficiente nel controllo, senza cambiare da solo le funzioni.",
+              "edge_cases": [
+                "Se K diminuisce, selezionare un indice valido"
+              ]
+            },
+            {
+              "name": "Coefficiente selezionato",
+              "symbol": "c_k",
+              "origin": "enrichment",
+              "range": "[−1,1]",
+              "default": "1 nel caso iniziale K=2",
+              "effect_on_change": "Cambiare u solo nel tratto selezionato e ricalcolare x da quel tratto in avanti con integrazione esatta dell'integratore.",
+              "edge_cases": [
+                "c_k=0: x costante sul tratto"
+              ]
+            }
+          ],
+          "outputs": [
+            "u a tratti",
+            "x continua e lineare a tratti",
+            "Numero finito K di coefficienti"
+          ],
+          "invariants": [
+            "Dinamica dell'esempio ẋ=u",
+            "Intervallo [0,2] e x(0)=0",
+            "Nessuna affermazione che K coefficienti esauriscano 𝓕"
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "T finito",
+            "expected_behavior": "Il problema originale resta di dimensione infinita.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03"
+            ]
+          },
+          {
+            "case": "K finito molto grande",
+            "expected_behavior": "Rimane una parametrizzazione finita; non attribuire accuratezza o ottimalità senza analisi.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03"
+            ]
+          },
+          {
+            "case": "Terminal cost presente",
+            "expected_behavior": "Non confonderlo con un terminal constraint trascurato.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un'unica forma compatta e una distinzione dimensionale; l'esempio a tratti serve solo da confronto.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Ottimizzazione su funzioni: la dimensione infinita non dipende dall'avere un tempo finale infinito.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03"
+            ],
+            "enrichment_ids": [
+              "example-1",
+              "interaction",
+              "visualization"
+            ]
+          }
+        ]
+      },
+      "observations": [
+        {
+          "id": "s01",
+          "category": "assumption",
+          "description": "La pagina suppone di trascurare path e terminal constraints.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0032",
+            "modality": "both",
+            "text_quote": "Suppose we neglect path and terminal constraints.",
+            "bbox": [
+              28.34600067138672,
+              35.43647766113281,
+              399.842041015625,
+              63.331878662109375
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s02",
+          "category": "equation",
+          "description": "Il problema diventa min_{(x(·),u(·))∈𝓕}ℓ(x(·),u(·)) soggetto a (x(·),u(·))∈𝓣.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0032",
+            "modality": "both",
+            "text_quote": "subj.to (x(·), u(·)) ∈T",
+            "bbox": [
+              190.03099060058594,
+              74.3732681274414,
+              278.7044982910156,
+              83.45587158203125
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s03",
+          "category": "concept",
+          "description": "La fonte identifica esplicitamente il problema come ottimizzazione infinito-dimensionale.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0032",
+            "modality": "both",
+            "text_quote": "which is an infinite dimensional optimization problem.",
+            "bbox": [
+              28.34698486328125,
+              93.41847229003906,
+              235.8743133544922,
+              102.38487243652344
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-04",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Continuous-time Optimal Control problem (II)",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0032",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              10.35200023651123,
+              6.720991134643555,
+              280.96441650390625,
+              21.06719207763672
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-05",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 31 |35",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0032",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              126.9540023803711,
+              247.92860412597656,
+              447.8712158203125,
+              255.1179962158203
+            ]
+          },
+          "confidence": 0.98
+        }
+      ],
+      "contextual_role": "Condensa la formulazione continua in un'ottimizzazione su uno spazio di traiettorie e ne evidenzia la dimensione infinita.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0031",
+          "role": "previous",
+          "note": "La pagina 31 definisce 𝓕, ℓ e 𝓣; senza quelle definizioni la formula compatta non è autosufficiente."
+        },
+        {
+          "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0033",
+          "role": "next",
+          "note": "La pagina 33 fornisce il modello continuo di un pendolo per un esempio di generazione di traiettoria."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\mathcal F",
+          "meaning": "Spazio ambiente delle coppie di funzioni",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03"
+          ]
+        },
+        {
+          "symbol": "\\mathcal T",
+          "meaning": "Sottoinsieme delle coppie che rispettano la dinamica",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03"
+          ]
+        },
+        {
+          "symbol": "\\ell",
+          "meaning": "Funzionale già definito, non una funzione di pochi parametri assegnati",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "s01",
+          "s02",
+          "s03"
+        ],
+        "rationale": "Pagina con contenuto autonomo nella sequenza; nessun candidato automatico da confermare."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              10.35200023651123,
+              6.720991134643555,
+              280.96441650390625,
+              21.06719207763672
+            ],
+            "description": "Regione testuale sorgente: Continuous-time Optimal Control problem (II)",
+            "observation_ids": [
+              "transcription-04"
+            ]
+          },
+          {
+            "bbox": [
+              28.34600067138672,
+              35.43647766113281,
+              399.842041015625,
+              44.40287780761719
+            ],
+            "description": "Regione testuale sorgente: Suppose we neglect path and terminal constraints. We can write the optimal control problem as",
+            "observation_ids": [
+              "s01"
+            ]
+          },
+          {
+            "bbox": [
+              172.53199768066406,
+              54.249271392822266,
+              266.2100830078125,
+              73.01676940917969
+            ],
+            "description": "Regione testuale sorgente: min\n(x(·),u(·))∈F ℓ(x(·), u(·))",
+            "observation_ids": [
+              "s01"
+            ]
+          },
+          {
+            "bbox": [
+              190.03099060058594,
+              74.3732681274414,
+              278.7044982910156,
+              83.45587158203125
+            ],
+            "description": "Regione testuale sorgente: subj.to (x(·), u(·)) ∈T",
+            "observation_ids": [
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              28.34698486328125,
+              93.41847229003906,
+              235.8743133544922,
+              102.38487243652344
+            ],
+            "description": "Regione testuale sorgente: which is an infinite dimensional optimization problem.",
+            "observation_ids": [
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              126.9540023803711,
+              247.92860412597656,
+              447.8712158203125,
+              255.1179962158203
+            ],
+            "description": "Regione testuale sorgente: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 31 |35",
+            "observation_ids": [
+              "transcription-05"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un'unica forma compatta e una distinzione dimensionale; l'esempio a tratti serve solo da confronto.",
+        "subpages": []
+      }
+    }
+  }
+}

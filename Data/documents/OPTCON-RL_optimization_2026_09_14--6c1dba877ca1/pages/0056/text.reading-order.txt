@@ -1,0 +1,13 @@
+Constrained optimization problem set-up
+
+
+                              min ℓ(z)
+                                     z∈Rd
+                                       subj.to gj(z) ≤0     j ∈{1, . . . , r}
+                                           hi(z) = 0      i ∈{1, . . . , m}
+
+
+
+
+
+                                                      Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 52 |73

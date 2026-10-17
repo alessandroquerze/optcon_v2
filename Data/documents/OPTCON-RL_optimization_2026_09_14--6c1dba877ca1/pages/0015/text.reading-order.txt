@@ -1,0 +1,22 @@
+Strict convexity and gradient monotonicity
+
+   A function ℓis strictly convex if for zA̸ = zB and θ ∈(0, 1)
+
+                              ℓ(θzA + (1 −θ)zB) < θℓ(zA) + (1 −θ)ℓ(zB)
+
+
+
+       If the strictly convex function ℓis also differentiable, then its gradient satisfies
+
+                                       ⊤                               ∇ℓ(zA) −∇ℓ(zB)   (zA −zB) > 0
+
+     for all zA, zB ∈Z.
+
+
+    That is, the gradient ∇ℓis a strictly monotone operator
+
+
+
+
+
+                                                      Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 14 |73

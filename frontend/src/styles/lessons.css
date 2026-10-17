@@ -1,0 +1,99 @@
+.companion-page.lesson-page { padding:40px; gap:6px; line-height:1.4; overflow:visible; }
+.lesson-page > .slide-block { flex:0 0 auto; min-width:0; }
+.lesson-page > .block-takeaway { margin-top:auto; }
+.lesson-page p { margin:0; line-height:1.4; }
+.lesson-page .companion-header h1 { font-size:34px; margin:0; max-width:none; }
+.lesson-page .companion-header .eyebrow { margin-bottom:4px; }
+.lesson-page .explanation { font-size:24px; }
+.lesson-page .lesson-caption { font-size:22px; color:var(--color-muted); line-height:1.3; }
+.lesson-page .visual-legend { margin-bottom:6px; }
+.lesson-page .equation-card { padding:8px 14px; }
+.lesson-page .equation .katex, .lesson-page .inline-math .katex { font-size:1em; }
+.lesson-page .equation .katex-display { margin:4px 0; }
+.lesson-page .formula-deck { position:relative; }
+.lesson-page .formula-disclosure { font-size:22px; padding:1px 0; border:0; background:transparent; color:var(--color-accent); }
+.lesson-page .formula-reference { position:absolute; left:0; top:100%; width:100%; z-index:20; max-height:440px; overflow:auto; background:white; border:1px solid var(--color-border); border-radius:6px; padding:18px; box-shadow:0 8px 24px #223d5025; }
+.lesson-page .formula-reference button { font-size:22px; float:right; }
+.lesson-page .formula-reference .equation-card { margin:10px 0; clear:both; }
+.lesson-page .source-warning { padding:6px 10px; margin:6px 0 0; font-size:22px; line-height:1.3; }
+.lesson-page .source-note { padding:0; margin:0 0 4px; font-size:22px; line-height:1.3; }
+.lesson-page .controls-heading { display:flex; justify-content:space-between; align-items:center; color:var(--color-muted); font-size:22px; margin-bottom:6px; }
+.lesson-page .controls-heading button { font-size:22px; padding:2px 8px; }
+.lesson-page .controls-block { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); padding:0; gap:16px; }
+.lesson-page .parameter-control { min-width:0; gap:5px; }
+.lesson-page .parameter-control label, .lesson-page .unit { font-size:22px; line-height:1.25; }
+.lesson-page .parameter-control input[type="text"] { width:96px; font-size:24px; padding:4px 6px; }
+.lesson-page .parameter-control small { font-size:22px; line-height:1.2; min-height:27px; color:var(--color-muted); }
+.lesson-page .parameter-control select { padding:4px; font-size:24px; width:100%; border:1px solid var(--color-border); }
+.lesson-page .parameter-inputs { gap:8px; min-height:40px; }
+.lesson-page .parameter-inputs input[type="range"] { flex:1; width:50%; }
+.lesson-page .view-toggle { margin:0 0 5px; gap:6px; height:34px; }
+.lesson-page .view-toggle button { font-size:22px; padding:1px 18px; }
+.lesson-page .camera-toolbar { padding:2px 6px 0; min-height:32px; height:32px; }
+.lesson-page .camera-toolbar button { font-size:20px; padding:1px 8px; }
+.lesson-page .example-block { margin:0; padding:10px 14px; }
+.lesson-page .example-block h3 { font-size:22px; margin:0 0 6px; color:var(--color-accent); font-weight:600; }
+.lesson-page .takeaway { margin:0; padding-top:10px; font-size:24px; line-height:1.35; }
+.lesson-page .live-metrics { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; margin:4px 0; }
+.lesson-page .live-metrics > div { min-width:0; }
+.lesson-page .live-metrics dt { font-size:22px; color:var(--color-muted); line-height:1.25; }
+.lesson-page .live-metrics dd { margin:2px 0 0; font-size:28px; font-weight:650; color:var(--color-accent); font-variant-numeric:tabular-nums; }
+.lesson-page .legend-exact { color:#176c98; }
+.lesson-page .legend-linear { color:#8057a5; }
+.lesson-page .selected-readout { margin-top:5px; }
+.lesson-page .concept-pair { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:4px; }
+.lesson-page .concept-pair section { background:#edf5f6; border-left:3px solid var(--color-accent); padding:16px; }
+.lesson-page .concept-pair h2 { font-size:28px; margin:0 0 8px; }
+.lesson-page .concept-pair span { font-size:22px; color:var(--color-muted); }
+.lesson-page table { font-size:22px; margin:4px 0; }
+.lesson-page caption { padding-bottom:5px; font-size:22px; line-height:1.2; }
+.lesson-page td,.lesson-page th { padding:3px 8px; line-height:1.2; }
+.lesson-page td button { font-size:22px; padding:2px 7px; }
+.lesson-page .weighted-example { display:grid; grid-template-columns:260px 1fr; gap:20px; align-items:center; }
+.lesson-page .weighted-example .equation-card { border:0; background:transparent; }
+.lesson-page .cost-breakdown { padding:0; }
+.lesson-page .cost-row { font-size:22px; margin:3px 0; gap:10px; }
+.lesson-page .cost-total { margin-top:5px; padding-top:5px; font-size:24px; }
+.lesson-page .cost-track { min-width:50px; }
+.lesson-page .constraint-example { display:grid; grid-template-columns:220px 1fr; gap:12px; align-items:center; }
+.lesson-page .unit-circle-inset { width:220px; font-size:22px; overflow:visible; }
+.lesson-page .study-diagram { display:block; width:100%; font-size:22px; }
+.lesson-page .state-timeline { margin:3px 0; padding:5px 0; font-size:22px; gap:10px; }
+.lesson-page .state-timeline li { gap:12px; }
+.lesson-page .state-timeline li > span:first-child { padding:5px 10px; }
+.lesson-page .input-edge { font-size:22px; }
+.lesson-page .state-readout { display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); gap:5px; margin-top:4px; }
+.lesson-page .state-readout > span { grid-column:1/-1; font-size:22px; color:var(--color-muted); }
+.lesson-page .state-readout > div { background:#f3f7f9; padding:2px 5px; display:flex; flex-direction:column; }
+.lesson-page .state-readout > div span { font-size:22px; }
+.lesson-page .state-readout output { font-size:24px; font-variant-numeric:tabular-nums; }
+.lesson-page .lesson-playback { display:flex; align-items:center; gap:8px; }
+.lesson-page .lesson-playback button { font-size:22px; padding:6px 12px; }
+.lesson-page .example-equation-row { display:flex; align-items:center; gap:16px; }
+.lesson-page .example-equation-row > span { font-size:22px; color:var(--color-muted); }
+.lesson-page .example-equation-row .equation-card { background:transparent; border:0; padding:0; flex:1; }
+.lesson-page .pendulum-projections .equilibrium-poses { height:130px; }
+.lesson-page .explained-equation { position:relative; font-size:22px; line-height:1.3; }
+.lesson-page .formula-concept { display:inline; font-size:22px; line-height:1.3; margin:5px 0 0; color:var(--color-ink); }
+.lesson-page .formula-details { display:inline; position:static; font-size:22px; line-height:1.3; }
+.lesson-page .formula-details > summary { display:inline; cursor:pointer; color:var(--color-accent); width:fit-content; margin-left:8px; text-decoration:underline; }
+.lesson-page .formula-detail-content { position:absolute; top:100%; left:0; width:100%; min-width:350px; max-height:320px; overflow:auto; padding:14px; background:white; border:1px solid var(--color-border); border-radius:6px; box-shadow:0 8px 24px #223d5025; z-index:30; }
+.lesson-page .formula-detail-content p + p { margin-top:8px; }
+.lesson-page .formula-detail-content dl { margin:8px 0; }
+.lesson-page .formula-detail-content dl > div { display:flex; gap:12px; padding:3px 0; }
+.lesson-page .formula-detail-content dt { min-width:75px; }
+.lesson-page .formula-detail-content dd { margin:0; }
+.lesson-page .formula-detail-content ul { margin:8px 0; padding-left:24px; }
+.lesson-page .formula-detail-content .formula-detail-content { position:static; min-width:0; box-shadow:none; max-height:none; }
+.lesson-page .formula-reference .explained-equation { margin-bottom:16px; }
+.lesson-page .formula-reference .formula-detail-content { position:static; max-height:none; box-shadow:none; }
+.lesson-page .example-block .formula-details > .formula-detail-content { top:auto; bottom:100%; }
+.lesson-page .live-metrics .formula-details > .formula-detail-content { left:auto; right:0; width:700px; }
+.lesson-page summary:focus-visible { outline:3px solid #62a5b5; outline-offset:2px; }
+.lesson-page .formula-reference .equation-card { overflow-x:auto; }
+.lesson-page .formula-reference .formula-concept { font-size:22px; }
+.lesson-page .formula-context { position:relative; font-size:22px; line-height:1.3; }
+.lesson-page .formula-context > p { display:inline; }
+.lesson-page .formula-context .formula-details > summary { font-size:22px; }
+.lesson-page .matrix-readout { color:var(--color-accent); display:flex; flex-direction:column; font-size:28px; }
+.sr-only { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; }

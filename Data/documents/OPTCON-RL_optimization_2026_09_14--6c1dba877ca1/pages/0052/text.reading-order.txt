@@ -1,0 +1,23 @@
+Example: Projected Gradient Method for Quadratic Programs
+
+
+    Quadratic program
+
+                                           1
+                                   min 2zT Qz + qT z                                       z∈Z
+    with Q = QT ≥0 ∈Rd×d and q ∈Rd.
+
+
+    Projected gradient method
+
+                                    zk+1 = PZ zk −γk∇ℓ(zk)
+
+      is given by
+
+                                  zk+1 = PZ zk −γk(Qzk + q)  .
+
+
+
+
+
+                                                      Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 48 |73

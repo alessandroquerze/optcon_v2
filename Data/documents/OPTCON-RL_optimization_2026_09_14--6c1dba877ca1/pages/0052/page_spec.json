@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0052",
+  "document_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1",
+  "source": {
+    "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+    "page_index": 51,
+    "physical_page_number": 52,
+    "pdf_label_raw": "<FEFF00340038>",
+    "pdf_label": "48",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Example: Projected Gradient Method for Quadratic Programs",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      373.03826904296875,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 48,
+        "total": 73,
+        "raw": "48 |73",
+        "bbox": [
+          150.68800354003906,
+          247.92860412597656,
+          447.8712158203125,
+          258.29376220703125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0052/text.txt",
+      "sha256": "d57eeae22ea1c989eda98c73b7e6dca6d824f6f848ede1406620b2fdfd3b0022"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0052/text.reading-order.txt",
+      "sha256": "28ebdff19d5235a2bc65b0fcf7b76a2813459d676911062b3a7e0e775e9a7b71"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0052/layout.json",
+      "sha256": "4936859f36d7778594c6ae180192caf8ceb80d9344ee47ae705985847db776b9"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0052/render.png",
+      "sha256": "a1866b2189ff5bb4f809a6a7e2c6a9dd1f63c1cd25e4986337dd2aa1a5cdc45b",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "7ae929d035f735302c119ddc35dbd63c8948490701e342dbb44ef2b0fb744617"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0051",
+    "next_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0053"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "pending",
+    "result": null
+  }
+}

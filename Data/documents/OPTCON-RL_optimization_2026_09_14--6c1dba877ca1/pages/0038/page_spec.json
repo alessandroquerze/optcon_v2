@@ -1,0 +1,167 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0038",
+  "document_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1",
+  "source": {
+    "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+    "page_index": 37,
+    "physical_page_number": 38,
+    "pdf_label_raw": "<FEFF00330037>",
+    "pdf_label": "37",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Gradient methods: step-size selection rules (I)",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      280.00323486328125,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 37,
+        "total": 73,
+        "raw": "37 |73",
+        "bbox": [
+          150.6878204345703,
+          247.9285125732422,
+          447.87103271484375,
+          258.2936706542969
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0038/text.txt",
+      "sha256": "78ae8d11f4c04883b1b6ff111c994e5d3cc506a36d91f1d7bdae41d93ddd5300"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0038/text.reading-order.txt",
+      "sha256": "909459be1edbc6a31cfce26da87b8b5d5fa26e58000fad472ff71ce7131a64e9"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0038/layout.json",
+      "sha256": "6650e4541692b286057bd543204a9ad037b98afe76967bb0cc1a7bfd5ca9fb6f"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0038/render.png",
+      "sha256": "7d13aee91724f00323a1195b675f3782a21c3a02ceb7edfac8fdb101cf1afb2a",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "8369bc3aada2466e7288a6de9139e749f56f11662c653d2fb04819ab78ba9b13"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0037",
+    "next_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0039"
+  },
+  "relations": [
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0039",
+      "kind": "progressive_candidate",
+      "confidence": 0.9,
+      "review_status": "candidate",
+      "reason": "Etichetta PDF ripetuta su pagine adiacenti con raster differenti: possibile overlay, da verificare anche a testo identico.",
+      "metrics": {
+        "text_jaccard": 0.973856,
+        "text_containment": 0.993333,
+        "left_tokens": 152,
+        "right_tokens": 150,
+        "visual_difference": 0.000397,
+        "ink_overlap": 0.986175,
+        "dhash_distance": 0
+      },
+      "delta_in_physical_order": {
+        "text": {
+          "added_lines": [
+            "¯γ1"
+          ],
+          "removed_lines": [
+            "¯γ0 = 1"
+          ],
+          "semantic_interpretation": "pending_visual_analysis"
+        },
+        "visual": {
+          "changed_bbox_px": [
+            787,
+            107,
+            902,
+            237
+          ],
+          "pixel_threshold": 16,
+          "changed_pixel_fraction": 0.000619
+        }
+      }
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0040",
+      "kind": "near_duplicate",
+      "confidence": 0.85,
+      "review_status": "candidate",
+      "reason": "Stesso titolo/label, testo e struttura visiva molto simili; verificare formule, colori e grafici.",
+      "metrics": {
+        "text_jaccard": 0.973856,
+        "text_containment": 0.993333,
+        "left_tokens": 152,
+        "right_tokens": 150,
+        "visual_difference": 0.000407,
+        "ink_overlap": 0.986175,
+        "dhash_distance": 0
+      },
+      "delta_in_physical_order": {
+        "text": {
+          "added_lines": [
+            "¯γ2"
+          ],
+          "removed_lines": [
+            "¯γ0 = 1"
+          ],
+          "semantic_interpretation": "pending_visual_analysis"
+        },
+        "visual": {
+          "changed_bbox_px": [
+            767,
+            107,
+            902,
+            266
+          ],
+          "pixel_threshold": 16,
+          "changed_pixel_fraction": 0.00064
+        }
+      }
+    }
+  ],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "pending",
+    "result": null
+  }
+}

@@ -1,0 +1,1413 @@
+{
+  "ok": true,
+  "phase": "F04.1",
+  "checks": {
+    "f04_preserved_additively": {
+      "ok": true,
+      "detail": "Nessun valore F04 rimosso o sostituito; 0 differenze."
+    },
+    "physical_coverage": {
+      "ok": true,
+      "detail": "36 pagine distinte nell'ordine fisico."
+    },
+    "one_to_one": {
+      "ok": true,
+      "detail": "Mapping e sottopagine F04 immutati."
+    },
+    "f03_warning_and_calculation_contracts_exact": {
+      "ok": true,
+      "detail": "Policy, testi UI, correzioni e contratti di calcolo F04/F03 conservati integralmente, senza nuove issue."
+    },
+    "mode_partition": {
+      "ok": true,
+      "detail": "Una modalità valida per pagina."
+    },
+    "p01_semantics": {
+      "ok": true,
+      "detail": "Assi, unità, dominio e definizione espliciti oppure rifiuto motivato del 3D."
+    },
+    "p01_no_new_physical_states": {
+      "ok": true,
+      "detail": "L'embedding non modifica il modello fisico."
+    },
+    "p01_controls": {
+      "ok": true,
+      "detail": "Nuovi controlli con dominio, default ed effetto, distinti dai controlli F04."
+    },
+    "p01_effective_interaction": {
+      "ok": true,
+      "detail": "Interattività effettiva distinta dalla classificazione storica."
+    },
+    "p02_semantics": {
+      "ok": true,
+      "detail": "Assi, unità, dominio e definizione espliciti oppure rifiuto motivato del 3D."
+    },
+    "p02_no_new_physical_states": {
+      "ok": true,
+      "detail": "L'embedding non modifica il modello fisico."
+    },
+    "p02_controls": {
+      "ok": true,
+      "detail": "Nuovi controlli con dominio, default ed effetto, distinti dai controlli F04."
+    },
+    "p02_effective_interaction": {
+      "ok": true,
+      "detail": "Interattività effettiva distinta dalla classificazione storica."
+    },
+    "p03_semantics": {
+      "ok": true,
+      "detail": "Assi, unità, dominio e definizione espliciti oppure rifiuto motivato del 3D."
+    },
+    "p03_no_new_physical_states": {
+      "ok": true,
+      "detail": "L'embedding non modifica il modello fisico."
+    },
+    "p03_controls": {
+      "ok": true,
+      "detail": "Nuovi controlli con dominio, default ed effetto, distinti dai controlli F04."
+    },
+    "p03_effective_interaction": {
+      "ok": true,
+      "detail": "Interattività effettiva distinta dalla classificazione storica."
+    },
+    "p04_semantics": {
+      "ok": true,
+      "detail": "Assi, unità, dominio e definizione espliciti oppure rifiuto motivato del 3D."
+    },
+    "p04_no_new_physical_states": {
+      "ok": true,
+      "detail": "L'embedding non modifica il modello fisico."
+    },
+    "p04_controls": {
+      "ok": true,
+      "detail": "Nuovi controlli con dominio, default ed effetto, distinti dai controlli F04."
+    },
+    "p04_effective_interaction": {
+      "ok": true,
+      "detail": "Interattività effettiva distinta dalla classificazione storica."
+    },
+    "p05_semantics": {
+      "ok": true,
+      "detail": "Assi, unità, dominio e definizione espliciti oppure rifiuto motivato del 3D."
+    },
+    "p05_no_new_physical_states": {
+      "ok": true,
+      "detail": "L'embedding non modifica il modello fisico."
+    },
+    "p05_controls": {
+      "ok": true,
+      "detail": "Nuovi controlli con dominio, default ed effetto, distinti dai controlli F04."
+    },
+    "p05_effective_interaction": {
+      "ok": true,
+      "detail": "Interattività effettiva distinta dalla classificazione storica."
+    },
+    "p06_semantics": {
+      "ok": true,
+      "detail": "Assi, unità, dominio e definizione espliciti oppure rifiuto motivato del 3D."
+    },
+    "p06_no_new_physical_states": {
+      "ok": true,
+      "detail": "L'embedding non modifica il modello fisico."
+    },
+    "p06_parameter_effects": {
+      "ok": true,
+      "detail": "Effetto esplicito per ogni parametro matematico, nuovo o ereditato."
+    },
+    "p06_camera": {
+      "ok": true,
+      "detail": "Controlli nativi, coordinate e tooltip obbligatori."
+    },
+    "p06_controls": {
+      "ok": true,
+      "detail": "Nuovi controlli con dominio, default ed effetto, distinti dai controlli F04."
+    },
+    "p06_effective_interaction": {
+      "ok": true,
+      "detail": "Interattività effettiva distinta dalla classificazione storica."
+    },
+    "p06_current_requirements": {
+      "ok": true,
+      "detail": "Modalità e formula coincidono con le decisioni editoriali versionate."
+    },
+    "p07_semantics": {
+      "ok": true,
+      "detail": "Assi, unità, dominio e definizione espliciti oppure rifiuto motivato del 3D."
+    },
+    "p07_no_new_physical_states": {
+      "ok": true,
+      "detail": "L'embedding non modifica il modello fisico."
+    },
+    "p07_controls": {
+      "ok": true,
+      "detail": "Nuovi controlli con dominio, default ed effetto, distinti dai controlli F04."
+    },
+    "p07_effective_interaction": {
+      "ok": true,
+      "detail": "Interattività effettiva distinta dalla classificazione storica."
+    },
+    "p08_semantics": {
+      "ok": true,
+      "detail": "Assi, unità, dominio e definizione espliciti oppure rifiuto motivato del 3D."
+    },
+    "p08_no_new_physical_states": {
+      "ok": true,
+      "detail": "L'embedding non modifica il modello fisico."
+    },
+    "p08_parameter_effects": {
+      "ok": true,
+      "detail": "Effetto esplicito per ogni parametro matematico, nuovo o ereditato."
+    },
+    "p08_camera": {
+      "ok": true,
+      "detail": "Controlli nativi, coordinate e tooltip obbligatori."
+    },
+    "p08_controls": {
+      "ok": true,
+      "detail": "Nuovi controlli con dominio, default ed effetto, distinti dai controlli F04."
+    },
+    "p08_effective_interaction": {
+      "ok": true,
+      "detail": "Interattività effettiva distinta dalla classificazione storica."
+    },
+    "p08_current_requirements": {
+      "ok": true,
+      "detail": "Modalità e formula coincidono con le decisioni editoriali versionate."
+    },
+    "p09_semantics": {
+      "ok": true,
+      "detail": "Assi, unità, dominio e definizione espliciti oppure rifiuto motivato del 3D."
+    },
+    "p09_no_new_physical_states": {
+      "ok": true,
+      "detail": "L'embedding non modifica il modello fisico."
+    },
+    "p09_parameter_effects": {
+      "ok": true,
+      "detail": "Effetto esplicito per ogni parametro matematico, nuovo o ereditato."
+    },
+    "p09_camera": {
+      "ok": true,
+      "detail": "Controlli nativi, coordinate e tooltip obbligatori."
+    },
+    "p09_controls": {
+      "ok": true,
+      "detail": "Nuovi controlli con dominio, default ed effetto, distinti dai controlli F04."
+    },
+    "p09_effective_interaction": {
+      "ok": true,
+      "detail": "Interattività effettiva distinta dalla classificazione storica."
+    },
+    "p09_current_requirements": {
+      "ok": true,
+      "detail": "Modalità e formula coincidono con le decisioni editoriali versionate."
+    },
+    "p10_semantics": {
+      "ok": true,
+      "detail": "Assi, unità, dominio e definizione espliciti oppure rifiuto motivato del 3D."
+    },
+    "p10_no_new_physical_states": {
+      "ok": true,
+      "detail": "L'embedding non modifica il modello fisico."
+    },
+    "p10_controls": {
+      "ok": true,
+      "detail": "Nuovi controlli con dominio, default ed effetto, distinti dai controlli F04."
+    },
+    "p10_effective_interaction": {
+      "ok": true,
+      "detail": "Interattività effettiva distinta dalla classificazione storica."
+    },
+    "p11_semantics": {
+      "ok": true,
+      "detail": "Assi, unità, dominio e definizione espliciti oppure rifiuto motivato del 3D."
+    },
+    "p11_no_new_physical_states": {
+      "ok": true,
+      "detail": "L'embedding non modifica il modello fisico."
+    },
+    "p11_parameter_effects": {
+      "ok": true,
+      "detail": "Effetto esplicito per ogni parametro matematico, nuovo o ereditato."
+    },
+    "p11_camera": {
+      "ok": true,
+      "detail": "Controlli nativi, coordinate e tooltip obbligatori."
+    },
+    "p11_controls": {
+      "ok": true,
+      "detail": "Nuovi controlli con dominio, default ed effetto, distinti dai controlli F04."
+    },
+    "p11_effective_interaction": {
+      "ok": true,
+      "detail": "Interattività effettiva distinta dalla classificazione storica."
+    },
+    "p11_current_requirements": {
+      "ok": true,
+      "detail": "Modalità e formula coincidono con le decisioni editoriali versionate."
+    },
+    "p12_semantics": {
+      "ok": true,
+      "detail": "Assi, unità, dominio e definizione espliciti oppure rifiuto motivato del 3D."
+    },
+    "p12_no_new_physical_states": {
+      "ok": true,
+      "detail": "L'embedding non modifica il modello fisico."
+    },
+    "p12_parameter_effects": {
+      "ok": true,
+      "detail": "Effetto esplicito per ogni parametro matematico, nuovo o ereditato."
+    },
+    "p12_camera": {
+      "ok": true,
+      "detail": "Controlli nativi, coordinate e tooltip obbligatori."
+    },
+    "p12_controls": {
+      "ok": true,
+      "detail": "Nuovi controlli con dominio, default ed effetto, distinti dai controlli F04."
+    },
+    "p12_effective_interaction": {
+      "ok": true,
+      "detail": "Interattività effettiva distinta dalla classificazione storica."
+    },
+    "p12_current_requirements": {
+      "ok": true,
+      "detail": "Modalità e formula coincidono con le decisioni editoriali versionate."
+    },
+    "p13_semantics": {
+      "ok": true,
+      "detail": "Assi, unità, dominio e definizione espliciti oppure rifiuto motivato del 3D."
+    },
+    "p13_no_new_physical_states": {
+      "ok": true,
+      "detail": "L'embedding non modifica il modello fisico."
+    },
+    "p13_controls": {
+      "ok": true,
+      "detail": "Nuovi controlli con dominio, default ed effetto, distinti dai controlli F04."
+    },
+    "p13_effective_interaction": {
+      "ok": true,
+      "detail": "Interattività effettiva distinta dalla classificazione storica."
+    },
+    "p14_semantics": {
+      "ok": true,
+      "detail": "Assi, unità, dominio e definizione espliciti oppure rifiuto motivato del 3D."
+    },
+    "p14_no_new_physical_states": {
+      "ok": true,
+      "detail": "L'embedding non modifica il modello fisico."
+    },
+    "p14_parameter_effects": {
+      "ok": true,
+      "detail": "Effetto esplicito per ogni parametro matematico, nuovo o ereditato."
+    },
+    "p14_camera": {
+      "ok": true,
+      "detail": "Controlli nativi, coordinate e tooltip obbligatori."
+    },
+    "p14_controls": {
+      "ok": true,
+      "detail": "Nuovi controlli con dominio, default ed effetto, distinti dai controlli F04."
+    },
+    "p14_effective_interaction": {
+      "ok": true,
+      "detail": "Interattività effettiva distinta dalla classificazione storica."
+    },
+    "p14_current_requirements": {
+      "ok": true,
+      "detail": "Modalità e formula coincidono con le decisioni editoriali versionate."
+    },
+    "p15_semantics": {
+      "ok": true,
+      "detail": "Assi, unità, dominio e definizione espliciti oppure rifiuto motivato del 3D."
+    },
+    "p15_no_new_physical_states": {
+      "ok": true,
+      "detail": "L'embedding non modifica il modello fisico."
+    },
+    "p15_controls": {
+      "ok": true,
+      "detail": "Nuovi controlli con dominio, default ed effetto, distinti dai controlli F04."
+    },
+    "p15_effective_interaction": {
+      "ok": true,
+      "detail": "Interattività effettiva distinta dalla classificazione storica."
+    },
+    "p16_semantics": {
+      "ok": true,
+      "detail": "Assi, unità, dominio e definizione espliciti oppure rifiuto motivato del 3D."
+    },
+    "p16_no_new_physical_states": {
+      "ok": true,
+      "detail": "L'embedding non modifica il modello fisico."
+    },
+    "p16_parameter_effects": {
+      "ok": true,
+      "detail": "Effetto esplicito per ogni parametro matematico, nuovo o ereditato."
+    },
+    "p16_camera": {
+      "ok": true,
+      "detail": "Controlli nativi, coordinate e tooltip obbligatori."
+    },
+    "p16_controls": {
+      "ok": true,
+      "detail": "Nuovi controlli con dominio, default ed effetto, distinti dai controlli F04."
+    },
+    "p16_effective_interaction": {
+      "ok": true,
+      "detail": "Interattività effettiva distinta dalla classificazione storica."
+    },
+    "p16_current_requirements": {
+      "ok": true,
+      "detail": "Modalità e formula coincidono con le decisioni editoriali versionate."
+    },
+    "p17_semantics": {
+      "ok": true,
+      "detail": "Assi, unità, dominio e definizione espliciti oppure rifiuto motivato del 3D."
+    },
+    "p17_no_new_physical_states": {
+      "ok": true,
+      "detail": "L'embedding non modifica il modello fisico."
+    },
+    "p17_parameter_effects": {
+      "ok": true,
+      "detail": "Effetto esplicito per ogni parametro matematico, nuovo o ereditato."
+    },
+    "p17_camera": {
+      "ok": true,
+      "detail": "Controlli nativi, coordinate e tooltip obbligatori."
+    },
+    "p17_controls": {
+      "ok": true,
+      "detail": "Nuovi controlli con dominio, default ed effetto, distinti dai controlli F04."
+    },
+    "p17_effective_interaction": {
+      "ok": true,
+      "detail": "Interattività effettiva distinta dalla classificazione storica."
+    },
+    "p17_current_requirements": {
+      "ok": true,
+      "detail": "Modalità e formula coincidono con le decisioni editoriali versionate."
+    },
+    "p18_semantics": {
+      "ok": true,
+      "detail": "Assi, unità, dominio e definizione espliciti oppure rifiuto motivato del 3D."
+    },
+    "p18_no_new_physical_states": {
+      "ok": true,
+      "detail": "L'embedding non modifica il modello fisico."
+    },
+    "p18_parameter_effects": {
+      "ok": true,
+      "detail": "Effetto esplicito per ogni parametro matematico, nuovo o ereditato."
+    },
+    "p18_camera": {
+      "ok": true,
+      "detail": "Controlli nativi, coordinate e tooltip obbligatori."
+    },
+    "p18_controls": {
+      "ok": true,
+      "detail": "Nuovi controlli con dominio, default ed effetto, distinti dai controlli F04."
+    },
+    "p18_effective_interaction": {
+      "ok": true,
+      "detail": "Interattività effettiva distinta dalla classificazione storica."
+    },
+    "p18_current_requirements": {
+      "ok": true,
+      "detail": "Modalità e formula coincidono con le decisioni editoriali versionate."
+    },
+    "p19_semantics": {
+      "ok": true,
+      "detail": "Assi, unità, dominio e definizione espliciti oppure rifiuto motivato del 3D."
+    },
+    "p19_no_new_physical_states": {
+      "ok": true,
+      "detail": "L'embedding non modifica il modello fisico."
+    },
+    "p19_parameter_effects": {
+      "ok": true,
+      "detail": "Effetto esplicito per ogni parametro matematico, nuovo o ereditato."
+    },
+    "p19_camera": {
+      "ok": true,
+      "detail": "Controlli nativi, coordinate e tooltip obbligatori."
+    },
+    "p19_controls": {
+      "ok": true,
+      "detail": "Nuovi controlli con dominio, default ed effetto, distinti dai controlli F04."
+    },
+    "p19_effective_interaction": {
+      "ok": true,
+      "detail": "Interattività effettiva distinta dalla classificazione storica."
+    },
+    "p19_current_requirements": {
+      "ok": true,
+      "detail": "Modalità e formula coincidono con le decisioni editoriali versionate."
+    },
+    "p20_semantics": {
+      "ok": true,
+      "detail": "Assi, unità, dominio e definizione espliciti oppure rifiuto motivato del 3D."
+    },
+    "p20_no_new_physical_states": {
+      "ok": true,
+      "detail": "L'embedding non modifica il modello fisico."
+    },
+    "p20_parameter_effects": {
+      "ok": true,
+      "detail": "Effetto esplicito per ogni parametro matematico, nuovo o ereditato."
+    },
+    "p20_camera": {
+      "ok": true,
+      "detail": "Controlli nativi, coordinate e tooltip obbligatori."
+    },
+    "p20_controls": {
+      "ok": true,
+      "detail": "Nuovi controlli con dominio, default ed effetto, distinti dai controlli F04."
+    },
+    "p20_effective_interaction": {
+      "ok": true,
+      "detail": "Interattività effettiva distinta dalla classificazione storica."
+    },
+    "p20_current_requirements": {
+      "ok": true,
+      "detail": "Modalità e formula coincidono con le decisioni editoriali versionate."
+    },
+    "p21_semantics": {
+      "ok": true,
+      "detail": "Assi, unità, dominio e definizione espliciti oppure rifiuto motivato del 3D."
+    },
+    "p21_no_new_physical_states": {
+      "ok": true,
+      "detail": "L'embedding non modifica il modello fisico."
+    },
+    "p21_parameter_effects": {
+      "ok": true,
+      "detail": "Effetto esplicito per ogni parametro matematico, nuovo o ereditato."
+    },
+    "p21_camera": {
+      "ok": true,
+      "detail": "Controlli nativi, coordinate e tooltip obbligatori."
+    },
+    "p21_controls": {
+      "ok": true,
+      "detail": "Nuovi controlli con dominio, default ed effetto, distinti dai controlli F04."
+    },
+    "p21_effective_interaction": {
+      "ok": true,
+      "detail": "Interattività effettiva distinta dalla classificazione storica."
+    },
+    "p21_current_requirements": {
+      "ok": true,
+      "detail": "Modalità e formula coincidono con le decisioni editoriali versionate."
+    },
+    "p22_semantics": {
+      "ok": true,
+      "detail": "Assi, unità, dominio e definizione espliciti oppure rifiuto motivato del 3D."
+    },
+    "p22_no_new_physical_states": {
+      "ok": true,
+      "detail": "L'embedding non modifica il modello fisico."
+    },
+    "p22_parameter_effects": {
+      "ok": true,
+      "detail": "Effetto esplicito per ogni parametro matematico, nuovo o ereditato."
+    },
+    "p22_camera": {
+      "ok": true,
+      "detail": "Controlli nativi, coordinate e tooltip obbligatori."
+    },
+    "p22_controls": {
+      "ok": true,
+      "detail": "Nuovi controlli con dominio, default ed effetto, distinti dai controlli F04."
+    },
+    "p22_effective_interaction": {
+      "ok": true,
+      "detail": "Interattività effettiva distinta dalla classificazione storica."
+    },
+    "p22_current_requirements": {
+      "ok": true,
+      "detail": "Modalità e formula coincidono con le decisioni editoriali versionate."
+    },
+    "p23_semantics": {
+      "ok": true,
+      "detail": "Assi, unità, dominio e definizione espliciti oppure rifiuto motivato del 3D."
+    },
+    "p23_no_new_physical_states": {
+      "ok": true,
+      "detail": "L'embedding non modifica il modello fisico."
+    },
+    "p23_parameter_effects": {
+      "ok": true,
+      "detail": "Effetto esplicito per ogni parametro matematico, nuovo o ereditato."
+    },
+    "p23_camera": {
+      "ok": true,
+      "detail": "Controlli nativi, coordinate e tooltip obbligatori."
+    },
+    "p23_controls": {
+      "ok": true,
+      "detail": "Nuovi controlli con dominio, default ed effetto, distinti dai controlli F04."
+    },
+    "p23_effective_interaction": {
+      "ok": true,
+      "detail": "Interattività effettiva distinta dalla classificazione storica."
+    },
+    "p23_current_requirements": {
+      "ok": true,
+      "detail": "Modalità e formula coincidono con le decisioni editoriali versionate."
+    },
+    "p24_semantics": {
+      "ok": true,
+      "detail": "Assi, unità, dominio e definizione espliciti oppure rifiuto motivato del 3D."
+    },
+    "p24_no_new_physical_states": {
+      "ok": true,
+      "detail": "L'embedding non modifica il modello fisico."
+    },
+    "p24_parameter_effects": {
+      "ok": true,
+      "detail": "Effetto esplicito per ogni parametro matematico, nuovo o ereditato."
+    },
+    "p24_camera": {
+      "ok": true,
+      "detail": "Controlli nativi, coordinate e tooltip obbligatori."
+    },
+    "p24_controls": {
+      "ok": true,
+      "detail": "Nuovi controlli con dominio, default ed effetto, distinti dai controlli F04."
+    },
+    "p24_effective_interaction": {
+      "ok": true,
+      "detail": "Interattività effettiva distinta dalla classificazione storica."
+    },
+    "p24_current_requirements": {
+      "ok": true,
+      "detail": "Modalità e formula coincidono con le decisioni editoriali versionate."
+    },
+    "p25_semantics": {
+      "ok": true,
+      "detail": "Assi, unità, dominio e definizione espliciti oppure rifiuto motivato del 3D."
+    },
+    "p25_no_new_physical_states": {
+      "ok": true,
+      "detail": "L'embedding non modifica il modello fisico."
+    },
+    "p25_parameter_effects": {
+      "ok": true,
+      "detail": "Effetto esplicito per ogni parametro matematico, nuovo o ereditato."
+    },
+    "p25_camera": {
+      "ok": true,
+      "detail": "Controlli nativi, coordinate e tooltip obbligatori."
+    },
+    "p25_controls": {
+      "ok": true,
+      "detail": "Nuovi controlli con dominio, default ed effetto, distinti dai controlli F04."
+    },
+    "p25_effective_interaction": {
+      "ok": true,
+      "detail": "Interattività effettiva distinta dalla classificazione storica."
+    },
+    "p25_current_requirements": {
+      "ok": true,
+      "detail": "Modalità e formula coincidono con le decisioni editoriali versionate."
+    },
+    "p26_semantics": {
+      "ok": true,
+      "detail": "Assi, unità, dominio e definizione espliciti oppure rifiuto motivato del 3D."
+    },
+    "p26_no_new_physical_states": {
+      "ok": true,
+      "detail": "L'embedding non modifica il modello fisico."
+    },
+    "p26_parameter_effects": {
+      "ok": true,
+      "detail": "Effetto esplicito per ogni parametro matematico, nuovo o ereditato."
+    },
+    "p26_camera": {
+      "ok": true,
+      "detail": "Controlli nativi, coordinate e tooltip obbligatori."
+    },
+    "p26_controls": {
+      "ok": true,
+      "detail": "Nuovi controlli con dominio, default ed effetto, distinti dai controlli F04."
+    },
+    "p26_effective_interaction": {
+      "ok": true,
+      "detail": "Interattività effettiva distinta dalla classificazione storica."
+    },
+    "p26_planar_model": {
+      "ok": true,
+      "detail": "Il drone planare non acquisisce una coordinata fuori piano."
+    },
+    "p26_current_requirements": {
+      "ok": true,
+      "detail": "Modalità e formula coincidono con le decisioni editoriali versionate."
+    },
+    "p27_semantics": {
+      "ok": true,
+      "detail": "Assi, unità, dominio e definizione espliciti oppure rifiuto motivato del 3D."
+    },
+    "p27_no_new_physical_states": {
+      "ok": true,
+      "detail": "L'embedding non modifica il modello fisico."
+    },
+    "p27_parameter_effects": {
+      "ok": true,
+      "detail": "Effetto esplicito per ogni parametro matematico, nuovo o ereditato."
+    },
+    "p27_camera": {
+      "ok": true,
+      "detail": "Controlli nativi, coordinate e tooltip obbligatori."
+    },
+    "p27_controls": {
+      "ok": true,
+      "detail": "Nuovi controlli con dominio, default ed effetto, distinti dai controlli F04."
+    },
+    "p27_effective_interaction": {
+      "ok": true,
+      "detail": "Interattività effettiva distinta dalla classificazione storica."
+    },
+    "p27_planar_model": {
+      "ok": true,
+      "detail": "Il drone planare non acquisisce una coordinata fuori piano."
+    },
+    "p27_current_requirements": {
+      "ok": true,
+      "detail": "Modalità e formula coincidono con le decisioni editoriali versionate."
+    },
+    "p28_semantics": {
+      "ok": true,
+      "detail": "Assi, unità, dominio e definizione espliciti oppure rifiuto motivato del 3D."
+    },
+    "p28_no_new_physical_states": {
+      "ok": true,
+      "detail": "L'embedding non modifica il modello fisico."
+    },
+    "p28_parameter_effects": {
+      "ok": true,
+      "detail": "Effetto esplicito per ogni parametro matematico, nuovo o ereditato."
+    },
+    "p28_camera": {
+      "ok": true,
+      "detail": "Controlli nativi, coordinate e tooltip obbligatori."
+    },
+    "p28_controls": {
+      "ok": true,
+      "detail": "Nuovi controlli con dominio, default ed effetto, distinti dai controlli F04."
+    },
+    "p28_effective_interaction": {
+      "ok": true,
+      "detail": "Interattività effettiva distinta dalla classificazione storica."
+    },
+    "p28_planar_model": {
+      "ok": true,
+      "detail": "Il drone planare non acquisisce una coordinata fuori piano."
+    },
+    "p28_current_requirements": {
+      "ok": true,
+      "detail": "Modalità e formula coincidono con le decisioni editoriali versionate."
+    },
+    "p29_semantics": {
+      "ok": true,
+      "detail": "Assi, unità, dominio e definizione espliciti oppure rifiuto motivato del 3D."
+    },
+    "p29_no_new_physical_states": {
+      "ok": true,
+      "detail": "L'embedding non modifica il modello fisico."
+    },
+    "p29_parameter_effects": {
+      "ok": true,
+      "detail": "Effetto esplicito per ogni parametro matematico, nuovo o ereditato."
+    },
+    "p29_camera": {
+      "ok": true,
+      "detail": "Controlli nativi, coordinate e tooltip obbligatori."
+    },
+    "p29_controls": {
+      "ok": true,
+      "detail": "Nuovi controlli con dominio, default ed effetto, distinti dai controlli F04."
+    },
+    "p29_effective_interaction": {
+      "ok": true,
+      "detail": "Interattività effettiva distinta dalla classificazione storica."
+    },
+    "p29_planar_model": {
+      "ok": true,
+      "detail": "Il drone planare non acquisisce una coordinata fuori piano."
+    },
+    "p29_current_requirements": {
+      "ok": true,
+      "detail": "Modalità e formula coincidono con le decisioni editoriali versionate."
+    },
+    "p30_semantics": {
+      "ok": true,
+      "detail": "Assi, unità, dominio e definizione espliciti oppure rifiuto motivato del 3D."
+    },
+    "p30_no_new_physical_states": {
+      "ok": true,
+      "detail": "L'embedding non modifica il modello fisico."
+    },
+    "p30_parameter_effects": {
+      "ok": true,
+      "detail": "Effetto esplicito per ogni parametro matematico, nuovo o ereditato."
+    },
+    "p30_camera": {
+      "ok": true,
+      "detail": "Controlli nativi, coordinate e tooltip obbligatori."
+    },
+    "p30_controls": {
+      "ok": true,
+      "detail": "Nuovi controlli con dominio, default ed effetto, distinti dai controlli F04."
+    },
+    "p30_effective_interaction": {
+      "ok": true,
+      "detail": "Interattività effettiva distinta dalla classificazione storica."
+    },
+    "p30_planar_model": {
+      "ok": true,
+      "detail": "Il drone planare non acquisisce una coordinata fuori piano."
+    },
+    "p30_current_requirements": {
+      "ok": true,
+      "detail": "Modalità e formula coincidono con le decisioni editoriali versionate."
+    },
+    "p31_semantics": {
+      "ok": true,
+      "detail": "Assi, unità, dominio e definizione espliciti oppure rifiuto motivato del 3D."
+    },
+    "p31_no_new_physical_states": {
+      "ok": true,
+      "detail": "L'embedding non modifica il modello fisico."
+    },
+    "p31_parameter_effects": {
+      "ok": true,
+      "detail": "Effetto esplicito per ogni parametro matematico, nuovo o ereditato."
+    },
+    "p31_camera": {
+      "ok": true,
+      "detail": "Controlli nativi, coordinate e tooltip obbligatori."
+    },
+    "p31_controls": {
+      "ok": true,
+      "detail": "Nuovi controlli con dominio, default ed effetto, distinti dai controlli F04."
+    },
+    "p31_effective_interaction": {
+      "ok": true,
+      "detail": "Interattività effettiva distinta dalla classificazione storica."
+    },
+    "p31_current_requirements": {
+      "ok": true,
+      "detail": "Modalità e formula coincidono con le decisioni editoriali versionate."
+    },
+    "p32_semantics": {
+      "ok": true,
+      "detail": "Assi, unità, dominio e definizione espliciti oppure rifiuto motivato del 3D."
+    },
+    "p32_no_new_physical_states": {
+      "ok": true,
+      "detail": "L'embedding non modifica il modello fisico."
+    },
+    "p32_parameter_effects": {
+      "ok": true,
+      "detail": "Effetto esplicito per ogni parametro matematico, nuovo o ereditato."
+    },
+    "p32_camera": {
+      "ok": true,
+      "detail": "Controlli nativi, coordinate e tooltip obbligatori."
+    },
+    "p32_controls": {
+      "ok": true,
+      "detail": "Nuovi controlli con dominio, default ed effetto, distinti dai controlli F04."
+    },
+    "p32_effective_interaction": {
+      "ok": true,
+      "detail": "Interattività effettiva distinta dalla classificazione storica."
+    },
+    "p32_current_requirements": {
+      "ok": true,
+      "detail": "Modalità e formula coincidono con le decisioni editoriali versionate."
+    },
+    "p33_semantics": {
+      "ok": true,
+      "detail": "Assi, unità, dominio e definizione espliciti oppure rifiuto motivato del 3D."
+    },
+    "p33_no_new_physical_states": {
+      "ok": true,
+      "detail": "L'embedding non modifica il modello fisico."
+    },
+    "p33_parameter_effects": {
+      "ok": true,
+      "detail": "Effetto esplicito per ogni parametro matematico, nuovo o ereditato."
+    },
+    "p33_camera": {
+      "ok": true,
+      "detail": "Controlli nativi, coordinate e tooltip obbligatori."
+    },
+    "p33_controls": {
+      "ok": true,
+      "detail": "Nuovi controlli con dominio, default ed effetto, distinti dai controlli F04."
+    },
+    "p33_effective_interaction": {
+      "ok": true,
+      "detail": "Interattività effettiva distinta dalla classificazione storica."
+    },
+    "p33_current_requirements": {
+      "ok": true,
+      "detail": "Modalità e formula coincidono con le decisioni editoriali versionate."
+    },
+    "p34_semantics": {
+      "ok": true,
+      "detail": "Assi, unità, dominio e definizione espliciti oppure rifiuto motivato del 3D."
+    },
+    "p34_no_new_physical_states": {
+      "ok": true,
+      "detail": "L'embedding non modifica il modello fisico."
+    },
+    "p34_parameter_effects": {
+      "ok": true,
+      "detail": "Effetto esplicito per ogni parametro matematico, nuovo o ereditato."
+    },
+    "p34_camera": {
+      "ok": true,
+      "detail": "Controlli nativi, coordinate e tooltip obbligatori."
+    },
+    "p34_controls": {
+      "ok": true,
+      "detail": "Nuovi controlli con dominio, default ed effetto, distinti dai controlli F04."
+    },
+    "p34_effective_interaction": {
+      "ok": true,
+      "detail": "Interattività effettiva distinta dalla classificazione storica."
+    },
+    "p34_current_requirements": {
+      "ok": true,
+      "detail": "Modalità e formula coincidono con le decisioni editoriali versionate."
+    },
+    "p35_semantics": {
+      "ok": true,
+      "detail": "Assi, unità, dominio e definizione espliciti oppure rifiuto motivato del 3D."
+    },
+    "p35_no_new_physical_states": {
+      "ok": true,
+      "detail": "L'embedding non modifica il modello fisico."
+    },
+    "p35_parameter_effects": {
+      "ok": true,
+      "detail": "Effetto esplicito per ogni parametro matematico, nuovo o ereditato."
+    },
+    "p35_camera": {
+      "ok": true,
+      "detail": "Controlli nativi, coordinate e tooltip obbligatori."
+    },
+    "p35_controls": {
+      "ok": true,
+      "detail": "Nuovi controlli con dominio, default ed effetto, distinti dai controlli F04."
+    },
+    "p35_effective_interaction": {
+      "ok": true,
+      "detail": "Interattività effettiva distinta dalla classificazione storica."
+    },
+    "p35_no_interpolation_across_jump": {
+      "ok": true,
+      "detail": "Riferimento/errore/costo restano a rami disgiunti, senza salto fisico inventato."
+    },
+    "p35_current_requirements": {
+      "ok": true,
+      "detail": "Modalità e formula coincidono con le decisioni editoriali versionate."
+    },
+    "p36_semantics": {
+      "ok": true,
+      "detail": "Assi, unità, dominio e definizione espliciti oppure rifiuto motivato del 3D."
+    },
+    "p36_no_new_physical_states": {
+      "ok": true,
+      "detail": "L'embedding non modifica il modello fisico."
+    },
+    "p36_parameter_effects": {
+      "ok": true,
+      "detail": "Effetto esplicito per ogni parametro matematico, nuovo o ereditato."
+    },
+    "p36_camera": {
+      "ok": true,
+      "detail": "Controlli nativi, coordinate e tooltip obbligatori."
+    },
+    "p36_controls": {
+      "ok": true,
+      "detail": "Nuovi controlli con dominio, default ed effetto, distinti dai controlli F04."
+    },
+    "p36_effective_interaction": {
+      "ok": true,
+      "detail": "Interattività effettiva distinta dalla classificazione storica."
+    },
+    "p36_no_interpolation_across_jump": {
+      "ok": true,
+      "detail": "Riferimento/errore/costo restano a rami disgiunti, senza salto fisico inventato."
+    },
+    "p36_current_requirements": {
+      "ok": true,
+      "detail": "Modalità e formula coincidono con le decisioni editoriali versionate."
+    },
+    "immutable_source_and_policy": {
+      "ok": true,
+      "detail": "965 file protetti inclusi 137 PAGE_SPEC completi e policy F03; differenze=[]."
+    },
+    "f03_gate": {
+      "ok": true,
+      "detail": "Policy F03 ancora valida; nessun flag storico reinterpretato come nuova issue."
+    },
+    "native_graphics_requirement": {
+      "ok": true,
+      "detail": "Supporto nativo 2D e 3D vincolante per F05."
+    },
+    "component_inventory": {
+      "ok": true,
+      "detail": "9 astrazioni visuali canoniche; alias e composizioni non duplicano componenti."
+    },
+    "requested_component_assessment": {
+      "ok": true,
+      "detail": "Tutte le 15 proposte 2D/3D valutate."
+    },
+    "vertical_slice_preserved": {
+      "ok": true,
+      "detail": "Stesse 8 pagine F04, estese con i casi 3D."
+    },
+    "embedding_numeric_oracles": {
+      "ok": true,
+      "detail": "47/47 fixture; nessuna mesh o simulazione implementata."
+    }
+  },
+  "errors": [],
+  "numerical_checks": [
+    {
+      "id": "p06_closed_roof_boundary_height",
+      "computed": 0,
+      "expected": 0,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p08_t1_u1",
+      "computed": 0.6321205588285577,
+      "expected": 0.6321205588285577,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p09_first_transition",
+      "computed": 1.0,
+      "expected": 1,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p11_zero_residual",
+      "computed": 0.0,
+      "expected": 0,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p12_surface",
+      "computed": 0.21000000000000002,
+      "expected": 0.21,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p12_tangent_plane",
+      "computed": 0.2,
+      "expected": 0.2,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p12_gap",
+      "computed": 0.010000000000000002,
+      "expected": 0.01,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p14_cost",
+      "computed": 0.25,
+      "expected": 0.25,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p14_equality",
+      "computed": 0.0,
+      "expected": 0,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p14_inequality",
+      "computed": -0.5,
+      "expected": -0.5,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p16_corrected_surface",
+      "computed": 2.5,
+      "expected": 2.5,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p16_zero_weights",
+      "computed": 0,
+      "expected": 0,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p17_origin_g",
+      "computed": -1,
+      "expected": -1,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p17_boundary_g",
+      "computed": 0,
+      "expected": 0,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p18_active_minimum_cost",
+      "computed": 0.5,
+      "expected": 0.5,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p19_second_dynamic_residual",
+      "computed": -0.30000000000000004,
+      "expected": -0.3,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p20_surface_default",
+      "computed": 1.25,
+      "expected": 1.25,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p21_boundary_residual",
+      "computed": 0.0,
+      "expected": 0,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p22_candidate_height",
+      "computed": 0.25,
+      "expected": 0.25,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p23_optimum_height",
+      "computed": 0.25,
+      "expected": 0.25,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p24_middle_error",
+      "computed": -1,
+      "expected": -1,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p24_terminal_error",
+      "computed": 0,
+      "expected": 0,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p25_optimum",
+      "computed": 0.5,
+      "expected": 0.5,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p26_hover_vertical",
+      "computed": 0.0,
+      "expected": 0,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p27_euler_altitude",
+      "computed": 0.9855000000000002,
+      "expected": 0.9855,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p27_euler_velocity",
+      "computed": 2.19,
+      "expected": 2.19,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p27_exact_altitude",
+      "computed": 1.095,
+      "expected": 1.095,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p28_altitude_error",
+      "computed": -0.10949999999999993,
+      "expected": -0.1095,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p28_velocity_error",
+      "computed": 0.0,
+      "expected": 0,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p29_stage_surface",
+      "computed": 3.05,
+      "expected": 3.05,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p30_valid_residual",
+      "computed": -1,
+      "expected": -1,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p30_boundary_residual",
+      "computed": 0,
+      "expected": 0,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p30_violation_residual",
+      "computed": 0.20000000000000018,
+      "expected": 0.2,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p30_inverted_bounds_minimum_residual",
+      "computed": 1,
+      "expected": 1,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p31_family_endpoint",
+      "computed": 1,
+      "expected": 1,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p31_functional",
+      "computed": 1.0,
+      "expected": 1,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p32_left_at_switch",
+      "computed": 1,
+      "expected": 1,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p32_right_at_switch",
+      "computed": 1,
+      "expected": 1,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p32_endpoint",
+      "computed": 0,
+      "expected": 0,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p33_acceleration_surface",
+      "computed": -4.904999999999999,
+      "expected": -4.905,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p34_equilibrium_input",
+      "computed": 4.904999999999999,
+      "expected": 4.905,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p34_velocity_coordinate",
+      "computed": 0,
+      "expected": 0,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p34_second_dynamic_residual",
+      "computed": 8.881784197001252e-16,
+      "expected": 0,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p35_second_branch_input",
+      "computed": 4.904999999999999,
+      "expected": 4.905,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p36_running_cost_right",
+      "computed": 2.680058177808038,
+      "expected": 2.680058177808038,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p36_terminal_separate",
+      "computed": 0.5483113556160754,
+      "expected": 0.5483113556160754,
+      "ok": true,
+      "tolerance": 1e-09
+    },
+    {
+      "id": "p36_total_no_half",
+      "computed": 3.228369533424113,
+      "expected": 3.228369533424113,
+      "ok": true,
+      "tolerance": 1e-09
+    }
+  ],
+  "generated_design_sha256": "027b0f1f5839a5d705f866742e558ee01207f8d8ebbfb535042be6b30eccc6b2",
+  "PAGES_2D_ONLY": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    7,
+    10,
+    13,
+    15
+  ],
+  "PAGES_3D_PRIMARY": [
+    6
+  ],
+  "PAGES_2D_PRIMARY_WITH_3D": [
+    8,
+    9,
+    18,
+    20,
+    21,
+    22,
+    24,
+    26,
+    28,
+    30,
+    31,
+    35
+  ],
+  "PAGES_3D_PRIMARY_WITH_2D": [
+    12,
+    16,
+    19,
+    23,
+    27,
+    29,
+    32,
+    33,
+    34,
+    36
+  ],
+  "PAGES_2D_AND_3D_EQUAL": [
+    11,
+    14,
+    17,
+    25
+  ],
+  "PAGES_WITH_NO_VISUALIZATION": [],
+  "PAGES_GAINING_3D_AFTER_AUDIT": [
+    6,
+    8,
+    9,
+    11,
+    12,
+    14,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36
+  ],
+  "PAGES_GAINING_INTERACTIVITY_AFTER_AUDIT": [
+    6,
+    14,
+    24,
+    28,
+    32
+  ],
+  "REUSABLE_VISUALIZATION_COMPONENTS": 9,
+  "UNRESOLVED_VISUALIZATION_ISSUES": 0,
+  "GRAPHICS_REQUIREMENT": "FULL_2D_AND_3D_SUPPORT",
+  "READY_FOR_F05": "YES",
+  "pages_with_3d": 27,
+  "effective_interactive_pages": 29,
+  "effective_static_pages": 7,
+  "source_warning_pages_unchanged": true,
+  "limitations": [
+    "Verifica editoriale, strutturale e aritmetica; non prova di rendering, performance o usabilità 3D.",
+    "Scelta dello stack e implementazione sono attività F05; non eseguite da questo audit."
+  ],
+  "baseline_reference": "Data/reviews/introduction_companion_f04_baseline.json",
+  "historical_f04_fields": "Tutti preservati, inclusi audit F04, inventario e flag statico/interattivo originari.",
+  "effective_fields": "visualization.visualizationMode e relativi Requirements; interaction.effective_enabled; visualization_architecture."
+}

@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574:p0006",
+  "document_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574",
+  "source": {
+    "pdf_sha256": "937db0d7a574f549eb1181f22207ccfa886ae6d79206720718692bfd6015bd97",
+    "page_index": 5,
+    "physical_page_number": 6,
+    "pdf_label_raw": "<FEFF0035>",
+    "pdf_label": "5",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "System linearization and tangent hyperplane",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      269.6165466308594,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 5,
+        "total": 18,
+        "raw": "5 |18",
+        "bbox": [
+          102.9229965209961,
+          247.8778533935547,
+          447.8712158203125,
+          253.93292236328125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/pages/0006/text.txt",
+      "sha256": "ef3f006067d23e8ef852ea11241e16836c33a9ca02e2bee27e87eb5d7bea86a3"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/pages/0006/text.reading-order.txt",
+      "sha256": "14a56777bb36aaaf10b7219e7d17bd89411fae89ee079be29b8eb8977607d3a7"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/pages/0006/layout.json",
+      "sha256": "4312126839181a1e47e8ba1cb1c7b3b962b5299f11c0b4e9cbb4c9984ab0b425"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/pages/0006/render.png",
+      "sha256": "e7f29c1c71c93b9a74ef46521b8de7658b6503a04c4b83b2429837a27540a613",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "6ea3cb590c8ed0881c3b8c0ff34d1c00e43f6ca95b2eef13d3c1ee9f8416b69e"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574:p0005",
+    "next_page_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574:p0007"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "pending",
+    "result": null
+  }
+}

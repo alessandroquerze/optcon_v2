@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574:p0004",
+  "document_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574",
+  "source": {
+    "pdf_sha256": "937db0d7a574f549eb1181f22207ccfa886ae6d79206720718692bfd6015bd97",
+    "page_index": 3,
+    "physical_page_number": 4,
+    "pdf_label_raw": "<FEFF0033>",
+    "pdf_label": "3",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Dynamics as equality constraints",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      201.4720916748047,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 3,
+        "total": 18,
+        "raw": "3 |18",
+        "bbox": [
+          102.9229965209961,
+          247.8778533935547,
+          447.8712158203125,
+          253.93292236328125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/pages/0004/text.txt",
+      "sha256": "58f2def5ed4156a419a9f9d81e96676163dc17a43fcced0503dd8dccf0b9379b"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/pages/0004/text.reading-order.txt",
+      "sha256": "d0a2fe516b7e1757726132a21e5c1e4cfac7555a36c7761c79545b838a5fcb67"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/pages/0004/layout.json",
+      "sha256": "1c33841e3a7c92ae2b0aad591cf25a7e602779821f9f0d8e1d8a596b3641fa40"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/pages/0004/render.png",
+      "sha256": "0de6f46c3e234a2c17789c8df48b4a62bcb5f7f6f8db30958653befeb58301b9",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "c888b833e91a4fa272c96fe90313a97e78b9fc5606d7d45a0ea0aa2b90e7c56a"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574:p0003",
+    "next_page_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574:p0005"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "pending",
+    "result": null
+  }
+}

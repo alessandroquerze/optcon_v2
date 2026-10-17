@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0036",
+  "document_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1",
+  "source": {
+    "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+    "page_index": 35,
+    "physical_page_number": 36,
+    "pdf_label_raw": "<FEFF00330035>",
+    "pdf_label": "35",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Newton’s Method via Quadratic Optimization",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      278.4967956542969,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 35,
+        "total": 73,
+        "raw": "35 |73",
+        "bbox": [
+          150.68800354003906,
+          247.92860412597656,
+          447.8712158203125,
+          258.29376220703125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0036/text.txt",
+      "sha256": "12f671a2b4b0b1a6f7cc919b61424b569392b60c20c0b7dd482d7513be366829"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0036/text.reading-order.txt",
+      "sha256": "efdc4e7f9f525889cdafea99f64de05e1f4bd6d511a8f7e81c99777427b83f8c"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0036/layout.json",
+      "sha256": "1427f4d5904047b03cd1d1908c1988750a82147a1e0ddea951d74e7e307d37dd"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0036/render.png",
+      "sha256": "01db2b4846feb352b46c28093d0acc5aa390c5da472515442e54d239c14b7ce2",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "0ec85c967d4e0f6853ab97114ebe1f713f08f90aae19b78bbb755a490c05abb9"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0035",
+    "next_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0037"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "pending",
+    "result": null
+  }
+}

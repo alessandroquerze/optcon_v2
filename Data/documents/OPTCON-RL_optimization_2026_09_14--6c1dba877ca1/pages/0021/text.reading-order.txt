@@ -1,0 +1,25 @@
+Minimization of convex functions
+
+     Proposition (Prop. B.10 Nonlin. Progr.)
+    Let Z ⊂Rd be a convex set and ℓ: Z →R a convex function. Then a local minimum of ℓis also a
+     global minimum.
+
+    Proof
+    Let z⋆be a local minimum of ℓ. Suppose by contradiction that z⋆is not a global minimum. Then there
+     exists a global minimum ¯z ∈X such that ℓ(¯z) < ℓ(z⋆).
+
+    Using the definition of convexity it holds
+
+                       ℓ(θz⋆+ (1 −θ)¯z) ≤θℓ(z⋆) + (1 −θ)ℓ(¯z)
+                          < θℓ(z⋆) + (1 −θ)ℓ(z⋆) = ℓ(z⋆),
+
+     for every θ ∈[0, 1).
+
+    This contradicts the assumption that z⋆is a local minimum since we found points, ˜z = θz⋆+ (1 −θ)¯z
+    with θ ∈[0, 1), arbitrarily close to z⋆with ℓ(˜z) < ℓ(z⋆). This concludes the proof.
+
+
+
+
+
+                                                      Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 20 |73

@@ -1,0 +1,17 @@
+Newton’s Method for Unconstrained Optimization
+Consider the unconstrained optimization problem
+min
+z∈Rd ℓ(z),
+stationary points ¯z satisfy the first-order optimality condition
+∇ℓ(¯z) = 0.
+We can look at it as a root finding problem, with r(z) = ∇ℓ(z), and solve it via Newton’s method.
+Therefore, we can compute ∆zk as the solution of the linearization of r(z) = ∇ℓ(z) at zk, i.e.,
+∇ℓ(zk) + ∇2ℓ(zk)∆zk = 0,
+and run the update
+zk+1 = zk −∇2ℓ(zk)−1∇ℓ(zk)
+|
+{z
+}
+∆zk
+.
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 34 |73

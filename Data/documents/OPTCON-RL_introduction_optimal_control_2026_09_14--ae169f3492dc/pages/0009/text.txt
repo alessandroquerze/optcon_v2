@@ -1,0 +1,11 @@
+Discrete-time control systems and notation
+We consider nonlinear, discrete-time systems described by
+x(t + 1) = f(x(t), u(t), t),
+x(0) = x0,
+t ∈N0
+but from now on we will use the (more compact) notation
+xt+1 = ft(xt, ut),
+x0 = x0,
+t ∈N0
+where xt ∈Rn and ut ∈Rm are the state and the input of the system at time t.
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 8 |35

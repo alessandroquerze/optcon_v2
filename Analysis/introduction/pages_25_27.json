@@ -1,0 +1,632 @@
+[
+  {
+    "page": 25,
+    "title": "Optimal control for trajectory generation",
+    "observations": [
+      {
+        "category": "equation",
+        "claim": "Si minimizza sulle variabili impilate 𝐱∈R^{nT}, 𝐮∈R^{mT} un costo quadratico di tracking di stati e ingressi più un termine terminale.",
+        "anchor": "We can pose a trajectory generation problem as",
+        "bbox": [
+          88,
+          49,
+          424,
+          83
+        ]
+      },
+      {
+        "category": "equation",
+        "claim": "I vincoli espliciti della pagina sono x_{t+1}=f_t(x_t,u_t), t=0,…,T−1 e x₀=x⁰ con x⁰ assegnato.",
+        "anchor": "with x0 a given initial condition.",
+        "bbox": [
+          27,
+          82,
+          329,
+          134
+        ]
+      },
+      {
+        "category": "assumption",
+        "claim": "La curva desiderata (x_t^{des},u_t^{des}) rappresenta il comportamento desiderato e in generale NON soddisfa la dinamica.",
+        "anchor": "does NOT satisfy the dynamics.",
+        "bbox": [
+          27,
+          143,
+          444,
+          169
+        ]
+      },
+      {
+        "category": "equation",
+        "claim": "L'uscita desiderata è collegata alla curva stato-ingresso da y_t^{des}=h_t(x_t^{des},u_t^{des}).",
+        "anchor": "is related to the performance output",
+        "bbox": [
+          27,
+          181,
+          445,
+          197
+        ]
+      }
+    ],
+    "math": [
+      [
+        "\\begin{aligned}\\min_{\\mathbf{x}\\in\\mathbb{R}^{nT},\\mathbf{u}\\in\\mathbb{R}^{mT}}\\;&\\sum_{t=0}^{T-1}\\left[\\frac12\\|x_t-x_t^{\\mathrm{des}}\\|_Q^2+\\frac12\\|u_t-u_t^{\\mathrm{des}}\\|_R^2\\right]+\\frac12\\|x_T-x_T^{\\mathrm{des}}\\|_{Q_T}^2\\\\\\text{subj.to }&x_{t+1}=f_t(x_t,u_t),\\quad t=0,\\ldots,T-1\\\\&x_0=x^0\\end{aligned}",
+        "We can pose a trajectory generation problem"
+      ],
+      [
+        "y_t^{\\mathrm{des}}=h_t(x_t^{\\mathrm{des}},u_t^{\\mathrm{des}}),\\quad t\\in\\mathbb{N}_0",
+        "is related to the performance output"
+      ]
+    ],
+    "notation": [
+      [
+        "\\mathbf{x},\\mathbf{u}",
+        "Variabili impilate, in grassetto nella fonte"
+      ],
+      [
+        "x^0",
+        "Condizione iniziale assegnata"
+      ],
+      [
+        "Q,R,Q_T",
+        "Pesi del tracking intermedio, ingresso e terminale"
+      ],
+      [
+        "x_t^{\\mathrm{des}},u_t^{\\mathrm{des}},y_t^{\\mathrm{des}}",
+        "Riferimenti desiderati, distinti dalla traiettoria ammissibile"
+      ]
+    ],
+    "role": "Formula un problema specifico di generazione a partire dal task qualitativo della pagina 24.",
+    "previous": "La pagina 24 chiede y≈y^{des}; qui si assegna un costo sulle curve stato-ingresso che producono il desiderato d'uscita.",
+    "next": "La pagina 26 introduce una dinamica concreta di drone, ancora continua e da discretizzare.",
+    "scope_limits": [
+      "Non sono presenti path constraints o endpoint terminali aggiuntivi nella formulazione di questa pagina.",
+      "Il legame tramite h_t non prova che una curva desiderata di stato-ingresso esista per ogni y^{des}, né che sia unica.",
+      "Non dichiarare che tracking perfetto o costo zero siano sempre realizzabili.",
+      "Non è assegnato un algoritmo di soluzione."
+    ],
+    "prerequisites": [
+      [
+        "OCP e tracking quadratico",
+        "Ingredienti già introdotti e qui specializzati.",
+        [
+          22,
+          23
+        ]
+      ],
+      [
+        "Performance output",
+        "Per leggere la relazione con y^{des}.",
+        [
+          24
+        ]
+      ]
+    ],
+    "examples": [
+      {
+        "purpose": "Mostrare un compromesso ottimo in un'istanza calcolabile.",
+        "setup": "Enrichment a un passo: x⁰=0, x₁=u₀, x₀^{des}=0,x₁^{des}=1,u₀^{des}=0, Q=0,R=1,Q_T=1.",
+        "parameters": [
+          [
+            "T",
+            "1"
+          ],
+          [
+            "R,Q_T",
+            "1,1"
+          ],
+          [
+            "target x_1",
+            "1"
+          ]
+        ],
+        "steps": [
+          "Il costo è ½u₀²+½(u₀−1)².",
+          "Derivando nell'esempio: 2u₀−1=0.",
+          "u₀*=x₁*=0.5, costo=0.25.",
+          "La curva desiderata (1,0) non è dinamicamente coerente, mentre la soluzione sì."
+        ],
+        "expected": "La soluzione bilancia deviazione dal target e deviazione dell'ingresso, senza copiare un riferimento irrealizzabile.",
+        "limitations": [
+          "Istanza, derivata e soluzione sono enrichment; nessuna soluzione generale viene attribuita alla slide."
+        ]
+      }
+    ],
+    "visual": {
+      "component": "OneStepTrackingTradeoffPlot",
+      "origin": "enrichment",
+      "description": "Termine ingresso, termine terminale e somma nel caso scalare; mostrare la traiettoria ammissibile corrispondente al minimo."
+    },
+    "interaction": {
+      "component": "ClosedFormOneStepTrackingExample",
+      "rationale": "Qui il costo è esplicito: cambiare i pesi può ricalcolare davvero l'ottimo della sola istanza scalare, distinguendolo dalla rivalutazione fissa della pagina 22.",
+      "parameters": [
+        [
+          "Peso ingresso",
+          "R",
+          "[0.1,5]",
+          "1",
+          "Ricalcolare u₀*=Q_T a/(R+Q_T), x₁* e costo; aumentando R rispetto a Q_T si privilegia l'ingresso vicino a zero.",
+          [
+            "R resta positivo"
+          ],
+          "source"
+        ],
+        [
+          "Peso terminale",
+          "Q_T",
+          "[0,5]",
+          "1",
+          "Ricalcolare soluzione e costo; con Q_T=0 si ottiene u₀*=0.",
+          [
+            "Q_T=0"
+          ],
+          "source"
+        ],
+        [
+          "Target aggiunto",
+          "a",
+          "[−2,2]",
+          "1",
+          "Cambiare x₁^{des}=a e ricalcolare soluzione, errore e costo; non modificare x⁰.",
+          [
+            "a=0: soluzione nulla"
+          ],
+          "enrichment"
+        ]
+      ],
+      "outputs": [
+        "u₀*, x₁*",
+        "Errore terminale",
+        "Costo e suoi contributi"
+      ],
+      "invariants": [
+        "Dinamica x₁=u₀ e T=1",
+        "Q=0",
+        "Formula chiusa valida solo per l'esempio",
+        "Range/default sono enrichment"
+      ]
+    },
+    "edges": [
+      [
+        "R+Q_T=0 se si estendesse il dominio",
+        "La formula chiusa divide per zero; il controllo proposto lo evita imponendo R>0."
+      ],
+      [
+        "Riferimento dinamicamente non fattibile",
+        "Non imporre simultaneamente x₁=1 e u₀=0 al modello x₁=u₀."
+      ]
+    ],
+    "single_page_rationale": "Il problema è una specializzazione di ingredienti già noti; un solo esempio a un passo esplica il compromesso.",
+    "focus": "Una traiettoria ottima si avvicina a un riferimento desiderato rispettando la dinamica."
+  },
+  {
+    "page": 26,
+    "title": "Trajectory generation for an autonomous drone — modello planare",
+    "observations": [
+      {
+        "category": "assumption",
+        "claim": "La fonte introduce esplicitamente un planar drone model, continuo e da discretizzare.",
+        "anchor": "Consider a planar drone model (continuous-time to be discretized)",
+        "bbox": [
+          27,
+          31,
+          313,
+          46
+        ]
+      },
+      {
+        "category": "equation",
+        "claim": "Le equazioni, verificate sull'immagine, sono p̈_x=−(u₁+u₂)sinθ/M, p̈_y=(u₁+u₂)cosθ/M−g e θ̈=L(u₁−u₂)/(2J). Il meno della prima equazione agisce sull'intera somma u₁+u₂.",
+        "anchor": "¨px =",
+        "bbox": [
+          80,
+          54,
+          188,
+          112
+        ]
+      },
+      {
+        "category": "equation",
+        "claim": "L'uscita discreta y_t=col(p_{x,t},p_{y,t}) rappresenta per esempio la posizione del centro di massa.",
+        "anchor": "being, e.g., the position of the drone center of mass.",
+        "bbox": [
+          27,
+          122,
+          320,
+          181
+        ]
+      },
+      {
+        "category": "diagram",
+        "claim": "Il disegno mostra un drone inclinato con ingressi u₁,u₂, angolo θ rispetto alla verticale, velocità v, posizione (p_x,p_y) e curva desiderata tratteggiata.",
+        "bbox": [
+          248,
+          74,
+          400,
+          145
+        ]
+      },
+      {
+        "category": "concept",
+        "claim": "Il goal scritto chiede di seguire una legge temporale 'in the 3D space' rispettando eventualmente limiti su angoli, velocità angolari e ingressi: la menzione 3D contrasta con il modello planare a due coordinate.",
+        "anchor": "given time law in the 3D space",
+        "bbox": [
+          42,
+          197,
+          433,
+          232
+        ]
+      }
+    ],
+    "math": [
+      [
+        "\\ddot p_x=-\\frac{u_1+u_2}{M}\\sin\\theta",
+        "¨px =",
+        "Segno e somma verificati anche su rendering a 288 DPI; il text layer da solo è ambiguo."
+      ],
+      [
+        "\\ddot p_y=\\frac{u_1+u_2}{M}\\cos\\theta-g",
+        "¨py ="
+      ],
+      [
+        "\\ddot\\theta=\\frac{L}{2J}(u_1-u_2)",
+        "¨θ ="
+      ],
+      [
+        "y_t=\\begin{bmatrix}p_{x,t}\\\\p_{y,t}\\end{bmatrix},\\quad t\\in\\mathbb{N}_0",
+        "with performance output"
+      ]
+    ],
+    "notation": [
+      [
+        "p_x,p_y",
+        "Coordinate della posizione del centro di massa"
+      ],
+      [
+        "\\theta",
+        "Angolo mostrato rispetto alla verticale"
+      ],
+      [
+        "u_1,u_2",
+        "Due ingressi rappresentati dalle frecce"
+      ],
+      [
+        "M,J,L,g",
+        "Parametri del modello: la pagina non ne esplicita testualmente definizioni, unità o valori"
+      ],
+      [
+        "v",
+        "Velocità indicata nel disegno"
+      ],
+      [
+        "y_t",
+        "Uscita di posizione a due componenti"
+      ]
+    ],
+    "role": "Collega la formulazione di trajectory generation a una dinamica concreta di drone nel piano.",
+    "previous": "La pagina 25 formula il tracking su dinamica generica; qui si assegnano equazioni continue ma non ancora una f_t discreta.",
+    "next": "La pagina 27 introduce Euler e ordina lo stato in sei componenti; non anticipare quell'ordine come se fosse già scritto qui.",
+    "scope_limits": [
+      "Il modello esplicito è planare, non un modello completo 3D.",
+      "Il testo non fornisce valori, unità, saturazioni né definizioni dei parametri M,J,L,g; le interpretazioni fisiche e i numeri dell'esempio sono dichiarati enrichment.",
+      "Non sostituire la prima somma con −u₁+u₂: sarebbe un errore di lettura del text layer.",
+      "I limiti sono un obiettivo qualitativo, non disuguaglianze numeriche assegnate."
+    ],
+    "prerequisites": [
+      [
+        "Equazioni continue e performance output",
+        "Per distinguere accelerazioni e uscita di posizione.",
+        [
+          8,
+          24
+        ]
+      ],
+      [
+        "Seno, coseno e accelerazione angolare",
+        "Prerequisiti matematico-fisici per leggere il modello.",
+        []
+      ]
+    ],
+    "examples": [
+      {
+        "purpose": "Mostrare il ruolo della somma e della differenza degli ingressi.",
+        "setup": "Enrichment con interpretazioni fisiche convenzionali: M=1 kg, g=9.81 m/s², L=0.4 m, J=0.02 kg·m², θ=0, u₁=u₂=4.905 N.",
+        "parameters": [
+          [
+            "M,g,L,J",
+            "1,9.81,0.4,0.02"
+          ],
+          [
+            "u_1,u_2",
+            "4.905,4.905"
+          ],
+          [
+            "θ",
+            "0"
+          ]
+        ],
+        "steps": [
+          "p̈_x=0 perché sin0=0.",
+          "p̈_y=(4.905+4.905)−9.81=0.",
+          "θ̈=0 perché u₁−u₂=0.",
+          "Con u₁=5,u₂=4, θ̈=10 rad/s² e p̈_y=−0.81 m/s² nell'istante a θ=0."
+        ],
+        "expected": "La somma controlla le accelerazioni traslazionali, la differenza quella angolare nel modello dato.",
+        "limitations": [
+          "Valori, unità e interpretazioni dei parametri sono enrichment.",
+          "Accelerazione nulla è condizione di hover solo con velocità iniziali nulle; non è una prova di stabilità."
+        ]
+      }
+    ],
+    "visual": {
+      "component": "PlanarDroneInstantaneousAccelerationDiagram",
+      "origin": "enrichment",
+      "description": "Sagoma planare e vettori di accelerazione calcolati dalle equazioni; riportare il richiamo al contrasto planare/3D."
+    },
+    "interaction": {
+      "component": "PlanarDroneForceBalanceInspector",
+      "rationale": "Modificare separatamente u₁,u₂ e θ mostra somma, differenza e proiezioni, senza fingere di aver risolto un tracking ottimo.",
+      "parameters": [
+        [
+          "Primo ingresso",
+          "u_1",
+          "[0,10] N",
+          "4.905",
+          "Ricalcolare entrambe le accelerazioni traslazionali e θ̈ con segno positivo nel termine u₁−u₂.",
+          [
+            "u₁=u₂: θ̈=0"
+          ],
+          "source"
+        ],
+        [
+          "Secondo ingresso",
+          "u_2",
+          "[0,10] N",
+          "4.905",
+          "Ricalcolare la somma per la traslazione e il contributo negativo nella differenza angolare.",
+          [
+            "u₁=u₂=0: accelerazione verticale −g"
+          ],
+          "source"
+        ],
+        [
+          "Angolo",
+          "θ",
+          "[−π/3,π/3] rad",
+          "0",
+          "Ruotare il drone e aggiornare seno/coseno delle accelerazioni; θ̈ resta indipendente da θ a ingressi fissati in questo modello.",
+          [
+            "θ=0: accelerazione orizzontale nulla"
+          ],
+          "source"
+        ]
+      ],
+      "outputs": [
+        "p̈_x,p̈_y,θ̈",
+        "Somma e differenza degli ingressi",
+        "Vettori nel disegno"
+      ],
+      "invariants": [
+        "Parametri M,J,L,g fissati ai valori enrichment",
+        "Calcolo istantaneo, senza integrazione o ottimizzazione",
+        "Nessuna terza coordinata introdotta",
+        "Range/default sono enrichment"
+      ]
+    },
+    "edges": [
+      [
+        "M=0 o J=0",
+        "Valori non validi per le formule: escluderli se si aggiungono controlli sui parametri."
+      ],
+      [
+        "Ingressi nulli",
+        "Non mantenere il drone fermo: p̈_y=−g."
+      ],
+      [
+        "Thrust di equilibrio con velocità non nulle",
+        "Accelerazione nulla non equivale a posizione costante."
+      ]
+    ],
+    "uncertainties": [
+      {
+        "description": "La frase goal cita lo spazio 3D, mentre equazioni, uscita e titolo del modello sono planari; non estendere il modello a 3D senza una scelta editoriale esplicita.",
+        "blocking": false
+      }
+    ],
+    "single_page_rationale": "Tre equazioni accoppiate e lo stesso diagramma di forza formano un'unica unità; basta un ispettore istantaneo, senza aggiungere una simulazione temporale qui.",
+    "focus": "Leggere correttamente il modello planare: somma degli ingressi, differenza e uscita di posizione."
+  },
+  {
+    "page": 27,
+    "title": "Drone (I) — discretizzazione e ordine delle variabili",
+    "observations": [
+      {
+        "category": "equation",
+        "claim": "È mostrata la discretizzazione, per esempio forward Euler: x_{t+1}=x_t+δf_CT(x_t,u_t,t); l'intero termine x_t+δf_CT è indicato con f_t(x_t,u_t).",
+        "anchor": "xt+1 = xt + δfCT(xt, ut, t)",
+        "bbox": [
+          123,
+          49,
+          306,
+          82
+        ]
+      },
+      {
+        "category": "assumption",
+        "claim": "δ>0 è un passo di discretizzazione sufficientemente piccolo; f_CT indica la dinamica continua.",
+        "anchor": "δ > 0 sufficiently small discretization step",
+        "bbox": [
+          27,
+          87,
+          443,
+          102
+        ]
+      },
+      {
+        "category": "definition",
+        "claim": "L'ordine esatto dello stato è x_t=col(p_{x,t},v_{x,t},p_{y,t},v_{y,t},θ_t,ω_t)=col(x_{1,t},…,x_{6,t}).",
+        "anchor": "The state and input vector are:",
+        "bbox": [
+          81,
+          132,
+          232,
+          202
+        ]
+      },
+      {
+        "category": "definition",
+        "claim": "L'ingresso è u_t=col(u_{1,t},u_{2,t}).",
+        "anchor": "ut =",
+        "bbox": [
+          300,
+          152,
+          346,
+          180
+        ]
+      }
+    ],
+    "math": [
+      [
+        "x_{t+1}=\\underbrace{x_t+\\delta f_{\\mathrm{CT}}(x_t,u_t,t)}_{f_t(x_t,u_t)}",
+        "xt+1 = xt + δfCT",
+        "L'estensione della parentesi graffa è verificata a 288 DPI: comprende anche x_t."
+      ],
+      [
+        "\\delta>0",
+        "δ > 0"
+      ],
+      [
+        "x_t=\\begin{bmatrix}p_{x,t}\\\\v_{x,t}\\\\p_{y,t}\\\\v_{y,t}\\\\\\theta_t\\\\\\omega_t\\end{bmatrix}=\\begin{bmatrix}x_{1,t}\\\\x_{2,t}\\\\x_{3,t}\\\\x_{4,t}\\\\x_{5,t}\\\\x_{6,t}\\end{bmatrix},\\qquad u_t=\\begin{bmatrix}u_{1,t}\\\\u_{2,t}\\end{bmatrix}",
+        "The state and input vector"
+      ]
+    ],
+    "notation": [
+      [
+        "\\delta",
+        "Passo positivo di discretizzazione, non la variazione Δ della linearizzazione"
+      ],
+      [
+        "f_{\\mathrm{CT}}",
+        "Dinamica continua in forma di primo ordine"
+      ],
+      [
+        "f_t",
+        "Mappa discreta completa x_t+δf_CT"
+      ],
+      [
+        "x_{1,t},x_{2,t},x_{3,t},x_{4,t},x_{5,t},x_{6,t}",
+        "Rispettivamente p_x,v_x,p_y,v_y,θ,ω"
+      ],
+      [
+        "\\omega_t",
+        "Componente di velocità angolare"
+      ]
+    ],
+    "role": "Produce il ponte continuo→discreto e il dizionario delle componenti utilizzato nel costo e nei vincoli successivi.",
+    "previous": "La pagina 26 dà accelerazioni del drone: per Euler vanno interpretate in uno stato di primo ordine, chiarimento di enrichment.",
+    "next": "La pagina 28 descrive gli obiettivi di tracking per posizione, velocità, angolo, velocità angolare e ingressi.",
+    "scope_limits": [
+      "La fonte non assegna un valore a δ né una soglia quantitativa per 'sufficientemente piccolo'.",
+      "Forward Euler è un esempio, non l'unica discretizzazione consentita.",
+      "Non scambiare p_y=x₃ con x₂: l'ordine alterna posizione e velocità per asse.",
+      "Non includere automaticamente un termine ½δ²a nell'aggiornamento di posizione di forward Euler."
+    ],
+    "prerequisites": [
+      [
+        "Modello planare continuo",
+        "Per conoscere le accelerazioni da inserire in f_CT.",
+        [
+          26
+        ]
+      ],
+      [
+        "Notazione discreta e vettori",
+        "Per interpretare la mappa f_t e le sei componenti.",
+        [
+          9,
+          10
+        ]
+      ]
+    ],
+    "enrichment_notes": [
+      "Espansione derivata, etichettata enrichment: f_CT=col(v_x,−(u₁+u₂)sinθ/M,v_y,(u₁+u₂)cosθ/M−g,ω,L(u₁−u₂)/(2J)). La pagina assegna lo stato e la forma Euler, ma non stampa questo vettore espanso."
+    ],
+    "examples": [
+      {
+        "purpose": "Controllare l'aggiornamento Euler di posizione e velocità.",
+        "setup": "Enrichment con M=1,g=9.81,u₁=u₂=6, θ=ω=0 e p_y=v_y=0 iniziali; accelerazione verticale costante 2.19. Scegliere δ=0.1 s.",
+        "parameters": [
+          [
+            "δ",
+            "0.1 s"
+          ],
+          [
+            "accelerazione verticale",
+            "2.19 m/s²"
+          ]
+        ],
+        "steps": [
+          "Primo passo Euler: p_{y,1}=0+0.1·0=0, v_{y,1}=0.219.",
+          "Secondo passo: p_{y,2}=0.0219, v_{y,2}=0.438.",
+          "Dopo 1 s e 10 passi: p_y=0.9855; soluzione continua=½·2.19·1²=1.095."
+        ],
+        "expected": "Ridurre δ riduce qui l'errore di posizione; il primo passo usa la velocità precedente.",
+        "limitations": [
+          "Numeri e confronto con la soluzione continua sono enrichment.",
+          "Non è un risultato di ottimalità o una garanzia generale di stabilità di Euler."
+        ]
+      }
+    ],
+    "visual": {
+      "component": "DroneStateOrderingAndEulerStepPlot",
+      "origin": "enrichment",
+      "description": "Dizionario delle sei componenti e confronto fra campioni Euler e soluzione continua del moto verticale esemplificativo."
+    },
+    "interaction": {
+      "component": "EulerDiscretizationStepExplorer",
+      "rationale": "Un passo selezionabile rende visibile l'errore numerico e il significato di 'sufficientemente piccolo'.",
+      "parameters": [
+        [
+          "Passo",
+          "δ",
+          "{0.01,0.02,0.05,0.1,0.2} s",
+          "0.1 s",
+          "Ricalcolare il numero di passi per la durata fisica fissa di 1 s, i campioni Euler e l'errore finale rispetto alla soluzione continua.",
+          [
+            "δ>0",
+            "Ogni scelta divide esattamente 1 s"
+          ],
+          "source"
+        ]
+      ],
+      "outputs": [
+        "Campioni di p_y e v_y",
+        "Curva continua di riferimento",
+        "Errore finale"
+      ],
+      "invariants": [
+        "Durata fisica di 1 s e accelerazione 2.19",
+        "Ingressi uguali, quindi θ=ω=0",
+        "Ordine dello stato della fonte",
+        "Range/default sono enrichment"
+      ]
+    },
+    "edges": [
+      [
+        "δ=0 o negativo",
+        "Escludere come passo non consentito."
+      ],
+      [
+        "Passo grande",
+        "Mostrare possibile inaccuratezza senza promettere stabilità o fedeltà della traiettoria."
+      ],
+      [
+        "Cambiare numero di passi confondendolo con durata",
+        "Mantenere fissa la durata fisica nel confronto di accuratezza."
+      ]
+    ],
+    "single_page_rationale": "Forma Euler e dizionario dello stato sono inseparabili per leggere il modello; un solo esempio verticale mantiene il carico gestibile.",
+    "focus": "Da f_CT alla mappa discreta completa, con ordine esatto delle sei componenti."
+  }
+]

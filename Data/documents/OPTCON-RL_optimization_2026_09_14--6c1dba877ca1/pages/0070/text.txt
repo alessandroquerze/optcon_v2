@@ -1,0 +1,16 @@
+Optimality conditions for equality constrained problems (refresh)
+Consider the equality-constrained minimization problem:
+min
+z∈Rd ℓ(z)
+subj.to h(z) = 0
+where ℓ: Rd →R and h : Rd →Rm.
+The first-order necessary conditions of optimality require the solution of
+∇ℓ(z) + ∇h(z)λ = 0
+h(z) = 0
+which can be written as
+∇L(z, λ) =
+∇ℓ(z) + ∇h(z)λ
+h(z)
+
+= 0.
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 62 |73

@@ -1,0 +1,484 @@
+{
+  "protocol_version": "1.0.0",
+  "request_sha256": "514bf0bd94fbe8383ba083bf1b7a4358a38379283355248e70241624b8c9b101",
+  "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0004",
+  "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+  "artifact_sha256": {
+    "text": "094455b65d741c2154d078f7597e455b66b0a98b68985a1a1d4b78d309845911",
+    "layout": "0a546c6b433bc5fbbd0019b0af1581210aae9b418e2051aaa06c99ef784df7af",
+    "render": "89f8efed986fab3cab3f976204f7b2dc64826ccd3ed8e4970bb1b5075ce13167"
+  },
+  "agent": {
+    "provider": "OpenAI",
+    "model": "Codex (identificatore esatto del modello non esposto nella sessione)",
+    "run_id": "page-analysis-ce370a19242e4173828aef04d60c36ee"
+  },
+  "inspection": {
+    "text_page_ids": [
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0004",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0003",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0005"
+    ],
+    "layout_page_ids": [
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0004",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0003",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0005"
+    ],
+    "image_page_ids": [
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0004",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0003",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0005"
+    ],
+    "source_content_treated_as_data": true
+  },
+  "title": "Motivating domains — Robotic systems",
+  "companionPageCount": 1,
+  "didactic_plan": {
+    "source_scope_limits": [
+      "La fonte non specifica cinematica, Jacobiano, numero di giunti, algoritmo collision avoidance o traiettoria ottima calcolata.",
+      "Non viene identificato un modello quantitativo comune ai tre robot raffigurati."
+    ],
+    "prerequisites": [
+      {
+        "concept": "Obiettivo e vincolo",
+        "why": "Per classificare tracking, tempo, saturazioni e limiti di giunto.",
+        "origin": "source_context",
+        "page_numbers": [
+          2
+        ]
+      },
+      {
+        "concept": "End-effector e workspace",
+        "why": "Vocabolario di base utile a leggere gli esempi robotici; la pagina non li definisce formalmente.",
+        "origin": "enrichment",
+        "page_numbers": []
+      }
+    ],
+    "source_math": [],
+    "enrichments": [
+      {
+        "id": "example-1",
+        "label": "enrichment",
+        "type": "conceptual_example",
+        "proposal": "Enrichment: un manipolatore deve trasferire un oggetto fra due posizioni; il percorso dell'end-effector evita un ostacolo, ma l'ingombro dell'oggetto può ancora urtarlo.",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ]
+      },
+      {
+        "id": "visualization",
+        "label": "enrichment",
+        "type": "visualization_design",
+        "proposal": "Schema statico di end-effector, payload e ostacolo con richiamo alle tre famiglie di vincoli della fonte.",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "id": "example-1",
+        "origin": "enrichment",
+        "purpose": "Capire il ruolo della geometria del payload.",
+        "setup": "Enrichment: un manipolatore deve trasferire un oggetto fra due posizioni; il percorso dell'end-effector evita un ostacolo, ma l'ingombro dell'oggetto può ancora urtarlo.",
+        "parameters": [],
+        "derivation": [
+          "Confrontare il percorso del punto end-effector con l'ingombro trasportato.",
+          "Considerare la collisione del payload come vincolo geometrico.",
+          "Scartare una traiettoria rapida se richiede saturazioni o giunti fuori limite."
+        ],
+        "expected_outcome": "Il tracking del solo punto desiderato non certifica ammissibilità del moto completo.",
+        "limitations": [
+          "Esempio concettuale aggiunto; nessuna cinematica o dimensione è indicata dalla fonte."
+        ],
+        "enrichment_id": "example-1",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ]
+      }
+    ],
+    "example_omission_reason": null,
+    "visualization": {
+      "component": "RobotTaskConstraintDiagram",
+      "description": "Schema statico di end-effector, payload e ostacolo con richiamo alle tre famiglie di vincoli della fonte.",
+      "origin": "enrichment",
+      "source_observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04",
+        "s05"
+      ]
+    },
+    "interactivity": {
+      "recommended": false,
+      "rationale": "La pagina motiva il problema; un simulatore robotico richiederebbe cinematica e geometria che la fonte qui non assegna.",
+      "component": null,
+      "parameters": [],
+      "outputs": [],
+      "invariants": [],
+      "enrichment_id": null
+    },
+    "edge_cases": [
+      {
+        "case": "Payload di dimensione non trascurabile",
+        "expected_behavior": "Controllare l'ingombro, non soltanto il percorso di un punto.",
+        "origin": "enrichment",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ]
+      },
+      {
+        "case": "Target fuori workspace",
+        "expected_behavior": "Segnalare target non ammissibile, senza promettere che un diverso ottimizzatore possa raggiungerlo.",
+        "origin": "enrichment",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ]
+      }
+    ],
+    "expansion_rationale": "Lo schema robotica/obiettivi/vincoli forma un solo messaggio applicativo.",
+    "blueprint": [
+      {
+        "companion_suffix": null,
+        "focus": "Dalla traiettoria desiderata del robot ai limiti geometrici e di attuazione.",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ],
+        "enrichment_ids": [
+          "example-1",
+          "visualization"
+        ]
+      }
+    ]
+  },
+  "observations": [
+    {
+      "id": "s01",
+      "category": "structure",
+      "description": "La pagina tratta Robotic systems.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0004",
+        "modality": "both",
+        "text_quote": "Robotic systems",
+        "bbox": [
+          28.34600067138672,
+          34.63948059082031,
+          90.83284759521484,
+          43.60588073730469
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "s02",
+      "category": "concept",
+      "description": "Gli indici riportati sono distanza dal comportamento desiderato, con esempi di evoluzione dell'end-effector e percorso di posizione, e tempo minimo; i puntini non definiscono ulteriori criteri specifici.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0004",
+        "modality": "both",
+        "text_quote": "evolution of end-effector, position path,...",
+        "bbox": [
+          28,
+          76,
+          293,
+          146
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "s03",
+      "category": "assumption",
+      "description": "I vincoli geometrici comprendono workspace, ostacoli e geometria del payload.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0004",
+        "modality": "both",
+        "text_quote": "geometric (workspace, obstacles, payload geometry, ...)",
+        "bbox": [
+          28,
+          150,
+          296,
+          176
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "s04",
+      "category": "assumption",
+      "description": "Sono citate saturazioni dei motori come limiti sugli ingressi e vincoli di giunto/velocità come vincoli interni.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0004",
+        "modality": "both",
+        "text_quote": "inputs (motor saturations)",
+        "bbox": [
+          28,
+          176,
+          299,
+          204
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "s05",
+      "category": "diagram",
+      "description": "La colonna di immagini mostra un braccio robotico, robot in un magazzino e una piattaforma mobile con manipolatore, illustrando diversi sistemi robotici.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0004",
+        "modality": "visual",
+        "text_quote": null,
+        "bbox": [
+          299,
+          50,
+          361,
+          230
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "transcription-06",
+      "category": "structure",
+      "description": "Trascrizione di una regione visibile della fonte: Optimal Control: motivating domains",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0004",
+        "modality": "visual",
+        "text_quote": null,
+        "bbox": [
+          10.35200023651123,
+          6.720991134643555,
+          230.5518035888672,
+          21.06719207763672
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "transcription-07",
+      "category": "structure",
+      "description": "Trascrizione di una regione visibile della fonte: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 3 |35",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0004",
+        "modality": "visual",
+        "text_quote": null,
+        "bbox": [
+          130.12982177734375,
+          247.92869567871094,
+          447.87103271484375,
+          255.1179962158203
+        ]
+      },
+      "confidence": 0.98
+    }
+  ],
+  "contextual_role": "Trasferisce lo schema obiettivo/vincoli alla robotica senza formalizzare ancora stato e ingresso.",
+  "context_notes": [
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0003",
+      "role": "previous",
+      "note": "La pagina 3 descrive velivoli: il parallelismo è concettuale, non uguaglianza delle dinamiche."
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0005",
+      "role": "next",
+      "note": "La pagina 5 applica lo stesso schema alla guida autonoma, aggiungendo comfort e consumo."
+    }
+  ],
+  "notation": [],
+  "uncertainties": [],
+  "progression": {
+    "assessment": "unique",
+    "related_page_ids": [],
+    "added": [],
+    "removed": [],
+    "changed": [],
+    "observation_ids": [
+      "s01",
+      "s02",
+      "s03",
+      "s04",
+      "s05"
+    ],
+    "rationale": "Pagina con contenuto autonomo nella sequenza; nessun candidato automatico da confermare."
+  },
+  "coverage": {
+    "all_visible_regions_accounted_for": true,
+    "regions": [
+      {
+        "bbox": [
+          10.35200023651123,
+          6.720991134643555,
+          230.5518035888672,
+          21.06719207763672
+        ],
+        "description": "Regione testuale sorgente: Optimal Control: motivating domains",
+        "observation_ids": [
+          "transcription-06"
+        ]
+      },
+      {
+        "bbox": [
+          28.34600067138672,
+          34.63948059082031,
+          90.83284759521484,
+          43.60588073730469
+        ],
+        "description": "Regione testuale sorgente: Robotic systems",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          32.125,
+          77.9844970703125,
+          103.15682983398438,
+          86.95089721679688
+        ],
+        "description": "Regione testuale sorgente: Performance index",
+        "observation_ids": [
+          "s02"
+        ]
+      },
+      {
+        "bbox": [
+          43.88100051879883,
+          92.81229400634766,
+          221.17532348632812,
+          112.85389709472656
+        ],
+        "description": "Regione testuale sorgente: • distance from desired “behavior”\n(evolution of end-effector, position path,...)",
+        "observation_ids": [
+          "s02"
+        ]
+      },
+      {
+        "bbox": [
+          43.88100051879883,
+          118.71529388427734,
+          109.82162475585938,
+          127.79789733886719
+        ],
+        "description": "Regione testuale sorgente: • minimum time",
+        "observation_ids": [
+          "s02"
+        ]
+      },
+      {
+        "bbox": [
+          43.88100051879883,
+          133.65928649902344,
+          61.63617706298828,
+          142.7418975830078
+        ],
+        "description": "Regione testuale sorgente: • ...",
+        "observation_ids": [
+          "s02"
+        ]
+      },
+      {
+        "bbox": [
+          32.125,
+          148.71949768066406,
+          75.63894653320312,
+          157.68589782714844
+        ],
+        "description": "Regione testuale sorgente: Constraints",
+        "observation_ids": [
+          "s03"
+        ]
+      },
+      {
+        "bbox": [
+          43.88100051879883,
+          163.5472869873047,
+          266.760498046875,
+          172.62989807128906
+        ],
+        "description": "Regione testuale sorgente: • geometric (workspace, obstacles, payload geometry, ...)",
+        "observation_ids": [
+          "s03"
+        ]
+      },
+      {
+        "bbox": [
+          43.88100051879883,
+          178.4912872314453,
+          155.3978271484375,
+          187.5738983154297
+        ],
+        "description": "Regione testuale sorgente: • inputs (motor saturations)",
+        "observation_ids": [
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          43.88100051879883,
+          193.43528747558594,
+          238.6508026123047,
+          202.5178985595703
+        ],
+        "description": "Regione testuale sorgente: • internal systems (joint constraints, velocities,...)",
+        "observation_ids": [
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          130.12982177734375,
+          247.92869567871094,
+          447.87103271484375,
+          255.1179962158203
+        ],
+        "description": "Regione testuale sorgente: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 3 |35",
+        "observation_ids": [
+          "transcription-07"
+        ]
+      },
+      {
+        "bbox": [
+          299,
+          50,
+          361,
+          230
+        ],
+        "description": "La colonna di immagini mostra un braccio robotico, robot in un magazzino e una piattaforma mobile con manipolatore, illustrando diversi sistemi robotici.",
+        "observation_ids": [
+          "s05"
+        ]
+      }
+    ]
+  },
+  "mapping_recommendation": {
+    "mode": "one_to_one",
+    "rationale": "Lo schema robotica/obiettivi/vincoli forma un solo messaggio applicativo.",
+    "subpages": []
+  }
+}

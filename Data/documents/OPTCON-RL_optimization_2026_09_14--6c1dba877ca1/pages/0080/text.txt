@@ -1,0 +1,10 @@
+Warning on notation in Optimization and Optimal Control
+Notation z
+We denote z ∈Rd the generic optimization variable of a generic optimization problem, e.g.
+min
+z∈Rd ℓ(z),
+where ℓ: Rd →R cost function.
+Notation zk
+We denote zk ∈Rd the solution estimate at iteration k ∈N of an optimization algorithm for the
+optimization problem.
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 72 |73

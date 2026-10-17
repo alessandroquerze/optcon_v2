@@ -1,0 +1,24 @@
+Lagrangian function
+
+
+
+
+     In order to state the first-order necessary conditions of optimality for (equality and inequality) constrained
+    problems it is useful to introduce the Lagrangian function
+
+                                                             r        m
+                              L(z, µ, λ) = ℓ(z) + X µjgj(z) + X λihi(z)
+
+                                                 j=1           i=1
+
+    with z ∈Rd, µ ∈Rr and λ ∈Rm.
+
+    Remark µj and λi can be seen as prices for violating the associated constraint.            □
+
+    Remark We are relaxing the constrained problem, but we cannot minimize the Lagrangian.      □
+
+
+
+
+
+                                                      Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 54 |73

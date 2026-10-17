@@ -1,0 +1,14 @@
+Necessary conditions of optimality (unconstrainted)
+First order necessary condition (FNC) of optimality (unconstrained)
+Let z⋆be an unconstrained local minimum of ℓ: Rd →R and assume that ℓis continuously differentiable
+(C1) in B(z⋆, ϵ) for some ϵ > 0. Then ∇ℓ(z⋆) = 0.
+Second order necessary condition of optimality (unconstrained)
+If additionally ℓis twice continuously differentiable (C2) in B(z⋆, ϵ), then ∇2ℓ(z⋆) ≥0 (the Hessian
+∇2ℓ(z⋆) of ℓis positive semidefinite).
+Remark Points ¯z satisfying ∇ℓ(¯z) = 0 are called stationary points. They include minima, maxima and
+saddle points.
+strict global minimum
+strict local maximum
+local minima
+saddle point
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 7 |73

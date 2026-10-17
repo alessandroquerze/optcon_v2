@@ -1,0 +1,171 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0060",
+  "document_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1",
+  "source": {
+    "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+    "page_index": 59,
+    "physical_page_number": 60,
+    "pdf_label_raw": "<FEFF00350035>",
+    "pdf_label": "55",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Karush-Kuhn-Tucker (KKT) necessary conditions",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      297.9358825683594,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 55,
+        "total": 73,
+        "raw": "55 |73",
+        "bbox": [
+          150.6879425048828,
+          247.9286346435547,
+          447.87115478515625,
+          258.2937927246094
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0060/text.txt",
+      "sha256": "ff35f484a5c5779d5ca551a98a7f92c81723e4d3f80de2f022e5b2c13302249e"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0060/text.reading-order.txt",
+      "sha256": "67894f9954fb6fee30f15ec1e2028a3c5ebd941dbb5d98e6d4f2c76cad2bb958"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0060/layout.json",
+      "sha256": "6bdca2d857cb29254998cfb6eab3c3568750eb258e37fe42aab5bfe44659e0ff"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0060/render.png",
+      "sha256": "7c50e97413d7f97d07b2720dac45eed4c600ff17254005e2115771eebfefa926",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "b875bf6722525225764217c33950b18bb8e51996ecb061358c3ee84a8ac0ae2b"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0059",
+    "next_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0061"
+  },
+  "relations": [
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0059",
+      "kind": "progressive_candidate",
+      "confidence": 0.9,
+      "review_status": "candidate",
+      "reason": "Etichetta PDF ripetuta su pagine adiacenti con raster differenti: possibile overlay, da verificare anche a testo identico.",
+      "metrics": {
+        "text_jaccard": 0.516393,
+        "text_containment": 1.0,
+        "left_tokens": 63,
+        "right_tokens": 122,
+        "visual_difference": 0.005695,
+        "ink_overlap": 0.514019,
+        "dhash_distance": 6
+      },
+      "delta_in_physical_order": {
+        "text": {
+          "added_lines": [
+            "Then ∃unique µ⋆",
+            "j and λ⋆",
+            "i , called Lagrange multipliers, s.t.",
+            "∇1L(z⋆, µ⋆, λ⋆) = 0",
+            "µ⋆",
+            "j ≥0",
+            "µ⋆",
+            "j gj(z⋆) = 0",
+            "j ∈{1, . . . , r}"
+          ],
+          "removed_lines": [],
+          "semantic_interpretation": "pending_visual_analysis"
+        },
+        "visual": {
+          "changed_bbox_px": [
+            57,
+            240,
+            604,
+            363
+          ],
+          "pixel_threshold": 16,
+          "changed_pixel_fraction": 0.007222
+        }
+      }
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0061",
+      "kind": "progressive_candidate",
+      "confidence": 0.9,
+      "review_status": "candidate",
+      "reason": "Etichetta PDF ripetuta su pagine adiacenti con raster differenti: possibile overlay, da verificare anche a testo identico.",
+      "metrics": {
+        "text_jaccard": 0.897059,
+        "text_containment": 1.0,
+        "left_tokens": 122,
+        "right_tokens": 136,
+        "visual_difference": 0.004109,
+        "ink_overlap": 0.753521,
+        "dhash_distance": 5
+      },
+      "delta_in_physical_order": {
+        "text": {
+          "added_lines": [
+            "Remark If ℓ, hi and gj twice differentiable, second order conditions."
+          ],
+          "removed_lines": [],
+          "semantic_interpretation": "pending_visual_analysis"
+        },
+        "visual": {
+          "changed_bbox_px": [
+            58,
+            419,
+            577,
+            437
+          ],
+          "pixel_threshold": 16,
+          "changed_pixel_fraction": 0.005216
+        }
+      }
+    }
+  ],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "pending",
+    "result": null
+  }
+}

@@ -1,0 +1,36 @@
+Optimal Control: motivating domains
+
+
+    Autonomous driving
+
+     Performance index
+
+       • distance from desired “behavior”
+           (lane center, velocity,...)
+
+       • minimum time (race vehicles)
+
+       • passengers confort
+
+       •  fuel consumption
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           115
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           110                                           acceleration
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           105
+      Constraints                                                                                                                                                                                                                                                                                                                                                                                                                                             10095
+                                                                                                                                                                                                                                                                                                                                                [m]  9085
+       • geometric (lane, obstacles,...)                                                                                                                                                                                                                                                                                                    8075
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                70
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                −120      −110      −100  [m]−90       −80       −70       −60       • inputs (throttle, steering wheel)                                                                                                                                                                                                                                                                                        65                                       brake
+
+       •  internal systems (tire limits, normal load, velocities,...)
+
+
+
+
+
+                                              Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 4 |35

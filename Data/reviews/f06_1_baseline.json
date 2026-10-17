@@ -1,0 +1,230 @@
+{
+  "created_at": "2026-10-17T21:20:14.721306+00:00",
+  "purpose": "F06.1 historical reports, validated manifest and unchanged mathematical behavior baseline",
+  "files": [
+    {
+      "path": "Data/introduction_companion_manifest.json",
+      "sha256": "7b34b4ab222d71852d3bf5c6a2dc17f047d2c134a5112a552f75b9991d4e591b"
+    },
+    {
+      "path": "Data/reports/f05_application_shell.json",
+      "sha256": "f1ed7833cbf09b9c7ecd1fec866103950923597a8d5b0726d3c0bcfed8c7b6d0"
+    },
+    {
+      "path": "Data/reports/f05_pipeline_tests.json",
+      "sha256": "819757be78e14211326b3431b5e0ee82d5933b1e85b2d0014b56eb381d00eb63"
+    },
+    {
+      "path": "Data/reports/f05_production_smoke.json",
+      "sha256": "19844e13a53492f149601afd854584c0a08b9ea150aecb71a21f8085a90e2247"
+    },
+    {
+      "path": "Data/reports/f05_runtime_measurements.json",
+      "sha256": "caddbce55a6d47042289a3dd9d5a4acfefa6eff8717a92e10c3f57cc03c749a2"
+    },
+    {
+      "path": "Data/reports/f06_browser_tests.json",
+      "sha256": "ea0f76314305dd66a68b93473cf6b0741baece5a01b7ee187c3a160286ece5e9"
+    },
+    {
+      "path": "Data/reports/f06_math_validation.json",
+      "sha256": "99ffeb62bbb76bf5ed114cc676846d22274015c5d6a5dceb1dff100cf88d66e5"
+    },
+    {
+      "path": "Data/reports/f06_pipeline_tests.json",
+      "sha256": "27aedf34b0f16c99cf4ea85cec96a246c1e82f049722233076d1e2ca63c96d08"
+    },
+    {
+      "path": "Data/reports/f06_runtime_measurements.json",
+      "sha256": "0c620a690a010b94bc7d1fbcddff21bb31b0443891e4a5dfd2a1c9b4fcd64fbf"
+    },
+    {
+      "path": "Data/reports/f06_vertical_slice.json",
+      "sha256": "61e1576b7326c7c01a20071a25903c5a39406978e2067d18557d1014e81d66ff"
+    },
+    {
+      "path": "Data/reports/f06_visual_measurements.json",
+      "sha256": "5c858fee1179bf38964869bb9e544197194ef5e2624579260a68ef0640759ec9"
+    },
+    {
+      "path": "Data/reports/introduction_companion_design_audit.json",
+      "sha256": "baa902055c212d579f567b6da97b89a6b29dc6b00b4f0c9a75fb317dc3d8eb1d"
+    },
+    {
+      "path": "Data/reports/introduction_visualization_audit.json",
+      "sha256": "dac039f1cab2d360655626279696b0eacd22925fba0c6ab31de804fd6c97dab2"
+    },
+    {
+      "path": "Data/reports/page_analysis_introduction.json",
+      "sha256": "e1402fff4e0a75e8c9574aa6b188a71d6b5c31f59b4363f255ad6ceb02be4fe4"
+    },
+    {
+      "path": "Data/reports/validation.json",
+      "sha256": "98959d9945dcbba6020d34ecbe5f456ebf5ea77563b5f040c09e28eb732b640e"
+    },
+    {
+      "path": "Docs/F04_1_VISUALIZATION_AUDIT.md",
+      "sha256": "03866b635f96d03b132f78dc9cf9d38f1d41a61e6e314b4780215a76a7c195ab"
+    },
+    {
+      "path": "Docs/F05_APPLICATION_SHELL.md",
+      "sha256": "9dbdb22b695a41694f887e81b0b9cd1f2a04d6c99d08dfa03acb945f33209eb5"
+    },
+    {
+      "path": "Docs/F06_assets/page-02-companion.png",
+      "sha256": "538df66c2e838c945fb7a2d95671c360da403b3a790a481812270b5d26cdc9d0"
+    },
+    {
+      "path": "Docs/F06_assets/page-02-desktop.png",
+      "sha256": "c43618046a0bbf7213344f8fd3075f63e7cf84078f823467224a951500a7c21c"
+    },
+    {
+      "path": "Docs/F06_assets/page-08-3d.png",
+      "sha256": "beac9979bd3595e4294a979fe9fe0c62fd54d9ca34d51c097842a0b72fba1784"
+    },
+    {
+      "path": "Docs/F06_assets/page-08-companion.png",
+      "sha256": "e9eefd8f7e55d704f1b5f193af1263e8fe5cf6b85a92d371f21c1d8dcf0fe29e"
+    },
+    {
+      "path": "Docs/F06_assets/page-08-desktop.png",
+      "sha256": "ad1adfcc36c6e75fe3a389a42e299fd90eaea2196c486b0e8f346c72299c2ae8"
+    },
+    {
+      "path": "Docs/F06_assets/page-12-2d.png",
+      "sha256": "1a6d0d81daa949a18f657ba00d9ab32f2d6e17d4d60652617f96159523d47586"
+    },
+    {
+      "path": "Docs/F06_assets/page-12-companion.png",
+      "sha256": "bac4478d1b563c3913b3a467aa9ff552d8efaec9f06b854b2c18bb7edc83b189"
+    },
+    {
+      "path": "Docs/F06_assets/page-12-desktop.png",
+      "sha256": "1f7a0aefc189109b41c257b25ba5d5b43afb3c6ade96bc10bea45b8f5f671176"
+    },
+    {
+      "path": "Docs/F06_assets/page-16-2d.png",
+      "sha256": "7e775a2e52301340155f31d07c1210411fbd176015b56625cca46ffe7fd4e3fc"
+    },
+    {
+      "path": "Docs/F06_assets/page-16-companion.png",
+      "sha256": "d860d7d17df2bff9b36b45fda7d9f461ecd8afb72c0686d575709e1ce9b75268"
+    },
+    {
+      "path": "Docs/F06_assets/page-16-desktop.png",
+      "sha256": "85dc849ba10e16e1541e0f6a7141dd6931e7aaf2ae159e461604c82d61ae5971"
+    },
+    {
+      "path": "Docs/F06_assets/page-17-3d.png",
+      "sha256": "8ca3c7c439f8222ded1e4bbdf3beec066ec80d18dd604895e4c0df0cc95b4890"
+    },
+    {
+      "path": "Docs/F06_assets/page-17-companion.png",
+      "sha256": "9283df976af66a0e8ae88f924be2399396efa527f65394980ed9189df87cbd21"
+    },
+    {
+      "path": "Docs/F06_assets/page-17-desktop.png",
+      "sha256": "268f62e428539c2fff718e798deaaec8047f2441669df8ba46df8edf6e817567"
+    },
+    {
+      "path": "Docs/F06_assets/page-27-2d.png",
+      "sha256": "8f4f6464fa5c544e0557a23ec74673820dcb8ecc32b9cf4e67f3c150e4e34996"
+    },
+    {
+      "path": "Docs/F06_assets/page-27-companion.png",
+      "sha256": "3ea23467a32bed80a4d2377e4b3f582066e3f383cdf780977ab96bf579fe4e61"
+    },
+    {
+      "path": "Docs/F06_assets/page-27-desktop.png",
+      "sha256": "2b0ff117d98933f0030ad4d2b255de24fa3240d6e31f23182c0043dc5979bf17"
+    },
+    {
+      "path": "Docs/F06_assets/page-30-3d.png",
+      "sha256": "bc131fb473c3f83e1fc1123755c6740aacec2a0af1ba0212f61c695d620aa474"
+    },
+    {
+      "path": "Docs/F06_assets/page-30-companion.png",
+      "sha256": "0b94e28bc459678a95c72ae2fbab6eb3598e63a79af6d1cc21790197d7b3cbb6"
+    },
+    {
+      "path": "Docs/F06_assets/page-30-desktop.png",
+      "sha256": "e96400534de481611f6552b2074677e3afcff45eb3958703f7fef00a1c6e45c3"
+    },
+    {
+      "path": "Docs/F06_assets/page-34-2d.png",
+      "sha256": "d2c796b9e05fa8718578816296af6c286540d35a200aaaff431cba43d1ff6e3b"
+    },
+    {
+      "path": "Docs/F06_assets/page-34-companion.png",
+      "sha256": "e7ead92b0812ec72749a71b0fbb3d72c9c242322d6d572ac981c1b97ad56799f"
+    },
+    {
+      "path": "Docs/F06_assets/page-34-desktop.png",
+      "sha256": "41ea782d5c80f14f17132f2bab2032c6f35718ca01072cd30df67c116d34a38e"
+    },
+    {
+      "path": "Docs/F06_VERTICAL_SLICE.md",
+      "sha256": "8ead041908a94282321cf5cf0b1ce269541f063b92bcff210e7639be007bfe82"
+    },
+    {
+      "path": "Docs/INTRODUCTION_COMPANION_DESIGN.md",
+      "sha256": "0e04a817cb9e8ed505221df6b09687d278ffeb2c1325b7ccdf431a8b25418b74"
+    },
+    {
+      "path": "Docs/INTRODUCTION_PAGE_ANALYSIS_AUDIT.md",
+      "sha256": "f509745793ecbcab40380412b369ec887d84e3e89cc60d6a09f2694c6195b819"
+    },
+    {
+      "path": "Docs/INTRODUCTION_SOURCE_WARNING_REVIEW.md",
+      "sha256": "70db7cd4cb0962d58f99fb54656f311a364eb65e09c69a62888d107b06369d01"
+    },
+    {
+      "path": "Docs/PAGE_SPEC_SCHEMA.md",
+      "sha256": "fdd776a1757607b417ecc1493ed664c78e79eb71d1c19830d943abfe0d166b2d"
+    },
+    {
+      "path": "Docs/PROJECT_ARCHITECTURE.md",
+      "sha256": "eb0c713444523450a0a78765e10bc275c28b0b29fe1a7aaff72da96aa199b177"
+    },
+    {
+      "path": "frontend/src/companion/registry.ts",
+      "sha256": "771d35fea68bcd84bf2bf4238d45d8d142345faa1cac51b67a6ca1444ed89d6f"
+    },
+    {
+      "path": "frontend/src/math/introduction.test.ts",
+      "sha256": "a535632d3ace37ccdf9f50cce61c7c2656af7e944ef2b7d43d7fc07d6a17d1f2"
+    },
+    {
+      "path": "frontend/src/math/introduction.ts",
+      "sha256": "52f96f0375b0a61417015738796cd9a1c26077da3159f1fa4ba915330ac0ddd0"
+    },
+    {
+      "path": "frontend/src/math/introductionData.test.ts",
+      "sha256": "db16248e868c6f763915dc785e261a15f660352f149b76c79378a32ec4d2a821"
+    },
+    {
+      "path": "frontend/src/math/introductionData.ts",
+      "sha256": "913b1e4e728b71c03f4f8b1f400201f55b00f617a4a7eedd8427e76716cbea56"
+    },
+    {
+      "path": "frontend/src/math/math.test.ts",
+      "sha256": "dbe1526ba02412a2dfeed2216914acd022ea644a78fc13fef5a5c85fc29c9cdb"
+    },
+    {
+      "path": "frontend/src/math/numerics.ts",
+      "sha256": "8ec9d482b30a3e5336a64067241e8badca2ea4a2b59120f0fffc796606f86358"
+    },
+    {
+      "path": "frontend/src/math/sampling.ts",
+      "sha256": "76b7755e3e4e28a93e272acbf17510dd681343d8307ab0ddb6bed3b3fb48605c"
+    },
+    {
+      "path": "frontend/src/simulations/core.ts",
+      "sha256": "281cf74491cf49ed0d4ef1b622f8defd79a9b895d73e1965caf57c9a8998b6d8"
+    },
+    {
+      "path": "frontend/src/simulations/usePlayback.ts",
+      "sha256": "a69deb666dce0729e59a3dbc7f318ad3ebccc919dd23a8e2a1e89192173a8666"
+    }
+  ]
+}

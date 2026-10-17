@@ -1,0 +1,3048 @@
+{
+  "ok": true,
+  "document_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc",
+  "source_pdf": {
+    "path": "OPTCON-RL_introduction_optimal_control_2026_09_14.pdf",
+    "filename": "OPTCON-RL_introduction_optimal_control_2026_09_14.pdf",
+    "sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+    "size_bytes": 2298470
+  },
+  "physical_pdf_pages": 36,
+  "separate_page_specs": 36,
+  "missing_pages": [],
+  "first_analysis_recorded_in_physical_order": true,
+  "status_counts": {
+    "analyzed": 25,
+    "needs_review": 11
+  },
+  "all_pages_have_completed_analysis": true,
+  "companion_page_count_distribution": {
+    "1": 36
+  },
+  "examples_proposed": 35,
+  "interactive_proposals": 25,
+  "pages_requiring_source_review": [
+    14,
+    16,
+    17,
+    19,
+    22,
+    26,
+    30,
+    31,
+    33,
+    34,
+    36
+  ],
+  "pages_with_blocking_source_issues": [
+    16,
+    30,
+    34
+  ],
+  "notation_spot_checks": {
+    "initial_state_superscript_preserved": true,
+    "weighted_cost_source_typo_preserved": true,
+    "drone_negative_sum_preserved": true,
+    "euler_underbrace_includes_state": true,
+    "pendulum_equilibrium_typo_preserved": true,
+    "pendulum_cost_has_no_half_inserted": true,
+    "false_duplicate_6_7_rejected": true
+  },
+  "numerical_enrichment_checks": [
+    {
+      "physical_page": 2,
+      "check": "Costo scalare al limite",
+      "origin": "enrichment",
+      "computed": 0.16000000000000003,
+      "expected": 0.16,
+      "tolerance": 1e-08,
+      "ok": true
+    },
+    {
+      "physical_page": 8,
+      "check": "Risposta continua a t=1",
+      "origin": "enrichment",
+      "computed": 0.6321205588285577,
+      "expected": 0.6321,
+      "tolerance": 3e-05,
+      "ok": true
+    },
+    {
+      "physical_page": 9,
+      "check": "Aggiornamento discreto",
+      "origin": "enrichment",
+      "computed": 1.0,
+      "expected": 1,
+      "tolerance": 1e-08,
+      "ok": true
+    },
+    {
+      "physical_page": 10,
+      "check": "Stack con T=3",
+      "origin": "enrichment",
+      "computed": [
+        1.5,
+        1.25,
+        1.25
+      ],
+      "expected": [
+        1.5,
+        1.25,
+        1.25
+      ],
+      "tolerance": 1e-08,
+      "ok": true
+    },
+    {
+      "physical_page": 11,
+      "check": "Residuo equilibrio",
+      "origin": "enrichment",
+      "computed": 0.0,
+      "expected": 0,
+      "tolerance": 1e-08,
+      "ok": true
+    },
+    {
+      "physical_page": 12,
+      "check": "Variazione esatta, lineare, residuo",
+      "origin": "enrichment",
+      "computed": [
+        0.2100000000000002,
+        0.2,
+        0.010000000000000175
+      ],
+      "expected": [
+        0.21,
+        0.2,
+        0.01
+      ],
+      "tolerance": 1e-08,
+      "ok": true
+    },
+    {
+      "physical_page": 14,
+      "check": "Costo e vincoli del punto (.5,.5)",
+      "origin": "enrichment",
+      "computed": [
+        0.25,
+        0.0,
+        -0.5
+      ],
+      "expected": [
+        0.25,
+        0,
+        -0.5
+      ],
+      "tolerance": 1e-08,
+      "ok": true
+    },
+    {
+      "physical_page": 15,
+      "check": "Tre costi della parabola",
+      "origin": "enrichment",
+      "computed": [
+        2.0,
+        0.0,
+        0.5
+      ],
+      "expected": [
+        2,
+        0,
+        0.5
+      ],
+      "tolerance": 1e-08,
+      "ok": true
+    },
+    {
+      "physical_page": 16,
+      "check": "Costo corretto: forma matriciale e sviluppo con w₂",
+      "origin": "enrichment",
+      "computed": [
+        2.5,
+        2.5
+      ],
+      "expected": [
+        2.5,
+        2.5
+      ],
+      "tolerance": 1e-08,
+      "ok": true
+    },
+    {
+      "physical_page": 17,
+      "check": "Residui del disco unitario",
+      "origin": "enrichment",
+      "computed": [
+        -1,
+        0,
+        3
+      ],
+      "expected": [
+        -1,
+        0,
+        3
+      ],
+      "tolerance": 1e-08,
+      "ok": true
+    },
+    {
+      "physical_page": 18,
+      "check": "Minimo vincolato dell'esempio",
+      "origin": "enrichment",
+      "computed": [
+        1,
+        0.5
+      ],
+      "expected": [
+        1,
+        0.5
+      ],
+      "tolerance": 1e-08,
+      "ok": true
+    },
+    {
+      "physical_page": 19,
+      "check": "Residuo dopo alterazione di x₂",
+      "origin": "enrichment",
+      "computed": -0.30000000000000004,
+      "expected": -0.3,
+      "tolerance": 1e-08,
+      "ok": true
+    },
+    {
+      "physical_page": 20,
+      "check": "Costo additivo",
+      "origin": "enrichment",
+      "computed": [
+        0.625,
+        0.125,
+        0.5
+      ],
+      "expected": [
+        0.625,
+        0.125,
+        0.5
+      ],
+      "tolerance": 1e-08,
+      "ok": true
+    },
+    {
+      "physical_page": 20,
+      "check": "Totale additivo",
+      "origin": "enrichment",
+      "computed": 1.25,
+      "expected": 1.25,
+      "tolerance": 1e-08,
+      "ok": true
+    },
+    {
+      "physical_page": 21,
+      "check": "Raggiungibilità, b=.4/.5",
+      "origin": "enrichment",
+      "computed": [
+        0.8,
+        1.0
+      ],
+      "expected": [
+        0.8,
+        1
+      ],
+      "tolerance": 1e-08,
+      "ok": true
+    },
+    {
+      "physical_page": 22,
+      "check": "Costo candidata di tracking",
+      "origin": "enrichment",
+      "computed": [
+        0.125,
+        0.125
+      ],
+      "expected": [
+        0.125,
+        0.125
+      ],
+      "tolerance": 1e-08,
+      "ok": true
+    },
+    {
+      "physical_page": 23,
+      "check": "Controlli e costo minimo di due passi",
+      "origin": "enrichment",
+      "computed": [
+        0.5,
+        0.5,
+        0.25
+      ],
+      "expected": [
+        0.5,
+        0.5,
+        0.25
+      ],
+      "tolerance": 1e-08,
+      "ok": true
+    },
+    {
+      "physical_page": 25,
+      "check": "Ottimo scalare a un passo",
+      "origin": "enrichment",
+      "computed": [
+        0.5,
+        0.25
+      ],
+      "expected": [
+        0.5,
+        0.25
+      ],
+      "tolerance": 1e-08,
+      "ok": true
+    },
+    {
+      "physical_page": 26,
+      "check": "Hover istantaneo",
+      "origin": "enrichment",
+      "computed": [
+        -0.0,
+        0.0,
+        0.0
+      ],
+      "expected": [
+        0,
+        0,
+        0
+      ],
+      "tolerance": 1e-08,
+      "ok": true
+    },
+    {
+      "physical_page": 26,
+      "check": "Ingressi 5 e 4, θ=0",
+      "origin": "enrichment",
+      "computed": [
+        -0.8100000000000005,
+        10.0
+      ],
+      "expected": [
+        -0.81,
+        10
+      ],
+      "tolerance": 1e-08,
+      "ok": true
+    },
+    {
+      "physical_page": 27,
+      "check": "Due passi Euler",
+      "origin": "enrichment",
+      "computed": [
+        0.0,
+        0.219,
+        0.021900000000000003,
+        0.438
+      ],
+      "expected": [
+        0,
+        0.219,
+        0.0219,
+        0.438
+      ],
+      "tolerance": 1e-08,
+      "ok": true
+    },
+    {
+      "physical_page": 27,
+      "check": "Euler vs continuo dopo 1 s",
+      "origin": "enrichment",
+      "computed": [
+        0.9855000000000002,
+        1.095
+      ],
+      "expected": [
+        0.9855,
+        1.095
+      ],
+      "tolerance": 1e-08,
+      "ok": true
+    },
+    {
+      "physical_page": 29,
+      "check": "Costo di stadio del drone",
+      "origin": "enrichment",
+      "computed": 3.05,
+      "expected": 3.05,
+      "tolerance": 1e-08,
+      "ok": true
+    },
+    {
+      "physical_page": 30,
+      "check": "Violazione limite superiore",
+      "origin": "enrichment",
+      "computed": 0.20000000000000018,
+      "expected": 0.2,
+      "tolerance": 1e-08,
+      "ok": true
+    },
+    {
+      "physical_page": 31,
+      "check": "Funzionale dell'integratore",
+      "origin": "enrichment",
+      "computed": 1.0,
+      "expected": 1,
+      "tolerance": 1e-08,
+      "ok": true
+    },
+    {
+      "physical_page": 32,
+      "check": "Stato dopo ingresso +1 poi −1",
+      "origin": "enrichment",
+      "computed": [
+        1,
+        0
+      ],
+      "expected": [
+        1,
+        0
+      ],
+      "tolerance": 1e-08,
+      "ok": true
+    },
+    {
+      "physical_page": 33,
+      "check": "Accelerazione del pendolo",
+      "origin": "enrichment",
+      "computed": -4.904999999999999,
+      "expected": -4.905,
+      "tolerance": 1e-08,
+      "ok": true
+    },
+    {
+      "physical_page": 34,
+      "check": "Coppia equilibrio e residuo dinamico",
+      "origin": "enrichment",
+      "computed": [
+        4.904999999999999,
+        8.881784197001252e-16
+      ],
+      "expected": [
+        4.905,
+        0
+      ],
+      "tolerance": 1e-08,
+      "ok": true
+    },
+    {
+      "physical_page": 35,
+      "check": "Istante di cambio e secondo ingresso",
+      "origin": "enrichment",
+      "computed": [
+        1.0,
+        4.904999999999999
+      ],
+      "expected": [
+        1,
+        4.905
+      ],
+      "tolerance": 1e-08,
+      "ok": true
+    },
+    {
+      "physical_page": 36,
+      "check": "Costo pendolo senza 1/2",
+      "origin": "enrichment",
+      "computed": 3.228369533424113,
+      "expected": 3.22836953,
+      "tolerance": 1e-08,
+      "ok": true
+    }
+  ],
+  "no_companion_implementation_performed": true,
+  "human_review_performed": false,
+  "ready_for_companion_implementation": false,
+  "corpus_validation_report": "reports/validation.json",
+  "errors": [],
+  "pages": [
+    {
+      "physical_page": 1,
+      "pdf_label": "0",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0001",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0001/page_spec.json",
+      "spec_sha256": "5346e1167cbe714fa27a4e42ba5df7d66917731079023d1c10252495c332ab96",
+      "title": "Introduction to Optimal Control — copertina",
+      "status": "analyzed",
+      "companionPageCount": 1,
+      "observations": 4,
+      "source_math_expressions": 0,
+      "examples": 0,
+      "interactivity_recommended": false,
+      "checks": {
+        "spec_exists": true,
+        "correct_physical_page": true,
+        "separate_page_spec": true,
+        "text_image_layout_inspected": true,
+        "neighbors_accounted_for": true,
+        "has_source_observations": true,
+        "has_source_scope_limits": true,
+        "has_prerequisite_or_is_cover": true,
+        "example_or_explicit_reason": true,
+        "all_enrichments_labelled": true,
+        "every_parameter_has_effect_and_limits": true,
+        "has_edge_cases": true,
+        "companion_count_consistent": true,
+        "mapping_is_proposal": true,
+        "result_archive_matches": true,
+        "inspection_matches_request": true,
+        "no_companion_implemented": true
+      },
+      "source_issues": []
+    },
+    {
+      "physical_page": 2,
+      "pdf_label": "1",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0002",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0002/page_spec.json",
+      "spec_sha256": "0b76a674ef165f8dfd88655e7f4e6308c9763200b7d15a6a39d102ccc68b0b28",
+      "title": "Optimal Control: feedback, performance index e constraints",
+      "status": "analyzed",
+      "companionPageCount": 1,
+      "observations": 7,
+      "source_math_expressions": 0,
+      "examples": 1,
+      "interactivity_recommended": false,
+      "checks": {
+        "spec_exists": true,
+        "correct_physical_page": true,
+        "separate_page_spec": true,
+        "text_image_layout_inspected": true,
+        "neighbors_accounted_for": true,
+        "has_source_observations": true,
+        "has_source_scope_limits": true,
+        "has_prerequisite_or_is_cover": true,
+        "example_or_explicit_reason": true,
+        "all_enrichments_labelled": true,
+        "every_parameter_has_effect_and_limits": true,
+        "has_edge_cases": true,
+        "companion_count_consistent": true,
+        "mapping_is_proposal": true,
+        "result_archive_matches": true,
+        "inspection_matches_request": true,
+        "no_companion_implemented": true
+      },
+      "source_issues": []
+    },
+    {
+      "physical_page": 3,
+      "pdf_label": "2",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0003",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0003/page_spec.json",
+      "spec_sha256": "bdedd2319920bcd2613f2de638f89ae9d896794c6ebf8eb7a415f9b84a701abd",
+      "title": "Motivating domains — Aircraft systems",
+      "status": "analyzed",
+      "companionPageCount": 1,
+      "observations": 7,
+      "source_math_expressions": 0,
+      "examples": 1,
+      "interactivity_recommended": false,
+      "checks": {
+        "spec_exists": true,
+        "correct_physical_page": true,
+        "separate_page_spec": true,
+        "text_image_layout_inspected": true,
+        "neighbors_accounted_for": true,
+        "has_source_observations": true,
+        "has_source_scope_limits": true,
+        "has_prerequisite_or_is_cover": true,
+        "example_or_explicit_reason": true,
+        "all_enrichments_labelled": true,
+        "every_parameter_has_effect_and_limits": true,
+        "has_edge_cases": true,
+        "companion_count_consistent": true,
+        "mapping_is_proposal": true,
+        "result_archive_matches": true,
+        "inspection_matches_request": true,
+        "no_companion_implemented": true
+      },
+      "source_issues": []
+    },
+    {
+      "physical_page": 4,
+      "pdf_label": "3",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0004",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0004/page_spec.json",
+      "spec_sha256": "25eaf602de8d086b3b631f45b2f220888e81481493f4569da6f3b4b66d64a01c",
+      "title": "Motivating domains — Robotic systems",
+      "status": "analyzed",
+      "companionPageCount": 1,
+      "observations": 7,
+      "source_math_expressions": 0,
+      "examples": 1,
+      "interactivity_recommended": false,
+      "checks": {
+        "spec_exists": true,
+        "correct_physical_page": true,
+        "separate_page_spec": true,
+        "text_image_layout_inspected": true,
+        "neighbors_accounted_for": true,
+        "has_source_observations": true,
+        "has_source_scope_limits": true,
+        "has_prerequisite_or_is_cover": true,
+        "example_or_explicit_reason": true,
+        "all_enrichments_labelled": true,
+        "every_parameter_has_effect_and_limits": true,
+        "has_edge_cases": true,
+        "companion_count_consistent": true,
+        "mapping_is_proposal": true,
+        "result_archive_matches": true,
+        "inspection_matches_request": true,
+        "no_companion_implemented": true
+      },
+      "source_issues": []
+    },
+    {
+      "physical_page": 5,
+      "pdf_label": "4",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0005",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0005/page_spec.json",
+      "spec_sha256": "04b671f85accbf431c63f8774e0c22ccaee0389895459c1cdd16f256b0fc7874",
+      "title": "Motivating domains — Autonomous driving",
+      "status": "analyzed",
+      "companionPageCount": 1,
+      "observations": 6,
+      "source_math_expressions": 0,
+      "examples": 1,
+      "interactivity_recommended": false,
+      "checks": {
+        "spec_exists": true,
+        "correct_physical_page": true,
+        "separate_page_spec": true,
+        "text_image_layout_inspected": true,
+        "neighbors_accounted_for": true,
+        "has_source_observations": true,
+        "has_source_scope_limits": true,
+        "has_prerequisite_or_is_cover": true,
+        "example_or_explicit_reason": true,
+        "all_enrichments_labelled": true,
+        "every_parameter_has_effect_and_limits": true,
+        "has_edge_cases": true,
+        "companion_count_consistent": true,
+        "mapping_is_proposal": true,
+        "result_archive_matches": true,
+        "inspection_matches_request": true,
+        "no_companion_implemented": true
+      },
+      "source_issues": []
+    },
+    {
+      "physical_page": 6,
+      "pdf_label": "5",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0006",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0006/page_spec.json",
+      "spec_sha256": "0dc41df0989a1775fce353eb14e5a100d1f079feef002888f1e9e4135904c3b2",
+      "title": "Motivating domains — Autonomous aerial vehicles (drones)",
+      "status": "analyzed",
+      "companionPageCount": 1,
+      "observations": 6,
+      "source_math_expressions": 0,
+      "examples": 1,
+      "interactivity_recommended": false,
+      "checks": {
+        "spec_exists": true,
+        "correct_physical_page": true,
+        "separate_page_spec": true,
+        "text_image_layout_inspected": true,
+        "neighbors_accounted_for": true,
+        "has_source_observations": true,
+        "has_source_scope_limits": true,
+        "has_prerequisite_or_is_cover": true,
+        "example_or_explicit_reason": true,
+        "all_enrichments_labelled": true,
+        "every_parameter_has_effect_and_limits": true,
+        "has_edge_cases": true,
+        "companion_count_consistent": true,
+        "mapping_is_proposal": true,
+        "result_archive_matches": true,
+        "inspection_matches_request": true,
+        "no_companion_implemented": true
+      },
+      "source_issues": []
+    },
+    {
+      "physical_page": 7,
+      "pdf_label": "6",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0007",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0007/page_spec.json",
+      "spec_sha256": "830b2fc7c5bf884cd545cdd97ac584a93d8a3e8dabf3578679a5333f3fbf5b64",
+      "title": "Motivating domains — Space systems",
+      "status": "analyzed",
+      "companionPageCount": 1,
+      "observations": 6,
+      "source_math_expressions": 0,
+      "examples": 1,
+      "interactivity_recommended": false,
+      "checks": {
+        "spec_exists": true,
+        "correct_physical_page": true,
+        "separate_page_spec": true,
+        "text_image_layout_inspected": true,
+        "neighbors_accounted_for": true,
+        "has_source_observations": true,
+        "has_source_scope_limits": true,
+        "has_prerequisite_or_is_cover": true,
+        "example_or_explicit_reason": true,
+        "all_enrichments_labelled": true,
+        "every_parameter_has_effect_and_limits": true,
+        "has_edge_cases": true,
+        "companion_count_consistent": true,
+        "mapping_is_proposal": true,
+        "result_archive_matches": true,
+        "inspection_matches_request": true,
+        "no_companion_implemented": true
+      },
+      "source_issues": []
+    },
+    {
+      "physical_page": 8,
+      "pdf_label": "7",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0008",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0008/page_spec.json",
+      "spec_sha256": "8bfd49b4253e321304066833e74af13ed6f36f28b2db9a6ffaaa371514c36f64",
+      "title": "Continuous-time control systems",
+      "status": "analyzed",
+      "companionPageCount": 1,
+      "observations": 8,
+      "source_math_expressions": 6,
+      "examples": 1,
+      "interactivity_recommended": true,
+      "checks": {
+        "spec_exists": true,
+        "correct_physical_page": true,
+        "separate_page_spec": true,
+        "text_image_layout_inspected": true,
+        "neighbors_accounted_for": true,
+        "has_source_observations": true,
+        "has_source_scope_limits": true,
+        "has_prerequisite_or_is_cover": true,
+        "example_or_explicit_reason": true,
+        "all_enrichments_labelled": true,
+        "every_parameter_has_effect_and_limits": true,
+        "has_edge_cases": true,
+        "companion_count_consistent": true,
+        "mapping_is_proposal": true,
+        "result_archive_matches": true,
+        "inspection_matches_request": true,
+        "no_companion_implemented": true
+      },
+      "source_issues": []
+    },
+    {
+      "physical_page": 9,
+      "pdf_label": "8",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0009",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0009/page_spec.json",
+      "spec_sha256": "2905c8f4937e5ece00559b43336aa500368132ca55312184f2e60e4d8db5c38c",
+      "title": "Discrete-time control systems and notation — forma compatta",
+      "status": "analyzed",
+      "companionPageCount": 1,
+      "observations": 6,
+      "source_math_expressions": 3,
+      "examples": 1,
+      "interactivity_recommended": true,
+      "checks": {
+        "spec_exists": true,
+        "correct_physical_page": true,
+        "separate_page_spec": true,
+        "text_image_layout_inspected": true,
+        "neighbors_accounted_for": true,
+        "has_source_observations": true,
+        "has_source_scope_limits": true,
+        "has_prerequisite_or_is_cover": true,
+        "example_or_explicit_reason": true,
+        "all_enrichments_labelled": true,
+        "every_parameter_has_effect_and_limits": true,
+        "has_edge_cases": true,
+        "companion_count_consistent": true,
+        "mapping_is_proposal": true,
+        "result_archive_matches": true,
+        "inspection_matches_request": true,
+        "no_companion_implemented": true
+      },
+      "source_issues": []
+    },
+    {
+      "physical_page": 10,
+      "pdf_label": "9",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0010",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0010/page_spec.json",
+      "spec_sha256": "c95958a2e1dbe67adc0db1c125c0d87ae78c6e037271dd2fd7e6ab5fb62728dc",
+      "title": "Discrete-time systems — orizzonte finito e vettori impilati",
+      "status": "analyzed",
+      "companionPageCount": 1,
+      "observations": 6,
+      "source_math_expressions": 3,
+      "examples": 1,
+      "interactivity_recommended": true,
+      "checks": {
+        "spec_exists": true,
+        "correct_physical_page": true,
+        "separate_page_spec": true,
+        "text_image_layout_inspected": true,
+        "neighbors_accounted_for": true,
+        "has_source_observations": true,
+        "has_source_scope_limits": true,
+        "has_prerequisite_or_is_cover": true,
+        "example_or_explicit_reason": true,
+        "all_enrichments_labelled": true,
+        "every_parameter_has_effect_and_limits": true,
+        "has_edge_cases": true,
+        "companion_count_consistent": true,
+        "mapping_is_proposal": true,
+        "result_archive_matches": true,
+        "inspection_matches_request": true,
+        "no_companion_implemented": true
+      },
+      "source_issues": []
+    },
+    {
+      "physical_page": 11,
+      "pdf_label": "10",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0011",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0011/page_spec.json",
+      "spec_sha256": "2888e5c8d336dee7bc00d26bb6da188dfb45188abae3154e6f99626a188f1247",
+      "title": "System trajectories — traiettorie ed equilibri",
+      "status": "analyzed",
+      "companionPageCount": 1,
+      "observations": 7,
+      "source_math_expressions": 3,
+      "examples": 1,
+      "interactivity_recommended": true,
+      "checks": {
+        "spec_exists": true,
+        "correct_physical_page": true,
+        "separate_page_spec": true,
+        "text_image_layout_inspected": true,
+        "neighbors_accounted_for": true,
+        "has_source_observations": true,
+        "has_source_scope_limits": true,
+        "has_prerequisite_or_is_cover": true,
+        "example_or_explicit_reason": true,
+        "all_enrichments_labelled": true,
+        "every_parameter_has_effect_and_limits": true,
+        "has_edge_cases": true,
+        "companion_count_consistent": true,
+        "mapping_is_proposal": true,
+        "result_archive_matches": true,
+        "inspection_matches_request": true,
+        "no_companion_implemented": true
+      },
+      "source_issues": []
+    },
+    {
+      "physical_page": 12,
+      "pdf_label": "11",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0012",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0012/page_spec.json",
+      "spec_sha256": "9aafae3af9753bde1682b201aa1ceae0126de324b3d17500625f3c591203738b",
+      "title": "Linearization of a system about a trajectory",
+      "status": "analyzed",
+      "companionPageCount": 1,
+      "observations": 7,
+      "source_math_expressions": 3,
+      "examples": 1,
+      "interactivity_recommended": true,
+      "checks": {
+        "spec_exists": true,
+        "correct_physical_page": true,
+        "separate_page_spec": true,
+        "text_image_layout_inspected": true,
+        "neighbors_accounted_for": true,
+        "has_source_observations": true,
+        "has_source_scope_limits": true,
+        "has_prerequisite_or_is_cover": true,
+        "example_or_explicit_reason": true,
+        "all_enrichments_labelled": true,
+        "every_parameter_has_effect_and_limits": true,
+        "has_edge_cases": true,
+        "companion_count_consistent": true,
+        "mapping_is_proposal": true,
+        "result_archive_matches": true,
+        "inspection_matches_request": true,
+        "no_companion_implemented": true
+      },
+      "source_issues": []
+    },
+    {
+      "physical_page": 13,
+      "pdf_label": "12",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0013",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0013/page_spec.json",
+      "spec_sha256": "b4b4ec3b97954bc96b7760a25d581ea4eae4577d1173fa8580fe1bc0f1e779b6",
+      "title": "Recall some tools for nonlinear systems analysis and control",
+      "status": "analyzed",
+      "companionPageCount": 1,
+      "observations": 6,
+      "source_math_expressions": 0,
+      "examples": 1,
+      "interactivity_recommended": false,
+      "checks": {
+        "spec_exists": true,
+        "correct_physical_page": true,
+        "separate_page_spec": true,
+        "text_image_layout_inspected": true,
+        "neighbors_accounted_for": true,
+        "has_source_observations": true,
+        "has_source_scope_limits": true,
+        "has_prerequisite_or_is_cover": true,
+        "example_or_explicit_reason": true,
+        "all_enrichments_labelled": true,
+        "every_parameter_has_effect_and_limits": true,
+        "has_edge_cases": true,
+        "companion_count_consistent": true,
+        "mapping_is_proposal": true,
+        "result_archive_matches": true,
+        "inspection_matches_request": true,
+        "no_companion_implemented": true
+      },
+      "source_issues": []
+    },
+    {
+      "physical_page": 14,
+      "pdf_label": "13",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0014",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0014/page_spec.json",
+      "spec_sha256": "84ba489e199bf7cd227cde29228c61fb6529d5603d99726ae9899a2a4f97a9dc",
+      "title": "Optimization: main ingredients",
+      "status": "needs_review",
+      "companionPageCount": 1,
+      "observations": 7,
+      "source_math_expressions": 5,
+      "examples": 1,
+      "interactivity_recommended": false,
+      "checks": {
+        "spec_exists": true,
+        "correct_physical_page": true,
+        "separate_page_spec": true,
+        "text_image_layout_inspected": true,
+        "neighbors_accounted_for": true,
+        "has_source_observations": true,
+        "has_source_scope_limits": true,
+        "has_prerequisite_or_is_cover": true,
+        "example_or_explicit_reason": true,
+        "all_enrichments_labelled": true,
+        "every_parameter_has_effect_and_limits": true,
+        "has_edge_cases": true,
+        "companion_count_consistent": true,
+        "mapping_is_proposal": true,
+        "result_archive_matches": true,
+        "inspection_matches_request": true,
+        "no_companion_implemented": true
+      },
+      "source_issues": [
+        {
+          "description": "Discrepanza dimensionale della fonte: z e ℓ usano d, mentre hᵢ,gⱼ e Z usano n. Conservare il testo letterale e richiedere revisione prima della produzione didattica.",
+          "blocking": false,
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        }
+      ],
+      "spec_sha256_before_source_warning_review": "04c0eeafc274a28c610132f88de0c604f73049e03e96890fc9ea73a875bb5098",
+      "source_warning": {
+        "policy_version": "1.0.0",
+        "scope": "companion_only",
+        "type": "INFO_WARNING",
+        "review_status": "resolved",
+        "issues": [
+          {
+            "issue_id": "intro-p14-issue-1",
+            "source_issue_index": 0,
+            "issue": "Dimensione d/n",
+            "type": "INFO_WARNING",
+            "source_expression": "z\\in\\mathbb{R}^d,\\qquad\\ell(z):\\mathbb{R}^d\\to\\mathbb{R}; h_i:\\mathbb{R}^n\\to\\mathbb{R},\\quad g_j:\\mathbb{R}^n\\to\\mathbb{R}; Z=\\{z\\in\\mathbb{R}^n\\mid h(z)=0,\\ g(z)\\leq0\\}",
+            "corrected_expression": null,
+            "companion_uses": "z∈R^d; h_i,g_j:R^d→R; Z⊆R^d, con n≡d in questa definizione.",
+            "short_warning": "⚠ Nota: d e n indicano qui la stessa dimensione.",
+            "correction_reason": "Il vettore decisionale e il costo sono già dichiarati in R^d. La successiva formulazione a pagina 18 usa d in tutti i domini. Le due lettere possono indicare la stessa dimensione, senza implicare un diverso oggetto matematico: è sufficiente un chiarimento locale, non un allarme di formula sbagliata.",
+            "use_corrected_value_for_examples": false,
+            "use_corrected_value_for_simulation": false,
+            "resolved": true,
+            "source_references": [
+              "/analysis/result/didactic_plan/source_math/0",
+              "/analysis/result/didactic_plan/source_math/1",
+              "/analysis/result/didactic_plan/source_math/3"
+            ],
+            "context_pages_consulted": [
+              18
+            ],
+            "calculation_policy": "Un solo parametro di dimensione decisionale. Leggere n come alias locale di d nella pagina 14; non imporre un'uguaglianza globale fra n e d in tutto il corso.",
+            "ui": {
+              "show": true,
+              "color": "red",
+              "placement": "accanto alla definizione dei domini di h, g e Z",
+              "when": "solo quando è visibile la specifica spiegazione interessata; una sola nota locale",
+              "student_text_field": "short_warning"
+            }
+          }
+        ],
+        "companion_overrides": [],
+        "technical_only_legacy_paths": [],
+        "original_analysis_sha256": "3e6b7548c797ad89a1bd729365c60cd6ba38a3d8c04aa76bc22b2bb19be4adba"
+      }
+    },
+    {
+      "physical_page": 15,
+      "pdf_label": "14",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0015",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0015/page_spec.json",
+      "spec_sha256": "97a4d047e8773ac0488e219d99199652578e04b8293c6690a0c85ac4a8736a89",
+      "title": "Example of cost function: scalar set up",
+      "status": "analyzed",
+      "companionPageCount": 1,
+      "observations": 4,
+      "source_math_expressions": 2,
+      "examples": 1,
+      "interactivity_recommended": true,
+      "checks": {
+        "spec_exists": true,
+        "correct_physical_page": true,
+        "separate_page_spec": true,
+        "text_image_layout_inspected": true,
+        "neighbors_accounted_for": true,
+        "has_source_observations": true,
+        "has_source_scope_limits": true,
+        "has_prerequisite_or_is_cover": true,
+        "example_or_explicit_reason": true,
+        "all_enrichments_labelled": true,
+        "every_parameter_has_effect_and_limits": true,
+        "has_edge_cases": true,
+        "companion_count_consistent": true,
+        "mapping_is_proposal": true,
+        "result_archive_matches": true,
+        "inspection_matches_request": true,
+        "no_companion_implemented": true
+      },
+      "source_issues": []
+    },
+    {
+      "physical_page": 16,
+      "pdf_label": "15",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0016",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0016/page_spec.json",
+      "spec_sha256": "960b340696ca44624ca4c3b350bdb65d8c8549724e1b1c9b25156e732112df93",
+      "title": "Example of cost function: vector set up",
+      "status": "needs_review",
+      "companionPageCount": 1,
+      "observations": 8,
+      "source_math_expressions": 4,
+      "examples": 1,
+      "interactivity_recommended": true,
+      "checks": {
+        "spec_exists": true,
+        "correct_physical_page": true,
+        "separate_page_spec": true,
+        "text_image_layout_inspected": true,
+        "neighbors_accounted_for": true,
+        "has_source_observations": true,
+        "has_source_scope_limits": true,
+        "has_prerequisite_or_is_cover": true,
+        "example_or_explicit_reason": true,
+        "all_enrichments_labelled": true,
+        "every_parameter_has_effect_and_limits": true,
+        "has_edge_cases": true,
+        "companion_count_consistent": true,
+        "mapping_is_proposal": true,
+        "result_archive_matches": true,
+        "inspection_matches_request": true,
+        "no_companion_implemented": true
+      },
+      "source_issues": [
+        {
+          "description": "Refuso matematico confermato visivamente: l'ultima espansione ripete w₁ dove la formula con W=diag(w₁,w₂) comporterebbe w₂. Bloccante per usare quell'espansione come identità corretta senza revisione esplicita.",
+          "blocking": true,
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        }
+      ],
+      "spec_sha256_before_source_warning_review": "6d5ca2a034d305a0be801f44d5bc614aa5b92e8301afa4d63d411469a50e47b7",
+      "source_warning": {
+        "policy_version": "1.0.0",
+        "scope": "companion_only",
+        "type": "CORRECTION_WARNING",
+        "review_status": "resolved",
+        "issues": [
+          {
+            "issue_id": "intro-p16-issue-1",
+            "source_issue_index": 0,
+            "issue": "Secondo peso della forma quadratica",
+            "type": "CORRECTION_WARNING",
+            "source_expression": "\\ell(z)=\\frac12\\|z-\\bar z\\|_W^2=\\frac12w_1(z_1-\\bar z_1)^2+\\frac12w_1(z_2-\\bar z_2)^2",
+            "corrected_expression": "\\ell(z)=\\frac12\\|z-\\bar z\\|_W^2=\\frac12w_1(z_1-\\bar z_1)^2+\\frac12w_2(z_2-\\bar z_2)^2",
+            "companion_uses": "\\ell(z)=\\frac12\\|z-\\bar z\\|_W^2=\\frac12w_1(z_1-\\bar z_1)^2+\\frac12w_2(z_2-\\bar z_2)^2",
+            "short_warning": "⚠ Warning: possibile errore nella slide originale. Qui usiamo w₂ nel secondo termine invece di w₁.",
+            "correction_reason": "Ponendo e=z−z̄ e W=diag(w₁,w₂), il prodotto eᵀWe è w₁e₁²+w₂e₂². La seconda coordinata deve quindi avere coefficiente w₂. L'identità errata coincide accidentalmente solo in casi particolari, ad esempio pesi uguali o secondo scarto nullo. La correzione deriva dalla matrice e dalla definizione generale già presenti nella stessa pagina.",
+            "use_corrected_value_for_examples": true,
+            "use_corrected_value_for_simulation": true,
+            "resolved": true,
+            "source_references": [
+              "/analysis/result/didactic_plan/source_math/1",
+              "/analysis/result/didactic_plan/source_math/2",
+              "/analysis/result/didactic_plan/source_math/3"
+            ],
+            "context_pages_consulted": [],
+            "calculation_policy": "Usare esclusivamente il prodotto matriciale e la sua espansione con w₂ nel secondo termine per esempi, curve di livello, grafici, simulazioni e audit numerici. Vietato valutare il refuso anche come confronto didattico.",
+            "ui": {
+              "show": true,
+              "color": "red",
+              "placement": "accanto alla sola espansione del costo pesato",
+              "when": "solo quando è visibile la specifica spiegazione interessata; una sola nota locale",
+              "student_text_field": "short_warning"
+            }
+          }
+        ],
+        "companion_overrides": [
+          {
+            "path": "/examples/0/purpose",
+            "value": "Calcolare il costo corretto e distinguere i contributi delle due coordinate."
+          },
+          {
+            "path": "/examples/0/derivation",
+            "value": [
+              "Con W=diag(1,4) ed e=(1,1): ℓ=½w₁e₁²+½w₂e₂².",
+              "Primo contributo: 0.5; secondo contributo: 2.",
+              "Il costo totale corretto è 2.5."
+            ]
+          },
+          {
+            "path": "/examples/0/expected_outcome",
+            "value": "Il secondo scarto è pesato da w₂. Si valuta soltanto l'espressione corretta."
+          },
+          {
+            "path": "/enrichments/0/proposal",
+            "value": "Usare l'espansione con w₂ nel secondo termine e il solo breve warning locale della policy."
+          },
+          {
+            "path": "/enrichments/3/proposal",
+            "value": "Variare i pesi della formula corretta per comprendere l'anisotropia del costo."
+          },
+          {
+            "path": "/enrichments/4/proposal",
+            "value": "Curve di livello della formula corretta, senza pannelli o valori calcolati dal refuso."
+          },
+          {
+            "path": "/visualization/component",
+            "value": "WeightedQuadraticContours"
+          },
+          {
+            "path": "/visualization/description",
+            "value": "Curve di livello della forma corretta e piccolo warning rosso accanto all'espansione; nessun confronto numerico con il refuso."
+          },
+          {
+            "path": "/interactivity/rationale",
+            "value": "Comprendere l'effetto distinto di w₁ e w₂ sulla stessa forma quadratica corretta."
+          },
+          {
+            "path": "/interactivity/outputs",
+            "value": [
+              "Costo corretto",
+              "Contributi delle due coordinate",
+              "Curve di livello",
+              "Indicazione della positività dei pesi"
+            ]
+          },
+          {
+            "path": "/blueprint/0/focus",
+            "value": "Distanza quadratica pesata: ogni coordinata usa il proprio peso; breve warning sulla seconda componente."
+          }
+        ],
+        "technical_only_legacy_paths": [
+          "/analysis/result/didactic_plan/examples/0/derivation/1",
+          "/analysis/result/didactic_plan/interactivity/outputs/1",
+          "/analysis/result/didactic_plan/enrichments/4/proposal"
+        ],
+        "original_analysis_sha256": "62e64df1fdd920e2d8f2ef1ee81fcb19ee7e9da22aab207b05ed270d12e0b218"
+      }
+    },
+    {
+      "physical_page": 17,
+      "pdf_label": "16",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0017",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0017/page_spec.json",
+      "spec_sha256": "977e2e06603332075f34051d18e4e2b206e4547f93857350be357c505c51d56a",
+      "title": "Examples of constraint sets",
+      "status": "needs_review",
+      "companionPageCount": 1,
+      "observations": 7,
+      "source_math_expressions": 3,
+      "examples": 1,
+      "interactivity_recommended": true,
+      "checks": {
+        "spec_exists": true,
+        "correct_physical_page": true,
+        "separate_page_spec": true,
+        "text_image_layout_inspected": true,
+        "neighbors_accounted_for": true,
+        "has_source_observations": true,
+        "has_source_scope_limits": true,
+        "has_prerequisite_or_is_cover": true,
+        "example_or_explicit_reason": true,
+        "all_enrichments_labelled": true,
+        "every_parameter_has_effect_and_limits": true,
+        "has_edge_cases": true,
+        "companion_count_consistent": true,
+        "mapping_is_proposal": true,
+        "result_archive_matches": true,
+        "inspection_matches_request": true,
+        "no_companion_implemented": true
+      },
+      "source_issues": [
+        {
+          "description": "Il disegno della prima regione è inclinato/traslato, mentre la forma az₁²+bz₂²−c non contiene termini per rotazione o traslazione; trattarlo come schema qualitativo.",
+          "blocking": false,
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04",
+            "s05"
+          ]
+        },
+        {
+          "description": "La prosa usa X e la formula Z per il secondo insieme; preservare la discrepanza nella nota editoriale.",
+          "blocking": false,
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04",
+            "s05"
+          ]
+        }
+      ],
+      "spec_sha256_before_source_warning_review": "e4375dc995c65fa07eb7c82c63c50ce021baf35b303e92010fb6a48aa8a368b0",
+      "source_warning": {
+        "policy_version": "1.0.0",
+        "scope": "companion_only",
+        "type": "INFO_WARNING",
+        "review_status": "resolved",
+        "issues": [
+          {
+            "issue_id": "intro-p17-issue-1",
+            "source_issue_index": 0,
+            "issue": "Figura qualitativa dell'insieme",
+            "type": "INFO_WARNING",
+            "source_expression": "az₁²+bz₂²−c≤0; disegno di un'ellisse inclinata e traslata.",
+            "corrected_expression": null,
+            "companion_uses": "az₁²+bz₂²−c≤0. Per a,b,c>0: ellisse centrata nell'origine, allineata agli assi.",
+            "short_warning": "⚠ Nota: la figura è qualitativa; il grafico segue la formula.",
+            "correction_reason": "La forma omogenea diagonale non contiene termini lineari o incrociati: nel caso positivo l'ellisse ha centro nell'origine e assi coordinati. La figura originale è uno schema qualitativo. Non si modifica la disequazione né si aggiungono parametri per farla assomigliare al disegno. Con coefficienti generali reali non si promette una geometria ellittica.",
+            "use_corrected_value_for_examples": false,
+            "use_corrected_value_for_simulation": false,
+            "resolved": true,
+            "source_references": [
+              "/analysis/result/didactic_plan/source_math/0",
+              "/analysis/result/observations/2"
+            ],
+            "context_pages_consulted": [],
+            "calculation_policy": "Calcolare il segno di az₁²+bz₂²−c sui punti. Rispettare i casi vuoto, degenere o illimitato; non traslare o ruotare il grafico per imitare la figura.",
+            "ui": {
+              "show": true,
+              "color": "red",
+              "placement": "accanto al grafico dell'insieme ammissibile",
+              "when": "solo quando è visibile la specifica spiegazione interessata; una sola nota locale",
+              "student_text_field": "short_warning"
+            }
+          },
+          {
+            "issue_id": "intro-p17-issue-2",
+            "source_issue_index": 1,
+            "issue": "Nome dell'insieme X/Z",
+            "type": "NO_WARNING",
+            "source_expression": "Then, the constraints set X is; Z=\\{z\\in\\mathbb{R}^d\\mid z^\\top Qz+q^\\top z-c=0\\}",
+            "corrected_expression": null,
+            "companion_uses": "Z, come nella formula dell'insieme ammissibile.",
+            "short_warning": null,
+            "correction_reason": "X nella prosa e Z nell'equazione non introducono insiemi con proprietà diverse. Il simbolo della formula e del resto della lezione è sufficiente; un warning distrarrebbe dal confronto uguaglianza/disuguaglianza.",
+            "use_corrected_value_for_examples": false,
+            "use_corrected_value_for_simulation": false,
+            "resolved": true,
+            "source_references": [
+              "/analysis/result/observations/4",
+              "/analysis/result/didactic_plan/source_math/2"
+            ],
+            "context_pages_consulted": [],
+            "calculation_policy": "Usare Z per il nome dell'insieme senza cambiare il predicato o i punti ammissibili.",
+            "ui": {
+              "show": false,
+              "color": null,
+              "placement": null,
+              "when": null,
+              "student_text_field": "short_warning"
+            }
+          }
+        ],
+        "companion_overrides": [],
+        "technical_only_legacy_paths": [],
+        "original_analysis_sha256": "4ebd7a4883482cecb479fb4447180cb1c95998a071bad5ba35246ae484b83a15"
+      }
+    },
+    {
+      "physical_page": 18,
+      "pdf_label": "17",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0018",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0018/page_spec.json",
+      "spec_sha256": "66f2753f513c2f533154d928e2b49e09237b9c172b1d610defd47b7f51f5e3f7",
+      "title": "Optimization problem (minimization)",
+      "status": "analyzed",
+      "companionPageCount": 1,
+      "observations": 5,
+      "source_math_expressions": 4,
+      "examples": 1,
+      "interactivity_recommended": true,
+      "checks": {
+        "spec_exists": true,
+        "correct_physical_page": true,
+        "separate_page_spec": true,
+        "text_image_layout_inspected": true,
+        "neighbors_accounted_for": true,
+        "has_source_observations": true,
+        "has_source_scope_limits": true,
+        "has_prerequisite_or_is_cover": true,
+        "example_or_explicit_reason": true,
+        "all_enrichments_labelled": true,
+        "every_parameter_has_effect_and_limits": true,
+        "has_edge_cases": true,
+        "companion_count_consistent": true,
+        "mapping_is_proposal": true,
+        "result_archive_matches": true,
+        "inspection_matches_request": true,
+        "no_companion_implemented": true
+      },
+      "source_issues": []
+    },
+    {
+      "physical_page": 19,
+      "pdf_label": "18",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0019",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0019/page_spec.json",
+      "spec_sha256": "59a7db407ffd2227278ba9d0a746268337cb1a6a01a3bb3f8bec9eec35eedfce",
+      "title": "Discrete-time optimal control: main ingredients (I)",
+      "status": "needs_review",
+      "companionPageCount": 1,
+      "observations": 8,
+      "source_math_expressions": 5,
+      "examples": 1,
+      "interactivity_recommended": true,
+      "checks": {
+        "spec_exists": true,
+        "correct_physical_page": true,
+        "separate_page_spec": true,
+        "text_image_layout_inspected": true,
+        "neighbors_accounted_for": true,
+        "has_source_observations": true,
+        "has_source_scope_limits": true,
+        "has_prerequisite_or_is_cover": true,
+        "example_or_explicit_reason": true,
+        "all_enrichments_labelled": true,
+        "every_parameter_has_effect_and_limits": true,
+        "has_edge_cases": true,
+        "companion_count_consistent": true,
+        "mapping_is_proposal": true,
+        "result_archive_matches": true,
+        "inspection_matches_request": true,
+        "no_companion_implemented": true
+      },
+      "source_issues": [
+        {
+          "description": "Nello schema sviluppato la fonte alterna f e f_t, mantenendo t nelle diverse righe; conservare la trascrizione e ancorare l'interpretazione alla formula generale indicizzata.",
+          "blocking": false,
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        }
+      ],
+      "spec_sha256_before_source_warning_review": "6ec807057ba191b8eb19916f90bc48efb8bd897b31bb0a76c545319c1e161e26",
+      "source_warning": {
+        "policy_version": "1.0.0",
+        "scope": "companion_only",
+        "type": "INFO_WARNING",
+        "review_status": "resolved",
+        "issues": [
+          {
+            "issue_id": "intro-p19-issue-1",
+            "source_issue_index": 0,
+            "issue": "Indice temporale della dinamica sviluppata",
+            "type": "INFO_WARNING",
+            "source_expression": "x_1=f(x_0,u_0)\\quad\\text{i.e.}\\quad f_t(x_0,u_0)-x_1=0; x_2=f(x_1,u_1)\\quad\\text{i.e.}\\quad f_t(x_1,u_1)-x_2=0; x_T=f(x_{T-1},u_{T-1})\\quad\\text{i.e.}\\quad f_t(x_{T-1},u_{T-1})-x_T=0",
+            "corrected_expression": null,
+            "companion_uses": "f_t(x_t,u_t)−x_{t+1}=0, t=0,…,T−1; righe f₀, f₁, …, f_{T−1}.",
+            "short_warning": "⚠ Nota: ogni transizione usa la propria mappa f_t.",
+            "correction_reason": "La formula generale in alto definisce già una famiglia f_t. Lo schema inferiore usa f e poi t come segnaposto nelle varie righe; non è necessario attribuirgli una legge dinamica diversa. La companion esplicita l'istante corretto in ciascuna transizione, usando la formula generale della stessa slide.",
+            "use_corrected_value_for_examples": false,
+            "use_corrected_value_for_simulation": false,
+            "resolved": true,
+            "source_references": [
+              "/analysis/result/didactic_plan/source_math/0",
+              "/analysis/result/didactic_plan/source_math/2",
+              "/analysis/result/didactic_plan/source_math/3",
+              "/analysis/result/didactic_plan/source_math/4"
+            ],
+            "context_pages_consulted": [],
+            "calculation_policy": "La riga t applica la propria f_t a x_t e u_t. In un esempio time-invariant tutte le f_t possono coincidere; non costringerle a coincidere nel caso generale.",
+            "ui": {
+              "show": true,
+              "color": "red",
+              "placement": "accanto allo sviluppo delle uguaglianze per t",
+              "when": "solo quando è visibile la specifica spiegazione interessata; una sola nota locale",
+              "student_text_field": "short_warning"
+            }
+          }
+        ],
+        "companion_overrides": [],
+        "technical_only_legacy_paths": [],
+        "original_analysis_sha256": "8adbab2cd47817a51273f7045256eee3d3aaeb0524fcb3a9f0281d022fedc8e5"
+      }
+    },
+    {
+      "physical_page": 20,
+      "pdf_label": "19",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0020",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0020/page_spec.json",
+      "spec_sha256": "b7666000d8dfe6fed3c10eb5348780661c5612194a89f513d989bc9e4fc99b77",
+      "title": "Discrete-time optimal control: main ingredients (II)",
+      "status": "analyzed",
+      "companionPageCount": 1,
+      "observations": 7,
+      "source_math_expressions": 3,
+      "examples": 1,
+      "interactivity_recommended": true,
+      "checks": {
+        "spec_exists": true,
+        "correct_physical_page": true,
+        "separate_page_spec": true,
+        "text_image_layout_inspected": true,
+        "neighbors_accounted_for": true,
+        "has_source_observations": true,
+        "has_source_scope_limits": true,
+        "has_prerequisite_or_is_cover": true,
+        "example_or_explicit_reason": true,
+        "all_enrichments_labelled": true,
+        "every_parameter_has_effect_and_limits": true,
+        "has_edge_cases": true,
+        "companion_count_consistent": true,
+        "mapping_is_proposal": true,
+        "result_archive_matches": true,
+        "inspection_matches_request": true,
+        "no_companion_implemented": true
+      },
+      "source_issues": []
+    },
+    {
+      "physical_page": 21,
+      "pdf_label": "20",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0021",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0021/page_spec.json",
+      "spec_sha256": "8877d6d9c4f5efd6aff02ea490b75c0b2734f7afc678572959a551019f23d730",
+      "title": "Discrete-time optimal control: main ingredients (III)",
+      "status": "analyzed",
+      "companionPageCount": 1,
+      "observations": 4,
+      "source_math_expressions": 2,
+      "examples": 1,
+      "interactivity_recommended": true,
+      "checks": {
+        "spec_exists": true,
+        "correct_physical_page": true,
+        "separate_page_spec": true,
+        "text_image_layout_inspected": true,
+        "neighbors_accounted_for": true,
+        "has_source_observations": true,
+        "has_source_scope_limits": true,
+        "has_prerequisite_or_is_cover": true,
+        "example_or_explicit_reason": true,
+        "all_enrichments_labelled": true,
+        "every_parameter_has_effect_and_limits": true,
+        "has_edge_cases": true,
+        "companion_count_consistent": true,
+        "mapping_is_proposal": true,
+        "result_archive_matches": true,
+        "inspection_matches_request": true,
+        "no_companion_implemented": true
+      },
+      "source_issues": []
+    },
+    {
+      "physical_page": 22,
+      "pdf_label": "21",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0022",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0022/page_spec.json",
+      "spec_sha256": "51c8f998e74cf5287f37ca39c4a3add1233ba50ef458c9600866e2dbb04629c3",
+      "title": "Cost function: examples — tracking di una state-input curve",
+      "status": "needs_review",
+      "companionPageCount": 1,
+      "observations": 8,
+      "source_math_expressions": 5,
+      "examples": 1,
+      "interactivity_recommended": true,
+      "checks": {
+        "spec_exists": true,
+        "correct_physical_page": true,
+        "separate_page_spec": true,
+        "text_image_layout_inspected": true,
+        "neighbors_accounted_for": true,
+        "has_source_observations": true,
+        "has_source_scope_limits": true,
+        "has_prerequisite_or_is_cover": true,
+        "example_or_explicit_reason": true,
+        "all_enrichments_labelled": true,
+        "every_parameter_has_effect_and_limits": true,
+        "has_edge_cases": true,
+        "companion_count_consistent": true,
+        "mapping_is_proposal": true,
+        "result_archive_matches": true,
+        "inspection_matches_request": true,
+        "no_companion_implemented": true
+      },
+      "source_issues": [
+        {
+          "description": "Indice del riferimento di stato: il costo include t=0 ma l'elenco dichiara x_t^{des} solo per t=1,…,T. Negli esempi x_0^{des} è assegnato esplicitamente come enrichment.",
+          "blocking": false,
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04",
+            "s05"
+          ]
+        }
+      ],
+      "spec_sha256_before_source_warning_review": "54747f607854b65665953e9f5c77edb46324324dc082e93767753275dd9a4f98",
+      "source_warning": {
+        "policy_version": "1.0.0",
+        "scope": "companion_only",
+        "type": "INFO_WARNING",
+        "review_status": "resolved",
+        "issues": [
+          {
+            "issue_id": "intro-p22-issue-1",
+            "source_issue_index": 0,
+            "issue": "Riferimento iniziale non elencato",
+            "type": "INFO_WARNING",
+            "source_expression": "Costo con somma da t=0; x_t^{des} elencato per t=1,…,T; x₀=x⁰.",
+            "corrected_expression": null,
+            "companion_uses": "x_0^{\\mathrm{des}}=x^0 come default esplicito degli esempi; il costo mantiene t=0.",
+            "short_warning": "⚠ Nota: negli esempi il riferimento iniziale coincide con x⁰.",
+            "correction_reason": "Il primo addendo richiede un riferimento anche a t=0, ma la lista testuale parte da 1. Quando x₀ è fissato, quel termine è costante rispetto alle decisioni: non modifica gli argmin, ma incide sul valore assoluto del costo. Per evitare un valore non definito, gli esempi assegnano esplicitamente il riferimento iniziale al dato x⁰. Questa è una convenzione dichiarata della companion, non una formula attribuita alla fonte.",
+            "use_corrected_value_for_examples": false,
+            "use_corrected_value_for_simulation": false,
+            "resolved": true,
+            "source_references": [
+              "/analysis/result/didactic_plan/source_math/0",
+              "/analysis/result/didactic_plan/source_math/4",
+              "/analysis/result/observations/4"
+            ],
+            "context_pages_consulted": [],
+            "calculation_policy": "Assegnare x₀^{des}=x⁰ prima di valutare il costo. Se cambia il dato iniziale, aggiornare il riferimento iniziale secondo questo default. Non eliminare la riga t=0 né introdurre valori impliciti.",
+            "ui": {
+              "show": true,
+              "color": "red",
+              "placement": "accanto alla definizione del riferimento iniziale",
+              "when": "solo quando è visibile la specifica spiegazione interessata; una sola nota locale",
+              "student_text_field": "short_warning"
+            }
+          }
+        ],
+        "companion_overrides": [],
+        "technical_only_legacy_paths": [],
+        "original_analysis_sha256": "4953d4afddd0519d9437b62abdee075f9d78aa36f616746f8189822a094143d5"
+      }
+    },
+    {
+      "physical_page": 23,
+      "pdf_label": "22",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0023",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0023/page_spec.json",
+      "spec_sha256": "71f125363bcafc0e649614a5215a70a1977481f6c654e02aa34df9f164e221aa",
+      "title": "Discrete-time optimal control problem",
+      "status": "analyzed",
+      "companionPageCount": 1,
+      "observations": 6,
+      "source_math_expressions": 2,
+      "examples": 1,
+      "interactivity_recommended": true,
+      "checks": {
+        "spec_exists": true,
+        "correct_physical_page": true,
+        "separate_page_spec": true,
+        "text_image_layout_inspected": true,
+        "neighbors_accounted_for": true,
+        "has_source_observations": true,
+        "has_source_scope_limits": true,
+        "has_prerequisite_or_is_cover": true,
+        "example_or_explicit_reason": true,
+        "all_enrichments_labelled": true,
+        "every_parameter_has_effect_and_limits": true,
+        "has_edge_cases": true,
+        "companion_count_consistent": true,
+        "mapping_is_proposal": true,
+        "result_archive_matches": true,
+        "inspection_matches_request": true,
+        "no_companion_implemented": true
+      },
+      "source_issues": []
+    },
+    {
+      "physical_page": 24,
+      "pdf_label": "23",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0024",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0024/page_spec.json",
+      "spec_sha256": "060d4a707d05610db8170d87426c7dd24ad9a433b2243d099c6b25e5f8b3c64b",
+      "title": "Trajectory generation",
+      "status": "analyzed",
+      "companionPageCount": 1,
+      "observations": 7,
+      "source_math_expressions": 3,
+      "examples": 1,
+      "interactivity_recommended": false,
+      "checks": {
+        "spec_exists": true,
+        "correct_physical_page": true,
+        "separate_page_spec": true,
+        "text_image_layout_inspected": true,
+        "neighbors_accounted_for": true,
+        "has_source_observations": true,
+        "has_source_scope_limits": true,
+        "has_prerequisite_or_is_cover": true,
+        "example_or_explicit_reason": true,
+        "all_enrichments_labelled": true,
+        "every_parameter_has_effect_and_limits": true,
+        "has_edge_cases": true,
+        "companion_count_consistent": true,
+        "mapping_is_proposal": true,
+        "result_archive_matches": true,
+        "inspection_matches_request": true,
+        "no_companion_implemented": true
+      },
+      "source_issues": []
+    },
+    {
+      "physical_page": 25,
+      "pdf_label": "24",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0025",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0025/page_spec.json",
+      "spec_sha256": "f98ba82db9acf456c478730eb18a3e61b09afab09c6064d478a9ed04f79f0ed8",
+      "title": "Optimal control for trajectory generation",
+      "status": "analyzed",
+      "companionPageCount": 1,
+      "observations": 7,
+      "source_math_expressions": 2,
+      "examples": 1,
+      "interactivity_recommended": true,
+      "checks": {
+        "spec_exists": true,
+        "correct_physical_page": true,
+        "separate_page_spec": true,
+        "text_image_layout_inspected": true,
+        "neighbors_accounted_for": true,
+        "has_source_observations": true,
+        "has_source_scope_limits": true,
+        "has_prerequisite_or_is_cover": true,
+        "example_or_explicit_reason": true,
+        "all_enrichments_labelled": true,
+        "every_parameter_has_effect_and_limits": true,
+        "has_edge_cases": true,
+        "companion_count_consistent": true,
+        "mapping_is_proposal": true,
+        "result_archive_matches": true,
+        "inspection_matches_request": true,
+        "no_companion_implemented": true
+      },
+      "source_issues": []
+    },
+    {
+      "physical_page": 26,
+      "pdf_label": "25",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0026",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0026/page_spec.json",
+      "spec_sha256": "f36eb179cc4d7676f8f70f1ac9c310648651a42919f84605574c9bfec62935ed",
+      "title": "Trajectory generation for an autonomous drone — modello planare",
+      "status": "needs_review",
+      "companionPageCount": 1,
+      "observations": 7,
+      "source_math_expressions": 4,
+      "examples": 1,
+      "interactivity_recommended": true,
+      "checks": {
+        "spec_exists": true,
+        "correct_physical_page": true,
+        "separate_page_spec": true,
+        "text_image_layout_inspected": true,
+        "neighbors_accounted_for": true,
+        "has_source_observations": true,
+        "has_source_scope_limits": true,
+        "has_prerequisite_or_is_cover": true,
+        "example_or_explicit_reason": true,
+        "all_enrichments_labelled": true,
+        "every_parameter_has_effect_and_limits": true,
+        "has_edge_cases": true,
+        "companion_count_consistent": true,
+        "mapping_is_proposal": true,
+        "result_archive_matches": true,
+        "inspection_matches_request": true,
+        "no_companion_implemented": true
+      },
+      "source_issues": [
+        {
+          "description": "La frase goal cita lo spazio 3D, mentre equazioni, uscita e titolo del modello sono planari; non estendere il modello a 3D senza una scelta editoriale esplicita.",
+          "blocking": false,
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04",
+            "s05"
+          ]
+        }
+      ],
+      "spec_sha256_before_source_warning_review": "9e0c15b507008a5da151a0af79f93b9e19a6e9605ac4dcfd112e004a7ff8f7f3",
+      "source_warning": {
+        "policy_version": "1.0.0",
+        "scope": "companion_only",
+        "type": "INFO_WARNING",
+        "review_status": "resolved",
+        "issues": [
+          {
+            "issue_id": "intro-p26-issue-1",
+            "source_issue_index": 0,
+            "issue": "Ambito planare rispetto alla frase 3D",
+            "type": "INFO_WARNING",
+            "source_expression": "Consider a planar drone model; given time law in the 3D space.",
+            "corrected_expression": null,
+            "companion_uses": "Moto nel piano (p_x,p_y), con θ; uscita y_t=(p_{x,t},p_{y,t}). Nessuna terza coordinata.",
+            "short_warning": "⚠ Nota: il modello usato qui è planare, in due dimensioni.",
+            "correction_reason": "Titolo del modello, due accelerazioni traslazionali e uscita a due componenti identificano un esempio planare. La frase 3D può descrivere un obiettivo più generale, ma non assegna un modello spaziale completo. Non occorre dichiarare errate le equazioni: basta delimitare il modello effettivamente utilizzato.",
+            "use_corrected_value_for_examples": false,
+            "use_corrected_value_for_simulation": false,
+            "resolved": true,
+            "source_references": [
+              "/analysis/result/observations/0",
+              "/analysis/result/observations/4",
+              "/analysis/result/didactic_plan/source_math/3"
+            ],
+            "context_pages_consulted": [
+              27
+            ],
+            "calculation_policy": "Usare le tre equazioni planari invariate. Per un'eventuale rappresentazione ambientale tridimensionale, non aggiungere dinamica fuori piano; l'esempio calcolato rimane 2D.",
+            "ui": {
+              "show": true,
+              "color": "red",
+              "placement": "accanto alla descrizione dell'ambito del modello",
+              "when": "solo quando è visibile la specifica spiegazione interessata; una sola nota locale",
+              "student_text_field": "short_warning"
+            }
+          }
+        ],
+        "companion_overrides": [],
+        "technical_only_legacy_paths": [],
+        "original_analysis_sha256": "883691d0fb73ac69f16ff938b20d594ca6b12d5325c27a3ef1f5bba9cab46cd9"
+      }
+    },
+    {
+      "physical_page": 27,
+      "pdf_label": "26",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0027",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0027/page_spec.json",
+      "spec_sha256": "99d1bc3fc229a3ca47bbdfe3ed75c80fb75c9e620a158879f1819c5599aea26a",
+      "title": "Drone (I) — discretizzazione e ordine delle variabili",
+      "status": "analyzed",
+      "companionPageCount": 1,
+      "observations": 8,
+      "source_math_expressions": 3,
+      "examples": 1,
+      "interactivity_recommended": true,
+      "checks": {
+        "spec_exists": true,
+        "correct_physical_page": true,
+        "separate_page_spec": true,
+        "text_image_layout_inspected": true,
+        "neighbors_accounted_for": true,
+        "has_source_observations": true,
+        "has_source_scope_limits": true,
+        "has_prerequisite_or_is_cover": true,
+        "example_or_explicit_reason": true,
+        "all_enrichments_labelled": true,
+        "every_parameter_has_effect_and_limits": true,
+        "has_edge_cases": true,
+        "companion_count_consistent": true,
+        "mapping_is_proposal": true,
+        "result_archive_matches": true,
+        "inspection_matches_request": true,
+        "no_companion_implemented": true
+      },
+      "source_issues": []
+    },
+    {
+      "physical_page": 28,
+      "pdf_label": "27",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0028",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0028/page_spec.json",
+      "spec_sha256": "f0016979d0af6d9b1ea59b7446657dd0878cb549c0dfca3c7d977e468ef818d4",
+      "title": "Drone (II) — requisiti della traiettoria",
+      "status": "analyzed",
+      "companionPageCount": 1,
+      "observations": 7,
+      "source_math_expressions": 3,
+      "examples": 1,
+      "interactivity_recommended": false,
+      "checks": {
+        "spec_exists": true,
+        "correct_physical_page": true,
+        "separate_page_spec": true,
+        "text_image_layout_inspected": true,
+        "neighbors_accounted_for": true,
+        "has_source_observations": true,
+        "has_source_scope_limits": true,
+        "has_prerequisite_or_is_cover": true,
+        "example_or_explicit_reason": true,
+        "all_enrichments_labelled": true,
+        "every_parameter_has_effect_and_limits": true,
+        "has_edge_cases": true,
+        "companion_count_consistent": true,
+        "mapping_is_proposal": true,
+        "result_archive_matches": true,
+        "inspection_matches_request": true,
+        "no_companion_implemented": true
+      },
+      "source_issues": []
+    },
+    {
+      "physical_page": 29,
+      "pdf_label": "28",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0029",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0029/page_spec.json",
+      "spec_sha256": "be04674c5307d880866b4c7e6cd4ac00322d966d5779ce40c626248ce8cc9413",
+      "title": "Drone (III) — costo con pesi diagonali",
+      "status": "analyzed",
+      "companionPageCount": 1,
+      "observations": 6,
+      "source_math_expressions": 2,
+      "examples": 1,
+      "interactivity_recommended": true,
+      "checks": {
+        "spec_exists": true,
+        "correct_physical_page": true,
+        "separate_page_spec": true,
+        "text_image_layout_inspected": true,
+        "neighbors_accounted_for": true,
+        "has_source_observations": true,
+        "has_source_scope_limits": true,
+        "has_prerequisite_or_is_cover": true,
+        "example_or_explicit_reason": true,
+        "all_enrichments_labelled": true,
+        "every_parameter_has_effect_and_limits": true,
+        "has_edge_cases": true,
+        "companion_count_consistent": true,
+        "mapping_is_proposal": true,
+        "result_archive_matches": true,
+        "inspection_matches_request": true,
+        "no_companion_implemented": true
+      },
+      "source_issues": []
+    },
+    {
+      "physical_page": 30,
+      "pdf_label": "29",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0030",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0030/page_spec.json",
+      "spec_sha256": "a493878d20f8cfafac7903c01850a1cd608e9a1d4d035222b99278cf15203867",
+      "title": "Example: path constraints — saturazioni e limiti di quota",
+      "status": "needs_review",
+      "companionPageCount": 1,
+      "observations": 8,
+      "source_math_expressions": 3,
+      "examples": 1,
+      "interactivity_recommended": true,
+      "checks": {
+        "spec_exists": true,
+        "correct_physical_page": true,
+        "separate_page_spec": true,
+        "text_image_layout_inspected": true,
+        "neighbors_accounted_for": true,
+        "has_source_observations": true,
+        "has_source_scope_limits": true,
+        "has_prerequisite_or_is_cover": true,
+        "example_or_explicit_reason": true,
+        "all_enrichments_labelled": true,
+        "every_parameter_has_effect_and_limits": true,
+        "has_edge_cases": true,
+        "companion_count_consistent": true,
+        "mapping_is_proposal": true,
+        "result_archive_matches": true,
+        "inspection_matches_request": true,
+        "no_companion_implemented": true
+      },
+      "source_issues": [
+        {
+          "description": "Discrepanza di indicizzazione: la prosa usa t=1,…,T anche per le saturazioni, mentre gli ingressi sono definiti u₀,…,u_{T−1}. Occorre una decisione editoriale prima di implementare vincoli sull'intera sequenza; nessun u_T viene creato nell'analisi.",
+          "blocking": true,
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        }
+      ],
+      "spec_sha256_before_source_warning_review": "b5567743088e25abd3d14b72cf4487cb0ed1d0d9858a898a5e04f9c4b8b8d5f9",
+      "source_warning": {
+        "policy_version": "1.0.0",
+        "scope": "companion_only",
+        "type": "CORRECTION_WARNING",
+        "review_status": "resolved",
+        "issues": [
+          {
+            "issue_id": "intro-p30-issue-1",
+            "source_issue_index": 0,
+            "issue": "Indici distinti per ingressi e stati previsti",
+            "type": "CORRECTION_WARNING",
+            "source_expression": "g(\\mathbf{x},\\mathbf{u})\\leq0,\\quad t=1,\\ldots,T\\ \\text{nella prosa}; u_t^{\\min}\\leq u_t\\leq u_t^{\\max}",
+            "corrected_expression": "u_t^{\\min}\\leq u_t\\leq u_t^{\\max},\\quad t=0,\\ldots,T-1;\\qquad p_{y,t}^{\\min}\\leq p_{y,t}\\leq p_{y,t}^{\\max},\\quad t=1,\\ldots,T",
+            "companion_uses": "u_t^{\\min}\\leq u_t\\leq u_t^{\\max},\\quad t=0,\\ldots,T-1;\\qquad p_{y,t}^{\\min}\\leq p_{y,t}\\leq p_{y,t}^{\\max},\\quad t=1,\\ldots,T",
+            "short_warning": "⚠ Warning: possibile errore nella slide originale. Gli ingressi usano t=0,…,T−1; le quote t=1,…,T.",
+            "correction_reason": "Lo stack a pagina 10 è col(u₀,…,u_{T−1}) e la dinamica ha T transizioni. Applicare alle saturazioni l'intervallo 1,…,T ometterebbe u₀ e richiederebbe un inesistente u_T. La companion corregge il dominio degli ingressi a 0,…,T−1 e conserva 1,…,T per le quote degli stati previsti, come nel caso illustrato. Il limite su x_T si impone esplicitamente come vincolo di stato terminale, distinto dai path di stadio del problema generale; non si crea un ingresso terminale.",
+            "use_corrected_value_for_examples": true,
+            "use_corrected_value_for_simulation": true,
+            "resolved": true,
+            "source_references": [
+              "/analysis/result/didactic_plan/source_math/0",
+              "/analysis/result/didactic_plan/source_math/1",
+              "/analysis/result/didactic_plan/source_math/2"
+            ],
+            "context_pages_consulted": [
+              10,
+              21,
+              23,
+              27
+            ],
+            "calculation_policy": "T ingressi indicizzati 0…T−1 e T stati previsti indicizzati 1…T. Applicare i limiti agli array corrispondenti, incluso il primo ingresso e lo stato finale. Il dato x₀ resta separato dai limiti di quota previsti di questo esempio.",
+            "ui": {
+              "show": true,
+              "color": "red",
+              "placement": "accanto agli intervalli temporali delle saturazioni e dei limiti di quota",
+              "when": "solo quando è visibile la specifica spiegazione interessata; una sola nota locale",
+              "student_text_field": "short_warning"
+            }
+          }
+        ],
+        "companion_overrides": [
+          {
+            "path": "/examples/0/setup",
+            "value": "Enrichment a un istante di stato previsto t∈{1,…,T}: p_y^{min}=1,p_y^{max}=3; confrontare p_y=2 con p_y=3.2."
+          },
+          {
+            "path": "/interactivity/invariants",
+            "value": [
+              "Istante di stato t∈{1,…,T}",
+              "Ingressi indicizzati 0,…,T−1, senza u_T",
+              "p_y=x₃",
+              "Nessuna integrazione del drone",
+              "Range/default sono enrichment"
+            ]
+          }
+        ],
+        "technical_only_legacy_paths": [],
+        "original_analysis_sha256": "635c1cbd483553faa2a9334a88fcfb557a551bc5f0b2c6b1d5d349472a9c4f89"
+      }
+    },
+    {
+      "physical_page": 31,
+      "pdf_label": "30",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0031",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0031/page_spec.json",
+      "spec_sha256": "12172e7b75f8f5df1af0bc98852fc35d4546351831bee9246990230f3870e05f",
+      "title": "Continuous-time Optimal Control problem (I)",
+      "status": "needs_review",
+      "companionPageCount": 1,
+      "observations": 7,
+      "source_math_expressions": 4,
+      "examples": 1,
+      "interactivity_recommended": true,
+      "checks": {
+        "spec_exists": true,
+        "correct_physical_page": true,
+        "separate_page_spec": true,
+        "text_image_layout_inspected": true,
+        "neighbors_accounted_for": true,
+        "has_source_observations": true,
+        "has_source_scope_limits": true,
+        "has_prerequisite_or_is_cover": true,
+        "example_or_explicit_reason": true,
+        "all_enrichments_labelled": true,
+        "every_parameter_has_effect_and_limits": true,
+        "has_edge_cases": true,
+        "companion_count_consistent": true,
+        "mapping_is_proposal": true,
+        "result_archive_matches": true,
+        "inspection_matches_request": true,
+        "no_companion_implemented": true
+      },
+      "source_issues": [
+        {
+          "description": "Parentesi chiuse eccedenti nella prima riga del costo e nella definizione stampata di 𝓣. Il funzionale riscritto al centro della pagina ha parentesi bilanciate; conservare entrambi i dati senza correzioni silenziose.",
+          "blocking": false,
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        }
+      ],
+      "spec_sha256_before_source_warning_review": "4bac6c40ecc43a446064ec3083819e4fcbab1f77f07dcbcd748ec72d7915dc6e",
+      "source_warning": {
+        "policy_version": "1.0.0",
+        "scope": "companion_only",
+        "type": "NO_WARNING",
+        "review_status": "resolved",
+        "issues": [
+          {
+            "issue_id": "intro-p31-issue-1",
+            "source_issue_index": 0,
+            "issue": "Parentesi tipografiche ridondanti",
+            "type": "NO_WARNING",
+            "source_expression": "\\min_{(x(\\cdot),u(\\cdot))\\in\\mathcal F}\\ \\int_0^T\\ell_\\tau(x(\\tau),u(\\tau))\\,d\\tau+\\ell_T(x(T))); \\mathcal T=\\{(x(\\cdot),u(\\cdot)))\\in\\mathcal F\\mid\\dot x(t)=f_t(x(t),u(t)),\\ t\\in[0,T]\\}",
+            "corrected_expression": null,
+            "companion_uses": "\\ell:\\mathcal F\\to\\mathbb R,\\qquad\\ell(x(\\cdot),u(\\cdot))=\\int_0^T\\ell_\\tau(x(\\tau),u(\\tau))\\,d\\tau+\\ell_T(x(T)); coppia (x(·),u(·)) con delimitatori bilanciati.",
+            "short_warning": null,
+            "correction_reason": "Il funzionale è riscritto correttamente nella stessa pagina. Le parentesi eccedenti non aggiungono termini né cambiano l'insieme dinamico. Una composizione tipografica bilanciata della companion mantiene simboli e contenuto; un warning allo studente non migliorerebbe la comprensione.",
+            "use_corrected_value_for_examples": false,
+            "use_corrected_value_for_simulation": false,
+            "resolved": true,
+            "source_references": [
+              "/analysis/result/didactic_plan/source_math/0",
+              "/analysis/result/didactic_plan/source_math/2",
+              "/analysis/result/didactic_plan/source_math/3"
+            ],
+            "context_pages_consulted": [],
+            "calculation_policy": "Usare il funzionale già bilanciato presente nella fonte e mantenere invariati integrale, termine terminale e domini temporali. Nessun valore numerico dipende dalle parentesi superflue.",
+            "ui": {
+              "show": false,
+              "color": null,
+              "placement": null,
+              "when": null,
+              "student_text_field": "short_warning"
+            }
+          }
+        ],
+        "companion_overrides": [],
+        "technical_only_legacy_paths": [],
+        "original_analysis_sha256": "ec91cd22130d9ed859e6812d4a452eec4c2ee9920e0fd5e49913fa3eb6f261d3"
+      }
+    },
+    {
+      "physical_page": 32,
+      "pdf_label": "31",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0032",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0032/page_spec.json",
+      "spec_sha256": "9285acda672da9d5a363b0c3cd5fb67c5867adbf79eaf72bf106fb0897475d39",
+      "title": "Continuous-time Optimal Control problem (II)",
+      "status": "analyzed",
+      "companionPageCount": 1,
+      "observations": 5,
+      "source_math_expressions": 1,
+      "examples": 1,
+      "interactivity_recommended": true,
+      "checks": {
+        "spec_exists": true,
+        "correct_physical_page": true,
+        "separate_page_spec": true,
+        "text_image_layout_inspected": true,
+        "neighbors_accounted_for": true,
+        "has_source_observations": true,
+        "has_source_scope_limits": true,
+        "has_prerequisite_or_is_cover": true,
+        "example_or_explicit_reason": true,
+        "all_enrichments_labelled": true,
+        "every_parameter_has_effect_and_limits": true,
+        "has_edge_cases": true,
+        "companion_count_consistent": true,
+        "mapping_is_proposal": true,
+        "result_archive_matches": true,
+        "inspection_matches_request": true,
+        "no_companion_implemented": true
+      },
+      "source_issues": []
+    },
+    {
+      "physical_page": 33,
+      "pdf_label": "32",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0033",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0033/page_spec.json",
+      "spec_sha256": "c4a66660d91d826905bf9ed1e8f5edb59a96f4817e3ad73a3d97922f63d5cdf4",
+      "title": "Pendulum (I) — dinamica non lineare",
+      "status": "needs_review",
+      "companionPageCount": 1,
+      "observations": 8,
+      "source_math_expressions": 3,
+      "examples": 1,
+      "interactivity_recommended": true,
+      "checks": {
+        "spec_exists": true,
+        "correct_physical_page": true,
+        "separate_page_spec": true,
+        "text_image_layout_inspected": true,
+        "neighbors_accounted_for": true,
+        "has_source_observations": true,
+        "has_source_scope_limits": true,
+        "has_prerequisite_or_is_cover": true,
+        "example_or_explicit_reason": true,
+        "all_enrichments_labelled": true,
+        "every_parameter_has_effect_and_limits": true,
+        "has_edge_cases": true,
+        "companion_count_consistent": true,
+        "mapping_is_proposal": true,
+        "result_archive_matches": true,
+        "inspection_matches_request": true,
+        "no_companion_implemented": true
+      },
+      "source_issues": [
+        {
+          "description": "Variazioni di notazione della fonte: l nel termine g/l e nel disegno, ℓ nel momento mℓ²; m nelle equazioni, M nel peso Mg. Conservare i glifi e dichiarare ogni identificazione fisica aggiunta.",
+          "blocking": false,
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        }
+      ],
+      "spec_sha256_before_source_warning_review": "fa1dc096ad5c27b2b1a33a9f4a96f9d9bb1aaf5a62eb5958cab78f41069f4859",
+      "source_warning": {
+        "policy_version": "1.0.0",
+        "scope": "companion_only",
+        "type": "NO_WARNING",
+        "review_status": "resolved",
+        "issues": [
+          {
+            "issue_id": "intro-p33-issue-1",
+            "source_issue_index": 0,
+            "issue": "Varianti tipografiche di lunghezza e massa",
+            "type": "NO_WARNING",
+            "source_expression": "g/l;\\quad 1/(m\\ell^2);\\quad Mg nel disegno.",
+            "corrected_expression": null,
+            "companion_uses": "Notazione del modello conservata; l≡ℓ è una sola lunghezza, m≡M una sola massa nel pendolo.",
+            "short_warning": null,
+            "correction_reason": "Il modello descrive un pendolo con una lunghezza e una massa; non definisce due lunghezze o due masse indipendenti. l/ℓ e m/M sono letti come varianti locali della stessa quantità fisica. Questa interpretazione concorda con la relazione di equilibrio a pagina 34. Non è utile un warning per ogni glifo.",
+            "use_corrected_value_for_examples": false,
+            "use_corrected_value_for_simulation": false,
+            "resolved": true,
+            "source_references": [
+              "/analysis/result/didactic_plan/source_math/0",
+              "/analysis/result/observations/3"
+            ],
+            "context_pages_consulted": [
+              34
+            ],
+            "calculation_policy": "Collegare l e ℓ al medesimo parametro positivo di lunghezza; M e m alla medesima massa positiva. Non esporre quattro parametri indipendenti. Mantenere questa convenzione nelle pagine 33–36, senza riscrivere le equazioni source_literal.",
+            "ui": {
+              "show": false,
+              "color": null,
+              "placement": null,
+              "when": null,
+              "student_text_field": "short_warning"
+            }
+          }
+        ],
+        "companion_overrides": [],
+        "technical_only_legacy_paths": [],
+        "original_analysis_sha256": "92a131c79c70a80361e65e6e47eeeb427ae2779d9dd0169bc041070fddabf584"
+      }
+    },
+    {
+      "physical_page": 34,
+      "pdf_label": "33",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0034",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0034/page_spec.json",
+      "spec_sha256": "a7c530a91a8d7228ed533549c21aaab19071c7a9a276de8fb4ee71db9f9c5e3d",
+      "title": "Pendulum (II) — trasferimento fra equilibri",
+      "status": "needs_review",
+      "companionPageCount": 1,
+      "observations": 10,
+      "source_math_expressions": 4,
+      "examples": 1,
+      "interactivity_recommended": true,
+      "checks": {
+        "spec_exists": true,
+        "correct_physical_page": true,
+        "separate_page_spec": true,
+        "text_image_layout_inspected": true,
+        "neighbors_accounted_for": true,
+        "has_source_observations": true,
+        "has_source_scope_limits": true,
+        "has_prerequisite_or_is_cover": true,
+        "example_or_explicit_reason": true,
+        "all_enrichments_labelled": true,
+        "every_parameter_has_effect_and_limits": true,
+        "has_edge_cases": true,
+        "companion_count_consistent": true,
+        "mapping_is_proposal": true,
+        "result_archive_matches": true,
+        "inspection_matches_request": true,
+        "no_companion_implemented": true
+      },
+      "source_issues": [
+        {
+          "description": "Refuso d'indice confermato a 288 DPI: è stampato 0=x_{1,e}, mentre ẋ₁=x₂ impone 0=x_{2,e}. È incompatibile con il successivo stato (θ_e,0) per angolo generico; bloccante per presentare le condizioni come corrette.",
+          "blocking": true,
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04",
+            "s05"
+          ]
+        },
+        {
+          "description": "La formula mgℓsinθ_e assume l=ℓ rispetto ai denominatori del modello; l'identificazione non è esplicitata dalla fonte.",
+          "blocking": false,
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04",
+            "s05"
+          ]
+        }
+      ],
+      "spec_sha256_before_source_warning_review": "b4e0efc13c7a559c403ee758b22942fe4da501ef750c36cd319afb5b8a2585b4",
+      "source_warning": {
+        "policy_version": "1.0.0",
+        "scope": "companion_only",
+        "type": "CORRECTION_WARNING",
+        "review_status": "resolved",
+        "issues": [
+          {
+            "issue_id": "intro-p34-issue-1",
+            "source_issue_index": 0,
+            "issue": "Componente nulla all'equilibrio",
+            "type": "CORRECTION_WARNING",
+            "source_expression": "0=x_{1,e}",
+            "corrected_expression": "0=x_{2,e}",
+            "companion_uses": "0=x_{2,e};\\qquad u_e=mg\\ell\\sin x_{1,e}\\quad(l\\equiv\\ell).",
+            "short_warning": "⚠ Warning: possibile errore nella slide originale. La condizione di equilibrio corretta è x₂,e=0.",
+            "correction_reason": "Dalla dinamica ẋ₁=x₂ della pagina 33, un equilibrio impone x₂,e=0. La prima componente x₁,e è invece l'angolo scelto e può essere non nulla; la stessa pagina mostra x_e=col(θ_e,0). La coppia si verifica annullando entrambe le derivate con u_e=mgℓsinθ_e, identificando i due glifi della lunghezza. Imporre x₁,e=0 eliminerebbe impropriamente gli equilibri inclinati.",
+            "use_corrected_value_for_examples": true,
+            "use_corrected_value_for_simulation": true,
+            "resolved": true,
+            "source_references": [
+              "/analysis/result/didactic_plan/source_math/0",
+              "/analysis/result/didactic_plan/source_math/2"
+            ],
+            "context_pages_consulted": [
+              33
+            ],
+            "calculation_policy": "Per ogni angolo selezionato usare x_e=col(θ_e,0), u_e=mgℓsinθ_e e residui della dinamica corretta. Non imporre né valutare x₁,e=0 come condizione di equilibrio. Non generare un residuo numerico del refuso per confronto.",
+            "ui": {
+              "show": true,
+              "color": "red",
+              "placement": "accanto alla prima condizione di equilibrio",
+              "when": "solo quando è visibile la specifica spiegazione interessata; una sola nota locale",
+              "student_text_field": "short_warning"
+            }
+          },
+          {
+            "issue_id": "intro-p34-issue-2",
+            "source_issue_index": 1,
+            "issue": "Lunghezza nella coppia di equilibrio",
+            "type": "NO_WARNING",
+            "source_expression": "0=-\\frac{g}{l}\\sin x_{1,e}+\\frac{1}{m\\ell^2}u_e; x_e^1=\\begin{bmatrix}\\theta_e^1\\\\0\\end{bmatrix},\\qquad u_e^1=mg\\ell\\sin\\theta_e^1",
+            "corrected_expression": null,
+            "companion_uses": "u_e=mg\\ell\\sin\\theta_e,\\quad l\\equiv\\ell.",
+            "short_warning": null,
+            "correction_reason": "L'equazione generale darebbe mgℓ²/l come coefficiente se i simboli fossero due quantità indipendenti. Nel pendolo descritto esiste una sola lunghezza; l≡ℓ è la lettura fisica locale fissata anche per pagina 33. La formula mgℓsinθ_e già stampata è coerente, senza necessità di una seconda correzione o nota allo studente.",
+            "use_corrected_value_for_examples": false,
+            "use_corrected_value_for_simulation": false,
+            "resolved": true,
+            "source_references": [
+              "/analysis/result/didactic_plan/source_math/1",
+              "/analysis/result/didactic_plan/source_math/2"
+            ],
+            "context_pages_consulted": [
+              33
+            ],
+            "calculation_policy": "Un solo parametro positivo di lunghezza condiviso fra termine gravitazionale e inerziale. Usare direttamente la coppia mgℓsinθ_e con questa convenzione.",
+            "ui": {
+              "show": false,
+              "color": null,
+              "placement": null,
+              "when": null,
+              "student_text_field": "short_warning"
+            }
+          }
+        ],
+        "companion_overrides": [
+          {
+            "path": "/enrichments/0/proposal",
+            "value": "Equilibrio: x₂,e=0 e u_e=mgℓ sinθ_e, usando una sola lunghezza l≡ℓ; breve warning accanto alla prima condizione."
+          },
+          {
+            "path": "/enrichments/2/proposal",
+            "value": "Variare l'angolo e la coppia di equilibrio, verificando soltanto i residui della dinamica corretta."
+          },
+          {
+            "path": "/examples/0/purpose",
+            "value": "Verificare due coppie di equilibrio usando la condizione corretta x₂,e=0."
+          },
+          {
+            "path": "/examples/0/derivation",
+            "value": [
+              "Prima coppia: x_e¹=(0,0), u_e¹=0.",
+              "Seconda coppia: x_e²=(π/6,0), u_e²=4.905.",
+              "Per entrambe ẋ₁=0 e ẋ₂=0; la velocità di equilibrio è x₂,e=0."
+            ]
+          },
+          {
+            "path": "/examples/0/expected_outcome",
+            "value": "Due coppie annullano la dinamica; la traiettoria di trasferimento è un problema successivo."
+          },
+          {
+            "path": "/visualization/description",
+            "value": "Due configurazioni e coppie di equilibrio corrette, con il solo warning sintetico accanto a x₂,e=0."
+          },
+          {
+            "path": "/interactivity/rationale",
+            "value": "Mostrare come l'angolo scelto determina la coppia che annulla l'accelerazione con velocità nulla."
+          },
+          {
+            "path": "/interactivity/parameters/0/effect_on_change",
+            "value": "Aggiornare la prima configurazione, u_e¹=9.81sinθ_e¹ e i residui delle due equazioni dinamiche corrette, con x₂,e=0."
+          },
+          {
+            "path": "/interactivity/parameters/0/edge_cases",
+            "value": [
+              "θ_e¹=0: coppia di equilibrio nulla"
+            ]
+          },
+          {
+            "path": "/interactivity/outputs",
+            "value": [
+              "Due coppie corrette (x_e,u_e)",
+              "Residui della dinamica",
+              "Warning sintetico sulla prima condizione"
+            ]
+          },
+          {
+            "path": "/blueprint/0/focus",
+            "value": "Equilibri a velocità nulla, coppia di sostegno e breve warning sulla condizione corretta."
+          }
+        ],
+        "technical_only_legacy_paths": [
+          "/analysis/result/didactic_plan/examples/0/derivation/3",
+          "/analysis/result/didactic_plan/interactivity/parameters/0/effect_on_change",
+          "/analysis/result/didactic_plan/enrichments/0/proposal"
+        ],
+        "original_analysis_sha256": "30a317c235c4b3ee866ceae4f365daea0467c2423866d5b4ceda1e6fd8dcb0c7"
+      }
+    },
+    {
+      "physical_page": 35,
+      "pdf_label": "34",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0035",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0035/page_spec.json",
+      "spec_sha256": "15bc749c6fa8cffe11d96f6314cd8439a4c108839d0a918c8ebac9dd92682c96",
+      "title": "Pendulum (III) — curva desiderata a gradino",
+      "status": "analyzed",
+      "companionPageCount": 1,
+      "observations": 9,
+      "source_math_expressions": 2,
+      "examples": 1,
+      "interactivity_recommended": true,
+      "checks": {
+        "spec_exists": true,
+        "correct_physical_page": true,
+        "separate_page_spec": true,
+        "text_image_layout_inspected": true,
+        "neighbors_accounted_for": true,
+        "has_source_observations": true,
+        "has_source_scope_limits": true,
+        "has_prerequisite_or_is_cover": true,
+        "example_or_explicit_reason": true,
+        "all_enrichments_labelled": true,
+        "every_parameter_has_effect_and_limits": true,
+        "has_edge_cases": true,
+        "companion_count_consistent": true,
+        "mapping_is_proposal": true,
+        "result_archive_matches": true,
+        "inspection_matches_request": true,
+        "no_companion_implemented": true
+      },
+      "source_issues": []
+    },
+    {
+      "physical_page": 36,
+      "pdf_label": "35",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0036",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0036/page_spec.json",
+      "spec_sha256": "73c4855ab230d3e762f7fc94946ac9544d4fa82cc66132f260c259022f8572e4",
+      "title": "Pendulum (IV) — problema di controllo ottimo",
+      "status": "needs_review",
+      "companionPageCount": 1,
+      "observations": 7,
+      "source_math_expressions": 2,
+      "examples": 1,
+      "interactivity_recommended": true,
+      "checks": {
+        "spec_exists": true,
+        "correct_physical_page": true,
+        "separate_page_spec": true,
+        "text_image_layout_inspected": true,
+        "neighbors_accounted_for": true,
+        "has_source_observations": true,
+        "has_source_scope_limits": true,
+        "has_prerequisite_or_is_cover": true,
+        "example_or_explicit_reason": true,
+        "all_enrichments_labelled": true,
+        "every_parameter_has_effect_and_limits": true,
+        "has_edge_cases": true,
+        "companion_count_consistent": true,
+        "mapping_is_proposal": true,
+        "result_archive_matches": true,
+        "inspection_matches_request": true,
+        "no_companion_implemented": true
+      },
+      "source_issues": [
+        {
+          "description": "Il modello ripete i glifi l e ℓ; i calcoli esemplificativi assumono esplicitamente che rappresentino la stessa lunghezza. Nessuna uniformazione viene applicata alla trascrizione.",
+          "blocking": false,
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        }
+      ],
+      "spec_sha256_before_source_warning_review": "2a5d7d70dccc2f12a47e40c1fb4907fab9ba1eba1f176afc946cdc6a5f137c0c",
+      "source_warning": {
+        "policy_version": "1.0.0",
+        "scope": "companion_only",
+        "type": "NO_WARNING",
+        "review_status": "resolved",
+        "issues": [
+          {
+            "issue_id": "intro-p36-issue-1",
+            "source_issue_index": 0,
+            "issue": "Glifi della lunghezza nel modello finale",
+            "type": "NO_WARNING",
+            "source_expression": "g/l;\\qquad 1/(m\\ell^2).",
+            "corrected_expression": null,
+            "companion_uses": "Equazioni e costo della fonte conservati; l≡ℓ è un solo parametro di lunghezza.",
+            "short_warning": null,
+            "correction_reason": "La variazione tipografica è la stessa del modello di pagina 33 e non introduce un nuovo grado di libertà. La convenzione di lunghezza unica risolve la valutazione numerica senza un ulteriore avviso. Restano intatti i fattori di costo della fonte, inclusa l'assenza di 1/2.",
+            "use_corrected_value_for_examples": false,
+            "use_corrected_value_for_simulation": false,
+            "resolved": true,
+            "source_references": [
+              "/analysis/result/didactic_plan/source_math/0"
+            ],
+            "context_pages_consulted": [
+              33,
+              34
+            ],
+            "calculation_policy": "Usare la stessa lunghezza positiva nei due denominatori e nella coppia desiderata delle pagine 34–35. Nessun fattore 1/2 aggiunto al costo; nessun warning tipografico ridondante.",
+            "ui": {
+              "show": false,
+              "color": null,
+              "placement": null,
+              "when": null,
+              "student_text_field": "short_warning"
+            }
+          }
+        ],
+        "companion_overrides": [],
+        "technical_only_legacy_paths": [],
+        "original_analysis_sha256": "6323eebc6319b9cb9430516176cba4d58505aae85320156847d270c64c101110"
+      }
+    }
+  ],
+  "source_warning_review": {
+    "phase": "F03 — SOURCE WARNING POLICY",
+    "policy_version": "1.0.0",
+    "scope": "companion_only",
+    "source_pdf_immutable": true,
+    "original_analysis_immutable": true,
+    "immutable_file_count": 821,
+    "original_page_specs_checked": 137,
+    "untouched_page_specs_byte_identical": 126,
+    "reviewed_pages": [
+      14,
+      16,
+      17,
+      19,
+      22,
+      26,
+      30,
+      31,
+      33,
+      34,
+      36
+    ],
+    "reviewed_issue_count": 13,
+    "page_classification_rule": "Massima severità per pagina; le tre liste sono disgiunte.",
+    "PAGES_WITH_CORRECTION_WARNING": [
+      16,
+      30,
+      34
+    ],
+    "PAGES_WITH_INFO_WARNING": [
+      14,
+      17,
+      19,
+      22,
+      26
+    ],
+    "PAGES_WITH_NO_WARNING_AFTER_REVIEW": [
+      31,
+      33,
+      36
+    ],
+    "UNRESOLVED_ISSUES": 0,
+    "READY_FOR_COMPANION_DESIGN": "YES",
+    "corrected_formula_checks": [
+      {
+        "page": 16,
+        "check": "Espansione corretta uguale al prodotto matriciale",
+        "computed": 2.5,
+        "reference": 2.5,
+        "ok": true
+      },
+      {
+        "page": 16,
+        "check": "Espansione corretta uguale al prodotto matriciale",
+        "computed": 4.875,
+        "reference": 4.875,
+        "ok": true
+      },
+      {
+        "page": 16,
+        "check": "Espansione corretta uguale al prodotto matriciale",
+        "computed": 8.0,
+        "reference": 8.0,
+        "ok": true
+      },
+      {
+        "page": 16,
+        "check": "Esempio corretto W=diag(1,4), z=(1,1), zbar=0",
+        "computed": 2.5,
+        "reference": 2.5,
+        "ok": true
+      },
+      {
+        "page": 30,
+        "check": "T=1: ingressi 0…T−1 e quote 1…T",
+        "input_indices": [
+          0
+        ],
+        "state_indices": [
+          1
+        ],
+        "ok": true
+      },
+      {
+        "page": 30,
+        "check": "T=2: ingressi 0…T−1 e quote 1…T",
+        "input_indices": [
+          0,
+          1
+        ],
+        "state_indices": [
+          1,
+          2
+        ],
+        "ok": true
+      },
+      {
+        "page": 30,
+        "check": "T=5: ingressi 0…T−1 e quote 1…T",
+        "input_indices": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "state_indices": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "ok": true
+      },
+      {
+        "page": 34,
+        "check": "Equilibrio con x₂,e=0 e ue=mgℓ sinθe",
+        "angle": 0,
+        "torque": 0.0,
+        "dynamics_residuals": [
+          0.0,
+          0.0
+        ],
+        "ok": true
+      },
+      {
+        "page": 34,
+        "check": "Equilibrio con x₂,e=0 e ue=mgℓ sinθe",
+        "angle": 0.5235987755982988,
+        "torque": 4.904999999999999,
+        "dynamics_residuals": [
+          0.0,
+          0.0
+        ],
+        "ok": true
+      },
+      {
+        "page": 34,
+        "check": "Equilibrio con x₂,e=0 e ue=mgℓ sinθe",
+        "angle": -0.7853981633974483,
+        "torque": -6.9367175234400325,
+        "dynamics_residuals": [
+          0.0,
+          0.0
+        ],
+        "ok": true
+      }
+    ],
+    "issues": [
+      {
+        "page": 14,
+        "issue_id": "intro-p14-issue-1",
+        "source_issue_index": 0,
+        "issue": "Dimensione d/n",
+        "type": "INFO_WARNING",
+        "source_expression": "z\\in\\mathbb{R}^d,\\qquad\\ell(z):\\mathbb{R}^d\\to\\mathbb{R}; h_i:\\mathbb{R}^n\\to\\mathbb{R},\\quad g_j:\\mathbb{R}^n\\to\\mathbb{R}; Z=\\{z\\in\\mathbb{R}^n\\mid h(z)=0,\\ g(z)\\leq0\\}",
+        "corrected_expression": null,
+        "companion_uses": "z∈R^d; h_i,g_j:R^d→R; Z⊆R^d, con n≡d in questa definizione.",
+        "short_warning": "⚠ Nota: d e n indicano qui la stessa dimensione.",
+        "correction_reason": "Il vettore decisionale e il costo sono già dichiarati in R^d. La successiva formulazione a pagina 18 usa d in tutti i domini. Le due lettere possono indicare la stessa dimensione, senza implicare un diverso oggetto matematico: è sufficiente un chiarimento locale, non un allarme di formula sbagliata.",
+        "use_corrected_value_for_examples": false,
+        "use_corrected_value_for_simulation": false,
+        "resolved": true,
+        "source_references": [
+          "/analysis/result/didactic_plan/source_math/0",
+          "/analysis/result/didactic_plan/source_math/1",
+          "/analysis/result/didactic_plan/source_math/3"
+        ],
+        "context_pages_consulted": [
+          18
+        ],
+        "calculation_policy": "Un solo parametro di dimensione decisionale. Leggere n come alias locale di d nella pagina 14; non imporre un'uguaglianza globale fra n e d in tutto il corso.",
+        "ui": {
+          "show": true,
+          "color": "red",
+          "placement": "accanto alla definizione dei domini di h, g e Z",
+          "when": "solo quando è visibile la specifica spiegazione interessata; una sola nota locale",
+          "student_text_field": "short_warning"
+        }
+      },
+      {
+        "page": 16,
+        "issue_id": "intro-p16-issue-1",
+        "source_issue_index": 0,
+        "issue": "Secondo peso della forma quadratica",
+        "type": "CORRECTION_WARNING",
+        "source_expression": "\\ell(z)=\\frac12\\|z-\\bar z\\|_W^2=\\frac12w_1(z_1-\\bar z_1)^2+\\frac12w_1(z_2-\\bar z_2)^2",
+        "corrected_expression": "\\ell(z)=\\frac12\\|z-\\bar z\\|_W^2=\\frac12w_1(z_1-\\bar z_1)^2+\\frac12w_2(z_2-\\bar z_2)^2",
+        "companion_uses": "\\ell(z)=\\frac12\\|z-\\bar z\\|_W^2=\\frac12w_1(z_1-\\bar z_1)^2+\\frac12w_2(z_2-\\bar z_2)^2",
+        "short_warning": "⚠ Warning: possibile errore nella slide originale. Qui usiamo w₂ nel secondo termine invece di w₁.",
+        "correction_reason": "Ponendo e=z−z̄ e W=diag(w₁,w₂), il prodotto eᵀWe è w₁e₁²+w₂e₂². La seconda coordinata deve quindi avere coefficiente w₂. L'identità errata coincide accidentalmente solo in casi particolari, ad esempio pesi uguali o secondo scarto nullo. La correzione deriva dalla matrice e dalla definizione generale già presenti nella stessa pagina.",
+        "use_corrected_value_for_examples": true,
+        "use_corrected_value_for_simulation": true,
+        "resolved": true,
+        "source_references": [
+          "/analysis/result/didactic_plan/source_math/1",
+          "/analysis/result/didactic_plan/source_math/2",
+          "/analysis/result/didactic_plan/source_math/3"
+        ],
+        "context_pages_consulted": [],
+        "calculation_policy": "Usare esclusivamente il prodotto matriciale e la sua espansione con w₂ nel secondo termine per esempi, curve di livello, grafici, simulazioni e audit numerici. Vietato valutare il refuso anche come confronto didattico.",
+        "ui": {
+          "show": true,
+          "color": "red",
+          "placement": "accanto alla sola espansione del costo pesato",
+          "when": "solo quando è visibile la specifica spiegazione interessata; una sola nota locale",
+          "student_text_field": "short_warning"
+        }
+      },
+      {
+        "page": 17,
+        "issue_id": "intro-p17-issue-1",
+        "source_issue_index": 0,
+        "issue": "Figura qualitativa dell'insieme",
+        "type": "INFO_WARNING",
+        "source_expression": "az₁²+bz₂²−c≤0; disegno di un'ellisse inclinata e traslata.",
+        "corrected_expression": null,
+        "companion_uses": "az₁²+bz₂²−c≤0. Per a,b,c>0: ellisse centrata nell'origine, allineata agli assi.",
+        "short_warning": "⚠ Nota: la figura è qualitativa; il grafico segue la formula.",
+        "correction_reason": "La forma omogenea diagonale non contiene termini lineari o incrociati: nel caso positivo l'ellisse ha centro nell'origine e assi coordinati. La figura originale è uno schema qualitativo. Non si modifica la disequazione né si aggiungono parametri per farla assomigliare al disegno. Con coefficienti generali reali non si promette una geometria ellittica.",
+        "use_corrected_value_for_examples": false,
+        "use_corrected_value_for_simulation": false,
+        "resolved": true,
+        "source_references": [
+          "/analysis/result/didactic_plan/source_math/0",
+          "/analysis/result/observations/2"
+        ],
+        "context_pages_consulted": [],
+        "calculation_policy": "Calcolare il segno di az₁²+bz₂²−c sui punti. Rispettare i casi vuoto, degenere o illimitato; non traslare o ruotare il grafico per imitare la figura.",
+        "ui": {
+          "show": true,
+          "color": "red",
+          "placement": "accanto al grafico dell'insieme ammissibile",
+          "when": "solo quando è visibile la specifica spiegazione interessata; una sola nota locale",
+          "student_text_field": "short_warning"
+        }
+      },
+      {
+        "page": 17,
+        "issue_id": "intro-p17-issue-2",
+        "source_issue_index": 1,
+        "issue": "Nome dell'insieme X/Z",
+        "type": "NO_WARNING",
+        "source_expression": "Then, the constraints set X is; Z=\\{z\\in\\mathbb{R}^d\\mid z^\\top Qz+q^\\top z-c=0\\}",
+        "corrected_expression": null,
+        "companion_uses": "Z, come nella formula dell'insieme ammissibile.",
+        "short_warning": null,
+        "correction_reason": "X nella prosa e Z nell'equazione non introducono insiemi con proprietà diverse. Il simbolo della formula e del resto della lezione è sufficiente; un warning distrarrebbe dal confronto uguaglianza/disuguaglianza.",
+        "use_corrected_value_for_examples": false,
+        "use_corrected_value_for_simulation": false,
+        "resolved": true,
+        "source_references": [
+          "/analysis/result/observations/4",
+          "/analysis/result/didactic_plan/source_math/2"
+        ],
+        "context_pages_consulted": [],
+        "calculation_policy": "Usare Z per il nome dell'insieme senza cambiare il predicato o i punti ammissibili.",
+        "ui": {
+          "show": false,
+          "color": null,
+          "placement": null,
+          "when": null,
+          "student_text_field": "short_warning"
+        }
+      },
+      {
+        "page": 19,
+        "issue_id": "intro-p19-issue-1",
+        "source_issue_index": 0,
+        "issue": "Indice temporale della dinamica sviluppata",
+        "type": "INFO_WARNING",
+        "source_expression": "x_1=f(x_0,u_0)\\quad\\text{i.e.}\\quad f_t(x_0,u_0)-x_1=0; x_2=f(x_1,u_1)\\quad\\text{i.e.}\\quad f_t(x_1,u_1)-x_2=0; x_T=f(x_{T-1},u_{T-1})\\quad\\text{i.e.}\\quad f_t(x_{T-1},u_{T-1})-x_T=0",
+        "corrected_expression": null,
+        "companion_uses": "f_t(x_t,u_t)−x_{t+1}=0, t=0,…,T−1; righe f₀, f₁, …, f_{T−1}.",
+        "short_warning": "⚠ Nota: ogni transizione usa la propria mappa f_t.",
+        "correction_reason": "La formula generale in alto definisce già una famiglia f_t. Lo schema inferiore usa f e poi t come segnaposto nelle varie righe; non è necessario attribuirgli una legge dinamica diversa. La companion esplicita l'istante corretto in ciascuna transizione, usando la formula generale della stessa slide.",
+        "use_corrected_value_for_examples": false,
+        "use_corrected_value_for_simulation": false,
+        "resolved": true,
+        "source_references": [
+          "/analysis/result/didactic_plan/source_math/0",
+          "/analysis/result/didactic_plan/source_math/2",
+          "/analysis/result/didactic_plan/source_math/3",
+          "/analysis/result/didactic_plan/source_math/4"
+        ],
+        "context_pages_consulted": [],
+        "calculation_policy": "La riga t applica la propria f_t a x_t e u_t. In un esempio time-invariant tutte le f_t possono coincidere; non costringerle a coincidere nel caso generale.",
+        "ui": {
+          "show": true,
+          "color": "red",
+          "placement": "accanto allo sviluppo delle uguaglianze per t",
+          "when": "solo quando è visibile la specifica spiegazione interessata; una sola nota locale",
+          "student_text_field": "short_warning"
+        }
+      },
+      {
+        "page": 22,
+        "issue_id": "intro-p22-issue-1",
+        "source_issue_index": 0,
+        "issue": "Riferimento iniziale non elencato",
+        "type": "INFO_WARNING",
+        "source_expression": "Costo con somma da t=0; x_t^{des} elencato per t=1,…,T; x₀=x⁰.",
+        "corrected_expression": null,
+        "companion_uses": "x_0^{\\mathrm{des}}=x^0 come default esplicito degli esempi; il costo mantiene t=0.",
+        "short_warning": "⚠ Nota: negli esempi il riferimento iniziale coincide con x⁰.",
+        "correction_reason": "Il primo addendo richiede un riferimento anche a t=0, ma la lista testuale parte da 1. Quando x₀ è fissato, quel termine è costante rispetto alle decisioni: non modifica gli argmin, ma incide sul valore assoluto del costo. Per evitare un valore non definito, gli esempi assegnano esplicitamente il riferimento iniziale al dato x⁰. Questa è una convenzione dichiarata della companion, non una formula attribuita alla fonte.",
+        "use_corrected_value_for_examples": false,
+        "use_corrected_value_for_simulation": false,
+        "resolved": true,
+        "source_references": [
+          "/analysis/result/didactic_plan/source_math/0",
+          "/analysis/result/didactic_plan/source_math/4",
+          "/analysis/result/observations/4"
+        ],
+        "context_pages_consulted": [],
+        "calculation_policy": "Assegnare x₀^{des}=x⁰ prima di valutare il costo. Se cambia il dato iniziale, aggiornare il riferimento iniziale secondo questo default. Non eliminare la riga t=0 né introdurre valori impliciti.",
+        "ui": {
+          "show": true,
+          "color": "red",
+          "placement": "accanto alla definizione del riferimento iniziale",
+          "when": "solo quando è visibile la specifica spiegazione interessata; una sola nota locale",
+          "student_text_field": "short_warning"
+        }
+      },
+      {
+        "page": 26,
+        "issue_id": "intro-p26-issue-1",
+        "source_issue_index": 0,
+        "issue": "Ambito planare rispetto alla frase 3D",
+        "type": "INFO_WARNING",
+        "source_expression": "Consider a planar drone model; given time law in the 3D space.",
+        "corrected_expression": null,
+        "companion_uses": "Moto nel piano (p_x,p_y), con θ; uscita y_t=(p_{x,t},p_{y,t}). Nessuna terza coordinata.",
+        "short_warning": "⚠ Nota: il modello usato qui è planare, in due dimensioni.",
+        "correction_reason": "Titolo del modello, due accelerazioni traslazionali e uscita a due componenti identificano un esempio planare. La frase 3D può descrivere un obiettivo più generale, ma non assegna un modello spaziale completo. Non occorre dichiarare errate le equazioni: basta delimitare il modello effettivamente utilizzato.",
+        "use_corrected_value_for_examples": false,
+        "use_corrected_value_for_simulation": false,
+        "resolved": true,
+        "source_references": [
+          "/analysis/result/observations/0",
+          "/analysis/result/observations/4",
+          "/analysis/result/didactic_plan/source_math/3"
+        ],
+        "context_pages_consulted": [
+          27
+        ],
+        "calculation_policy": "Usare le tre equazioni planari invariate. Per un'eventuale rappresentazione ambientale tridimensionale, non aggiungere dinamica fuori piano; l'esempio calcolato rimane 2D.",
+        "ui": {
+          "show": true,
+          "color": "red",
+          "placement": "accanto alla descrizione dell'ambito del modello",
+          "when": "solo quando è visibile la specifica spiegazione interessata; una sola nota locale",
+          "student_text_field": "short_warning"
+        }
+      },
+      {
+        "page": 30,
+        "issue_id": "intro-p30-issue-1",
+        "source_issue_index": 0,
+        "issue": "Indici distinti per ingressi e stati previsti",
+        "type": "CORRECTION_WARNING",
+        "source_expression": "g(\\mathbf{x},\\mathbf{u})\\leq0,\\quad t=1,\\ldots,T\\ \\text{nella prosa}; u_t^{\\min}\\leq u_t\\leq u_t^{\\max}",
+        "corrected_expression": "u_t^{\\min}\\leq u_t\\leq u_t^{\\max},\\quad t=0,\\ldots,T-1;\\qquad p_{y,t}^{\\min}\\leq p_{y,t}\\leq p_{y,t}^{\\max},\\quad t=1,\\ldots,T",
+        "companion_uses": "u_t^{\\min}\\leq u_t\\leq u_t^{\\max},\\quad t=0,\\ldots,T-1;\\qquad p_{y,t}^{\\min}\\leq p_{y,t}\\leq p_{y,t}^{\\max},\\quad t=1,\\ldots,T",
+        "short_warning": "⚠ Warning: possibile errore nella slide originale. Gli ingressi usano t=0,…,T−1; le quote t=1,…,T.",
+        "correction_reason": "Lo stack a pagina 10 è col(u₀,…,u_{T−1}) e la dinamica ha T transizioni. Applicare alle saturazioni l'intervallo 1,…,T ometterebbe u₀ e richiederebbe un inesistente u_T. La companion corregge il dominio degli ingressi a 0,…,T−1 e conserva 1,…,T per le quote degli stati previsti, come nel caso illustrato. Il limite su x_T si impone esplicitamente come vincolo di stato terminale, distinto dai path di stadio del problema generale; non si crea un ingresso terminale.",
+        "use_corrected_value_for_examples": true,
+        "use_corrected_value_for_simulation": true,
+        "resolved": true,
+        "source_references": [
+          "/analysis/result/didactic_plan/source_math/0",
+          "/analysis/result/didactic_plan/source_math/1",
+          "/analysis/result/didactic_plan/source_math/2"
+        ],
+        "context_pages_consulted": [
+          10,
+          21,
+          23,
+          27
+        ],
+        "calculation_policy": "T ingressi indicizzati 0…T−1 e T stati previsti indicizzati 1…T. Applicare i limiti agli array corrispondenti, incluso il primo ingresso e lo stato finale. Il dato x₀ resta separato dai limiti di quota previsti di questo esempio.",
+        "ui": {
+          "show": true,
+          "color": "red",
+          "placement": "accanto agli intervalli temporali delle saturazioni e dei limiti di quota",
+          "when": "solo quando è visibile la specifica spiegazione interessata; una sola nota locale",
+          "student_text_field": "short_warning"
+        }
+      },
+      {
+        "page": 31,
+        "issue_id": "intro-p31-issue-1",
+        "source_issue_index": 0,
+        "issue": "Parentesi tipografiche ridondanti",
+        "type": "NO_WARNING",
+        "source_expression": "\\min_{(x(\\cdot),u(\\cdot))\\in\\mathcal F}\\ \\int_0^T\\ell_\\tau(x(\\tau),u(\\tau))\\,d\\tau+\\ell_T(x(T))); \\mathcal T=\\{(x(\\cdot),u(\\cdot)))\\in\\mathcal F\\mid\\dot x(t)=f_t(x(t),u(t)),\\ t\\in[0,T]\\}",
+        "corrected_expression": null,
+        "companion_uses": "\\ell:\\mathcal F\\to\\mathbb R,\\qquad\\ell(x(\\cdot),u(\\cdot))=\\int_0^T\\ell_\\tau(x(\\tau),u(\\tau))\\,d\\tau+\\ell_T(x(T)); coppia (x(·),u(·)) con delimitatori bilanciati.",
+        "short_warning": null,
+        "correction_reason": "Il funzionale è riscritto correttamente nella stessa pagina. Le parentesi eccedenti non aggiungono termini né cambiano l'insieme dinamico. Una composizione tipografica bilanciata della companion mantiene simboli e contenuto; un warning allo studente non migliorerebbe la comprensione.",
+        "use_corrected_value_for_examples": false,
+        "use_corrected_value_for_simulation": false,
+        "resolved": true,
+        "source_references": [
+          "/analysis/result/didactic_plan/source_math/0",
+          "/analysis/result/didactic_plan/source_math/2",
+          "/analysis/result/didactic_plan/source_math/3"
+        ],
+        "context_pages_consulted": [],
+        "calculation_policy": "Usare il funzionale già bilanciato presente nella fonte e mantenere invariati integrale, termine terminale e domini temporali. Nessun valore numerico dipende dalle parentesi superflue.",
+        "ui": {
+          "show": false,
+          "color": null,
+          "placement": null,
+          "when": null,
+          "student_text_field": "short_warning"
+        }
+      },
+      {
+        "page": 33,
+        "issue_id": "intro-p33-issue-1",
+        "source_issue_index": 0,
+        "issue": "Varianti tipografiche di lunghezza e massa",
+        "type": "NO_WARNING",
+        "source_expression": "g/l;\\quad 1/(m\\ell^2);\\quad Mg nel disegno.",
+        "corrected_expression": null,
+        "companion_uses": "Notazione del modello conservata; l≡ℓ è una sola lunghezza, m≡M una sola massa nel pendolo.",
+        "short_warning": null,
+        "correction_reason": "Il modello descrive un pendolo con una lunghezza e una massa; non definisce due lunghezze o due masse indipendenti. l/ℓ e m/M sono letti come varianti locali della stessa quantità fisica. Questa interpretazione concorda con la relazione di equilibrio a pagina 34. Non è utile un warning per ogni glifo.",
+        "use_corrected_value_for_examples": false,
+        "use_corrected_value_for_simulation": false,
+        "resolved": true,
+        "source_references": [
+          "/analysis/result/didactic_plan/source_math/0",
+          "/analysis/result/observations/3"
+        ],
+        "context_pages_consulted": [
+          34
+        ],
+        "calculation_policy": "Collegare l e ℓ al medesimo parametro positivo di lunghezza; M e m alla medesima massa positiva. Non esporre quattro parametri indipendenti. Mantenere questa convenzione nelle pagine 33–36, senza riscrivere le equazioni source_literal.",
+        "ui": {
+          "show": false,
+          "color": null,
+          "placement": null,
+          "when": null,
+          "student_text_field": "short_warning"
+        }
+      },
+      {
+        "page": 34,
+        "issue_id": "intro-p34-issue-1",
+        "source_issue_index": 0,
+        "issue": "Componente nulla all'equilibrio",
+        "type": "CORRECTION_WARNING",
+        "source_expression": "0=x_{1,e}",
+        "corrected_expression": "0=x_{2,e}",
+        "companion_uses": "0=x_{2,e};\\qquad u_e=mg\\ell\\sin x_{1,e}\\quad(l\\equiv\\ell).",
+        "short_warning": "⚠ Warning: possibile errore nella slide originale. La condizione di equilibrio corretta è x₂,e=0.",
+        "correction_reason": "Dalla dinamica ẋ₁=x₂ della pagina 33, un equilibrio impone x₂,e=0. La prima componente x₁,e è invece l'angolo scelto e può essere non nulla; la stessa pagina mostra x_e=col(θ_e,0). La coppia si verifica annullando entrambe le derivate con u_e=mgℓsinθ_e, identificando i due glifi della lunghezza. Imporre x₁,e=0 eliminerebbe impropriamente gli equilibri inclinati.",
+        "use_corrected_value_for_examples": true,
+        "use_corrected_value_for_simulation": true,
+        "resolved": true,
+        "source_references": [
+          "/analysis/result/didactic_plan/source_math/0",
+          "/analysis/result/didactic_plan/source_math/2"
+        ],
+        "context_pages_consulted": [
+          33
+        ],
+        "calculation_policy": "Per ogni angolo selezionato usare x_e=col(θ_e,0), u_e=mgℓsinθ_e e residui della dinamica corretta. Non imporre né valutare x₁,e=0 come condizione di equilibrio. Non generare un residuo numerico del refuso per confronto.",
+        "ui": {
+          "show": true,
+          "color": "red",
+          "placement": "accanto alla prima condizione di equilibrio",
+          "when": "solo quando è visibile la specifica spiegazione interessata; una sola nota locale",
+          "student_text_field": "short_warning"
+        }
+      },
+      {
+        "page": 34,
+        "issue_id": "intro-p34-issue-2",
+        "source_issue_index": 1,
+        "issue": "Lunghezza nella coppia di equilibrio",
+        "type": "NO_WARNING",
+        "source_expression": "0=-\\frac{g}{l}\\sin x_{1,e}+\\frac{1}{m\\ell^2}u_e; x_e^1=\\begin{bmatrix}\\theta_e^1\\\\0\\end{bmatrix},\\qquad u_e^1=mg\\ell\\sin\\theta_e^1",
+        "corrected_expression": null,
+        "companion_uses": "u_e=mg\\ell\\sin\\theta_e,\\quad l\\equiv\\ell.",
+        "short_warning": null,
+        "correction_reason": "L'equazione generale darebbe mgℓ²/l come coefficiente se i simboli fossero due quantità indipendenti. Nel pendolo descritto esiste una sola lunghezza; l≡ℓ è la lettura fisica locale fissata anche per pagina 33. La formula mgℓsinθ_e già stampata è coerente, senza necessità di una seconda correzione o nota allo studente.",
+        "use_corrected_value_for_examples": false,
+        "use_corrected_value_for_simulation": false,
+        "resolved": true,
+        "source_references": [
+          "/analysis/result/didactic_plan/source_math/1",
+          "/analysis/result/didactic_plan/source_math/2"
+        ],
+        "context_pages_consulted": [
+          33
+        ],
+        "calculation_policy": "Un solo parametro positivo di lunghezza condiviso fra termine gravitazionale e inerziale. Usare direttamente la coppia mgℓsinθ_e con questa convenzione.",
+        "ui": {
+          "show": false,
+          "color": null,
+          "placement": null,
+          "when": null,
+          "student_text_field": "short_warning"
+        }
+      },
+      {
+        "page": 36,
+        "issue_id": "intro-p36-issue-1",
+        "source_issue_index": 0,
+        "issue": "Glifi della lunghezza nel modello finale",
+        "type": "NO_WARNING",
+        "source_expression": "g/l;\\qquad 1/(m\\ell^2).",
+        "corrected_expression": null,
+        "companion_uses": "Equazioni e costo della fonte conservati; l≡ℓ è un solo parametro di lunghezza.",
+        "short_warning": null,
+        "correction_reason": "La variazione tipografica è la stessa del modello di pagina 33 e non introduce un nuovo grado di libertà. La convenzione di lunghezza unica risolve la valutazione numerica senza un ulteriore avviso. Restano intatti i fattori di costo della fonte, inclusa l'assenza di 1/2.",
+        "use_corrected_value_for_examples": false,
+        "use_corrected_value_for_simulation": false,
+        "resolved": true,
+        "source_references": [
+          "/analysis/result/didactic_plan/source_math/0"
+        ],
+        "context_pages_consulted": [
+          33,
+          34
+        ],
+        "calculation_policy": "Usare la stessa lunghezza positiva nei due denominatori e nella coppia desiderata delle pagine 34–35. Nessun fattore 1/2 aggiunto al costo; nessun warning tipografico ridondante.",
+        "ui": {
+          "show": false,
+          "color": null,
+          "placement": null,
+          "when": null,
+          "student_text_field": "short_warning"
+        }
+      }
+    ],
+    "errors": [],
+    "historical_analysis_baseline": "reviews/introduction_source_warning_baseline.json",
+    "design_input_rule": "Usare effective_companion_plan e le espressioni companion della policy. Il PDF e analysis.result restano sorgenti/analisi storiche immutabili.",
+    "legacy_numeric_checks_retired": [
+      {
+        "page": 16,
+        "check": "Costo matriciale e riga letterale con refuso",
+        "reason": "Non ricalcolare valori dal refuso. Il dato precedente resta soltanto nell'archivio della prima analisi."
+      }
+    ]
+  },
+  "PAGES_WITH_CORRECTION_WARNING": [
+    16,
+    30,
+    34
+  ],
+  "PAGES_WITH_INFO_WARNING": [
+    14,
+    17,
+    19,
+    22,
+    26
+  ],
+  "PAGES_WITH_NO_WARNING_AFTER_REVIEW": [
+    31,
+    33,
+    36
+  ],
+  "UNRESOLVED_ISSUES": 0,
+  "READY_FOR_COMPANION_DESIGN": "YES",
+  "ready_for_companion_design": true,
+  "unresolved_source_issues_after_warning_review": 0,
+  "original_source_review_flags_are_historical": true
+}

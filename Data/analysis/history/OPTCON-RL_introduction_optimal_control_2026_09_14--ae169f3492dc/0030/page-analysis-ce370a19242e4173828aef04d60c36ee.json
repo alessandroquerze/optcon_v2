@@ -1,0 +1,822 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0030",
+  "document_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc",
+  "source": {
+    "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+    "page_index": 29,
+    "physical_page_number": 30,
+    "pdf_label_raw": "<FEFF00320039>",
+    "pdf_label": "29",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Example: path constraints",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      164.1575927734375,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 29,
+        "total": 35,
+        "raw": "29 |35",
+        "bbox": [
+          126.9540023803711,
+          247.92860412597656,
+          447.8712158203125,
+          258.29376220703125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0030/text.txt",
+      "sha256": "3e804b077090ad5f0809147ece356f99d95b2303975b91b38e546a759793a33c"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0030/text.reading-order.txt",
+      "sha256": "733403cfb4c0e9edb0ae9a29810e6a1437c86314aa2324e60a5f6656936fb7c7"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0030/layout.json",
+      "sha256": "526feeff414b05a5a680f64048ab6f5116120a1f6537b016d94083c8830f14f1"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0030/render.png",
+      "sha256": "8611b5a75267d759a0747cc90a5315391f1175af194333983a317b1971a2919c",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "4b750d910bb336205ce7eacae74f4e5f29058e79ab96ca2b77728b69b74b3e7e"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0029",
+    "next_page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0031"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "needs_review",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "57c44ce965bd74aaf47f2233ffb5ecda28365628ecb332ae1119c16537648b16",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0030",
+      "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+      "artifact_sha256": {
+        "text": "3e804b077090ad5f0809147ece356f99d95b2303975b91b38e546a759793a33c",
+        "layout": "526feeff414b05a5a680f64048ab6f5116120a1f6537b016d94083c8830f14f1",
+        "render": "8611b5a75267d759a0747cc90a5315391f1175af194333983a317b1971a2919c"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "Codex (identificatore esatto del modello non esposto nella sessione)",
+        "run_id": "page-analysis-2301ef8b90c348bcb8f85cd70d1cd3eb"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0030",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0029",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0031"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0030",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0029",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0031"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0030",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0029",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0031"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Example: path constraints — saturazioni e limiti di quota",
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "La fonte non fornisce numeri per i limiti.",
+          "Il range temporale 1,…,T scritto nella prosa non coincide con 0,…,T−1 usato prima per gli ingressi; non inventare u_T.",
+          "Un semplice limite su p_y non rappresenta tutte le possibili collisioni o la geometria completa del drone."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Path constraints",
+            "why": "Definiti alla pagina 21.",
+            "origin": "source_context",
+            "page_numbers": [
+              21
+            ]
+          },
+          {
+            "concept": "Ordine dello stato del drone",
+            "why": "Per verificare p_y=x₃.",
+            "origin": "source_context",
+            "page_numbers": [
+              27
+            ]
+          },
+          {
+            "concept": "Penalità di costo",
+            "why": "Serve a distinguerle da limiti hard.",
+            "origin": "source_context",
+            "page_numbers": [
+              29
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "g(\\mathbf{x},\\mathbf{u})\\leq0,\\quad t=1,\\ldots,T\\ \\text{nella prosa}",
+            "anchor": "each time t = 1, . . . , T.",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          },
+          {
+            "latex": "u_t^{\\min}\\leq u_t\\leq u_t^{\\max}",
+            "anchor": "Saturation of the inputs",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          },
+          {
+            "latex": "p_{y,t}^{\\min}\\leq p_{y,t}\\leq p_{y,t}^{\\max}\\qquad(p_{y,t}^{\\min}\\leq x_{3,t}\\leq p_{y,t}^{\\max})",
+            "anchor": "pmin",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "example-1",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "Enrichment a un istante di stato t valido: p_y^{min}=1,p_y^{max}=3; confrontare p_y=2 con p_y=3.2.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Spostare stato e limiti chiarisce inclusione del bordo, violazione e vincoli incompatibili senza una simulazione dinamica.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Verificare la soddisfazione di un limite di quota.",
+            "setup": "Enrichment a un istante di stato t valido: p_y^{min}=1,p_y^{max}=3; confrontare p_y=2 con p_y=3.2.",
+            "parameters": [
+              {
+                "symbol": "p_y^{min},p_y^{max}",
+                "value": "1,3"
+              },
+              {
+                "symbol": "p_y candidati",
+                "value": "2 e 3.2"
+              }
+            ],
+            "derivation": [
+              "p_y=2 è compreso fra i limiti.",
+              "p_y=3.2 viola il limite superiore di 0.2.",
+              "Il bordo p_y=3 è ammissibile perché ≤ è non stretta."
+            ],
+            "expected_outcome": "Una penalità piccola di quota non può rendere ammissibile un punto fuori dal limite imposto.",
+            "limitations": [
+              "Limiti e valori sono enrichment.",
+              "Verifica puntuale, non certificazione di una traiettoria o di assenza di collisioni."
+            ],
+            "enrichment_id": "example-1",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "DroneAltitudeBandConstraintPlot",
+          "description": "Banda verticale ammissibile, centro di massa e valori min/max; l'interpretazione dell'ingombro del corpo rimane distinta.",
+          "origin": "source_derived",
+          "source_observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Spostare stato e limiti chiarisce inclusione del bordo, violazione e vincoli incompatibili senza una simulazione dinamica.",
+          "component": "AltitudeConstraintInspector",
+          "parameters": [
+            {
+              "name": "Limite inferiore",
+              "symbol": "p_y^{min}",
+              "origin": "source",
+              "range": "[0,4]",
+              "default": "1",
+              "effect_on_change": "Muovere il bordo inferiore, ricalcolare appartenenza e violazione; se supera il massimo, mostrare banda vuota.",
+              "edge_cases": [
+                "min>max: infeasible"
+              ]
+            },
+            {
+              "name": "Limite superiore",
+              "symbol": "p_y^{max}",
+              "origin": "source",
+              "range": "[0,4]",
+              "default": "3",
+              "effect_on_change": "Muovere il bordo superiore e aggiornare lo stato di ammissibilità.",
+              "edge_cases": [
+                "min=max: singola quota ammessa"
+              ]
+            },
+            {
+              "name": "Quota candidata",
+              "symbol": "p_y",
+              "origin": "source",
+              "range": "[0,4]",
+              "default": "2",
+              "effect_on_change": "Spostare il centro di massa e aggiornare i residui min−p_y e p_y−max.",
+              "edge_cases": [
+                "Quota sul bordo ammessa"
+              ]
+            }
+          ],
+          "outputs": [
+            "Banda e punto candidato",
+            "Residui di entrambi i limiti",
+            "Indicatore di ammissibilità puntuale"
+          ],
+          "invariants": [
+            "Un solo istante t di stato",
+            "p_y=x₃",
+            "Nessun u_T aggiunto",
+            "Nessuna integrazione del drone",
+            "Range/default sono enrichment"
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "min=max",
+            "expected_behavior": "Il centro di massa deve coincidere con la quota unica.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "case": "min>max",
+            "expected_behavior": "Insieme ammissibile vuoto.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "case": "Vincoli soddisfatti ai campioni",
+            "expected_behavior": "Non dichiarare sicurezza fra campioni senza un controllo ulteriore, non trattato dalla fonte.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "case": "Centro di massa entro limiti",
+            "expected_behavior": "Non certifica che tutto l'ingombro del drone sia lontano dagli ostacoli.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          }
+        ],
+        "expansion_rationale": "Due esempi di box constraints e una banda di quota sono una stessa unità; l'indice ambiguo è una nota da risolvere, non un motivo di espansione.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "I vincoli hard limitano direttamente ingressi e quota, con indici temporali da revisionare.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ],
+            "enrichment_ids": [
+              "example-1",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "observations": [
+        {
+          "id": "s01",
+          "category": "definition",
+          "description": "La prosa descrive g(𝐱,𝐮)≤0 come restrizioni da imporre a ogni tempo t=1,…,T.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0030",
+            "modality": "both",
+            "text_quote": "each time t = 1, . . . , T.",
+            "bbox": [
+              28.346023559570312,
+              45.598480224609375,
+              261.77032470703125,
+              88.82339477539062
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s02",
+          "category": "equation",
+          "description": "L'esempio di saturazione è u_t^{min}≤u_t≤u_t^{max}.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0030",
+            "modality": "both",
+            "text_quote": "Saturation of the inputs",
+            "bbox": [
+              40.102027893066406,
+              60.18327713012695,
+              261.77032470703125,
+              88.82339477539062
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s03",
+          "category": "equation",
+          "description": "Nel drone è proposto p_{y,t}^{min}≤p_{y,t}≤p_{y,t}^{max}, equivalente a p_{y,t}^{min}≤x_{3,t}≤p_{y,t}^{max}.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0030",
+            "modality": "both",
+            "text_quote": "pmin",
+            "bbox": [
+              145,
+              119,
+              328,
+              143
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s04",
+          "category": "diagram",
+          "description": "Il disegno del drone e della curva desiderata è racchiuso fra due linee rosse orizzontali etichettate p_{y,t}^{max} e p_{y,t}^{min}.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0030",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              104,
+              151,
+              338,
+              225
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-05",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Example: path constraints",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0030",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              10.35200023651123,
+              6.720991134643555,
+              164.1575927734375,
+              21.06719207763672
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-06",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: • State limitations, e.g. due to obstacles or limitation in the states. In the drone example, we may\nneed to ensure",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0030",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              40.10200500488281,
+              98.9432601928711,
+              422.7818603515625,
+              118.98486328125
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-07",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 29 |35",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0030",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              126.9540023803711,
+              247.92860412597656,
+              447.8712158203125,
+              255.1179962158203
+            ]
+          },
+          "confidence": 0.98
+        }
+      ],
+      "contextual_role": "Distingue il contenimento esplicito di ingressi e stato dalle penalità quadratiche della pagina precedente.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0029",
+          "role": "previous",
+          "note": "La pagina 29 può scoraggiare valori elevati ma non impone i limiti di questa pagina."
+        },
+        {
+          "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0031",
+          "role": "next",
+          "note": "La pagina 31 passa al controllo ottimo continuo e introduce un funzionale su uno spazio di funzioni."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "u_t^{\\min},u_t^{\\max}",
+          "meaning": "Limiti inferiori e superiori degli ingressi, anche tempo-dipendenti",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        {
+          "symbol": "p_{y,t}^{\\min},p_{y,t}^{\\max}",
+          "meaning": "Limiti verticali",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        {
+          "symbol": "x_{3,t}",
+          "meaning": "Coordinata p_y nell'ordine dello stato della pagina 27",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        {
+          "symbol": "g(\\mathbf{x},\\mathbf{u})",
+          "meaning": "Notazione compatta usata nella prosa della pagina",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        }
+      ],
+      "uncertainties": [
+        {
+          "description": "Discrepanza di indicizzazione: la prosa usa t=1,…,T anche per le saturazioni, mentre gli ingressi sono definiti u₀,…,u_{T−1}. Occorre una decisione editoriale prima di implementare vincoli sull'intera sequenza; nessun u_T viene creato nell'analisi.",
+          "blocking": true,
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        }
+      ],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ],
+        "rationale": "Pagina con contenuto autonomo nella sequenza; nessun candidato automatico da confermare."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              10.35200023651123,
+              6.720991134643555,
+              164.1575927734375,
+              21.06719207763672
+            ],
+            "description": "Regione testuale sorgente: Example: path constraints",
+            "observation_ids": [
+              "transcription-05"
+            ]
+          },
+          {
+            "bbox": [
+              28.34600067138672,
+              34.52327346801758,
+              425.2117614746094,
+              54.56488037109375
+            ],
+            "description": "Regione testuale sorgente: As for the (inequality) path constraints g(x, u) ≤0, they represent restriction we want to (must) enforce\nat each time t = 1, . . . , T. For example:",
+            "observation_ids": [
+              "s01"
+            ]
+          },
+          {
+            "bbox": [
+              40.102027893066406,
+              60.18327713012695,
+              142.43829345703125,
+              69.26588439941406
+            ],
+            "description": "Regione testuale sorgente: • Saturation of the inputs",
+            "observation_ids": [
+              "s01",
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              202.468017578125,
+              76.96080017089844,
+              219.89358520507812,
+              87.70988464355469
+            ],
+            "description": "Regione testuale sorgente: umin",
+            "observation_ids": [
+              "s01",
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              207.77101135253906,
+              76.96078491210938,
+              272.39849853515625,
+              88.82339477539062
+            ],
+            "description": "Regione testuale sorgente: t\n≤ut ≤umax",
+            "observation_ids": [
+              "s01",
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              258.91900634765625,
+              82.84577941894531,
+              261.77032470703125,
+              88.82337951660156
+            ],
+            "description": "Regione testuale sorgente: t",
+            "observation_ids": [
+              "s01",
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              40.10200500488281,
+              98.9432601928711,
+              422.7818603515625,
+              118.98486328125
+            ],
+            "description": "Regione testuale sorgente: • State limitations, e.g. due to obstacles or limitation in the states. In the drone example, we may\nneed to ensure",
+            "observation_ids": [
+              "transcription-06"
+            ]
+          },
+          {
+            "bbox": [
+              150.09201049804688,
+              126.67979431152344,
+              166.84059143066406,
+              137.42886352539062
+            ],
+            "description": "Regione testuale sorgente: pmin",
+            "observation_ids": [
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              154.718017578125,
+              126.67979431152344,
+              224.26051330566406,
+              138.88966369628906
+            ],
+            "description": "Regione testuale sorgente: y,t ≤py,t ≤pmax",
+            "observation_ids": [
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              210.78102111816406,
+              126.67979431152344,
+              263.51959228515625,
+              138.54139709472656
+            ],
+            "description": "Regione testuale sorgente: y,t\n(pmin",
+            "observation_ids": [
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              251.39700317382812,
+              126.67979431152344,
+              321.1894836425781,
+              138.88966369628906
+            ],
+            "description": "Regione testuale sorgente: y,t ≤x3,t ≤pmax",
+            "observation_ids": [
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              307.7099914550781,
+              128.46246337890625,
+              325.27154541015625,
+              139.00587463378906
+            ],
+            "description": "Regione testuale sorgente: y,t )",
+            "observation_ids": [
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              256.2149963378906,
+              164.91879272460938,
+              273.9927062988281,
+              174.20751953125
+            ],
+            "description": "Regione testuale sorgente: (pdes",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              263.77099609375,
+              164.91879272460938,
+              292.7397155761719,
+              175.702392578125
+            ],
+            "description": "Regione testuale sorgente: x\n, pdes",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              282.51800537109375,
+              166.2374267578125,
+              296.5306701660156,
+              175.702392578125
+            ],
+            "description": "Regione testuale sorgente: y\n)",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              309.77398681640625,
+              157.9067840576172,
+              327.5164794921875,
+              167.1955108642578
+            ],
+            "description": "Regione testuale sorgente: pmax",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              314.0369873046875,
+              163.0177764892578,
+              323.1588134765625,
+              168.99537658691406
+            ],
+            "description": "Regione testuale sorgente: y,t",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              310.4519958496094,
+              205.59979248046875,
+              326.8375549316406,
+              214.88851928710938
+            ],
+            "description": "Regione testuale sorgente: pmin",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              314.7149963378906,
+              210.7117919921875,
+              323.8367919921875,
+              216.68939208984375
+            ],
+            "description": "Regione testuale sorgente: y,t",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              126.9540023803711,
+              247.92860412597656,
+              447.8712158203125,
+              255.1179962158203
+            ],
+            "description": "Regione testuale sorgente: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 29 |35",
+            "observation_ids": [
+              "transcription-07"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Due esempi di box constraints e una banda di quota sono una stessa unità; l'indice ambiguo è una nota da risolvere, non un motivo di espansione.",
+        "subpages": []
+      }
+    }
+  }
+}

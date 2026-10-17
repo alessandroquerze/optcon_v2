@@ -1,0 +1,38 @@
+Continuous-time control systems
+Consider the continuous-time, t ∈R, (time-varying) system
+˙x(t) = f(x(t), u(t), t),
+x(0) = x0
+state equation
+y(t) = h(x(t), u(t), t)
+output equation
+• x(t) ∈Rn state of the system at time t
+• u(t) ∈Rm input of the system at time t
+• y(t) ∈Rp output of the system at time t
+x(t) =
+
+
+x1(t)
+...
+xn(t)
+
+
+u(t) =
+
+
+u1(t)
+...
+um(t)
+
+
+y(t) =
+
+
+y1(t)
+...
+yp(t)
+
+
+Remark In applications, we will mainly work with time-invariant systems, ˙x(t) = f(x(t), u(t)), even
+though time-varying ones may be considered.
+□
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 7 |35

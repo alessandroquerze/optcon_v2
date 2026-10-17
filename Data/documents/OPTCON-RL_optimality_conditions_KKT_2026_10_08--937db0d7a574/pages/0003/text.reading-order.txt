@@ -1,0 +1,17 @@
+System trajectories (Refresh)
+
+
+   We recall the definition of trajectory of a (possibly) nonlinear, discrete-time control system.
+
+     Definition A pair (¯x, ¯u) ∈RnT × RmT  is called a trajectory of system (1) if ¯xt+1 = ft(¯xt, ¯ut) for all
+     t ∈0, . . . , T −1. In particular, ¯x is the state trajectory, while ¯u is the input trajectory.        □
+
+    Remark It will be sometimes useful to refer to a generic pair (α, µ) ∈RnT ×RmT with α := col(α1, . . . , αT )
+    and µ := col(µ0, . . . , µT −1) as a state-input curve. Notice that a curve (α, µ) is not necessarily a tra-
+     jectory, i.e., it does not necessarily satisfy the dynamics (1).                       □
+
+
+
+
+
+                                   Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Optimality Conditions for Optimal Control 2 |18

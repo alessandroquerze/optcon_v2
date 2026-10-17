@@ -1,0 +1,19 @@
+Remarks on notation: gradient of a vector-valued function
+
+
+    Gradient of a (vector-valued) function
+    For a vector field r : Rd →Rm, the gradient is denoted as
+
+                            ∇r(z) = ∇r1(z)    · · ·  ∇rm(z)
+                             ∂r1(z)    · · ·   ∂rm(z) 
+                                                 ∂z1            ∂z1
+                                                                                                                                                                                                                           ...      ...                                                                                                                                                                                                                                                                                             ...  ∈Rd×m                                                          ∂rm(z)                      =  ∂r1(z)                                                                                  · · ·
+                                               ∂zd           ∂zd
+
+    which is the transpose of the Jacobian matrix of r.
+
+
+
+
+
+                                                       Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 6 |73

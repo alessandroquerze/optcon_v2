@@ -1,0 +1,136 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0064",
+  "document_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1",
+  "source": {
+    "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+    "page_index": 63,
+    "physical_page_number": 64,
+    "pdf_label_raw": "<FEFF00350037>",
+    "pdf_label": "57",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Karush-Kuhn-Tucker (KKT) necessary conditions (second order)",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      387.1548767089844,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 57,
+        "total": 73,
+        "raw": "57 |73",
+        "bbox": [
+          150.6879425048828,
+          247.9287109375,
+          447.87115478515625,
+          258.29388427734375
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0064/text.txt",
+      "sha256": "da36d8a8391562f36743be7799d54ba4bc2dbb1a9a670118e69b7a596ed74e61"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0064/text.reading-order.txt",
+      "sha256": "4d2cda6d309a4dd578997e3f4eff9bf3e4649c40e2e8fb50a5c97a63f8c41955"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0064/layout.json",
+      "sha256": "6ad5ddd5acde7e9b6cddbcbf403502bd86130929232c6b7feae68e0e196688ea"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0064/render.png",
+      "sha256": "14644c4efe07b292795759b632e5904ba86dcc17c59f0fc09a9f2135636f981c",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "b47c0e4616c9092da566038d34a236b50518237169fe250939083bdc40f14ef5"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0063",
+    "next_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0065"
+  },
+  "relations": [
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0065",
+      "kind": "progressive_candidate",
+      "confidence": 0.9,
+      "review_status": "candidate",
+      "reason": "Etichetta PDF ripetuta su pagine adiacenti con raster differenti: possibile overlay, da verificare anche a testo identico.",
+      "metrics": {
+        "text_jaccard": 0.770186,
+        "text_containment": 1.0,
+        "left_tokens": 124,
+        "right_tokens": 161,
+        "visual_difference": 0.005552,
+        "ink_overlap": 0.645963,
+        "dhash_distance": 6
+      },
+      "delta_in_physical_order": {
+        "text": {
+          "added_lines": [
+            "Moreover, if ℓ, gj and hi are C2 it holds",
+            "y⊤∇2",
+            "11L(z⋆, µ⋆, λ⋆)y ≥0",
+            "for all y ∈Rd such that",
+            "∇hi(z)⊤y = 0,",
+            "i ∈{1, . . . , m},",
+            "∇gj(z)⊤y = 0,",
+            "j ∈A(z)",
+            "(i.e. j ∈{1, . . . , r} s.t. gj(z) = 0)"
+          ],
+          "removed_lines": [],
+          "semantic_interpretation": "pending_visual_analysis"
+        },
+        "visual": {
+          "changed_bbox_px": [
+            57,
+            343,
+            847,
+            480
+          ],
+          "pixel_threshold": 16,
+          "changed_pixel_fraction": 0.011046
+        }
+      }
+    }
+  ],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "pending",
+    "result": null
+  }
+}

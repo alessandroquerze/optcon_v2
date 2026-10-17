@@ -1,0 +1,1112 @@
+[
+  {
+    "page": 7,
+    "title": "Motivating domains — Space systems",
+    "observations": [
+      {
+        "category": "structure",
+        "claim": "Il dominio applicativo è Space systems.",
+        "anchor": "Space systems"
+      },
+      {
+        "category": "concept",
+        "claim": "Gli indici citati sono distanza dal comportamento desiderato (orbita e velocità), consumo energetico e tempo minimo.",
+        "anchor": "desired orbit, velocities,...",
+        "bbox": [
+          28,
+          52,
+          295,
+          118
+        ]
+      },
+      {
+        "category": "assumption",
+        "claim": "I vincoli geometrici riguardano orbita e orientamento rispetto a Sole/Terra; l'ingresso citato è thrust e i limiti interni riguardano velocità angolari e lineari.",
+        "anchor": "geometric (orbit, orientation wrt sun/Earth, ...)",
+        "bbox": [
+          28,
+          123,
+          297,
+          179
+        ]
+      },
+      {
+        "category": "diagram",
+        "claim": "Le immagini mostrano un satellite con pannelli e un oggetto con riferimenti di orientamento: illustrano sistemi spaziali, senza specificare equazioni orbitali o dati di una missione.",
+        "bbox": [
+          298,
+          50,
+          386,
+          178
+        ]
+      }
+    ],
+    "role": "Conclude la rassegna motivazionale prima della formalizzazione dei sistemi dinamici.",
+    "previous": "La pagina 6 tratta droni; qui cambiano dominio, esempi di indice, vincoli geometrici e immagini. Il candidato di somiglianza non è un overlay.",
+    "next": "La pagina 8 introduce stato, ingresso, uscita ed equazioni a tempo continuo; queste equazioni non sono ancora specifiche del satellite.",
+    "scope_limits": [
+      "Nessuna orbita, costante gravitazionale, modello energetico o legge di orientamento viene assegnata.",
+      "Non si può dedurre che il satellite raffigurato sia la soluzione di un problema ottimo presentato nella slide."
+    ],
+    "prerequisites": [
+      [
+        "Performance index e constraints",
+        "Per interpretare l'ultimo esempio applicativo.",
+        [
+          2
+        ]
+      ],
+      [
+        "Orbita e orientamento",
+        "Vocabolario illustrativo; non serve introdurre dinamica orbitale completa.",
+        []
+      ]
+    ],
+    "examples": [
+      {
+        "purpose": "Distinguere orientamento consentito e consumo da minimizzare.",
+        "setup": "Enrichment: confrontare due manovre di assetto, una energeticamente più economica ma incompatibile con un orientamento imposto verso Sole/Terra e una ammissibile.",
+        "steps": [
+          "Verificare prima l'orientamento richiesto.",
+          "Confrontare consumo o tempo soltanto fra le manovre ammissibili."
+        ],
+        "expected": "Un indice energetico favorevole non elimina il vincolo di orientamento.",
+        "limitations": [
+          "Esempio concettuale; non è un modello orbitale o un dato della fonte."
+        ]
+      }
+    ],
+    "visual": {
+      "component": "SpaceMissionObjectiveConstraintMap",
+      "description": "Schema statico obiettivi/vincoli con riferimenti alle immagini originali."
+    },
+    "no_interaction_reason": "Una simulazione orbitale aggiungerebbe quasi tutto il modello fisico; la pagina richiede soltanto una lettura concettuale.",
+    "edges": [
+      [
+        "Orientamenti incompatibili simultaneamente",
+        "Dichiarare che i requisiti potrebbero non essere realizzabili, senza inventare una soluzione."
+      ]
+    ],
+    "progression": {
+      "assessment": "unique",
+      "changed": [
+        "Droni → sistemi spaziali; percorso 3D/esplorazione → orbita/orientamento Sole-Terra."
+      ],
+      "rationale": "Il candidato 6↔7 è respinto dopo confronto di testo e immagini: struttura condivisa ma contenuto distinto."
+    },
+    "single_page_rationale": "Un solo dominio applicativo, senza derivazioni o risultati numerici da distribuire.",
+    "focus": "Sistemi spaziali: scegliere una prestazione rispettando vincoli di orbita e orientamento."
+  },
+  {
+    "page": 8,
+    "title": "Continuous-time control systems",
+    "observations": [
+      {
+        "category": "equation",
+        "claim": "Il sistema continuo time-varying è definito da ẋ(t)=f(x(t),u(t),t), con condizione iniziale x(0)=x⁰; x⁰ ha indice in apice, non è la notazione x₀.",
+        "anchor": "˙x(t) = f(x(t), u(t), t),",
+        "bbox": [
+          110,
+          48,
+          343,
+          67
+        ]
+      },
+      {
+        "category": "equation",
+        "claim": "L'equazione di uscita è y(t)=h(x(t),u(t),t), distinta dall'equazione di stato.",
+        "anchor": "y(t) = h(x(t), u(t), t)",
+        "bbox": [
+          111,
+          66,
+          340,
+          82
+        ]
+      },
+      {
+        "category": "definition",
+        "claim": "Lo stato x(t) appartiene a Rⁿ, l'ingresso u(t) a Rᵐ e l'uscita y(t) a Rᵖ; il tempo t è reale.",
+        "anchor": "state of the system at time t",
+        "bbox": [
+          28,
+          82,
+          395,
+          139
+        ]
+      },
+      {
+        "category": "diagram",
+        "claim": "I tre vettori sono rappresentati in colonna con componenti x₁…xₙ, u₁…uₘ e y₁…yₚ.",
+        "bbox": [
+          111,
+          151,
+          361,
+          198
+        ]
+      },
+      {
+        "category": "assumption",
+        "claim": "Il remark dice che nelle applicazioni si lavorerà principalmente con sistemi time-invariant ẋ(t)=f(x(t),u(t)), pur ammettendo sistemi time-varying.",
+        "anchor": "we will mainly work with time-invariant systems",
+        "bbox": [
+          27,
+          205,
+          446,
+          231
+        ]
+      }
+    ],
+    "math": [
+      [
+        "t\\in\\mathbb{R}",
+        "t ∈R"
+      ],
+      [
+        "\\dot{x}(t)=f(x(t),u(t),t),\\qquad x(0)=x^0",
+        "˙x(t) = f(x(t), u(t), t),",
+        "L'apice 0 della condizione iniziale è verificato sull'immagine, perché il text layer lo appiattisce."
+      ],
+      [
+        "y(t)=h(x(t),u(t),t)",
+        "y(t) = h(x(t), u(t), t)"
+      ],
+      [
+        "x(t)\\in\\mathbb{R}^n,\\quad u(t)\\in\\mathbb{R}^m,\\quad y(t)\\in\\mathbb{R}^p",
+        "state of the system"
+      ],
+      [
+        "x(t)=\\begin{bmatrix}x_1(t)\\\\\\vdots\\\\x_n(t)\\end{bmatrix},\\quad u(t)=\\begin{bmatrix}u_1(t)\\\\\\vdots\\\\u_m(t)\\end{bmatrix},\\quad y(t)=\\begin{bmatrix}y_1(t)\\\\\\vdots\\\\y_p(t)\\end{bmatrix}",
+        "x(t) ="
+      ],
+      [
+        "\\dot{x}(t)=f(x(t),u(t))",
+        "time-invariant systems"
+      ]
+    ],
+    "notation": [
+      [
+        "x(t)",
+        "Stato in Rⁿ"
+      ],
+      [
+        "u(t)",
+        "Ingresso in Rᵐ"
+      ],
+      [
+        "y(t)",
+        "Uscita in Rᵖ"
+      ],
+      [
+        "x^0",
+        "Condizione iniziale"
+      ],
+      [
+        "f",
+        "Mappa della dinamica"
+      ],
+      [
+        "h",
+        "Mappa di uscita"
+      ]
+    ],
+    "role": "Introduce il modello generale continuo e distingue stato, ingresso e uscita prima della notazione discreta.",
+    "previous": "La pagina 7 chiude le motivazioni; nessuna sua dinamica spaziale è necessaria per la definizione generale.",
+    "next": "La pagina 9 sostituisce la derivata con un aggiornamento discreto e introduce indici compatti; non è dichiarato un metodo di discretizzazione.",
+    "scope_limits": [
+      "La fonte non assegna f, h, parametri numerici, regolarità sufficiente o algoritmo di integrazione.",
+      "Time-invariant non significa che stato e ingresso siano costanti.",
+      "Non si può identificare in generale y(t) con x(t)."
+    ],
+    "prerequisites": [
+      [
+        "Derivata e vettore colonna",
+        "Servono a leggere l'equazione differenziale e le dimensioni.",
+        []
+      ],
+      [
+        "Stato/ingresso/uscita nel feedback",
+        "La pagina 2 ne offre il contesto operativo.",
+        [
+          2
+        ]
+      ]
+    ],
+    "enrichment_notes": [
+      "Time-varying significa dipendenza esplicita di f o h dal tempo; time-invariant consente comunque traiettorie variabili."
+    ],
+    "examples": [
+      {
+        "purpose": "Distinguere dinamica e uscita con un modello calcolabile.",
+        "setup": "Enrichment: n=m=p=1, ẋ=−a x+u, y=x, ingresso costante; questi f e h non sono assegnati dalla fonte.",
+        "parameters": [
+          [
+            "a",
+            "1 s⁻¹"
+          ],
+          [
+            "u",
+            "1 unità/s"
+          ],
+          [
+            "x^0",
+            "0"
+          ]
+        ],
+        "steps": [
+          "Per a>0: x(t)=u/a+(x⁰−u/a)e^(−a t).",
+          "Con i valori scelti: x(t)=1−e^(−t).",
+          "x(1)≈0.6321 e y(1)=x(1) soltanto per la scelta h=x."
+        ],
+        "expected": "Un sistema time-invariant può avere stato e uscita variabili nel tempo.",
+        "limitations": [
+          "Modello e numeri sono enrichment; nessuna proprietà di un velivolo o drone viene dedotta."
+        ]
+      }
+    ],
+    "visual": {
+      "component": "ContinuousStateInputOutputPlot",
+      "origin": "enrichment",
+      "description": "Grafici allineati di u(t), x(t), y(t) per il solo esempio scalare esplicitamente aggiunto."
+    },
+    "interaction": {
+      "component": "FirstOrderContinuousResponse",
+      "rationale": "Variare stato iniziale, ingresso e coefficiente rende osservabile la differenza fra dinamica f e traiettoria x(t).",
+      "parameters": [
+        [
+          "Coefficiente del modello",
+          "a",
+          "[0,2] s⁻¹",
+          "1",
+          "Ricalcolare la soluzione esatta e la velocità di convergenza; per a=0 usare x=x⁰+ut senza dividere per a.",
+          [
+            "a=0: integratore"
+          ],
+          "enrichment"
+        ],
+        [
+          "Ingresso costante",
+          "u",
+          "[−1,1] unità/s",
+          "1",
+          "Ricalcolare x(t), y(t) e il livello u/a quando a>0.",
+          [
+            "u=0: risposta libera"
+          ],
+          "enrichment"
+        ],
+        [
+          "Stato iniziale",
+          "x^0",
+          "[−2,2]",
+          "0",
+          "Cambiare il valore di partenza e il transitorio, mantenendo invariata la dinamica scelta.",
+          [
+            "x⁰=u/a: traiettoria costante per a>0"
+          ],
+          "enrichment"
+        ]
+      ],
+      "outputs": [
+        "u(t), x(t), y(t)",
+        "Valore x(1)",
+        "Etichetta time-invariant del modello"
+      ],
+      "invariants": [
+        "y=x soltanto nell'esempio",
+        "Orizzonte illustrativo fisso di 5 s",
+        "Nessuna modifica alle equazioni generali della fonte"
+      ]
+    },
+    "edges": [
+      [
+        "a=0 nell'esempio",
+        "Usare il limite integratore x⁰+ut."
+      ],
+      [
+        "Stato e ingresso costanti di equilibrio",
+        "Non confondere l'equilibrio particolare con la proprietà generale di invarianza temporale."
+      ]
+    ],
+    "single_page_rationale": "Un unico schema di sistema con un esempio scalare opzionale; le dimensioni sono parte della stessa definizione.",
+    "focus": "Separare x, u e y, equazione di stato e di uscita, tempo variabile e modello time-invariant."
+  },
+  {
+    "page": 9,
+    "title": "Discrete-time control systems and notation — forma compatta",
+    "observations": [
+      {
+        "category": "equation",
+        "claim": "La forma discreta è x(t+1)=f(x(t),u(t),t), x(0)=x⁰, t∈N₀.",
+        "anchor": "x(t + 1) = f(x(t), u(t), t),",
+        "bbox": [
+          118,
+          49,
+          333,
+          65
+        ]
+      },
+      {
+        "category": "definition",
+        "claim": "Da questo punto il corso adotta la notazione compatta xₜ₊₁=fₜ(xₜ,uₜ), x₀=x⁰, t∈N₀.",
+        "anchor": "xt+1 = ft(xt, ut),",
+        "bbox": [
+          116,
+          87,
+          331,
+          104
+        ]
+      },
+      {
+        "category": "definition",
+        "claim": "xₜ∈Rⁿ e uₜ∈Rᵐ sono rispettivamente stato e ingresso al tempo t.",
+        "anchor": "are the state and the input of the system at time t.",
+        "bbox": [
+          28,
+          109,
+          419,
+          122
+        ]
+      },
+      {
+        "category": "structure",
+        "claim": "La pagina presenta le due forme una sopra l'altra come equivalenza di notazione; non mostra un passaggio di discretizzazione da un'ODE.",
+        "anchor": "but from now on we will use the (more compact) notation",
+        "bbox": [
+          27,
+          32,
+          335,
+          106
+        ]
+      }
+    ],
+    "math": [
+      [
+        "x(t+1)=f(x(t),u(t),t),\\quad x(0)=x^0,\\quad t\\in\\mathbb{N}_0",
+        "x(t + 1)"
+      ],
+      [
+        "x_{t+1}=f_t(x_t,u_t),\\quad x_0=x^0,\\quad t\\in\\mathbb{N}_0",
+        "xt+1 = ft(xt, ut),"
+      ],
+      [
+        "x_t\\in\\mathbb{R}^n,\\quad u_t\\in\\mathbb{R}^m",
+        "where xt"
+      ]
+    ],
+    "notation": [
+      [
+        "x_t",
+        "Stato al tempo discreto t"
+      ],
+      [
+        "u_t",
+        "Ingresso al tempo discreto t"
+      ],
+      [
+        "f_t",
+        "Mappa di aggiornamento indicizzata dal tempo"
+      ],
+      [
+        "x_0",
+        "Stato all'indice zero"
+      ],
+      [
+        "x^0",
+        "Dato iniziale; il simbolo è in apice"
+      ],
+      [
+        "\\mathbb{N}_0",
+        "Indici discreti comprendenti zero"
+      ]
+    ],
+    "role": "Fissa la notazione usata nelle pagine discrete successive e previene la confusione fra sottoscritto temporale e dato iniziale.",
+    "previous": "La pagina 8 era a tempo continuo; la fonte qui introduce un altro modello generale, senza indicare Euler o un passo di campionamento.",
+    "next": "La pagina 10 limita il tempo a un orizzonte finito e impila stati e ingressi.",
+    "scope_limits": [
+      "Non è indicato un tempo di campionamento o uno schema di integrazione.",
+      "fₜ può dipendere dal tempo; il sottoscritto non è una derivata.",
+      "Nessuna condizione di stabilità è formulata."
+    ],
+    "prerequisites": [
+      [
+        "Funzione e successione",
+        "Per leggere un aggiornamento da t a t+1.",
+        []
+      ],
+      [
+        "Stato e ingresso",
+        "Ruoli e dimensioni sono stati introdotti alla pagina 8.",
+        [
+          8
+        ]
+      ]
+    ],
+    "examples": [
+      {
+        "purpose": "Eseguire un aggiornamento discreto e leggere correttamente gli indici.",
+        "setup": "Enrichment scalare xₜ₊₁=0.8xₜ+uₜ, con x⁰=1 e uₜ=0.2 costante.",
+        "parameters": [
+          [
+            "a",
+            "0.8"
+          ],
+          [
+            "x^0",
+            "1"
+          ],
+          [
+            "u_t",
+            "0.2"
+          ]
+        ],
+        "steps": [
+          "x₀=x⁰=1.",
+          "x₁=0.8·1+0.2=1.",
+          "x₂=0.8·1+0.2=1."
+        ],
+        "expected": "Il dato iniziale è assegnato; ogni nuovo stato dipende dallo stato e dall'ingresso precedenti.",
+        "limitations": [
+          "La ricorrenza lineare è aggiunta per l'esempio, non sostituisce la fₜ generale della fonte."
+        ]
+      }
+    ],
+    "visual": {
+      "component": "DiscreteUpdateTimeline",
+      "origin": "enrichment",
+      "description": "Timeline x₀ → x₁ → x₂ con u₀ e u₁ sugli archi; allineare le due notazioni della fonte."
+    },
+    "interaction": {
+      "component": "DiscreteScalarStepper",
+      "rationale": "Un passo alla volta rende concreto l'indice t+1 e la dipendenza dall'ingresso al tempo t.",
+      "parameters": [
+        [
+          "Coefficiente aggiunto",
+          "a",
+          "[−1.2,1.2]",
+          "0.8",
+          "Ricalcolare sei aggiornamenti xₜ₊₁=a xₜ+u e mostrare i valori nella timeline.",
+          [
+            "|a|≥1 può produrre crescita o oscillazioni"
+          ],
+          "enrichment"
+        ],
+        [
+          "Ingresso costante",
+          "u",
+          "[−1,1]",
+          "0.2",
+          "Aggiornare tutti gli stati successivi, lasciando invariato x₀.",
+          [
+            "u=0: evoluzione libera"
+          ],
+          "enrichment"
+        ],
+        [
+          "Dato iniziale",
+          "x^0",
+          "[−2,2]",
+          "1",
+          "Cambiare x₀ e propagare nuovamente la ricorrenza.",
+          [
+            "Stato iniziale di equilibrio"
+          ],
+          "enrichment"
+        ]
+      ],
+      "outputs": [
+        "Sei aggiornamenti e relativi valori",
+        "Stato precedente, ingresso corrente e stato nuovo evidenziati"
+      ],
+      "invariants": [
+        "Numero di aggiornamenti fissato per l'esempio",
+        "Indici interi a partire da zero",
+        "La fonte non fornisce a"
+      ]
+    },
+    "edges": [
+      [
+        "a=0 nell'esempio",
+        "Il nuovo stato coincide con l'ingresso corrente, indipendentemente dallo stato precedente."
+      ],
+      [
+        "a=1 e ingresso non nullo",
+        "Mostrare l'accumulo, senza etichettare ogni sistema discreto come convergente."
+      ]
+    ],
+    "single_page_rationale": "Si spiega una sola trasformazione di notazione con una timeline e un esempio minimo.",
+    "focus": "Leggere xₜ₊₁=fₜ(xₜ,uₜ) e distinguere x₀ da x⁰."
+  },
+  {
+    "page": 10,
+    "title": "Discrete-time systems — orizzonte finito e vettori impilati",
+    "observations": [
+      {
+        "category": "equation",
+        "claim": "Il sistema (1) è xₜ₊₁=fₜ(xₜ,uₜ), x₀=x⁰, t=0,…,T−1.",
+        "anchor": "t = 0, . . . , T −1",
+        "bbox": [
+          28,
+          32,
+          443,
+          83
+        ]
+      },
+      {
+        "category": "definition",
+        "claim": "Il vettore impilato degli stati è in grassetto: 𝐱∈Rⁿᵀ e 𝐱:=col(x₁,…,x_T). Non include x₀.",
+        "anchor": "x := col(x1, . . . , xT )",
+        "bbox": [
+          27,
+          99,
+          434,
+          141
+        ]
+      },
+      {
+        "category": "definition",
+        "claim": "Il vettore impilato degli ingressi è 𝐮∈Rᵐᵀ e 𝐮:=col(u₀,…,u_{T−1}). Gli indici degli ingressi sono sfalsati rispetto a quelli degli stati impilati.",
+        "anchor": "u := col(u0, . . . , uT −1).",
+        "bbox": [
+          27,
+          99,
+          434,
+          159
+        ]
+      },
+      {
+        "category": "definition",
+        "claim": "col costruisce il vettore con le componenti elencate; ogni xₜ ha dimensione n e ogni uₜ dimensione m.",
+        "anchor": "where col(x1",
+        "bbox": [
+          27,
+          165,
+          380,
+          178
+        ]
+      }
+    ],
+    "math": [
+      [
+        "x_{t+1}=f_t(x_t,u_t),\\quad x_0=x^0,\\quad t=0,\\ldots,T-1\\tag{1}",
+        "xt+1 = ft(xt, ut),"
+      ],
+      [
+        "\\mathbf{x}\\in\\mathbb{R}^{nT},\\quad \\mathbf{u}\\in\\mathbb{R}^{mT}",
+        "We use x"
+      ],
+      [
+        "\\mathbf{x}:=\\operatorname{col}(x_1,\\ldots,x_T),\\qquad\\mathbf{u}:=\\operatorname{col}(u_0,\\ldots,u_{T-1})",
+        "x := col"
+      ]
+    ],
+    "notation": [
+      [
+        "T",
+        "Numero di transizioni nell'orizzonte finito"
+      ],
+      [
+        "\\mathbf{x}",
+        "Stack degli stati da x₁ a x_T, grassetto nella fonte"
+      ],
+      [
+        "\\mathbf{u}",
+        "Stack degli ingressi da u₀ a u_{T−1}, grassetto nella fonte"
+      ],
+      [
+        "\\operatorname{col}",
+        "Concatenazione verticale"
+      ],
+      [
+        "x^0",
+        "Stato iniziale fissato, non incluso in 𝐱"
+      ]
+    ],
+    "role": "Fissa i confini dell'orizzonte e l'identità delle variabili impilate usate per traiettorie e ottimizzazione.",
+    "previous": "La pagina 9 introduceva indici su N₀; qui si considera solo un intervallo finito.",
+    "next": "La pagina 11 usa le coppie di stack per definire quando una sequenza è una traiettoria.",
+    "scope_limits": [
+      "T transizioni generano T+1 stati se si conta anche x₀, ma 𝐱 ne contiene solo T.",
+      "Non aggiungere uᵀ allo stack né includere x₀ come variabile libera.",
+      "La pagina non assegna una funzione di costo."
+    ],
+    "prerequisites": [
+      [
+        "Notazione discreta e condizione iniziale",
+        "Per allineare il primo e ultimo aggiornamento.",
+        [
+          9
+        ]
+      ],
+      [
+        "Dimensione dei vettori",
+        "Per comprendere nT e mT.",
+        [
+          8
+        ]
+      ]
+    ],
+    "examples": [
+      {
+        "purpose": "Contare correttamente stati, ingressi e dimensioni.",
+        "setup": "Enrichment: n=m=1, T=3, x⁰=1, xₜ₊₁=xₜ+uₜ e 𝐮=col(0.5,−0.25,0).",
+        "parameters": [
+          [
+            "T",
+            "3"
+          ],
+          [
+            "n,m",
+            "1,1"
+          ],
+          [
+            "x^0",
+            "1"
+          ],
+          [
+            "\\mathbf{u}",
+            "(0.5,−0.25,0)"
+          ]
+        ],
+        "steps": [
+          "x₁=1.5, x₂=1.25, x₃=1.25.",
+          "𝐱=col(1.5,1.25,1.25)∈R³.",
+          "La timeline contiene quattro stati x₀,x₁,x₂,x₃ e tre ingressi."
+        ],
+        "expected": "Entrambi gli stack hanno tre blocchi, con indici diversi; x₀ resta un dato.",
+        "limitations": [
+          "La dinamica integratore e i numeri sono enrichment."
+        ]
+      }
+    ],
+    "visual": {
+      "component": "FiniteHorizonStackDiagram",
+      "origin": "enrichment",
+      "description": "Timeline con blocco x₀ esterno allo stack e parentesi graffe distinte per 𝐱 e 𝐮."
+    },
+    "interaction": {
+      "component": "HorizonIndexInspector",
+      "rationale": "Cambiare T e le dimensioni rende immediato il conteggio dei blocchi senza simulare una dinamica non assegnata.",
+      "parameters": [
+        [
+          "Orizzonte",
+          "T",
+          "Interi 1…6",
+          "3",
+          "Ridisegnare T transizioni, T+1 nodi di stato e T blocchi per ciascuno stack; aggiornare nT e mT.",
+          [
+            "T=1: x₁ e u₀ sono gli unici blocchi"
+          ],
+          "source"
+        ],
+        [
+          "Dimensione stato",
+          "n",
+          "Interi 1…3",
+          "1",
+          "Aggiornare la dimensione di ogni blocco xₜ e quella dello stack nT, senza cambiare gli indici temporali.",
+          [
+            "Non trattare i componenti come istanti"
+          ],
+          "source"
+        ],
+        [
+          "Dimensione ingresso",
+          "m",
+          "Interi 1…3",
+          "1",
+          "Aggiornare i blocchi uₜ e mT lasciando invariata la dimensione dello stato.",
+          [
+            "n e m possono differire"
+          ],
+          "source"
+        ]
+      ],
+      "outputs": [
+        "Timeline",
+        "Stack etichettati",
+        "Dimensioni nT e mT"
+      ],
+      "invariants": [
+        "x₀ escluso da 𝐱",
+        "Ultimo ingresso u_{T−1}",
+        "Range e default dei controlli sono scelte di enrichment, non della fonte"
+      ]
+    },
+    "edges": [
+      [
+        "T=1",
+        "Mostrare un solo ingresso u₀ e uno stato impilato x₁."
+      ],
+      [
+        "T=0",
+        "Escluderlo dal controllo proposto; gli stack vuoti richiederebbero una convenzione non discussa dalla fonte."
+      ]
+    ],
+    "single_page_rationale": "La notazione e il conteggio sono un'unica unità; una timeline evita la necessità di separare definizione ed esempio.",
+    "focus": "Per T transizioni: x₀ dato, 𝐱=col(x₁,…,x_T), 𝐮=col(u₀,…,u_{T−1})."
+  },
+  {
+    "page": 11,
+    "title": "System trajectories — traiettorie ed equilibri",
+    "observations": [
+      {
+        "category": "definition",
+        "claim": "Una coppia (x̄ in grassetto, ū in grassetto)∈Rⁿᵀ×Rᵐᵀ è una traiettoria del sistema (1) se x̄ₜ₊₁=fₜ(x̄ₜ,ūₜ) per tutti t=0,…,T−1; distingue state trajectory e input trajectory.",
+        "anchor": "is called a trajectory of system (1)",
+        "bbox": [
+          27,
+          49,
+          445,
+          76
+        ]
+      },
+      {
+        "category": "definition",
+        "claim": "Una equilibrium pair (xₑ,uₑ)∈Rⁿ×Rᵐ è una coppia stato-ingresso costante che genera una traiettoria per t∈N₀.",
+        "anchor": "is called an equilibrium pair of (1)",
+        "bbox": [
+          28,
+          109,
+          443,
+          133
+        ]
+      },
+      {
+        "category": "equation",
+        "claim": "Per sistemi discreti time-invariant, gli equilibri soddisfano xₑ=f(xₑ,uₑ).",
+        "anchor": "xe = f(xe, ue).",
+        "bbox": [
+          27,
+          140,
+          320,
+          153
+        ]
+      }
+    ],
+    "math": [
+      [
+        "(\\bar{\\mathbf{x}},\\bar{\\mathbf{u}})\\in\\mathbb{R}^{nT}\\times\\mathbb{R}^{mT},\\qquad\\bar{x}_{t+1}=f_t(\\bar{x}_t,\\bar{u}_t),\\quad t=0,\\ldots,T-1",
+        "A pair (¯x, ¯u)"
+      ],
+      [
+        "(x_e,u_e)\\in\\mathbb{R}^n\\times\\mathbb{R}^m,\\qquad(x_t,u_t)=(x_e,u_e),\\quad t\\in\\mathbb{N}_0",
+        "A state-input pair (xe, ue)"
+      ],
+      [
+        "x_e=f(x_e,u_e)",
+        "xe = f(xe, ue)."
+      ]
+    ],
+    "notation": [
+      [
+        "(\\bar{\\mathbf{x}},\\bar{\\mathbf{u}})",
+        "Coppia di traiettorie impilate, non necessariamente ottima"
+      ],
+      [
+        "\\bar{x}_t,\\bar{u}_t",
+        "Stato e ingresso della traiettoria al tempo t"
+      ],
+      [
+        "x_e,u_e",
+        "Stato e ingresso costanti di una coppia di equilibrio"
+      ]
+    ],
+    "role": "Distingue sequenze arbitrarie da traiettorie dinamicamente coerenti, e gli equilibri come caso speciale.",
+    "previous": "La pagina 10 definisce gli stack e il sistema (1), inclusa la condizione iniziale fissata.",
+    "next": "La pagina 12 sceglie una traiettoria nominale per linearizzare la dinamica attorno ad essa.",
+    "scope_limits": [
+      "La barra non significa ottimalità: indica la traiettoria considerata.",
+      "Essere equilibrio non implica stabilità, attrattività o ottimalità.",
+      "Per il sistema time-varying una coppia costante deve soddisfare tutte le mappe temporali; la formula finale senza t è esplicitamente per il caso time-invariant."
+    ],
+    "prerequisites": [
+      [
+        "Stack e dinamica (1)",
+        "La traiettoria è una coppia di stack che deve rispettare ciascun aggiornamento.",
+        [
+          10
+        ]
+      ]
+    ],
+    "examples": [
+      {
+        "purpose": "Verificare una traiettoria e una coppia di equilibrio.",
+        "setup": "Enrichment scalare f(x,u)=0.5x+u; scegliere xₑ=2, uₑ=1.",
+        "parameters": [
+          [
+            "x_e",
+            "2"
+          ],
+          [
+            "u_e",
+            "1"
+          ],
+          [
+            "a",
+            "0.5"
+          ]
+        ],
+        "steps": [
+          "f(2,1)=0.5·2+1=2, quindi la coppia è di equilibrio.",
+          "Con x⁰=0 e uₜ=1, gli stati 0,1,1.5,1.75,… formano una traiettoria non costante.",
+          "La sequenza che imponesse x₁=2 a partire da x⁰=0 e u₀=1 non rispetterebbe l'aggiornamento."
+        ],
+        "expected": "Ogni equilibrio genera una traiettoria costante; non ogni traiettoria è un equilibrio.",
+        "limitations": [
+          "Modello e numeri sono aggiunti, non dati dalla fonte."
+        ]
+      }
+    ],
+    "visual": {
+      "component": "TrajectoryConsistencyAndEquilibriumPlot",
+      "origin": "enrichment",
+      "description": "Timeline con residui dinamici e livello orizzontale per un equilibrio del modello esemplificativo."
+    },
+    "interaction": {
+      "component": "EquilibriumPairChecker",
+      "rationale": "Il residuo rende verificabile il requisito xₑ=f(xₑ,uₑ), senza introdurre un algoritmo di controllo.",
+      "parameters": [
+        [
+          "Stato candidato",
+          "x_e",
+          "[−3,3]",
+          "2",
+          "Ricalcolare f(xₑ,uₑ), il residuo xₑ−f(xₑ,uₑ) e l'indicatore di equilibrio.",
+          [
+            "Residuo zero entro tolleranza"
+          ],
+          "source"
+        ],
+        [
+          "Ingresso candidato",
+          "u_e",
+          "[−2,2]",
+          "1",
+          "Cambiare il residuo e il livello di ingresso; non mantenere artificiosamente l'etichetta di equilibrio.",
+          [
+            "Per a=0.5, equilibrio quando uₑ=0.5xₑ"
+          ],
+          "source"
+        ]
+      ],
+      "outputs": [
+        "Valore f(xₑ,uₑ)",
+        "Residuo",
+        "Stato candidato ed effettivo stato successivo"
+      ],
+      "invariants": [
+        "Il coefficiente 0.5 appartiene all'esempio enrichment",
+        "Tolleranza numerica dichiarata",
+        "Non visualizzare stabilità come conseguenza della sola verifica di equilibrio"
+      ]
+    },
+    "edges": [
+      [
+        "Coppia costante incompatibile con x⁰",
+        "Per generare quella traiettoria costante l'inizializzazione deve coincidere con xₑ."
+      ],
+      [
+        "Equilibrio instabile in un diverso modello",
+        "Può soddisfare l'uguaglianza; non dichiararlo stabile per questo."
+      ]
+    ],
+    "single_page_rationale": "Traiettoria ed equilibrio sono definizione e caso speciale, spiegabili con lo stesso piccolo esempio.",
+    "focus": "Una traiettoria rispetta la dinamica; un equilibrio è una traiettoria a stato e ingresso costanti."
+  },
+  {
+    "page": 12,
+    "title": "Linearization of a system about a trajectory",
+    "observations": [
+      {
+        "category": "equation",
+        "claim": "La dinamica di partenza è xₜ₊₁=fₜ(xₜ,uₜ), t∈N₀.",
+        "anchor": "xt+1 = ft(xt, ut)",
+        "bbox": [
+          165,
+          51,
+          289,
+          65
+        ]
+      },
+      {
+        "category": "assumption",
+        "claim": "La coppia nominale (x̄ in grassetto, ū in grassetto) è una traiettoria: soddisfa x̄ₜ₊₁=fₜ(x̄ₜ,ūₜ).",
+        "anchor": "and a trajectory (¯x, ¯u)",
+        "bbox": [
+          27,
+          71,
+          442,
+          92
+        ]
+      },
+      {
+        "category": "equation",
+        "claim": "La linearizzazione è il sistema lineare, possibilmente time-varying, Δxₜ₊₁=AₜΔxₜ+BₜΔuₜ, t∈N₀.",
+        "anchor": "∆xt+1 = At∆xt + Bt∆ut",
+        "bbox": [
+          148,
+          98,
+          304,
+          113
+        ]
+      },
+      {
+        "category": "definition",
+        "claim": "Aₜ e Bₜ sono i Jacobiani di fₜ rispetto rispettivamente a stato e ingresso, valutati lungo la traiettoria nominale.",
+        "anchor": "with At and Bt the Jacobians of ft",
+        "bbox": [
+          27,
+          119,
+          442,
+          132
+        ]
+      }
+    ],
+    "math": [
+      [
+        "x_{t+1}=f_t(x_t,u_t),\\quad t\\in\\mathbb{N}_0",
+        "xt+1 = ft(xt, ut)"
+      ],
+      [
+        "\\bar{x}_{t+1}=f_t(\\bar{x}_t,\\bar{u}_t)",
+        "¯xt+1 = ft(¯xt, ¯ut)"
+      ],
+      [
+        "\\Delta x_{t+1}=A_t\\Delta x_t+B_t\\Delta u_t,\\quad t\\in\\mathbb{N}_0",
+        "∆xt+1 = At∆xt + Bt∆ut"
+      ]
+    ],
+    "notation": [
+      [
+        "A_t",
+        "Jacobiano della dinamica rispetto allo stato lungo la nominale"
+      ],
+      [
+        "B_t",
+        "Jacobiano rispetto all'ingresso lungo la nominale"
+      ],
+      [
+        "\\Delta x_t,\\Delta u_t",
+        "Variazioni di stato e ingresso nella linearizzazione"
+      ],
+      [
+        "(\\bar{\\mathbf{x}},\\bar{\\mathbf{u}})",
+        "Traiettoria nominale; non necessariamente equilibrio"
+      ]
+    ],
+    "role": "Collega il modello non lineare e una traiettoria nominale al sistema delle variazioni.",
+    "previous": "La pagina 11 spiega che la nominale deve soddisfare la dinamica e che un equilibrio è soltanto un caso particolare.",
+    "next": "La pagina 13 riepiloga gli strumenti di analisi/controllo e ne distingue gli obiettivi dall'ottimizzazione vincolata.",
+    "scope_limits": [
+      "La fonte non fornisce una stima dell'errore, un raggio di validità o un teorema di stabilità.",
+      "Le formule esplicite delle derivate parziali e Δx=x−x̄ sono chiarimenti derivati, non equazioni scritte nella slide.",
+      "Anche una dinamica time-invariant può dare Aₜ,Bₜ variabili lungo una traiettoria non costante."
+    ],
+    "prerequisites": [
+      [
+        "Traiettoria nominale",
+        "La cancellazione del termine nominale richiede coerenza con la dinamica.",
+        [
+          11
+        ]
+      ],
+      [
+        "Jacobiano e approssimazione al primo ordine",
+        "Prerequisito matematico necessario che la pagina richiama senza svilupparlo.",
+        []
+      ]
+    ],
+    "enrichment_notes": [
+      "Enrichment esplicativo: Δxₜ=xₜ−x̄ₜ e Δuₜ=uₜ−ūₜ; Aₜ=∂fₜ/∂x|_(x̄ₜ,ūₜ), Bₜ=∂fₜ/∂u|_(x̄ₜ,ūₜ). Il testo identifica i Jacobiani ma non stampa queste formule."
+    ],
+    "examples": [
+      {
+        "purpose": "Quantificare l'errore della linearizzazione in un caso semplice.",
+        "setup": "Enrichment: f(x,u)=x²+u, nominale di equilibrio x̄=1, ū=0; Δx=0.1, Δu=0.",
+        "parameters": [
+          [
+            "\\bar{x},\\bar{u}",
+            "1,0"
+          ],
+          [
+            "\\Delta x",
+            "0.1"
+          ],
+          [
+            "\\Delta u",
+            "0"
+          ]
+        ],
+        "steps": [
+          "f(1,0)=1: la nominale è coerente.",
+          "A=2x̄=2, B=1.",
+          "Variazione prevista: 2·0.1=0.2.",
+          "Variazione esatta: f(1.1,0)−f(1,0)=0.21; errore=0.01=(Δx)²."
+        ],
+        "expected": "L'approssimazione coincide al primo ordine e l'errore cresce con la perturbazione.",
+        "limitations": [
+          "Modello, perturbazioni e calcolo dell'errore sono enrichment; il risultato è di un singolo passo."
+        ]
+      }
+    ],
+    "visual": {
+      "component": "NonlinearVersusLinearizedOneStepPlot",
+      "origin": "enrichment",
+      "description": "Curva f(1+Δx,Δu)−f(1,0) e sua approssimazione 2Δx+Δu, con residuo evidenziato."
+    },
+    "interaction": {
+      "component": "LinearizationPerturbationExplorer",
+      "rationale": "Variare piccole perturbazioni mostra quando il modello delle variazioni approssima bene la dinamica.",
+      "parameters": [
+        [
+          "Perturbazione di stato",
+          "\\Delta x",
+          "[−0.25,0.25]",
+          "0.1",
+          "Aggiornare variazione esatta, lineare e residuo (Δx)²; mantenere fisso A=2.",
+          [
+            "Δx=0: nessun errore di stato"
+          ],
+          "source"
+        ],
+        [
+          "Perturbazione d'ingresso",
+          "\\Delta u",
+          "[−0.1,0.1]",
+          "0",
+          "Traslare entrambe le predizioni di Δu; il residuo resta (Δx)² per questo esempio.",
+          [
+            "L'ingresso è già affine nell'esempio"
+          ],
+          "source"
+        ]
+      ],
+      "outputs": [
+        "Predizione esatta e lineare",
+        "Residuo assoluto",
+        "Punto nominale"
+      ],
+      "invariants": [
+        "Nominale (1,0) e Jacobiani fissati",
+        "Modello x²+u esplicitamente enrichment",
+        "Nessuna simulazione di stabilità o ottimalità"
+      ]
+    },
+    "edges": [
+      [
+        "Perturbazione nulla",
+        "La variazione è nulla e il modello lineare coincide con la nominale."
+      ],
+      [
+        "Perturbazioni grandi",
+        "Segnalare la perdita possibile di accuratezza; non estrapolare garanzie globali."
+      ],
+      [
+        "fₜ non differenziabile",
+        "Il Jacobiano richiesto può non esistere; prerequisito matematico da dichiarare come enrichment."
+      ]
+    ],
+    "single_page_rationale": "Una formula centrale e un esempio di un solo passo permettono una trattazione completa senza espansione.",
+    "focus": "Linearizzare attorno a una traiettoria coerente: variazioni, Jacobiani e limiti dell'approssimazione."
+  }
+]

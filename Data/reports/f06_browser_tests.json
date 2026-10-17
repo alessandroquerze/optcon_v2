@@ -1,0 +1,183 @@
+{
+  "stats": {
+    "startTime": "2026-10-17T20:29:54.386Z",
+    "duration": 133305.926,
+    "expected": 20,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "checks": [
+    {
+      "title": "PDF originale, placeholder, sincronizzazione e limiti",
+      "file": "foundation.spec.ts",
+      "ok": true,
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "render asincrono, divider e viewport ridotta",
+      "file": "foundation.spec.ts",
+      "ok": true,
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "2D, contour, surface 3D, camera, slider e toggle reali",
+      "file": "foundation.spec.ts",
+      "ok": true,
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "traiettoria 3D, proiezione e playback collegati",
+      "file": "foundation.spec.ts",
+      "ok": true,
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "KaTeX, warning locale e componenti testuali",
+      "file": "foundation.spec.ts",
+      "ok": true,
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "campi vettoriali 2D e 3D nativi",
+      "file": "foundation.spec.ts",
+      "ok": true,
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "companion 2: render, geometria, controlli, viste e resize",
+      "file": "vertical-slice.spec.ts",
+      "ok": true,
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "companion 8: render, geometria, controlli, viste e resize",
+      "file": "vertical-slice.spec.ts",
+      "ok": true,
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "companion 12: render, geometria, controlli, viste e resize",
+      "file": "vertical-slice.spec.ts",
+      "ok": true,
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "companion 16: render, geometria, controlli, viste e resize",
+      "file": "vertical-slice.spec.ts",
+      "ok": true,
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "companion 17: render, geometria, controlli, viste e resize",
+      "file": "vertical-slice.spec.ts",
+      "ok": true,
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "companion 27: render, geometria, controlli, viste e resize",
+      "file": "vertical-slice.spec.ts",
+      "ok": true,
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "companion 30: render, geometria, controlli, viste e resize",
+      "file": "vertical-slice.spec.ts",
+      "ok": true,
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "companion 34: render, geometria, controlli, viste e resize",
+      "file": "vertical-slice.spec.ts",
+      "ok": true,
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "p16: camera e nodo conservati, stessa superficie corretta dopo input",
+      "file": "vertical-slice.spec.ts",
+      "ok": true,
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "p12: perturbazioni non ricalcolano le superfici, errore nullo quando Δx=0",
+      "file": "vertical-slice.spec.ts",
+      "ok": true,
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "p17: selezione, classificazione e degenerazioni complete",
+      "file": "vertical-slice.spec.ts",
+      "ok": true,
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "p27: playback, selezione collegata e cambio passo in pausa a zero",
+      "file": "vertical-slice.spec.ts",
+      "ok": true,
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "p30: T=1, quota violata, banda vuota e warning persistente",
+      "file": "vertical-slice.spec.ts",
+      "ok": true,
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "sessione: parametri locali, cleanup scene e 28 placeholder invariati",
+      "file": "vertical-slice.spec.ts",
+      "ok": true,
+      "results": [
+        "passed"
+      ]
+    }
+  ],
+  "supplemental_scroll_reset_regression": "PASS, targeted repeat of sessione test after scroll reset change",
+  "supplemental_checks": [
+    {
+      "test": "sessione: scroll reset after navigation",
+      "status": "PASS"
+    },
+    {
+      "test": "companion 8: time axis uses course symbol t",
+      "status": "PASS"
+    }
+  ]
+}

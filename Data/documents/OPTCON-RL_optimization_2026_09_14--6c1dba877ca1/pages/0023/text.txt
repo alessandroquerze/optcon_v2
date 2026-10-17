@@ -1,0 +1,10 @@
+Quadratic Programming (unconstrained)
+Let us consider a special class of optimization problems, namely quadratic optimization problems or
+quadratic programs.
+Quadratic program
+min
+z∈Rd
+1
+2zT Qz + qT z
+with Q = QT ∈Rd×d and q ∈Rd.
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 22 |73

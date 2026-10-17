@@ -1,0 +1,68 @@
+KKT conditions for constrained optimal control
+The Lagrangian function has the form
+L(x, u, λ, µ) = ℓ(x, u) + λ
+⊤
+d h(x, u) + λ
+⊤
+b r(x0, xT ) + µ
+⊤g(x, u)
+=
+T −1
+X
+t=0
+ℓt(xt, ut) + ℓT (xT )
+|
+{z
+}
+ℓ(x,u)
++
+T −1
+X
+t=0
+λ
+⊤
+d,t+1(ft(xt, ut) −xt+1)
+|
+{z
+}
+λ⊤
+d h(x,u)
++λ
+⊤
+b r(x0, xT ) +
+T −1
+X
+t=0
+µ
+⊤
+t gt(xt, ut)
+|
+{z
+}
+µ⊤g(x,u)
+=
+T
+X
+t=0
+Lt(xt, ut, λ)
+where
+L0(x0, u0, λ, µ) = ℓ0(x0, u0) + λ
+⊤
+d,1f(x0, u0) + λ
+⊤
+b,0r0(x0) + +µ
+⊤
+0 g0(x0, u0)
+Lt(xt, ut, λ, µ) = ℓt(xt, ut) + λ
+⊤
+t+1f(xt, ut) −λtxt + µ
+⊤
+t gt(xt, ut)
+t = 1, . . . , T −1
+LT (xT , λ) = ℓT (xT ) −λ
+⊤
+T xT + λ
+⊤
+b,T rT (xT )
+and we assumed r(x0, xT ) = col(r0(x0), rT (xT )) and λb = col(λb,0, λb,T ).
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Optimality Conditions for Optimal Control 17 |18

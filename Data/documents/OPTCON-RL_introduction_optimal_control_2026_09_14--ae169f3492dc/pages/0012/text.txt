@@ -1,0 +1,10 @@
+Linearization of a system about a trajectory
+Given the dynamics
+xt+1 = ft(xt, ut)
+t ∈N0,
+and a trajectory (¯x, ¯u) (i.e., ¯xt+1 = ft(¯xt, ¯ut) for all t ∈N0), the linearization of (1) about (¯x, ¯u) is
+given by the linear (possibly) time-varying system
+∆xt+1 = At∆xt + Bt∆ut
+t ∈N0,
+with At and Bt the Jacobians of ft, with respect to state and input respectively, evaluated at (¯x, ¯u).
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 11 |35

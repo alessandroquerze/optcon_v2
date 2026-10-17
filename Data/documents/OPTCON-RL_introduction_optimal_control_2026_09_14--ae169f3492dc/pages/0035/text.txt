@@ -1,0 +1,46 @@
+Example: trajectory generation for a pendulum (III)
+In order to find a trajectory to move from an equilibrium to another one, we can define as desired curve
+xdes
+1 (t) =
+(
+θ1
+e
+0 ≤t < T
+2
+θ2
+e
+T
+2 ≤t ≤T
+xdes
+2 (t) = 0
+with desired input
+udes(t) =
+(
+u1
+e
+0 ≤t < T
+2
+u2
+e
+T
+2 ≤t ≤T
+At the same time, we want ˙θ as small as possible.
+Important
+(xdes(t), udes(t)) is not a trajectory of the system!
+t
+θ1
+e
+θ2
+e
+T
+2
+T
+t
+u1
+e
+u2
+e
+T
+2
+T
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 34 |35

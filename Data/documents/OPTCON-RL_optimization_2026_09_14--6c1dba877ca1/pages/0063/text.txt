@@ -1,0 +1,19 @@
+Remarks on Karush-Kuhn-Tucker (KKT) necessary conditions
+Remark The condition
+∇1L(z⋆, µ⋆, λ⋆) = 0
+can be explicitly written as
+∇ℓ(z⋆) +
+r
+X
+j=1
+µ⋆
+j∇gj(z⋆) +
+m
+X
+i=1
+λ⋆
+i ∇hi(z⋆) = 0
+Remark The condition µ⋆
+j g⋆
+j (z⋆) = 0, j ∈{1, . . . , r}, is called complementary slackness.
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 56 |73

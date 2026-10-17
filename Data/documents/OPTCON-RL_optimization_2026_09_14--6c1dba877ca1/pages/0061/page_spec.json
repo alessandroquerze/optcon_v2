@@ -1,0 +1,166 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0061",
+  "document_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1",
+  "source": {
+    "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+    "page_index": 60,
+    "physical_page_number": 61,
+    "pdf_label_raw": "<FEFF00350035>",
+    "pdf_label": "55",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Karush-Kuhn-Tucker (KKT) necessary conditions",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      297.9358825683594,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 55,
+        "total": 73,
+        "raw": "55 |73",
+        "bbox": [
+          150.6879425048828,
+          247.92864990234375,
+          447.87115478515625,
+          258.2938232421875
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0061/text.txt",
+      "sha256": "3fe09f54a51842e9eb891455620c1d42d4ba417944a73d71195d009f21370c12"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0061/text.reading-order.txt",
+      "sha256": "47674547b8227a0965350cfba6add55df759497a19576feaf1cbea9f808ec22c"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0061/layout.json",
+      "sha256": "bf2edd4d51dbb8f23a08a313645fde314057b33843626e903607015edc985d99"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0061/render.png",
+      "sha256": "db5f3a4fd09fd246b4c5b58c49bafebeb4ff187cec916f41e31040858c93d972",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "af712a7eee8e5514ad7006becbd14195417b165d0019e44d4f9ed67ef218b045"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0060",
+    "next_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0062"
+  },
+  "relations": [
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0060",
+      "kind": "progressive_candidate",
+      "confidence": 0.9,
+      "review_status": "candidate",
+      "reason": "Etichetta PDF ripetuta su pagine adiacenti con raster differenti: possibile overlay, da verificare anche a testo identico.",
+      "metrics": {
+        "text_jaccard": 0.897059,
+        "text_containment": 1.0,
+        "left_tokens": 122,
+        "right_tokens": 136,
+        "visual_difference": 0.004109,
+        "ink_overlap": 0.753521,
+        "dhash_distance": 5
+      },
+      "delta_in_physical_order": {
+        "text": {
+          "added_lines": [
+            "Remark If ℓ, hi and gj twice differentiable, second order conditions."
+          ],
+          "removed_lines": [],
+          "semantic_interpretation": "pending_visual_analysis"
+        },
+        "visual": {
+          "changed_bbox_px": [
+            58,
+            419,
+            577,
+            437
+          ],
+          "pixel_threshold": 16,
+          "changed_pixel_fraction": 0.005216
+        }
+      }
+    },
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0062",
+      "kind": "progressive_candidate",
+      "confidence": 0.9,
+      "review_status": "candidate",
+      "reason": "Etichetta PDF ripetuta su pagine adiacenti con raster differenti: possibile overlay, da verificare anche a testo identico.",
+      "metrics": {
+        "text_jaccard": 0.770186,
+        "text_containment": 0.911765,
+        "left_tokens": 136,
+        "right_tokens": 149,
+        "visual_difference": 0.007806,
+        "ink_overlap": 0.70297,
+        "dhash_distance": 4
+      },
+      "delta_in_physical_order": {
+        "text": {
+          "added_lines": [
+            "Notation Points satisfying the KKT necessary conditions of optimality are referred to as KKT points.",
+            "They are the counterpart of stationary points in constrained optimization."
+          ],
+          "removed_lines": [
+            "Remark If ℓ, hi and gj twice differentiable, second order conditions."
+          ],
+          "semantic_interpretation": "pending_visual_analysis"
+        },
+        "visual": {
+          "changed_bbox_px": [
+            57,
+            419,
+            835,
+            458
+          ],
+          "pixel_threshold": 16,
+          "changed_pixel_fraction": 0.016395
+        }
+      }
+    }
+  ],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "pending",
+    "result": null
+  }
+}

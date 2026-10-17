@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574:p0017",
+  "document_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574",
+  "source": {
+    "pdf_sha256": "937db0d7a574f549eb1181f22207ccfa886ae6d79206720718692bfd6015bd97",
+    "page_index": 16,
+    "physical_page_number": 17,
+    "pdf_label_raw": "<FEFF00310035>",
+    "pdf_label": "15",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Recall KKT conditions for unconstrained optimal control",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      342.0648193359375,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 15,
+        "total": 18,
+        "raw": "15 |18",
+        "bbox": [
+          99.74800109863281,
+          247.8778533935547,
+          447.8712158203125,
+          253.93292236328125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/pages/0017/text.txt",
+      "sha256": "44b3e7557e2b861daad46de928bc33123bc9190174a71c4bee997924788d71f1"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/pages/0017/text.reading-order.txt",
+      "sha256": "82af2e61b73dacf274a42f3ed327ede09786c86f25639fbf15916163ce256135"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/pages/0017/layout.json",
+      "sha256": "c32725e6d22c84127c2ca3cf99dc175248ad0dbeca5494a0dcbfac313fe8ae06"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/pages/0017/render.png",
+      "sha256": "ac6b61fad46090ecebb7d92ed73cb375e5bc7bc5375b3f2ef3bc7868e014f79f",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "4dc4f20d61d8dd143a3c5261b7051a5ade095531ffa1a84b1483f93bc39409bd"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574:p0016",
+    "next_page_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574:p0018"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "pending",
+    "result": null
+  }
+}

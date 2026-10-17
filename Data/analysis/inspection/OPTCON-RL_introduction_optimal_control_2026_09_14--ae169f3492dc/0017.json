@@ -1,0 +1,14 @@
+{
+  "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0017",
+  "sequence_number": 17,
+  "method": "Codex: lettura del testo e ispezione delle PNG tramite view_image nella sessione",
+  "required_page_ids_inspected": [
+    "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0017",
+    "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0016",
+    "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0018"
+  ],
+  "request_sha256": "a59e654e34db4c26c8107177aa0e4301f3e4f620f525f52573f95b2868c3b8a1",
+  "recorded_at_utc": "2026-10-17T15:12:51.297831+00:00",
+  "human_review": false,
+  "revised_at_utc": "2026-10-17T15:33:23.337193+00:00"
+}

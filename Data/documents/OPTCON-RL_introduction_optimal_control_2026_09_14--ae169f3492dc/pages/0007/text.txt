@@ -1,0 +1,12 @@
+Optimal Control: motivating domains
+Space systems
+Performance index
+• distance from desired “behavior”
+(desired orbit, velocities,...)
+• energy consumption
+• minimum time
+Constraints
+• geometric (orbit, orientation wrt sun/Earth, ...)
+• inputs (thrust)
+• internal systems (angular and linear velocities,...)
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 6 |35

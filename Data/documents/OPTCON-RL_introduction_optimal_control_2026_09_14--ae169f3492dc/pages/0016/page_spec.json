@@ -1,0 +1,961 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0016",
+  "document_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc",
+  "source": {
+    "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+    "page_index": 15,
+    "physical_page_number": 16,
+    "pdf_label_raw": "<FEFF00310035>",
+    "pdf_label": "15",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Example of cost function: vector set up",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      242.3730926513672,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 15,
+        "total": 35,
+        "raw": "15 |35",
+        "bbox": [
+          126.9540023803711,
+          247.92860412597656,
+          447.8712158203125,
+          258.29376220703125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0016/text.txt",
+      "sha256": "e8f234cfde8bc480967577152682f679569471aff9568a588c1833d3cbef2561"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0016/text.reading-order.txt",
+      "sha256": "3d39a69c8c19ea9192ce421ef5e37405f6a97f9e1f68924483edf50c51291c83"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0016/layout.json",
+      "sha256": "2f60822c5669ab6b5e7a3e781440e491826ab0112b0560ad3eb180f99e1e626a"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0016/render.png",
+      "sha256": "603b776f18f8b10927c633e3a3acf21b95e04f42cb85802fd5c0b32d55a441bf",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "b1ea2c4e89b1051f88c126e6be7bb70d892ed7270e8c21544f36758a6a610b2d"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0015",
+    "next_page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0017"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "proposed_after_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "needs_review",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "0c1c5470a5e84fe7df0500debf1616a5e4933a879b444c3e7ced2828a8771829",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0016",
+      "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+      "artifact_sha256": {
+        "text": "e8f234cfde8bc480967577152682f679569471aff9568a588c1833d3cbef2561",
+        "layout": "2f60822c5669ab6b5e7a3e781440e491826ab0112b0560ad3eb180f99e1e626a",
+        "render": "603b776f18f8b10927c633e3a3acf21b95e04f42cb85802fd5c0b32d55a441bf"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "Codex (identificatore esatto del modello non esposto nella sessione)",
+        "run_id": "page-analysis-ce370a19242e4173828aef04d60c36ee"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0016",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0015",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0017"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0016",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0015",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0017"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0016",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0015",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0017"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Example of cost function: vector set up",
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "L'espansione finale contiene un probabile refuso; non presentare come letteralmente presente la versione con w₂ nel secondo termine.",
+          "La frase positiva (semi-)definita è generale, mentre il caso diagonale successivo richiede entrambi i pesi strettamente positivi.",
+          "Per W singolare l'espressione può essere una seminorma; questa precisazione è enrichment matematico."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Costo quadratico scalare",
+            "why": "La distanza vettoriale estende la formula precedente.",
+            "origin": "source_context",
+            "page_numbers": [
+              15
+            ]
+          },
+          {
+            "concept": "Prodotto matriciale e positività (semi-)definita",
+            "why": "Necessari per interpretare W e il costo.",
+            "origin": "enrichment",
+            "page_numbers": []
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\ell(z)=\\frac12\\|z-\\bar z\\|^2=\\frac12(z-\\bar z)^\\top(z-\\bar z),\\quad z,\\bar z\\in\\mathbb{R}^d",
+            "anchor": "Distance from a point:",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          },
+          {
+            "latex": "\\ell(z)=\\frac12\\|z-\\bar z\\|_W^2=\\frac12(z-\\bar z)^\\top W(z-\\bar z),\\quad W\\in\\mathbb{R}^{d\\times d}",
+            "anchor": "Weighted distance:",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          },
+          {
+            "latex": "z=\\begin{bmatrix}z_1\\\\z_2\\end{bmatrix},\\quad W=\\begin{bmatrix}w_1&0\\\\0&w_2\\end{bmatrix}>0,\\quad w_1>0,\\ w_2>0",
+            "anchor": "Consider z ∈R2",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          },
+          {
+            "latex": "\\ell(z)=\\frac12\\|z-\\bar z\\|_W^2=\\frac12w_1(z_1-\\bar z_1)^2+\\frac12w_1(z_2-\\bar z_2)^2",
+            "anchor": "2w1(z1 −¯z1)2",
+            "notes": "TRASCRIZIONE LETTERALE: il secondo coefficiente stampato è w₁, non w₂. Non correggerlo senza segnalazione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explain-1",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Derivazione dichiarata come enrichment dalla formula matriciale: se W=diag(w₁,w₂), il secondo termine coerente è ½w₂(z₂−z̄₂)². Mostrare accanto la trascrizione letterale della fonte e l'avviso, senza sostituirla silenziosamente.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "id": "explain-2",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Un peso nullo lascia una direzione non penalizzata; non chiamare automaticamente norma una forma con W semidefinita.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "id": "example-1",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "Enrichment derivato dalla formula matriciale: z̄=(0,0), z=(1,1), W=diag(1,4).",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Variare pesi distinti rende comprensibile l'anisotropia e permette di vedere la discrepanza invece di occultarla.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "id": "visualization",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Curve di livello della formula matriciale con pannello letterale del refuso; etichettare esplicitamente quale espressione viene valutata.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Rendere visibile il ruolo distinto dei pesi e il refuso.",
+            "setup": "Enrichment derivato dalla formula matriciale: z̄=(0,0), z=(1,1), W=diag(1,4).",
+            "parameters": [
+              {
+                "symbol": "w_1,w_2",
+                "value": "1,4"
+              },
+              {
+                "symbol": "z",
+                "value": "(1,1)"
+              },
+              {
+                "symbol": "\\bar z",
+                "value": "(0,0)"
+              }
+            ],
+            "derivation": [
+              "Dal prodotto matriciale: ℓ=½(1+4)=2.5.",
+              "Applicando letteralmente l'ultima riga stampata si otterrebbe ½(1+1)=1.",
+              "La differenza mostra l'incompatibilità per w₁≠w₂; non attribuire la correzione alla fonte."
+            ],
+            "expected_outcome": "La matrice pesa diversamente le due coordinate; l'espansione finale richiede revisione.",
+            "limitations": [
+              "La numerica è aggiunta.",
+              "Il grafico proposto segue dichiaratamente la definizione matriciale, non la riga incoerente."
+            ],
+            "enrichment_id": "example-1",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "WeightedQuadraticContoursWithSourceDiscrepancy",
+          "description": "Curve di livello della formula matriciale con pannello letterale del refuso; etichettare esplicitamente quale espressione viene valutata.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Variare pesi distinti rende comprensibile l'anisotropia e permette di vedere la discrepanza invece di occultarla.",
+          "component": "DiagonalWeightContourExplorer",
+          "parameters": [
+            {
+              "name": "Primo peso",
+              "symbol": "w_1",
+              "origin": "source",
+              "range": "[0,5]",
+              "default": "1",
+              "effect_on_change": "Ricalcolare ellissi/livelli e costo dalla matrice, modificando la penalizzazione del primo scarto.",
+              "edge_cases": [
+                "w₁=0: forma semidefinita, fuori dal caso strettamente positivo illustrato"
+              ]
+            },
+            {
+              "name": "Secondo peso",
+              "symbol": "w_2",
+              "origin": "source",
+              "range": "[0,5]",
+              "default": "4",
+              "effect_on_change": "Ricalcolare costo e compressione delle curve lungo la seconda coordinata; non sostituire w₂ con w₁.",
+              "edge_cases": [
+                "w₂=0: direzione non penalizzata"
+              ]
+            }
+          ],
+          "outputs": [
+            "Costo matriciale",
+            "Costo della riga letterale per confronto",
+            "Curve di livello",
+            "Avviso sulla positività"
+          ],
+          "invariants": [
+            "z=(1,1), z̄=(0,0) nell'esempio",
+            "Matrice diagonale",
+            "Trascrizione della fonte conservata",
+            "Range/default sono enrichment"
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "w₁=w₂>0",
+            "expected_behavior": "Le due espressioni coincidono accidentalmente e le curve sono circolari.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "case": "Un peso nullo",
+            "expected_behavior": "Le curve possono essere non chiuse; mostrare la perdita di positività definita.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "case": "Entrambi i pesi nulli",
+            "expected_behavior": "Costo identicamente zero; nessun minimo unico deducibile.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          }
+        ],
+        "expansion_rationale": "La definizione matriciale, il caso diagonale e un avviso di coerenza restano un solo concetto; una seconda pagina non risolverebbe il refuso.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Distanza quadratica pesata e ruolo dei pesi, con trascrizione letterale e avviso sull'espansione incoerente.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ],
+            "enrichment_ids": [
+              "explain-1",
+              "explain-2",
+              "example-1",
+              "interaction",
+              "visualization"
+            ]
+          }
+        ]
+      },
+      "observations": [
+        {
+          "id": "s01",
+          "category": "definition",
+          "description": "La decisione è z∈Rᵈ; il costo di distanza è ℓ(z)=½‖z−z̄‖²=½(z−z̄)ᵀ(z−z̄), con z̄ assegnato.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0016",
+            "modality": "both",
+            "text_quote": "Distance from a point:",
+            "bbox": [
+              37,
+              63,
+              398,
+              80
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s02",
+          "category": "equation",
+          "description": "Per una matrice W∈Rᵈˣᵈ positiva (semi-)definita la fonte scrive ℓ(z)=½‖z−z̄‖²_W=½(z−z̄)ᵀW(z−z̄).",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0016",
+            "modality": "both",
+            "text_quote": "Weighted distance:",
+            "bbox": [
+              37,
+              83,
+              397,
+              132
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s03",
+          "category": "assumption",
+          "description": "Nel caso bidimensionale sono indicati z=col(z₁,z₂), W=diag(w₁,w₂)>0, con w₁>0 e w₂>0.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0016",
+            "modality": "both",
+            "text_quote": "Consider z ∈R2",
+            "bbox": [
+              27,
+              151,
+              421,
+              177
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s04",
+          "category": "equation",
+          "description": "L'espansione finale effettivamente stampata usa w₁ in entrambi i termini: ½w₁(z₁−z̄₁)²+½w₁(z₂−z̄₂)². Non coincide in generale con la precedente W=diag(w₁,w₂).",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0016",
+            "modality": "both",
+            "text_quote": "2w1(z1 −¯z1)2",
+            "bbox": [
+              117,
+              180,
+              435,
+              198
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-05",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Example of cost function: vector set up",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0016",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              10.35200023651123,
+              6.720991134643555,
+              242.3730926513672,
+              21.06719207763672
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-06",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Decision variable: z ∈Rd",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0016",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              28.34600067138672,
+              32.68060302734375,
+              125.73460388183594,
+              43.60588073730469
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-07",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Cost function:",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0016",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              28.34600830078125,
+              53.5684814453125,
+              82.67343139648438,
+              62.534881591796875
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-08",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 15 |35",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0016",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              126.9540023803711,
+              247.92860412597656,
+              447.8712158203125,
+              255.1179962158203
+            ]
+          },
+          "confidence": 0.98
+        }
+      ],
+      "contextual_role": "Generalizza il costo scalare e introduce l'anisotropia dei pesi, ma presenta una discrepanza nell'espansione finale.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0015",
+          "role": "previous",
+          "note": "La pagina 15 contiene il caso d=1 e il fattore 1/2."
+        },
+        {
+          "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0017",
+          "role": "next",
+          "note": "La pagina 17 introduce insiemi di vincolo; i pesi di costo non sono parametri di quei vincoli."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "z,\\bar z",
+          "meaning": "Decisione e punto assegnato in Rᵈ",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        {
+          "symbol": "W",
+          "meaning": "Matrice dei pesi positiva (semi-)definita",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        {
+          "symbol": "w_1,w_2",
+          "meaning": "Pesi diagonali nel caso d=2",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        {
+          "symbol": "\\|z-\\bar z\\|_W^2",
+          "meaning": "Espressione quadratica pesata usata dalla fonte",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        }
+      ],
+      "uncertainties": [
+        {
+          "description": "Refuso matematico confermato visivamente: l'ultima espansione ripete w₁ dove la formula con W=diag(w₁,w₂) comporterebbe w₂. Bloccante per usare quell'espansione come identità corretta senza revisione esplicita.",
+          "blocking": true,
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        }
+      ],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ],
+        "rationale": "Pagina con contenuto autonomo nella sequenza; nessun candidato automatico da confermare."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              10.35200023651123,
+              6.720991134643555,
+              242.3730926513672,
+              21.06719207763672
+            ],
+            "description": "Regione testuale sorgente: Example of cost function: vector set up",
+            "observation_ids": [
+              "transcription-05"
+            ]
+          },
+          {
+            "bbox": [
+              28.34600067138672,
+              32.68060302734375,
+              125.73460388183594,
+              43.60588073730469
+            ],
+            "description": "Regione testuale sorgente: Decision variable: z ∈Rd",
+            "observation_ids": [
+              "transcription-06"
+            ]
+          },
+          {
+            "bbox": [
+              28.34600830078125,
+              53.5684814453125,
+              82.67343139648438,
+              62.534881591796875
+            ],
+            "description": "Regione testuale sorgente: Cost function:",
+            "observation_ids": [
+              "transcription-07"
+            ]
+          },
+          {
+            "bbox": [
+              40.10200881958008,
+              64.70346069335938,
+              394.9676513671875,
+              80.056396484375
+            ],
+            "description": "Regione testuale sorgente: • Distance from a point: ℓ(z) = 1\n2∥z −¯z∥2 = 1\n2(z −¯z)⊤(z −¯z) with ¯z ∈Rd a given point.",
+            "observation_ids": [
+              "s01"
+            ]
+          },
+          {
+            "bbox": [
+              40.102020263671875,
+              82.53758239746094,
+              356.05340576171875,
+              93.46286010742188
+            ],
+            "description": "Regione testuale sorgente: • Weighted distance: given a positive (semi-)definite (weight) matrix W ∈Rd×d,",
+            "observation_ids": [
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              155.2650146484375,
+              102.27578735351562,
+              188.04632568359375,
+              112.39186096191406
+            ],
+            "description": "Regione testuale sorgente: ℓ(z) = 1",
+            "observation_ids": [
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              184.3939971923828,
+              101.64277648925781,
+              244.54931640625,
+              114.96939086914062
+            ],
+            "description": "Regione testuale sorgente: 2∥z −¯z∥2\nW = 1",
+            "observation_ids": [
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              240.89700317382812,
+              101.42758178710938,
+              320.1014709472656,
+              114.96939086914062
+            ],
+            "description": "Regione testuale sorgente: 2(z −¯z)⊤W(z −¯z),",
+            "observation_ids": [
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              50.165069580078125,
+              119.58546447753906,
+              152.5986328125,
+              132.36085510253906
+            ],
+            "description": "Regione testuale sorgente: with ¯z ∈Rd a given point.",
+            "observation_ids": [
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              28.34607696533203,
+              157.3005828857422,
+              111.00224304199219,
+              168.22586059570312
+            ],
+            "description": "Regione testuale sorgente: Consider z ∈R2, z =",
+            "observation_ids": [
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              113.5650863647461,
+              153.0583953857422,
+              126.36740112304688,
+              163.22837829589844
+            ],
+            "description": "Regione testuale sorgente: \u0014z1",
+            "observation_ids": [
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              118.42908477783203,
+              164.68946838378906,
+              126.36740112304688,
+              174.18739318847656
+            ],
+            "description": "Regione testuale sorgente: z2",
+            "observation_ids": [
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              126.8660888671875,
+              153.0583953857422,
+              131.7258758544922,
+              162.02479553222656
+            ],
+            "description": "Regione testuale sorgente: \u0015",
+            "observation_ids": [
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              131.73008728027344,
+              159.2594757080078,
+              157.06723022460938,
+              168.2258758544922
+            ],
+            "description": "Regione testuale sorgente: , W =",
+            "observation_ids": [
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              159.6300811767578,
+              153.0583953857422,
+              195.46937561035156,
+              174.18739318847656
+            ],
+            "description": "Regione testuale sorgente: \u0014w1\n0\n0\nw2",
+            "observation_ids": [
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              195.9680633544922,
+              153.0583953857422,
+              200.82785034179688,
+              162.02479553222656
+            ],
+            "description": "Regione testuale sorgente: \u0015",
+            "observation_ids": [
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              203.3910675048828,
+              159.2594757080078,
+              379.5076904296875,
+              169.22286987304688
+            ],
+            "description": "Regione testuale sorgente: > 0 with w1 > 0, w2 > 0, the cost function is",
+            "observation_ids": [
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              122.66606140136719,
+              183.95379638671875,
+              155.44735717773438,
+              194.06886291503906
+            ],
+            "description": "Regione testuale sorgente: ℓ(z) = 1",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              151.7949981689453,
+              183.31979370117188,
+              211.9503173828125,
+              196.64739990234375
+            ],
+            "description": "Regione testuale sorgente: 2∥z −¯z∥2\nW = 1",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              208.29800415039062,
+              180.79547119140625,
+              330.37835693359375,
+              196.64739990234375
+            ],
+            "description": "Regione testuale sorgente: 2w1(z1 −¯z1)2 + 1\n2w1(z2 −¯z2)2",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              126.9540023803711,
+              247.92860412597656,
+              447.8712158203125,
+              255.1179962158203
+            ],
+            "description": "Regione testuale sorgente: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 15 |35",
+            "observation_ids": [
+              "transcription-08"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "La definizione matriciale, il caso diagonale e un avviso di coerenza restano un solo concetto; una seconda pagina non risolverebbe il refuso.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1,
+  "source_warning": {
+    "policy_version": "1.0.0",
+    "scope": "companion_only",
+    "type": "CORRECTION_WARNING",
+    "review_status": "resolved",
+    "issues": [
+      {
+        "issue_id": "intro-p16-issue-1",
+        "source_issue_index": 0,
+        "issue": "Secondo peso della forma quadratica",
+        "type": "CORRECTION_WARNING",
+        "source_expression": "\\ell(z)=\\frac12\\|z-\\bar z\\|_W^2=\\frac12w_1(z_1-\\bar z_1)^2+\\frac12w_1(z_2-\\bar z_2)^2",
+        "corrected_expression": "\\ell(z)=\\frac12\\|z-\\bar z\\|_W^2=\\frac12w_1(z_1-\\bar z_1)^2+\\frac12w_2(z_2-\\bar z_2)^2",
+        "companion_uses": "\\ell(z)=\\frac12\\|z-\\bar z\\|_W^2=\\frac12w_1(z_1-\\bar z_1)^2+\\frac12w_2(z_2-\\bar z_2)^2",
+        "short_warning": "⚠ Warning: possibile errore nella slide originale. Qui usiamo w₂ nel secondo termine invece di w₁.",
+        "correction_reason": "Ponendo e=z−z̄ e W=diag(w₁,w₂), il prodotto eᵀWe è w₁e₁²+w₂e₂². La seconda coordinata deve quindi avere coefficiente w₂. L'identità errata coincide accidentalmente solo in casi particolari, ad esempio pesi uguali o secondo scarto nullo. La correzione deriva dalla matrice e dalla definizione generale già presenti nella stessa pagina.",
+        "use_corrected_value_for_examples": true,
+        "use_corrected_value_for_simulation": true,
+        "resolved": true,
+        "source_references": [
+          "/analysis/result/didactic_plan/source_math/1",
+          "/analysis/result/didactic_plan/source_math/2",
+          "/analysis/result/didactic_plan/source_math/3"
+        ],
+        "context_pages_consulted": [],
+        "calculation_policy": "Usare esclusivamente il prodotto matriciale e la sua espansione con w₂ nel secondo termine per esempi, curve di livello, grafici, simulazioni e audit numerici. Vietato valutare il refuso anche come confronto didattico.",
+        "ui": {
+          "show": true,
+          "color": "red",
+          "placement": "accanto alla sola espansione del costo pesato",
+          "when": "solo quando è visibile la specifica spiegazione interessata; una sola nota locale",
+          "student_text_field": "short_warning"
+        }
+      }
+    ],
+    "companion_overrides": [
+      {
+        "path": "/examples/0/purpose",
+        "value": "Calcolare il costo corretto e distinguere i contributi delle due coordinate."
+      },
+      {
+        "path": "/examples/0/derivation",
+        "value": [
+          "Con W=diag(1,4) ed e=(1,1): ℓ=½w₁e₁²+½w₂e₂².",
+          "Primo contributo: 0.5; secondo contributo: 2.",
+          "Il costo totale corretto è 2.5."
+        ]
+      },
+      {
+        "path": "/examples/0/expected_outcome",
+        "value": "Il secondo scarto è pesato da w₂. Si valuta soltanto l'espressione corretta."
+      },
+      {
+        "path": "/enrichments/0/proposal",
+        "value": "Usare l'espansione con w₂ nel secondo termine e il solo breve warning locale della policy."
+      },
+      {
+        "path": "/enrichments/3/proposal",
+        "value": "Variare i pesi della formula corretta per comprendere l'anisotropia del costo."
+      },
+      {
+        "path": "/enrichments/4/proposal",
+        "value": "Curve di livello della formula corretta, senza pannelli o valori calcolati dal refuso."
+      },
+      {
+        "path": "/visualization/component",
+        "value": "WeightedQuadraticContours"
+      },
+      {
+        "path": "/visualization/description",
+        "value": "Curve di livello della forma corretta e piccolo warning rosso accanto all'espansione; nessun confronto numerico con il refuso."
+      },
+      {
+        "path": "/interactivity/rationale",
+        "value": "Comprendere l'effetto distinto di w₁ e w₂ sulla stessa forma quadratica corretta."
+      },
+      {
+        "path": "/interactivity/outputs",
+        "value": [
+          "Costo corretto",
+          "Contributi delle due coordinate",
+          "Curve di livello",
+          "Indicazione della positività dei pesi"
+        ]
+      },
+      {
+        "path": "/blueprint/0/focus",
+        "value": "Distanza quadratica pesata: ogni coordinata usa il proprio peso; breve warning sulla seconda componente."
+      }
+    ],
+    "technical_only_legacy_paths": [
+      "/analysis/result/didactic_plan/examples/0/derivation/1",
+      "/analysis/result/didactic_plan/interactivity/outputs/1",
+      "/analysis/result/didactic_plan/enrichments/4/proposal"
+    ],
+    "original_analysis_sha256": "62e64df1fdd920e2d8f2ef1ee81fcb19ee7e9da22aab207b05ed270d12e0b218"
+  }
+}

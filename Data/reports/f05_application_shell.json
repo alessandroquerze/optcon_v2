@@ -1,0 +1,140 @@
+{
+  "phase": "F05",
+  "status": "COMPLETED",
+  "next_phase": {
+    "phase": "F06",
+    "status": "NOT_STARTED",
+    "vertical_slice_pages": [
+      2,
+      8,
+      12,
+      16,
+      17,
+      27,
+      30,
+      34
+    ]
+  },
+  "verified_at": "2026-10-17T19:38:11.164885+00:00",
+  "GRAPHICS_REQUIREMENT": "FULL_2D_AND_3D_SUPPORT",
+  "checks": {
+    "APPLICATION_SHELL": "PASS",
+    "PDF_VIEWER": "PASS",
+    "PAGE_SYNC": "PASS",
+    "COMPANION_CONTAINER": "PASS",
+    "WARNING_SYSTEM": "PASS",
+    "GRAPHICS_2D_FOUNDATION": "PASS",
+    "GRAPHICS_3D_FOUNDATION": "PASS",
+    "COMBINED_2D_3D": "PASS",
+    "REALTIME_GRAPH_UPDATES": "PASS",
+    "BUILD": "PASS",
+    "REUSABLE_VISUALIZATION_FOUNDATIONS": "9/9",
+    "OTHER_REUSABLE_COMPONENT_FOUNDATIONS": 12,
+    "TESTS": "78/78",
+    "VERTICAL_SLICE_IMPLEMENTED": "NO",
+    "READY_FOR_F06": "YES"
+  },
+  "tests": {
+    "frontend": {
+      "passed": 38,
+      "total": 38,
+      "evidence": "frontend/test-reports/unit-results.json"
+    },
+    "browser": {
+      "passed": 6,
+      "failed": 0,
+      "skipped": 0,
+      "evidence": "frontend/test-reports/browser-results.json"
+    },
+    "pipeline": {
+      "verified_at": "2026-10-17T19:37:51.712640+00:00",
+      "tests": 34,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "success": true
+    },
+    "total_passed": 78,
+    "total": 78
+  },
+  "typescript": "PASS (tsc --noEmit in production build)",
+  "production_build": {
+    "status": "PASS",
+    "command": "npm run build",
+    "output": "frontend/dist",
+    "bundler": "Vite configLoader runner",
+    "production_browser_smoke": "Data/reports/f05_production_smoke.json",
+    "chunk_bytes": {
+      "DevPlayground-BetJkqkh.js": 25289,
+      "index-D-KzWiH4.js": 587979,
+      "pdf-engine-BLJfr985.js": 430551,
+      "plot-engine-Cg28ItK7.js": 4644695,
+      "rolldown-runtime-WkwZ5CU-.js": 599
+    }
+  },
+  "protected_sources": {
+    "checked": 969,
+    "changed": [],
+    "baseline": "Data/reviews/f05_source_baseline.json",
+    "manifest_modified": false,
+    "page_spec_modified": false,
+    "source_pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469"
+  },
+  "companion_pages": {
+    "physical_source_pages": 36,
+    "placeholder_count": 36,
+    "implemented_count": 0,
+    "registry": "frontend/src/companion/registry.ts"
+  },
+  "visualization_foundations": {
+    "canonical_count": 9,
+    "components": [
+      "FunctionExplorer",
+      "TrajectoryViewer",
+      "ProjectionLink",
+      "SceneViewport",
+      "ModelDiagram",
+      "VectorVisualizer",
+      "CostBreakdown",
+      "StateInputTimeline",
+      "ComparisonTable"
+    ],
+    "additional_non_graphic_public_components": 12,
+    "backend": "Plotly.js / react-plotly.js",
+    "three_js_added": false,
+    "real_browser": "Installed Chrome 155, headless, native WebGL with SwiftShader",
+    "physical_gpu_benchmark": false,
+    "measurements": "Data/reports/f05_runtime_measurements.json"
+  },
+  "browser_checklist": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "PASS",
+    "4": "PASS",
+    "5": "PASS",
+    "6": "PASS",
+    "7": "PASS",
+    "8": "PASS",
+    "9": "PASS",
+    "10": "PASS",
+    "11": "PASS",
+    "12": "PASS",
+    "13": "PASS",
+    "14": "PASS",
+    "15": "PASS"
+  },
+  "evidence_docs": "Docs/F05_APPLICATION_SHELL.md",
+  "screenshots": [
+    "Docs/F05_assets/study-shell.png",
+    "Docs/F05_assets/combined-2d-3d.png",
+    "Docs/F05_assets/trajectory-3d.png"
+  ],
+  "ingestion_compatibility": {
+    "status": "PASS",
+    "excluded_generated_roots": [
+      "frontend/public/course-assets",
+      "frontend/dist"
+    ],
+    "regression_test": "test_frontend_generated_pdf_copies_are_not_source_documents"
+  }
+}

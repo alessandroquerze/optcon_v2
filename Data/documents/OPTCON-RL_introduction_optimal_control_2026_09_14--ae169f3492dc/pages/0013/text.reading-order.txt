@@ -1,0 +1,24 @@
+Recall some tools for nonlinear systems analysis and control
+
+
+      • System Trajectories and equilibria
+
+      • Linearization
+
+      • Equilibrium (origin) stabilization (typically time-invariant systems)
+
+      • Output/trajectory tracking (typically time-varying systems)
+
+
+    The following issues are not handled explicitly
+
+      • Optimize a performance index (e.g., control effort, distance from a target point, time, ...)
+
+      •  Explicitly handle constraints (e.g., saturations on the inputs, collision/obstacle avoidance, regions
+         where the state has to be confined,...)
+
+
+
+
+
+                                            Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 12 |35

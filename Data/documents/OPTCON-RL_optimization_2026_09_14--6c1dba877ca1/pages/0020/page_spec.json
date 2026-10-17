@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0020",
+  "document_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1",
+  "source": {
+    "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+    "page_index": 19,
+    "physical_page_number": 20,
+    "pdf_label_raw": "<FEFF00310039>",
+    "pdf_label": "19",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Graphical interpretation of Lipschitz continuity of the gradient",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      374.5875549316406,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 19,
+        "total": 73,
+        "raw": "19 |73",
+        "bbox": [
+          150.68800354003906,
+          247.92860412597656,
+          447.8712158203125,
+          258.29376220703125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0020/text.txt",
+      "sha256": "12a08e5985cbe57f02ae435229bcd7437deda632729fff25079db51a013c1480"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0020/text.reading-order.txt",
+      "sha256": "27c34f964978bc5528336d2c17d58d30dec21aadfc91bbd399d2e7be628d76cb"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0020/layout.json",
+      "sha256": "347a69b911f12ca3906e40d631e3514ab9037e9289964e384121cb01d24fd0e7"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0020/render.png",
+      "sha256": "e4e0445deb3d77ab2a256909bdfd9d8fcff2582a431df6564ec12ad79e48caa9",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "074e4e1c9b6a327176dc664cf954a2c2bc6808344c5a11f49606ce5f6d599a59"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0019",
+    "next_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0021"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "pending",
+    "result": null
+  }
+}

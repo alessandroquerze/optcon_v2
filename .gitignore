@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+Data/.staging/
+node_modules/
+.cache/
+frontend/dist/
+frontend/public/course-assets/
+frontend/public/pdfjs/
+frontend/playwright-report/
+frontend/test-results/
+frontend/test-reports/
+

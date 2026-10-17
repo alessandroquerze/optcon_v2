@@ -1,0 +1,23 @@
+Unconstrained optimal control problem (discrete-time)
+
+
+   We look for a solution of the following discrete-time optimal control problem
+
+                                       T −1
+                           min X ℓt(xt, ut) + ℓT (xT )                                  (4a)
+                           x∈Rn,u∈Rm
+                                           t=0
+                                      subj.to xt+1 = ft(xt, ut),   t ∈0, . . . , T −1                     (4b)
+
+    with given initial condition x0 = x0 ∈Rn, where ℓt : Rn × Rm →R is the so-called stage cost while
+    ℓT  : Rn →R is the terminal cost.
+
+
+    From now on, we will use the following assumption.
+    Assumption Functions ℓt(·, ·), ℓT (·), ft(·, ·) are twice continuously differentiable, i.e., they are class C2.
+
+
+
+
+
+                                   Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Optimality Conditions for Optimal Control 7 |18

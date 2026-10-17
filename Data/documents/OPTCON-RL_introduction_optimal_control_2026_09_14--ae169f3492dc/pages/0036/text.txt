@@ -1,0 +1,32 @@
+Example: trajectory generation for a pendulum (IV)
+The optimal control problem then reads
+min
+(x(·),u(·))∈F
+Z T
+0
+q1(x1(τ) −xdes
+1 (τ))2 + q2x2(τ)2 + r(u(τ) −udes(τ))2dτ
++ qT 1(x1(T) −xdes
+1 (T))2 + qT 2x2(T)2
+subj.to
+(
+˙x1(t) = x2(t)
+˙x2(t) = −g
+l sin x1(t) +
+1
+mℓ2 u(t)
+x(0) = x0
+where we chose as weight matrices Q =
+q1
+0
+0
+q2
+
+, QT =
+qT 1
+0
+0
+qT 2
+
+, R = r.
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 35 |35

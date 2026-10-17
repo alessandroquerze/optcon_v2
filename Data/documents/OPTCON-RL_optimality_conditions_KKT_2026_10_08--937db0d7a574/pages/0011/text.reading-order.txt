@@ -1,0 +1,19 @@
+Optimal control as equality constrained optimization
+
+
+     In light of this compact notation, we can rewrite the optimal control problem as
+
+                                    min      ℓ(x, u)
+                                     x∈RnT ,u∈RmT
+
+                                                   subj.to h(x, u) = 0
+
+    where ℓ: RnT × RmT →R and h : RnT × RmT →RnT .
+
+    This is a constrained nonlinear optimization problem with decision variable (x, u).
+
+
+
+
+
+                                   Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Optimality Conditions for Optimal Control 9 |18

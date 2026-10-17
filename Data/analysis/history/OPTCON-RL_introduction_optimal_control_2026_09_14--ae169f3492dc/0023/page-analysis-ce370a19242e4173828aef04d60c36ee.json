@@ -1,0 +1,739 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0023",
+  "document_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc",
+  "source": {
+    "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+    "page_index": 22,
+    "physical_page_number": 23,
+    "pdf_label_raw": "<FEFF00320032>",
+    "pdf_label": "22",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Discrete-time optimal control problem",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      233.0193634033203,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 22,
+        "total": 35,
+        "raw": "22 |35",
+        "bbox": [
+          126.9540023803711,
+          247.92860412597656,
+          447.8712158203125,
+          258.29376220703125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0023/text.txt",
+      "sha256": "19533626e6b00f286c7c778d710db4d4ad10bbe72ed4374d7fa370e698dbd567"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0023/text.reading-order.txt",
+      "sha256": "8ae17e6b3012452d157ee7faff26036617da35e4e80243d1e517aba91fecc33c"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0023/layout.json",
+      "sha256": "97d077c3c7188c10bcbad691980d67afa97ab4bff2f530558fb04b34c3dc71fb"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0023/render.png",
+      "sha256": "6e7658c14179442c8ddea2c515e76df3338b64880a0169680abeff0e50870278",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "26fa74df7cd516fa936b4399d4e5d68e988a7da4e444b873406ca479ff7e5e01"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0022",
+    "next_page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0024"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "30d392a9a102883b1fc5ffb2d83098acbb42934dc70910347230c2b45432a07c",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0023",
+      "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+      "artifact_sha256": {
+        "text": "19533626e6b00f286c7c778d710db4d4ad10bbe72ed4374d7fa370e698dbd567",
+        "layout": "97d077c3c7188c10bcbad691980d67afa97ab4bff2f530558fb04b34c3dc71fb",
+        "render": "6e7658c14179442c8ddea2c515e76df3338b64880a0169680abeff0e50870278"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "Codex (identificatore esatto del modello non esposto nella sessione)",
+        "run_id": "page-analysis-0a4e81cecdf44e8b86ded34253e8c4ba"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0023",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0022",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0024"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0023",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0022",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0024"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0023",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0022",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0024"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Discrete-time optimal control problem",
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Non è scritta separatamente l'uguaglianza x₀=x⁰: non attribuirla come vincolo aggiuntivo letterale della pagina; può essere codificata in r.",
+          "Non sono garantite fattibilità, unicità, convessità o soluzione tramite un algoritmo specifico.",
+          "Lo schema non contiene automaticamente vincoli su x_T non inclusi in r."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Dinamica come uguaglianza",
+            "why": "Per comprendere la prima famiglia di vincoli.",
+            "origin": "source_context",
+            "page_numbers": [
+              19
+            ]
+          },
+          {
+            "concept": "Costo additivo",
+            "why": "Per leggere l'obiettivo.",
+            "origin": "source_context",
+            "page_numbers": [
+              20
+            ]
+          },
+          {
+            "concept": "End-point e path constraints",
+            "why": "Per comprendere r e g_t.",
+            "origin": "source_context",
+            "page_numbers": [
+              21
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\begin{aligned}\\min_{\\substack{x_0,x_1,\\ldots,x_T\\\\u_0,\\ldots,u_{T-1}}}\\;&\\sum_{t=0}^{T-1}\\ell_t(x_t,u_t)+\\ell_T(x_T)\\\\\\text{subj.to }&x_{t+1}=f_t(x_t,u_t),\\quad t=0,\\ldots,T-1\\\\&r(x_0,x_T)=0\\\\&g_t(x_t,u_t)\\leq0,\\quad t=0,\\ldots,T-1\\end{aligned}",
+            "anchor": "A discrete-time optimal control problem",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          },
+          {
+            "latex": "\\ell_t:\\mathbb{R}^n\\times\\mathbb{R}^m\\to\\mathbb{R},\\quad\\ell_T:\\mathbb{R}^n\\to\\mathbb{R}",
+            "anchor": "where ℓt",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "example-1",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "Enrichment: T=2, x_{t+1}=x_t+u_t, r=col(x₀,x₂−1), |u_t|≤0.8, ℓ_t=½u_t², ℓ_T=0.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Nel solo esempio chiuso si può mostrare come un vincolo renda il problema fattibile o impossibile.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Risolvere un'istanza minima mantenendo i tre ingredienti.",
+            "setup": "Enrichment: T=2, x_{t+1}=x_t+u_t, r=col(x₀,x₂−1), |u_t|≤0.8, ℓ_t=½u_t², ℓ_T=0.",
+            "parameters": [
+              {
+                "symbol": "T",
+                "value": "2"
+              },
+              {
+                "symbol": "target",
+                "value": "1"
+              },
+              {
+                "symbol": "limite |u|",
+                "value": "0.8"
+              }
+            ],
+            "derivation": [
+              "Dinamica ed endpoint richiedono u₀+u₁=1.",
+              "½(u₀²+u₁²) è minimo con u₀=u₁=0.5.",
+              "La soluzione rispetta |u_t|≤0.8.",
+              "x₀=0,x₁=0.5,x₂=1 e costo=0.25."
+            ],
+            "expected_outcome": "Una traiettoria ottima dell'istanza si ottiene confrontando solo sequenze coerenti con tutte le condizioni.",
+            "limitations": [
+              "Soluzione analitica specifica dell'esempio, non algoritmo generale della fonte."
+            ],
+            "enrichment_id": "example-1",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "OptimalControlProblemIngredientMap",
+          "description": "Annotare la formulazione in quattro regioni: decisioni, obiettivo, dinamica, endpoint/path; affiancare una piccola timeline dell'esempio.",
+          "origin": "source_derived",
+          "source_observation_ids": [
+            "s01",
+            "s02",
+            "s03"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Nel solo esempio chiuso si può mostrare come un vincolo renda il problema fattibile o impossibile.",
+          "component": "TwoStepMinimumEffortExample",
+          "parameters": [
+            {
+              "name": "Target terminale aggiunto",
+              "symbol": "d_target",
+              "origin": "enrichment",
+              "range": "[−1.5,1.5]",
+              "default": "1",
+              "effect_on_change": "Ricalcolare u₀=u₁=d_target/2 quando |d_target|≤2b, gli stati e il costo d_target²/4; altrimenti mostrare infeasibilità.",
+              "edge_cases": [
+                "d_target=0: soluzione nulla"
+              ]
+            },
+            {
+              "name": "Limite aggiunto",
+              "symbol": "b",
+              "origin": "enrichment",
+              "range": "[0,1]",
+              "default": "0.8",
+              "effect_on_change": "Aggiornare la fattibilità |d_target|≤2b; non tagliare semplicemente i controlli e dichiararli soluzione con endpoint soddisfatto.",
+              "edge_cases": [
+                "b=0 e target non nullo: infeasible"
+              ]
+            }
+          ],
+          "outputs": [
+            "Traiettoria dell'esempio",
+            "Controlli ottimi quando ammissibili",
+            "Costo",
+            "Stato di fattibilità"
+          ],
+          "invariants": [
+            "T=2 e dinamica integratore",
+            "Costo solo di sforzo",
+            "La formula chiusa non è estesa all'OCP generale"
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "Target esattamente raggiungibile al limite",
+            "expected_behavior": "Accettare la soluzione sul bordo dei vincoli ≤.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03"
+            ]
+          },
+          {
+            "case": "Problema infeasible",
+            "expected_behavior": "Non produrre un valore ottimo finito o una traiettoria etichettata ottima.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03"
+            ]
+          },
+          {
+            "case": "Stato iniziale non fissato in un'altra istanza",
+            "expected_behavior": "Conservarlo come variabile della formulazione generale.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03"
+            ]
+          }
+        ],
+        "expansion_rationale": "È una pagina di sintesi di ingredienti già analizzati: la formula annotata e un'istanza minima restano coerenti in una companion.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Il problema di controllo ottimo è una minimizzazione sulle traiettorie ammissibili.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03"
+            ],
+            "enrichment_ids": [
+              "example-1",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "observations": [
+        {
+          "id": "s01",
+          "category": "equation",
+          "description": "La minimizzazione elenca gli stati x₀,…,x_T e gli ingressi u₀,…,u_{T−1} come variabili e minimizza Σℓ_t(x_t,u_t)+ℓ_T(x_T).",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0023",
+            "modality": "both",
+            "text_quote": "A discrete-time optimal control problem can be written as",
+            "bbox": [
+              28.34600067138672,
+              34.63948059082031,
+              252.07557678222656,
+              43.60588073730469
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s02",
+          "category": "equation",
+          "description": "I vincoli sono dinamica x_{t+1}=f_t(x_t,u_t), end-point r(x₀,x_T)=0 e path g_t(x_t,u_t)≤0, con dinamica/path su t=0,…,T−1.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0023",
+            "modality": "both",
+            "text_quote": "r(x0, xT ) = 0,",
+            "bbox": [
+              177.05299377441406,
+              99.97947692871094,
+              232.6243896484375,
+              109.94287109375
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s03",
+          "category": "definition",
+          "description": "ℓ_t:Rⁿ×Rᵐ→R è lo stage cost e ℓ_T:Rⁿ→R è il terminal cost.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0023",
+            "modality": "both",
+            "text_quote": "where ℓt : Rn × Rm",
+            "bbox": [
+              28.34600830078125,
+              128.63926696777344,
+              382.83660888671875,
+              142.52687072753906
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-04",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Discrete-time optimal control problem",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0023",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              10.35200023651123,
+              6.720991134643555,
+              233.0193634033203,
+              21.06719207763672
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-05",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: min\nx0,x1,...,xT\nu0,...,uT −1",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0023",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              133.54100036621094,
+              61.671478271484375,
+              171.92526245117188,
+              80.64524841308594
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-06",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: T −1\nX",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0023",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              178.5889892578125,
+              52.739593505859375,
+              193.3363037109375,
+              68.54080963134766
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-07",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: t=0",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0023",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              179.91598510742188,
+              74.55079650878906,
+              192.0083465576172,
+              80.52839660644531
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-08",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: ℓt(xt, ut) + ℓT (xT )",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0023",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              194.87298583984375,
+              61.671478271484375,
+              269.6495361328125,
+              71.63388061523438
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-09",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: subj.to xt+1 = ft(xt, ut),\nt = 0, . . . , T −1",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0023",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              146.9539794921875,
+              85.91626739501953,
+              320.00372314453125,
+              95.994873046875
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-10",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: gt(xt, ut) ≤0,\nt = 0, . . . , T −1",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0023",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              177.05299377441406,
+              113.81127166748047,
+              306.7177429199219,
+              123.42539978027344
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-11",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 22 |35",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0023",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              126.9540023803711,
+              247.92860412597656,
+              447.8712158203125,
+              255.1179962158203
+            ]
+          },
+          "confidence": 0.98
+        }
+      ],
+      "contextual_role": "Riunisce dinamica, costo e vincoli delle tre pagine main ingredients in un'unica formulazione.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0022",
+          "role": "previous",
+          "note": "La pagina 22 fornisce un esempio di costo quadratico; qui ℓ_t e ℓ_T restano generali."
+        },
+        {
+          "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0024",
+          "role": "next",
+          "note": "La pagina 24 interpreta la ricerca di una traiettoria per un'uscita desiderata, prima di un problema più specifico."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "x_0,\\ldots,x_T",
+          "meaning": "Stati elencati fra le variabili; l'eventuale inizializzazione può essere imposta tramite r",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03"
+          ]
+        },
+        {
+          "symbol": "u_0,\\ldots,u_{T-1}",
+          "meaning": "Ingressi decisionali",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03"
+          ]
+        },
+        {
+          "symbol": "r",
+          "meaning": "Vincoli agli estremi",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03"
+          ]
+        },
+        {
+          "symbol": "g_t",
+          "meaning": "Vincoli puntuali",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03"
+          ]
+        },
+        {
+          "symbol": "\\ell_t,\\ell_T",
+          "meaning": "Costo di stadio e terminale generali",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "s01",
+          "s02",
+          "s03"
+        ],
+        "rationale": "Pagina con contenuto autonomo nella sequenza; nessun candidato automatico da confermare."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              10.35200023651123,
+              6.720991134643555,
+              233.0193634033203,
+              21.06719207763672
+            ],
+            "description": "Regione testuale sorgente: Discrete-time optimal control problem",
+            "observation_ids": [
+              "transcription-04"
+            ]
+          },
+          {
+            "bbox": [
+              28.34600067138672,
+              34.63948059082031,
+              252.07557678222656,
+              43.60588073730469
+            ],
+            "description": "Regione testuale sorgente: A discrete-time optimal control problem can be written as",
+            "observation_ids": [
+              "s01"
+            ]
+          },
+          {
+            "bbox": [
+              133.54100036621094,
+              61.671478271484375,
+              171.92526245117188,
+              80.64524841308594
+            ],
+            "description": "Regione testuale sorgente: min\nx0,x1,...,xT\nu0,...,uT −1",
+            "observation_ids": [
+              "transcription-05"
+            ]
+          },
+          {
+            "bbox": [
+              178.5889892578125,
+              52.739593505859375,
+              193.3363037109375,
+              68.54080963134766
+            ],
+            "description": "Regione testuale sorgente: T −1\nX",
+            "observation_ids": [
+              "transcription-06"
+            ]
+          },
+          {
+            "bbox": [
+              179.91598510742188,
+              74.55079650878906,
+              192.0083465576172,
+              80.52839660644531
+            ],
+            "description": "Regione testuale sorgente: t=0",
+            "observation_ids": [
+              "transcription-07"
+            ]
+          },
+          {
+            "bbox": [
+              194.87298583984375,
+              61.671478271484375,
+              269.6495361328125,
+              71.63388061523438
+            ],
+            "description": "Regione testuale sorgente: ℓt(xt, ut) + ℓT (xT )",
+            "observation_ids": [
+              "transcription-08"
+            ]
+          },
+          {
+            "bbox": [
+              146.9539794921875,
+              85.91626739501953,
+              320.00372314453125,
+              95.994873046875
+            ],
+            "description": "Regione testuale sorgente: subj.to xt+1 = ft(xt, ut),\nt = 0, . . . , T −1",
+            "observation_ids": [
+              "transcription-09"
+            ]
+          },
+          {
+            "bbox": [
+              177.05299377441406,
+              99.97947692871094,
+              232.6243896484375,
+              109.94287109375
+            ],
+            "description": "Regione testuale sorgente: r(x0, xT ) = 0,",
+            "observation_ids": [
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              177.05299377441406,
+              113.81127166748047,
+              306.7177429199219,
+              123.42539978027344
+            ],
+            "description": "Regione testuale sorgente: gt(xt, ut) ≤0,\nt = 0, . . . , T −1",
+            "observation_ids": [
+              "transcription-10"
+            ]
+          },
+          {
+            "bbox": [
+              28.34600830078125,
+              128.63926696777344,
+              382.83660888671875,
+              142.52687072753906
+            ],
+            "description": "Regione testuale sorgente: where ℓt : Rn × Rm →R is the so-called stage cost while ℓT : Rn →R is the terminal cost.",
+            "observation_ids": [
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              126.9540023803711,
+              247.92860412597656,
+              447.8712158203125,
+              255.1179962158203
+            ],
+            "description": "Regione testuale sorgente: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 22 |35",
+            "observation_ids": [
+              "transcription-11"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "È una pagina di sintesi di ingredienti già analizzati: la formula annotata e un'istanza minima restano coerenti in una companion.",
+        "subpages": []
+      }
+    }
+  }
+}

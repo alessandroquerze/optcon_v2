@@ -1,0 +1,684 @@
+[
+  {
+    "page": 34,
+    "title": "Pendulum (II) — trasferimento fra equilibri",
+    "observations": [
+      {
+        "category": "concept",
+        "claim": "Il task è trasferire il pendolo da un equilibrio a un altro.",
+        "anchor": "Transfer the pendulum from an equilibrium to another one.",
+        "bbox": [
+          17,
+          32,
+          280,
+          60
+        ]
+      },
+      {
+        "category": "equation",
+        "claim": "La prima condizione di equilibrio stampata è 0=x_{1,e}; la seconda è 0=−(g/l)sinx_{1,e}+u_e/(mℓ²). La prima riga contrasta con ẋ₁=x₂ della pagina 33 e con lo stato di equilibrio mostrato sotto.",
+        "anchor": "0 = x1,e",
+        "bbox": [
+          85,
+          83,
+          218,
+          114
+        ]
+      },
+      {
+        "category": "equation",
+        "claim": "La fonte riporta x_e¹=col(θ_e¹,0) e u_e¹=mgℓ sinθ_e¹.",
+        "anchor": "u1",
+        "bbox": [
+          75,
+          140,
+          249,
+          165
+        ]
+      },
+      {
+        "category": "concept",
+        "claim": "Lo stesso ragionamento viene richiamato per il secondo equilibrio (x_e²,u_e²); la pagina pone la domanda 'How to?' senza fornire una traiettoria di trasferimento.",
+        "anchor": "A similar reasoning holds for the second equilibrium",
+        "bbox": [
+          17,
+          170,
+          286,
+          185
+        ]
+      },
+      {
+        "category": "diagram",
+        "claim": "Due configurazioni del pendolo, etichettate con θ_e¹,u_e¹ e θ_e²,u_e², sono collegate da una freccia rossa tratteggiata.",
+        "bbox": [
+          261,
+          74,
+          447,
+          147
+        ]
+      }
+    ],
+    "math": [
+      [
+        "0=x_{1,e}",
+        "0 = x1,e",
+        "TRASCRIZIONE LETTERALE: la dinamica precedente richiederebbe x₂,e=0, non x₁,e=0."
+      ],
+      [
+        "0=-\\frac{g}{l}\\sin x_{1,e}+\\frac{1}{m\\ell^2}u_e",
+        "0 = −g"
+      ],
+      [
+        "x_e^1=\\begin{bmatrix}\\theta_e^1\\\\0\\end{bmatrix},\\qquad u_e^1=mg\\ell\\sin\\theta_e^1",
+        "then, the first equilibrium is"
+      ],
+      [
+        "(x_e^2,u_e^2)",
+        "second equilibrium"
+      ]
+    ],
+    "notation": [
+      [
+        "x_e^1,u_e^1",
+        "Prima coppia di equilibrio, apice 1 come etichetta e non tempo"
+      ],
+      [
+        "x_e^2,u_e^2",
+        "Seconda coppia di equilibrio"
+      ],
+      [
+        "\\theta_e^1,\\theta_e^2",
+        "Angoli delle due configurazioni"
+      ],
+      [
+        "x_{1,e}",
+        "Prima componente di stato al punto di equilibrio, stampata erroneamente nella prima condizione"
+      ],
+      [
+        "l,\\ell",
+        "Notazione della lunghezza ereditata dal modello"
+      ]
+    ],
+    "role": "Definisce le coppie agli estremi del task, con un errore d'indice esplicito da separare dalla successiva costruzione del riferimento.",
+    "previous": "La pagina 33 dà ẋ₁=x₂: all'equilibrio questa equazione impone x₂,e=0, in contrasto con la prima riga qui stampata.",
+    "next": "La pagina 35 usa i due equilibri per una curva desiderata a gradino, dichiaratamente non una traiettoria.",
+    "scope_limits": [
+      "Non correggere silenziosamente 0=x_{1,e} in 0=x_{2,e}.",
+      "La formula u_e=mgℓsinθ_e è coerente con la dinamica se l e ℓ sono identificati; la fonte alterna i glifi.",
+      "Non sono specificati angoli numerici, durata, vincoli d'ingresso, traiettoria di trasferimento o stabilità degli equilibri."
+    ],
+    "prerequisites": [
+      [
+        "Equilibrio come stato e ingresso costanti",
+        "Definizione generale già introdotta.",
+        [
+          11
+        ]
+      ],
+      [
+        "Dinamica e identificazione dello stato del pendolo",
+        "Per verificare le condizioni e identificare il refuso.",
+        [
+          33
+        ]
+      ]
+    ],
+    "enrichment_notes": [
+      "Deduzione etichettata enrichment dalla dinamica: 0=x₂,e e u_e=(mgℓ²/l)sinx₁,e; assumendo l=ℓ si ottiene la formula mgℓsinθ_e stampata. Mostrare questa verifica accanto al refuso letterale, senza cancellarlo."
+    ],
+    "examples": [
+      {
+        "purpose": "Verificare due equilibri della dinamica e rendere evidente l'errore della prima riga.",
+        "setup": "Enrichment con l=ℓ=1,m=1,g=9.81: θ_e¹=0 e θ_e²=π/6.",
+        "parameters": [
+          [
+            "θ_e^1,θ_e^2",
+            "0,π/6"
+          ],
+          [
+            "l=ℓ,m,g",
+            "1,1,9.81"
+          ]
+        ],
+        "steps": [
+          "Prima coppia: x_e¹=(0,0), u_e¹=0.",
+          "Seconda coppia: x_e²=(π/6,0), u_e²=4.905.",
+          "Entrambe annullano la dinamica di pagina 33.",
+          "La seconda non soddisfa la riga letterale 0=x_{1,e}, mostrando la discrepanza; non presentare tutte le righe della fonte come simultaneamente corrette."
+        ],
+        "expected": "Le coppie si verificano sulla dinamica, ma il refuso richiede una decisione editoriale prima della companion.",
+        "limitations": [
+          "Valori e identificazione l=ℓ sono enrichment.",
+          "Non è una costruzione del trasferimento o una prova di stabilità."
+        ]
+      }
+    ],
+    "visual": {
+      "component": "PendulumEquilibriumPairWithErratum",
+      "description": "Due configurazioni e coppie di ingresso etichettate, con riquadro separato per la riga letterale errata e la verifica dalla dinamica."
+    },
+    "interaction": {
+      "component": "EquilibriumTorqueInspectorWithSourceWarning",
+      "rationale": "Variare l'angolo e verificare il residuo dinamico rende visibile sia il ruolo della coppia sia l'errore d'indice.",
+      "parameters": [
+        [
+          "Primo angolo",
+          "θ_e^1",
+          "[−π/2,π/2]",
+          "0",
+          "Aggiornare la prima configurazione, u_e¹=9.81sinθ_e¹ e i residui della dinamica; mostrare separatamente il residuo della riga letterale x_{1,e}=0.",
+          [
+            "θ_e¹=0 può nascondere il refuso"
+          ],
+          "source"
+        ],
+        [
+          "Secondo angolo",
+          "θ_e^2",
+          "[−π/2,π/2]",
+          "π/6",
+          "Aggiornare la seconda configurazione e u_e²=9.81sinθ_e²; non animare ancora un trasferimento.",
+          [
+            "Angoli uguali: stesso equilibrio"
+          ],
+          "source"
+        ]
+      ],
+      "outputs": [
+        "Due coppie (x_e,u_e)",
+        "Residui della dinamica",
+        "Avviso sulla condizione stampata"
+      ],
+      "invariants": [
+        "l=ℓ=1,m=1,g=9.81 come enrichment",
+        "Velocità di equilibrio zero",
+        "Nessuna traiettoria intermedia o stabilità garantita",
+        "Range/default sono enrichment"
+      ]
+    },
+    "edges": [
+      [
+        "Due equilibri coincidenti",
+        "Il trasferimento è degenere e può essere la traiettoria costante."
+      ],
+      [
+        "Angolo con coppia richiesta oltre un limite aggiunto",
+        "Non considerarlo automaticamente raggiungibile con attuatori saturi; la fonte qui non impone tali limiti."
+      ],
+      [
+        "Equilibrio instabile",
+        "Può ancora soddisfare le equazioni di equilibrio."
+      ]
+    ],
+    "uncertainties": [
+      {
+        "description": "Refuso d'indice confermato a 288 DPI: è stampato 0=x_{1,e}, mentre ẋ₁=x₂ impone 0=x_{2,e}. È incompatibile con il successivo stato (θ_e,0) per angolo generico; bloccante per presentare le condizioni come corrette.",
+        "blocking": true
+      },
+      {
+        "description": "La formula mgℓsinθ_e assume l=ℓ rispetto ai denominatori del modello; l'identificazione non è esplicitata dalla fonte.",
+        "blocking": false
+      }
+    ],
+    "single_page_rationale": "Un task, due coppie e una verifica statica; la correzione segnalata richiede revisione e non una pagina supplementare.",
+    "focus": "Individuare le coppie di equilibrio e segnalare il refuso prima di progettare il trasferimento."
+  },
+  {
+    "page": 35,
+    "title": "Pendulum (III) — curva desiderata a gradino",
+    "observations": [
+      {
+        "category": "equation",
+        "claim": "x₁^{des}(t) vale θ_e¹ su 0≤t<T/2 e θ_e² su T/2≤t≤T; x₂^{des}(t)=0.",
+        "anchor": "xdes",
+        "bbox": [
+          70,
+          51,
+          230,
+          97
+        ]
+      },
+      {
+        "category": "equation",
+        "claim": "L'ingresso desiderato u^{des}(t) passa da u_e¹ a u_e² allo stesso istante T/2, con il secondo valore incluso al punto di cambio.",
+        "anchor": "with desired input",
+        "bbox": [
+          78,
+          120,
+          220,
+          149
+        ]
+      },
+      {
+        "category": "concept",
+        "claim": "La fonte aggiunge il desiderio di mantenere θ̇ il più piccolo possibile.",
+        "anchor": "At the same time, we want",
+        "bbox": [
+          17,
+          159,
+          360,
+          174
+        ]
+      },
+      {
+        "category": "assumption",
+        "claim": "Il riquadro Important afferma esplicitamente che (x^{des}(t),u^{des}(t)) non è una traiettoria del sistema.",
+        "anchor": "is not a trajectory of the system!",
+        "bbox": [
+          17,
+          177,
+          324,
+          201
+        ]
+      },
+      {
+        "category": "diagram",
+        "claim": "Due grafici temporali mostrano i livelli a gradino dell'angolo e dell'ingresso, con T/2 e T marcati; sono schemi senza valori numerici.",
+        "bbox": [
+          267,
+          47,
+          367,
+          220
+        ]
+      }
+    ],
+    "math": [
+      [
+        "x_1^{\\mathrm{des}}(t)=\\begin{cases}\\theta_e^1&0\\leq t<T/2\\\\\\theta_e^2&T/2\\leq t\\leq T\\end{cases},\\qquad x_2^{\\mathrm{des}}(t)=0",
+        "xdes"
+      ],
+      [
+        "u^{\\mathrm{des}}(t)=\\begin{cases}u_e^1&0\\leq t<T/2\\\\u_e^2&T/2\\leq t\\leq T\\end{cases}",
+        "with desired input"
+      ]
+    ],
+    "notation": [
+      [
+        "x_1^{\\mathrm{des}},x_2^{\\mathrm{des}}",
+        "Componenti del riferimento, non della traiettoria fisica cercata"
+      ],
+      [
+        "u^{\\mathrm{des}}",
+        "Riferimento dell'ingresso"
+      ],
+      [
+        "T/2",
+        "Istante di commutazione; il secondo ramo lo include"
+      ],
+      [
+        "\\theta_e^1,\\theta_e^2,u_e^1,u_e^2",
+        "Livelli associati ai due equilibri della pagina precedente"
+      ]
+    ],
+    "role": "Costruisce il desiderato del trasferimento e rende esplicito che non è dinamicamente realizzabile come traiettoria a gradino.",
+    "previous": "La pagina 34 fornisce gli equilibri, con refuso d'indice da conservare nella revisione; qui essi determinano i livelli del riferimento.",
+    "next": "La pagina 36 usa questi desiderati nel costo, imponendo la dinamica solo alla traiettoria effettivamente cercata.",
+    "scope_limits": [
+      "Non animare il pendolo saltando istantaneamente fra gli angoli e chiamandolo soluzione.",
+      "L'ingresso a gradino desiderato non è il solo motivo d'inammissibilità: lo stato angolare desiderato salta mentre x₂^{des}=0.",
+      "I grafici sono qualitativi; non dedurre numeri o relazioni di segno generali dai livelli disegnati.",
+      "Il caso dichiarato non traiettoria è un trasferimento fra equilibri distinti; se coincidono il caso degenere va trattato separatamente."
+    ],
+    "prerequisites": [
+      [
+        "Coppie di equilibrio del pendolo",
+        "Definiscono i livelli desiderati.",
+        [
+          34
+        ]
+      ],
+      [
+        "Curva desiderata contro traiettoria",
+        "Concetto esplicito già introdotto nel tracking.",
+        [
+          22,
+          25
+        ]
+      ],
+      [
+        "Funzione a tratti e continuità delle soluzioni ODE ordinarie",
+        "Per comprendere perché lo stato non può seguire un salto con velocità identicamente nulla.",
+        []
+      ]
+    ],
+    "enrichment_notes": [
+      "Spiegazione aggiunta: per equilibri distinti x₁^{des} salta a T/2, mentre ẋ₁=x₂ e x₂^{des}=0 richiederebbero angolo costante su una traiettoria ordinaria. La slide afferma la non fattibilità ma non sviluppa questa dimostrazione."
+    ],
+    "examples": [
+      {
+        "purpose": "Leggere correttamente i due rami e la distinzione dal moto fisico.",
+        "setup": "Enrichment con T=2 s, θ_e¹=0,θ_e²=π/6, l=ℓ=m=1,g=9.81; livelli di ingresso 0 e 4.905.",
+        "parameters": [
+          [
+            "T",
+            "2 s"
+          ],
+          [
+            "θ_e^1,θ_e^2",
+            "0,π/6"
+          ]
+        ],
+        "steps": [
+          "Per 0≤t<1: x₁^{des}=0,u^{des}=0.",
+          "A t=1 e fino a 2: x₁^{des}=π/6,u^{des}=4.905.",
+          "x₂^{des}=0 in entrambi i rami.",
+          "Il salto di angolo non è una traiettoria della dinamica; serve una traiettoria effettiva diversa."
+        ],
+        "expected": "Un riferimento irrealizzabile può ancora specificare la preferenza che il costo cercherà di approssimare.",
+        "limitations": [
+          "Numeri, unità e interpretazione l=ℓ sono enrichment.",
+          "Non è stata calcolata una traiettoria ottima."
+        ]
+      }
+    ],
+    "visual": {
+      "component": "PendulumDesiredStepSignals",
+      "description": "Due grafici temporali del riferimento con ramo destro chiuso a T/2, e avviso permanente 'desiderato, non traiettoria'."
+    },
+    "interaction": {
+      "component": "PendulumReferenceStepInspector",
+      "rationale": "Cambiare livelli e tempo rende evidente che si modifica un obiettivo, non si produce automaticamente un moto del sistema.",
+      "parameters": [
+        [
+          "Primo livello angolare",
+          "θ_e^1",
+          "[−π/2,π/2]",
+          "0",
+          "Cambiare il livello iniziale x₁^{des} e calcolare il corrispondente u_e¹=9.81sinθ_e¹ nell'esempio dichiarato.",
+          [
+            "Uguale al secondo livello: nessun salto"
+          ],
+          "source"
+        ],
+        [
+          "Secondo livello angolare",
+          "θ_e^2",
+          "[−π/2,π/2]",
+          "π/6",
+          "Cambiare il secondo ramo e u_e²=9.81sinθ_e²; aggiornare l'ampiezza del salto senza animare una soluzione.",
+          [
+            "Uguale al primo: riferimento costante"
+          ],
+          "source"
+        ],
+        [
+          "Durata",
+          "T",
+          "[1,8] s",
+          "2 s",
+          "Spostare T e T/2 e ridisegnare gli intervalli; l'ampiezza del salto resta invariata.",
+          [
+            "T>0"
+          ],
+          "source"
+        ]
+      ],
+      "outputs": [
+        "x₁^{des},x₂^{des},u^{des}",
+        "Istante di commutazione",
+        "Indicazione del caso degenere"
+      ],
+      "invariants": [
+        "Velocità desiderata zero",
+        "Nessuna traiettoria fisica o ottima calcolata",
+        "Formula di coppia con identificazioni enrichment esplicite",
+        "Range/default sono enrichment"
+      ]
+    },
+    "edges": [
+      [
+        "t=T/2",
+        "Usare il secondo ramo come stampato."
+      ],
+      [
+        "Equilibri coincidenti",
+        "Il riferimento diventa costante e può essere una traiettoria di equilibrio: non mantenere indiscriminatamente l'avviso di salto."
+      ],
+      [
+        "T=0",
+        "Escludere dall'interazione progettata; la divisione in due intervalli non avrebbe il significato del trasferimento."
+      ]
+    ],
+    "single_page_rationale": "Due segnali coordinati e un avviso centrale; il confronto resta un'unica unità concettuale.",
+    "focus": "Un riferimento può cambiare a gradino; la traiettoria del pendolo deve comunque rispettare la dinamica."
+  },
+  {
+    "page": 36,
+    "title": "Pendulum (IV) — problema di controllo ottimo",
+    "observations": [
+      {
+        "category": "equation",
+        "claim": "Il costo integrale somma q₁(x₁−x₁^{des})², q₂x₂² e r(u−u^{des})²; sono aggiunti q_{T1}(x₁(T)−x₁^{des}(T))² e q_{T2}x₂(T)².",
+        "anchor": "q1(x1(τ)",
+        "bbox": [
+          81,
+          51,
+          425,
+          96
+        ]
+      },
+      {
+        "category": "structure",
+        "claim": "Nel costo mostrato non compaiono fattori 1/2: non vanno introdotti automaticamente dalla convenzione delle pagine quadratiche precedenti.",
+        "anchor": "The optimal control problem then reads",
+        "bbox": [
+          81,
+          51,
+          425,
+          96
+        ]
+      },
+      {
+        "category": "equation",
+        "claim": "La traiettoria cercata deve soddisfare ẋ₁=x₂, ẋ₂=−(g/l)sinx₁+u/(mℓ²) e x(0)=x⁰.",
+        "anchor": "x(0) = x0",
+        "bbox": [
+          108,
+          97,
+          291,
+          137
+        ]
+      },
+      {
+        "category": "definition",
+        "claim": "La pagina sceglie Q=diag(q₁,q₂), Q_T=diag(q_{T1},q_{T2}) e R=r.",
+        "anchor": "where we chose as weight matrices",
+        "bbox": [
+          27,
+          145,
+          422,
+          171
+        ]
+      }
+    ],
+    "math": [
+      [
+        "\\begin{aligned}\\min_{(x(\\cdot),u(\\cdot))\\in\\mathcal F}\\;&\\int_0^T\\big[q_1(x_1(\\tau)-x_1^{\\mathrm{des}}(\\tau))^2+q_2x_2(\\tau)^2+r(u(\\tau)-u^{\\mathrm{des}}(\\tau))^2\\big]d\\tau\\\\&+q_{T1}(x_1(T)-x_1^{\\mathrm{des}}(T))^2+q_{T2}x_2(T)^2\\\\\\text{subj.to }&\\dot x_1(t)=x_2(t)\\\\&\\dot x_2(t)=-\\frac{g}{l}\\sin x_1(t)+\\frac{1}{m\\ell^2}u(t)\\\\&x(0)=x^0\\end{aligned}",
+        "The optimal control problem then reads",
+        "Fattori esattamente come nella fonte: nessun 1/2."
+      ],
+      [
+        "Q=\\begin{bmatrix}q_1&0\\\\0&q_2\\end{bmatrix},\\quad Q_T=\\begin{bmatrix}q_{T1}&0\\\\0&q_{T2}\\end{bmatrix},\\quad R=r",
+        "where we chose as weight matrices"
+      ]
+    ],
+    "notation": [
+      [
+        "q_1",
+        "Peso del tracking angolare corrente"
+      ],
+      [
+        "q_2",
+        "Peso della velocità angolare corrente"
+      ],
+      [
+        "r",
+        "Peso scalare della deviazione dell'ingresso, non la funzione di endpoint delle pagine generali"
+      ],
+      [
+        "q_{T1},q_{T2}",
+        "Pesi terminali di errore angolare e velocità"
+      ],
+      [
+        "x^0",
+        "Dato iniziale; non è assegnato numericamente nella fonte"
+      ],
+      [
+        "\\tau",
+        "Variabile d'integrazione, mentre l'ingresso meccanico è qui u"
+      ],
+      [
+        "l,\\ell",
+        "Glifi della lunghezza conservati nei denominatori"
+      ]
+    ],
+    "role": "Chiude il documento formulando l'OCP che approssima il riferimento non fattibile senza violare la dinamica del pendolo.",
+    "previous": "La pagina 35 definisce x₁^{des},x₂^{des}=0 e u^{des}; il costo usa i riferimenti, non li impone come traiettoria.",
+    "scope_limits": [
+      "Non è mostrata una soluzione, una simulazione, un algoritmo o un risultato di convergenza.",
+      "Non sono imposti esplicitamente x(T)=x_e², saturazioni o altri path constraints: il terminale qui è penalizzato, non fissato.",
+      "Nessun peso o dato iniziale numerico è assegnato.",
+      "Non inserire fattori 1/2 né sostituire sinx₁ con x₁.",
+      "Mantenere la variazione l/ℓ e dichiarare l'identificazione negli esempi."
+    ],
+    "prerequisites": [
+      [
+        "Funzionale continuo e 𝓕",
+        "Per leggere la variabile funzionale e l'integrale.",
+        [
+          31,
+          32
+        ]
+      ],
+      [
+        "Dinamica del pendolo",
+        "Per leggere i vincoli.",
+        [
+          33
+        ]
+      ],
+      [
+        "Curva desiderata a gradino",
+        "Determina le funzioni di riferimento del costo.",
+        [
+          35
+        ]
+      ]
+    ],
+    "examples": [
+      {
+        "purpose": "Valutare il costo di una traiettoria fattibile senza spacciarla per ottima e mantenere l'assenza di 1/2.",
+        "setup": "Enrichment: l=ℓ=m=1,g=9.81,T=2,x⁰=(0,0); riferimento di pagina 35 da θ_e¹=0 a θ_e²=π/6 a t=1, con u_e¹=0,u_e²=4.905. Candidata costante x=(0,0),u=0; q₁=q₂=q_{T2}=1,r=0.1,q_{T1}=2.",
+        "parameters": [
+          [
+            "α=θ_e²",
+            "π/6"
+          ],
+          [
+            "r,q_1,q_{T1}",
+            "0.1,1,2"
+          ],
+          [
+            "T",
+            "2"
+          ]
+        ],
+        "steps": [
+          "La candidata soddisfa la dinamica e l'inizializzazione; non raggiunge il secondo equilibrio, ma non esiste un vincolo terminale hard in questa istanza.",
+          "Primo secondo: costo corrente zero.",
+          "Secondo secondo: q₁α²+r·4.905²≈2.68005818.",
+          "Termine terminale: q_{T1}α²≈0.54831136.",
+          "Totale≈3.22836953; i termini su x₂ sono nulli."
+        ],
+        "expected": "Un costo finito non certifica raggiungimento esatto né ottimalità; il fattore 1/2 cambierebbe erroneamente il valore riportato dalla formula sorgente.",
+        "limitations": [
+          "Tutti i numeri e la candidata sono enrichment.",
+          "Non è una soluzione dell'OCP.",
+          "La scelta degli equilibri usa la dinamica e le identificazioni esplicite, tenendo distinto il refuso della pagina 34."
+        ]
+      }
+    ],
+    "visual": {
+      "component": "PendulumOCPAnnotatedFormulaAndCostLedger",
+      "origin": "enrichment",
+      "description": "Formula con zone obiettivo/dinamica/inizializzazione e registro del costo della sola candidata dichiarata; nessuna curva ottima inventata."
+    },
+    "interaction": {
+      "component": "FixedPendulumCandidateCostInspector",
+      "rationale": "Su una candidata esattamente fattibile e analitica si possono modificare alcuni pesi e vedere quali addendi cambiano, senza simulare un ottimizzatore inesistente.",
+      "parameters": [
+        [
+          "Peso tracking angolare",
+          "q_1",
+          "[0,5]",
+          "1",
+          "Aggiornare il contributo integrale q₁α² su un secondo e il totale; la candidata resta ferma.",
+          [
+            "q₁=0: quel contributo scompare"
+          ],
+          "source"
+        ],
+        [
+          "Peso ingresso",
+          "r",
+          "[0.01,2]",
+          "0.1",
+          "Aggiornare il contributo r·4.905² sul secondo intervallo; non cambiare u della candidata.",
+          [
+            "Ingresso della candidata diverso dal desiderato, non oltre un limite hard"
+          ],
+          "source"
+        ],
+        [
+          "Peso terminale angolare",
+          "q_{T1}",
+          "[0,5]",
+          "2",
+          "Aggiornare il solo contributo q_{T1}α² e il totale.",
+          [
+            "q_{T1}=0: nessuna penalità terminale angolare in questo esempio"
+          ],
+          "source"
+        ]
+      ],
+      "outputs": [
+        "Contributi correnti e terminali",
+        "Costo totale",
+        "Etichetta 'candidata fattibile, non ottima'"
+      ],
+      "invariants": [
+        "Candidata x=0,u=0 e riferimento fissati",
+        "q₂ e q_{T2} fissati con contributo zero perché x₂=0",
+        "Nessun ricalcolo di ottimo",
+        "Nessun fattore 1/2",
+        "Range/default sono enrichment"
+      ]
+    },
+    "edges": [
+      [
+        "Terminal target non raggiunto",
+        "Può ancora essere una candidata ammissibile perché qui c'è penalità e non uguaglianza terminale."
+      ],
+      [
+        "Pesi nulli su alcune componenti",
+        "Non garantire unicità o tracking esatto."
+      ],
+      [
+        "Sostituire il riferimento a gradino alla soluzione",
+        "Viola la dinamica per equilibri distinti, anche se darebbe basso costo formale."
+      ],
+      [
+        "Fattori 1/2 aggiunti per abitudine",
+        "Non cambiare la formula sorgente; ogni eventuale normalizzazione va dichiarata come enrichment."
+      ]
+    ],
+    "uncertainties": [
+      {
+        "description": "Il modello ripete i glifi l e ℓ; i calcoli esemplificativi assumono esplicitamente che rappresentino la stessa lunghezza. Nessuna uniformazione viene applicata alla trascrizione.",
+        "blocking": false
+      }
+    ],
+    "single_page_rationale": "È la sintesi finale di dinamica, desiderato e pesi già introdotti: una formula annotata e una valutazione semplice sono sufficienti senza espansione.",
+    "focus": "Cercare una traiettoria fisica vicina al desiderato mediante un costo integrale e terminale, senza inventare una soluzione."
+  }
+]

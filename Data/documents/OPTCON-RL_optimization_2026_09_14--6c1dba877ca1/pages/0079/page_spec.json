@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0079",
+  "document_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1",
+  "source": {
+    "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+    "page_index": 78,
+    "physical_page_number": 79,
+    "pdf_label_raw": "<FEFF00370031>",
+    "pdf_label": "71",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Concluding Remarks on Notation",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      129.7969970703125,
+      97.489990234375,
+      323.74322509765625,
+      111.83618927001953
+    ],
+    "printed_number_candidates": [],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0079/text.txt",
+      "sha256": "d259f03b04d6cc9d0a2462d061e4f4cb3afc0bbd42a731f22b96e49f8d2ca671"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0079/text.reading-order.txt",
+      "sha256": "6cee1a5e5805d9f0bddaefda0cfb9dee75b6984e7c25fb08b48a1ea8c6f26a2d"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0079/layout.json",
+      "sha256": "5c472a23be869d2a7a813763c648bd6309bc1e63793495522453c7cdc6b3faaa"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0079/render.png",
+      "sha256": "e1b8d6736936d87d4e7c1c3d27ac8b3b5f9e6c23a310147dc8a8540d14287bf1",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "d9b6de84fe593eb6d0f010907e7f546451ded3b65291bc28fc8de96d7e0c1dbe"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0078",
+    "next_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0080"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "pending",
+    "result": null
+  }
+}

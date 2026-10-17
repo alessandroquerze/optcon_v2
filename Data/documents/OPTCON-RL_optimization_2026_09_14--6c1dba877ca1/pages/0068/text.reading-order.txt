@@ -1,0 +1,18 @@
+Quadratic Programming (constrained): optimality conditions
+
+    Second-order necessary condition for optimality:  if z⋆is a minimum then
+
+                            y⊤∇211L(z⋆, λ⋆)y = y⊤Qy ≥0
+
+     for all y ∈Rd such that
+
+                               ∇hi(z)⊤y = 0      i ∈{1, . . . , m}
+                        =⇒A⊤y = 0
+
+    namely, for all y ∈Rd in the null-space of A⊤.
+
+
+
+
+
+                                                      Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 60 |73

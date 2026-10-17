@@ -1,0 +1,1131 @@
+[
+  {
+    "page": 19,
+    "title": "Discrete-time optimal control: main ingredients (I)",
+    "observations": [
+      {
+        "category": "equation",
+        "claim": "La dinamica è x_{t+1}=f_t(x_t,u_t) per t=0,…,T−1.",
+        "anchor": "xt+1 = ft(xt, ut)",
+        "bbox": [
+          27,
+          69,
+          329,
+          87
+        ]
+      },
+      {
+        "category": "assumption",
+        "claim": "Si lavorerà principalmente con 0<T<+∞, considerando in alcuni casi T=+∞.",
+        "anchor": "We will mainly work on a finite horizon",
+        "bbox": [
+          27,
+          91,
+          443,
+          115
+        ]
+      },
+      {
+        "category": "concept",
+        "claim": "La dinamica introduce T vincoli di uguaglianza; ogni aggiornamento è riscritto come residuo uguale a zero.",
+        "anchor": "The dynamics introduces T equality constraints",
+        "bbox": [
+          27,
+          127,
+          384,
+          216
+        ]
+      },
+      {
+        "category": "structure",
+        "claim": "Nello schema sviluppato la colonna sinistra usa f senza indice, mentre la destra ripete f_t nelle varie righe; la formula generale in alto è indicizzata correttamente dal tempo.",
+        "anchor": "ft(x0, u0) −x1 = 0",
+        "bbox": [
+          73,
+          148,
+          383,
+          214
+        ]
+      }
+    ],
+    "math": [
+      [
+        "x_{t+1}=f_t(x_t,u_t),\\quad t=0,\\ldots,T-1",
+        "xt+1 = ft(xt, ut)"
+      ],
+      [
+        "0<T<+\\infty,\\qquad T=+\\infty\\ \\text{in alcuni casi}",
+        "0 < T < +∞"
+      ],
+      [
+        "x_1=f(x_0,u_0)\\quad\\text{i.e.}\\quad f_t(x_0,u_0)-x_1=0",
+        "x1 = f(x0, u0)",
+        "Schema letterale della fonte, inclusa la differenza f/f_t."
+      ],
+      [
+        "x_2=f(x_1,u_1)\\quad\\text{i.e.}\\quad f_t(x_1,u_1)-x_2=0",
+        "x2 = f(x1, u1)"
+      ],
+      [
+        "x_T=f(x_{T-1},u_{T-1})\\quad\\text{i.e.}\\quad f_t(x_{T-1},u_{T-1})-x_T=0",
+        "xT = f(xT −1, uT −1)"
+      ]
+    ],
+    "notation": [
+      [
+        "T",
+        "Numero di transizioni dell'orizzonte"
+      ],
+      [
+        "f_t",
+        "Mappa temporale della dinamica generale"
+      ],
+      [
+        "x_{t+1}",
+        "Stato successivo, variabile vincolata dal precedente stato e ingresso"
+      ]
+    ],
+    "role": "Interpreta la dinamica come parte dei vincoli di un problema di ottimizzazione su una traiettoria.",
+    "previous": "La pagina 18 scrive vincoli h(z)=0 in forma astratta; qui si riconoscono uguaglianze specifiche del controllo.",
+    "next": "La pagina 20 aggiunge variabili decisionali, costo di stadio e costo terminale.",
+    "scope_limits": [
+      "T uguaglianze significa T uguaglianze vettoriali; per stato n-dimensionale corrispondono a nT equazioni scalari, come chiarimento di enrichment.",
+      "Lo schema delle righe non assegna a ogni riga l'indice numerico di f; non trattare quel t ripetuto come una scelta di un unico istante.",
+      "Non è fornito un algoritmo per l'orizzonte infinito."
+    ],
+    "prerequisites": [
+      [
+        "Minimizzazione vincolata",
+        "Per interpretare la dinamica come uguaglianze.",
+        [
+          18
+        ]
+      ],
+      [
+        "Orizzonte e stack discreti",
+        "Definiscono il numero degli aggiornamenti.",
+        [
+          10
+        ]
+      ]
+    ],
+    "enrichment_notes": [
+      "La versione rigorosamente indicizzata del residuo è f_t(x_t,u_t)−x_{t+1}=0 per ciascun t. Nello sviluppo delle prime righe ciò diventerebbe f_0, f_1, …, f_{T−1}; è una chiarificazione della formula generale, non una trascrizione delle righe."
+    ],
+    "examples": [
+      {
+        "purpose": "Valutare vincoli dinamici senza un ottimizzatore.",
+        "setup": "Enrichment: x_{t+1}=x_t+u_t, T=2, x₀=0, 𝐮=(1,−0.5), stati candidati (x₁,x₂)=(1,0.5).",
+        "parameters": [
+          [
+            "T",
+            "2"
+          ],
+          [
+            "x_0",
+            "0"
+          ],
+          [
+            "\\mathbf{u}",
+            "(1,−0.5)"
+          ]
+        ],
+        "steps": [
+          "Primo residuo: x₀+u₀−x₁=0.",
+          "Secondo residuo: x₁+u₁−x₂=0.",
+          "Se si cambia solo x₂ a 0.8, il secondo residuo diventa −0.3 e la sequenza non è una traiettoria del modello."
+        ],
+        "expected": "Gli stati non sono decisioni indipendenti dalla dinamica, anche se sono elencati fra le variabili.",
+        "limitations": [
+          "Dinamica e numeri sono enrichment."
+        ]
+      }
+    ],
+    "visual": {
+      "component": "DynamicsEqualityResidualTimeline",
+      "origin": "enrichment",
+      "description": "Due aggiornamenti con residuo per ogni arco e distinzione fra vincoli vettoriali e componenti scalari."
+    },
+    "interaction": {
+      "component": "CandidateTrajectoryResidualChecker",
+      "rationale": "Cambiare un solo stato candidato mostra quale uguaglianza si rompe.",
+      "parameters": [
+        [
+          "Ultimo stato candidato",
+          "x_2",
+          "[−1,2]",
+          "0.5",
+          "Ricalcolare soltanto il secondo residuo per la sequenza scelta e aggiornare l'indicatore di coerenza; non propagare automaticamente x₂.",
+          [
+            "x₂=0.5: entrambi i residui nulli"
+          ],
+          "enrichment"
+        ]
+      ],
+      "outputs": [
+        "Residui numerici di ciascuna transizione",
+        "Indicatore di traiettoria coerente"
+      ],
+      "invariants": [
+        "x₀=0, x₁=1, u₀=1, u₁=−0.5",
+        "Un residuo nullo non certifica ottimalità"
+      ]
+    },
+    "edges": [
+      [
+        "T=1",
+        "Un vincolo vettoriale, n componenti scalari."
+      ],
+      [
+        "T=+∞",
+        "Non rappresentarlo come uno stack finito di dimensione nT; servirà un trattamento successivo."
+      ]
+    ],
+    "uncertainties": [
+      {
+        "description": "Nello schema sviluppato la fonte alterna f e f_t, mantenendo t nelle diverse righe; conservare la trascrizione e ancorare l'interpretazione alla formula generale indicizzata.",
+        "blocking": false
+      }
+    ],
+    "single_page_rationale": "La dinamica come uguaglianza si illustra con una timeline; il caso infinito resta il solo richiamo della fonte.",
+    "focus": "Ogni transizione dinamica è un vincolo di uguaglianza del problema di controllo."
+  },
+  {
+    "page": 20,
+    "title": "Discrete-time optimal control: main ingredients (II)",
+    "observations": [
+      {
+        "category": "definition",
+        "claim": "Le variabili decisionali sono la coppia di stack (𝐱,𝐮) e, se non dato, anche lo stato iniziale x₀.",
+        "anchor": "Decision variable:",
+        "bbox": [
+          27,
+          32,
+          428,
+          48
+        ]
+      },
+      {
+        "category": "equation",
+        "claim": "Il costo ha struttura additiva ℓ(x₀,𝐱,𝐮)=Σ_{t=0}^{T−1}ℓ_t(x_t,u_t)+ℓ_T(x_T).",
+        "anchor": "ℓ(x0, x, u) =",
+        "bbox": [
+          148,
+          77,
+          311,
+          108
+        ]
+      },
+      {
+        "category": "definition",
+        "claim": "ℓ_t:Rⁿ×Rᵐ→R è lo stage cost, mentre ℓ_T:Rⁿ→R è il terminal cost.",
+        "anchor": "where ℓt : Rn × Rm",
+        "bbox": [
+          27,
+          115,
+          432,
+          131
+        ]
+      },
+      {
+        "category": "definition",
+        "claim": "Se lo stato iniziale è dato come x₀=x⁰, si omette quell'argomento e si scrive ℓ(𝐱,𝐮) per lo stesso costo additivo.",
+        "anchor": "we lighten the notation and write",
+        "bbox": [
+          27,
+          140,
+          417,
+          193
+        ]
+      }
+    ],
+    "math": [
+      [
+        "\\ell(x_0,\\mathbf{x},\\mathbf{u})=\\sum_{t=0}^{T-1}\\ell_t(x_t,u_t)+\\ell_T(x_T)",
+        "ℓ(x0, x, u) ="
+      ],
+      [
+        "\\ell_t:\\mathbb{R}^n\\times\\mathbb{R}^m\\to\\mathbb{R},\\quad\\ell_T:\\mathbb{R}^n\\to\\mathbb{R}",
+        "where ℓt"
+      ],
+      [
+        "x_0=x^0,\\qquad\\ell(\\mathbf{x},\\mathbf{u})=\\sum_{t=0}^{T-1}\\ell_t(x_t,u_t)+\\ell_T(x_T)",
+        "Notation: if the initial state is given"
+      ]
+    ],
+    "notation": [
+      [
+        "\\ell_t",
+        "Costo di stadio con argomenti x_t e u_t"
+      ],
+      [
+        "\\ell_T",
+        "Costo terminale con solo x_T"
+      ],
+      [
+        "\\ell",
+        "Costo totale, distinto dai singoli ℓ_t"
+      ],
+      [
+        "x_0",
+        "Variabile iniziale solo se non assegnata"
+      ],
+      [
+        "x^0",
+        "Dato iniziale quando fissato"
+      ],
+      [
+        "\\mathbf{x},\\mathbf{u}",
+        "Stack di stati e ingressi"
+      ]
+    ],
+    "role": "Definisce che cosa viene minimizzato e distingue contributi di stadio, terminale e dato iniziale.",
+    "previous": "La pagina 19 impone che le variabili di stato e ingresso rispettino la dinamica.",
+    "next": "La pagina 21 aggiunge end-point e path constraints, senza cambiare questa decomposizione del costo.",
+    "scope_limits": [
+      "Il costo non è ancora necessariamente quadratico, positivo o time-invariant.",
+      "Non includere automaticamente un ingresso u_T nel costo terminale.",
+      "Cambiare pesi di un costo valutato su una traiettoria fissa non significa aver ricalcolato una traiettoria ottima."
+    ],
+    "prerequisites": [
+      [
+        "Stack e orizzonte",
+        "Per identificare quali x e u sono variabili.",
+        [
+          10
+        ]
+      ],
+      [
+        "Dinamica come vincolo",
+        "Il costo è valutato su traiettorie ammissibili del modello.",
+        [
+          19
+        ]
+      ]
+    ],
+    "examples": [
+      {
+        "purpose": "Contare esattamente i contributi del costo.",
+        "setup": "Enrichment: T=2, x_{t+1}=x_t+u_t, x⁰=1, u₀=−0.5,u₁=0; ℓ_t=½(x_t²+u_t²), ℓ_T=2x_T².",
+        "parameters": [
+          [
+            "x_0,x_1,x_2",
+            "1,0.5,0.5"
+          ],
+          [
+            "u_0,u_1",
+            "−0.5,0"
+          ]
+        ],
+        "steps": [
+          "Stage t=0: ½(1+0.25)=0.625.",
+          "Stage t=1: ½(0.25+0)=0.125.",
+          "Terminale: 2·0.25=0.5.",
+          "Totale: 0.625+0.125+0.5=1.25."
+        ],
+        "expected": "Due contributi di stadio e uno terminale, senza un u₂.",
+        "limitations": [
+          "Funzioni e numeri sono enrichment; la traiettoria non è dichiarata ottima."
+        ]
+      }
+    ],
+    "visual": {
+      "component": "StageAndTerminalCostLedger",
+      "origin": "enrichment",
+      "description": "Timeline e barre impilate dei due stage cost e del terminal cost, con somma numerica."
+    },
+    "interaction": {
+      "component": "FixedTrajectoryCostDecomposition",
+      "rationale": "Variare coefficienti su una traiettoria fissa mostra quali addendi cambiano, senza confondere valutazione e ottimizzazione.",
+      "parameters": [
+        [
+          "Peso dello stato aggiunto",
+          "α",
+          "[0,4]",
+          "1",
+          "Nell'esempio ℓ_t=½(αx_t²+βu_t²), aggiornare solo i contributi di stato degli stadi.",
+          [
+            "α=0: nessuna penalità di stato intermedia"
+          ],
+          "enrichment"
+        ],
+        [
+          "Peso dell'ingresso aggiunto",
+          "β",
+          "[0,4]",
+          "1",
+          "Aggiornare solo le barre dei contributi di ingresso e il totale.",
+          [
+            "β=0: ingresso non penalizzato nell'esempio"
+          ],
+          "enrichment"
+        ],
+        [
+          "Peso terminale aggiunto",
+          "γ",
+          "[0,8]",
+          "4",
+          "Usare ℓ_T=½γx_T² e aggiornare solo la barra terminale e il totale.",
+          [
+            "γ=0: terminal cost nullo"
+          ],
+          "enrichment"
+        ]
+      ],
+      "outputs": [
+        "Contributi distinti",
+        "Costo totale"
+      ],
+      "invariants": [
+        "Traiettoria fissata ai valori dell'esempio",
+        "Nessun ricalcolo di un ottimo",
+        "α,β,γ non sono simboli della slide"
+      ]
+    },
+    "edges": [
+      [
+        "Stato iniziale non dato",
+        "Conservare x₀ fra le decisioni; non ometterlo come se fosse un parametro."
+      ],
+      [
+        "Terminal cost nullo",
+        "Mantenere il concetto di contributo terminale senza inventare un valore diverso."
+      ],
+      [
+        "T=1",
+        "Un solo stage cost e un terminal cost."
+      ]
+    ],
+    "single_page_rationale": "La decomposizione temporale è un concetto unitario, illustrabile con tre barre.",
+    "focus": "Somma dei costi di stadio più costo terminale, con x₀ dato o decisionale."
+  },
+  {
+    "page": 21,
+    "title": "Discrete-time optimal control: main ingredients (III)",
+    "observations": [
+      {
+        "category": "definition",
+        "claim": "Gli end-point constraints sono funzioni dello stato iniziale e/o finale, espressi come r(x₀,x_T)=0.",
+        "anchor": "r(x0, xT ) = 0.",
+        "bbox": [
+          27,
+          32,
+          444,
+          65
+        ]
+      },
+      {
+        "category": "definition",
+        "claim": "I path constraints sono vincoli point-wise nel tempo su stati e ingressi: g_t(x_t,u_t)≤0, t=0,…,T−1.",
+        "anchor": "gt(xt, ut) ≤0,",
+        "bbox": [
+          27,
+          69,
+          444,
+          114
+        ]
+      }
+    ],
+    "math": [
+      [
+        "r(x_0,x_T)=0",
+        "r(x0, xT ) = 0."
+      ],
+      [
+        "g_t(x_t,u_t)\\leq0,\\quad t=0,\\ldots,T-1",
+        "gt(xt, ut) ≤0,"
+      ]
+    ],
+    "notation": [
+      [
+        "r",
+        "Mappa dei vincoli agli estremi, non il conteggio di disuguaglianze usato nelle pagine di ottimizzazione astratta"
+      ],
+      [
+        "g_t",
+        "Mappa dei vincoli puntuali a ogni istante"
+      ],
+      [
+        "x_T",
+        "Stato terminale, argomento di r"
+      ]
+    ],
+    "role": "Completa i tre ingredienti del problema discreto distinguendo condizioni agli estremi e limiti lungo il percorso.",
+    "previous": "La pagina 20 ha definito variabili e costo: i vincoli di questa pagina sono condizioni aggiuntive, non termini di costo.",
+    "next": "La pagina 22 specifica un costo di tracking prima del problema completo della pagina 23.",
+    "scope_limits": [
+      "L'intervallo scritto per g_t si ferma a T−1: non affermare che imponga automaticamente un vincolo su x_T.",
+      "r è un'uguaglianza; la slide non enumera tutti i possibili vincoli terminali di altri tipi.",
+      "Nessuna condizione di raggiungibilità è garantita."
+    ],
+    "prerequisites": [
+      [
+        "Uguaglianze e disuguaglianze",
+        "Per capire il diverso ruolo di r e g_t.",
+        [
+          14,
+          18
+        ]
+      ],
+      [
+        "Stati iniziale e terminale e orizzonte",
+        "Per localizzare dove viene controllato ciascun vincolo.",
+        [
+          10
+        ]
+      ]
+    ],
+    "examples": [
+      {
+        "purpose": "Separare endpoint e path e mostrare possibile incompatibilità.",
+        "setup": "Enrichment: x_{t+1}=x_t+u_t, T=2, r=col(x₀,x₂−1), g_t=col(u_t−b,−u_t−b), b=0.4.",
+        "parameters": [
+          [
+            "T",
+            "2"
+          ],
+          [
+            "b",
+            "0.4"
+          ],
+          [
+            "target x_2",
+            "1"
+          ]
+        ],
+        "steps": [
+          "r=0 impone x₀=0 e x₂=1.",
+          "g_t≤0 impone |u_t|≤0.4.",
+          "In due passi x₂≤0.8: endpoint irraggiungibile.",
+          "Con b=0.5, u₀=u₁=0.5 soddisfa entrambi i tipi di vincolo."
+        ],
+        "expected": "End-point e path constraints possono essere singolarmente comprensibili ma congiuntamente infeasible.",
+        "limitations": [
+          "Modello e valori sono enrichment; la fonte non assegna questi limiti."
+        ]
+      }
+    ],
+    "visual": {
+      "component": "EndpointAndPathConstraintTimeline",
+      "origin": "enrichment",
+      "description": "Endpoint fissati ai nodi estremi, limiti sugli ingressi lungo gli archi e intervallo raggiungibile in due passi."
+    },
+    "interaction": {
+      "component": "TwoStepReachabilityConstraintDemo",
+      "rationale": "Variare il limite d'ingresso mostra quando i vincoli agli estremi sono compatibili con quelli lungo il percorso.",
+      "parameters": [
+        [
+          "Limite di ingresso",
+          "b",
+          "[0,1]",
+          "0.4",
+          "Aggiornare la regione raggiungibile x₂∈[−2b,2b] e l'indicatore di fattibilità per il target 1.",
+          [
+            "b=0.5: target sul bordo",
+            "b=0: nessuno spostamento"
+          ],
+          "enrichment"
+        ]
+      ],
+      "outputs": [
+        "Endpoint richiesto",
+        "Intervallo raggiungibile",
+        "Compatibilità dei vincoli"
+      ],
+      "invariants": [
+        "Dinamica integratore e T=2",
+        "Stato iniziale 0 e terminale richiesto 1",
+        "Non viene valutato un costo"
+      ]
+    },
+    "edges": [
+      [
+        "Nessun terminal path constraint esplicito",
+        "Non marcare x_T come automaticamente limitato da g_t indicizzato fino a T−1."
+      ],
+      [
+        "b esattamente alla soglia",
+        "Il vincolo ≤ include il valore di bordo."
+      ],
+      [
+        "Endpoint impossibile",
+        "Mostrare infeasibilità, non una traiettoria approssimata spacciata per ammissibile."
+      ]
+    ],
+    "single_page_rationale": "Le due famiglie si confrontano sulla stessa timeline e sullo stesso esempio.",
+    "focus": "Endpoint agli estremi, path a ogni t: condizioni diverse che devono essere soddisfatte insieme."
+  },
+  {
+    "page": 22,
+    "title": "Cost function: examples — tracking di una state-input curve",
+    "observations": [
+      {
+        "category": "equation",
+        "claim": "Il costo penalizza a ogni t=0,…,T−1 la distanza quadratica fra x_t e x_t^{des}, pesata con Q, e fra u_t e u_t^{des}, pesata con R; aggiunge un costo terminale su x_T con Q_T.",
+        "anchor": "Distance from a desired state-input function of time",
+        "bbox": [
+          27,
+          32,
+          415,
+          99
+        ]
+      },
+      {
+        "category": "definition",
+        "claim": "Q e Q_T sono positive (semi-)definite; R è positiva definita.",
+        "anchor": "for some R positive definite",
+        "bbox": [
+          38,
+          150,
+          441,
+          195
+        ]
+      },
+      {
+        "category": "definition",
+        "claim": "La curva desiderata è scelta secondo gli obiettivi del progettista, senza considerare necessariamente il modello dinamico.",
+        "anchor": "not taking into account dynamic models",
+        "bbox": [
+          27,
+          104,
+          443,
+          131
+        ]
+      },
+      {
+        "category": "assumption",
+        "claim": "La nota esplicita che (𝐱^{des},𝐮^{des}) non soddisfa in generale la dinamica, ad esempio per una transizione a gradino fra equilibri.",
+        "anchor": "does not satisfy the dynamics in general",
+        "bbox": [
+          27,
+          204,
+          443,
+          232
+        ]
+      },
+      {
+        "category": "structure",
+        "claim": "Il testo elenca x_t^{des} per t=1,…,T mentre il costo di stadio parte da t=0; il riferimento x_0^{des} usato nel primo addendo non viene esplicitato nell'elenco.",
+        "anchor": "t = 1, . . . , T",
+        "bbox": [
+          27,
+          104,
+          443,
+          131
+        ]
+      }
+    ],
+    "math": [
+      [
+        "\\ell(\\mathbf{x},\\mathbf{u})=\\sum_{t=0}^{T-1}\\left[\\frac12\\|x_t-x_t^{\\mathrm{des}}\\|_Q^2+\\frac12\\|u_t-u_t^{\\mathrm{des}}\\|_R^2\\right]+\\frac12\\|x_T-x_T^{\\mathrm{des}}\\|_{Q_T}^2",
+        "Distance from a desired"
+      ],
+      [
+        "\\frac12\\|x_t-x_t^{\\mathrm{des}}\\|_Q^2=\\frac12(x_t-x_t^{\\mathrm{des}})^\\top Q(x_t-x_t^{\\mathrm{des}})",
+        "for some Q positive"
+      ],
+      [
+        "\\frac12\\|x_T-x_T^{\\mathrm{des}}\\|_{Q_T}^2=\\frac12(x_T-x_T^{\\mathrm{des}})^\\top Q_T(x_T-x_T^{\\mathrm{des}})",
+        "for some QT positive"
+      ],
+      [
+        "\\frac12\\|u_t-u_t^{\\mathrm{des}}\\|_R^2=\\frac12(u_t-u_t^{\\mathrm{des}})^\\top R(u_t-u_t^{\\mathrm{des}})",
+        "for some R positive definite"
+      ],
+      [
+        "x_0=x^0",
+        "where, x0 = x0"
+      ]
+    ],
+    "notation": [
+      [
+        "x_t^{\\mathrm{des}},u_t^{\\mathrm{des}}",
+        "Stato e ingresso desiderati, non necessariamente una traiettoria"
+      ],
+      [
+        "Q,Q_T",
+        "Pesi positivi (semi-)definiti su stato intermedio e terminale"
+      ],
+      [
+        "R",
+        "Peso positivo definito sull'ingresso"
+      ],
+      [
+        "\\mathbf{x}^{\\mathrm{des}},\\mathbf{u}^{\\mathrm{des}}",
+        "Forma compatta della curva desiderata"
+      ],
+      [
+        "\\ell_t,\\ell_T",
+        "Addendi individuati dalle parentesi graffe della fonte"
+      ]
+    ],
+    "role": "Introduce il tracking quadratico e separa il desiderato dal dinamicamente realizzabile.",
+    "previous": "La pagina 21 dà vincoli espliciti: pesare una distanza nel costo non equivale a imporre un vincolo esatto.",
+    "next": "La pagina 23 combina costi e vincoli nella formulazione completa, che resta più generale di questo esempio quadratico.",
+    "scope_limits": [
+      "Non chiamare traiettoria la curva desiderata senza verificarne la dinamica.",
+      "R>0 non basta da solo a garantire una soluzione unica per dinamiche o vincoli generali non lineari.",
+      "Non assegnare implicitamente un x_0^{des} assente dall'elenco: dichiararlo negli esempi."
+    ],
+    "prerequisites": [
+      [
+        "Costo additivo",
+        "Per riconoscere stadi e termine terminale.",
+        [
+          20
+        ]
+      ],
+      [
+        "Forme quadratiche pesate",
+        "Per interpretare Q,R,Q_T; il refuso di pagina 16 non va ripetuto.",
+        [
+          16
+        ]
+      ],
+      [
+        "Traiettoria dinamica",
+        "Per distinguerla dal desiderato.",
+        [
+          11
+        ]
+      ]
+    ],
+    "examples": [
+      {
+        "purpose": "Calcolare contributi e osservare un riferimento non fattibile.",
+        "setup": "Enrichment con T=1: x⁰=0, x₀^{des}=0, x₁^{des}=1, u₀^{des}=0; dinamica x₁=x₀+u₀; Q=0,Q_T=1,R=1.",
+        "parameters": [
+          [
+            "u_0",
+            "0.5"
+          ],
+          [
+            "x_1",
+            "0.5"
+          ],
+          [
+            "x_1^{des}",
+            "1"
+          ]
+        ],
+        "steps": [
+          "Il desiderato (x₁^{des},u₀^{des})=(1,0) non rispetta la dinamica con x⁰=0.",
+          "Costo ingresso: ½·0.5²=0.125.",
+          "Costo terminale: ½(0.5−1)²=0.125.",
+          "Costo totale della traiettoria candidata=0.25."
+        ],
+        "expected": "La traiettoria candidata è fattibile e ha un costo misurabile; il desiderato può non esserlo.",
+        "limitations": [
+          "Modello, pesi e valori sono enrichment; questa pagina non viene presentata come soluzione del problema completo."
+        ]
+      }
+    ],
+    "visual": {
+      "component": "TrackingCostContributions",
+      "origin": "enrichment",
+      "description": "Confronto desiderato/candidato con barre separate per stato, ingresso e terminale e un residuo dinamico del desiderato."
+    },
+    "interaction": {
+      "component": "FixedCandidateTrackingWeightExplorer",
+      "rationale": "Modificare R e Q_T mostra il compromesso nell'indice, mantenendo distinta la valutazione di una candidata dalla ricerca dell'ottimo.",
+      "parameters": [
+        [
+          "Peso ingresso",
+          "R",
+          "[0.1,5]",
+          "1",
+          "Aggiornare il contributo ½R(u₀−u₀^{des})² e il totale sulla candidata fissata.",
+          [
+            "R resta strettamente positivo"
+          ],
+          "source"
+        ],
+        [
+          "Peso terminale",
+          "Q_T",
+          "[0,5]",
+          "1",
+          "Aggiornare il termine terminale e il totale, senza cambiare stati/ingressi candidati.",
+          [
+            "Q_T=0: nessuna penalità terminale"
+          ],
+          "source"
+        ]
+      ],
+      "outputs": [
+        "Contributi al costo",
+        "Costo totale",
+        "Residuo della curva desiderata"
+      ],
+      "invariants": [
+        "Traiettoria candidata e riferimento fissi",
+        "Q=0 consentito come semidefinito",
+        "Nessuna garanzia che la candidata sia ottima",
+        "Range/default sono enrichment"
+      ]
+    },
+    "edges": [
+      [
+        "Q o Q_T singolare",
+        "Alcune direzioni possono non essere penalizzate."
+      ],
+      [
+        "Curva desiderata non fattibile",
+        "Mantenere il riferimento come obiettivo, senza imporlo come dinamica."
+      ],
+      [
+        "R=0",
+        "Escluderlo dal controllo perché la pagina richiede R positiva definita."
+      ]
+    ],
+    "uncertainties": [
+      {
+        "description": "Indice del riferimento di stato: il costo include t=0 ma l'elenco dichiara x_t^{des} solo per t=1,…,T. Negli esempi x_0^{des} è assegnato esplicitamente come enrichment.",
+        "blocking": false
+      }
+    ],
+    "single_page_rationale": "Un solo costo di tracking con decomposizione e distinzione riferimento/traiettoria; nessuna espansione necessaria.",
+    "focus": "Misurare la distanza da un desiderato che può essere dinamicamente irrealizzabile."
+  },
+  {
+    "page": 23,
+    "title": "Discrete-time optimal control problem",
+    "observations": [
+      {
+        "category": "equation",
+        "claim": "La minimizzazione elenca gli stati x₀,…,x_T e gli ingressi u₀,…,u_{T−1} come variabili e minimizza Σℓ_t(x_t,u_t)+ℓ_T(x_T).",
+        "anchor": "A discrete-time optimal control problem can be written as",
+        "bbox": [
+          129,
+          48,
+          334,
+          78
+        ]
+      },
+      {
+        "category": "equation",
+        "claim": "I vincoli sono dinamica x_{t+1}=f_t(x_t,u_t), end-point r(x₀,x_T)=0 e path g_t(x_t,u_t)≤0, con dinamica/path su t=0,…,T−1.",
+        "anchor": "r(x0, xT ) = 0,",
+        "bbox": [
+          145,
+          83,
+          333,
+          125
+        ]
+      },
+      {
+        "category": "definition",
+        "claim": "ℓ_t:Rⁿ×Rᵐ→R è lo stage cost e ℓ_T:Rⁿ→R è il terminal cost.",
+        "anchor": "where ℓt : Rn × Rm",
+        "bbox": [
+          27,
+          132,
+          439,
+          148
+        ]
+      }
+    ],
+    "math": [
+      [
+        "\\begin{aligned}\\min_{\\substack{x_0,x_1,\\ldots,x_T\\\\u_0,\\ldots,u_{T-1}}}\\;&\\sum_{t=0}^{T-1}\\ell_t(x_t,u_t)+\\ell_T(x_T)\\\\\\text{subj.to }&x_{t+1}=f_t(x_t,u_t),\\quad t=0,\\ldots,T-1\\\\&r(x_0,x_T)=0\\\\&g_t(x_t,u_t)\\leq0,\\quad t=0,\\ldots,T-1\\end{aligned}",
+        "A discrete-time optimal control problem"
+      ],
+      [
+        "\\ell_t:\\mathbb{R}^n\\times\\mathbb{R}^m\\to\\mathbb{R},\\quad\\ell_T:\\mathbb{R}^n\\to\\mathbb{R}",
+        "where ℓt"
+      ]
+    ],
+    "notation": [
+      [
+        "x_0,\\ldots,x_T",
+        "Stati elencati fra le variabili; l'eventuale inizializzazione può essere imposta tramite r"
+      ],
+      [
+        "u_0,\\ldots,u_{T-1}",
+        "Ingressi decisionali"
+      ],
+      [
+        "r",
+        "Vincoli agli estremi"
+      ],
+      [
+        "g_t",
+        "Vincoli puntuali"
+      ],
+      [
+        "\\ell_t,\\ell_T",
+        "Costo di stadio e terminale generali"
+      ]
+    ],
+    "role": "Riunisce dinamica, costo e vincoli delle tre pagine main ingredients in un'unica formulazione.",
+    "previous": "La pagina 22 fornisce un esempio di costo quadratico; qui ℓ_t e ℓ_T restano generali.",
+    "next": "La pagina 24 interpreta la ricerca di una traiettoria per un'uscita desiderata, prima di un problema più specifico.",
+    "scope_limits": [
+      "Non è scritta separatamente l'uguaglianza x₀=x⁰: non attribuirla come vincolo aggiuntivo letterale della pagina; può essere codificata in r.",
+      "Non sono garantite fattibilità, unicità, convessità o soluzione tramite un algoritmo specifico.",
+      "Lo schema non contiene automaticamente vincoli su x_T non inclusi in r."
+    ],
+    "prerequisites": [
+      [
+        "Dinamica come uguaglianza",
+        "Per comprendere la prima famiglia di vincoli.",
+        [
+          19
+        ]
+      ],
+      [
+        "Costo additivo",
+        "Per leggere l'obiettivo.",
+        [
+          20
+        ]
+      ],
+      [
+        "End-point e path constraints",
+        "Per comprendere r e g_t.",
+        [
+          21
+        ]
+      ]
+    ],
+    "examples": [
+      {
+        "purpose": "Risolvere un'istanza minima mantenendo i tre ingredienti.",
+        "setup": "Enrichment: T=2, x_{t+1}=x_t+u_t, r=col(x₀,x₂−1), |u_t|≤0.8, ℓ_t=½u_t², ℓ_T=0.",
+        "parameters": [
+          [
+            "T",
+            "2"
+          ],
+          [
+            "target",
+            "1"
+          ],
+          [
+            "limite |u|",
+            "0.8"
+          ]
+        ],
+        "steps": [
+          "Dinamica ed endpoint richiedono u₀+u₁=1.",
+          "½(u₀²+u₁²) è minimo con u₀=u₁=0.5.",
+          "La soluzione rispetta |u_t|≤0.8.",
+          "x₀=0,x₁=0.5,x₂=1 e costo=0.25."
+        ],
+        "expected": "Una traiettoria ottima dell'istanza si ottiene confrontando solo sequenze coerenti con tutte le condizioni.",
+        "limitations": [
+          "Soluzione analitica specifica dell'esempio, non algoritmo generale della fonte."
+        ]
+      }
+    ],
+    "visual": {
+      "component": "OptimalControlProblemIngredientMap",
+      "description": "Annotare la formulazione in quattro regioni: decisioni, obiettivo, dinamica, endpoint/path; affiancare una piccola timeline dell'esempio."
+    },
+    "interaction": {
+      "component": "TwoStepMinimumEffortExample",
+      "rationale": "Nel solo esempio chiuso si può mostrare come un vincolo renda il problema fattibile o impossibile.",
+      "parameters": [
+        [
+          "Target terminale aggiunto",
+          "d_target",
+          "[−1.5,1.5]",
+          "1",
+          "Ricalcolare u₀=u₁=d_target/2 quando |d_target|≤2b, gli stati e il costo d_target²/4; altrimenti mostrare infeasibilità.",
+          [
+            "d_target=0: soluzione nulla"
+          ],
+          "enrichment"
+        ],
+        [
+          "Limite aggiunto",
+          "b",
+          "[0,1]",
+          "0.8",
+          "Aggiornare la fattibilità |d_target|≤2b; non tagliare semplicemente i controlli e dichiararli soluzione con endpoint soddisfatto.",
+          [
+            "b=0 e target non nullo: infeasible"
+          ],
+          "enrichment"
+        ]
+      ],
+      "outputs": [
+        "Traiettoria dell'esempio",
+        "Controlli ottimi quando ammissibili",
+        "Costo",
+        "Stato di fattibilità"
+      ],
+      "invariants": [
+        "T=2 e dinamica integratore",
+        "Costo solo di sforzo",
+        "La formula chiusa non è estesa all'OCP generale"
+      ]
+    },
+    "edges": [
+      [
+        "Target esattamente raggiungibile al limite",
+        "Accettare la soluzione sul bordo dei vincoli ≤."
+      ],
+      [
+        "Problema infeasible",
+        "Non produrre un valore ottimo finito o una traiettoria etichettata ottima."
+      ],
+      [
+        "Stato iniziale non fissato in un'altra istanza",
+        "Conservarlo come variabile della formulazione generale."
+      ]
+    ],
+    "single_page_rationale": "È una pagina di sintesi di ingredienti già analizzati: la formula annotata e un'istanza minima restano coerenti in una companion.",
+    "focus": "Il problema di controllo ottimo è una minimizzazione sulle traiettorie ammissibili."
+  },
+  {
+    "page": 24,
+    "title": "Trajectory generation",
+    "observations": [
+      {
+        "category": "equation",
+        "claim": "Il sistema discreto è x_{t+1}=f_t(x_t,u_t) e l'uscita di prestazione è y_t=h_t(x_t,u_t), per t∈N₀.",
+        "anchor": "yt = ht(xt, ut)",
+        "bbox": [
+          17,
+          30,
+          215,
+          100
+        ]
+      },
+      {
+        "category": "concept",
+        "claim": "Si desidera che l'uscita segua una legge temporale y_t^{des}.",
+        "anchor": "follow a desired time law",
+        "bbox": [
+          27,
+          131,
+          440,
+          144
+        ]
+      },
+      {
+        "category": "definition",
+        "claim": "Il task cerca una traiettoria stato-ingresso (𝐱,𝐮) che rispetti la dinamica per ogni t e renda y_t≈y_t^{des}.",
+        "anchor": "yt ≈ydes",
+        "bbox": [
+          27,
+          144,
+          440,
+          214
+        ]
+      },
+      {
+        "category": "diagram",
+        "claim": "Una figura mostra un drone e un percorso blu attorno a un edificio: illustra un compito di generazione di traiettoria, senza valori del modello.",
+        "bbox": [
+          234,
+          32,
+          407,
+          117
+        ]
+      }
+    ],
+    "math": [
+      [
+        "x_{t+1}=f_t(x_t,u_t),\\quad t\\in\\mathbb{N}_0",
+        "xt+1 = ft(xt, ut)"
+      ],
+      [
+        "y_t=h_t(x_t,u_t),\\quad t\\in\\mathbb{N}_0",
+        "yt = ht(xt, ut)"
+      ],
+      [
+        "y_t\\approx y_t^{\\mathrm{des}},\\quad t\\in\\mathbb{N}_0",
+        "yt ≈ydes"
+      ]
+    ],
+    "notation": [
+      [
+        "y_t",
+        "Performance output, non necessariamente l'intero stato"
+      ],
+      [
+        "h_t",
+        "Mappa d'uscita, eventualmente dipendente dall'ingresso"
+      ],
+      [
+        "y_t^{\\mathrm{des}}",
+        "Legge temporale desiderata per l'uscita"
+      ],
+      [
+        "(\\mathbf{x},\\mathbf{u})",
+        "Traiettoria da trovare, con dinamica soddisfatta"
+      ]
+    ],
+    "role": "Traduce il problema generale in un compito di tracking di un'uscita di prestazione.",
+    "previous": "La pagina 23 formula il controllo ottimo generale; questa pagina spiega il significato di un compito concreto.",
+    "next": "La pagina 25 assegna un costo quadratico e una condizione iniziale per la generazione di traiettoria.",
+    "scope_limits": [
+      "Il simbolo ≈ non specifica metrica, tolleranza o esistenza di tracking esatto.",
+      "Non sono scritti vincoli di ostacolo o un modello di drone nella formulazione di questa pagina, pur essendo presenti nella figura.",
+      "Una legge temporale contiene quando raggiungere i punti, non solo la forma geometrica del percorso.",
+      "La fonte scrive t∈N₀; una finestra finita di visualizzazione sarebbe un enrichment."
+    ],
+    "prerequisites": [
+      [
+        "Dinamica discreta e traiettoria",
+        "Il candidato deve soddisfare l'aggiornamento.",
+        [
+          9,
+          11
+        ]
+      ],
+      [
+        "Uscita del sistema",
+        "Concetto introdotto a tempo continuo e qui declinato a tempo discreto.",
+        [
+          8
+        ]
+      ]
+    ],
+    "examples": [
+      {
+        "purpose": "Distinguere uscita desiderata e traiettoria fattibile.",
+        "setup": "Enrichment: x_{t+1}=x_t+u_t, y_t=x_t, x₀=0 e limite aggiunto |u_t|≤1; desiderare y₁=2.",
+        "parameters": [
+          [
+            "limite ingresso aggiunto",
+            "1"
+          ],
+          [
+            "y_1^{des}",
+            "2"
+          ]
+        ],
+        "steps": [
+          "In un passo y₁≤1, quindi il salto desiderato non è esattamente realizzabile.",
+          "Scegliendo u₀=u₁=1 si ottengono y₁=1,y₂=2.",
+          "Questa è una candidata fattibile, non un ottimo: la pagina non ha assegnato un indice per confrontarla."
+        ],
+        "expected": "La generazione cerca ingressi e stati fisicamente coerenti, non una semplice copia della curva desiderata.",
+        "limitations": [
+          "Modello, limite e numeri sono enrichment; la fonte non fornisce questa istanza."
+        ]
+      }
+    ],
+    "visual": {
+      "component": "DesiredOutputVersusFeasibleTrajectory",
+      "origin": "enrichment",
+      "description": "Grafico temporale distinto per y^{des}, y della candidata e ingressi che la producono; evidenziare 'candidata, non soluzione ottima'."
+    },
+    "no_interaction_reason": "Un confronto statico basta a chiarire il task; l'esplorazione di un ottimo è proposta nella pagina successiva con un costo esplicito.",
+    "edges": [
+      [
+        "h_t non iniettiva",
+        "Più coppie stato-ingresso possono produrre la stessa uscita; non dedurre un'unica traiettoria dal solo y^{des}."
+      ],
+      [
+        "Desiderato irraggiungibile",
+        "Distinguere approssimazione dell'uscita e violazione della dinamica: la seconda non è ammessa."
+      ]
+    ],
+    "single_page_rationale": "Una sola distinzione centrale, fra desiderato d'uscita e traiettoria dinamicamente ammissibile.",
+    "focus": "Trovare una traiettoria che rispetti la dinamica e avvicini l'uscita alla legge temporale desiderata."
+  }
+]

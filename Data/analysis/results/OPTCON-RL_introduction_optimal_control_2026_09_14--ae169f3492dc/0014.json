@@ -1,0 +1,591 @@
+{
+  "protocol_version": "1.0.0",
+  "request_sha256": "55b77d40ffd7b85e15fc574791eae0776b2579d04a96d1df14a6ba5b138864ea",
+  "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0014",
+  "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+  "artifact_sha256": {
+    "text": "e19e933f8e9201f499009ecc1aa4a561e8b61bdb278f2d4fea82043137200466",
+    "layout": "36cb7dcd14cfe7de9b8ae371bbefee81e9e16b6a032140810506db210d3c6702",
+    "render": "73a08a8e807605c525a1a523abf915803c0ad3f66e288e0d5665b4a5eda66dfb"
+  },
+  "agent": {
+    "provider": "OpenAI",
+    "model": "Codex (identificatore esatto del modello non esposto nella sessione)",
+    "run_id": "page-analysis-ce370a19242e4173828aef04d60c36ee"
+  },
+  "inspection": {
+    "text_page_ids": [
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0014",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0013",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0015"
+    ],
+    "layout_page_ids": [
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0014",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0013",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0015"
+    ],
+    "image_page_ids": [
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0014",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0013",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0015"
+    ],
+    "source_content_treated_as_data": true
+  },
+  "title": "Optimization: main ingredients",
+  "companionPageCount": 1,
+  "didactic_plan": {
+    "source_scope_limits": [
+      "Non viene ancora formulato un algoritmo di soluzione o una condizione di ottimalità.",
+      "L'uso alternato di n e d è mantenuto e segnalato; per l'esempio si dichiarano esplicitamente uguali.",
+      "g(z)≤0 va letto componente per componente."
+    ],
+    "prerequisites": [
+      {
+        "concept": "Vettori, funzioni reali e uguaglianze/disequazioni",
+        "why": "Prerequisito matematico per le tre famiglie di ingredienti.",
+        "origin": "enrichment",
+        "page_numbers": []
+      },
+      {
+        "concept": "Perché ottimizzare nel controllo",
+        "why": "Motivazione precedente senza richiedere ancora una dinamica.",
+        "origin": "source_context",
+        "page_numbers": [
+          13
+        ]
+      }
+    ],
+    "source_math": [
+      {
+        "latex": "z\\in\\mathbb{R}^d,\\qquad\\ell(z):\\mathbb{R}^d\\to\\mathbb{R}",
+        "anchor": "Decision vector",
+        "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+      },
+      {
+        "latex": "h_i:\\mathbb{R}^n\\to\\mathbb{R},\\quad g_j:\\mathbb{R}^n\\to\\mathbb{R}",
+        "anchor": "functions hi : Rn",
+        "notes": "Riprodotto n come nella fonte, senza sostituirlo con d."
+      },
+      {
+        "latex": "h_i(z)=0\\ (i=1,\\ldots,m),\\qquad g_j(z)\\leq0\\ (j=1,\\ldots,r)",
+        "anchor": "hi(z) = 0",
+        "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+      },
+      {
+        "latex": "Z=\\{z\\in\\mathbb{R}^n\\mid h(z)=0,\\ g(z)\\leq0\\}",
+        "anchor": "Z = {z ∈Rn",
+        "notes": "La fonte usa n qui, pur avendo introdotto z∈R^d."
+      },
+      {
+        "latex": "h(z)=\\operatorname{col}(h_1(z),\\ldots,h_m(z)),\\quad g(z)=\\operatorname{col}(g_1(z),\\ldots,g_r(z))",
+        "anchor": "where we compactly denoted",
+        "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+      }
+    ],
+    "enrichments": [
+      {
+        "id": "example-1",
+        "label": "enrichment",
+        "type": "worked_example",
+        "proposal": "Enrichment con d=n=2: z=(z₁,z₂), ℓ(z)=0.5(z₁²+z₂²), h₁(z)=z₁+z₂−1, g₁(z)=−z₁.",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "id": "example-1",
+        "origin": "enrichment",
+        "purpose": "Identificare decisione, costo e vincoli in un esempio completo.",
+        "setup": "Enrichment con d=n=2: z=(z₁,z₂), ℓ(z)=0.5(z₁²+z₂²), h₁(z)=z₁+z₂−1, g₁(z)=−z₁.",
+        "parameters": [
+          {
+            "symbol": "z candidato",
+            "value": "(0.5,0.5)"
+          }
+        ],
+        "derivation": [
+          "h₁(0.5,0.5)=0.",
+          "g₁(0.5,0.5)=−0.5≤0.",
+          "ℓ(0.5,0.5)=0.25."
+        ],
+        "expected_outcome": "Il punto è ammissibile e ha costo 0.25; questi ingredienti non costituiscono ancora un metodo di ottimizzazione.",
+        "limitations": [
+          "Formule e numeri dell'esempio sono enrichment.",
+          "Non attribuire alla fonte la scelta d=n=2."
+        ],
+        "enrichment_id": "example-1",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ]
+      }
+    ],
+    "example_omission_reason": null,
+    "visualization": {
+      "component": "DecisionCostConstraintIngredientCards",
+      "description": "Tre schede statiche collegate a z, ℓ e Z, con un avviso esplicito sulla discrepanza d/n.",
+      "origin": "source_derived",
+      "source_observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    },
+    "interactivity": {
+      "recommended": false,
+      "rationale": "La classificazione degli ingredienti è prioritaria; l'esplorazione geometrica dei vincoli è proposta nella pagina 17.",
+      "component": null,
+      "parameters": [],
+      "outputs": [],
+      "invariants": [],
+      "enrichment_id": null
+    },
+    "edge_cases": [
+      {
+        "case": "gⱼ(z)=0",
+        "expected_behavior": "Il vincolo ≤0 è soddisfatto anche sul bordo.",
+        "origin": "enrichment",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ]
+      },
+      {
+        "case": "Insieme Z vuoto",
+        "expected_behavior": "Non vi sono decisioni ammissibili; non cercare un minimo inesistente.",
+        "origin": "enrichment",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ]
+      },
+      {
+        "case": "m o r nulli",
+        "expected_behavior": "Famiglia assente come convenzione di enrichment, non caso discusso nella slide.",
+        "origin": "enrichment",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ]
+      }
+    ],
+    "expansion_rationale": "Le tre schede e la notazione compatta costituiscono un'unica definizione; l'avviso tipografico non richiede espansione.",
+    "blueprint": [
+      {
+        "companion_suffix": null,
+        "focus": "Decisione z, costo ℓ e insieme ammissibile Z, preservando l'irregolarità d/n della fonte.",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ],
+        "enrichment_ids": [
+          "example-1"
+        ]
+      }
+    ]
+  },
+  "observations": [
+    {
+      "id": "s01",
+      "category": "definition",
+      "description": "Il vettore decisionale è z∈Rᵈ e il costo è ℓ(z):Rᵈ→R, associato alla decisione z.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0014",
+        "modality": "both",
+        "text_quote": "Decision vector: z ∈Rd",
+        "bbox": [
+          27,
+          52,
+          342,
+          94
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "s02",
+      "category": "definition",
+      "description": "I vincoli sono hᵢ(z)=0 per i=1,…,m e gⱼ(z)≤0 per j=1,…,r.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0014",
+        "modality": "both",
+        "text_quote": "hi(z) = 0",
+        "bbox": [
+          169,
+          135,
+          290,
+          163
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "s03",
+      "category": "definition",
+      "description": "La forma insiemistica è Z={z∈Rⁿ | h(z)=0,g(z)≤0}, con h e g ottenuti impilando le rispettive componenti.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0014",
+        "modality": "both",
+        "text_quote": "Z = {z ∈Rn | h(z) = 0, g(z) ≤0}",
+        "bbox": [
+          27,
+          170,
+          443,
+          220
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "s04",
+      "category": "structure",
+      "description": "La pagina usa Rᵈ per z e ℓ, ma Rⁿ per i domini di hᵢ,gⱼ e per Z; entrambe le lettere sono effettivamente stampate nella fonte.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0014",
+        "modality": "both",
+        "text_quote": "functions hi : Rn",
+        "bbox": [
+          27,
+          106,
+          443,
+          199
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "transcription-05",
+      "category": "structure",
+      "description": "Trascrizione di una regione visibile della fonte: Optimization: main ingredients",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0014",
+        "modality": "visual",
+        "text_quote": null,
+        "bbox": [
+          10.35200023651123,
+          6.720991134643555,
+          192.2474822998047,
+          21.06719207763672
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "transcription-06",
+      "category": "structure",
+      "description": "Trascrizione di una regione visibile della fonte: The main ingredients of an optimization problem are",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0014",
+        "modality": "visual",
+        "text_quote": null,
+        "bbox": [
+          28.34600067138672,
+          34.63948059082031,
+          231.5873565673828,
+          43.60588073730469
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "transcription-07",
+      "category": "structure",
+      "description": "Trascrizione di una regione visibile della fonte: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 13 |35",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0014",
+        "modality": "visual",
+        "text_quote": null,
+        "bbox": [
+          126.9540023803711,
+          247.92860412597656,
+          447.8712158203125,
+          255.1179962158203
+        ]
+      },
+      "confidence": 0.98
+    }
+  ],
+  "contextual_role": "Introduce gli ingredienti astratti dell'ottimizzazione prima degli esempi di costo e di insieme ammissibile.",
+  "context_notes": [
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0013",
+      "role": "previous",
+      "note": "La pagina 13 motiva perché servano costo e vincoli espliciti."
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0015",
+      "role": "next",
+      "note": "La pagina 15 assegna una specifica funzione di costo nel caso scalare; qui il costo resta generale."
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "z",
+      "meaning": "Vettore decisionale",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    },
+    {
+      "symbol": "d",
+      "meaning": "Dimensione decisionale nella prima parte",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    },
+    {
+      "symbol": "n",
+      "meaning": "Lettera usata nella fonte per alcuni domini; discrepanza da non occultare",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    },
+    {
+      "symbol": "\\ell",
+      "meaning": "Costo scalare",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    },
+    {
+      "symbol": "h_i,h",
+      "meaning": "Uguaglianze scalari e loro stack",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    },
+    {
+      "symbol": "g_j,g",
+      "meaning": "Disuguaglianze scalari e loro stack",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    },
+    {
+      "symbol": "m,r",
+      "meaning": "Numero di uguaglianze e disuguaglianze in questa pagina, non necessariamente le dimensioni di ingresso viste prima",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    },
+    {
+      "symbol": "Z",
+      "meaning": "Insieme ammissibile",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "description": "Discrepanza dimensionale della fonte: z e ℓ usano d, mentre hᵢ,gⱼ e Z usano n. Conservare il testo letterale e richiedere revisione prima della produzione didattica.",
+      "blocking": false,
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    }
+  ],
+  "progression": {
+    "assessment": "unique",
+    "related_page_ids": [],
+    "added": [],
+    "removed": [],
+    "changed": [],
+    "observation_ids": [
+      "s01",
+      "s02",
+      "s03",
+      "s04"
+    ],
+    "rationale": "Pagina con contenuto autonomo nella sequenza; nessun candidato automatico da confermare."
+  },
+  "coverage": {
+    "all_visible_regions_accounted_for": true,
+    "regions": [
+      {
+        "bbox": [
+          10.35200023651123,
+          6.720991134643555,
+          192.2474822998047,
+          21.06719207763672
+        ],
+        "description": "Regione testuale sorgente: Optimization: main ingredients",
+        "observation_ids": [
+          "transcription-05"
+        ]
+      },
+      {
+        "bbox": [
+          28.34600067138672,
+          34.63948059082031,
+          231.5873565673828,
+          43.60588073730469
+        ],
+        "description": "Regione testuale sorgente: The main ingredients of an optimization problem are",
+        "observation_ids": [
+          "transcription-06"
+        ]
+      },
+      {
+        "bbox": [
+          28.34600067138672,
+          53.60160827636719,
+          119.75060272216797,
+          64.52688598632812
+        ],
+        "description": "Regione testuale sorgente: Decision vector: z ∈Rd",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          28.34600830078125,
+          78.53426361083984,
+          254.36595153808594,
+          91.42587280273438
+        ],
+        "description": "Regione testuale sorgente: Cost function: ℓ(z) : Rd →R cost associated to decision z",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          28.346023559570312,
+          105.43326568603516,
+          425.20147705078125,
+          129.28387451171875
+        ],
+        "description": "Regione testuale sorgente: Constraints (constraint sets): for some given functions hi : Rn →R, i = 1, . . . , m, and gj : Rn →R,\nthe decision vector z ∈Rd needs to satisfy",
+        "observation_ids": [
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          174.63009643554688,
+          139.24647521972656,
+          278.9368591308594,
+          148.74539184570312
+        ],
+        "description": "Regione testuale sorgente: hi(z) = 0\ni = 1, . . . , m",
+        "observation_ids": [
+          "s02",
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          174.80410766601562,
+          153.07826232910156,
+          278.4150390625,
+          162.69239807128906
+        ],
+        "description": "Regione testuale sorgente: gj(z) ≤0\nj = 1, . . . , r.",
+        "observation_ids": [
+          "s02",
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          28.346115112304688,
+          172.0072479248047,
+          226.66200256347656,
+          181.08985900878906
+        ],
+        "description": "Regione testuale sorgente: Equivalently we can say that we require z ∈Z with",
+        "observation_ids": [
+          "s03",
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          157.89512634277344,
+          186.62925720214844,
+          295.6535339355469,
+          200.0188751220703
+        ],
+        "description": "Regione testuale sorgente: Z = {z ∈Rn | h(z) = 0, g(z) ≤0},",
+        "observation_ids": [
+          "s03",
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          28.34613037109375,
+          209.98146057128906,
+          387.6775817871094,
+          219.47938537597656
+        ],
+        "description": "Regione testuale sorgente: where we compactly denoted h(z) = col(h1(z), . . . , hm(z)) and g(z) = col(g1(z), . . . , gr(z)).",
+        "observation_ids": [
+          "s03"
+        ]
+      },
+      {
+        "bbox": [
+          126.9540023803711,
+          247.92860412597656,
+          447.8712158203125,
+          255.1179962158203
+        ],
+        "description": "Regione testuale sorgente: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 13 |35",
+        "observation_ids": [
+          "transcription-07"
+        ]
+      }
+    ]
+  },
+  "mapping_recommendation": {
+    "mode": "one_to_one",
+    "rationale": "Le tre schede e la notazione compatta costituiscono un'unica definizione; l'avviso tipografico non richiede espansione.",
+    "subpages": []
+  }
+}

@@ -1,0 +1,2 @@
+Optimization (constrained) over convex sets: optimality conditions
+                      and algorithms

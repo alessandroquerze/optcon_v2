@@ -1,0 +1,19 @@
+Gradient methods: introduction
+
+    The update rule
+
+                                      zk+1 = zk −γk∇ℓ(zk),
+
+    can be generalized to so called gradient methods
+
+                                        zk+1 = zk + γkdk,
+
+    with dk such that
+
+                                        ∇ℓ(zk)T dk < 0.
+
+
+
+
+
+                                                      Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 29 |73

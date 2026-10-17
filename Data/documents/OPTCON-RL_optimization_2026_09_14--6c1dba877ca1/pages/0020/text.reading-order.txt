@@ -1,0 +1,26 @@
+Graphical interpretation of Lipschitz continuity of the gradient
+
+
+       If ℓis differentiable with Lipschitz continuous gradient, then
+
+                          ℓ(zB) ≤ℓ(zA) + ∇ℓ(zA)⊤(zB −zA) + L2 ∥zB −zA∥2
+
+     for all zA, zB ∈Z.
+
+    That is, Lipschitz continuity of ∇ℓimposes a quadratic upper bound on ℓ
+
+
+
+
+                                 ℓ(zB)
+
+
+
+
+
+                                                           (zA, ℓ(zA))
+
+
+
+
+                                                      Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 19 |73

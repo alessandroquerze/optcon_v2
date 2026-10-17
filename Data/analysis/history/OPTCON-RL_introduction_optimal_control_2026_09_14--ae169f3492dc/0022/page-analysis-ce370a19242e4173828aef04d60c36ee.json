@@ -1,0 +1,1000 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0022",
+  "document_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc",
+  "source": {
+    "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+    "page_index": 21,
+    "physical_page_number": 22,
+    "pdf_label_raw": "<FEFF00320031>",
+    "pdf_label": "21",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Cost function: examples",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      151.8199005126953,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 21,
+        "total": 35,
+        "raw": "21 |35",
+        "bbox": [
+          126.9540023803711,
+          247.92860412597656,
+          447.8712158203125,
+          258.29376220703125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0022/text.txt",
+      "sha256": "113d89626a6a6ede54cbc79d92782a85d9992413901470ca4f952f3ba4c4f3f6"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0022/text.reading-order.txt",
+      "sha256": "5af06d2df5d346aa5a957f78943bf8ac3c4690637c4b72dc14c161acc2c75b50"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0022/layout.json",
+      "sha256": "5b71379b11c3fc7c15d5595b480a17b10658c6b88c3976ec4bbed5f71182b5b8"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0022/render.png",
+      "sha256": "302d775ba076a3d50a7db247dc7e59ab0923a9b0120729cdf6107c956321bbd6",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "02648d1ee91f65e123fe117c5455b00e26f804a97dff3aff91fdf4122b6003ef"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0021",
+    "next_page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0023"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "needs_review",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "c59c48e9f876210d38a9b6f659f1b85bbd29033048a7c2c150fb2b2c9f0b3341",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0022",
+      "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+      "artifact_sha256": {
+        "text": "113d89626a6a6ede54cbc79d92782a85d9992413901470ca4f952f3ba4c4f3f6",
+        "layout": "5b71379b11c3fc7c15d5595b480a17b10658c6b88c3976ec4bbed5f71182b5b8",
+        "render": "302d775ba076a3d50a7db247dc7e59ab0923a9b0120729cdf6107c956321bbd6"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "Codex (identificatore esatto del modello non esposto nella sessione)",
+        "run_id": "page-analysis-0a4e81cecdf44e8b86ded34253e8c4ba"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0022",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0021",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0023"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0022",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0021",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0023"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0022",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0021",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0023"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Cost function: examples — tracking di una state-input curve",
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Non chiamare traiettoria la curva desiderata senza verificarne la dinamica.",
+          "R>0 non basta da solo a garantire una soluzione unica per dinamiche o vincoli generali non lineari.",
+          "Non assegnare implicitamente un x_0^{des} assente dall'elenco: dichiararlo negli esempi."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Costo additivo",
+            "why": "Per riconoscere stadi e termine terminale.",
+            "origin": "source_context",
+            "page_numbers": [
+              20
+            ]
+          },
+          {
+            "concept": "Forme quadratiche pesate",
+            "why": "Per interpretare Q,R,Q_T; il refuso di pagina 16 non va ripetuto.",
+            "origin": "source_context",
+            "page_numbers": [
+              16
+            ]
+          },
+          {
+            "concept": "Traiettoria dinamica",
+            "why": "Per distinguerla dal desiderato.",
+            "origin": "source_context",
+            "page_numbers": [
+              11
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\ell(\\mathbf{x},\\mathbf{u})=\\sum_{t=0}^{T-1}\\left[\\frac12\\|x_t-x_t^{\\mathrm{des}}\\|_Q^2+\\frac12\\|u_t-u_t^{\\mathrm{des}}\\|_R^2\\right]+\\frac12\\|x_T-x_T^{\\mathrm{des}}\\|_{Q_T}^2",
+            "anchor": "Distance from a desired",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          },
+          {
+            "latex": "\\frac12\\|x_t-x_t^{\\mathrm{des}}\\|_Q^2=\\frac12(x_t-x_t^{\\mathrm{des}})^\\top Q(x_t-x_t^{\\mathrm{des}})",
+            "anchor": "for some Q positive",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          },
+          {
+            "latex": "\\frac12\\|x_T-x_T^{\\mathrm{des}}\\|_{Q_T}^2=\\frac12(x_T-x_T^{\\mathrm{des}})^\\top Q_T(x_T-x_T^{\\mathrm{des}})",
+            "anchor": "for some QT positive",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          },
+          {
+            "latex": "\\frac12\\|u_t-u_t^{\\mathrm{des}}\\|_R^2=\\frac12(u_t-u_t^{\\mathrm{des}})^\\top R(u_t-u_t^{\\mathrm{des}})",
+            "anchor": "for some R positive definite",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          },
+          {
+            "latex": "x_0=x^0",
+            "anchor": "where, x0 = x0",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "example-1",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "Enrichment con T=1: x⁰=0, x₀^{des}=0, x₁^{des}=1, u₀^{des}=0; dinamica x₁=x₀+u₀; Q=0,Q_T=1,R=1.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04",
+              "s05"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Modificare R e Q_T mostra il compromesso nell'indice, mantenendo distinta la valutazione di una candidata dalla ricerca dell'ottimo.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04",
+              "s05"
+            ]
+          },
+          {
+            "id": "visualization",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Confronto desiderato/candidato con barre separate per stato, ingresso e terminale e un residuo dinamico del desiderato.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04",
+              "s05"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Calcolare contributi e osservare un riferimento non fattibile.",
+            "setup": "Enrichment con T=1: x⁰=0, x₀^{des}=0, x₁^{des}=1, u₀^{des}=0; dinamica x₁=x₀+u₀; Q=0,Q_T=1,R=1.",
+            "parameters": [
+              {
+                "symbol": "u_0",
+                "value": "0.5"
+              },
+              {
+                "symbol": "x_1",
+                "value": "0.5"
+              },
+              {
+                "symbol": "x_1^{des}",
+                "value": "1"
+              }
+            ],
+            "derivation": [
+              "Il desiderato (x₁^{des},u₀^{des})=(1,0) non rispetta la dinamica con x⁰=0.",
+              "Costo ingresso: ½·0.5²=0.125.",
+              "Costo terminale: ½(0.5−1)²=0.125.",
+              "Costo totale della traiettoria candidata=0.25."
+            ],
+            "expected_outcome": "La traiettoria candidata è fattibile e ha un costo misurabile; il desiderato può non esserlo.",
+            "limitations": [
+              "Modello, pesi e valori sono enrichment; questa pagina non viene presentata come soluzione del problema completo."
+            ],
+            "enrichment_id": "example-1",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04",
+              "s05"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "TrackingCostContributions",
+          "description": "Confronto desiderato/candidato con barre separate per stato, ingresso e terminale e un residuo dinamico del desiderato.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04",
+            "s05"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Modificare R e Q_T mostra il compromesso nell'indice, mantenendo distinta la valutazione di una candidata dalla ricerca dell'ottimo.",
+          "component": "FixedCandidateTrackingWeightExplorer",
+          "parameters": [
+            {
+              "name": "Peso ingresso",
+              "symbol": "R",
+              "origin": "source",
+              "range": "[0.1,5]",
+              "default": "1",
+              "effect_on_change": "Aggiornare il contributo ½R(u₀−u₀^{des})² e il totale sulla candidata fissata.",
+              "edge_cases": [
+                "R resta strettamente positivo"
+              ]
+            },
+            {
+              "name": "Peso terminale",
+              "symbol": "Q_T",
+              "origin": "source",
+              "range": "[0,5]",
+              "default": "1",
+              "effect_on_change": "Aggiornare il termine terminale e il totale, senza cambiare stati/ingressi candidati.",
+              "edge_cases": [
+                "Q_T=0: nessuna penalità terminale"
+              ]
+            }
+          ],
+          "outputs": [
+            "Contributi al costo",
+            "Costo totale",
+            "Residuo della curva desiderata"
+          ],
+          "invariants": [
+            "Traiettoria candidata e riferimento fissi",
+            "Q=0 consentito come semidefinito",
+            "Nessuna garanzia che la candidata sia ottima",
+            "Range/default sono enrichment"
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "Q o Q_T singolare",
+            "expected_behavior": "Alcune direzioni possono non essere penalizzate.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04",
+              "s05"
+            ]
+          },
+          {
+            "case": "Curva desiderata non fattibile",
+            "expected_behavior": "Mantenere il riferimento come obiettivo, senza imporlo come dinamica.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04",
+              "s05"
+            ]
+          },
+          {
+            "case": "R=0",
+            "expected_behavior": "Escluderlo dal controllo perché la pagina richiede R positiva definita.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04",
+              "s05"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un solo costo di tracking con decomposizione e distinzione riferimento/traiettoria; nessuna espansione necessaria.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Misurare la distanza da un desiderato che può essere dinamicamente irrealizzabile.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04",
+              "s05"
+            ],
+            "enrichment_ids": [
+              "example-1",
+              "interaction",
+              "visualization"
+            ]
+          }
+        ]
+      },
+      "observations": [
+        {
+          "id": "s01",
+          "category": "equation",
+          "description": "Il costo penalizza a ogni t=0,…,T−1 la distanza quadratica fra x_t e x_t^{des}, pesata con Q, e fra u_t e u_t^{des}, pesata con R; aggiunge un costo terminale su x_T con Q_T.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0022",
+            "modality": "both",
+            "text_quote": "Distance from a desired state-input function of time",
+            "bbox": [
+              28.34600067138672,
+              34.63948059082031,
+              313.6299743652344,
+              43.60588073730469
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s02",
+          "category": "definition",
+          "description": "Q e Q_T sono positive (semi-)definite; R è positiva definita.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0022",
+            "modality": "both",
+            "text_quote": "for some R positive definite",
+            "bbox": [
+              207.55198669433594,
+              74.98876953125,
+              329.8434753417969,
+              193.8728790283203
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s03",
+          "category": "definition",
+          "description": "La curva desiderata è scelta secondo gli obiettivi del progettista, senza considerare necessariamente il modello dinamico.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0022",
+            "modality": "both",
+            "text_quote": "not taking into account dynamic models",
+            "bbox": [
+              28.346099853515625,
+              117.39646911621094,
+              413.62353515625,
+              126.36286926269531
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s04",
+          "category": "assumption",
+          "description": "La nota esplicita che (𝐱^{des},𝐮^{des}) non soddisfa in generale la dinamica, ad esempio per una transizione a gradino fra equilibri.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0022",
+            "modality": "both",
+            "text_quote": "does not satisfy the dynamics in general",
+            "bbox": [
+              28.345993041992188,
+              205.81031799316406,
+              425.2178955078125,
+              216.2498779296875
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s05",
+          "category": "structure",
+          "description": "Il testo elenca x_t^{des} per t=1,…,T mentre il costo di stadio parte da t=0; il riferimento x_0^{des} usato nel primo addendo non viene esplicitato nell'elenco.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0022",
+            "modality": "both",
+            "text_quote": "t = 1, . . . , T",
+            "bbox": [
+              51.36000442504883,
+              69.73780822753906,
+              205.09100341796875,
+              188.1584014892578
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-06",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Cost function: examples",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0022",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              10.35200023651123,
+              6.720991134643555,
+              151.8199005126953,
+              21.06719207763672
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-07",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 21 |35",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0022",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              126.9540023803711,
+              247.92860412597656,
+              447.8712158203125,
+              255.1179962158203
+            ]
+          },
+          "confidence": 0.98
+        }
+      ],
+      "contextual_role": "Introduce il tracking quadratico e separa il desiderato dal dinamicamente realizzabile.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0021",
+          "role": "previous",
+          "note": "La pagina 21 dà vincoli espliciti: pesare una distanza nel costo non equivale a imporre un vincolo esatto."
+        },
+        {
+          "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0023",
+          "role": "next",
+          "note": "La pagina 23 combina costi e vincoli nella formulazione completa, che resta più generale di questo esempio quadratico."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "x_t^{\\mathrm{des}},u_t^{\\mathrm{des}}",
+          "meaning": "Stato e ingresso desiderati, non necessariamente una traiettoria",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04",
+            "s05"
+          ]
+        },
+        {
+          "symbol": "Q,Q_T",
+          "meaning": "Pesi positivi (semi-)definiti su stato intermedio e terminale",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04",
+            "s05"
+          ]
+        },
+        {
+          "symbol": "R",
+          "meaning": "Peso positivo definito sull'ingresso",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04",
+            "s05"
+          ]
+        },
+        {
+          "symbol": "\\mathbf{x}^{\\mathrm{des}},\\mathbf{u}^{\\mathrm{des}}",
+          "meaning": "Forma compatta della curva desiderata",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04",
+            "s05"
+          ]
+        },
+        {
+          "symbol": "\\ell_t,\\ell_T",
+          "meaning": "Addendi individuati dalle parentesi graffe della fonte",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04",
+            "s05"
+          ]
+        }
+      ],
+      "uncertainties": [
+        {
+          "description": "Indice del riferimento di stato: il costo include t=0 ma l'elenco dichiara x_t^{des} solo per t=1,…,T. Negli esempi x_0^{des} è assegnato esplicitamente come enrichment.",
+          "blocking": false,
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04",
+            "s05"
+          ]
+        }
+      ],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ],
+        "rationale": "Pagina con contenuto autonomo nella sequenza; nessun candidato automatico da confermare."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              10.35200023651123,
+              6.720991134643555,
+              151.8199005126953,
+              21.06719207763672
+            ],
+            "description": "Regione testuale sorgente: Cost function: examples",
+            "observation_ids": [
+              "transcription-06"
+            ]
+          },
+          {
+            "bbox": [
+              28.34600067138672,
+              34.63948059082031,
+              313.6299743652344,
+              43.60588073730469
+            ],
+            "description": "Regione testuale sorgente: Distance from a desired state-input function of time (“state-input curve”)",
+            "observation_ids": [
+              "s01"
+            ]
+          },
+          {
+            "bbox": [
+              101.05400085449219,
+              70.886474609375,
+              137.3480987548828,
+              79.85287475585938
+            ],
+            "description": "Regione testuale sorgente: ℓ(x, u) =",
+            "observation_ids": [
+              "s05"
+            ]
+          },
+          {
+            "bbox": [
+              139.90399169921875,
+              61.95460510253906,
+              154.65130615234375,
+              77.75582122802734
+            ],
+            "description": "Regione testuale sorgente: T −1\nX",
+            "observation_ids": [
+              "s05"
+            ]
+          },
+          {
+            "bbox": [
+              141.23098754882812,
+              83.76681518554688,
+              153.32334899902344,
+              89.74441528320312
+            ],
+            "description": "Regione testuale sorgente: t=0",
+            "observation_ids": [
+              "s05"
+            ]
+          },
+          {
+            "bbox": [
+              157.3839874267578,
+              68.9153060913086,
+              209.19334411621094,
+              82.431396484375
+            ],
+            "description": "Regione testuale sorgente: 1\n2∥xt −xdes\nt ∥2",
+            "observation_ids": [
+              "s02",
+              "s05"
+            ]
+          },
+          {
+            "bbox": [
+              205.54103088378906,
+              69.73776245117188,
+              227.92733764648438,
+              81.43084716796875
+            ],
+            "description": "Regione testuale sorgente: Q + 1",
+            "observation_ids": [
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              224.27499389648438,
+              68.9153060913086,
+              276.2442932128906,
+              82.431396484375
+            ],
+            "description": "Regione testuale sorgente: 2∥ut −udes\nt ∥2",
+            "observation_ids": [
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              156.18798828125,
+              74.98876953125,
+              278.6238708496094,
+              93.44080352783203
+            ],
+            "description": "Regione testuale sorgente: R\n|\n{z\n}",
+            "observation_ids": [
+              "s02",
+              "s05"
+            ]
+          },
+          {
+            "bbox": [
+              202.59498596191406,
+              89.54478454589844,
+              232.22019958496094,
+              96.12124633789062
+            ],
+            "description": "Regione testuale sorgente: ℓt(xt,ut)",
+            "observation_ids": [
+              "s02",
+              "s05"
+            ]
+          },
+          {
+            "bbox": [
+              280.15997314453125,
+              69.73777770996094,
+              293.7112731933594,
+              79.85285949707031
+            ],
+            "description": "Regione testuale sorgente: + 1",
+            "observation_ids": [
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              290.0589904785156,
+              68.9153060913086,
+              344.3572998046875,
+              82.431396484375
+            ],
+            "description": "Regione testuale sorgente: 2∥xT −xdes\nT ∥2",
+            "observation_ids": [
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              288.8630065917969,
+              74.98876953125,
+              352.4888916015625,
+              93.44080352783203
+            ],
+            "description": "Regione testuale sorgente: QT\n|\n{z\n}",
+            "observation_ids": [
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              308.65301513671875,
+              89.54478454589844,
+              332.70220947265625,
+              96.86738586425781
+            ],
+            "description": "Regione testuale sorgente: ℓT (xT )",
+            "observation_ids": [
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              28.34600830078125,
+              104.96430206298828,
+              129.71400451660156,
+              116.39987182617188
+            ],
+            "description": "Regione testuale sorgente: where, x0 = x0, and xdes",
+            "observation_ids": [
+              "s05"
+            ]
+          },
+          {
+            "bbox": [
+              121.1780014038086,
+              104.96430206298828,
+              205.09100341796875,
+              116.98086547851562
+            ],
+            "description": "Regione testuale sorgente: t , t = 1, . . . , T, udes",
+            "observation_ids": [
+              "s05"
+            ]
+          },
+          {
+            "bbox": [
+              28.346099853515625,
+              104.96430206298828,
+              425.20733642578125,
+              126.36286926269531
+            ],
+            "description": "Regione testuale sorgente: t , t = 0, . . . , T −1, (compactly (xdes, udes)) represents a\ndesired behavior for the system based on designers goals (not taking into account dynamic models).",
+            "observation_ids": [
+              "s02",
+              "s03",
+              "s05"
+            ]
+          },
+          {
+            "bbox": [
+              28.346099853515625,
+              136.32546997070312,
+              53.90034484863281,
+              145.2918701171875
+            ],
+            "description": "Regione testuale sorgente: Recall:",
+            "observation_ids": [
+              "s05"
+            ]
+          },
+          {
+            "bbox": [
+              40.10210037231445,
+              149.7963104248047,
+              103.17031860351562,
+              162.8134002685547
+            ],
+            "description": "Regione testuale sorgente: •\n1\n2∥xt −xdes\nt ∥2",
+            "observation_ids": [
+              "s05"
+            ]
+          },
+          {
+            "bbox": [
+              99.51800537109375,
+              150.1197967529297,
+              122.92831420898438,
+              162.02586364746094
+            ],
+            "description": "Regione testuale sorgente: Q = 1",
+            "observation_ids": [
+              "s05"
+            ]
+          },
+          {
+            "bbox": [
+              119.2760009765625,
+              149.76959228515625,
+              216.0860137939453,
+              162.8134002685547
+            ],
+            "description": "Regione testuale sorgente: 2(xt −xdes\nt )⊤Q(xt −xdes",
+            "observation_ids": [
+              "s02",
+              "s05"
+            ]
+          },
+          {
+            "bbox": [
+              207.5500030517578,
+              151.26947021484375,
+              357.4658508300781,
+              161.81288146972656
+            ],
+            "description": "Regione testuale sorgente: t ) for some Q positive (semi-)definite",
+            "observation_ids": [
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              40.10200500488281,
+              165.7803192138672,
+              105.65831756591797,
+              178.79739379882812
+            ],
+            "description": "Regione testuale sorgente: •\n1\n2∥xT −xdes\nT ∥2",
+            "observation_ids": [
+              "s05"
+            ]
+          },
+          {
+            "bbox": [
+              102.0060043334961,
+              166.10379028320312,
+              130.92532348632812,
+              179.35487365722656
+            ],
+            "description": "Regione testuale sorgente: QT = 1",
+            "observation_ids": [
+              "s05"
+            ]
+          },
+          {
+            "bbox": [
+              127.27300262451172,
+              165.75360107421875,
+              234.89801025390625,
+              178.79739379882812
+            ],
+            "description": "Regione testuale sorgente: 2(xT −xdes\nT )⊤QT (xT −xdes",
+            "observation_ids": [
+              "s02",
+              "s05"
+            ]
+          },
+          {
+            "bbox": [
+              226.36199951171875,
+              167.2534637451172,
+              382.1148681640625,
+              178.00987243652344
+            ],
+            "description": "Regione testuale sorgente: T ) for some QT positive (semi-)definite",
+            "observation_ids": [
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              40.102020263671875,
+              181.8563232421875,
+              103.32931518554688,
+              194.87440490722656
+            ],
+            "description": "Regione testuale sorgente: •\n1\n2∥ut −udes\nt ∥2",
+            "observation_ids": [
+              "s05"
+            ]
+          },
+          {
+            "bbox": [
+              99.677001953125,
+              182.17979431152344,
+              122.84431457519531,
+              194.08587646484375
+            ],
+            "description": "Regione testuale sorgente: R = 1",
+            "observation_ids": [
+              "s05"
+            ]
+          },
+          {
+            "bbox": [
+              119.19200134277344,
+              181.82960510253906,
+              216.08799743652344,
+              194.87440490722656
+            ],
+            "description": "Regione testuale sorgente: 2(ut −udes\nt )⊤R(ut −udes",
+            "observation_ids": [
+              "s02",
+              "s05"
+            ]
+          },
+          {
+            "bbox": [
+              207.55198669433594,
+              183.32948303222656,
+              329.8434753417969,
+              193.8728790283203
+            ],
+            "description": "Regione testuale sorgente: t ) for some R positive definite",
+            "observation_ids": [
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              28.345993041992188,
+              205.81031799316406,
+              425.2178955078125,
+              227.20887756347656
+            ],
+            "description": "Regione testuale sorgente: Note: The desired curve (xdes, udes) does not satisfy the dynamics in general (e.g., a step transition\nbetween two equilibria).",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              126.9540023803711,
+              247.92860412597656,
+              447.8712158203125,
+              255.1179962158203
+            ],
+            "description": "Regione testuale sorgente: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 21 |35",
+            "observation_ids": [
+              "transcription-07"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un solo costo di tracking con decomposizione e distinzione riferimento/traiettoria; nessuna espansione necessaria.",
+        "subpages": []
+      }
+    }
+  }
+}

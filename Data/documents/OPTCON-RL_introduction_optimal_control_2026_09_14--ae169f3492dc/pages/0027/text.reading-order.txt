@@ -1,0 +1,26 @@
+Example: trajectory generation for an autonomous drone (I)
+
+
+    Consider the discrete-time version of the drone dynamics (discretized via, e.g., forward Euler), i.e.
+
+                                      xt+1 = xt + δfCT(xt, ut, t)
+                                                |     ft(xt,ut){z       }
+
+    where δ > 0 sufficiently small discretization step and fCT(·, ·, ·) continuous-time dynamics.
+
+
+    The state and input vector are:
+
+                 px,t    x1,t 
+                              vx,t       x2,t
+                              py,t       x3,t                                             u1,t
+                   xt =    =                                      ut =
+                               vy,t       x4,t                                             u2,t
+                              θt        x5,t                                                                                                                                                               
+                         ωt        x6,t
+
+
+
+
+
+                                            Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 26 |35

@@ -1,0 +1,10 @@
+Unconstrained optimization: introduction
+Consider the unconstrained optimization problem
+min
+z∈Rd ℓ(z),
+with ℓ: Rd →R a cost function to be minimized and z a decision vector.
+strict global minimum
+strict local maximum
+local minima
+Remark Maxima can be equivalently defined. Moreover, maxima are minima of −ℓ.
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 3 |73

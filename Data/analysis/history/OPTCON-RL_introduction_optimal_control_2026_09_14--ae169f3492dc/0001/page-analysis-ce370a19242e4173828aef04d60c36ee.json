@@ -1,0 +1,438 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0001",
+  "document_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc",
+  "source": {
+    "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+    "page_index": 0,
+    "physical_page_number": 1,
+    "pdf_label_raw": "<FEFF0030>",
+    "pdf_label": "0",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Optimal Control and Reinforcement Learning",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      103.2760009765625,
+      61.87762451171875,
+      350.2704772949219,
+      73.83282470703125
+    ],
+    "printed_number_candidates": [],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0001/text.txt",
+      "sha256": "634649415656f09372dea780ffeaf8a5b4fe5958f70217031f24605137084eaf"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0001/text.reading-order.txt",
+      "sha256": "26f7ea870e32620132df158a6d2140cf83306a50e781e8b8c979bfb8e85109c4"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0001/layout.json",
+      "sha256": "33b27ff3890665ac61a4cc00494d37c36214fcda9924a3f2ffab49422e23d37e"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0001/render.png",
+      "sha256": "1f7862e840cfe9c649207f5ce672eb99b7bf1cd56d232957eed909f57134947b",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "fd0adc5d4628ee1b67478463d48a6734747de3777fca712b941d7b0fd7addf0d"
+    }
+  },
+  "context": {
+    "previous_page_id": null,
+    "next_page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0002"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "b72dc2e9534d8b73204dc8298deae33fc510f4fa7535788cdd8b7d886ab765be",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0001",
+      "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+      "artifact_sha256": {
+        "text": "634649415656f09372dea780ffeaf8a5b4fe5958f70217031f24605137084eaf",
+        "layout": "33b27ff3890665ac61a4cc00494d37c36214fcda9924a3f2ffab49422e23d37e",
+        "render": "1f7862e840cfe9c649207f5ce672eb99b7bf1cd56d232957eed909f57134947b"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "Codex (identificatore esatto del modello non esposto nella sessione)",
+        "run_id": "page-analysis-2cfa14d822274e148142566d51037b35"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0001",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0002"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0001",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0002"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0001",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0002"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Introduction to Optimal Control — copertina",
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Nessuna definizione, equazione, obiettivo numerico o simulazione è contenuta nella copertina.",
+          "Il titolo del corso non implica che questa pagina esponga algoritmi di Reinforcement Learning."
+        ],
+        "prerequisites": [],
+        "source_math": [],
+        "enrichments": [],
+        "examples": [],
+        "example_omission_reason": "Una copertina non contiene un concetto tecnico per il quale un esempio migliori la comprensione.",
+        "visualization": {
+          "component": "CourseTitleCard",
+          "description": "Gerarchia statica corso → documento → autore e affiliazione; mantenere i crediti come metadati.",
+          "origin": "source_derived",
+          "source_observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        "interactivity": {
+          "recommended": false,
+          "rationale": "Nessun contenuto dinamico; i comandi di navigazione appartengono al lettore e non a un'interazione didattica.",
+          "component": null,
+          "parameters": [],
+          "outputs": [],
+          "invariants": [],
+          "enrichment_id": null
+        },
+        "edge_cases": [
+          {
+            "case": "Confusione fra numero fisico e label 0",
+            "expected_behavior": "La copertina è pagina fisica 1; non eliminarla dalla copertura.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          }
+        ],
+        "expansion_rationale": "Metadati introduttivi compatti, senza necessità di espansione.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Titolo e identità del materiale, senza anticipare contenuti tecnici.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ],
+            "enrichment_ids": []
+          }
+        ]
+      },
+      "observations": [
+        {
+          "id": "s01",
+          "category": "structure",
+          "description": "Il corso si intitola Optimal Control and Reinforcement Learning; il documento è Introduction to Optimal Control.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0001",
+            "modality": "both",
+            "text_quote": "Introduction to Optimal Control",
+            "bbox": [
+              153.33099365234375,
+              74.39390563964844,
+              300.2095947265625,
+              84.35650634765625
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s02",
+          "category": "structure",
+          "description": "La copertina attribuisce le slide al Prof. Giuseppe Notarstefano, Department of Electrical, Electronic, and Information Engineering, Alma Mater Studiorum Università di Bologna, e riporta il contatto giuseppe.notarstefano@unibo.it.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0001",
+            "modality": "both",
+            "text_quote": "Prof. Giuseppe Notarstefano",
+            "bbox": [
+              175.95599365234375,
+              109.49252319335938,
+              286.0992736816406,
+              118.45892333984375
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s03",
+          "category": "structure",
+          "description": "Sono ringraziati L. Sforni, S. Baroncini e M. Falotico per il supporto alla preparazione delle slide.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0001",
+            "modality": "both",
+            "text_quote": "A special thank to L. Sforni, S. Baroncini, M. Falotico",
+            "bbox": [
+              59.82707214355469,
+              188.34716796875,
+              393.7582702636719,
+              196.3172607421875
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s04",
+          "category": "structure",
+          "description": "La fonte dichiara che le slide sono per uso interno del corso presso l'Università di Bologna.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0001",
+            "modality": "both",
+            "text_quote": "The present slides are for internal use of the course",
+            "bbox": [
+              136.0550537109375,
+              201.79617309570312,
+              317.51025390625,
+              209.76626586914062
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-05",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Optimal Control and Reinforcement Learning",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0001",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              103.2760009765625,
+              61.87762451171875,
+              350.2704772949219,
+              73.83282470703125
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-06",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Department of Electrical, Electronic, and Information Engineering",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0001",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              110.54606628417969,
+              133.55218505859375,
+              343.0338134765625,
+              141.52227783203125
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-07",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Alma Mater Studiorum Universit`a di Bologna",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0001",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              146.46307373046875,
+              143.01617431640625,
+              307.100341796875,
+              150.98626708984375
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-08",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: giuseppe.notarstefano@unibo.it",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0001",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              163.25906372070312,
+              152.86404418945312,
+              290.214599609375,
+              160.83413696289062
+            ]
+          },
+          "confidence": 0.98
+        }
+      ],
+      "contextual_role": "Identifica documento, corso e autore; non introduce ancora nozioni tecniche o Reinforcement Learning.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0002",
+          "role": "next",
+          "note": "La pagina 2 passa dalla copertina al confronto fra feedback control e optimal control."
+        }
+      ],
+      "notation": [],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ],
+        "rationale": "Pagina con contenuto autonomo nella sequenza; nessun candidato automatico da confermare."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              103.2760009765625,
+              61.87762451171875,
+              350.2704772949219,
+              73.83282470703125
+            ],
+            "description": "Regione testuale sorgente: Optimal Control and Reinforcement Learning",
+            "observation_ids": [
+              "transcription-05"
+            ]
+          },
+          {
+            "bbox": [
+              153.33099365234375,
+              74.39390563964844,
+              300.2095947265625,
+              84.35650634765625
+            ],
+            "description": "Regione testuale sorgente: Introduction to Optimal Control",
+            "observation_ids": [
+              "s01"
+            ]
+          },
+          {
+            "bbox": [
+              175.95599365234375,
+              109.49252319335938,
+              286.0992736816406,
+              118.45892333984375
+            ],
+            "description": "Regione testuale sorgente: Prof. Giuseppe Notarstefano",
+            "observation_ids": [
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              110.54606628417969,
+              133.55218505859375,
+              343.0338134765625,
+              141.52227783203125
+            ],
+            "description": "Regione testuale sorgente: Department of Electrical, Electronic, and Information Engineering",
+            "observation_ids": [
+              "transcription-06"
+            ]
+          },
+          {
+            "bbox": [
+              146.46307373046875,
+              143.01617431640625,
+              307.100341796875,
+              150.98626708984375
+            ],
+            "description": "Regione testuale sorgente: Alma Mater Studiorum Universit`a di Bologna",
+            "observation_ids": [
+              "transcription-07"
+            ]
+          },
+          {
+            "bbox": [
+              163.25906372070312,
+              152.86404418945312,
+              290.214599609375,
+              160.83413696289062
+            ],
+            "description": "Regione testuale sorgente: giuseppe.notarstefano@unibo.it",
+            "observation_ids": [
+              "transcription-08"
+            ]
+          },
+          {
+            "bbox": [
+              59.82707214355469,
+              188.34716796875,
+              393.7582702636719,
+              196.3172607421875
+            ],
+            "description": "Regione testuale sorgente: A special thank to L. Sforni, S. Baroncini, M. Falotico for the support on the slide preparation",
+            "observation_ids": [
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              102.1840591430664,
+              201.79617309570312,
+              351.4089050292969,
+              220.7252655029297
+            ],
+            "description": "Regione testuale sorgente: The present slides are for internal use of the course\nOptimal Control and Reinforcement Learning @ University of Bologna.",
+            "observation_ids": [
+              "s04"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Metadati introduttivi compatti, senza necessità di espansione.",
+        "subpages": []
+      }
+    }
+  }
+}

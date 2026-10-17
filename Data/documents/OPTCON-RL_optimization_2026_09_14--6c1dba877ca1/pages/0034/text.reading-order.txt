@@ -1,0 +1,26 @@
+Newton’s method for root finding
+
+
+    Consider the nonlinear root (zero) finding problem
+
+                                                 r(z) = 0
+
+     Idea: Iteratively refine the solution such that the improved guess zk+1 represents a root (zero) of the
+     linear approximation of r about the current tentative solution zk.
+
+
+    Consider the linear approximation of r about zk, we have
+
+                                 rk(zk + ∆zk) = r(zk) + ∇r(zk)⊤∆zk
+
+     then, finding the zeros of the approximation, we have
+
+                              ∆zk = − ∇r(zk)⊤ −1r(zk)
+
+    Thus, the solution is improved as
+
+                                  zk+1 = zk − ∇r(zk)⊤ −1r(zk).
+
+
+
+                                                      Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 33 |73

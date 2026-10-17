@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0028",
+  "document_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1",
+  "source": {
+    "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+    "page_index": 27,
+    "physical_page_number": 28,
+    "pdf_label_raw": "<FEFF00320037>",
+    "pdf_label": "27",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Optimization algorithms: two-step procedure",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      272.5431823730469,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 27,
+        "total": 73,
+        "raw": "27 |73",
+        "bbox": [
+          150.68800354003906,
+          247.92860412597656,
+          447.8712158203125,
+          258.29376220703125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0028/text.txt",
+      "sha256": "6622da0d64520b917af7380ba72510207571cc951ca392e80aab38cf41e0b2dd"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0028/text.reading-order.txt",
+      "sha256": "ab5a73bea523789f71f600d732f77e5e4988fa3bea154ba00b1f921f7c777b31"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0028/layout.json",
+      "sha256": "5054a11b9f0409811d98d96c971db37f009eeb39a2865191e73b9f32624e28b8"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0028/render.png",
+      "sha256": "93958fefa4c0220d77a0d8ded2a5bd880d2d5ecb3a23cd27f1f2906904ea1d59",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "0fdecf6f9c168555c4463861f469e109673b450ee0fbe2e102c4bc1c33a9de09"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0027",
+    "next_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0029"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "pending",
+    "result": null
+  }
+}

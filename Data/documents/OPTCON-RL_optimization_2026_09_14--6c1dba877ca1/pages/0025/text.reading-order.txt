@@ -1,0 +1,20 @@
+Quadratic Programming (unconstrained): properties
+
+
+    Since quadratic programs are convex program (Q ≥0 is necessary to have a local minimum), then the
+     following holds.
+
+                                     Important
+                For a quadratic program necessary conditions of optimality are also sufficient
+                                     and minima are global.
+
+
+       If Q > 0, then there exists a unique global minimum given by
+
+                              z⋆= −Q−1q.
+
+
+
+
+
+                                                      Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 24 |73

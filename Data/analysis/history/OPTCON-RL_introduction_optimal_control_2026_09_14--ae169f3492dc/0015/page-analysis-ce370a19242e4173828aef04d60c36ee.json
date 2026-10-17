@@ -1,0 +1,532 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0015",
+  "document_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc",
+  "source": {
+    "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+    "page_index": 14,
+    "physical_page_number": 15,
+    "pdf_label_raw": "<FEFF00310034>",
+    "pdf_label": "14",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Example of cost function: scalar set up",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      239.73338317871094,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 14,
+        "total": 35,
+        "raw": "14 |35",
+        "bbox": [
+          126.9540023803711,
+          247.92860412597656,
+          447.8712158203125,
+          258.29376220703125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0015/text.txt",
+      "sha256": "29cfc68fcd4e8f9892da4ed9f7b90f3b20f5043e7344c8008a04dadf1d46b0a9"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0015/text.reading-order.txt",
+      "sha256": "14f4538e06764fc9e3c1dfd2aceabf871d5cb8d16dece1d39d62252025bf2980"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0015/layout.json",
+      "sha256": "5c6d77e609ef3b5b3f95e7e027266c97953d2637f3250fc4338f5d54420fa7b9"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0015/render.png",
+      "sha256": "a3615e82ad4c5f0952957d541e42ec3702b091d9748389b8e85f2ba89d5fa76b",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "d9f80613886b4f2ef15613a2410376452902bcbad0669c036836253d6b84300c"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0014",
+    "next_page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0016"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "58922cb937ddc0b468b2fa425854c5dd207432d6849403ab7d3b777ff88fae9b",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0015",
+      "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+      "artifact_sha256": {
+        "text": "29cfc68fcd4e8f9892da4ed9f7b90f3b20f5043e7344c8008a04dadf1d46b0a9",
+        "layout": "5c6d77e609ef3b5b3f95e7e027266c97953d2637f3250fc4338f5d54420fa7b9",
+        "render": "a3615e82ad4c5f0952957d541e42ec3702b091d9748389b8e85f2ba89d5fa76b"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "Codex (identificatore esatto del modello non esposto nella sessione)",
+        "run_id": "page-analysis-3cb25e731a3640be84aaaa4b27de4c73"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0015",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0014",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0016"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0015",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0014",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0016"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0015",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0014",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0016"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Example of cost function: scalar set up",
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "La pagina non impone vincoli a z.",
+          "Il minimo in z̄ e la derivata sono deduzioni dalla formula, non enunciati espliciti aggiuntivi della slide.",
+          "Non sostituire ℓ con J né rinominare z̄ come x_ref nella trascrizione della fonte."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Funzione di costo e variabile decisionale",
+            "why": "Ruoli introdotti nella pagina 14.",
+            "origin": "source_context",
+            "page_numbers": [
+              14
+            ]
+          },
+          {
+            "concept": "Quadrato e grafico di una parabola",
+            "why": "Per comprendere la distanza quadratica.",
+            "origin": "enrichment",
+            "page_numbers": []
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "d=1,\\quad z\\in\\mathbb{R}^d=\\mathbb{R}",
+            "anchor": "Scalar set up d = 1",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          },
+          {
+            "latex": "\\ell(z)=\\frac12(z-\\bar z)^2,\\qquad\\bar z\\in\\mathbb{R}",
+            "anchor": "Cost function: ℓ(z) =",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "example-1",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "Enrichment numerico della formula sorgente: z̄=2.",
+            "source_observation_ids": [
+              "s01",
+              "s02"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Il movimento del punto e del riferimento mostra la distinzione fra scegliere z e definire il costo.",
+            "source_observation_ids": [
+              "s01",
+              "s02"
+            ]
+          },
+          {
+            "id": "visualization",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Parabola con punto corrente z e punto assegnato z̄, indicatore del costo e distanza orizzontale.",
+            "source_observation_ids": [
+              "s01",
+              "s02"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Valutare la formula mantenendo il fattore 1/2.",
+            "setup": "Enrichment numerico della formula sorgente: z̄=2.",
+            "parameters": [
+              {
+                "symbol": "\\bar z",
+                "value": "2"
+              },
+              {
+                "symbol": "z",
+                "value": "0,2,3"
+              }
+            ],
+            "derivation": [
+              "ℓ(0)=½(−2)²=2.",
+              "ℓ(2)=0.",
+              "ℓ(3)=½·1²=0.5."
+            ],
+            "expected_outcome": "Il costo è nullo al punto assegnato e dipende simmetricamente dalla distanza.",
+            "limitations": [
+              "I valori e l'osservazione sul minimo sono enrichment derivati dalla formula."
+            ],
+            "enrichment_id": "example-1",
+            "source_observation_ids": [
+              "s01",
+              "s02"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "ScalarQuadraticCostPlot",
+          "description": "Parabola con punto corrente z e punto assegnato z̄, indicatore del costo e distanza orizzontale.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "s01",
+            "s02"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Il movimento del punto e del riferimento mostra la distinzione fra scegliere z e definire il costo.",
+          "component": "ScalarQuadraticCostExplorer",
+          "parameters": [
+            {
+              "name": "Decisione",
+              "symbol": "z",
+              "origin": "source",
+              "range": "[−4,4]",
+              "default": "3",
+              "effect_on_change": "Spostare il punto sulla parabola e ricalcolare ℓ(z); non traslare la parabola.",
+              "edge_cases": [
+                "z=z̄: costo zero"
+              ]
+            },
+            {
+              "name": "Punto assegnato",
+              "symbol": "\\bar z",
+              "origin": "source",
+              "range": "[−3,3]",
+              "default": "2",
+              "effect_on_change": "Traslare orizzontalmente la parabola e ricalcolare il costo del medesimo z.",
+              "edge_cases": [
+                "Riferimento fuori dal viewport: adattare gli assi senza modificare i valori"
+              ]
+            }
+          ],
+          "outputs": [
+            "Valore ℓ(z)",
+            "Grafico e distanza |z−z̄|"
+          ],
+          "invariants": [
+            "Fattore 1/2",
+            "Nessun vincolo aggiunto",
+            "Range/default sono enrichment"
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "z=z̄",
+            "expected_behavior": "Mostrare esattamente costo zero, entro la tolleranza numerica.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02"
+            ]
+          },
+          {
+            "case": "Scarti uguali di segno opposto",
+            "expected_behavior": "Mostrare costi uguali.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02"
+            ]
+          }
+        ],
+        "expansion_rationale": "Una sola formula e una parabola interattiva sono sufficienti.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Il costo scalare ½(z−z̄)² misura quanto la decisione si discosta dal punto assegnato.",
+            "source_observation_ids": [
+              "s01",
+              "s02"
+            ],
+            "enrichment_ids": [
+              "example-1",
+              "interaction",
+              "visualization"
+            ]
+          }
+        ]
+      },
+      "observations": [
+        {
+          "id": "s01",
+          "category": "definition",
+          "description": "Il caso è scalare: d=1 e z∈Rᵈ=R.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0015",
+            "modality": "both",
+            "text_quote": "Scalar set up d = 1",
+            "bbox": [
+              28.34600067138672,
+              34.63948059082031,
+              102.86331176757812,
+              43.60588073730469
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s02",
+          "category": "equation",
+          "description": "La funzione di costo è ℓ(z)=½(z−z̄)², con z̄∈R punto assegnato.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0015",
+            "modality": "both",
+            "text_quote": "Cost function: ℓ(z) =",
+            "bbox": [
+              28.34601593017578,
+              79.31781005859375,
+              119.53732299804688,
+              89.43388366699219
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-03",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Example of cost function: scalar set up",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0015",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              10.35200023651123,
+              6.720991134643555,
+              239.73338317871094,
+              21.06719207763672
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-04",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Decision variable: z ∈Rd = R",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0015",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              28.346004486083984,
+              57.72947692871094,
+              144.99075317382812,
+              70.5048828125
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-05",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 14 |35",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0015",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              126.9540023803711,
+              247.92860412597656,
+              447.8712158203125,
+              255.1179962158203
+            ]
+          },
+          "confidence": 0.98
+        }
+      ],
+      "contextual_role": "Concretizza il costo generale della pagina 14 prima della versione vettoriale.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0014",
+          "role": "previous",
+          "note": "La pagina 14 distingue costo e vincoli; questa pagina specifica solo il primo."
+        },
+        {
+          "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0016",
+          "role": "next",
+          "note": "La pagina 16 generalizza la distanza quadratica ai vettori e ai pesi."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "z",
+          "meaning": "Variabile scalare di decisione",
+          "observation_ids": [
+            "s01",
+            "s02"
+          ]
+        },
+        {
+          "symbol": "\\bar z",
+          "meaning": "Punto assegnato",
+          "observation_ids": [
+            "s01",
+            "s02"
+          ]
+        },
+        {
+          "symbol": "\\ell(z)",
+          "meaning": "Metà della distanza quadratica dal punto assegnato",
+          "observation_ids": [
+            "s01",
+            "s02"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "s01",
+          "s02"
+        ],
+        "rationale": "Pagina con contenuto autonomo nella sequenza; nessun candidato automatico da confermare."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              10.35200023651123,
+              6.720991134643555,
+              239.73338317871094,
+              21.06719207763672
+            ],
+            "description": "Regione testuale sorgente: Example of cost function: scalar set up",
+            "observation_ids": [
+              "transcription-03"
+            ]
+          },
+          {
+            "bbox": [
+              28.34600067138672,
+              34.63948059082031,
+              102.86331176757812,
+              43.60588073730469
+            ],
+            "description": "Regione testuale sorgente: Scalar set up d = 1",
+            "observation_ids": [
+              "s01"
+            ]
+          },
+          {
+            "bbox": [
+              28.346004486083984,
+              57.72947692871094,
+              144.99075317382812,
+              70.5048828125
+            ],
+            "description": "Regione testuale sorgente: Decision variable: z ∈Rd = R",
+            "observation_ids": [
+              "transcription-04"
+            ]
+          },
+          {
+            "bbox": [
+              28.34601593017578,
+              79.31781005859375,
+              119.53732299804688,
+              89.43388366699219
+            ],
+            "description": "Regione testuale sorgente: Cost function: ℓ(z) = 1",
+            "observation_ids": [
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              115.88500213623047,
+              78.50859069824219,
+              251.63636779785156,
+              92.01139831542969
+            ],
+            "description": "Regione testuale sorgente: 2(z −¯z)2, with ¯z ∈R a give point.",
+            "observation_ids": [
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              126.9540023803711,
+              247.92860412597656,
+              447.8712158203125,
+              255.1179962158203
+            ],
+            "description": "Regione testuale sorgente: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 14 |35",
+            "observation_ids": [
+              "transcription-05"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Una sola formula e una parabola interattiva sono sufficienti.",
+        "subpages": []
+      }
+    }
+  }
+}

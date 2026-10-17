@@ -1,0 +1,11 @@
+Convexity and gradient monotonicity
+If ℓis differentiable and convex, then for all zA, zB ∈Z it holds
+ℓ(zB) ≥ℓ(zA) + ∇ℓ(zA)⊤(zB −zA)
+If ℓis differentiable and convex, then its gradient ∇ℓ: Rd →Rd satisfies
+
+∇ℓ(zA) −∇ℓ(zB)
+⊤
+(zA −zB) ≥0
+for all zA, zB ∈Z.
+That is, the gradient ∇ℓis a monotone operator
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 13 |73

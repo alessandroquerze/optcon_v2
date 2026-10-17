@@ -1,0 +1,24 @@
+Equality constraints and convex sets
+
+    Let h : Rd →Rp, we can define a set Zeq ⊂Rd as
+
+                                        Zeq = {z ∈Rd | h(z) = 0}
+
+
+    The set Zeq  is convex  if and only  if h is an affine function. Convex sets identified through equality
+     constraints are linear spaces (hyperplanes).
+
+
+
+
+                    z2                                                 z2
+
+                 z⊤Qz + q⊤z −c = 0                         a⊤z −c = 0
+
+
+
+                                          z1                                                 z1
+
+
+
+                                                      Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 12 |73

@@ -1,0 +1,160 @@
+{
+  "status": "PASS",
+  "pure_checks": 32,
+  "suites": [
+    {
+      "file": "src/math/introduction.test.ts",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "oracoli indipendenti della vertical slice p8: soluzione esatta, condizione iniziale, integratore ed equilibrio",
+          "status": "passed"
+        },
+        {
+          "name": "oracoli indipendenti della vertical slice p12: nominale coerente, Jacobiani e oracle .21/.2/.01",
+          "status": "passed"
+        },
+        {
+          "name": "oracoli indipendenti della vertical slice p12: perturbazioni (-0.25,-0.1), errore quadratico",
+          "status": "passed"
+        },
+        {
+          "name": "oracoli indipendenti della vertical slice p12: perturbazioni (0,0.1), errore quadratico",
+          "status": "passed"
+        },
+        {
+          "name": "oracoli indipendenti della vertical slice p12: perturbazioni (0.25,0.1), errore quadratico",
+          "status": "passed"
+        },
+        {
+          "name": "oracoli indipendenti della vertical slice p16: secondo contributo w2, pesi degeneri e simmetria",
+          "status": "passed"
+        },
+        {
+          "name": "oracoli indipendenti della vertical slice p17: i tre punti testano interno, bordo ed esterno",
+          "status": "passed"
+        },
+        {
+          "name": "oracoli indipendenti della vertical slice p17: casi degeneri e non limitati non etichettati come ellissi",
+          "status": "passed"
+        },
+        {
+          "name": "oracoli indipendenti della vertical slice p27: dinamica planare, hover e segni delle accelerazioni",
+          "status": "passed"
+        },
+        {
+          "name": "oracoli indipendenti della vertical slice p27: Euler simultaneo e confronto analitico a durata fissa",
+          "status": "passed"
+        },
+        {
+          "name": "oracoli indipendenti della vertical slice p30: T=1 non crea u1; residui, bordo e insieme vuoto",
+          "status": "passed"
+        },
+        {
+          "name": "oracoli indipendenti della vertical slice p34: equilibrio 0, velocità nulla e residui nulli",
+          "status": "passed"
+        },
+        {
+          "name": "oracoli indipendenti della vertical slice p34: equilibrio 0.5235987755982988, velocità nulla e residui nulli",
+          "status": "passed"
+        },
+        {
+          "name": "oracoli indipendenti della vertical slice p34: equilibrio -1.5707963267948966, velocità nulla e residui nulli",
+          "status": "passed"
+        },
+        {
+          "name": "oracoli indipendenti della vertical slice p34: π/6 richiede 4.905; senza coppia non è equilibrio",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "file": "src/math/introductionData.test.ts",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "p8: la sezione e la famiglia usano la stessa soluzione analitica",
+          "status": "passed"
+        },
+        {
+          "name": "p12: superficie e piano contengono esattamente l’oracolo nella griglia",
+          "status": "passed"
+        },
+        {
+          "name": "p16: contour e surface ricevono la stessa griglia corretta al punto candidato",
+          "status": "passed"
+        },
+        {
+          "name": "p17: maschera = segno del residuo, anche nei casi degeneri",
+          "status": "passed"
+        },
+        {
+          "name": "p27: ID temporali condivisi, terza coordinata è la velocità esistente",
+          "status": "passed"
+        },
+        {
+          "name": "p30: la famiglia dei limiti restituisce .2 a quota 3.2, min=1, max=3",
+          "status": "passed"
+        },
+        {
+          "name": "p34: tutto il luogo di equilibrio ha velocità esattamente zero",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "file": "src/math/math.test.ts",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "matematica indipendente dalla UI usa ogni peso sulla coordinata corretta e richiede scala esplicita",
+          "status": "passed"
+        },
+        {
+          "name": "matematica indipendente dalla UI rifiuta dimensioni o pesi non validi",
+          "status": "passed"
+        },
+        {
+          "name": "matematica indipendente dalla UI linearizza variazioni con Jacobiani forniti dal modello",
+          "status": "passed"
+        },
+        {
+          "name": "matematica indipendente dalla UI mantiene distinti ingressi e stati previsti",
+          "status": "passed"
+        },
+        {
+          "name": "matematica indipendente dalla UI riconosce bordo, violazione e intervallo vuoto senza riordinare limiti",
+          "status": "passed"
+        },
+        {
+          "name": "matematica indipendente dalla UI Euler usa simultaneamente il vecchio stato",
+          "status": "passed"
+        },
+        {
+          "name": "matematica indipendente dalla UI campiona superfici senza inventare valori in punti non definiti",
+          "status": "passed"
+        },
+        {
+          "name": "matematica indipendente dalla UI preserva ID e dimensioni nelle proiezioni",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "file": "src/visualization/core/numericCopy.test.ts",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "una mutazione del backend non raggiunge i dati matematici",
+          "status": "passed"
+        },
+        {
+          "name": "un punto aggiornato non invalida il buffer di una superficie invariata",
+          "status": "passed"
+        }
+      ]
+    }
+  ],
+  "full_frontend_tests": 62,
+  "failed": 0
+}

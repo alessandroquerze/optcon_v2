@@ -1,0 +1,10 @@
+Quadratic Programming (constrained)
+Let us consider quadratic optimization problems with linear equality constraints.
+Quadratic program
+min
+z∈Rd
+1
+2zT Qz + qT z
+subj.to Az = b
+with Q = QT ∈Rd×d, q ∈Rd, A ∈Rm×d and b ∈Rm.
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 58 |73

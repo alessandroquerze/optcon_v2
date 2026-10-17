@@ -1,0 +1,7 @@
+Examples of cost functions
+ℓ(z) = z2
+ℓ(z) = z4 + 2z3 −12z2 −2z + 6
+ℓ(z) = ez1+3z2−0.1 + ez1−3z2−0.1 + e−z1−0.1
+ℓ(z) = 1
+2z⊤Qz + r⊤z
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 49 |73

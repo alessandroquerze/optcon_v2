@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0037",
+  "document_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1",
+  "source": {
+    "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+    "page_index": 36,
+    "physical_page_number": 37,
+    "pdf_label_raw": "<FEFF00330036>",
+    "pdf_label": "36",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Gradient methods via quadratic optimization",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      271.9692687988281,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 36,
+        "total": 73,
+        "raw": "36 |73",
+        "bbox": [
+          150.68800354003906,
+          247.92860412597656,
+          447.8712158203125,
+          258.29376220703125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0037/text.txt",
+      "sha256": "b1fbbeb69c1e73ccef027cf726747e7df910cd12b2bc7322239989834dfec7a4"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0037/text.reading-order.txt",
+      "sha256": "7079adfbf2b7ba1b322f9f0a7655484868f0176095c576b74c230bf6b2938e86"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0037/layout.json",
+      "sha256": "c41b57fd344d32283b929a4714a48eccbdfaa00aeecac1da098dca0be8edb59c"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0037/render.png",
+      "sha256": "b51fbd8eda44c0a80e6f2759971eee1e4576fd9d98691d916220104155e7615a",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "d50bd687ee2fc2d14c1b067d8890f6bf66c8d08ce7ff7681d415412285ce57ca"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0036",
+    "next_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0038"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "pending",
+    "result": null
+  }
+}

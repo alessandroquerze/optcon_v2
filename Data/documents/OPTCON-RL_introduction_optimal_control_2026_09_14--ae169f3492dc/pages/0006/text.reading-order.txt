@@ -1,0 +1,29 @@
+Optimal Control: motivating domains
+
+
+    Autonomous aerial vehicles (drones)
+
+     Performance index
+
+       • distance from desired “behavior”
+           (given 3D path, velocities,...)
+
+       • minimum time
+
+       • fuel/battery consumption
+
+       • exploration cost
+
+      Constraints
+
+       • geometric (buildings, other obstacles, attitude,...)
+
+       • inputs (thrust)
+
+       •  internal systems (angular and linear velocities,...)
+
+
+
+
+
+                                              Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 5 |35

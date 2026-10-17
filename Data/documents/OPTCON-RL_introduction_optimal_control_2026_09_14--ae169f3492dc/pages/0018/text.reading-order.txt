@@ -1,0 +1,26 @@
+Optimization problem (minimization)
+
+
+   We can write our optimization problem as
+
+                               min  ℓ(z)
+                                      z∈Rd
+                                        subj.to hi(z) = 0      i = 1, . . . , m
+                                             gj(z) ≤0     j = 1, . . . , r
+
+    where hi : Rd →R and gj : Rd →R.
+
+
+   We can write it more compactly as
+
+                                      min  ℓ(z)
+                                              z∈Rd
+                                                 subj.to h(z) = 0
+
+                                                    g(z) ≤0
+
+    where h : Rd →Rm and g : Rd →Rr.
+
+
+
+                                            Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 17 |35

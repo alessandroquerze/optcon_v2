@@ -1,0 +1,22 @@
+Sequential Quadratic Programming (SQP)
+
+     Start from a tentative solution z0
+    For k = 0, 1, . . . (up to convergence)
+        1. Compute ∇ℓ(zk), Bk, ∇h(zk)
+        2. Obtain (∆zk, ∆λkQP) from
+
+                          ∆zk = argmin ∇ℓ(zk)⊤∆z + 12∆z⊤Bk∆z
+                                      ∆z
+                                               subj.to h(zk) + ∇h(zk)⊤∆z = 0.                         (3)
+
+          with ∆λkQP the Lagrange multiplier associated to the optimal solution of (3).
+        3. Choose γk using Armijo’s rule on merit function M1(zk + γ∆zk; s)
+
+        4. Update
+
+                                      zk+1 = zk + γk∆zk
+                                    λk+1 = (1 −γk)λk + γk∆λkQP
+
+
+
+                                                      Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 69 |73

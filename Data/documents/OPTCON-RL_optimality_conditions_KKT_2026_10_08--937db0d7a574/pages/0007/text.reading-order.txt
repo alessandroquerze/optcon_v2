@@ -1,0 +1,18 @@
+System linearization and tangent hyperplane
+
+    That is, T(¯x,¯u)T = {(∆x, ∆u) ∈RnT × RmT  | ∇1h(x, u)⊤∆x + ∇2h(x, u)⊤∆u = 0} is the set of
+     trajectories (∆x, ∆u) of
+                                 ∆xt+1 = At∆xt + Bt∆ut,
+
+    with
+
+                                    At = ∇1ft(¯xt, ¯ut)⊤
+                                    Bt = ∇2ft(¯xt, ¯ut)⊤.
+
+    Remark Recall that for a vector function f : Rn+m →Rn, ∇f is the transpose of the Jacobian matrix.
+
+
+
+
+
+                                   Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Optimality Conditions for Optimal Control 6 |18

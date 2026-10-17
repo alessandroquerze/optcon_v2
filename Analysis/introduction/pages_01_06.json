@@ -1,0 +1,602 @@
+[
+  {
+    "page": 1,
+    "title": "Introduction to Optimal Control — copertina",
+    "observations": [
+      {
+        "category": "structure",
+        "claim": "Il corso si intitola Optimal Control and Reinforcement Learning; il documento è Introduction to Optimal Control.",
+        "anchor": "Introduction to Optimal Control",
+        "bbox": [
+          100,
+          58,
+          351,
+          84
+        ]
+      },
+      {
+        "category": "structure",
+        "claim": "La copertina attribuisce le slide al Prof. Giuseppe Notarstefano, Department of Electrical, Electronic, and Information Engineering, Alma Mater Studiorum Università di Bologna, e riporta il contatto giuseppe.notarstefano@unibo.it.",
+        "anchor": "Prof. Giuseppe Notarstefano",
+        "bbox": [
+          104,
+          104,
+          350,
+          161
+        ]
+      },
+      {
+        "category": "structure",
+        "claim": "Sono ringraziati L. Sforni, S. Baroncini e M. Falotico per il supporto alla preparazione delle slide.",
+        "anchor": "A special thank to L. Sforni, S. Baroncini, M. Falotico"
+      },
+      {
+        "category": "structure",
+        "claim": "La fonte dichiara che le slide sono per uso interno del corso presso l'Università di Bologna.",
+        "anchor": "The present slides are for internal use of the course",
+        "bbox": [
+          100,
+          199,
+          352,
+          222
+        ]
+      }
+    ],
+    "role": "Identifica documento, corso e autore; non introduce ancora nozioni tecniche o Reinforcement Learning.",
+    "next": "La pagina 2 passa dalla copertina al confronto fra feedback control e optimal control.",
+    "scope_limits": [
+      "Nessuna definizione, equazione, obiettivo numerico o simulazione è contenuta nella copertina.",
+      "Il titolo del corso non implica che questa pagina esponga algoritmi di Reinforcement Learning."
+    ],
+    "prerequisites": [],
+    "no_example_reason": "Una copertina non contiene un concetto tecnico per il quale un esempio migliori la comprensione.",
+    "visual": {
+      "component": "CourseTitleCard",
+      "description": "Gerarchia statica corso → documento → autore e affiliazione; mantenere i crediti come metadati."
+    },
+    "no_interaction_reason": "Nessun contenuto dinamico; i comandi di navigazione appartengono al lettore e non a un'interazione didattica.",
+    "edges": [
+      [
+        "Confusione fra numero fisico e label 0",
+        "La copertina è pagina fisica 1; non eliminarla dalla copertura."
+      ]
+    ],
+    "single_page_rationale": "Metadati introduttivi compatti, senza necessità di espansione.",
+    "focus": "Titolo e identità del materiale, senza anticipare contenuti tecnici."
+  },
+  {
+    "page": 2,
+    "title": "Optimal Control: feedback, performance index e constraints",
+    "observations": [
+      {
+        "category": "concept",
+        "claim": "Il paradigma di feedback parte da un modello del sistema, mira al tracking di un'uscita di riferimento o alla stabilizzazione di un equilibrio e progetta l'ingresso come funzione dell'uscita/stato.",
+        "anchor": "design input as function of output/state",
+        "bbox": [
+          28,
+          29,
+          222,
+          110
+        ]
+      },
+      {
+        "category": "concept",
+        "claim": "Sono evidenziati due ingredienti mancanti nel paradigma finora discusso: un performance index e constraints, con esempi di limiti sugli ingressi e vincoli geometrici.",
+        "anchor": "Two ingredients are mainly missing",
+        "bbox": [
+          28,
+          112,
+          239,
+          164
+        ]
+      },
+      {
+        "category": "definition",
+        "claim": "L'ottimizzazione è presentata come teoria per trovare la decisione migliore gestendo vincoli.",
+        "anchor": "theory to find “best” decision while handling constraints",
+        "bbox": [
+          26,
+          170,
+          357,
+          202
+        ]
+      },
+      {
+        "category": "concept",
+        "claim": "Il controllo ottimo combina ottimizzazione e controllo, includendo il feedback.",
+        "anchor": "Optimal Control: combine optimization with (feedback) control!",
+        "bbox": [
+          100,
+          216,
+          441,
+          232
+        ]
+      },
+      {
+        "category": "diagram",
+        "claim": "Il diagramma mostra reference → controller → input → system → output, con ritorno dell'uscita al controller e un disturbo che entra nel sistema; non specifica una legge di controllo.",
+        "bbox": [
+          261,
+          63,
+          444,
+          133
+        ]
+      }
+    ],
+    "role": "Motiva l'introduzione dell'ottimizzazione nel controllo prima degli esempi applicativi.",
+    "previous": "La pagina 1 fornisce solo identità e crediti, non una definizione del controllo ottimo.",
+    "next": "La pagina 3 concretizza indice e vincoli negli aircraft systems, senza ancora equazioni di dinamica.",
+    "scope_limits": [
+      "La fonte non afferma che ogni tradizionale controllore sia incapace di trattare performance o vincoli: descrive il paradigma didattico discusso finora.",
+      "Non sono forniti funzionale di costo, algoritmo ottimizzatore, garanzie di stabilità o legge di feedback."
+    ],
+    "prerequisites": [
+      [
+        "Feedback, tracking, equilibrio",
+        "Servono per comprendere il paradigma richiamato e il diagramma ad anello chiuso.",
+        []
+      ]
+    ],
+    "enrichment_notes": [
+      "Separare la domanda 'quale comportamento desidero?' dalla scelta dell'indice con cui confrontare decisioni ammissibili; questa esplicitazione è un enrichment."
+    ],
+    "examples": [
+      {
+        "purpose": "Distinguere prestazione desiderata e ammissibilità.",
+        "setup": "Enrichment scalare: desiderare u=1, confrontando J(u)=(u−1)^2 con il limite |u|≤0.6; i simboli e i valori sono introdotti solo per l'esempio.",
+        "parameters": [
+          [
+            "u desiderato",
+            "1"
+          ],
+          [
+            "limite ingresso",
+            "0.6"
+          ]
+        ],
+        "steps": [
+          "Senza vincolo il minimo è u=1 e J=0.",
+          "Con |u|≤0.6 il punto ammissibile più vicino a 1 è u=0.6.",
+          "J(0.6)=0.16."
+        ],
+        "expected": "Il migliore ingresso ammissibile può avere costo positivo; questo non è ancora un problema di controllo dinamico.",
+        "limitations": [
+          "Non è una formula né un esempio della fonte.",
+          "Nessuna conclusione sulla stabilità del sistema."
+        ]
+      }
+    ],
+    "visual": {
+      "component": "FeedbackLoopWithOptimizationAnnotations",
+      "description": "Ridisegno fedele dell'anello con callout statici su indice e vincoli; non aggiungere un blocco ottimizzatore con una posizione non specificata dalla fonte."
+    },
+    "no_interaction_reason": "Un diagramma annotato e il piccolo esempio statico chiariscono il messaggio; una simulazione richiederebbe un modello assente.",
+    "edges": [
+      [
+        "Nessuna decisione soddisfa i vincoli",
+        "Segnalare infeasibilità; non presentare come ammissibile la decisione meno costosa."
+      ],
+      [
+        "Più decisioni con lo stesso indice",
+        "L'indice da solo può non selezionare una soluzione unica."
+      ]
+    ],
+    "single_page_rationale": "Un unico confronto concettuale: feedback più indice e vincoli; diagramma e piccolo esempio restano nello stesso nucleo.",
+    "focus": "Dal feedback al controllo ottimo: confrontare decisioni soltanto dentro l'insieme ammissibile."
+  },
+  {
+    "page": 3,
+    "title": "Motivating domains — Aircraft systems",
+    "observations": [
+      {
+        "category": "structure",
+        "claim": "Il dominio applicativo della pagina è Aircraft systems.",
+        "anchor": "Aircraft systems"
+      },
+      {
+        "category": "concept",
+        "claim": "Gli indici elencati riguardano distanza dal comportamento desiderato (percorso di posizione, velocità), tempo minimo, consumo di carburante/batteria e comfort dei passeggeri.",
+        "anchor": "fuel/battery consumption",
+        "bbox": [
+          29,
+          52,
+          291,
+          133
+        ]
+      },
+      {
+        "category": "assumption",
+        "claim": "I vincoli geometrici comprendono ostacoli, assetto e limiti di stallo.",
+        "anchor": "geometric (obstacles, attitude, stall limits,...)",
+        "bbox": [
+          28,
+          143,
+          293,
+          161
+        ]
+      },
+      {
+        "category": "assumption",
+        "claim": "Gli ingressi citati sono thrust e flaps; i vincoli interni riguardano velocità angolari e lineari e limiti aerodinamici.",
+        "anchor": "inputs (thrust, flaps)",
+        "bbox": [
+          27,
+          165,
+          294,
+          204
+        ]
+      },
+      {
+        "category": "diagram",
+        "claim": "Due immagini illustrano un velivolo e una superficie/profilo alare; non costituiscono un grafico quantitativo di prestazione.",
+        "bbox": [
+          298,
+          66,
+          393,
+          189
+        ]
+      }
+    ],
+    "role": "Primo esempio del binomio performance index/constraints introdotto nella pagina 2.",
+    "previous": "La pagina 2 spiega perché considerare simultaneamente indice di prestazione e vincoli.",
+    "next": "La pagina 4 mantiene la struttura obiettivi/vincoli, ma passa alla robotica: è un diverso dominio, non un overlay.",
+    "scope_limits": [
+      "Non sono assegnati coefficienti, equazioni aerodinamiche o una formula per il comfort.",
+      "Le voci elencate non sono dichiarate contemporaneamente sommate in un particolare costo pesato."
+    ],
+    "prerequisites": [
+      [
+        "Distinzione fra indice e vincolo",
+        "Evita di trattare un limite di stallo come semplice penalità opzionale.",
+        [
+          2
+        ]
+      ]
+    ],
+    "examples": [
+      {
+        "purpose": "Separare ammissibilità e preferenza.",
+        "setup": "Enrichment: confrontare due manovre candidate, A più rapida ma oltre un limite di stallo e B più lenta ma rispettosa dei limiti.",
+        "steps": [
+          "Verificare prima i limiti per entrambe le manovre.",
+          "Escludere A se viola un vincolo imposto.",
+          "Confrontare tempo, energia e comfort fra le sole candidate ammissibili."
+        ],
+        "expected": "Il tempo minore non rende automaticamente migliore una manovra inammissibile.",
+        "limitations": [
+          "Nessun calcolo aerodinamico o dato sperimentale è fornito dalla fonte."
+        ]
+      }
+    ],
+    "visual": {
+      "component": "AircraftObjectiveConstraintMatrix",
+      "description": "Matrice statica che distingue quattro criteri di prestazione e tre famiglie di vincoli, con miniature della fonte."
+    },
+    "no_interaction_reason": "Senza una dinamica o dati di traiettoria, slider di assetto o thrust suggerirebbero una simulazione fisica non sostenuta dalla pagina.",
+    "edges": [
+      [
+        "Obiettivi incompatibili",
+        "Esplicitare che scegliere pesi o priorità sarebbe un enrichment, non una scelta della fonte."
+      ],
+      [
+        "Traiettoria al limite di stallo",
+        "Non attribuire alla slide una soglia numerica o una legge di stallo non specificata."
+      ]
+    ],
+    "single_page_rationale": "Un esempio applicativo unitario con elenchi paralleli e immagini illustrative.",
+    "focus": "Nel volo, prestazione e vincoli hanno ruoli distinti."
+  },
+  {
+    "page": 4,
+    "title": "Motivating domains — Robotic systems",
+    "observations": [
+      {
+        "category": "structure",
+        "claim": "La pagina tratta Robotic systems.",
+        "anchor": "Robotic systems"
+      },
+      {
+        "category": "concept",
+        "claim": "Gli indici riportati sono distanza dal comportamento desiderato, con esempi di evoluzione dell'end-effector e percorso di posizione, e tempo minimo; i puntini non definiscono ulteriori criteri specifici.",
+        "anchor": "evolution of end-effector, position path,...",
+        "bbox": [
+          28,
+          76,
+          293,
+          146
+        ]
+      },
+      {
+        "category": "assumption",
+        "claim": "I vincoli geometrici comprendono workspace, ostacoli e geometria del payload.",
+        "anchor": "geometric (workspace, obstacles, payload geometry, ...)",
+        "bbox": [
+          28,
+          150,
+          296,
+          176
+        ]
+      },
+      {
+        "category": "assumption",
+        "claim": "Sono citate saturazioni dei motori come limiti sugli ingressi e vincoli di giunto/velocità come vincoli interni.",
+        "anchor": "inputs (motor saturations)",
+        "bbox": [
+          28,
+          176,
+          299,
+          204
+        ]
+      },
+      {
+        "category": "diagram",
+        "claim": "La colonna di immagini mostra un braccio robotico, robot in un magazzino e una piattaforma mobile con manipolatore, illustrando diversi sistemi robotici.",
+        "bbox": [
+          299,
+          50,
+          361,
+          230
+        ]
+      }
+    ],
+    "role": "Trasferisce lo schema obiettivo/vincoli alla robotica senza formalizzare ancora stato e ingresso.",
+    "previous": "La pagina 3 descrive velivoli: il parallelismo è concettuale, non uguaglianza delle dinamiche.",
+    "next": "La pagina 5 applica lo stesso schema alla guida autonoma, aggiungendo comfort e consumo.",
+    "scope_limits": [
+      "La fonte non specifica cinematica, Jacobiano, numero di giunti, algoritmo collision avoidance o traiettoria ottima calcolata.",
+      "Non viene identificato un modello quantitativo comune ai tre robot raffigurati."
+    ],
+    "prerequisites": [
+      [
+        "Obiettivo e vincolo",
+        "Per classificare tracking, tempo, saturazioni e limiti di giunto.",
+        [
+          2
+        ]
+      ],
+      [
+        "End-effector e workspace",
+        "Vocabolario di base utile a leggere gli esempi robotici; la pagina non li definisce formalmente.",
+        []
+      ]
+    ],
+    "examples": [
+      {
+        "purpose": "Capire il ruolo della geometria del payload.",
+        "setup": "Enrichment: un manipolatore deve trasferire un oggetto fra due posizioni; il percorso dell'end-effector evita un ostacolo, ma l'ingombro dell'oggetto può ancora urtarlo.",
+        "steps": [
+          "Confrontare il percorso del punto end-effector con l'ingombro trasportato.",
+          "Considerare la collisione del payload come vincolo geometrico.",
+          "Scartare una traiettoria rapida se richiede saturazioni o giunti fuori limite."
+        ],
+        "expected": "Il tracking del solo punto desiderato non certifica ammissibilità del moto completo.",
+        "limitations": [
+          "Esempio concettuale aggiunto; nessuna cinematica o dimensione è indicata dalla fonte."
+        ]
+      }
+    ],
+    "visual": {
+      "component": "RobotTaskConstraintDiagram",
+      "origin": "enrichment",
+      "description": "Schema statico di end-effector, payload e ostacolo con richiamo alle tre famiglie di vincoli della fonte."
+    },
+    "no_interaction_reason": "La pagina motiva il problema; un simulatore robotico richiederebbe cinematica e geometria che la fonte qui non assegna.",
+    "edges": [
+      [
+        "Payload di dimensione non trascurabile",
+        "Controllare l'ingombro, non soltanto il percorso di un punto."
+      ],
+      [
+        "Target fuori workspace",
+        "Segnalare target non ammissibile, senza promettere che un diverso ottimizzatore possa raggiungerlo."
+      ]
+    ],
+    "single_page_rationale": "Lo schema robotica/obiettivi/vincoli forma un solo messaggio applicativo.",
+    "focus": "Dalla traiettoria desiderata del robot ai limiti geometrici e di attuazione."
+  },
+  {
+    "page": 5,
+    "title": "Motivating domains — Autonomous driving",
+    "observations": [
+      {
+        "category": "structure",
+        "claim": "Il dominio è Autonomous driving.",
+        "anchor": "Autonomous driving"
+      },
+      {
+        "category": "concept",
+        "claim": "Gli indici citati sono deviazione da lane center/velocità desiderata, tempo minimo per veicoli da corsa, comfort dei passeggeri e consumo.",
+        "anchor": "minimum time (race vehicles)",
+        "bbox": [
+          28,
+          52,
+          291,
+          132
+        ]
+      },
+      {
+        "category": "assumption",
+        "claim": "La fonte distingue vincoli geometrici di corsia/ostacoli, limiti sugli ingressi throttle/steering wheel e limiti interni di pneumatici, carico normale e velocità.",
+        "anchor": "internal systems (tire limits, normal load, velocities,...)",
+        "bbox": [
+          28,
+          138,
+          295,
+          192
+        ]
+      },
+      {
+        "category": "diagram",
+        "claim": "Le figure mostrano un veicolo e traiettorie planari, con dettaglio ingrandito, assi in metri e una scala cromatica che distingue accelerazione e frenata; non è fornita una legge di ottimizzazione o una legenda numerica dell'accelerazione.",
+        "anchor": "acceleration",
+        "bbox": [
+          298,
+          63,
+          446,
+          180
+        ]
+      }
+    ],
+    "role": "Mostra che obiettivi e vincoli dipendono dall'applicazione, qui guida ordinaria o racing.",
+    "previous": "La pagina 4 parla di robot: condivide la struttura ma non i vincoli specifici.",
+    "next": "La pagina 6 passa ai droni e aggiunge exploration cost; nessun modello automobilistico prosegue nelle equazioni successive.",
+    "scope_limits": [
+      "Non sono fornite equazioni di pneumatici, velocità target, valori di aderenza o prova di ottimalità della traiettoria disegnata.",
+      "I grafici illustrano traiettorie: non inferire dai colori valori di accelerazione o dati sperimentali non leggibili."
+    ],
+    "prerequisites": [
+      [
+        "Indice di prestazione contro vincolo",
+        "Permette di distinguere comfort dal rispetto della corsia o dai limiti degli pneumatici.",
+        [
+          2
+        ]
+      ]
+    ],
+    "examples": [
+      {
+        "purpose": "Illustrare un compromesso applicativo senza attribuire nuovi dati alla fonte.",
+        "setup": "Enrichment: due profili di guida rispettano corsia e attuatori; A percorre una tratta in 20 s con frenate brusche, B in 23 s con variazioni più dolci.",
+        "parameters": [
+          [
+            "durata A",
+            "20 s"
+          ],
+          [
+            "durata B",
+            "23 s"
+          ]
+        ],
+        "steps": [
+          "Per il solo tempo, A è preferibile.",
+          "Per includere il comfort serve specificare un indice aggiuntivo.",
+          "La fonte non assegna pesi né una formula per scegliere fra A e B."
+        ],
+        "expected": "Una scelta ottima è relativa all'indice e ai vincoli dichiarati, non al solo aspetto del percorso.",
+        "limitations": [
+          "Tempi e profili sono ipotetici; nessuna simulazione di veicolo è eseguita."
+        ]
+      }
+    ],
+    "visual": {
+      "component": "DrivingTrajectoryAndObjectiveLegend",
+      "description": "Ripresa dei grafici planari con legenda qualitativa accelerazione/frenata e tabella separata degli obiettivi e vincoli."
+    },
+    "no_interaction_reason": "Per questa pagina basta una lettura statica del grafico; slider di aderenza o sterzo richiederebbero un modello non presente.",
+    "edges": [
+      [
+        "Obiettivo racing confuso con guida passeggeri",
+        "Mostrare che minimum time è esplicitamente associato ai race vehicles, senza estenderlo a ogni caso."
+      ],
+      [
+        "Percorso entro corsia ma oltre limiti degli pneumatici",
+        "Non confondere ammissibilità geometrica con ammissibilità dinamica."
+      ]
+    ],
+    "single_page_rationale": "Un dominio applicativo e una sola distinzione obiettivi/vincoli, con figure qualitative.",
+    "focus": "La traiettoria di un veicolo va valutata insieme a comfort, consumo e limiti fisici."
+  },
+  {
+    "page": 6,
+    "title": "Motivating domains — Autonomous aerial vehicles (drones)",
+    "observations": [
+      {
+        "category": "structure",
+        "claim": "La pagina è dedicata ad Autonomous aerial vehicles (drones).",
+        "anchor": "Autonomous aerial vehicles (drones)"
+      },
+      {
+        "category": "concept",
+        "claim": "Gli indici elencati sono deviazione da un percorso 3D/velocità desiderati, tempo minimo, consumo di carburante/batteria ed exploration cost.",
+        "anchor": "exploration cost",
+        "bbox": [
+          28,
+          52,
+          295,
+          133
+        ]
+      },
+      {
+        "category": "assumption",
+        "claim": "I vincoli geometrici includono edifici, altri ostacoli e assetto; l'ingresso citato è thrust; i vincoli interni includono velocità angolari e lineari.",
+        "anchor": "geometric (buildings, other obstacles, attitude,...)",
+        "bbox": [
+          28,
+          138,
+          298,
+          192
+        ]
+      },
+      {
+        "category": "diagram",
+        "claim": "La figura superiore mostra un percorso blu attorno a un edificio; la fotografia inferiore mostra un ambiente di magazzino con un drone, senza fornire valori o una formulazione dinamica.",
+        "bbox": [
+          299,
+          64,
+          419,
+          201
+        ]
+      }
+    ],
+    "role": "Ultimo esempio di mobilità prima dei sistemi spaziali; prepara il richiamo ai droni nelle pagine 26–30 senza anticiparne le equazioni.",
+    "previous": "La pagina 5 parla di guida autonoma su piano e usa vincoli legati a pneumatici e corsia; qui compaiono percorso 3D ed exploration cost.",
+    "next": "La pagina 7 passa a Space systems e sostituisce gli esempi con orbita e orientamento rispetto a Sole/Terra. La somiglianza del layout non la rende una progressiva.",
+    "scope_limits": [
+      "Exploration cost è soltanto elencato: nessuna formula o politica esplorativa è definita.",
+      "Non sono ancora presenti modello quadrotor, massa, gravità, limiti di thrust numerici o algoritmo di pianificazione."
+    ],
+    "prerequisites": [
+      [
+        "Obiettivi e vincoli",
+        "Per leggere la stessa struttura applicativa in un ambiente tridimensionale.",
+        [
+          2
+        ]
+      ],
+      [
+        "Posizione 3D e ostacoli",
+        "Vocabolario geometrico necessario; non è un prerequisito di dinamica del quadrotor.",
+        []
+      ]
+    ],
+    "examples": [
+      {
+        "purpose": "Distinguere percorso breve e percorso ammissibile.",
+        "setup": "Enrichment: fra due punti, un segmento diretto attraversa un edificio mentre una deviazione lo aggira.",
+        "steps": [
+          "Classificare l'edificio come vincolo geometrico.",
+          "Escludere il segmento che lo attraversa.",
+          "Confrontare eventuali percorsi rimanenti con l'indice scelto; la lunghezza non coincide automaticamente con consumo o exploration cost."
+        ],
+        "expected": "Un percorso più corto può essere inammissibile; il costo di esplorazione resta da definire.",
+        "limitations": [
+          "Nessun algoritmo di routing o modello energetico è specificato dalla fonte."
+        ]
+      }
+    ],
+    "visual": {
+      "component": "DroneEnvironmentConstraintSketch",
+      "description": "Schema statico 3D del percorso e dell'edificio affiancato alla classificazione degli indici."
+    },
+    "no_interaction_reason": "Rimandare la simulazione alle pagine con dinamica e parametri assegnati; qui l'interazione sarebbe decorativa.",
+    "edges": [
+      [
+        "Edificio invalicabile fra partenza e arrivo",
+        "Indicare che può non esistere un percorso ammissibile nell'ambiente considerato."
+      ],
+      [
+        "Confusione fra costo energetico e exploration cost",
+        "Mantenerli distinti, perché la fonte li elenca separatamente senza formule."
+      ]
+    ],
+    "progression": {
+      "assessment": "unique",
+      "changed": [
+        "La pagina 6 tratta droni; la 7 tratta sistemi spaziali, con obiettivi, vincoli e immagini differenti."
+      ],
+      "rationale": "Respinto il candidato automatico 6↔7: layout ed elenchi generici simili, ma domini e contenuti applicativi distinti; non è un overlay progressivo."
+    },
+    "single_page_rationale": "Un solo scenario motivazionale con obiettivi/vincoli e due immagini; nessuna derivazione da espandere.",
+    "focus": "Per i droni, ottimizzare una prestazione richiede rispettare ambiente 3D e limiti di attuazione."
+  }
+]

@@ -1,0 +1,27 @@
+Optimization over convex sets
+
+
+     Projection over a convex set
+    Given a point z ∈Rd and a closed convex set Z, it can be shown that
+
+                                   PZ(z) := arg min ∥y −z∥2
+                                               y∈Z
+     exists and is unique.
+
+    The point PZ(z) is called the projection of z on Z.
+
+
+                                             z
+
+                                              PZ(z)
+
+
+
+                                      Z
+
+
+
+
+    Question: can you prove existence and uniqueness of projection point?
+
+                                                      Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 45 |73

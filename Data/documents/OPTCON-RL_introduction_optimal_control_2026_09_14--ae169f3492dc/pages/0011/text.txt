@@ -1,0 +1,11 @@
+System trajectories
+Let us introduce the definition of trajectory of a (possibly) nonlinear, discrete-time control system.
+Definition A pair (¯x, ¯u) ∈RnT × RmT is called a trajectory of system (1) if ¯xt+1 = ft(¯xt, ¯ut) for all
+t = 0, . . . , T −1. In particular, ¯x is the state trajectory, while ¯u is the input trajectory.
+□
+Let us recall a special class of trajectories characterized by constant input and constant state.
+Definition A state-input pair (xe, ue) ∈Rn×Rm is called an equilibrium pair of (1) if (xt, ut) = (xe, ue),
+t ∈N0, is a trajectory of the system.
+□
+Equilibria of discerete-time, time-invariant systems satisfy xe = f(xe, ue).
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 10 |35

@@ -1,0 +1,865 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0020",
+  "document_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc",
+  "source": {
+    "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+    "page_index": 19,
+    "physical_page_number": 20,
+    "pdf_label_raw": "<FEFF00310039>",
+    "pdf_label": "19",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Discrete-time optimal control: main ingredients (II)",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      311.6222229003906,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 19,
+        "total": 35,
+        "raw": "19 |35",
+        "bbox": [
+          126.9540023803711,
+          247.92860412597656,
+          447.8712158203125,
+          258.29376220703125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0020/text.txt",
+      "sha256": "3f745260c425d7dcde90c97b0b3f52a52d8a5936249d61320005a78f2875088d"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0020/text.reading-order.txt",
+      "sha256": "e6578527b2e756939025dd5192f2a1f0b292213a241c6ae5225f4661c8973099"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0020/layout.json",
+      "sha256": "e8b26d78a1ac179b3b35ccc74c5b272d4420eab4127c558dc9da749a5c97454d"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0020/render.png",
+      "sha256": "5581488ef17ea447592e2aee3107ce8cfd822535188863d855482e2e69b90761",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "6f490b2601a15340f365da80dfb3765a182b03ef9376dfaeea5175c7d96fba6a"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0019",
+    "next_page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0021"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "891d81ed94e105c9578bd8db35c2ee9d95c2565ab383ec31394d83b960493a39",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0020",
+      "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+      "artifact_sha256": {
+        "text": "3f745260c425d7dcde90c97b0b3f52a52d8a5936249d61320005a78f2875088d",
+        "layout": "e8b26d78a1ac179b3b35ccc74c5b272d4420eab4127c558dc9da749a5c97454d",
+        "render": "5581488ef17ea447592e2aee3107ce8cfd822535188863d855482e2e69b90761"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "Codex (identificatore esatto del modello non esposto nella sessione)",
+        "run_id": "page-analysis-0a4e81cecdf44e8b86ded34253e8c4ba"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0020",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0019",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0021"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0020",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0019",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0021"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0020",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0019",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0021"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Discrete-time optimal control: main ingredients (II)",
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Il costo non è ancora necessariamente quadratico, positivo o time-invariant.",
+          "Non includere automaticamente un ingresso u_T nel costo terminale.",
+          "Cambiare pesi di un costo valutato su una traiettoria fissa non significa aver ricalcolato una traiettoria ottima."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Stack e orizzonte",
+            "why": "Per identificare quali x e u sono variabili.",
+            "origin": "source_context",
+            "page_numbers": [
+              10
+            ]
+          },
+          {
+            "concept": "Dinamica come vincolo",
+            "why": "Il costo è valutato su traiettorie ammissibili del modello.",
+            "origin": "source_context",
+            "page_numbers": [
+              19
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\ell(x_0,\\mathbf{x},\\mathbf{u})=\\sum_{t=0}^{T-1}\\ell_t(x_t,u_t)+\\ell_T(x_T)",
+            "anchor": "ℓ(x0, x, u) =",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          },
+          {
+            "latex": "\\ell_t:\\mathbb{R}^n\\times\\mathbb{R}^m\\to\\mathbb{R},\\quad\\ell_T:\\mathbb{R}^n\\to\\mathbb{R}",
+            "anchor": "where ℓt",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          },
+          {
+            "latex": "x_0=x^0,\\qquad\\ell(\\mathbf{x},\\mathbf{u})=\\sum_{t=0}^{T-1}\\ell_t(x_t,u_t)+\\ell_T(x_T)",
+            "anchor": "Notation: if the initial state is given",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "example-1",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "Enrichment: T=2, x_{t+1}=x_t+u_t, x⁰=1, u₀=−0.5,u₁=0; ℓ_t=½(x_t²+u_t²), ℓ_T=2x_T².",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Variare coefficienti su una traiettoria fissa mostra quali addendi cambiano, senza confondere valutazione e ottimizzazione.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "id": "visualization",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Timeline e barre impilate dei due stage cost e del terminal cost, con somma numerica.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Contare esattamente i contributi del costo.",
+            "setup": "Enrichment: T=2, x_{t+1}=x_t+u_t, x⁰=1, u₀=−0.5,u₁=0; ℓ_t=½(x_t²+u_t²), ℓ_T=2x_T².",
+            "parameters": [
+              {
+                "symbol": "x_0,x_1,x_2",
+                "value": "1,0.5,0.5"
+              },
+              {
+                "symbol": "u_0,u_1",
+                "value": "−0.5,0"
+              }
+            ],
+            "derivation": [
+              "Stage t=0: ½(1+0.25)=0.625.",
+              "Stage t=1: ½(0.25+0)=0.125.",
+              "Terminale: 2·0.25=0.5.",
+              "Totale: 0.625+0.125+0.5=1.25."
+            ],
+            "expected_outcome": "Due contributi di stadio e uno terminale, senza un u₂.",
+            "limitations": [
+              "Funzioni e numeri sono enrichment; la traiettoria non è dichiarata ottima."
+            ],
+            "enrichment_id": "example-1",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "StageAndTerminalCostLedger",
+          "description": "Timeline e barre impilate dei due stage cost e del terminal cost, con somma numerica.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Variare coefficienti su una traiettoria fissa mostra quali addendi cambiano, senza confondere valutazione e ottimizzazione.",
+          "component": "FixedTrajectoryCostDecomposition",
+          "parameters": [
+            {
+              "name": "Peso dello stato aggiunto",
+              "symbol": "α",
+              "origin": "enrichment",
+              "range": "[0,4]",
+              "default": "1",
+              "effect_on_change": "Nell'esempio ℓ_t=½(αx_t²+βu_t²), aggiornare solo i contributi di stato degli stadi.",
+              "edge_cases": [
+                "α=0: nessuna penalità di stato intermedia"
+              ]
+            },
+            {
+              "name": "Peso dell'ingresso aggiunto",
+              "symbol": "β",
+              "origin": "enrichment",
+              "range": "[0,4]",
+              "default": "1",
+              "effect_on_change": "Aggiornare solo le barre dei contributi di ingresso e il totale.",
+              "edge_cases": [
+                "β=0: ingresso non penalizzato nell'esempio"
+              ]
+            },
+            {
+              "name": "Peso terminale aggiunto",
+              "symbol": "γ",
+              "origin": "enrichment",
+              "range": "[0,8]",
+              "default": "4",
+              "effect_on_change": "Usare ℓ_T=½γx_T² e aggiornare solo la barra terminale e il totale.",
+              "edge_cases": [
+                "γ=0: terminal cost nullo"
+              ]
+            }
+          ],
+          "outputs": [
+            "Contributi distinti",
+            "Costo totale"
+          ],
+          "invariants": [
+            "Traiettoria fissata ai valori dell'esempio",
+            "Nessun ricalcolo di un ottimo",
+            "α,β,γ non sono simboli della slide"
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "Stato iniziale non dato",
+            "expected_behavior": "Conservare x₀ fra le decisioni; non ometterlo come se fosse un parametro.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "case": "Terminal cost nullo",
+            "expected_behavior": "Mantenere il concetto di contributo terminale senza inventare un valore diverso.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "case": "T=1",
+            "expected_behavior": "Un solo stage cost e un terminal cost.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          }
+        ],
+        "expansion_rationale": "La decomposizione temporale è un concetto unitario, illustrabile con tre barre.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Somma dei costi di stadio più costo terminale, con x₀ dato o decisionale.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ],
+            "enrichment_ids": [
+              "example-1",
+              "interaction",
+              "visualization"
+            ]
+          }
+        ]
+      },
+      "observations": [
+        {
+          "id": "s01",
+          "category": "definition",
+          "description": "Le variabili decisionali sono la coppia di stack (𝐱,𝐮) e, se non dato, anche lo stato iniziale x₀.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0020",
+            "modality": "both",
+            "text_quote": "Decision variable:",
+            "bbox": [
+              28.34600067138672,
+              35.43647766113281,
+              324.9324035644531,
+              44.93440246582031
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s02",
+          "category": "equation",
+          "description": "Il costo ha struttura additiva ℓ(x₀,𝐱,𝐮)=Σ_{t=0}^{T−1}ℓ_t(x_t,u_t)+ℓ_T(x_T).",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0020",
+            "modality": "both",
+            "text_quote": "ℓ(x0, x, u) =",
+            "bbox": [
+              155.0830078125,
+              89.36747741699219,
+              204.83815002441406,
+              98.86540222167969
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s03",
+          "category": "definition",
+          "description": "ℓ_t:Rⁿ×Rᵐ→R è lo stage cost, mentre ℓ_T:Rⁿ→R è il terminal cost.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0020",
+            "modality": "both",
+            "text_quote": "where ℓt : Rn × Rm",
+            "bbox": [
+              28.3470458984375,
+              112.1432876586914,
+              385.3966369628906,
+              126.03089904785156
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s04",
+          "category": "definition",
+          "description": "Se lo stato iniziale è dato come x₀=x⁰, si omette quell'argomento e si scrive ℓ(𝐱,𝐮) per lo stesso costo additivo.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0020",
+            "modality": "both",
+            "text_quote": "we lighten the notation and write",
+            "bbox": [
+              28.346038818359375,
+              141.6828155517578,
+              355.0209045410156,
+              152.92990112304688
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-05",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Discrete-time optimal control: main ingredients (II)",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0020",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              10.35200023651123,
+              6.720991134643555,
+              311.6222229003906,
+              21.06719207763672
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-06",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Cost function: a cost “to be payed” for a chosen trajectory. We consider an additive structure in time",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0020",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              28.34600830078125,
+              62.335479736328125,
+              422.0070495605469,
+              71.3018798828125
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-07",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: T −1\nX",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0020",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              207.40301513671875,
+              80.43560791015625,
+              222.15032958984375,
+              96.23682403564453
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-08",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: t=0",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0020",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              208.73001098632812,
+              102.24681091308594,
+              220.82138061523438,
+              108.22441101074219
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-09",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: ℓt(xt, ut) + ℓT (xT )",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0020",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              223.68701171875,
+              89.36749267578125,
+              298.4635925292969,
+              99.32989501953125
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-10",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: ℓ(x, u) =",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0020",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              161.81805419921875,
+              169.99949645996094,
+              198.10317993164062,
+              178.9658966064453
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-11",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: T −1\nX",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0020",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              200.6680450439453,
+              161.067626953125,
+              215.4153594970703,
+              176.8688201904297
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-12",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: t=0",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0020",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              201.9950408935547,
+              182.87982177734375,
+              214.08641052246094,
+              188.857421875
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-13",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: ℓt(xt, ut) + ℓT (xT )",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0020",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              216.95204162597656,
+              169.99949645996094,
+              291.7286071777344,
+              179.96189880371094
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-14",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 19 |35",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0020",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              126.9540023803711,
+              247.92860412597656,
+              447.8712158203125,
+              255.1179962158203
+            ]
+          },
+          "confidence": 0.98
+        }
+      ],
+      "contextual_role": "Definisce che cosa viene minimizzato e distingue contributi di stadio, terminale e dato iniziale.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0019",
+          "role": "previous",
+          "note": "La pagina 19 impone che le variabili di stato e ingresso rispettino la dinamica."
+        },
+        {
+          "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0021",
+          "role": "next",
+          "note": "La pagina 21 aggiunge end-point e path constraints, senza cambiare questa decomposizione del costo."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\ell_t",
+          "meaning": "Costo di stadio con argomenti x_t e u_t",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        {
+          "symbol": "\\ell_T",
+          "meaning": "Costo terminale con solo x_T",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        {
+          "symbol": "\\ell",
+          "meaning": "Costo totale, distinto dai singoli ℓ_t",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        {
+          "symbol": "x_0",
+          "meaning": "Variabile iniziale solo se non assegnata",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        {
+          "symbol": "x^0",
+          "meaning": "Dato iniziale quando fissato",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        {
+          "symbol": "\\mathbf{x},\\mathbf{u}",
+          "meaning": "Stack di stati e ingressi",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ],
+        "rationale": "Pagina con contenuto autonomo nella sequenza; nessun candidato automatico da confermare."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              10.35200023651123,
+              6.720991134643555,
+              311.6222229003906,
+              21.06719207763672
+            ],
+            "description": "Regione testuale sorgente: Discrete-time optimal control: main ingredients (II)",
+            "observation_ids": [
+              "transcription-05"
+            ]
+          },
+          {
+            "bbox": [
+              28.34600067138672,
+              35.43647766113281,
+              324.9324035644531,
+              44.93440246582031
+            ],
+            "description": "Regione testuale sorgente: Decision variable: state-input vector (x, u) and, if not given, initial state x0.",
+            "observation_ids": [
+              "s01"
+            ]
+          },
+          {
+            "bbox": [
+              28.34600830078125,
+              62.335479736328125,
+              422.0070495605469,
+              71.3018798828125
+            ],
+            "description": "Regione testuale sorgente: Cost function: a cost “to be payed” for a chosen trajectory. We consider an additive structure in time",
+            "observation_ids": [
+              "transcription-06"
+            ]
+          },
+          {
+            "bbox": [
+              155.0830078125,
+              89.36747741699219,
+              204.83815002441406,
+              98.86540222167969
+            ],
+            "description": "Regione testuale sorgente: ℓ(x0, x, u) =",
+            "observation_ids": [
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              207.40301513671875,
+              80.43560791015625,
+              222.15032958984375,
+              96.23682403564453
+            ],
+            "description": "Regione testuale sorgente: T −1\nX",
+            "observation_ids": [
+              "transcription-07"
+            ]
+          },
+          {
+            "bbox": [
+              208.73001098632812,
+              102.24681091308594,
+              220.82138061523438,
+              108.22441101074219
+            ],
+            "description": "Regione testuale sorgente: t=0",
+            "observation_ids": [
+              "transcription-08"
+            ]
+          },
+          {
+            "bbox": [
+              223.68701171875,
+              89.36749267578125,
+              298.4635925292969,
+              99.32989501953125
+            ],
+            "description": "Regione testuale sorgente: ℓt(xt, ut) + ℓT (xT )",
+            "observation_ids": [
+              "transcription-09"
+            ]
+          },
+          {
+            "bbox": [
+              28.3470458984375,
+              112.1432876586914,
+              385.3966369628906,
+              126.03089904785156
+            ],
+            "description": "Regione testuale sorgente: where ℓt : Rn × Rm →R is the so-called stage cost, while ℓT : Rn →R is the terminal cost.",
+            "observation_ids": [
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              28.346038818359375,
+              141.6828155517578,
+              355.0209045410156,
+              152.92990112304688
+            ],
+            "description": "Regione testuale sorgente: Notation: if the initial state is given, i.e., x0 = x0, we lighten the notation and write",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              161.81805419921875,
+              169.99949645996094,
+              198.10317993164062,
+              178.9658966064453
+            ],
+            "description": "Regione testuale sorgente: ℓ(x, u) =",
+            "observation_ids": [
+              "transcription-10"
+            ]
+          },
+          {
+            "bbox": [
+              200.6680450439453,
+              161.067626953125,
+              215.4153594970703,
+              176.8688201904297
+            ],
+            "description": "Regione testuale sorgente: T −1\nX",
+            "observation_ids": [
+              "transcription-11"
+            ]
+          },
+          {
+            "bbox": [
+              201.9950408935547,
+              182.87982177734375,
+              214.08641052246094,
+              188.857421875
+            ],
+            "description": "Regione testuale sorgente: t=0",
+            "observation_ids": [
+              "transcription-12"
+            ]
+          },
+          {
+            "bbox": [
+              216.95204162597656,
+              169.99949645996094,
+              291.7286071777344,
+              179.96189880371094
+            ],
+            "description": "Regione testuale sorgente: ℓt(xt, ut) + ℓT (xT )",
+            "observation_ids": [
+              "transcription-13"
+            ]
+          },
+          {
+            "bbox": [
+              126.9540023803711,
+              247.92860412597656,
+              447.8712158203125,
+              255.1179962158203
+            ],
+            "description": "Regione testuale sorgente: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 19 |35",
+            "observation_ids": [
+              "transcription-14"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "La decomposizione temporale è un concetto unitario, illustrabile con tre barre.",
+        "subpages": []
+      }
+    }
+  }
+}

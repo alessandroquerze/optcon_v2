@@ -1,0 +1,20 @@
+Strong convexity and Lipschitz continuity of the gradient
+Consider a strongly convex (with parameter µ > 0) function ℓwith Lipschitz continuous gradient (with
+parameter L > 0)
+Then the following characterization holds
+
+∇ℓ(zA) −∇ℓ(zB)
+⊤
+(zA −zB) ≥
+µL
+µ+L
+|{z}
+γ1
+∥zA −zB∥2 +
+1
+µ+L
+|{z}
+γ2
+∥∇ℓ(zA) −∇ℓ(zB)∥2
+for all zA, zB ∈Z.
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 17 |73

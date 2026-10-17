@@ -1,0 +1,12 @@
+{
+  "verified_at": "2026-10-17T19:35:01.798Z",
+  "url": "http://127.0.0.1:4173/",
+  "pdf_page_rendered": 34,
+  "companion_page": 34,
+  "lazy_plotly_chunk": true,
+  "surface_trace": "surface",
+  "contour_trace": "contour",
+  "page_errors": [],
+  "failed_requests": [],
+  "success": true
+}

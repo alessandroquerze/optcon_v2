@@ -1,0 +1,967 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0008",
+  "document_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc",
+  "source": {
+    "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+    "page_index": 7,
+    "physical_page_number": 8,
+    "pdf_label_raw": "<FEFF0037>",
+    "pdf_label": "7",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Continuous-time control systems",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      201.37164306640625,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 7,
+        "total": 35,
+        "raw": "7 |35",
+        "bbox": [
+          130.1300048828125,
+          247.92860412597656,
+          447.8712158203125,
+          258.29376220703125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0008/text.txt",
+      "sha256": "ea6310641a837fc4bd3985a237e091bd90ccbeaebad4b6472897ffd4ab9d916f"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0008/text.reading-order.txt",
+      "sha256": "c816c28511da81f78660db95b997aee5c93911a9632f78e215090c62b283344f"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0008/layout.json",
+      "sha256": "8f3711953c90cf88e110f04ec0690f897716c02586e5a4136e57d0d68a9807cd"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0008/render.png",
+      "sha256": "9445496984e402e598cad97a30ebc69ba4435d2ca3396bbfc532006a8d67c93d",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "78534463f7cafd6a92bc8615f54861012e31621f0053398343f92fa382a1c7b2"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0007",
+    "next_page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0009"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "proposed_after_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "780142791ace9d3eb2a91dd04a87bdb52f444830ba7a16e03aacd0508a3076b1",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0008",
+      "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+      "artifact_sha256": {
+        "text": "ea6310641a837fc4bd3985a237e091bd90ccbeaebad4b6472897ffd4ab9d916f",
+        "layout": "8f3711953c90cf88e110f04ec0690f897716c02586e5a4136e57d0d68a9807cd",
+        "render": "9445496984e402e598cad97a30ebc69ba4435d2ca3396bbfc532006a8d67c93d"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "Codex (identificatore esatto del modello non esposto nella sessione)",
+        "run_id": "page-analysis-ce370a19242e4173828aef04d60c36ee"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0008",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0007",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0009"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0008",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0007",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0009"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0008",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0007",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0009"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Continuous-time control systems",
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "La fonte non assegna f, h, parametri numerici, regolarità sufficiente o algoritmo di integrazione.",
+          "Time-invariant non significa che stato e ingresso siano costanti.",
+          "Non si può identificare in generale y(t) con x(t)."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Derivata e vettore colonna",
+            "why": "Servono a leggere l'equazione differenziale e le dimensioni.",
+            "origin": "enrichment",
+            "page_numbers": []
+          },
+          {
+            "concept": "Stato/ingresso/uscita nel feedback",
+            "why": "La pagina 2 ne offre il contesto operativo.",
+            "origin": "source_context",
+            "page_numbers": [
+              2
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "t\\in\\mathbb{R}",
+            "anchor": "t ∈R",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          },
+          {
+            "latex": "\\dot{x}(t)=f(x(t),u(t),t),\\qquad x(0)=x^0",
+            "anchor": "˙x(t) = f(x(t), u(t), t),",
+            "notes": "L'apice 0 della condizione iniziale è verificato sull'immagine, perché il text layer lo appiattisce."
+          },
+          {
+            "latex": "y(t)=h(x(t),u(t),t)",
+            "anchor": "y(t) = h(x(t), u(t), t)",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          },
+          {
+            "latex": "x(t)\\in\\mathbb{R}^n,\\quad u(t)\\in\\mathbb{R}^m,\\quad y(t)\\in\\mathbb{R}^p",
+            "anchor": "state of the system",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          },
+          {
+            "latex": "x(t)=\\begin{bmatrix}x_1(t)\\\\\\vdots\\\\x_n(t)\\end{bmatrix},\\quad u(t)=\\begin{bmatrix}u_1(t)\\\\\\vdots\\\\u_m(t)\\end{bmatrix},\\quad y(t)=\\begin{bmatrix}y_1(t)\\\\\\vdots\\\\y_p(t)\\end{bmatrix}",
+            "anchor": "x(t) =",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          },
+          {
+            "latex": "\\dot{x}(t)=f(x(t),u(t))",
+            "anchor": "time-invariant systems",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explain-1",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Time-varying significa dipendenza esplicita di f o h dal tempo; time-invariant consente comunque traiettorie variabili.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04",
+              "s05"
+            ]
+          },
+          {
+            "id": "example-1",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "Enrichment: n=m=p=1, ẋ=−a x+u, y=x, ingresso costante; questi f e h non sono assegnati dalla fonte.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04",
+              "s05"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Variare stato iniziale, ingresso e coefficiente rende osservabile la differenza fra dinamica f e traiettoria x(t).",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04",
+              "s05"
+            ]
+          },
+          {
+            "id": "visualization",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Grafici allineati di u(t), x(t), y(t) per il solo esempio scalare esplicitamente aggiunto.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04",
+              "s05"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Distinguere dinamica e uscita con un modello calcolabile.",
+            "setup": "Enrichment: n=m=p=1, ẋ=−a x+u, y=x, ingresso costante; questi f e h non sono assegnati dalla fonte.",
+            "parameters": [
+              {
+                "symbol": "a",
+                "value": "1 s⁻¹"
+              },
+              {
+                "symbol": "u",
+                "value": "1 unità/s"
+              },
+              {
+                "symbol": "x^0",
+                "value": "0"
+              }
+            ],
+            "derivation": [
+              "Per a>0: x(t)=u/a+(x⁰−u/a)e^(−a t).",
+              "Con i valori scelti: x(t)=1−e^(−t).",
+              "x(1)≈0.6321 e y(1)=x(1) soltanto per la scelta h=x."
+            ],
+            "expected_outcome": "Un sistema time-invariant può avere stato e uscita variabili nel tempo.",
+            "limitations": [
+              "Modello e numeri sono enrichment; nessuna proprietà di un velivolo o drone viene dedotta."
+            ],
+            "enrichment_id": "example-1",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04",
+              "s05"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "ContinuousStateInputOutputPlot",
+          "description": "Grafici allineati di u(t), x(t), y(t) per il solo esempio scalare esplicitamente aggiunto.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04",
+            "s05"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Variare stato iniziale, ingresso e coefficiente rende osservabile la differenza fra dinamica f e traiettoria x(t).",
+          "component": "FirstOrderContinuousResponse",
+          "parameters": [
+            {
+              "name": "Coefficiente del modello",
+              "symbol": "a",
+              "origin": "enrichment",
+              "range": "[0,2] s⁻¹",
+              "default": "1",
+              "effect_on_change": "Ricalcolare la soluzione esatta e la velocità di convergenza; per a=0 usare x=x⁰+ut senza dividere per a.",
+              "edge_cases": [
+                "a=0: integratore"
+              ]
+            },
+            {
+              "name": "Ingresso costante",
+              "symbol": "u",
+              "origin": "enrichment",
+              "range": "[−1,1] unità/s",
+              "default": "1",
+              "effect_on_change": "Ricalcolare x(t), y(t) e il livello u/a quando a>0.",
+              "edge_cases": [
+                "u=0: risposta libera"
+              ]
+            },
+            {
+              "name": "Stato iniziale",
+              "symbol": "x^0",
+              "origin": "enrichment",
+              "range": "[−2,2]",
+              "default": "0",
+              "effect_on_change": "Cambiare il valore di partenza e il transitorio, mantenendo invariata la dinamica scelta.",
+              "edge_cases": [
+                "x⁰=u/a: traiettoria costante per a>0"
+              ]
+            }
+          ],
+          "outputs": [
+            "u(t), x(t), y(t)",
+            "Valore x(1)",
+            "Etichetta time-invariant del modello"
+          ],
+          "invariants": [
+            "y=x soltanto nell'esempio",
+            "Orizzonte illustrativo fisso di 5 s",
+            "Nessuna modifica alle equazioni generali della fonte"
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "a=0 nell'esempio",
+            "expected_behavior": "Usare il limite integratore x⁰+ut.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04",
+              "s05"
+            ]
+          },
+          {
+            "case": "Stato e ingresso costanti di equilibrio",
+            "expected_behavior": "Non confondere l'equilibrio particolare con la proprietà generale di invarianza temporale.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04",
+              "s05"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un unico schema di sistema con un esempio scalare opzionale; le dimensioni sono parte della stessa definizione.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Separare x, u e y, equazione di stato e di uscita, tempo variabile e modello time-invariant.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04",
+              "s05"
+            ],
+            "enrichment_ids": [
+              "explain-1",
+              "example-1",
+              "interaction",
+              "visualization"
+            ]
+          }
+        ]
+      },
+      "observations": [
+        {
+          "id": "s01",
+          "category": "equation",
+          "description": "Il sistema continuo time-varying è definito da ẋ(t)=f(x(t),u(t),t), con condizione iniziale x(0)=x⁰; x⁰ ha indice in apice, non è la notazione x₀.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0008",
+            "modality": "both",
+            "text_quote": "˙x(t) = f(x(t), u(t), t),",
+            "bbox": [
+              110,
+              48,
+              343,
+              67
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s02",
+          "category": "equation",
+          "description": "L'equazione di uscita è y(t)=h(x(t),u(t),t), distinta dall'equazione di stato.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0008",
+            "modality": "both",
+            "text_quote": "y(t) = h(x(t), u(t), t)",
+            "bbox": [
+              111,
+              66,
+              340,
+              82
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s03",
+          "category": "definition",
+          "description": "Lo stato x(t) appartiene a Rⁿ, l'ingresso u(t) a Rᵐ e l'uscita y(t) a Rᵖ; il tempo t è reale.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0008",
+            "modality": "both",
+            "text_quote": "state of the system at time t",
+            "bbox": [
+              28,
+              82,
+              395,
+              139
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s04",
+          "category": "diagram",
+          "description": "I tre vettori sono rappresentati in colonna con componenti x₁…xₙ, u₁…uₘ e y₁…yₚ.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0008",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              111,
+              151,
+              361,
+              198
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s05",
+          "category": "assumption",
+          "description": "Il remark dice che nelle applicazioni si lavorerà principalmente con sistemi time-invariant ẋ(t)=f(x(t),u(t)), pur ammettendo sistemi time-varying.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0008",
+            "modality": "both",
+            "text_quote": "we will mainly work with time-invariant systems",
+            "bbox": [
+              27,
+              205,
+              446,
+              231
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-06",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Continuous-time control systems",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0008",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              10.35200023651123,
+              6.720991134643555,
+              201.37164306640625,
+              21.06719207763672
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-07",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Consider the continuous-time, t ∈R, (time-varying) system",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0008",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              28.34600067138672,
+              32.68060302734375,
+              257.1212463378906,
+              43.60588073730469
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-08",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 7 |35",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0008",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              130.1300048828125,
+              247.92860412597656,
+              447.8712158203125,
+              255.1179962158203
+            ]
+          },
+          "confidence": 0.98
+        }
+      ],
+      "contextual_role": "Introduce il modello generale continuo e distingue stato, ingresso e uscita prima della notazione discreta.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0007",
+          "role": "previous",
+          "note": "La pagina 7 chiude le motivazioni; nessuna sua dinamica spaziale è necessaria per la definizione generale."
+        },
+        {
+          "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0009",
+          "role": "next",
+          "note": "La pagina 9 sostituisce la derivata con un aggiornamento discreto e introduce indici compatti; non è dichiarato un metodo di discretizzazione."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "x(t)",
+          "meaning": "Stato in Rⁿ",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04",
+            "s05"
+          ]
+        },
+        {
+          "symbol": "u(t)",
+          "meaning": "Ingresso in Rᵐ",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04",
+            "s05"
+          ]
+        },
+        {
+          "symbol": "y(t)",
+          "meaning": "Uscita in Rᵖ",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04",
+            "s05"
+          ]
+        },
+        {
+          "symbol": "x^0",
+          "meaning": "Condizione iniziale",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04",
+            "s05"
+          ]
+        },
+        {
+          "symbol": "f",
+          "meaning": "Mappa della dinamica",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04",
+            "s05"
+          ]
+        },
+        {
+          "symbol": "h",
+          "meaning": "Mappa di uscita",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04",
+            "s05"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ],
+        "rationale": "Pagina con contenuto autonomo nella sequenza; nessun candidato automatico da confermare."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              10.35200023651123,
+              6.720991134643555,
+              201.37164306640625,
+              21.06719207763672
+            ],
+            "description": "Regione testuale sorgente: Continuous-time control systems",
+            "observation_ids": [
+              "transcription-06"
+            ]
+          },
+          {
+            "bbox": [
+              28.34600067138672,
+              32.68060302734375,
+              257.1212463378906,
+              43.60588073730469
+            ],
+            "description": "Regione testuale sorgente: Consider the continuous-time, t ∈R, (time-varying) system",
+            "observation_ids": [
+              "transcription-07"
+            ]
+          },
+          {
+            "bbox": [
+              116.4739990234375,
+              51.785797119140625,
+              334.48101806640625,
+              62.534881591796875
+            ],
+            "description": "Regione testuale sorgente: ˙x(t) = f(x(t), u(t), t),\nx(0) = x0\nstate equation",
+            "observation_ids": [
+              "s01"
+            ]
+          },
+          {
+            "bbox": [
+              116.83700561523438,
+              69.00048828125,
+              337.0704650878906,
+              77.96688842773438
+            ],
+            "description": "Regione testuale sorgente: y(t) = h(x(t), u(t), t)\noutput equation",
+            "observation_ids": [
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              40.102020263671875,
+              92.09048461914062,
+              202.62454223632812,
+              104.86589050292969
+            ],
+            "description": "Regione testuale sorgente: • x(t) ∈Rn state of the system at time t",
+            "observation_ids": [
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              40.10200500488281,
+              107.03448486328125,
+              205.73654174804688,
+              119.80989074707031
+            ],
+            "description": "Regione testuale sorgente: • u(t) ∈Rm input of the system at time t",
+            "observation_ids": [
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              40.10200500488281,
+              121.97850036621094,
+              208.33154296875,
+              134.75389099121094
+            ],
+            "description": "Regione testuale sorgente: • y(t) ∈Rp output of the system at time t",
+            "observation_ids": [
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              114.99500274658203,
+              171.9034881591797,
+              140.43614196777344,
+              180.86988830566406
+            ],
+            "description": "Regione testuale sorgente: x(t) =",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              143.00100708007812,
+              157.6314239501953,
+              149.1429901123047,
+              166.5978240966797
+            ],
+            "description": "Regione testuale sorgente: ",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              143.00100708007812,
+              173.3924102783203,
+              149.1429901123047,
+              188.11781311035156
+            ],
+            "description": "Regione testuale sorgente: ",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              149.61801147460938,
+              157.3684844970703,
+              169.49057006835938,
+              166.86741638183594
+            ],
+            "description": "Regione testuale sorgente: x1(t)",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              149.14401245117188,
+              167.4095001220703,
+              169.96456909179688,
+              195.83641052246094
+            ],
+            "description": "Regione testuale sorgente: ...\nxn(t)",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              169.96200561523438,
+              157.6314239501953,
+              176.10398864746094,
+              166.5978240966797
+            ],
+            "description": "Regione testuale sorgente: ",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              169.96200561523438,
+              171.9034881591797,
+              221.5931396484375,
+              188.11782836914062
+            ],
+            "description": "Regione testuale sorgente: \nu(t) =",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              224.1580047607422,
+              157.6314239501953,
+              230.29998779296875,
+              166.5978240966797
+            ],
+            "description": "Regione testuale sorgente: ",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              224.1580047607422,
+              173.39242553710938,
+              230.29998779296875,
+              188.11782836914062
+            ],
+            "description": "Regione testuale sorgente: ",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              231.74400329589844,
+              157.36849975585938,
+              251.69656372070312,
+              166.86741638183594
+            ],
+            "description": "Regione testuale sorgente: u1(t)",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              230.30099487304688,
+              167.4095001220703,
+              253.1385498046875,
+              195.83642578125
+            ],
+            "description": "Regione testuale sorgente: ...\num(t)",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              253.135986328125,
+              157.6314239501953,
+              259.2779846191406,
+              166.5978240966797
+            ],
+            "description": "Regione testuale sorgente: ",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              253.135986328125,
+              171.90350341796875,
+              304.3240966796875,
+              188.1178436279297
+            ],
+            "description": "Regione testuale sorgente: \ny(t) =",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              306.88897705078125,
+              157.6314239501953,
+              313.0309753417969,
+              166.5978240966797
+            ],
+            "description": "Regione testuale sorgente: ",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              306.88897705078125,
+              173.39244079589844,
+              313.0309753417969,
+              188.1178436279297
+            ],
+            "description": "Regione testuale sorgente: ",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              313.1259765625,
+              157.36851501464844,
+              332.31353759765625,
+              166.867431640625
+            ],
+            "description": "Regione testuale sorgente: y1(t)",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              313.031982421875,
+              167.4095001220703,
+              332.4075622558594,
+              195.83642578125
+            ],
+            "description": "Regione testuale sorgente: ...\nyp(t)",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              332.405029296875,
+              157.63143920898438,
+              338.5470275878906,
+              166.59783935546875
+            ],
+            "description": "Regione testuale sorgente: ",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              332.405029296875,
+              173.39244079589844,
+              338.5470275878906,
+              188.1178436279297
+            ],
+            "description": "Regione testuale sorgente: ",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              28.346038818359375,
+              209.30250549316406,
+              425.2080078125,
+              229.22691345214844
+            ],
+            "description": "Regione testuale sorgente: Remark In applications, we will mainly work with time-invariant systems, ˙x(t) = f(x(t), u(t)), even\nthough time-varying ones may be considered.\n□",
+            "observation_ids": [
+              "s05"
+            ]
+          },
+          {
+            "bbox": [
+              130.1300048828125,
+              247.92860412597656,
+              447.8712158203125,
+              255.1179962158203
+            ],
+            "description": "Regione testuale sorgente: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 7 |35",
+            "observation_ids": [
+              "transcription-08"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un unico schema di sistema con un esempio scalare opzionale; le dimensioni sono parte della stessa definizione.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
+}

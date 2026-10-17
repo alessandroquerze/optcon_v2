@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0075",
+  "document_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1",
+  "source": {
+    "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+    "page_index": 74,
+    "physical_page_number": 75,
+    "pdf_label_raw": "<FEFF00360037>",
+    "pdf_label": "67",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Stepsize selection for constrained optimization (I): Merit function",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      392.79296875,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 67,
+        "total": 73,
+        "raw": "67 |73",
+        "bbox": [
+          150.68800354003906,
+          247.92860412597656,
+          447.8712158203125,
+          258.29376220703125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0075/text.txt",
+      "sha256": "667d6638a434cebc8ca3ec313ba7632f939ce1450870c43c179c1c3f4e108067"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0075/text.reading-order.txt",
+      "sha256": "f89562b72edb958d87dbeefca24e0b411a727679a44fd4bd4e82a1c70bcc53e0"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0075/layout.json",
+      "sha256": "65024eae9280a263f157bc7fc15d626cae8dfade054f95d2ce8bff78116bd6bf"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0075/render.png",
+      "sha256": "07c10bbec9fb8b5e04da09c6551325530429c40737e50d0fc2bf40c97fdc2a44",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "6c5d8039058b89de6e6d8ad090a984844a6f779e37b7230bc4109bfe71ba1940"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0074",
+    "next_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0076"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "pending",
+    "result": null
+  }
+}

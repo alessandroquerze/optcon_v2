@@ -1,0 +1,49 @@
+KKT conditions for unconstrained optimal control
+The Lagrangian function has the form
+L(x, u, λ) = ℓ(x, u) + λ⊤h(x, u)
+=
+T −1
+X
+t=0
+ℓt(xt, ut) + ℓT (xT )
+|
+{z
+}
+ℓ(x,u)
++
+T −1
+X
+t=0
+λ⊤
+t+1(ft(xt, ut) −xt+1)
+|
+{z
+}
+λ⊤h(x,u)
+=
+T −1
+X
+t=0
+
+ℓt(xt, ut) + λ
+⊤
+t+1(ft(xt, ut) −xt+1)
+
++ ℓT (xT )
+=
+T
+X
+t=0
+Lt(xt, ut, λ)
+where λ ∈RnT and
+L0(x0, u0, λ) = ℓ0(x0, u0) + λ
+⊤
+1 f0(x0, u0)
+Lt(xt, ut, λ) = ℓt(xt, ut) + λ
+⊤
+t+1ft(xt, ut) −λtxt
+t = 1, . . . , T −1
+LT (xT , λ) = ℓT (xT ) −λ
+⊤
+T xT
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Optimality Conditions for Optimal Control 12 |18

@@ -1,0 +1,19 @@
+Newton’s method for equality constrained problems
+
+
+
+
+
+    Namely, search for ∆zk, ∆λk solution of
+
+                      Bk     ∇h(zk)  ∆z       ∇ℓ(zk) + ∇h(zk)λk
+                               = −
+                      ∇h(zk)⊤     0    ∆λ              h(zk).
+
+    Thus, ∆zk, ∆λk can be obtained as solution of a linear system of equations in the variables ∆z, ∆λ.
+
+
+
+
+
+                                                      Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 64 |73

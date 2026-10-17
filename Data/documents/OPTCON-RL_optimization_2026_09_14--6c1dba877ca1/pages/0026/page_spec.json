@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0026",
+  "document_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1",
+  "source": {
+    "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+    "page_index": 25,
+    "physical_page_number": 26,
+    "pdf_label_raw": "<FEFF00320035>",
+    "pdf_label": "25",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Unconstrained optimization: algorithms",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      111.28900146484375,
+      97.489990234375,
+      342.2484130859375,
+      111.83618927001953
+    ],
+    "printed_number_candidates": [],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0026/text.txt",
+      "sha256": "49671415e68cb5c1e5edd313f84b45f1298e31d2c655165a5f3b45a34da5a192"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0026/text.reading-order.txt",
+      "sha256": "ab1eb82d35308da1c9b9bd0235065c90bf40d529a5f3e2fbd14aede5373aa446"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0026/layout.json",
+      "sha256": "42372f521b60159f0823cc630345fbaad9023270c5aba1d4927f18dbc61ea86c"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0026/render.png",
+      "sha256": "a8d97e3a28a657f283458d7c25bf5beef2d90d60c823f877165b016f7aec9a3f",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "b01746b336f46420a6ca3f6a91678db442fa11d14599ce337993b0c1629039a5"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0025",
+    "next_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0027"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "pending",
+    "result": null
+  }
+}

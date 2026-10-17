@@ -1,0 +1,16 @@
+Continuous-time Optimal Control problem (II)
+
+
+    Suppose we neglect path and terminal constraints. We can write the optimal control problem as
+
+                                  min     ℓ(x(·), u(·))
+                                                 (x(·),u(·))∈F
+                                                subj.to (x(·), u(·)) ∈T
+
+    which is an infinite dimensional optimization problem.
+
+
+
+
+
+                                            Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 31 |35

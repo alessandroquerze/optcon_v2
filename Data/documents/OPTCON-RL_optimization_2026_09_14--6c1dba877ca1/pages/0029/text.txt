@@ -1,0 +1,9 @@
+Gradient methods: introduction
+Let zk be such that ∇ℓ(zk)̸ = 0. We start by considering the update rule
+zk+1 = zk −γk∇ℓ(zk),
+i.e., we choose dk = −∇ℓ(zk).
+From the first order Taylor expansion of ℓat zk we have
+ℓ(zk+1) = ℓ(zk) + ∇ℓ(zk)T (zk+1 −zk) + o(∥zk+1 −zk∥)
+= ℓ(zk) −γk∥∇ℓ(zk)∥2 + o(γk).
+Thus, for γk > 0 sufficiently small it can be shown that ℓ(zk+1) < ℓ(zk).
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 28 |73

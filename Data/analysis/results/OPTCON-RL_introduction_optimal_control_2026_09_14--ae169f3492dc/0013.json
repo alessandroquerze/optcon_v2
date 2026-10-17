@@ -1,0 +1,403 @@
+{
+  "protocol_version": "1.0.0",
+  "request_sha256": "e055e325bedb6b35e64ef9da05ec267409246512e0a8a76e36188bdbb6efc0d3",
+  "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0013",
+  "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+  "artifact_sha256": {
+    "text": "a066e65fc768d2f3d16aa1ecc928b9d87f1977eb18bb0ed2648c5c416048a039",
+    "layout": "7db3329a187a604ed890176391c8030c6e4956091f5c8b16f47361468e684261",
+    "render": "3b36f2036bdde88e989c303b12bb4cf2718ad28d6ac6a916717918b5d821a9e9"
+  },
+  "agent": {
+    "provider": "OpenAI",
+    "model": "Codex (identificatore esatto del modello non esposto nella sessione)",
+    "run_id": "page-analysis-ce370a19242e4173828aef04d60c36ee"
+  },
+  "inspection": {
+    "text_page_ids": [
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0013",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0012",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0014"
+    ],
+    "layout_page_ids": [
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0013",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0012",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0014"
+    ],
+    "image_page_ids": [
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0013",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0012",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0014"
+    ],
+    "source_content_treated_as_data": true
+  },
+  "title": "Recall some tools for nonlinear systems analysis and control",
+  "companionPageCount": 1,
+  "didactic_plan": {
+    "source_scope_limits": [
+      "'Typically' non è un'impossibilità di tracking con modelli time-invariant o di stabilizzazione in altri casi.",
+      "La fonte non afferma che tutto il controllo non ottimo ignori sempre performance o vincoli.",
+      "Non viene assegnato un nuovo modello matematico."
+    ],
+    "prerequisites": [
+      {
+        "concept": "Traiettorie, equilibri e linearizzazione",
+        "why": "Sono gli strumenti richiamati, non ridefiniti nella pagina.",
+        "origin": "source_context",
+        "page_numbers": [
+          11,
+          12
+        ]
+      },
+      {
+        "concept": "Tracking e stabilizzazione",
+        "why": "Vocabolario richiamato dall'introduzione al feedback.",
+        "origin": "source_context",
+        "page_numbers": [
+          2
+        ]
+      }
+    ],
+    "source_math": [],
+    "enrichments": [
+      {
+        "id": "example-1",
+        "label": "enrichment",
+        "type": "conceptual_example",
+        "proposal": "Enrichment: assumere che due controllori siano già stati verificati stabilizzanti, ma producano consumi o sforzi diversi.",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "id": "example-1",
+        "origin": "enrichment",
+        "purpose": "Distinguere raggiungimento dell'obiettivo e ottimizzazione di una prestazione.",
+        "setup": "Enrichment: assumere che due controllori siano già stati verificati stabilizzanti, ma producano consumi o sforzi diversi.",
+        "parameters": [],
+        "derivation": [
+          "La stabilizzazione da sola non ordina i due sforzi.",
+          "Definire un indice se si vuole scegliere il controllo meno costoso.",
+          "Verificare separatamente le saturazioni richieste."
+        ],
+        "expected_outcome": "Ottimizzazione e vincoli espliciti pongono domande ulteriori rispetto al solo raggiungimento/stabilizzazione.",
+        "limitations": [
+          "Nessun controllore, prova di stabilità o consumo è fornito nella fonte."
+        ],
+        "enrichment_id": "example-1",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ]
+      }
+    ],
+    "example_omission_reason": null,
+    "visualization": {
+      "component": "ControlToolsVersusOptimizationRequirements",
+      "description": "Due colonne statiche: strumenti richiamati e questioni non trattate esplicitamente; conservare la qualificazione 'typically'.",
+      "origin": "source_derived",
+      "source_observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    },
+    "interactivity": {
+      "recommended": false,
+      "rationale": "Il contenuto è una mappa concettuale, non un problema numerico da simulare.",
+      "component": null,
+      "parameters": [],
+      "outputs": [],
+      "invariants": [],
+      "enrichment_id": null
+    },
+    "edge_cases": [
+      {
+        "case": "Trattare typically come sempre",
+        "expected_behavior": "Conservare la natura indicativa dell'associazione fra tipo di sistema e compito.",
+        "origin": "enrichment",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ]
+      }
+    ],
+    "expansion_rationale": "Un riepilogo e una motivazione coerente; non richiede una seconda companion.",
+    "blueprint": [
+      {
+        "companion_suffix": null,
+        "focus": "Che cosa aggiungono indice di prestazione e vincoli agli strumenti di controllo già richiamati.",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ],
+        "enrichment_ids": [
+          "example-1"
+        ]
+      }
+    ]
+  },
+  "observations": [
+    {
+      "id": "s01",
+      "category": "concept",
+      "description": "Il riepilogo richiama traiettorie ed equilibri e linearizzazione.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0013",
+        "modality": "both",
+        "text_quote": "System Trajectories and equilibria",
+        "bbox": [
+          36,
+          35,
+          313,
+          62
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "s02",
+      "category": "concept",
+      "description": "La stabilizzazione dell'equilibrio/origine è associata tipicamente a sistemi time-invariant, mentre output/trajectory tracking a sistemi time-varying.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0013",
+        "modality": "both",
+        "text_quote": "Equilibrium (origin) stabilization (typically time-invariant systems)",
+        "bbox": [
+          36,
+          68,
+          373,
+          96
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "s03",
+      "category": "concept",
+      "description": "La fonte dice che gli strumenti richiamati non trattano esplicitamente l'ottimizzazione di un performance index, come sforzo di controllo, distanza da un target o tempo.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0013",
+        "modality": "both",
+        "text_quote": "Optimize a performance index",
+        "bbox": [
+          27,
+          115,
+          437,
+          144
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "s04",
+      "category": "concept",
+      "description": "Sono indicati come non esplicitamente trattati i vincoli: saturazioni degli ingressi, collision/obstacle avoidance e regioni entro cui confinare lo stato.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0013",
+        "modality": "both",
+        "text_quote": "Explicitly handle constraints",
+        "bbox": [
+          37,
+          145,
+          443,
+          171
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "transcription-05",
+      "category": "structure",
+      "description": "Trascrizione di una regione visibile della fonte: Recall some tools for nonlinear systems analysis and control",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0013",
+        "modality": "visual",
+        "text_quote": null,
+        "bbox": [
+          10.35200023651123,
+          6.720991134643555,
+          360.14093017578125,
+          21.06719207763672
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "transcription-06",
+      "category": "structure",
+      "description": "Trascrizione di una regione visibile della fonte: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 12 |35",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0013",
+        "modality": "visual",
+        "text_quote": null,
+        "bbox": [
+          126.9540023803711,
+          247.92860412597656,
+          447.8712158203125,
+          255.1179962158203
+        ]
+      },
+      "confidence": 0.98
+    }
+  ],
+  "contextual_role": "Pagina ponte: rende esplicito perché introdurre l'ottimizzazione dopo gli strumenti di analisi e controllo.",
+  "context_notes": [
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0012",
+      "role": "previous",
+      "note": "La pagina 12 ha definito la linearizzazione lungo una traiettoria; il riepilogo la colloca fra gli strumenti già noti."
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0014",
+      "role": "next",
+      "note": "La pagina 14 definisce decisione, costo e vincoli di un problema di ottimizzazione."
+    }
+  ],
+  "notation": [],
+  "uncertainties": [],
+  "progression": {
+    "assessment": "unique",
+    "related_page_ids": [],
+    "added": [],
+    "removed": [],
+    "changed": [],
+    "observation_ids": [
+      "s01",
+      "s02",
+      "s03",
+      "s04"
+    ],
+    "rationale": "Pagina con contenuto autonomo nella sequenza; nessun candidato automatico da confermare."
+  },
+  "coverage": {
+    "all_visible_regions_accounted_for": true,
+    "regions": [
+      {
+        "bbox": [
+          10.35200023651123,
+          6.720991134643555,
+          360.14093017578125,
+          21.06719207763672
+        ],
+        "description": "Regione testuale sorgente: Recall some tools for nonlinear systems analysis and control",
+        "observation_ids": [
+          "transcription-05"
+        ]
+      },
+      {
+        "bbox": [
+          40.10200119018555,
+          38.50827407836914,
+          179.8639373779297,
+          47.59088134765625
+        ],
+        "description": "Regione testuale sorgente: • System Trajectories and equilibria",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          40.10200119018555,
+          53.452274322509766,
+          99.08570098876953,
+          62.534881591796875
+        ],
+        "description": "Regione testuale sorgente: • Linearization",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          40.10200119018555,
+          72.38127899169922,
+          304.96319580078125,
+          81.46388244628906
+        ],
+        "description": "Regione testuale sorgente: • Equilibrium (origin) stabilization (typically time-invariant systems)",
+        "observation_ids": [
+          "s02"
+        ]
+      },
+      {
+        "bbox": [
+          40.10200119018555,
+          87.32527923583984,
+          278.1088562011719,
+          96.40788269042969
+        ],
+        "description": "Regione testuale sorgente: • Output/trajectory tracking (typically time-varying systems)",
+        "observation_ids": [
+          "s02"
+        ]
+      },
+      {
+        "bbox": [
+          28.34600067138672,
+          118.32548522949219,
+          205.06475830078125,
+          127.29188537597656
+        ],
+        "description": "Regione testuale sorgente: The following issues are not handled explicitly",
+        "observation_ids": [
+          "s03"
+        ]
+      },
+      {
+        "bbox": [
+          40.10200119018555,
+          133.1532745361328,
+          395.63153076171875,
+          142.2358856201172
+        ],
+        "description": "Regione testuale sorgente: • Optimize a performance index (e.g., control effort, distance from a target point, time, ...)",
+        "observation_ids": [
+          "s03"
+        ]
+      },
+      {
+        "bbox": [
+          40.10200119018555,
+          148.09727478027344,
+          425.2209167480469,
+          168.13888549804688
+        ],
+        "description": "Regione testuale sorgente: • Explicitly handle constraints (e.g., saturations on the inputs, collision/obstacle avoidance, regions\nwhere the state has to be confined,...)",
+        "observation_ids": [
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          126.9540023803711,
+          247.92860412597656,
+          447.8712158203125,
+          255.1179962158203
+        ],
+        "description": "Regione testuale sorgente: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 12 |35",
+        "observation_ids": [
+          "transcription-06"
+        ]
+      }
+    ]
+  },
+  "mapping_recommendation": {
+    "mode": "one_to_one",
+    "rationale": "Un riepilogo e una motivazione coerente; non richiede una seconda companion.",
+    "subpages": []
+  }
+}

@@ -1,0 +1,19 @@
+Projected gradient
+
+
+    Gradient methods can be generalized to optimization over convex sets.
+
+    Projected gradient
+
+                                   zk+1 = PZ zk −γk∇ℓ(zk)  .
+
+    The algorithm is based on the idea of generating at each t feasible points (i.e., belonging to Z) that
+     give a descent in the cost.
+
+    The analysis follows similar arguments to the one of unconstrained gradient methods.
+
+
+
+
+
+                                                      Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 46 |73

@@ -1,0 +1,23 @@
+Cost function: examples
+
+
+    Distance from a desired state-input function of time (“state-input curve”)
+
+
+                              T −1
+                       ℓ(x, u) = X 12∥xt −xdest ∥2Q + 2∥ut1    −udest ∥2R + 12∥xT −xdesT ∥2QT
+                                t=0 |             ℓt(xt,ut){z             }   |    ℓT {z(xT )    }
+
+    where, x0 = x0, and xdest  , t = 1, . . . , T, udest  , t = 0, . . . , T −1, (compactly (xdes, udes)) represents a
+     desired behavior for the system based on designers goals (not taking into account dynamic models).
+
+     Recall:
+      •  2∥xt1    −xdest ∥2Q = 12(xt −xdest )⊤Q(xt −xdest  ) for some Q positive (semi-)definite
+      • 2∥xT1    −xdesT ∥2QT = 2(xT1    −xdesT )⊤QT (xT −xdesT ) for some QT positive (semi-)definite
+      •  2∥ut1    −udest ∥2R = 12(ut −udest )⊤R(ut −udest  ) for some R positive definite
+
+    Note: The desired curve (xdes, udes) does not satisfy the dynamics in general (e.g., a step transition
+    between two equilibria).
+
+
+                                            Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 21 |35

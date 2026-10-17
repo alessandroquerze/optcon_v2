@@ -1,0 +1,11 @@
+{
+  "physical_pages": 137,
+  "requests": 137,
+  "status_counts": {
+    "pending": 101,
+    "analyzed": 25,
+    "needs_review": 11
+  },
+  "ai_execution_performed_by_export": false,
+  "companion_generation_enabled": false
+}

@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:optconv:didactic-plan:1.0.0",
+  "title": "Progetto didattico della singola pagina, distinto dalle affermazioni della fonte",
+  "type": "object", "additionalProperties": false,
+  "required": ["source_scope_limits", "prerequisites", "source_math", "enrichments", "examples", "example_omission_reason", "visualization", "interactivity", "edge_cases", "expansion_rationale", "blueprint"],
+  "properties": {
+    "source_scope_limits": {"$ref": "#/$defs/strings"},
+    "prerequisites": {"type": "array", "items": {
+      "type": "object", "additionalProperties": false, "required": ["concept", "why", "origin", "page_numbers"],
+      "properties": {"concept": {"type": "string"}, "why": {"type": "string"}, "origin": {"enum": ["source_context", "enrichment"]},
+                     "page_numbers": {"type": "array", "items": {"type": "integer", "minimum": 1}}}
+    }},
+    "source_math": {"type": "array", "items": {
+      "type": "object", "additionalProperties": false, "required": ["latex", "anchor", "notes"],
+      "properties": {"latex": {"type": "string", "minLength": 1}, "anchor": {"type": "string", "minLength": 1}, "notes": {"type": "string"}}
+    }},
+    "enrichments": {"type": "array", "items": {
+      "type": "object", "additionalProperties": false, "required": ["id", "label", "type", "proposal", "source_observation_ids"],
+      "properties": {"id": {"type": "string"}, "label": {"const": "enrichment"},
+        "type": {"enum": ["explanation", "worked_example", "conceptual_example", "interaction_design", "visualization_design"]},
+        "proposal": {"type": "string"}, "source_observation_ids": {"$ref": "#/$defs/ids"}}
+    }},
+    "examples": {"type": "array", "items": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "origin", "purpose", "setup", "parameters", "derivation", "expected_outcome", "limitations", "enrichment_id", "source_observation_ids"],
+      "properties": {"id": {"type": "string"}, "origin": {"enum": ["source", "enrichment"]}, "purpose": {"type": "string"},
+        "setup": {"type": "string"}, "parameters": {"type": "array", "items": {"type": "object", "additionalProperties": false,
+          "required": ["symbol", "value"], "properties": {"symbol": {"type": "string"}, "value": {"type": "string"}}}},
+        "derivation": {"$ref": "#/$defs/strings"}, "expected_outcome": {"type": "string"}, "limitations": {"$ref": "#/$defs/strings"},
+        "enrichment_id": {"type": ["string", "null"]}, "source_observation_ids": {"$ref": "#/$defs/ids"}}
+    }},
+    "example_omission_reason": {"type": ["string", "null"]},
+    "visualization": {"type": "object", "additionalProperties": false,
+      "required": ["component", "description", "origin", "source_observation_ids"],
+      "properties": {"component": {"type": "string"}, "description": {"type": "string"},
+        "origin": {"enum": ["source_derived", "enrichment", "none"]}, "source_observation_ids": {"$ref": "#/$defs/ids"}}},
+    "interactivity": {"type": "object", "additionalProperties": false,
+      "required": ["recommended", "rationale", "component", "parameters", "outputs", "invariants", "enrichment_id"],
+      "properties": {"recommended": {"type": "boolean"}, "rationale": {"type": "string"}, "component": {"type": ["string", "null"]},
+        "parameters": {"type": "array", "items": {"type": "object", "additionalProperties": false,
+          "required": ["name", "symbol", "origin", "range", "default", "effect_on_change", "edge_cases"],
+          "properties": {"name": {"type": "string"}, "symbol": {"type": "string"}, "origin": {"enum": ["source", "enrichment"]},
+            "range": {"type": "string"}, "default": {"type": "string"}, "effect_on_change": {"type": "string", "minLength": 1},
+            "edge_cases": {"$ref": "#/$defs/strings"}}}},
+        "outputs": {"$ref": "#/$defs/strings"}, "invariants": {"$ref": "#/$defs/strings"}, "enrichment_id": {"type": ["string", "null"]}}
+    },
+    "edge_cases": {"type": "array", "items": {"type": "object", "additionalProperties": false,
+      "required": ["case", "expected_behavior", "origin", "source_observation_ids"],
+      "properties": {"case": {"type": "string"}, "expected_behavior": {"type": "string"},
+        "origin": {"enum": ["source", "enrichment"]}, "source_observation_ids": {"$ref": "#/$defs/ids"}}}},
+    "expansion_rationale": {"type": "string", "minLength": 1},
+    "blueprint": {"type": "array", "minItems": 1, "items": {"type": "object", "additionalProperties": false,
+      "required": ["companion_suffix", "focus", "source_observation_ids", "enrichment_ids"],
+      "properties": {"companion_suffix": {"type": ["string", "null"]}, "focus": {"type": "string"},
+        "source_observation_ids": {"$ref": "#/$defs/ids"}, "enrichment_ids": {"$ref": "#/$defs/ids"}}}}
+  },
+  "$defs": {"strings": {"type": "array", "items": {"type": "string"}},
+            "ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}}}
+}

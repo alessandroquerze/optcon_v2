@@ -1,0 +1,26 @@
+Example: path constraints
+As for the (inequality) path constraints g(x, u) ≤0, they represent restriction we want to (must) enforce
+at each time t = 1, . . . , T. For example:
+• Saturation of the inputs
+umin
+t
+≤ut ≤umax
+t
+• State limitations, e.g. due to obstacles or limitation in the states. In the drone example, we may
+need to ensure
+pmin
+y,t ≤py,t ≤pmax
+y,t
+(pmin
+y,t ≤x3,t ≤pmax
+y,t )
+(pdes
+x
+, pdes
+y
+)
+pmax
+y,t
+pmin
+y,t
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 29 |35

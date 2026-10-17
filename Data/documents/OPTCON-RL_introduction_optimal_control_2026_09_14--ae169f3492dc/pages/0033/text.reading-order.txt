@@ -1,0 +1,20 @@
+Example: trajectory generation for a pendulum (I)
+
+  Consider a pendulum with (nonlinear) dynamics
+
+                                ¨θ = −g sin θ +  1  τ
+                                        l      mℓ2
+
+  with state-space representation
+                                                                                                                  l    Mg                                                                         τ
+                           ˙x1 = x2
+                                  1                           ˙x2 = −g sin x1 +    u                        θ
+                                        l       mℓ2
+
+  and performance output y = θ.
+
+
+
+
+
+                                            Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 32 |35

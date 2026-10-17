@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0054",
+  "document_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1",
+  "source": {
+    "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+    "page_index": 53,
+    "physical_page_number": 54,
+    "pdf_label_raw": "<FEFF00350030>",
+    "pdf_label": "50",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Barrier function strategy for inequality constraints",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      302.2684326171875,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 50,
+        "total": 73,
+        "raw": "50 |73",
+        "bbox": [
+          150.6878204345703,
+          247.9285888671875,
+          447.87103271484375,
+          258.29376220703125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0054/text.txt",
+      "sha256": "97eb83d458b5c7d612e5366d3d2f7d762b25ad327b5ae66bdf184e300228f0b3"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0054/text.reading-order.txt",
+      "sha256": "c0f9be7a9ba9ec7d40858d3431fc3648c16145e431cb3dc2ddb55f4ceeafacf4"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0054/layout.json",
+      "sha256": "f24c5a67ac1bae4cf8f54ec27ec8c84cd247038bdf1fb53e1470cb0e28ff5e0a"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0054/render.png",
+      "sha256": "fd4bcacad88a200f4bde05384f9a0c818d90d9ba19ce716b8b4903ca912ac7a4",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "6d6c626cc7759299b0eb9541b4202419f18bca23a583070cceb172ee4e5eab58"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0053",
+    "next_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0055"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "pending",
+    "result": null
+  }
+}

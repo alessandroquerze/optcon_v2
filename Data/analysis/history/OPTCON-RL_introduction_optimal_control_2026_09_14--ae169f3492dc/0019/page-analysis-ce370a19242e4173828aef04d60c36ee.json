@@ -1,0 +1,780 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0019",
+  "document_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc",
+  "source": {
+    "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+    "page_index": 18,
+    "physical_page_number": 19,
+    "pdf_label_raw": "<FEFF00310038>",
+    "pdf_label": "18",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Discrete-time optimal control: main ingredients (I)",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      307.41876220703125,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 18,
+        "total": 35,
+        "raw": "18 |35",
+        "bbox": [
+          126.9540023803711,
+          247.92860412597656,
+          447.8712158203125,
+          258.29376220703125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0019/text.txt",
+      "sha256": "a62672c0296fa36eb63b478f0b4475261cde0abe5cb565d89476d80bbf81dfef"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0019/text.reading-order.txt",
+      "sha256": "662296a371bff7caea2bae94fe2e470b277d42b68c37c49120d5e1d73fe9f422"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0019/layout.json",
+      "sha256": "d9da018af8ad58af501fcf539c1da7bd67ab70f54c20c69e17d58ad229e3d000"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0019/render.png",
+      "sha256": "0885e9e3cb200da2e0c3d7afb428cc5a8caec42b7b0fcb37134dfa753e3c799f",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "030adb7fc0a1e9c0e1b5c14c6ddc1cbe2cc4c7139647a5633883a36255313438"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0018",
+    "next_page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0020"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "needs_review",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "ccfc5d0af76e65b363d250e3263f31a70eae29cce194975f34a0a6dad921a919",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0019",
+      "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+      "artifact_sha256": {
+        "text": "a62672c0296fa36eb63b478f0b4475261cde0abe5cb565d89476d80bbf81dfef",
+        "layout": "d9da018af8ad58af501fcf539c1da7bd67ab70f54c20c69e17d58ad229e3d000",
+        "render": "0885e9e3cb200da2e0c3d7afb428cc5a8caec42b7b0fcb37134dfa753e3c799f"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "Codex (identificatore esatto del modello non esposto nella sessione)",
+        "run_id": "page-analysis-0a4e81cecdf44e8b86ded34253e8c4ba"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0019",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0018",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0020"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0019",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0018",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0020"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0019",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0018",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0020"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Discrete-time optimal control: main ingredients (I)",
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "T uguaglianze significa T uguaglianze vettoriali; per stato n-dimensionale corrispondono a nT equazioni scalari, come chiarimento di enrichment.",
+          "Lo schema delle righe non assegna a ogni riga l'indice numerico di f; non trattare quel t ripetuto come una scelta di un unico istante.",
+          "Non è fornito un algoritmo per l'orizzonte infinito."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Minimizzazione vincolata",
+            "why": "Per interpretare la dinamica come uguaglianze.",
+            "origin": "source_context",
+            "page_numbers": [
+              18
+            ]
+          },
+          {
+            "concept": "Orizzonte e stack discreti",
+            "why": "Definiscono il numero degli aggiornamenti.",
+            "origin": "source_context",
+            "page_numbers": [
+              10
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "x_{t+1}=f_t(x_t,u_t),\\quad t=0,\\ldots,T-1",
+            "anchor": "xt+1 = ft(xt, ut)",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          },
+          {
+            "latex": "0<T<+\\infty,\\qquad T=+\\infty\\ \\text{in alcuni casi}",
+            "anchor": "0 < T < +∞",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          },
+          {
+            "latex": "x_1=f(x_0,u_0)\\quad\\text{i.e.}\\quad f_t(x_0,u_0)-x_1=0",
+            "anchor": "x1 = f(x0, u0)",
+            "notes": "Schema letterale della fonte, inclusa la differenza f/f_t."
+          },
+          {
+            "latex": "x_2=f(x_1,u_1)\\quad\\text{i.e.}\\quad f_t(x_1,u_1)-x_2=0",
+            "anchor": "x2 = f(x1, u1)",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          },
+          {
+            "latex": "x_T=f(x_{T-1},u_{T-1})\\quad\\text{i.e.}\\quad f_t(x_{T-1},u_{T-1})-x_T=0",
+            "anchor": "xT = f(xT −1, uT −1)",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explain-1",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "La versione rigorosamente indicizzata del residuo è f_t(x_t,u_t)−x_{t+1}=0 per ciascun t. Nello sviluppo delle prime righe ciò diventerebbe f_0, f_1, …, f_{T−1}; è una chiarificazione della formula generale, non una trascrizione delle righe.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "id": "example-1",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "Enrichment: x_{t+1}=x_t+u_t, T=2, x₀=0, 𝐮=(1,−0.5), stati candidati (x₁,x₂)=(1,0.5).",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Cambiare un solo stato candidato mostra quale uguaglianza si rompe.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "id": "visualization",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Due aggiornamenti con residuo per ogni arco e distinzione fra vincoli vettoriali e componenti scalari.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Valutare vincoli dinamici senza un ottimizzatore.",
+            "setup": "Enrichment: x_{t+1}=x_t+u_t, T=2, x₀=0, 𝐮=(1,−0.5), stati candidati (x₁,x₂)=(1,0.5).",
+            "parameters": [
+              {
+                "symbol": "T",
+                "value": "2"
+              },
+              {
+                "symbol": "x_0",
+                "value": "0"
+              },
+              {
+                "symbol": "\\mathbf{u}",
+                "value": "(1,−0.5)"
+              }
+            ],
+            "derivation": [
+              "Primo residuo: x₀+u₀−x₁=0.",
+              "Secondo residuo: x₁+u₁−x₂=0.",
+              "Se si cambia solo x₂ a 0.8, il secondo residuo diventa −0.3 e la sequenza non è una traiettoria del modello."
+            ],
+            "expected_outcome": "Gli stati non sono decisioni indipendenti dalla dinamica, anche se sono elencati fra le variabili.",
+            "limitations": [
+              "Dinamica e numeri sono enrichment."
+            ],
+            "enrichment_id": "example-1",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "DynamicsEqualityResidualTimeline",
+          "description": "Due aggiornamenti con residuo per ogni arco e distinzione fra vincoli vettoriali e componenti scalari.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Cambiare un solo stato candidato mostra quale uguaglianza si rompe.",
+          "component": "CandidateTrajectoryResidualChecker",
+          "parameters": [
+            {
+              "name": "Ultimo stato candidato",
+              "symbol": "x_2",
+              "origin": "enrichment",
+              "range": "[−1,2]",
+              "default": "0.5",
+              "effect_on_change": "Ricalcolare soltanto il secondo residuo per la sequenza scelta e aggiornare l'indicatore di coerenza; non propagare automaticamente x₂.",
+              "edge_cases": [
+                "x₂=0.5: entrambi i residui nulli"
+              ]
+            }
+          ],
+          "outputs": [
+            "Residui numerici di ciascuna transizione",
+            "Indicatore di traiettoria coerente"
+          ],
+          "invariants": [
+            "x₀=0, x₁=1, u₀=1, u₁=−0.5",
+            "Un residuo nullo non certifica ottimalità"
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "T=1",
+            "expected_behavior": "Un vincolo vettoriale, n componenti scalari.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "case": "T=+∞",
+            "expected_behavior": "Non rappresentarlo come uno stack finito di dimensione nT; servirà un trattamento successivo.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          }
+        ],
+        "expansion_rationale": "La dinamica come uguaglianza si illustra con una timeline; il caso infinito resta il solo richiamo della fonte.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Ogni transizione dinamica è un vincolo di uguaglianza del problema di controllo.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ],
+            "enrichment_ids": [
+              "explain-1",
+              "example-1",
+              "interaction",
+              "visualization"
+            ]
+          }
+        ]
+      },
+      "observations": [
+        {
+          "id": "s01",
+          "category": "equation",
+          "description": "La dinamica è x_{t+1}=f_t(x_t,u_t) per t=0,…,T−1.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0019",
+            "modality": "both",
+            "text_quote": "xt+1 = ft(xt, ut)",
+            "bbox": [
+              152.73699951171875,
+              75.28648376464844,
+              219.15057373046875,
+              85.24888610839844
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s02",
+          "category": "assumption",
+          "description": "Si lavorerà principalmente con 0<T<+∞, considerando in alcuni casi T=+∞.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0019",
+            "modality": "both",
+            "text_quote": "We will mainly work on a finite horizon",
+            "bbox": [
+              28.34600830078125,
+              94.09928131103516,
+              425.20855712890625,
+              103.181884765625
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s03",
+          "category": "concept",
+          "description": "La dinamica introduce T vincoli di uguaglianza; ogni aggiornamento è riscritto come residuo uguale a zero.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0019",
+            "modality": "both",
+            "text_quote": "The dynamics introduces T equality constraints",
+            "bbox": [
+              28.34600830078125,
+              132.073486328125,
+              211.88258361816406,
+              141.03988647460938
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s04",
+          "category": "structure",
+          "description": "Nello schema sviluppato la colonna sinistra usa f senza indice, mentre la destra ripete f_t nelle varie righe; la formula generale in alto è indicizzata correttamente dal tempo.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0019",
+            "modality": "both",
+            "text_quote": "ft(x0, u0) −x1 = 0",
+            "bbox": [
+              300.28399658203125,
+              150.8862762451172,
+              375.7232971191406,
+              160.9648895263672
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-05",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Discrete-time optimal control: main ingredients (I)",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0019",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              10.35200023651123,
+              6.720991134643555,
+              307.41876220703125,
+              21.06719207763672
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-06",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: The main ingredients of a discrete-time optimal control problem are",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0019",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              28.34600067138672,
+              35.43647766113281,
+              290.0931701660156,
+              44.40287780761719
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-07",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Dynamics: a (discrete-time) system in state space form",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0019",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              28.34600067138672,
+              56.35748291015625,
+              241.83599853515625,
+              65.32388305664062
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-08",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: x2 = f(x1, u1)\ni.e.\nft(x1, u1) −x2 = 0",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0019",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              79.49899291992188,
+              164.8342742919922,
+              375.7232971191406,
+              174.9128875732422
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-09",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: ...",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0019",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              88.87399291992188,
+              178.97547912597656,
+              91.43838500976562,
+              195.91188049316406
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-10",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: ...",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0019",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              356.2749938964844,
+              178.97547912597656,
+              358.8393859863281,
+              195.91188049316406
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-11",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: xT = f(xT −1, uT −1)\ni.e.\nft(xT −1, uT −1) −xT = 0",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0019",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              77.81298828125,
+              200.7772674560547,
+              375.7232666015625,
+              214.5637664794922
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-12",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 18 |35",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0019",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              126.9540023803711,
+              247.92860412597656,
+              447.8712158203125,
+              255.1179962158203
+            ]
+          },
+          "confidence": 0.98
+        }
+      ],
+      "contextual_role": "Interpreta la dinamica come parte dei vincoli di un problema di ottimizzazione su una traiettoria.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0018",
+          "role": "previous",
+          "note": "La pagina 18 scrive vincoli h(z)=0 in forma astratta; qui si riconoscono uguaglianze specifiche del controllo."
+        },
+        {
+          "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0020",
+          "role": "next",
+          "note": "La pagina 20 aggiunge variabili decisionali, costo di stadio e costo terminale."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "T",
+          "meaning": "Numero di transizioni dell'orizzonte",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        {
+          "symbol": "f_t",
+          "meaning": "Mappa temporale della dinamica generale",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        {
+          "symbol": "x_{t+1}",
+          "meaning": "Stato successivo, variabile vincolata dal precedente stato e ingresso",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        }
+      ],
+      "uncertainties": [
+        {
+          "description": "Nello schema sviluppato la fonte alterna f e f_t, mantenendo t nelle diverse righe; conservare la trascrizione e ancorare l'interpretazione alla formula generale indicizzata.",
+          "blocking": false,
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        }
+      ],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ],
+        "rationale": "Pagina con contenuto autonomo nella sequenza; nessun candidato automatico da confermare."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              10.35200023651123,
+              6.720991134643555,
+              307.41876220703125,
+              21.06719207763672
+            ],
+            "description": "Regione testuale sorgente: Discrete-time optimal control: main ingredients (I)",
+            "observation_ids": [
+              "transcription-05"
+            ]
+          },
+          {
+            "bbox": [
+              28.34600067138672,
+              35.43647766113281,
+              290.0931701660156,
+              44.40287780761719
+            ],
+            "description": "Regione testuale sorgente: The main ingredients of a discrete-time optimal control problem are",
+            "observation_ids": [
+              "transcription-06"
+            ]
+          },
+          {
+            "bbox": [
+              28.34600067138672,
+              56.35748291015625,
+              241.83599853515625,
+              65.32388305664062
+            ],
+            "description": "Regione testuale sorgente: Dynamics: a (discrete-time) system in state space form",
+            "observation_ids": [
+              "transcription-07"
+            ]
+          },
+          {
+            "bbox": [
+              152.73699951171875,
+              75.17028045654297,
+              300.8077392578125,
+              85.24888610839844
+            ],
+            "description": "Regione testuale sorgente: xt+1 = ft(xt, ut)\nt = 0, . . . , T −1",
+            "observation_ids": [
+              "s01"
+            ]
+          },
+          {
+            "bbox": [
+              28.34600830078125,
+              94.09928131103516,
+              425.20855712890625,
+              114.14088439941406
+            ],
+            "description": "Regione testuale sorgente: We will mainly work on a finite horizon, i.e. 0 < T < +∞(notation: 0, . . . , T −1). In some cases we\nwill also consider an infinite horizon, i.e., T = +∞.",
+            "observation_ids": [
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              28.34600830078125,
+              132.073486328125,
+              211.88258361816406,
+              141.03988647460938
+            ],
+            "description": "Regione testuale sorgente: The dynamics introduces T equality constraints",
+            "observation_ids": [
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              79.49900817871094,
+              150.8862762451172,
+              375.7232971191406,
+              160.9648895263672
+            ],
+            "description": "Regione testuale sorgente: x1 = f(x0, u0)\ni.e.\nft(x0, u0) −x1 = 0",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              79.49899291992188,
+              164.8342742919922,
+              375.7232971191406,
+              174.9128875732422
+            ],
+            "description": "Regione testuale sorgente: x2 = f(x1, u1)\ni.e.\nft(x1, u1) −x2 = 0",
+            "observation_ids": [
+              "transcription-08"
+            ]
+          },
+          {
+            "bbox": [
+              88.87399291992188,
+              178.97547912597656,
+              91.43838500976562,
+              195.91188049316406
+            ],
+            "description": "Regione testuale sorgente: ...",
+            "observation_ids": [
+              "transcription-09"
+            ]
+          },
+          {
+            "bbox": [
+              356.2749938964844,
+              178.97547912597656,
+              358.8393859863281,
+              195.91188049316406
+            ],
+            "description": "Regione testuale sorgente: ...",
+            "observation_ids": [
+              "transcription-10"
+            ]
+          },
+          {
+            "bbox": [
+              77.81298828125,
+              200.7772674560547,
+              375.7232666015625,
+              214.5637664794922
+            ],
+            "description": "Regione testuale sorgente: xT = f(xT −1, uT −1)\ni.e.\nft(xT −1, uT −1) −xT = 0",
+            "observation_ids": [
+              "transcription-11"
+            ]
+          },
+          {
+            "bbox": [
+              126.9540023803711,
+              247.92860412597656,
+              447.8712158203125,
+              255.1179962158203
+            ],
+            "description": "Regione testuale sorgente: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 18 |35",
+            "observation_ids": [
+              "transcription-12"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "La dinamica come uguaglianza si illustra con una timeline; il caso infinito resta il solo richiamo della fonte.",
+        "subpages": []
+      }
+    }
+  }
+}

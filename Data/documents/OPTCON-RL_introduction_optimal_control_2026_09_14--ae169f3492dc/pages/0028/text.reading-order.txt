@@ -1,0 +1,15 @@
+Example: trajectory generation for an autonomous drone (II)
+
+
+     Trajectory generation task: compute a (state-input) trajectory of the drone such that
+      • the time-evolution of the center of mass is close to a desired one, (pdesx,t, pdesy,t) for all t = 1, . . . , T
+      • the velocity is close to the corresponding desired velocity profile (vdesx,t, vdesy,t) for all t = 1, . . . , T
+      • angle and angular velocity, θt, ωt, are “not too high”
+
+      • inputs u1,t, u2,t are “not too high”.
+
+
+
+
+
+                                            Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 27 |35

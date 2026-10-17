@@ -1,0 +1,162 @@
+{
+  "verified_at": "2026-10-17T21:43:49.884924+00:00",
+  "status": "PASS",
+  "unchanged_math_and_simulation_files": [
+    {
+      "path": "frontend/src/math/introduction.test.ts",
+      "sha256": "a535632d3ace37ccdf9f50cce61c7c2656af7e944ef2b7d43d7fc07d6a17d1f2"
+    },
+    {
+      "path": "frontend/src/math/introduction.ts",
+      "sha256": "52f96f0375b0a61417015738796cd9a1c26077da3159f1fa4ba915330ac0ddd0"
+    },
+    {
+      "path": "frontend/src/math/introductionData.test.ts",
+      "sha256": "db16248e868c6f763915dc785e261a15f660352f149b76c79378a32ec4d2a821"
+    },
+    {
+      "path": "frontend/src/math/introductionData.ts",
+      "sha256": "913b1e4e728b71c03f4f8b1f400201f55b00f617a4a7eedd8427e76716cbea56"
+    },
+    {
+      "path": "frontend/src/math/math.test.ts",
+      "sha256": "dbe1526ba02412a2dfeed2216914acd022ea644a78fc13fef5a5c85fc29c9cdb"
+    },
+    {
+      "path": "frontend/src/math/numerics.ts",
+      "sha256": "8ec9d482b30a3e5336a64067241e8badca2ea4a2b59120f0fffc796606f86358"
+    },
+    {
+      "path": "frontend/src/math/sampling.ts",
+      "sha256": "76b7755e3e4e28a93e272acbf17510dd681343d8307ab0ddb6bed3b3fb48605c"
+    },
+    {
+      "path": "frontend/src/simulations/core.ts",
+      "sha256": "281cf74491cf49ed0d4ef1b622f8defd79a9b895d73e1965caf57c9a8998b6d8"
+    },
+    {
+      "path": "frontend/src/simulations/usePlayback.ts",
+      "sha256": "a69deb666dce0729e59a3dbc7f318ad3ebccc919dd23a8e2a1e89192173a8666"
+    }
+  ],
+  "existing_numerical_test_count": 32,
+  "default_readout_comparisons": [
+    {
+      "page": 2,
+      "F06_default_readouts": {},
+      "F06_1_default_readouts": {},
+      "status": "PASS"
+    },
+    {
+      "page": 8,
+      "F06_default_readouts": {
+        "continuous-at-one": "0.6321",
+        "continuous-initial": "0.0000",
+        "continuous-input": "1.0000"
+      },
+      "F06_1_default_readouts": {
+        "continuous-at-one": "0.6321",
+        "continuous-initial": "0.0000",
+        "continuous-input": "1.0000"
+      },
+      "status": "PASS"
+    },
+    {
+      "page": 12,
+      "F06_default_readouts": {
+        "linearization-exact": "0.2100",
+        "linearization-linear": "0.2000",
+        "linearization-error": "0.0100"
+      },
+      "F06_1_default_readouts": {
+        "linearization-exact": "0.2100",
+        "linearization-linear": "0.2000",
+        "linearization-error": "0.0100"
+      },
+      "status": "PASS"
+    },
+    {
+      "page": 16,
+      "F06_default_readouts": {
+        "weighted-total": "2.5000"
+      },
+      "F06_1_default_readouts": {
+        "weighted-total": "2.5000"
+      },
+      "status": "PASS"
+    },
+    {
+      "page": 17,
+      "F06_default_readouts": {
+        "constraint-kind": "ellisse e interno",
+        "constraint-residual": "0.00",
+        "constraint-status": "bordo"
+      },
+      "F06_1_default_readouts": {
+        "constraint-kind": "ellisse e interno",
+        "constraint-residual": "0.00",
+        "constraint-status": "bordo"
+      },
+      "status": "PASS"
+    },
+    {
+      "page": 27,
+      "F06_default_readouts": {
+        "euler-state-0": "0.000",
+        "euler-state-1": "0.000",
+        "euler-state-2": "0.000",
+        "euler-state-3": "0.000",
+        "euler-state-4": "0.000",
+        "euler-state-5": "0.000",
+        "euler-final-altitude": "0.9855",
+        "euler-exact-altitude": "1.0950",
+        "euler-error": "0.1095"
+      },
+      "F06_1_default_readouts": {
+        "euler-state-0": "0.000",
+        "euler-state-1": "0.000",
+        "euler-state-2": "0.000",
+        "euler-state-3": "0.000",
+        "euler-state-4": "0.000",
+        "euler-state-5": "0.000",
+        "euler-final-altitude": "0.9855",
+        "euler-exact-altitude": "1.0950",
+        "euler-error": "0.1095"
+      },
+      "status": "PASS"
+    },
+    {
+      "page": 30,
+      "F06_default_readouts": {
+        "path-status": "interno",
+        "path-violation": "0.00",
+        "path-residual-min": "-1.00",
+        "path-residual-max": "-1.00",
+        "path-residual": "-1.00"
+      },
+      "F06_1_default_readouts": {
+        "path-status": "interno",
+        "path-violation": "0.00",
+        "path-residual-min": "-1.00",
+        "path-residual-max": "-1.00",
+        "path-residual": "-1.00"
+      },
+      "status": "PASS"
+    },
+    {
+      "page": 34,
+      "F06_default_readouts": {
+        "pendulum-torque-1": "0.0000",
+        "pendulum-torque-2": "4.9050",
+        "pendulum-residual": "(0, 0) · (0, 0)"
+      },
+      "F06_1_default_readouts": {
+        "pendulum-torque-1": "0.0000",
+        "pendulum-torque-2": "4.9050",
+        "pendulum-residual": "(0, 0) · (0, 0)"
+      },
+      "status": "PASS"
+    }
+  ],
+  "scope": "No model, solver, fixture, numerical dataset or simulation behavior changed. Semantic review also checks hypotheses of statements about limits, signs, monotonicity and geometry."
+}

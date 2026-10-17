@@ -1,0 +1,20 @@
+Steepest descent (gradient method)
+
+    The update rule obtained for Dk = I,
+
+                                      zk+1 = zk −γk∇ℓ(zk),
+
+      is called steepest descent (or gradient method tout court).
+
+
+    The name steepest descent is due to the following property. The normalized negative gradient direction
+
+                                         dk = −∇ℓ(zk)                                              ∥∇ℓ(zk)∥,
+
+    minimizes the slope ∇ℓ(zk)T dk among all normalized directions, i.e., it gives the steepest descent.
+
+
+
+
+
+                                                      Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 32 |73

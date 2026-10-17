@@ -1,0 +1,678 @@
+{
+  "protocol_version": "1.0.0",
+  "request_sha256": "2486961cdbca211a54dec9116688dedbc4069d5e0caf8e5da635efc4624cac22",
+  "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0033",
+  "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+  "artifact_sha256": {
+    "text": "627fd2b6b2f54091a6c5416bcceeb1302e2aec7cec52a69465681db307df6a28",
+    "layout": "6b6f5f0428898e2695db27a4339a99a9a374519ef49ac4c98ef29e6481cbbdad",
+    "render": "922e9ccaa45fcd2f6d27fd9bfb83d5c1c6232f6da3c9a7f5d88ff911228ee319"
+  },
+  "agent": {
+    "provider": "OpenAI",
+    "model": "Codex (identificatore esatto del modello non esposto nella sessione)",
+    "run_id": "page-analysis-ce370a19242e4173828aef04d60c36ee"
+  },
+  "inspection": {
+    "text_page_ids": [
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0033",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0032",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0034"
+    ],
+    "layout_page_ids": [
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0033",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0032",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0034"
+    ],
+    "image_page_ids": [
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0033",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0032",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0034"
+    ],
+    "source_content_treated_as_data": true
+  },
+  "title": "Pendulum (I) — dinamica non lineare",
+  "companionPageCount": 1,
+  "didactic_plan": {
+    "source_scope_limits": [
+      "La fonte non include smorzamento, attrito, saturazioni o valori numerici.",
+      "Le identificazioni x₁=θ,x₂=θ̇,u=τ seguono dal confronto delle rappresentazioni, ma non sono stampate come tre uguaglianze separate.",
+      "L'uso l/ℓ e m/M è conservato; per i calcoli aggiunti si dichiarano le identificazioni necessarie.",
+      "Nessuna stabilità o linearizzazione sinθ≈θ è affermata in questa pagina."
+    ],
+    "prerequisites": [
+      {
+        "concept": "ODE e rappresentazione di stato",
+        "why": "Per passare da una derivata seconda a due equazioni del primo ordine.",
+        "origin": "source_context",
+        "page_numbers": [
+          8
+        ]
+      },
+      {
+        "concept": "Seno, coppia e accelerazione angolare",
+        "why": "Prerequisiti matematico-fisici, non sviluppati dalla slide.",
+        "origin": "enrichment",
+        "page_numbers": []
+      }
+    ],
+    "source_math": [
+      {
+        "latex": "\\ddot\\theta=-\\frac{g}{l}\\sin\\theta+\\frac{1}{m\\ell^2}\\tau",
+        "anchor": "¨θ =",
+        "notes": "Preservati il glifo l nel primo denominatore e ℓ nel secondo."
+      },
+      {
+        "latex": "\\dot x_1=x_2,\\qquad\\dot x_2=-\\frac{g}{l}\\sin x_1+\\frac{1}{m\\ell^2}u",
+        "anchor": "˙x1 = x2",
+        "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+      },
+      {
+        "latex": "y=\\theta",
+        "anchor": "and performance output y = θ.",
+        "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+      }
+    ],
+    "enrichments": [
+      {
+        "id": "explain-1",
+        "label": "enrichment",
+        "type": "explanation",
+        "proposal": "Identificazione esplicativa, etichettata enrichment: x₁=θ, x₂=θ̇ e u=τ. Nei soli esempi porre l=ℓ e m=M come parametri fisici convenzionali, senza alterare la trascrizione della fonte.",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ]
+      },
+      {
+        "id": "example-1",
+        "label": "enrichment",
+        "type": "worked_example",
+        "proposal": "Enrichment: assumere l=ℓ=1 m, m=1 kg, g=9.81 m/s²; θ=π/6, u=0.",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ]
+      },
+      {
+        "id": "interaction",
+        "label": "enrichment",
+        "type": "interaction_design",
+        "proposal": "Muovere angolo e coppia mostra il ruolo del seno senza anticipare un ottimizzatore o una linearizzazione non scritta.",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ]
+      },
+      {
+        "id": "visualization",
+        "label": "enrichment",
+        "type": "visualization_design",
+        "proposal": "Disegno angolo/coppia e grafico dell'accelerazione rispetto all'angolo per i parametri convenzionali dichiarati.",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "id": "example-1",
+        "origin": "enrichment",
+        "purpose": "Calcolare il contributo non lineare e della coppia.",
+        "setup": "Enrichment: assumere l=ℓ=1 m, m=1 kg, g=9.81 m/s²; θ=π/6, u=0.",
+        "parameters": [
+          {
+            "symbol": "l=ℓ,m,g",
+            "value": "1,1,9.81"
+          },
+          {
+            "symbol": "θ",
+            "value": "π/6"
+          },
+          {
+            "symbol": "u",
+            "value": "0"
+          }
+        ],
+        "derivation": [
+          "sin(π/6)=0.5.",
+          "ẋ₂=−9.81·0.5=−4.905 rad/s².",
+          "Con u=4.905 l'accelerazione istantanea si annulla."
+        ],
+        "expected_outcome": "La coppia può compensare il termine gravitazionale nell'istante considerato; per equilibrio serve anche velocità nulla.",
+        "limitations": [
+          "Valori, unità e identificazioni l=ℓ,m=M sono enrichment.",
+          "Accelerazione nulla da sola non certifica equilibrio o stabilità."
+        ],
+        "enrichment_id": "example-1",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ]
+      }
+    ],
+    "example_omission_reason": null,
+    "visualization": {
+      "component": "PendulumNonlinearAccelerationDiagram",
+      "description": "Disegno angolo/coppia e grafico dell'accelerazione rispetto all'angolo per i parametri convenzionali dichiarati.",
+      "origin": "enrichment",
+      "source_observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    },
+    "interactivity": {
+      "recommended": true,
+      "rationale": "Muovere angolo e coppia mostra il ruolo del seno senza anticipare un ottimizzatore o una linearizzazione non scritta.",
+      "component": "PendulumInstantaneousAccelerationInspector",
+      "parameters": [
+        {
+          "name": "Angolo candidato",
+          "symbol": "θ",
+          "origin": "source",
+          "range": "[−π,π] rad",
+          "default": "π/6",
+          "effect_on_change": "Ruotare il disegno e aggiornare −9.81sinθ+u; mantenere il modello non lineare.",
+          "edge_cases": [
+            "θ=0 o ±π: contributo gravitazionale nullo"
+          ]
+        },
+        {
+          "name": "Coppia",
+          "symbol": "u",
+          "origin": "source",
+          "range": "[−12,12] N·m",
+          "default": "0",
+          "effect_on_change": "Aggiornare l'accelerazione con contributo additivo u e la freccia di coppia.",
+          "edge_cases": [
+            "u=9.81sinθ: accelerazione nulla"
+          ]
+        }
+      ],
+      "outputs": [
+        "Accelerazione angolare",
+        "Contributi gravità e ingresso",
+        "Configurazione geometrica"
+      ],
+      "invariants": [
+        "l=ℓ=1,m=1,g=9.81 come enrichment",
+        "Calcolo istantaneo, non integrazione temporale",
+        "Nessuno smorzamento aggiunto",
+        "Range/default sono enrichment"
+      ],
+      "enrichment_id": "interaction"
+    },
+    "edge_cases": [
+      {
+        "case": "l=0,ℓ=0 o m=0",
+        "expected_behavior": "Parametri non validi per le formule, da escludere nei futuri controlli.",
+        "origin": "enrichment",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ]
+      },
+      {
+        "case": "Seno nullo",
+        "expected_behavior": "Non dedurre stabilità dalla sola accelerazione gravitazionale nulla.",
+        "origin": "enrichment",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ]
+      },
+      {
+        "case": "Velocità non nulla con accelerazione zero",
+        "expected_behavior": "La configurazione non è un equilibrio del sistema a due stati.",
+        "origin": "enrichment",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ]
+      }
+    ],
+    "expansion_rationale": "Una dinamica del secondo ordine e la sua forma di stato, lette sullo stesso pendolo, costituiscono un'unica unità.",
+    "blueprint": [
+      {
+        "companion_suffix": null,
+        "focus": "La dinamica non lineare del pendolo e la distinzione fra angolo, velocità, ingresso e uscita.",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ],
+        "enrichment_ids": [
+          "explain-1",
+          "example-1",
+          "interaction",
+          "visualization"
+        ]
+      }
+    ]
+  },
+  "observations": [
+    {
+      "id": "s01",
+      "category": "equation",
+      "description": "La dinamica stampata è θ̈=−(g/l)sinθ+τ/(mℓ²), con l e ℓ resi con glifi diversi.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0033",
+        "modality": "both",
+        "text_quote": "Consider a pendulum with (nonlinear) dynamics",
+        "bbox": [
+          91,
+          50,
+          197,
+          68
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "s02",
+      "category": "equation",
+      "description": "La rappresentazione di stato è ẋ₁=x₂ e ẋ₂=−(g/l)sinx₁+u/(mℓ²).",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0033",
+        "modality": "both",
+        "text_quote": "with state-space representation",
+        "bbox": [
+          88,
+          91,
+          203,
+          124
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "s03",
+      "category": "definition",
+      "description": "L'uscita di prestazione è y=θ.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0033",
+        "modality": "both",
+        "text_quote": "and performance output y = θ.",
+        "bbox": [
+          17,
+          130,
+          230,
+          146
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "s04",
+      "category": "diagram",
+      "description": "Il disegno riporta l'angolo θ, la coppia τ, una lunghezza etichettata l e la forza di peso etichettata Mg, con M maiuscola rispetto alla m delle equazioni.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0033",
+        "modality": "visual",
+        "text_quote": null,
+        "bbox": [
+          266,
+          39,
+          344,
+          140
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "transcription-05",
+      "category": "structure",
+      "description": "Trascrizione di una regione visibile della fonte: Example: trajectory generation for a pendulum (I)",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0033",
+        "modality": "visual",
+        "text_quote": null,
+        "bbox": [
+          10.35200023651123,
+          6.720991134643555,
+          304.01873779296875,
+          21.06719207763672
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "transcription-06",
+      "category": "structure",
+      "description": "Trascrizione di una regione visibile della fonte: Consider a pendulum with (nonlinear) dynamics",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0033",
+        "modality": "visual",
+        "text_quote": null,
+        "bbox": [
+          18.898000717163086,
+          32.19841003417969,
+          203.14854431152344,
+          41.16481018066406
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "transcription-07",
+      "category": "structure",
+      "description": "Trascrizione di una regione visibile della fonte: with state-space representation",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0033",
+        "modality": "visual",
+        "text_quote": null,
+        "bbox": [
+          18.897994995117188,
+          76.25741577148438,
+          138.3573455810547,
+          85.22381591796875
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "transcription-08",
+      "category": "structure",
+      "description": "Trascrizione di una regione visibile della fonte: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 32 |35",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0033",
+        "modality": "visual",
+        "text_quote": null,
+        "bbox": [
+          126.95381927490234,
+          247.92849731445312,
+          447.87103271484375,
+          255.1179962158203
+        ]
+      },
+      "confidence": 0.98
+    }
+  ],
+  "contextual_role": "Introduce la dinamica concreta dell'esempio continuo finale, senza ancora trasferire il pendolo fra equilibri.",
+  "context_notes": [
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0032",
+      "role": "previous",
+      "note": "La pagina 32 spiega la formulazione su funzioni; qui si assegna una dinamica non lineare specifica."
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0034",
+      "role": "next",
+      "note": "La pagina 34 cerca coppie di equilibrio e pone il trasferimento fra due di esse."
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "\\theta",
+      "meaning": "Angolo del pendolo e uscita di prestazione",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    },
+    {
+      "symbol": "\\tau",
+      "meaning": "Coppia indicata nel modello e nel disegno; qui non è il tempo d'integrazione della pagina 31",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    },
+    {
+      "symbol": "x_1,x_2",
+      "meaning": "Componenti dello stato; identificazione con θ e θ̇ dedotta dalla rappresentazione",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    },
+    {
+      "symbol": "u",
+      "meaning": "Ingresso della rappresentazione di stato, corrispondente alla coppia nell'identificazione del modello",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    },
+    {
+      "symbol": "l,\\ell",
+      "meaning": "Due forme grafiche della lunghezza nei denominatori; non unificate nella trascrizione",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    },
+    {
+      "symbol": "m,M",
+      "meaning": "m nelle equazioni e M nel peso Mg del disegno; non è esplicitata una distinzione fisica",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "description": "Variazioni di notazione della fonte: l nel termine g/l e nel disegno, ℓ nel momento mℓ²; m nelle equazioni, M nel peso Mg. Conservare i glifi e dichiarare ogni identificazione fisica aggiunta.",
+      "blocking": false,
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    }
+  ],
+  "progression": {
+    "assessment": "unique",
+    "related_page_ids": [],
+    "added": [],
+    "removed": [],
+    "changed": [],
+    "observation_ids": [
+      "s01",
+      "s02",
+      "s03",
+      "s04"
+    ],
+    "rationale": "Pagina con contenuto autonomo nella sequenza; nessun candidato automatico da confermare."
+  },
+  "coverage": {
+    "all_visible_regions_accounted_for": true,
+    "regions": [
+      {
+        "bbox": [
+          10.35200023651123,
+          6.720991134643555,
+          304.01873779296875,
+          21.06719207763672
+        ],
+        "description": "Regione testuale sorgente: Example: trajectory generation for a pendulum (I)",
+        "observation_ids": [
+          "transcription-05"
+        ]
+      },
+      {
+        "bbox": [
+          18.898000717163086,
+          32.19841003417969,
+          203.14854431152344,
+          41.16481018066406
+        ],
+        "description": "Regione testuale sorgente: Consider a pendulum with (nonlinear) dynamics",
+        "observation_ids": [
+          "transcription-06"
+        ]
+      },
+      {
+        "bbox": [
+          95.5040054321289,
+          49.184417724609375,
+          125.11753845214844,
+          63.94981384277344
+        ],
+        "description": "Regione testuale sorgente: ¨θ = −g",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          121.63200378417969,
+          49.184417724609375,
+          179.372802734375,
+          70.03080749511719
+        ],
+        "description": "Regione testuale sorgente: l sin θ +\n1\nmℓ2 τ",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          18.897994995117188,
+          76.25741577148438,
+          138.3573455810547,
+          85.22381591796875
+        ],
+        "description": "Regione testuale sorgente: with state-space representation",
+        "observation_ids": [
+          "transcription-07"
+        ]
+      },
+      {
+        "bbox": [
+          90.58899688720703,
+          95.18641662597656,
+          121.12730407714844,
+          105.14881896972656
+        ],
+        "description": "Regione testuale sorgente: ˙x1 = x2",
+        "observation_ids": [
+          "s02"
+        ]
+      },
+      {
+        "bbox": [
+          90.5889892578125,
+          108.2374267578125,
+          125.00752258300781,
+          123.99882507324219
+        ],
+        "description": "Regione testuale sorgente: ˙x2 = −g",
+        "observation_ids": [
+          "s02"
+        ]
+      },
+      {
+        "bbox": [
+          121.52300262451172,
+          108.2374267578125,
+          185.3151397705078,
+          129.0838165283203
+        ],
+        "description": "Regione testuale sorgente: l sin x1 +\n1\nmℓ2 u",
+        "observation_ids": [
+          "s02"
+        ]
+      },
+      {
+        "bbox": [
+          18.897994995117188,
+          135.3104248046875,
+          139.15838623046875,
+          144.27682495117188
+        ],
+        "description": "Regione testuale sorgente: and performance output y = θ.",
+        "observation_ids": [
+          "s03"
+        ]
+      },
+      {
+        "bbox": [
+          298.9788818359375,
+          82.83136749267578,
+          301.5054016113281,
+          90.80146789550781
+        ],
+        "description": "Regione testuale sorgente: l",
+        "observation_ids": [
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          280.31390380859375,
+          113.73336791992188,
+          284.2670593261719,
+          121.7034683227539
+        ],
+        "description": "Regione testuale sorgente: θ",
+        "observation_ids": [
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          286.6698913574219,
+          85.55536651611328,
+          339.5020751953125,
+          96.00946807861328
+        ],
+        "description": "Regione testuale sorgente: τ\nMg",
+        "observation_ids": [
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          126.95381927490234,
+          247.92849731445312,
+          447.87103271484375,
+          255.1179962158203
+        ],
+        "description": "Regione testuale sorgente: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 32 |35",
+        "observation_ids": [
+          "transcription-08"
+        ]
+      }
+    ]
+  },
+  "mapping_recommendation": {
+    "mode": "one_to_one",
+    "rationale": "Una dinamica del secondo ordine e la sua forma di stato, lette sullo stesso pendolo, costituiscono un'unica unità.",
+    "subpages": []
+  }
+}

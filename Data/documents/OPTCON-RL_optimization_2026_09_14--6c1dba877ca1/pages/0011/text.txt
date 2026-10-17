@@ -1,0 +1,8 @@
+Convex functions
+Convex function
+Let Z ⊂Rd be a convex set. A function ℓ: Z →R is convex if for any two points zA and zB in Z and
+for all θ ∈[0, 1], then
+ℓ(θzA + (1 −θ)zB) ≤θℓ(zA) + (1 −θ)ℓ(zB).
+Remark A function ℓis concave if −ℓis convex. A function ℓis strictly convex if the inequality holds
+strictly for zA̸ = zB and θ ∈(0, 1).
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 10 |73

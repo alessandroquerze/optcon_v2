@@ -1,0 +1,839 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0005",
+  "document_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc",
+  "source": {
+    "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+    "page_index": 4,
+    "physical_page_number": 5,
+    "pdf_label_raw": "<FEFF0034>",
+    "pdf_label": "4",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Optimal Control: motivating domains",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      230.5518035888672,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 4,
+        "total": 35,
+        "raw": "4 |35",
+        "bbox": [
+          130.12982177734375,
+          247.92868041992188,
+          447.87103271484375,
+          258.2938537597656
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0005/text.txt",
+      "sha256": "6cf4ce2fd1b9ba9c9ba6ef9f07da32cabe95230c847d023b671ae5d807c4be27"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0005/text.reading-order.txt",
+      "sha256": "cae14683e8bd3b22dc16bd0a58995d4a903fb60913a81a9a5506797c470bc371"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0005/layout.json",
+      "sha256": "0d60b6ccd687d8a0ca1b0baf609f6483ce5fed4d0a11425f64586e8ebd40d314"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0005/render.png",
+      "sha256": "532221bff743893e310d680571bd3003062b1cb306457de50b2f47b9f3031ee5",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "2c2ab76481caca3606c1b551b021c33e9edc029eb85813deb8b68a6084c230ad"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0004",
+    "next_page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0006"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "4c9decff6655a1d6443c3d04eb5988c067a605e9cb2ba1bfcef8a4ac5f7c7167",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0005",
+      "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+      "artifact_sha256": {
+        "text": "6cf4ce2fd1b9ba9c9ba6ef9f07da32cabe95230c847d023b671ae5d807c4be27",
+        "layout": "0d60b6ccd687d8a0ca1b0baf609f6483ce5fed4d0a11425f64586e8ebd40d314",
+        "render": "532221bff743893e310d680571bd3003062b1cb306457de50b2f47b9f3031ee5"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "Codex (identificatore esatto del modello non esposto nella sessione)",
+        "run_id": "page-analysis-2cfa14d822274e148142566d51037b35"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0005",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0004",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0006"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0005",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0004",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0006"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0005",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0004",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0006"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Motivating domains — Autonomous driving",
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Non sono fornite equazioni di pneumatici, velocità target, valori di aderenza o prova di ottimalità della traiettoria disegnata.",
+          "I grafici illustrano traiettorie: non inferire dai colori valori di accelerazione o dati sperimentali non leggibili."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Indice di prestazione contro vincolo",
+            "why": "Permette di distinguere comfort dal rispetto della corsia o dai limiti degli pneumatici.",
+            "origin": "source_context",
+            "page_numbers": [
+              2
+            ]
+          }
+        ],
+        "source_math": [],
+        "enrichments": [
+          {
+            "id": "example-1",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "Enrichment: due profili di guida rispettano corsia e attuatori; A percorre una tratta in 20 s con frenate brusche, B in 23 s con variazioni più dolci.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Illustrare un compromesso applicativo senza attribuire nuovi dati alla fonte.",
+            "setup": "Enrichment: due profili di guida rispettano corsia e attuatori; A percorre una tratta in 20 s con frenate brusche, B in 23 s con variazioni più dolci.",
+            "parameters": [
+              {
+                "symbol": "durata A",
+                "value": "20 s"
+              },
+              {
+                "symbol": "durata B",
+                "value": "23 s"
+              }
+            ],
+            "derivation": [
+              "Per il solo tempo, A è preferibile.",
+              "Per includere il comfort serve specificare un indice aggiuntivo.",
+              "La fonte non assegna pesi né una formula per scegliere fra A e B."
+            ],
+            "expected_outcome": "Una scelta ottima è relativa all'indice e ai vincoli dichiarati, non al solo aspetto del percorso.",
+            "limitations": [
+              "Tempi e profili sono ipotetici; nessuna simulazione di veicolo è eseguita."
+            ],
+            "enrichment_id": "example-1",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "DrivingTrajectoryAndObjectiveLegend",
+          "description": "Ripresa dei grafici planari con legenda qualitativa accelerazione/frenata e tabella separata degli obiettivi e vincoli.",
+          "origin": "source_derived",
+          "source_observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        "interactivity": {
+          "recommended": false,
+          "rationale": "Per questa pagina basta una lettura statica del grafico; slider di aderenza o sterzo richiederebbero un modello non presente.",
+          "component": null,
+          "parameters": [],
+          "outputs": [],
+          "invariants": [],
+          "enrichment_id": null
+        },
+        "edge_cases": [
+          {
+            "case": "Obiettivo racing confuso con guida passeggeri",
+            "expected_behavior": "Mostrare che minimum time è esplicitamente associato ai race vehicles, senza estenderlo a ogni caso.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "case": "Percorso entro corsia ma oltre limiti degli pneumatici",
+            "expected_behavior": "Non confondere ammissibilità geometrica con ammissibilità dinamica.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un dominio applicativo e una sola distinzione obiettivi/vincoli, con figure qualitative.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "La traiettoria di un veicolo va valutata insieme a comfort, consumo e limiti fisici.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ],
+            "enrichment_ids": [
+              "example-1"
+            ]
+          }
+        ]
+      },
+      "observations": [
+        {
+          "id": "s01",
+          "category": "structure",
+          "description": "Il dominio è Autonomous driving.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0005",
+            "modality": "both",
+            "text_quote": "Autonomous driving",
+            "bbox": [
+              28.34600067138672,
+              34.63948059082031,
+              105.77984619140625,
+              43.60588073730469
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s02",
+          "category": "concept",
+          "description": "Gli indici citati sono deviazione da lane center/velocità desiderata, tempo minimo per veicoli da corsa, comfort dei passeggeri e consumo.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0005",
+            "modality": "both",
+            "text_quote": "minimum time (race vehicles)",
+            "bbox": [
+              43.88100051879883,
+              92.30631256103516,
+              168.13906860351562,
+              101.388916015625
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s03",
+          "category": "assumption",
+          "description": "La fonte distingue vincoli geometrici di corsia/ostacoli, limiti sugli ingressi throttle/steering wheel e limiti interni di pneumatici, carico normale e velocità.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0005",
+            "modality": "both",
+            "text_quote": "internal systems (tire limits, normal load, velocities,...)",
+            "bbox": [
+              43.88100051879883,
+              181.97030639648438,
+              264.0257263183594,
+              191.05291748046875
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s04",
+          "category": "diagram",
+          "description": "Le figure mostrano un veicolo e traiettorie planari, con dettaglio ingrandito, assi in metri e una scala cromatica che distingue accelerazione e frenata; non è fornita una legge di ottimizzazione o una legenda numerica dell'accelerazione.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0005",
+            "modality": "both",
+            "text_quote": "acceleration",
+            "bbox": [
+              298,
+              63,
+              446,
+              180
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-05",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Optimal Control: motivating domains",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0005",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              10.35200023651123,
+              6.720991134643555,
+              230.5518035888672,
+              21.06719207763672
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-06",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Performance index",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0005",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              32.125,
+              51.57551574707031,
+              103.15682983398438,
+              60.54191589355469
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-07",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: • distance from desired “behavior”\n(lane center, velocity,...)",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0005",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              43.88100051879883,
+              66.40331268310547,
+              180.3064727783203,
+              86.44491577148438
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-08",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: • passengers confort",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0005",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              43.88100051879883,
+              107.25031280517578,
+              124.6251220703125,
+              116.33291625976562
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-09",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: • fuel consumption",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0005",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              43.88100051879883,
+              122.1943130493164,
+              119.61292266845703,
+              131.27691650390625
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-10",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Constraints",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0005",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              32.125,
+              137.2545166015625,
+              75.63894653320312,
+              146.22091674804688
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-11",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: • geometric (lane, obstacles,...)",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0005",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              43.88100051879883,
+              152.08230590820312,
+              167.64593505859375,
+              161.1649169921875
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-12",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: • inputs (throttle, steering wheel)",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0005",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              43.88100051879883,
+              167.02630615234375,
+              176.23574829101562,
+              176.10891723632812
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-13",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 4 |35",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0005",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              130.12982177734375,
+              247.92868041992188,
+              447.87103271484375,
+              255.1179962158203
+            ]
+          },
+          "confidence": 0.98
+        }
+      ],
+      "contextual_role": "Mostra che obiettivi e vincoli dipendono dall'applicazione, qui guida ordinaria o racing.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0004",
+          "role": "previous",
+          "note": "La pagina 4 parla di robot: condivide la struttura ma non i vincoli specifici."
+        },
+        {
+          "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0006",
+          "role": "next",
+          "note": "La pagina 6 passa ai droni e aggiunge exploration cost; nessun modello automobilistico prosegue nelle equazioni successive."
+        }
+      ],
+      "notation": [],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ],
+        "rationale": "Pagina con contenuto autonomo nella sequenza; nessun candidato automatico da confermare."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              10.35200023651123,
+              6.720991134643555,
+              230.5518035888672,
+              21.06719207763672
+            ],
+            "description": "Regione testuale sorgente: Optimal Control: motivating domains",
+            "observation_ids": [
+              "transcription-05"
+            ]
+          },
+          {
+            "bbox": [
+              28.34600067138672,
+              34.63948059082031,
+              105.77984619140625,
+              43.60588073730469
+            ],
+            "description": "Regione testuale sorgente: Autonomous driving",
+            "observation_ids": [
+              "s01"
+            ]
+          },
+          {
+            "bbox": [
+              32.125,
+              51.57551574707031,
+              103.15682983398438,
+              60.54191589355469
+            ],
+            "description": "Regione testuale sorgente: Performance index",
+            "observation_ids": [
+              "transcription-06"
+            ]
+          },
+          {
+            "bbox": [
+              43.88100051879883,
+              66.40331268310547,
+              180.3064727783203,
+              86.44491577148438
+            ],
+            "description": "Regione testuale sorgente: • distance from desired “behavior”\n(lane center, velocity,...)",
+            "observation_ids": [
+              "transcription-07"
+            ]
+          },
+          {
+            "bbox": [
+              43.88100051879883,
+              92.30631256103516,
+              168.13906860351562,
+              101.388916015625
+            ],
+            "description": "Regione testuale sorgente: • minimum time (race vehicles)",
+            "observation_ids": [
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              43.88100051879883,
+              107.25031280517578,
+              124.6251220703125,
+              116.33291625976562
+            ],
+            "description": "Regione testuale sorgente: • passengers confort",
+            "observation_ids": [
+              "transcription-08"
+            ]
+          },
+          {
+            "bbox": [
+              43.88100051879883,
+              122.1943130493164,
+              119.61292266845703,
+              131.27691650390625
+            ],
+            "description": "Regione testuale sorgente: • fuel consumption",
+            "observation_ids": [
+              "transcription-09"
+            ]
+          },
+          {
+            "bbox": [
+              32.125,
+              137.2545166015625,
+              75.63894653320312,
+              146.22091674804688
+            ],
+            "description": "Regione testuale sorgente: Constraints",
+            "observation_ids": [
+              "transcription-10"
+            ]
+          },
+          {
+            "bbox": [
+              43.88100051879883,
+              152.08230590820312,
+              167.64593505859375,
+              161.1649169921875
+            ],
+            "description": "Regione testuale sorgente: • geometric (lane, obstacles,...)",
+            "observation_ids": [
+              "transcription-11"
+            ]
+          },
+          {
+            "bbox": [
+              43.88100051879883,
+              167.02630615234375,
+              176.23574829101562,
+              176.10891723632812
+            ],
+            "description": "Regione testuale sorgente: • inputs (throttle, steering wheel)",
+            "observation_ids": [
+              "transcription-12"
+            ]
+          },
+          {
+            "bbox": [
+              43.88100051879883,
+              181.97030639648438,
+              264.0257263183594,
+              191.05291748046875
+            ],
+            "description": "Regione testuale sorgente: • internal systems (tire limits, normal load, velocities,...)",
+            "observation_ids": [
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              378.1995849609375,
+              171.0925750732422,
+              422.19500732421875,
+              172.4832763671875
+            ],
+            "description": "Regione testuale sorgente: −120\n−110\n−100\n−90\n−80\n−70\n−60",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              375.4591979980469,
+              168.00338745117188,
+              376.8846130371094,
+              169.3940887451172
+            ],
+            "description": "Regione testuale sorgente: 65",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              375.4591979980469,
+              164.54559326171875,
+              376.8846130371094,
+              165.93629455566406
+            ],
+            "description": "Regione testuale sorgente: 70",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              375.4591979980469,
+              161.0876922607422,
+              376.8846130371094,
+              162.4783935546875
+            ],
+            "description": "Regione testuale sorgente: 75",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              375.4591979980469,
+              157.6298065185547,
+              376.8846130371094,
+              159.0205078125
+            ],
+            "description": "Regione testuale sorgente: 80",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              375.4591979980469,
+              154.1619873046875,
+              376.8846130371094,
+              155.5526885986328
+            ],
+            "description": "Regione testuale sorgente: 85",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              375.4591979980469,
+              150.70420837402344,
+              376.8846130371094,
+              152.09490966796875
+            ],
+            "description": "Regione testuale sorgente: 90",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              375.4591979980469,
+              147.24630737304688,
+              376.8846130371094,
+              148.6370086669922
+            ],
+            "description": "Regione testuale sorgente: 95",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              374.79156494140625,
+              143.78842163085938,
+              376.8818054199219,
+              145.1791229248047
+            ],
+            "description": "Regione testuale sorgente: 100",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              374.79156494140625,
+              140.3206024169922,
+              376.8818054199219,
+              141.7113037109375
+            ],
+            "description": "Regione testuale sorgente: 105",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              374.79156494140625,
+              136.86282348632812,
+              376.8818054199219,
+              138.25352478027344
+            ],
+            "description": "Regione testuale sorgente: 110",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              374.79156494140625,
+              133.40492248535156,
+              442.8829650878906,
+              137.07981872558594
+            ],
+            "description": "Regione testuale sorgente: 115\nacceleration",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              428.97161865234375,
+              165.55828857421875,
+              435.66375732421875,
+              167.97071838378906
+            ],
+            "description": "Regione testuale sorgente: brake",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              370.7395324707031,
+              148.74020385742188,
+              373.95611572265625,
+              153.87387084960938
+            ],
+            "description": "Regione testuale sorgente: [m]",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              398.11724853515625,
+              172.61830139160156,
+              403.25091552734375,
+              175.83489990234375
+            ],
+            "description": "Regione testuale sorgente: [m]",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              130.12982177734375,
+              247.92868041992188,
+              447.87103271484375,
+              255.1179962158203
+            ],
+            "description": "Regione testuale sorgente: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 4 |35",
+            "observation_ids": [
+              "transcription-13"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un dominio applicativo e una sola distinzione obiettivi/vincoli, con figure qualitative.",
+        "subpages": []
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+Discrete-time optimal control problem (constrained)
+
+
+   We look for a solution of the discrete-time optimal control problem
+
+
+
+                                           T −1
+                           min   X ℓt(xt, ut) + ℓT (xT )                              (5a)
+                         x0∈Rn,x∈RnT ,u∈RmT  t=0
+                                          subj.to xt+1 = ft(xt, ut),   t = 0, . . . , T −1
+                                               r(x0, xT ) = 0,                                      (5b)
+                                                  gt(xt, ut) ≤0,   t = 0, . . . , T −1
+
+    where
+      •  ℓt : Rn × Rm →R is the so-called stage cost,
+      • ℓT  : Rn →R is the terminal cost,
+      • r : Rn × Rn →Rp0 identifies a boundary constraint on initial and final states,
+      •  gt : Rn × Rm →Rp for each t identifies point-wise constraints on state and input at some time t.
+
+
+
+
+
+                                  Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Optimality Conditions for Optimal Control 16 |18

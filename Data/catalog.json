@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "pipeline_version": "1.0.0",
+  "source_root": "C:\\Users\\querz\\Desktop\\optconv2",
+  "artifact_root": "C:\\Users\\querz\\Desktop\\optconv2\\Data",
+  "document_count": 3,
+  "page_count": 137,
+  "documents": [
+    {
+      "document_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc",
+      "source_path": "OPTCON-RL_introduction_optimal_control_2026_09_14.pdf",
+      "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+      "page_count": 36,
+      "manifest_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/manifest.json"
+    },
+    {
+      "document_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574",
+      "source_path": "OPTCON-RL_optimality_conditions_KKT_2026_10_08.pdf",
+      "pdf_sha256": "937db0d7a574f549eb1181f22207ccfa886ae6d79206720718692bfd6015bd97",
+      "page_count": 20,
+      "manifest_path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/manifest.json"
+    },
+    {
+      "document_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1",
+      "source_path": "OPTCON-RL_optimization_2026_09_14.pdf",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "page_count": 81,
+      "manifest_path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/manifest.json"
+    }
+  ]
+}

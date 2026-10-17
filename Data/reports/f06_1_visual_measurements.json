@@ -1,0 +1,998 @@
+{
+  "verified_at": "2026-10-17T21:40:25.489Z",
+  "base_url": "http://127.0.0.1:4173",
+  "browser": "Chrome headless / SwiftShader",
+  "pages": [
+    {
+      "page": 2,
+      "expectedMode": "2D_ONLY",
+      "width": 960,
+      "height": 1280,
+      "scrollHeight": 1280,
+      "scale": 1,
+      "liveOutputs": {},
+      "unexplainedEquationCards": 0,
+      "formulaOccurrences": [
+        {
+          "formulaId": "p02-example-choice",
+          "concept": "Il costo misura quanto la scelta u si allontana dall’obiettivo 1; il limite esclude le scelte troppo grandi. Perciò la migliore scelta ammessa è 0.6, anche se il suo costo non è zero.",
+          "fontSize": "22px"
+        }
+      ],
+      "formulaContexts": [],
+      "proseWords": 123,
+      "blocks": [
+        {
+          "block": "slide-block block-header",
+          "top": 40,
+          "bottom": 110.65625,
+          "height": 70.65625
+        },
+        {
+          "block": "slide-block block-explanation",
+          "top": 116.65625,
+          "bottom": 217.4375,
+          "height": 100.78125
+        },
+        {
+          "block": "slide-block block-main_visual",
+          "top": 223.4375,
+          "bottom": 608.609375,
+          "height": 385.171875
+        },
+        {
+          "block": "slide-block block-worked_example",
+          "top": 614.609375,
+          "bottom": 958.34375,
+          "height": 343.734375
+        },
+        {
+          "block": "slide-block block-takeaway",
+          "top": 1195.609375,
+          "bottom": 1240,
+          "height": 44.390625
+        }
+      ],
+      "formulaOverflow": [
+        {
+          "width": 822,
+          "scrollWidth": 822
+        }
+      ],
+      "warnings": [],
+      "alerts": [],
+      "formulas": [
+        {
+          "formulaId": "p02-example-choice",
+          "latex": "J(u)=(u-1)^2,\\qquad |u|\\leq0.6",
+          "conceptualExplanation": "Il costo misura quanto la scelta u si allontana dall’obiettivo 1; il limite esclude le scelte troppo grandi. Perciò la migliore scelta ammessa è 0.6, anche se il suo costo non è zero.",
+          "details": "A cosa serve. Separare la preferenza espressa dal costo dall’ammissibilità imposta dal vincolo.uuuDecisione scalare dell’esempio, senza una dinamica.JJJCosto da minimizzare, non una misura di stabilità.Vale quando. Obiettivo 1 e limite 0.6 fissati soltanto per questo esempio aggiunto.Senza vincolo si può raggiungere il bersaglio; con il vincolo si sceglie il punto dell’intervallo più vicino al bersaglio."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "expectedMode": "2D_PRIMARY_WITH_3D",
+      "width": 960,
+      "height": 1280,
+      "scrollHeight": 1280,
+      "scale": 1,
+      "liveOutputs": {
+        "continuous-at-one": "0.6321",
+        "continuous-initial": "0.0000",
+        "continuous-input": "1.0000"
+      },
+      "unexplainedEquationCards": 0,
+      "formulaOccurrences": [
+        {
+          "formulaId": "p08-source-math-1",
+          "concept": "L’ingresso cambia lo stato a partire da x⁰: f ne determina la velocità di cambiamento, non direttamente lo stato futuro.",
+          "fontSize": "22px"
+        },
+        {
+          "formulaId": "p08-enrichment-0",
+          "concept": "Per a>0 lo stato tende a u/a, attenuando l’effetto iniziale. Per a=0 manca il richiamo e l’ingresso accumula stato nel tempo.",
+          "fontSize": "22px"
+        }
+      ],
+      "formulaContexts": [
+        {
+          "formulaId": "p08-enrichment-0",
+          "text": "Modello aggiunto ẋ=−ax+u, y=x: −ax richiama verso zero, u agisce sullo stato. Il terzo asse 3D è x(t;u)."
+        }
+      ],
+      "proseWords": 206,
+      "blocks": [
+        {
+          "block": "slide-block block-header",
+          "top": 40,
+          "bottom": 110.65625,
+          "height": 70.65625
+        },
+        {
+          "block": "slide-block block-formula",
+          "top": 116.65625,
+          "bottom": 269.234375,
+          "height": 152.578125
+        },
+        {
+          "block": "slide-block block-main_visual",
+          "top": 275.234375,
+          "bottom": 669.421875,
+          "height": 394.1875
+        },
+        {
+          "block": "slide-block block-controls",
+          "top": 675.421875,
+          "bottom": 854.984375,
+          "height": 179.5625
+        },
+        {
+          "block": "slide-block block-worked_example",
+          "top": 860.984375,
+          "bottom": 1113.25,
+          "height": 252.265625
+        },
+        {
+          "block": "slide-block block-takeaway",
+          "top": 1195.609375,
+          "bottom": 1240,
+          "height": 44.390625
+        }
+      ],
+      "formulaOverflow": [
+        {
+          "width": 850,
+          "scrollWidth": 850
+        },
+        {
+          "width": 822,
+          "scrollWidth": 822
+        }
+      ],
+      "warnings": [],
+      "alerts": [],
+      "formulas": [
+        {
+          "formulaId": "p08-source-math-1",
+          "latex": "\\dot{x}(t)=f(x(t),u(t),t),\\qquad x(0)=x^0",
+          "displayedLatex": "\\dot{x}(t)=f(x(t),u(t),t),\\qquad x(0)=x^0",
+          "conceptualExplanation": "L’ingresso cambia lo stato a partire da x⁰: f ne determina la velocità di cambiamento, non direttamente lo stato futuro.",
+          "details": "A cosa serve. Determinare la traiettoria dello stato a partire da un ingresso e da uno stato iniziale.tttTempo continuo.x(t)x(t)x(t)Stato del sistema.u(t)u(t)u(t)Ingresso applicato.fffMappa che determina la derivata dello stato.x0x^0x0Stato assegnato al tempo zero.Vale quando. La sola notazione non garantisce esistenza o unicità: servono ipotesi di regolarità sul modello e sull’ingresso."
+        },
+        {
+          "formulaId": "p08-source-math-2",
+          "latex": "y(t)=h(x(t),u(t),t)",
+          "displayedLatex": "y(t)=h(x(t),u(t),t)",
+          "conceptualExplanation": "La mappa h descrive ciò che il modello rende osservabile: l’uscita può dipendere sia dallo stato sia dall’ingresso. In generale l’uscita non coincide con lo stato.",
+          "details": "A cosa serve. Collegare l’evoluzione interna alla quantità che si vuole misurare o controllare.y(t)y(t)y(t)Uscita.hhhMappa di uscita, distinta dalla dinamica f."
+        },
+        {
+          "formulaId": "p08-source-math-3",
+          "latex": "x(t)\\in\\mathbb{R}^n,\\quad u(t)\\in\\mathbb{R}^m,\\quad y(t)\\in\\mathbb{R}^p",
+          "displayedLatex": "x(t)\\in\\mathbb{R}^n,\\quad u(t)\\in\\mathbb{R}^m,\\quad y(t)\\in\\mathbb{R}^p",
+          "conceptualExplanation": "Stato, ingresso e uscita possono contenere numeri diversi di componenti: conoscere l’uscita non equivale quindi a conoscere tutto lo stato.",
+          "details": "A cosa serve. Controllare che le dimensioni dei vettori e delle mappe siano compatibili.n,m,pn,m,pn,m,pNumeri di componenti rispettivamente dello stato, dell’ingresso e dell’uscita.Rn\\mathbb R^nRnSpazio dei vettori reali con n componenti."
+        },
+        {
+          "formulaId": "p08-source-math-5",
+          "latex": "\\dot{x}(t)=f(x(t),u(t))",
+          "displayedLatex": "\\dot{x}(t)=f(x(t),u(t))",
+          "conceptualExplanation": "La stessa coppia stato–ingresso produce la stessa derivata a qualunque istante. Questa invarianza della legge non obbliga lo stato a rimanere costante.",
+          "details": "A cosa serve. Distinguere un modello senza dipendenza esplicita dal tempo da una traiettoria costante.fffLegge dinamica senza argomento temporale esplicito."
+        },
+        {
+          "formulaId": "p08-enrichment-0",
+          "latex": "\\dot x=-ax+u,\\quad y=x;\\quad x(t)=u/a+(x^0-u/a)e^{-at}\\ (a>0);\\quad x(t)=x^0+ut\\ (a=0)",
+          "displayedLatex": "\\dot x=-ax+u,\\quad y=x;\\quad x(t)=u/a+(x^0-u/a)e^{-at}\\ (a>0);\\quad x(t)=x^0+ut\\ (a=0)",
+          "conceptualExplanation": "Per a>0 lo stato tende a u/a, attenuando l’effetto iniziale. Per a=0 manca il richiamo e l’ingresso accumula stato nel tempo.",
+          "details": "A cosa serve. Confrontare una risposta analitica con la famiglia di curve mostrata, senza errori di integrazione.aaaIntensità del richiamo verso l’equilibrio, in s⁻¹.uuuIngresso costante, in unità di stato/s.x0x^0x0Valore iniziale.y=xy=xy=xScelta di uscita valida solo in questo esempio.Vale quando. Modello scalare aggiunto; a≥0, ingresso costante e tempo non negativo. La divisione per a è usata solo per a>0; a=0 usa il ramo integratore.a aumenta la rapidità del decadimento, ma cambia anche l’equilibrio u/a: non garantisce che ogni valore di x diminuisca.u seleziona una sezione della famiglia e sposta la risposta.x⁰ sposta la partenza; il suo effetto decade per a>0 e persiste per a=0."
+        }
+      ],
+      "alternativeGeometry": {
+        "scrollHeight": 1280,
+        "bottom": 1240
+      },
+      "defaultView": "2D",
+      "otherView": "3D"
+    },
+    {
+      "page": 12,
+      "expectedMode": "3D_PRIMARY_WITH_2D",
+      "width": 960,
+      "height": 1280,
+      "scrollHeight": 1280,
+      "scale": 1,
+      "liveOutputs": {
+        "linearization-exact": "0.2100",
+        "linearization-linear": "0.2000",
+        "linearization-error": "0.0100"
+      },
+      "unexplainedEquationCards": 0,
+      "formulaOccurrences": [
+        {
+          "formulaId": "p12-source-math-2",
+          "concept": "Aₜ e Bₜ misurano le sensibilità locali: prevedono come piccoli scarti di stato e ingresso cambiano il passo successivo.",
+          "fontSize": "22px"
+        },
+        {
+          "formulaId": "p12-enrichment-2",
+          "concept": "Il piano trascura la curvatura (Δx)²: lo scarto cresce con |Δx|. Cambiare Δu trasla entrambe le previsioni allo stesso modo.",
+          "fontSize": "22px"
+        }
+      ],
+      "formulaContexts": [
+        {
+          "formulaId": "p12-enrichment-2",
+          "text": "L’altezza è la variazione futura di stato; la sezione 2D confronta superficie esatta e piano tangente."
+        }
+      ],
+      "proseWords": 205,
+      "blocks": [
+        {
+          "block": "slide-block block-header",
+          "top": 40,
+          "bottom": 110.65625,
+          "height": 70.65625
+        },
+        {
+          "block": "slide-block block-formula",
+          "top": 116.65625,
+          "bottom": 269.234375,
+          "height": 152.578125
+        },
+        {
+          "block": "slide-block block-main_visual",
+          "top": 275.234375,
+          "bottom": 688.015625,
+          "height": 412.78125
+        },
+        {
+          "block": "slide-block block-controls",
+          "top": 694.015625,
+          "bottom": 847.796875,
+          "height": 153.78125
+        },
+        {
+          "block": "slide-block block-worked_example",
+          "top": 853.796875,
+          "bottom": 1148.390625,
+          "height": 294.59375
+        },
+        {
+          "block": "slide-block block-takeaway",
+          "top": 1195.609375,
+          "bottom": 1240,
+          "height": 44.390625
+        }
+      ],
+      "formulaOverflow": [
+        {
+          "width": 850,
+          "scrollWidth": 850
+        },
+        {
+          "width": 822,
+          "scrollWidth": 822
+        }
+      ],
+      "warnings": [],
+      "alerts": [],
+      "formulas": [
+        {
+          "formulaId": "p12-source-math-0",
+          "latex": "x_{t+1}=f_t(x_t,u_t),\\quad t\\in\\mathbb{N}_0",
+          "displayedLatex": "x_{t+1}=f_t(x_t,u_t),\\quad t\\in\\mathbb{N}_0",
+          "conceptualExplanation": "La mappa discreta trasforma stato e azione attuali nello stato del passo successivo. Cambiare l’ingresso può quindi modificare tutta la sequenza futura.",
+          "details": "A cosa serve. Definire la dinamica da confrontare con la sua approssimazione locale.t∈N0t\\in\\mathbb N_0t∈N0​Indice intero non negativo, non tempo continuo.ftf_tft​Mappa di transizione al passo t."
+        },
+        {
+          "formulaId": "p12-source-math-1",
+          "latex": "\\bar{x}_{t+1}=f_t(\\bar{x}_t,\\bar{u}_t)",
+          "displayedLatex": "\\bar{x}_{t+1}=f_t(\\bar{x}_t,\\bar{u}_t)",
+          "conceptualExplanation": "Il riferimento nominale è una traiettoria realizzabile dal modello. Questa coerenza permette di sottrarre la sua evoluzione quando si studiano piccole perturbazioni.",
+          "details": "A cosa serve. Fissare il punto di confronto per la linearizzazione.xˉt,uˉt\\bar x_t,\\bar u_txˉt​,uˉt​Stato e ingresso della traiettoria nominale.Vale quando. Una traiettoria nominale non è necessariamente un equilibrio."
+        },
+        {
+          "formulaId": "p12-source-math-2",
+          "latex": "\\Delta x_{t+1}=A_t\\Delta x_t+B_t\\Delta u_t,\\quad t\\in\\mathbb{N}_0",
+          "displayedLatex": "\\Delta x_{t+1}=A_t\\Delta x_t+B_t\\Delta u_t,\\quad t\\in\\mathbb{N}_0",
+          "conceptualExplanation": "Aₜ e Bₜ misurano le sensibilità locali: prevedono come piccoli scarti di stato e ingresso cambiano il passo successivo.",
+          "details": "A cosa serve. Sostituire localmente una mappa nonlineare con una relazione lineare più semplice.Δxt,Δut\\Delta x_t,\\Delta u_tΔxt​,Δut​Scarti rispetto alla traiettoria nominale, non passi temporali.At,BtA_t,B_tAt​,Bt​Jacobiani rispetto a stato e ingresso.Vale quando. Dinamica differenziabile presso la nominale; è un’approssimazione al primo ordine, non un’identità globale per la dinamica nonlineare.La slide scrive l’uguaglianza per il sistema lineare delle variazioni; i termini di ordine superiore sono esclusi da quel modello. Anche se f non dipende esplicitamente da t, i Jacobiani possono cambiare lungo la nominale."
+        },
+        {
+          "formulaId": "p12-enrichment-0",
+          "latex": "\\Delta x_t=x_t-\\bar x_t,\\quad\\Delta u_t=u_t-\\bar u_t",
+          "displayedLatex": "\\Delta x_t=x_t-\\bar x_t,\\quad\\Delta u_t=u_t-\\bar u_t",
+          "conceptualExplanation": "Sottrarre la nominale separa la deviazione dal movimento già previsto. Uno scarto nullo indica coincidenza con il riferimento a quel passo.",
+          "details": "A cosa serve. Esprimere il problema in coordinate locali.Δ\\DeltaΔDifferenza rispetto al valore nominale.xˉt,uˉt\\bar x_t,\\bar u_txˉt​,uˉt​Riferimenti di stato e ingresso."
+        },
+        {
+          "formulaId": "p12-enrichment-1",
+          "latex": "A_t=\\left.\\frac{\\partial f_t}{\\partial x}\\right|_{(\\bar x_t,\\bar u_t)},\\quad B_t=\\left.\\frac{\\partial f_t}{\\partial u}\\right|_{(\\bar x_t,\\bar u_t)}",
+          "displayedLatex": "\\begin{gathered}A_t=\\left.\\frac{\\partial f_t}{\\partial x}\\right|_{(\\bar x_t,\\bar u_t)},\\\\B_t=\\left.\\frac{\\partial f_t}{\\partial u}\\right|_{(\\bar x_t,\\bar u_t)}\\end{gathered}",
+          "conceptualExplanation": "Le derivate misurano quanto il prossimo stato è sensibile a ciascuna variabile, tenendo ferma l’altra. Valutarle sulla nominale dà la pendenza del piano tangente.",
+          "details": "A cosa serve. Costruire le matrici del modello lineare delle variazioni.∂ft/∂x\\partial f_t/\\partial x∂ft​/∂xJacobiano rispetto allo stato.∂ft/∂u\\partial f_t/\\partial u∂ft​/∂uJacobiano rispetto all’ingresso.Vale quando. Derivate esistenti nel punto nominale; nessuna garanzia di stabilità deriva da questa sola costruzione."
+        },
+        {
+          "formulaId": "p12-enrichment-2",
+          "latex": "f(x,u)=x^2+u,\\quad\\Delta x_{t+1}^{\\rm exact}=2\\Delta x+(\\Delta x)^2+\\Delta u,\\quad\\Delta x_{t+1}^{\\rm lin}=2\\Delta x+\\Delta u",
+          "displayedLatex": "\\begin{gathered}f(x,u)=x^2+u,\\\\\\Delta x_{t+1}^{\\rm exact}=2\\Delta x+(\\Delta x)^2+\\Delta u,\\\\\\Delta x_{t+1}^{\\rm lin}=2\\Delta x+\\Delta u\\end{gathered}",
+          "conceptualExplanation": "Il piano trascura la curvatura (Δx)²: lo scarto cresce con |Δx|. Cambiare Δu trasla entrambe le previsioni allo stesso modo.",
+          "details": "A cosa serve. Misurare l’errore di un passo della linearizzazione con un esempio calcolabile esattamente.f(x,u)=x2+uf(x,u)=x^2+uf(x,u)=x2+uMappa scalare aggiunta.(xˉ,uˉ)=(1,0)(\\bar x,\\bar u)=(1,0)(xˉ,uˉ)=(1,0)Nominale fissa: f(1,0)=1, A=2, B=1.Vale quando. Confronto locale di un passo, senza stima globale o garanzie di stabilità.Δx muove il punto; lo scarto è esattamente (Δx)² per questa mappa.Δu cambia la sezione; non cambia lo scarto in questo esempio additivo."
+        },
+        {
+          "formulaId": "p12-example-error",
+          "latex": "\\Delta x_{t+1}^{\\rm exact}-\\Delta x_{t+1}^{\\rm lin}=(\\Delta x)^2",
+          "displayedLatex": "\\Delta x_{t+1}^{\\rm exact}-\\Delta x_{t+1}^{\\rm lin}=(\\Delta x)^2",
+          "conceptualExplanation": "Lo scarto misura ciò che il piano tangente trascura: qui è sempre non negativo e si annulla se Δx=0, anche con Δu diverso da zero.",
+          "details": "A cosa serve. Interpretare la distanza verticale tra le due previsioni, senza dividere per una variazione eventualmente nulla."
+        }
+      ],
+      "alternativeGeometry": {
+        "scrollHeight": 1280,
+        "bottom": 1240
+      },
+      "defaultView": "3D",
+      "otherView": "2D"
+    },
+    {
+      "page": 16,
+      "expectedMode": "3D_PRIMARY_WITH_2D",
+      "width": 960,
+      "height": 1280,
+      "scrollHeight": 1280,
+      "scale": 1,
+      "liveOutputs": {
+        "weighted-total": "2.5000"
+      },
+      "unexplainedEquationCards": 0,
+      "formulaOccurrences": [
+        {
+          "formulaId": "p16-correction-0",
+          "concept": "Ogni errore paga il proprio peso: w₂ penalizza solo la seconda direzione. L’altezza misura il costo, non una terza decisione.",
+          "fontSize": "22px"
+        }
+      ],
+      "formulaContexts": [
+        {
+          "formulaId": "p16-source-math-2",
+          "text": "W diagonale(1, 4)"
+        },
+        {
+          "formulaId": "p16-source-math-2",
+          "text": "La diagonale pesa separatamente i due errori; ogni barra mostra un contributo al costo totale."
+        }
+      ],
+      "proseWords": 125,
+      "blocks": [
+        {
+          "block": "slide-block block-header",
+          "top": 40,
+          "bottom": 110.65625,
+          "height": 70.65625
+        },
+        {
+          "block": "slide-block block-formula",
+          "top": 116.65625,
+          "bottom": 365.03125,
+          "height": 248.375
+        },
+        {
+          "block": "slide-block block-main_visual",
+          "top": 371.03125,
+          "bottom": 726.625,
+          "height": 355.59375
+        },
+        {
+          "block": "slide-block block-controls",
+          "top": 732.625,
+          "bottom": 886.40625,
+          "height": 153.78125
+        },
+        {
+          "block": "slide-block block-worked_example",
+          "top": 892.40625,
+          "bottom": 1147.171875,
+          "height": 254.765625
+        },
+        {
+          "block": "slide-block block-takeaway",
+          "top": 1195.609375,
+          "bottom": 1240,
+          "height": 44.390625
+        }
+      ],
+      "formulaOverflow": [
+        {
+          "width": 850,
+          "scrollWidth": 850
+        }
+      ],
+      "warnings": [
+        {
+          "text": "⚠ Warning: possibile errore nella slide originale. Qui usiamo w₂ nel secondo termine invece di w₁.",
+          "top": 262.046875,
+          "bottom": 331.234375
+        }
+      ],
+      "alerts": [],
+      "formulas": [
+        {
+          "formulaId": "p16-source-math-0",
+          "latex": "\\ell(z)=\\frac12\\|z-\\bar z\\|^2=\\frac12(z-\\bar z)^\\top(z-\\bar z),\\quad z,\\bar z\\in\\mathbb{R}^d",
+          "displayedLatex": "\\ell(z)=\\frac12\\|z-\\bar z\\|^2=\\frac12(z-\\bar z)^\\top(z-\\bar z),\\quad z,\\bar z\\in\\mathbb{R}^d",
+          "conceptualExplanation": "La distanza quadratica penalizza l’allontanamento dal punto assegnato in tutte le direzioni allo stesso modo. Scarti di segno opposto hanno lo stesso costo.",
+          "details": "A cosa serve. Misurare una deviazione vettoriale con un costo scalare non negativo.z,zˉz,\\bar zz,zˉDecisione e riferimento in uno spazio di dimensione d.ℓ\\ellℓCosto.⊤\\top⊤Trasposizione del vettore."
+        },
+        {
+          "formulaId": "p16-source-math-1",
+          "latex": "\\ell(z)=\\frac12\\|z-\\bar z\\|_W^2=\\frac12(z-\\bar z)^\\top W(z-\\bar z),\\quad W\\in\\mathbb{R}^{d\\times d}",
+          "displayedLatex": "\\ell(z)=\\frac12\\|z-\\bar z\\|_W^2=\\frac12(z-\\bar z)^\\top W(z-\\bar z),\\quad W\\in\\mathbb{R}^{d\\times d}",
+          "conceptualExplanation": "La matrice W rende alcune deviazioni più costose di altre. Se W è simmetrica positiva definita, il solo punto a costo zero è il riferimento.",
+          "details": "A cosa serve. Rappresentare priorità diverse nelle componenti della decisione.WWWMatrice simmetrica dei pesi.∥z−zˉ∥W2\\|z-\\bar z\\|_W^2∥z−zˉ∥W2​Forma quadratica pesata.Vale quando. Pesi positivi: minimo unico; con W semidefinita possono esistere direzioni non penalizzate."
+        },
+        {
+          "formulaId": "p16-source-math-2",
+          "latex": "z=\\begin{bmatrix}z_1\\\\z_2\\end{bmatrix},\\quad W=\\begin{bmatrix}w_1&0\\\\0&w_2\\end{bmatrix}>0,\\quad w_1>0,\\ w_2>0",
+          "displayedLatex": "z=\\begin{bmatrix}z_1\\\\z_2\\end{bmatrix},\\quad W=\\begin{bmatrix}w_1&0\\\\0&w_2\\end{bmatrix}>0,\\quad w_1>0,\\ w_2>0",
+          "conceptualExplanation": "La diagonale pesa separatamente i due errori; ogni barra mostra un contributo al costo totale.",
+          "details": "A cosa serve. Leggere separatamente le penalità delle due coordinate.w1,w2w_1,w_2w1​,w2​Pesi rispettivamente della prima e della seconda coordinata.e=z−zˉe=z-\\bar ze=z−zˉErrore; nell’esempio è fissato a (1,1).Vale quando. La slide assume entrambi i pesi positivi; lo zero degli slider è un’estensione semidefinita aggiunta."
+        },
+        {
+          "formulaId": "p16-correction-0",
+          "latex": "\\ell(z)=\\frac12\\|z-\\bar z\\|_W^2=\\frac12w_1(z_1-\\bar z_1)^2+\\frac12w_2(z_2-\\bar z_2)^2",
+          "displayedLatex": "\\ell(z)=\\frac12\\|z-\\bar z\\|_W^2=\\frac12w_1(z_1-\\bar z_1)^2+\\frac12w_2(z_2-\\bar z_2)^2",
+          "conceptualExplanation": "Ogni errore paga il proprio peso: w₂ penalizza solo la seconda direzione. L’altezza misura il costo, non una terza decisione.",
+          "details": "A cosa serve. Collegare i pesi alla curvatura della superficie e ai livelli di uguale costo.zi−zˉiz_i-\\bar z_izi​−zˉi​Scarto nella coordinata i; il riferimento è fisso a (0,0).wiw_iwi​Peso non negativo usato nell’esempio.1/21/21/2Fattore di scala comune, incluso anche nelle barre e nel totale.Vale quando. Due pesi strettamente positivi danno un minimo unico; uno nullo lascia una direzione libera; entrambi nulli danno costo zero ovunque.w₁ cambia curvatura e contributo della prima coordinata; il punto (1,1) resta fisso.w₂ cambia solo la seconda penalità; i livelli si restringono lungo quella direzione quando il peso aumenta."
+        }
+      ],
+      "alternativeGeometry": {
+        "scrollHeight": 1280,
+        "bottom": 1240
+      },
+      "defaultView": "3D",
+      "otherView": "2D"
+    },
+    {
+      "page": 17,
+      "expectedMode": "2D_AND_3D_EQUAL",
+      "width": 960,
+      "height": 1280,
+      "scrollHeight": 1280,
+      "scale": 1,
+      "liveOutputs": {
+        "constraint-kind": "ellisse e interno",
+        "constraint-residual": "0.00",
+        "constraint-status": "bordo"
+      },
+      "unexplainedEquationCards": 0,
+      "formulaOccurrences": [
+        {
+          "formulaId": "p17-source-math-0",
+          "concept": "La disequazione ammette una regione, non solo una curva. Con a,b,c positivi è un’ellisse piena centrata nell’origine.",
+          "fontSize": "22px"
+        }
+      ],
+      "formulaContexts": [
+        {
+          "formulaId": "p17-residual",
+          "text": "L’altezza 3D è il residuo g: sotto zero i punti sono ammessi. Il livello zero non è sempre il bordo dell’insieme."
+        },
+        {
+          "formulaId": "p17-enrichment-0",
+          "text": "Cerchio fisso: solo il bordo è ammesso. Non segue gli slider."
+        }
+      ],
+      "proseWords": 180,
+      "blocks": [
+        {
+          "block": "slide-block block-header",
+          "top": 40,
+          "bottom": 110.65625,
+          "height": 70.65625
+        },
+        {
+          "block": "slide-block block-formula",
+          "top": 116.65625,
+          "bottom": 269.234375,
+          "height": 152.578125
+        },
+        {
+          "block": "slide-block block-main_visual",
+          "top": 275.234375,
+          "bottom": 725.609375,
+          "height": 450.375
+        },
+        {
+          "block": "slide-block block-controls",
+          "top": 731.609375,
+          "bottom": 885.390625,
+          "height": 153.78125
+        },
+        {
+          "block": "slide-block block-worked_example",
+          "top": 891.390625,
+          "bottom": 1167.734375,
+          "height": 276.34375
+        },
+        {
+          "block": "slide-block block-takeaway",
+          "top": 1195.609375,
+          "bottom": 1240,
+          "height": 44.390625
+        }
+      ],
+      "formulaOverflow": [
+        {
+          "width": 850,
+          "scrollWidth": 850
+        }
+      ],
+      "warnings": [
+        {
+          "text": "⚠ Nota: la figura è qualitativa; il grafico segue la formula.",
+          "top": 275.234375,
+          "bottom": 303.828125
+        }
+      ],
+      "alerts": [],
+      "formulas": [
+        {
+          "formulaId": "p17-source-math-0",
+          "latex": "Z=\\{z\\in\\mathbb{R}^2\\mid a z_1^2+b z_2^2-c\\leq0\\},\\quad a,b,c\\in\\mathbb{R}",
+          "displayedLatex": "Z=\\{z\\in\\mathbb{R}^2\\mid a z_1^2+b z_2^2-c\\leq0\\},\\quad a,b,c\\in\\mathbb{R}",
+          "conceptualExplanation": "La disequazione ammette una regione, non solo una curva. Con a,b,c positivi è un’ellisse piena centrata nell’origine.",
+          "details": "A cosa serve. Decidere quali scelte appartengono all’insieme ammissibile.z=(z1,z2)z=(z_1,z_2)z=(z1​,z2​)Le due coordinate della decisione.ZZZInsieme dei punti ammessi.a,b,ca,b,ca,b,cParametri reali, non obbligatoriamente positivi.Vale quando. L’interpretazione come ellisse richiede a,b,c>0; gli slider permettono anche casi degeneri e non limitati."
+        },
+        {
+          "formulaId": "p17-source-math-1",
+          "latex": "z^\\top Qz+q^\\top z-c=0,\\quad Q\\in\\mathbb{R}^{d\\times d},\\ q\\in\\mathbb{R}^d,\\ c\\in\\mathbb{R}",
+          "displayedLatex": "z^\\top Qz+q^\\top z-c=0,\\quad Q\\in\\mathbb{R}^{d\\times d},\\ q\\in\\mathbb{R}^d,\\ c\\in\\mathbb{R}",
+          "conceptualExplanation": "Un’uguaglianza ammette solo i punti che annullano esattamente la forma quadratica. A differenza della disequazione non include automaticamente una regione interna.",
+          "details": "A cosa serve. Descrivere un vincolo geometrico che deve essere soddisfatto con uguaglianza.QQQMatrice quadrata della parte quadratica.qqqVettore della parte lineare.cccLivello scalare.dddDimensione della decisione z.Vale quando. Senza ulteriori ipotesi su Q, q e c, il luogo non è necessariamente una circonferenza o una parabola."
+        },
+        {
+          "formulaId": "p17-enrichment-0",
+          "latex": "Q=I_2,\\quad q=0,\\quad c=1\\quad\\Longrightarrow\\quad z_1^2+z_2^2=1",
+          "displayedLatex": "Q=I_2,\\quad q=0,\\quad c=1\\quad\\Longrightarrow\\quad z_1^2+z_2^2=1",
+          "conceptualExplanation": "Cerchio fisso: solo il bordo è ammesso. Non segue gli slider.",
+          "details": "A cosa serve. Distinguere uguaglianza e disequazione sullo stesso esempio geometrico.I2I_2I2​Matrice identità di ordine due.q=0,c=1q=0,c=1q=0,c=1Valori locali fissi dell’inserto, distinti dai parametri correnti del grafico principale.Vale quando. Confronto unitario fisso: non segue a, b e c degli slider."
+        },
+        {
+          "formulaId": "p17-residual",
+          "latex": "g(z)=az_1^2+bz_2^2-c,\\qquad z\\in Z\\iff g(z)\\leq0",
+          "displayedLatex": "g(z)=az_1^2+bz_2^2-c,\\qquad z\\in Z\\iff g(z)\\leq0",
+          "conceptualExplanation": "L’altezza 3D è il residuo g: sotto zero i punti sono ammessi. Il livello zero non è sempre il bordo dell’insieme.",
+          "details": "A cosa serve. Collegare la maschera 2D al segno della stessa funzione mostrata in 3D.gggResiduo della disequazione, non costo e non terza variabile decisionale.Vale quando. La griglia è un ritaglio: non dimostra limitatezza. La classificazione numerica usa tolleranza assoluta 10⁻⁹; un insieme analiticamente vuoto resta vuoto.a cambia la curvatura lungo z₁; se cambia segno può cambiare la natura dell’insieme.b agisce analogamente lungo z₂.Aumentare c abbassa g ovunque: l’insieme non può restringersi, ma può già essere vuoto o tutto il piano."
+        }
+      ],
+      "alternativeGeometry": {
+        "scrollHeight": 1280,
+        "bottom": 1240
+      },
+      "defaultView": "2D",
+      "otherView": "3D"
+    },
+    {
+      "page": 27,
+      "expectedMode": "3D_PRIMARY_WITH_2D",
+      "width": 960,
+      "height": 1280,
+      "scrollHeight": 1280,
+      "scale": 1,
+      "liveOutputs": {
+        "euler-state-0": "0.000",
+        "euler-state-1": "0.000",
+        "euler-state-2": "0.000",
+        "euler-state-3": "0.000",
+        "euler-state-4": "0.000",
+        "euler-state-5": "0.000",
+        "euler-final-altitude": "0.9855",
+        "euler-exact-altitude": "1.0950",
+        "euler-error": "0.1095"
+      },
+      "unexplainedEquationCards": 0,
+      "formulaOccurrences": [
+        {
+          "formulaId": "p27-source-math-0",
+          "concept": "Euler mantiene la derivata iniziale per δ secondi e avanza lo stato. Approssima così il moto continuo.",
+          "fontSize": "22px"
+        },
+        {
+          "formulaId": "p27-enrichment-0",
+          "concept": "La quota usa la vecchia velocità; la spinta aggiorna quella successiva. Da fermo, il primo passo ha quota zero ma velocità positiva.",
+          "fontSize": "22px"
+        }
+      ],
+      "formulaContexts": [
+        {
+          "formulaId": "p27-enrichment-0",
+          "text": "● Euler · ┄ continuo · assi (τ,p_y,v_y): il terzo asse è la velocità, non lo spazio."
+        },
+        {
+          "formulaId": "p27-example-acceleration",
+          "text": "M=1 kg, u₁=u₂=6 N: la spinta supera il peso, a_y=2.19 m/s²."
+        }
+      ],
+      "proseWords": 229,
+      "blocks": [
+        {
+          "block": "slide-block block-header",
+          "top": 40,
+          "bottom": 110.65625,
+          "height": 70.65625
+        },
+        {
+          "block": "slide-block block-formula",
+          "top": 116.65625,
+          "bottom": 269.234375,
+          "height": 152.578125
+        },
+        {
+          "block": "slide-block block-main_visual",
+          "top": 275.234375,
+          "bottom": 731.8125,
+          "height": 456.578125
+        },
+        {
+          "block": "slide-block block-controls",
+          "top": 737.8125,
+          "bottom": 892,
+          "height": 154.1875
+        },
+        {
+          "block": "slide-block block-worked_example",
+          "top": 898,
+          "bottom": 1178.859375,
+          "height": 280.859375
+        },
+        {
+          "block": "slide-block block-takeaway",
+          "top": 1195.609375,
+          "bottom": 1240,
+          "height": 44.390625
+        }
+      ],
+      "formulaOverflow": [
+        {
+          "width": 850,
+          "scrollWidth": 850
+        },
+        {
+          "width": 822,
+          "scrollWidth": 822
+        }
+      ],
+      "warnings": [],
+      "alerts": [],
+      "formulas": [
+        {
+          "formulaId": "p27-source-math-0",
+          "latex": "x_{t+1}=\\underbrace{x_t+\\delta f_{\\mathrm{CT}}(x_t,u_t,t)}_{f_t(x_t,u_t)}",
+          "displayedLatex": "x_{t+1}=\\underbrace{x_t+\\delta f_{\\mathrm{CT}}(x_t,u_t,t)}_{f_t(x_t,u_t)}",
+          "conceptualExplanation": "Euler mantiene la derivata iniziale per δ secondi e avanza lo stato. Approssima così il moto continuo.",
+          "details": "A cosa serve. Ottenere una mappa discreta utilizzabile per calcolare una sequenza di stati.fCTf_{\\rm CT}fCT​Dinamica continua, valutata sul vecchio stato e ingresso.ftf_tft​Intera mappa discreta, incluso xₜ.δ\\deltaδPasso temporale positivo, distinto dalla perturbazione Δ.Vale quando. Ridurre δ migliora l’accuratezza sotto le usuali ipotesi di regolarità e convergenza; non garantisce stabilità per qualunque modello e passo."
+        },
+        {
+          "formulaId": "p27-source-math-1",
+          "latex": "\\delta>0",
+          "displayedLatex": "\\delta>0",
+          "conceptualExplanation": "Il passo positivo fissa quanto tempo fisico trascorre tra due campioni. Un passo più piccolo produce più aggiornamenti nella stessa durata.",
+          "details": "A cosa serve. Definire la risoluzione temporale della discretizzazione.δ\\deltaδDurata di ciascun passo in secondi.Vale quando. La fonte non assegna una soglia universale per un passo sufficientemente piccolo."
+        },
+        {
+          "formulaId": "p27-source-math-2",
+          "latex": "x_t=\\begin{bmatrix}p_{x,t}\\\\v_{x,t}\\\\p_{y,t}\\\\v_{y,t}\\\\\\theta_t\\\\\\omega_t\\end{bmatrix}=\\begin{bmatrix}x_{1,t}\\\\x_{2,t}\\\\x_{3,t}\\\\x_{4,t}\\\\x_{5,t}\\\\x_{6,t}\\end{bmatrix},\\qquad u_t=\\begin{bmatrix}u_{1,t}\\\\u_{2,t}\\end{bmatrix}",
+          "displayedLatex": "\\begin{gathered}x_t=\\begin{bmatrix}p_{x,t}\\\\v_{x,t}\\\\p_{y,t}\\\\v_{y,t}\\\\\\theta_t\\\\\\omega_t\\end{bmatrix}=\\begin{bmatrix}x_{1,t}\\\\x_{2,t}\\\\x_{3,t}\\\\x_{4,t}\\\\x_{5,t}\\\\x_{6,t}\\end{bmatrix},\\\\u_t=\\begin{bmatrix}u_{1,t}\\\\u_{2,t}\\end{bmatrix}\\end{gathered}",
+          "conceptualExplanation": "Lo stato raccoglie posizione e velocità per ciascun asse, poi angolo e velocità angolare. Questa alternanza spiega perché la quota è x₃ e la sua velocità x₄.",
+          "details": "A cosa serve. Associare ogni componente numerica al suo significato fisico e impedire scambi di coordinate.px,vx,py,vyp_x,v_x,p_y,v_ypx​,vx​,py​,vy​Posizioni e velocità nel piano.θ,ω\\theta,\\omegaθ,ωAngolo e velocità angolare.u1,u2u_1,u_2u1​,u2​Spinte dei due rotori.Vale quando. Modello planare: sei stati non significano sei dimensioni spaziali."
+        },
+        {
+          "formulaId": "p27-enrichment-0",
+          "latex": "p_{y,t+1}=p_{y,t}+\\delta v_{y,t},\\quad v_{y,t+1}=v_{y,t}+\\delta a_y,\\quad a_y=2.19",
+          "displayedLatex": "p_{y,t+1}=p_{y,t}+\\delta v_{y,t},\\quad v_{y,t+1}=v_{y,t}+\\delta a_y,\\quad a_y=2.19",
+          "conceptualExplanation": "La quota usa la vecchia velocità; la spinta aggiorna quella successiva. Da fermo, il primo passo ha quota zero ma velocità positiva.",
+          "details": "A cosa serve. Rendere osservabile la differenza tra Euler e l’accelerazione continua.ay=2.19a_y=2.19ay​=2.19Accelerazione verticale costante in m/s² nel profilo scelto.py,vyp_y,v_ypy​,vy​Quota in metri e velocità verticale in m/s.Vale quando. Stato iniziale nullo, θ=ω=0, spinte uguali e costanti; durata fisica 1 s.δ cambia numero e posizione dei campioni, non spinte o durata: il cursore si ferma e riparte da zero."
+        },
+        {
+          "formulaId": "p27-example-acceleration",
+          "latex": "a_y=(u_1+u_2)/M-g=2.19\\;\\mathrm{m/s^2}",
+          "displayedLatex": "a_y=(u_1+u_2)/M-g=2.19\\;\\mathrm{m/s^2}",
+          "conceptualExplanation": "Le due spinte verticali sommate superano il peso: resta quindi un’accelerazione verso l’alto. Le spinte uguali mantengono nullo il momento rotazionale in questo profilo.",
+          "details": "A cosa serve. Collegare i numeri della simulazione alla forza risultante del modello planare.M=1M=1M=1Massa in kg.u1=u2=6u_1=u_2=6u1​=u2​=6Spinte costanti in N.g=9.81g=9.81g=9.81Accelerazione di gravità in m/s².Vale quando. Assetto verticale θ=0 e velocità angolare iniziale nulla."
+        },
+        {
+          "formulaId": "p27-time-sampling",
+          "latex": "\\tau=k\\delta,\\qquad N=1\\,\\mathrm{s}/\\delta",
+          "displayedLatex": "\\tau=k\\delta,\\qquad N=1\\,\\mathrm{s}/\\delta",
+          "conceptualExplanation": "Il cursore sceglie un campione k, mentre τ ne indica l’istante fisico. N conta i passi dell’esempio su un secondo e non è l’orizzonte T del corso.",
+          "details": "A cosa serve. Confrontare discretizzazioni diverse a parità di durata reale.kkkIndice del campione, da 0 a N.τ\\tauτTempo fisico in secondi.NNNNumero di passi nella durata fissa.Vale quando. Le scelte di δ dividono esattamente la durata di 1 s."
+        },
+        {
+          "formulaId": "p27-example-reference",
+          "latex": "p_y(\\tau)=\\tfrac12a_y\\tau^2,\\qquad v_y(\\tau)=a_y\\tau",
+          "displayedLatex": "p_y(\\tau)=\\tfrac12a_y\\tau^2,\\qquad v_y(\\tau)=a_y\\tau",
+          "conceptualExplanation": "Con accelerazione costante la velocità cresce linearmente e la quota quadraticamente. Questa soluzione continua fornisce il riferimento con cui misurare l’errore dei campioni Euler.",
+          "details": "A cosa serve. Separare l’errore numerico dalla dinamica fisica del profilo.τ\\tauτTempo continuo fisico.aya_yay​Accelerazione verticale costante del profilo.Vale quando. Quota e velocità iniziali nulle, accelerazione costante."
+        }
+      ],
+      "alternativeGeometry": {
+        "scrollHeight": 1280,
+        "bottom": 1240
+      },
+      "defaultView": "3D",
+      "otherView": "2D"
+    },
+    {
+      "page": 30,
+      "expectedMode": "2D_PRIMARY_WITH_3D",
+      "width": 960,
+      "height": 1280,
+      "scrollHeight": 1280,
+      "scale": 1,
+      "liveOutputs": {
+        "path-status": "interno",
+        "path-violation": "0.00",
+        "path-residual-min": "-1.00",
+        "path-residual-max": "-1.00",
+        "path-residual": "-1.00"
+      },
+      "unexplainedEquationCards": 0,
+      "formulaOccurrences": [
+        {
+          "formulaId": "p30-correction-0",
+          "concept": "T comandi governano T transizioni: i limiti escludono le scelte non ammesse.",
+          "fontSize": "22px"
+        }
+      ],
+      "formulaContexts": [
+        {
+          "formulaId": "p30-maximum-residual",
+          "text": "V=max(min−p_y,p_y−max): V≤0 ammette la quota. Asse 3D: V."
+        },
+        {
+          "formulaId": "p30-enrichment-0",
+          "text": "Entrambi i residui devono essere ≤0; la quota p_y è x₃."
+        },
+        {
+          "formulaId": "p30-index-example",
+          "text": "T=1: un comando, uno stato previsto; nessun u₁."
+        }
+      ],
+      "proseWords": 194,
+      "blocks": [
+        {
+          "block": "slide-block block-header",
+          "top": 40,
+          "bottom": 110.65625,
+          "height": 70.65625
+        },
+        {
+          "block": "slide-block block-formula",
+          "top": 116.65625,
+          "bottom": 358.734375,
+          "height": 242.078125
+        },
+        {
+          "block": "slide-block block-main_visual",
+          "top": 364.734375,
+          "bottom": 746.921875,
+          "height": 382.1875
+        },
+        {
+          "block": "slide-block block-controls",
+          "top": 752.921875,
+          "bottom": 906.734375,
+          "height": 153.8125
+        },
+        {
+          "block": "slide-block block-worked_example",
+          "top": 912.734375,
+          "bottom": 1158.203125,
+          "height": 245.46875
+        },
+        {
+          "block": "slide-block block-takeaway",
+          "top": 1195.609375,
+          "bottom": 1240,
+          "height": 44.390625
+        }
+      ],
+      "formulaOverflow": [
+        {
+          "width": 850,
+          "scrollWidth": 850
+        }
+      ],
+      "warnings": [
+        {
+          "text": "⚠ Warning: possibile errore nella slide originale. Gli ingressi usano t=0,…,T−1; le quote t=1,…,T.",
+          "top": 255.75,
+          "bottom": 324.9375
+        }
+      ],
+      "alerts": [],
+      "formulas": [
+        {
+          "formulaId": "p30-correction-0",
+          "latex": "u_t^{\\min}\\leq u_t\\leq u_t^{\\max},\\quad t=0,\\ldots,T-1;\\qquad p_{y,t}^{\\min}\\leq p_{y,t}\\leq p_{y,t}^{\\max},\\quad t=1,\\ldots,T",
+          "displayedLatex": "\\begin{gathered}u_t^{\\min}\\leq u_t\\leq u_t^{\\max},\\\\t=0,\\ldots,T-1;\\\\p_{y,t}^{\\min}\\leq p_{y,t}\\leq p_{y,t}^{\\max},\\\\t=1,\\ldots,T\\end{gathered}",
+          "conceptualExplanation": "T comandi governano T transizioni: i limiti escludono le scelte non ammesse.",
+          "details": "A cosa serve. Imporre vincoli hard con indici coerenti con la dinamica discreta.TTTNumero di transizioni dell’orizzonte.utmin⁡,utmax⁡u_t^{\\min},u_t^{\\max}utmin​,utmax​Limiti componenti degli ingressi.py,tmin⁡,py,tmax⁡p_{y,t}^{\\min},p_{y,t}^{\\max}py,tmin​,py,tmax​Limiti di quota sugli stati previsti.Vale quando. Lo stato iniziale è dato; il controllo puntuale non certifica il moto tra campioni."
+        },
+        {
+          "formulaId": "p30-enrichment-0",
+          "latex": "p_{y,t}=x_{3,t},\\quad r_{\\min}=p_y^{\\min}-p_y,\\quad r_{\\max}=p_y-p_y^{\\max}",
+          "displayedLatex": "p_{y,t}=x_{3,t},\\quad r_{\\min}=p_y^{\\min}-p_y,\\quad r_{\\max}=p_y-p_y^{\\max}",
+          "conceptualExplanation": "I residui misurano il superamento dei due limiti: entrambi devono essere non positivi. La quota è x₃.",
+          "details": "A cosa serve. Trasformare il controllo di una banda in due verifiche di segno.py=x3p_y=x_3py​=x3​Quota, non velocità.rmin⁡,rmax⁡r_{\\min},r_{\\max}rmin​,rmax​Residui inferiore e superiore, in metri."
+        },
+        {
+          "formulaId": "p30-maximum-residual",
+          "latex": "V=\\max(r_{\\min},r_{\\max}),\\qquad \\mathrm{violazione}=\\max(0,V)",
+          "displayedLatex": "V=\\max(r_{\\min},r_{\\max}),\\qquad \\mathrm{violazione}=\\max(0,V)",
+          "conceptualExplanation": "V≤0 indica quota ammessa; la sua parte positiva misura la violazione. L’altezza 3D è V, non la quota.",
+          "details": "A cosa serve. Leggere ammissibilità e distanza dal limite violato nello stesso grafico.VVVMassimo dei due residui firmati, in metri.max⁡(0,V)\\max(0,V)max(0,V)Violazione non negativa; non costo da ottimizzare.min,max\\mathrm{min},\\mathrm{max}min,maxAbbreviazioni dei limiti di quota p_y min e p_y max nella didascalia; max(·,·) è invece l’operatore massimo.Vale quando. Se min>max la banda è vuota e nessun punto è ammesso; nessuna certificazione di collisione o sicurezza continua.Aumentare min alza il residuo inferiore e seleziona una nuova sezione della superficie.Aumentare max abbassa il residuo superiore e allarga la banda se non è vuota.p_y muove il candidato, aggiornando entrambi i residui senza simulare un moto."
+        },
+        {
+          "formulaId": "p30-index-example",
+          "latex": "T=1:\\qquad x_0\\xrightarrow{u_0}x_1",
+          "displayedLatex": "T=1:\\qquad x_0\\xrightarrow{u_0}x_1",
+          "conceptualExplanation": "Un solo comando u₀ porta da x₀ a x₁: il limite di quota riguarda lo stato previsto. Non esiste u₁ per T=1.",
+          "details": "A cosa serve. Verificare concretamente i due intervalli di indici corretti.x0x_0x0​Stato iniziale assegnato.x1x_1x1​Stato dopo una transizione."
+        }
+      ],
+      "alternativeGeometry": {
+        "scrollHeight": 1280,
+        "bottom": 1240
+      },
+      "defaultView": "2D",
+      "otherView": "3D"
+    },
+    {
+      "page": 34,
+      "expectedMode": "3D_PRIMARY_WITH_2D",
+      "width": 960,
+      "height": 1280,
+      "scrollHeight": 1280,
+      "scale": 1,
+      "liveOutputs": {
+        "pendulum-torque-1": "0.0000",
+        "pendulum-torque-2": "4.9050",
+        "pendulum-residual": "(0, 0) · (0, 0)"
+      },
+      "unexplainedEquationCards": 0,
+      "formulaOccurrences": [
+        {
+          "formulaId": "p34-correction-0",
+          "concept": "Il pendolo fermo ha velocità angolare nulla, anche con angolo diverso da zero. La coppia compensa la gravità.",
+          "fontSize": "22px"
+        },
+        {
+          "formulaId": "p34-equilibrium-law",
+          "concept": "La coppia sostiene l’angolo scelto a velocità zero. Il terzo asse mostra la coppia, non un moto.",
+          "fontSize": "22px"
+        }
+      ],
+      "formulaContexts": [
+        {
+          "formulaId": "p34-residuals",
+          "text": "Residui: velocità e accelerazione"
+        }
+      ],
+      "proseWords": 146,
+      "blocks": [
+        {
+          "block": "slide-block block-header",
+          "top": 40,
+          "bottom": 110.65625,
+          "height": 70.65625
+        },
+        {
+          "block": "slide-block block-formula",
+          "top": 116.65625,
+          "bottom": 344.421875,
+          "height": 227.765625
+        },
+        {
+          "block": "slide-block block-main_visual",
+          "top": 350.421875,
+          "bottom": 736.015625,
+          "height": 385.59375
+        },
+        {
+          "block": "slide-block block-controls",
+          "top": 742.015625,
+          "bottom": 895.796875,
+          "height": 153.78125
+        },
+        {
+          "block": "slide-block block-worked_example",
+          "top": 901.796875,
+          "bottom": 1183.75,
+          "height": 281.953125
+        },
+        {
+          "block": "slide-block block-takeaway",
+          "top": 1195.609375,
+          "bottom": 1240,
+          "height": 44.390625
+        }
+      ],
+      "formulaOverflow": [
+        {
+          "width": 850,
+          "scrollWidth": 850
+        },
+        {
+          "width": 822,
+          "scrollWidth": 822
+        }
+      ],
+      "warnings": [
+        {
+          "text": "⚠ Warning: possibile errore nella slide originale. La condizione di equilibrio corretta è x₂,e=0.",
+          "top": 241.4375,
+          "bottom": 310.625
+        }
+      ],
+      "alerts": [],
+      "formulas": [
+        {
+          "formulaId": "p34-source-math-1",
+          "latex": "0=-\\frac{g}{l}\\sin x_{1,e}+\\frac{1}{m\\ell^2}u_e",
+          "displayedLatex": "0=-\\frac{g}{l}\\sin x_{1,e}+\\frac{1}{m\\ell^2}u_e",
+          "conceptualExplanation": "All’equilibrio la coppia applicata bilancia l’effetto della gravità: l’accelerazione angolare è nulla. Questo bilancio va imposto insieme alla velocità angolare nulla.",
+          "details": "A cosa serve. Trovare l’ingresso che mantiene una configurazione angolare.x1,ex_{1,e}x1,e​Angolo all’equilibrio.ueu_eue​Coppia di sostegno.gggAccelerazione di gravità.l≡ℓl\\equiv\\elll≡ℓUnica lunghezza del pendolo.m≡Mm\\equiv Mm≡MUnica massa del pendolo.Vale quando. Modello del pendolo del corso; nessuna conclusione di stabilità deriva dal solo bilancio."
+        },
+        {
+          "formulaId": "p34-source-math-2",
+          "latex": "x_e^1=\\begin{bmatrix}\\theta_e^1\\\\0\\end{bmatrix},\\qquad u_e^1=mg\\ell\\sin\\theta_e^1",
+          "displayedLatex": "x_e^1=\\begin{bmatrix}\\theta_e^1\\\\0\\end{bmatrix},\\qquad u_e^1=mg\\ell\\sin\\theta_e^1",
+          "conceptualExplanation": "La prima configurazione abbina un angolo a velocità zero alla coppia che lo sostiene. L’apice 1 etichetta la coppia di equilibrio: non indica un passo temporale.",
+          "details": "A cosa serve. Definire la prima condizione stazionaria da confrontare con una seconda.θe1\\theta_e^1θe1​Angolo della prima configurazione.xe1,ue1x_e^1,u_e^1xe1​,ue1​Stato e ingresso della prima coppia di equilibrio."
+        },
+        {
+          "formulaId": "p34-correction-0",
+          "latex": "0=x_{2,e}",
+          "displayedLatex": "0=x_{2,e}",
+          "conceptualExplanation": "Il pendolo fermo ha velocità angolare nulla, anche con angolo diverso da zero. La coppia compensa la gravità.",
+          "details": "A cosa serve. Identificare correttamente la componente nulla dello stato di equilibrio.x2,ex_{2,e}x2,e​Velocità angolare all’equilibrio.x1,e=θex_{1,e}=\\theta_ex1,e​=θe​Angolo, che può essere diverso da zero.Vale quando. Velocità e accelerazione devono essere entrambe nulle; equilibrio non significa stabilità."
+        },
+        {
+          "formulaId": "p34-enrichment-0",
+          "latex": "x_e^2=\\operatorname{col}(\\theta_e^2,0),\\quad u_e^2=mg\\ell\\sin\\theta_e^2",
+          "displayedLatex": "x_e^2=\\operatorname{col}(\\theta_e^2,0),\\quad u_e^2=mg\\ell\\sin\\theta_e^2",
+          "conceptualExplanation": "La seconda configurazione è un altro stato fermo, sostenuto dalla propria coppia. Scegliere due equilibri non specifica come passare dall’uno all’altro.",
+          "details": "A cosa serve. Confrontare due condizioni stazionarie senza inventare una traiettoria di trasferimento.θe2\\theta_e^2θe2​Angolo della seconda configurazione.col⁡\\operatorname{col}colVettore colonna delle componenti elencate."
+        },
+        {
+          "formulaId": "p34-equilibrium-law",
+          "latex": "u_e=mg\\ell\\sin\\theta_e,\\qquad x_e=\\begin{bmatrix}\\theta_e\\\\0\\end{bmatrix}",
+          "displayedLatex": "u_e=mg\\ell\\sin\\theta_e,\\qquad x_e=\\begin{bmatrix}\\theta_e\\\\0\\end{bmatrix}",
+          "conceptualExplanation": "La coppia sostiene l’angolo scelto a velocità zero. Il terzo asse mostra la coppia, non un moto.",
+          "details": "A cosa serve. Collegare configurazioni planari, coppie calcolate e luogo nello spazio stato–ingresso.θe\\theta_eθe​Angolo rispetto alla verticale del modello, in radianti.ueu_eue​Coppia in N m.m=1,ℓ=1,g=9.81m=1,\\ell=1,g=9.81m=1,ℓ=1,g=9.81Massa in kg, lunghezza in m e gravità in m/s² dell’esempio.Vale quando. Alias locali l≡ℓ e m≡M. Nell’intervallo visualizzato [−π/2,π/2] la coppia cresce con l’angolo; fuori da esso non vale una monotonia globale.θₑ¹ muove il primo equilibrio e aggiorna la sua coppia; i residui dinamici restano nulli.θₑ² agisce sul secondo equilibrio; non avvia alcun trasferimento."
+        },
+        {
+          "formulaId": "p34-residuals",
+          "latex": "\\dot x_1=x_2,\\qquad\\dot x_2=-\\frac{g}{\\ell}\\sin x_1+\\frac{u}{m\\ell^2}",
+          "displayedLatex": "\\dot x_1=x_2,\\qquad\\dot x_2=-\\frac{g}{\\ell}\\sin x_1+\\frac{u}{m\\ell^2}",
+          "conceptualExplanation": "I due residui verificano velocità e accelerazione nulle. Confermano l’equilibrio, senza dimostrarne la stabilità.",
+          "details": "A cosa serve. Controllare il risultato sostituendo stato e coppia nella dinamica.x˙1,x˙2\\dot x_1,\\dot x_2x˙1​,x˙2​Velocità angolare e accelerazione angolare, con unità diverse.Vale quando. Stesso modello e stessi alias di massa e lunghezza usati nella legge di sostegno."
+        }
+      ],
+      "alternativeGeometry": {
+        "scrollHeight": 1280,
+        "bottom": 1240
+      },
+      "defaultView": "3D",
+      "otherView": "2D"
+    }
+  ],
+  "page_errors": [],
+  "failed_requests": [],
+  "original_pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+  "success": true,
+  "note": "Geometry measurements and actual screenshots; visual judgment is recorded separately after inspection."
+}

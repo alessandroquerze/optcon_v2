@@ -1,0 +1,35 @@
+Newton’s method for equality constrained problems
+KKT points can be found by solving a root finding problem in variables z, λ with r(z, λ) = ∇L(z, λ).
+Newton’s method for this root finding problem reads as
+zk+1
+λk+1
+
+=
+zk
+λk
+
++
+∆zk
+∆λk
+
+with ∆zk, ∆λk solution of
+∇2L(zk, λk)
+∆z
+∆λ
+
+= −∇L(zk, λk)
+where
+∇2L(zk, λk) :=
+
+Bk
+∇h(zk)
+∇h(zk)⊤
+0
+
+∇L(zk, λk) :=
+∇ℓ(zk) + ∇h(zk)λk
+h(zk)
+
+and Bk := ∇2
+11L(zk, λk).
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 63 |73

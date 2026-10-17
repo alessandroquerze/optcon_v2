@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0015",
+  "document_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1",
+  "source": {
+    "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+    "page_index": 14,
+    "physical_page_number": 15,
+    "pdf_label_raw": "<FEFF00310034>",
+    "pdf_label": "14",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Strict convexity and gradient monotonicity",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      259.6602783203125,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 14,
+        "total": 73,
+        "raw": "14 |73",
+        "bbox": [
+          150.68800354003906,
+          247.92860412597656,
+          447.8712158203125,
+          258.29376220703125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0015/text.txt",
+      "sha256": "56ce28c278b6b7f3900c88c85c3127ff4297216849b05aa9533d51eae3ffe2d4"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0015/text.reading-order.txt",
+      "sha256": "997f682331697441e1a60fb70394979cbe23024a9329b09c4e3d69f0cbbfbd38"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0015/layout.json",
+      "sha256": "6a02421c87e68c661f18d0c1d1fdd8dbe1712a503360248a18250d284fd32fac"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0015/render.png",
+      "sha256": "7b5b54cfa1e5fa606d9753c134f9b82b766ef153d23502d572e58de783ec092b",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "500ba2275f9933996fa1581bf7fa44962a279f83ca89c4f8b54c3644838d831c"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0014",
+    "next_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0016"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "pending",
+    "result": null
+  }
+}

@@ -1,0 +1,16 @@
+Quadratic Programming (constrained): optimality conditions
+Let us introduce the Lagrangian of the constrained optimization problem, i.e.,
+L(z, λ) = 1
+2zT Qz + qT z + λ⊤(Az −b)
+λ ∈Rm
+First-order necessary condition for optimality: if z⋆is a minimum then there exists λ⋆such that
+∇1L(z⋆, λ⋆)
+∇2L(z⋆, λ⋆)
+
+= 0 =⇒
+
+Qz⋆+ q + A⊤λ⋆
+Az⋆−b
+
+= 0
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 59 |73

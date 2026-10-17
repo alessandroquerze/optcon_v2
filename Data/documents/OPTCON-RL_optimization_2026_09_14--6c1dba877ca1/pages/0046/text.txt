@@ -1,0 +1,12 @@
+Example: Gradient Method applied to Quadratic Programs
+Quadratic program
+min
+z∈Rd
+1
+2zT Qz + qT z
+with Q = QT ≥0 ∈Rd×d and q ∈Rd.
+Steepest descent method
+zk+1 = zk −γk∇ℓ(zk)
+for a Quadratic Program is given by
+zk+1 = zk −γk(Qzk + q).
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 42 |73

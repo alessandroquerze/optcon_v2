@@ -1,0 +1,828 @@
+{
+  "protocol_version": "1.0.0",
+  "request_sha256": "2ae8292b2f50104389ab37bd347d33923bc4fa5079ab9e877ab8e5dd9c4afbc6",
+  "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0026",
+  "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+  "artifact_sha256": {
+    "text": "d092ad0d70581fa5af0b48a349703f35fe733cfc8513dd0de7bb27bb126b50c7",
+    "layout": "b8ec3cba21c0e3109c6d7b6bd46c81c541e677b5ab8d7cf7c836317972fe8bcd",
+    "render": "6045e3ca75b7bfaf809d06cb19cf021bf70b5b8c7860f9da45b12a49efc35f5d"
+  },
+  "agent": {
+    "provider": "OpenAI",
+    "model": "Codex (identificatore esatto del modello non esposto nella sessione)",
+    "run_id": "page-analysis-ce370a19242e4173828aef04d60c36ee"
+  },
+  "inspection": {
+    "text_page_ids": [
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0026",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0025",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0027"
+    ],
+    "layout_page_ids": [
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0026",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0025",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0027"
+    ],
+    "image_page_ids": [
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0026",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0025",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0027"
+    ],
+    "source_content_treated_as_data": true
+  },
+  "title": "Trajectory generation for an autonomous drone — modello planare",
+  "companionPageCount": 1,
+  "didactic_plan": {
+    "source_scope_limits": [
+      "Il modello esplicito è planare, non un modello completo 3D.",
+      "Il testo non fornisce valori, unità, saturazioni né definizioni dei parametri M,J,L,g; le interpretazioni fisiche e i numeri dell'esempio sono dichiarati enrichment.",
+      "Non sostituire la prima somma con −u₁+u₂: sarebbe un errore di lettura del text layer.",
+      "I limiti sono un obiettivo qualitativo, non disuguaglianze numeriche assegnate."
+    ],
+    "prerequisites": [
+      {
+        "concept": "Equazioni continue e performance output",
+        "why": "Per distinguere accelerazioni e uscita di posizione.",
+        "origin": "source_context",
+        "page_numbers": [
+          8,
+          24
+        ]
+      },
+      {
+        "concept": "Seno, coseno e accelerazione angolare",
+        "why": "Prerequisiti matematico-fisici per leggere il modello.",
+        "origin": "enrichment",
+        "page_numbers": []
+      }
+    ],
+    "source_math": [
+      {
+        "latex": "\\ddot p_x=-\\frac{u_1+u_2}{M}\\sin\\theta",
+        "anchor": "¨px =",
+        "notes": "Segno e somma verificati anche su rendering a 288 DPI; il text layer da solo è ambiguo."
+      },
+      {
+        "latex": "\\ddot p_y=\\frac{u_1+u_2}{M}\\cos\\theta-g",
+        "anchor": "¨py =",
+        "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+      },
+      {
+        "latex": "\\ddot\\theta=\\frac{L}{2J}(u_1-u_2)",
+        "anchor": "¨θ =",
+        "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+      },
+      {
+        "latex": "y_t=\\begin{bmatrix}p_{x,t}\\\\p_{y,t}\\end{bmatrix},\\quad t\\in\\mathbb{N}_0",
+        "anchor": "with performance output",
+        "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+      }
+    ],
+    "enrichments": [
+      {
+        "id": "example-1",
+        "label": "enrichment",
+        "type": "worked_example",
+        "proposal": "Enrichment con interpretazioni fisiche convenzionali: M=1 kg, g=9.81 m/s², L=0.4 m, J=0.02 kg·m², θ=0, u₁=u₂=4.905 N.",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ]
+      },
+      {
+        "id": "interaction",
+        "label": "enrichment",
+        "type": "interaction_design",
+        "proposal": "Modificare separatamente u₁,u₂ e θ mostra somma, differenza e proiezioni, senza fingere di aver risolto un tracking ottimo.",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ]
+      },
+      {
+        "id": "visualization",
+        "label": "enrichment",
+        "type": "visualization_design",
+        "proposal": "Sagoma planare e vettori di accelerazione calcolati dalle equazioni; riportare il richiamo al contrasto planare/3D.",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "id": "example-1",
+        "origin": "enrichment",
+        "purpose": "Mostrare il ruolo della somma e della differenza degli ingressi.",
+        "setup": "Enrichment con interpretazioni fisiche convenzionali: M=1 kg, g=9.81 m/s², L=0.4 m, J=0.02 kg·m², θ=0, u₁=u₂=4.905 N.",
+        "parameters": [
+          {
+            "symbol": "M,g,L,J",
+            "value": "1,9.81,0.4,0.02"
+          },
+          {
+            "symbol": "u_1,u_2",
+            "value": "4.905,4.905"
+          },
+          {
+            "symbol": "θ",
+            "value": "0"
+          }
+        ],
+        "derivation": [
+          "p̈_x=0 perché sin0=0.",
+          "p̈_y=(4.905+4.905)−9.81=0.",
+          "θ̈=0 perché u₁−u₂=0.",
+          "Con u₁=5,u₂=4, θ̈=10 rad/s² e p̈_y=−0.81 m/s² nell'istante a θ=0."
+        ],
+        "expected_outcome": "La somma controlla le accelerazioni traslazionali, la differenza quella angolare nel modello dato.",
+        "limitations": [
+          "Valori, unità e interpretazioni dei parametri sono enrichment.",
+          "Accelerazione nulla è condizione di hover solo con velocità iniziali nulle; non è una prova di stabilità."
+        ],
+        "enrichment_id": "example-1",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ]
+      }
+    ],
+    "example_omission_reason": null,
+    "visualization": {
+      "component": "PlanarDroneInstantaneousAccelerationDiagram",
+      "description": "Sagoma planare e vettori di accelerazione calcolati dalle equazioni; riportare il richiamo al contrasto planare/3D.",
+      "origin": "enrichment",
+      "source_observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04",
+        "s05"
+      ]
+    },
+    "interactivity": {
+      "recommended": true,
+      "rationale": "Modificare separatamente u₁,u₂ e θ mostra somma, differenza e proiezioni, senza fingere di aver risolto un tracking ottimo.",
+      "component": "PlanarDroneForceBalanceInspector",
+      "parameters": [
+        {
+          "name": "Primo ingresso",
+          "symbol": "u_1",
+          "origin": "source",
+          "range": "[0,10] N",
+          "default": "4.905",
+          "effect_on_change": "Ricalcolare entrambe le accelerazioni traslazionali e θ̈ con segno positivo nel termine u₁−u₂.",
+          "edge_cases": [
+            "u₁=u₂: θ̈=0"
+          ]
+        },
+        {
+          "name": "Secondo ingresso",
+          "symbol": "u_2",
+          "origin": "source",
+          "range": "[0,10] N",
+          "default": "4.905",
+          "effect_on_change": "Ricalcolare la somma per la traslazione e il contributo negativo nella differenza angolare.",
+          "edge_cases": [
+            "u₁=u₂=0: accelerazione verticale −g"
+          ]
+        },
+        {
+          "name": "Angolo",
+          "symbol": "θ",
+          "origin": "source",
+          "range": "[−π/3,π/3] rad",
+          "default": "0",
+          "effect_on_change": "Ruotare il drone e aggiornare seno/coseno delle accelerazioni; θ̈ resta indipendente da θ a ingressi fissati in questo modello.",
+          "edge_cases": [
+            "θ=0: accelerazione orizzontale nulla"
+          ]
+        }
+      ],
+      "outputs": [
+        "p̈_x,p̈_y,θ̈",
+        "Somma e differenza degli ingressi",
+        "Vettori nel disegno"
+      ],
+      "invariants": [
+        "Parametri M,J,L,g fissati ai valori enrichment",
+        "Calcolo istantaneo, senza integrazione o ottimizzazione",
+        "Nessuna terza coordinata introdotta",
+        "Range/default sono enrichment"
+      ],
+      "enrichment_id": "interaction"
+    },
+    "edge_cases": [
+      {
+        "case": "M=0 o J=0",
+        "expected_behavior": "Valori non validi per le formule: escluderli se si aggiungono controlli sui parametri.",
+        "origin": "enrichment",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ]
+      },
+      {
+        "case": "Ingressi nulli",
+        "expected_behavior": "Non mantenere il drone fermo: p̈_y=−g.",
+        "origin": "enrichment",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ]
+      },
+      {
+        "case": "Thrust di equilibrio con velocità non nulle",
+        "expected_behavior": "Accelerazione nulla non equivale a posizione costante.",
+        "origin": "enrichment",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ]
+      }
+    ],
+    "expansion_rationale": "Tre equazioni accoppiate e lo stesso diagramma di forza formano un'unica unità; basta un ispettore istantaneo, senza aggiungere una simulazione temporale qui.",
+    "blueprint": [
+      {
+        "companion_suffix": null,
+        "focus": "Leggere correttamente il modello planare: somma degli ingressi, differenza e uscita di posizione.",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ],
+        "enrichment_ids": [
+          "example-1",
+          "interaction",
+          "visualization"
+        ]
+      }
+    ]
+  },
+  "observations": [
+    {
+      "id": "s01",
+      "category": "assumption",
+      "description": "La fonte introduce esplicitamente un planar drone model, continuo e da discretizzare.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0026",
+        "modality": "both",
+        "text_quote": "Consider a planar drone model (continuous-time to be discretized)",
+        "bbox": [
+          27,
+          31,
+          313,
+          46
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "s02",
+      "category": "equation",
+      "description": "Le equazioni, verificate sull'immagine, sono p̈_x=−(u₁+u₂)sinθ/M, p̈_y=(u₁+u₂)cosθ/M−g e θ̈=L(u₁−u₂)/(2J). Il meno della prima equazione agisce sull'intera somma u₁+u₂.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0026",
+        "modality": "both",
+        "text_quote": "¨px =",
+        "bbox": [
+          80,
+          54,
+          188,
+          112
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "s03",
+      "category": "equation",
+      "description": "L'uscita discreta y_t=col(p_{x,t},p_{y,t}) rappresenta per esempio la posizione del centro di massa.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0026",
+        "modality": "both",
+        "text_quote": "being, e.g., the position of the drone center of mass.",
+        "bbox": [
+          27,
+          122,
+          320,
+          181
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "s04",
+      "category": "diagram",
+      "description": "Il disegno mostra un drone inclinato con ingressi u₁,u₂, angolo θ rispetto alla verticale, velocità v, posizione (p_x,p_y) e curva desiderata tratteggiata.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0026",
+        "modality": "visual",
+        "text_quote": null,
+        "bbox": [
+          248,
+          74,
+          400,
+          145
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "s05",
+      "category": "concept",
+      "description": "Il goal scritto chiede di seguire una legge temporale 'in the 3D space' rispettando eventualmente limiti su angoli, velocità angolari e ingressi: la menzione 3D contrasta con il modello planare a due coordinate.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0026",
+        "modality": "both",
+        "text_quote": "given time law in the 3D space",
+        "bbox": [
+          42,
+          197,
+          433,
+          232
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "transcription-06",
+      "category": "structure",
+      "description": "Trascrizione di una regione visibile della fonte: Trajectory generation for an autonomous drone",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0026",
+        "modality": "visual",
+        "text_quote": null,
+        "bbox": [
+          10.35200023651123,
+          6.720991134643555,
+          286.6885070800781,
+          21.06719207763672
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "transcription-07",
+      "category": "structure",
+      "description": "Trascrizione di una regione visibile della fonte: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 25 |35",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0026",
+        "modality": "visual",
+        "text_quote": null,
+        "bbox": [
+          126.95381927490234,
+          247.92860412597656,
+          447.87103271484375,
+          255.1179962158203
+        ]
+      },
+      "confidence": 0.98
+    }
+  ],
+  "contextual_role": "Collega la formulazione di trajectory generation a una dinamica concreta di drone nel piano.",
+  "context_notes": [
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0025",
+      "role": "previous",
+      "note": "La pagina 25 formula il tracking su dinamica generica; qui si assegnano equazioni continue ma non ancora una f_t discreta."
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0027",
+      "role": "next",
+      "note": "La pagina 27 introduce Euler e ordina lo stato in sei componenti; non anticipare quell'ordine come se fosse già scritto qui."
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "p_x,p_y",
+      "meaning": "Coordinate della posizione del centro di massa",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04",
+        "s05"
+      ]
+    },
+    {
+      "symbol": "\\theta",
+      "meaning": "Angolo mostrato rispetto alla verticale",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04",
+        "s05"
+      ]
+    },
+    {
+      "symbol": "u_1,u_2",
+      "meaning": "Due ingressi rappresentati dalle frecce",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04",
+        "s05"
+      ]
+    },
+    {
+      "symbol": "M,J,L,g",
+      "meaning": "Parametri del modello: la pagina non ne esplicita testualmente definizioni, unità o valori",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04",
+        "s05"
+      ]
+    },
+    {
+      "symbol": "v",
+      "meaning": "Velocità indicata nel disegno",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04",
+        "s05"
+      ]
+    },
+    {
+      "symbol": "y_t",
+      "meaning": "Uscita di posizione a due componenti",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04",
+        "s05"
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "description": "La frase goal cita lo spazio 3D, mentre equazioni, uscita e titolo del modello sono planari; non estendere il modello a 3D senza una scelta editoriale esplicita.",
+      "blocking": false,
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04",
+        "s05"
+      ]
+    }
+  ],
+  "progression": {
+    "assessment": "unique",
+    "related_page_ids": [],
+    "added": [],
+    "removed": [],
+    "changed": [],
+    "observation_ids": [
+      "s01",
+      "s02",
+      "s03",
+      "s04",
+      "s05"
+    ],
+    "rationale": "Pagina con contenuto autonomo nella sequenza; nessun candidato automatico da confermare."
+  },
+  "coverage": {
+    "all_visible_regions_accounted_for": true,
+    "regions": [
+      {
+        "bbox": [
+          10.35200023651123,
+          6.720991134643555,
+          286.6885070800781,
+          21.06719207763672
+        ],
+        "description": "Regione testuale sorgente: Trajectory generation for an autonomous drone",
+        "observation_ids": [
+          "transcription-06"
+        ]
+      },
+      {
+        "bbox": [
+          28.34600067138672,
+          34.63948059082031,
+          284.2919006347656,
+          43.60588073730469
+        ],
+        "description": "Regione testuale sorgente: Consider a planar drone model (continuous-time to be discretized)",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          82.9798812866211,
+          52.15644836425781,
+          142.5981903076172,
+          67.9178466796875
+        ],
+        "description": "Regione testuale sorgente: ¨px = −u1 + u2",
+        "observation_ids": [
+          "s02"
+        ]
+      },
+      {
+        "bbox": [
+          123.07587432861328,
+          57.9554443359375,
+          162.99171447753906,
+          73.00283813476562
+        ],
+        "description": "Regione testuale sorgente: M\nsin θ",
+        "observation_ids": [
+          "s02"
+        ]
+      },
+      {
+        "bbox": [
+          83.15287780761719,
+          73.33544921875,
+          135.43118286132812,
+          89.09684753417969
+        ],
+        "description": "Regione testuale sorgente: ¨py = u1 + u2",
+        "observation_ids": [
+          "s02"
+        ]
+      },
+      {
+        "bbox": [
+          115.90887451171875,
+          79.01824188232422,
+          172.76141357421875,
+          94.18183898925781
+        ],
+        "description": "Regione testuale sorgente: M\ncos θ −g",
+        "observation_ids": [
+          "s02"
+        ]
+      },
+      {
+        "bbox": [
+          87.70587158203125,
+          95.32743835449219,
+          114.16038513183594,
+          110.09283447265625
+        ],
+        "description": "Regione testuale sorgente: ¨θ = L",
+        "observation_ids": [
+          "s02"
+        ]
+      },
+      {
+        "bbox": [
+          105.75888061523438,
+          101.01024627685547,
+          154.83544921875,
+          116.17384338378906
+        ],
+        "description": "Regione testuale sorgente: 2J (u1 −u2)",
+        "observation_ids": [
+          "s02"
+        ]
+      },
+      {
+        "bbox": [
+          18.89788818359375,
+          122.89845275878906,
+          173.953857421875,
+          131.86485290527344
+        ],
+        "description": "Regione testuale sorgente: with performance output (discrete-time)",
+        "observation_ids": [
+          "s03"
+        ]
+      },
+      {
+        "bbox": [
+          83.28089141845703,
+          147.3074493408203,
+          100.89204406738281,
+          157.2698516845703
+        ],
+        "description": "Regione testuale sorgente: yt =",
+        "observation_ids": [
+          "s03"
+        ]
+      },
+      {
+        "bbox": [
+          103.45488739013672,
+          141.10537719726562,
+          122.24005126953125,
+          151.27638244628906
+        ],
+        "description": "Regione testuale sorgente: \u0014px,t",
+        "observation_ids": [
+          "s03"
+        ]
+      },
+      {
+        "bbox": [
+          108.4058837890625,
+          152.7364501953125,
+          122.15370178222656,
+          162.23536682128906
+        ],
+        "description": "Regione testuale sorgente: py,t",
+        "observation_ids": [
+          "s03"
+        ]
+      },
+      {
+        "bbox": [
+          122.7348861694336,
+          141.10537719726562,
+          127.59467315673828,
+          150.07177734375
+        ],
+        "description": "Regione testuale sorgente: \u0015",
+        "observation_ids": [
+          "s03"
+        ]
+      },
+      {
+        "bbox": [
+          147.56488037109375,
+          145.34857177734375,
+          172.28419494628906,
+          156.8053741455078
+        ],
+        "description": "Regione testuale sorgente: t ∈N0",
+        "observation_ids": [
+          "s03"
+        ]
+      },
+      {
+        "bbox": [
+          18.89788818359375,
+          171.2174530029297,
+          221.93304443359375,
+          180.18385314941406
+        ],
+        "description": "Regione testuale sorgente: being, e.g., the position of the drone center of mass.",
+        "observation_ids": [
+          "s03"
+        ]
+      },
+      {
+        "bbox": [
+          349.28582763671875,
+          89.25875854492188,
+          367.0635681152344,
+          98.54747772216797
+        ],
+        "description": "Regione testuale sorgente: (pdes",
+        "observation_ids": [
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          356.84185791015625,
+          89.25875854492188,
+          385.810546875,
+          100.0423583984375
+        ],
+        "description": "Regione testuale sorgente: x\n, pdes",
+        "observation_ids": [
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          375.5888366699219,
+          90.57737731933594,
+          389.60150146484375,
+          100.0423583984375
+        ],
+        "description": "Regione testuale sorgente: y\n)",
+        "observation_ids": [
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          302.1048583984375,
+          141.34237670898438,
+          310.66015625,
+          149.92135620117188
+        ],
+        "description": "Regione testuale sorgente: u1",
+        "observation_ids": [
+          "s03",
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          258.6768493652344,
+          104.900390625,
+          267.2321472167969,
+          113.4793701171875
+        ],
+        "description": "Regione testuale sorgente: u2",
+        "observation_ids": [
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          303.7618713378906,
+          77.67137908935547,
+          318.72039794921875,
+          93.66549682617188
+        ],
+        "description": "Regione testuale sorgente: v\nθ",
+        "observation_ids": [
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          270.38885498046875,
+          110.48439025878906,
+          298.4305114746094,
+          118.95236206054688
+        ],
+        "description": "Regione testuale sorgente: (px, py)",
+        "observation_ids": [
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          42.81182098388672,
+          200.43946838378906,
+          410.71234130859375,
+          220.3648681640625
+        ],
+        "description": "Regione testuale sorgente: Goal:\nWe would like the position of the drone to follow a given time law in the 3D space possibly not",
+        "observation_ids": [
+          "s05"
+        ]
+      },
+      {
+        "bbox": [
+          74.9598159790039,
+          222.3574676513672,
+          378.5891418457031,
+          231.32386779785156
+        ],
+        "description": "Regione testuale sorgente: exceeding some limits in the angles, in the angular velocities and in the inputs.",
+        "observation_ids": [
+          "s05"
+        ]
+      },
+      {
+        "bbox": [
+          126.95381927490234,
+          247.92860412597656,
+          447.87103271484375,
+          255.1179962158203
+        ],
+        "description": "Regione testuale sorgente: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 25 |35",
+        "observation_ids": [
+          "transcription-07"
+        ]
+      }
+    ]
+  },
+  "mapping_recommendation": {
+    "mode": "one_to_one",
+    "rationale": "Tre equazioni accoppiate e lo stesso diagramma di forza formano un'unica unità; basta un ispettore istantaneo, senza aggiungere una simulazione temporale qui.",
+    "subpages": []
+  }
+}

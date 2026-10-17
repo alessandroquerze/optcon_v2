@@ -1,0 +1,970 @@
+{
+  "protocol_version": "1.0.0",
+  "request_sha256": "4c507d9c96d823b65dad3f8f277ed0d19696cc428dba45d325ff525103ae6fad",
+  "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0035",
+  "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+  "artifact_sha256": {
+    "text": "e90c0159c6e3b0c5590e26051a4edc7814b2ea519680dd4113f77e8e2039e9d4",
+    "layout": "394a7eee65e255003c5bf29f210ec9ee4632c073e8775b75ab397fdf443970c3",
+    "render": "ec1d7d397bdad7bb495719d7891426103a506e13c46a0a8aebf0ef912849ecea"
+  },
+  "agent": {
+    "provider": "OpenAI",
+    "model": "Codex (identificatore esatto del modello non esposto nella sessione)",
+    "run_id": "page-analysis-ce370a19242e4173828aef04d60c36ee"
+  },
+  "inspection": {
+    "text_page_ids": [
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0035",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0034",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0036"
+    ],
+    "layout_page_ids": [
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0035",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0034",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0036"
+    ],
+    "image_page_ids": [
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0035",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0034",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0036"
+    ],
+    "source_content_treated_as_data": true
+  },
+  "title": "Pendulum (III) — curva desiderata a gradino",
+  "companionPageCount": 1,
+  "didactic_plan": {
+    "source_scope_limits": [
+      "Non animare il pendolo saltando istantaneamente fra gli angoli e chiamandolo soluzione.",
+      "L'ingresso a gradino desiderato non è il solo motivo d'inammissibilità: lo stato angolare desiderato salta mentre x₂^{des}=0.",
+      "I grafici sono qualitativi; non dedurre numeri o relazioni di segno generali dai livelli disegnati.",
+      "Il caso dichiarato non traiettoria è un trasferimento fra equilibri distinti; se coincidono il caso degenere va trattato separatamente."
+    ],
+    "prerequisites": [
+      {
+        "concept": "Coppie di equilibrio del pendolo",
+        "why": "Definiscono i livelli desiderati.",
+        "origin": "source_context",
+        "page_numbers": [
+          34
+        ]
+      },
+      {
+        "concept": "Curva desiderata contro traiettoria",
+        "why": "Concetto esplicito già introdotto nel tracking.",
+        "origin": "source_context",
+        "page_numbers": [
+          22,
+          25
+        ]
+      },
+      {
+        "concept": "Funzione a tratti e continuità delle soluzioni ODE ordinarie",
+        "why": "Per comprendere perché lo stato non può seguire un salto con velocità identicamente nulla.",
+        "origin": "enrichment",
+        "page_numbers": []
+      }
+    ],
+    "source_math": [
+      {
+        "latex": "x_1^{\\mathrm{des}}(t)=\\begin{cases}\\theta_e^1&0\\leq t<T/2\\\\\\theta_e^2&T/2\\leq t\\leq T\\end{cases},\\qquad x_2^{\\mathrm{des}}(t)=0",
+        "anchor": "xdes",
+        "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+      },
+      {
+        "latex": "u^{\\mathrm{des}}(t)=\\begin{cases}u_e^1&0\\leq t<T/2\\\\u_e^2&T/2\\leq t\\leq T\\end{cases}",
+        "anchor": "with desired input",
+        "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+      }
+    ],
+    "enrichments": [
+      {
+        "id": "explain-1",
+        "label": "enrichment",
+        "type": "explanation",
+        "proposal": "Spiegazione aggiunta: per equilibri distinti x₁^{des} salta a T/2, mentre ẋ₁=x₂ e x₂^{des}=0 richiederebbero angolo costante su una traiettoria ordinaria. La slide afferma la non fattibilità ma non sviluppa questa dimostrazione.",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ]
+      },
+      {
+        "id": "example-1",
+        "label": "enrichment",
+        "type": "worked_example",
+        "proposal": "Enrichment con T=2 s, θ_e¹=0,θ_e²=π/6, l=ℓ=m=1,g=9.81; livelli di ingresso 0 e 4.905.",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ]
+      },
+      {
+        "id": "interaction",
+        "label": "enrichment",
+        "type": "interaction_design",
+        "proposal": "Cambiare livelli e tempo rende evidente che si modifica un obiettivo, non si produce automaticamente un moto del sistema.",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "id": "example-1",
+        "origin": "enrichment",
+        "purpose": "Leggere correttamente i due rami e la distinzione dal moto fisico.",
+        "setup": "Enrichment con T=2 s, θ_e¹=0,θ_e²=π/6, l=ℓ=m=1,g=9.81; livelli di ingresso 0 e 4.905.",
+        "parameters": [
+          {
+            "symbol": "T",
+            "value": "2 s"
+          },
+          {
+            "symbol": "θ_e^1,θ_e^2",
+            "value": "0,π/6"
+          }
+        ],
+        "derivation": [
+          "Per 0≤t<1: x₁^{des}=0,u^{des}=0.",
+          "A t=1 e fino a 2: x₁^{des}=π/6,u^{des}=4.905.",
+          "x₂^{des}=0 in entrambi i rami.",
+          "Il salto di angolo non è una traiettoria della dinamica; serve una traiettoria effettiva diversa."
+        ],
+        "expected_outcome": "Un riferimento irrealizzabile può ancora specificare la preferenza che il costo cercherà di approssimare.",
+        "limitations": [
+          "Numeri, unità e interpretazione l=ℓ sono enrichment.",
+          "Non è stata calcolata una traiettoria ottima."
+        ],
+        "enrichment_id": "example-1",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ]
+      }
+    ],
+    "example_omission_reason": null,
+    "visualization": {
+      "component": "PendulumDesiredStepSignals",
+      "description": "Due grafici temporali del riferimento con ramo destro chiuso a T/2, e avviso permanente 'desiderato, non traiettoria'.",
+      "origin": "source_derived",
+      "source_observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04",
+        "s05"
+      ]
+    },
+    "interactivity": {
+      "recommended": true,
+      "rationale": "Cambiare livelli e tempo rende evidente che si modifica un obiettivo, non si produce automaticamente un moto del sistema.",
+      "component": "PendulumReferenceStepInspector",
+      "parameters": [
+        {
+          "name": "Primo livello angolare",
+          "symbol": "θ_e^1",
+          "origin": "source",
+          "range": "[−π/2,π/2]",
+          "default": "0",
+          "effect_on_change": "Cambiare il livello iniziale x₁^{des} e calcolare il corrispondente u_e¹=9.81sinθ_e¹ nell'esempio dichiarato.",
+          "edge_cases": [
+            "Uguale al secondo livello: nessun salto"
+          ]
+        },
+        {
+          "name": "Secondo livello angolare",
+          "symbol": "θ_e^2",
+          "origin": "source",
+          "range": "[−π/2,π/2]",
+          "default": "π/6",
+          "effect_on_change": "Cambiare il secondo ramo e u_e²=9.81sinθ_e²; aggiornare l'ampiezza del salto senza animare una soluzione.",
+          "edge_cases": [
+            "Uguale al primo: riferimento costante"
+          ]
+        },
+        {
+          "name": "Durata",
+          "symbol": "T",
+          "origin": "source",
+          "range": "[1,8] s",
+          "default": "2 s",
+          "effect_on_change": "Spostare T e T/2 e ridisegnare gli intervalli; l'ampiezza del salto resta invariata.",
+          "edge_cases": [
+            "T>0"
+          ]
+        }
+      ],
+      "outputs": [
+        "x₁^{des},x₂^{des},u^{des}",
+        "Istante di commutazione",
+        "Indicazione del caso degenere"
+      ],
+      "invariants": [
+        "Velocità desiderata zero",
+        "Nessuna traiettoria fisica o ottima calcolata",
+        "Formula di coppia con identificazioni enrichment esplicite",
+        "Range/default sono enrichment"
+      ],
+      "enrichment_id": "interaction"
+    },
+    "edge_cases": [
+      {
+        "case": "t=T/2",
+        "expected_behavior": "Usare il secondo ramo come stampato.",
+        "origin": "enrichment",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ]
+      },
+      {
+        "case": "Equilibri coincidenti",
+        "expected_behavior": "Il riferimento diventa costante e può essere una traiettoria di equilibrio: non mantenere indiscriminatamente l'avviso di salto.",
+        "origin": "enrichment",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ]
+      },
+      {
+        "case": "T=0",
+        "expected_behavior": "Escludere dall'interazione progettata; la divisione in due intervalli non avrebbe il significato del trasferimento.",
+        "origin": "enrichment",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ]
+      }
+    ],
+    "expansion_rationale": "Due segnali coordinati e un avviso centrale; il confronto resta un'unica unità concettuale.",
+    "blueprint": [
+      {
+        "companion_suffix": null,
+        "focus": "Un riferimento può cambiare a gradino; la traiettoria del pendolo deve comunque rispettare la dinamica.",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ],
+        "enrichment_ids": [
+          "explain-1",
+          "example-1",
+          "interaction"
+        ]
+      }
+    ]
+  },
+  "observations": [
+    {
+      "id": "s01",
+      "category": "equation",
+      "description": "x₁^{des}(t) vale θ_e¹ su 0≤t<T/2 e θ_e² su T/2≤t≤T; x₂^{des}(t)=0.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0035",
+        "modality": "both",
+        "text_quote": "xdes",
+        "bbox": [
+          70,
+          51,
+          230,
+          97
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "s02",
+      "category": "equation",
+      "description": "L'ingresso desiderato u^{des}(t) passa da u_e¹ a u_e² allo stesso istante T/2, con il secondo valore incluso al punto di cambio.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0035",
+        "modality": "both",
+        "text_quote": "with desired input",
+        "bbox": [
+          78,
+          120,
+          220,
+          149
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "s03",
+      "category": "concept",
+      "description": "La fonte aggiunge il desiderio di mantenere θ̇ il più piccolo possibile.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0035",
+        "modality": "both",
+        "text_quote": "At the same time, we want",
+        "bbox": [
+          17,
+          159,
+          360,
+          174
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "s04",
+      "category": "assumption",
+      "description": "Il riquadro Important afferma esplicitamente che (x^{des}(t),u^{des}(t)) non è una traiettoria del sistema.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0035",
+        "modality": "both",
+        "text_quote": "is not a trajectory of the system!",
+        "bbox": [
+          17,
+          177,
+          324,
+          201
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "s05",
+      "category": "diagram",
+      "description": "Due grafici temporali mostrano i livelli a gradino dell'angolo e dell'ingresso, con T/2 e T marcati; sono schemi senza valori numerici.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0035",
+        "modality": "visual",
+        "text_quote": null,
+        "bbox": [
+          267,
+          47,
+          367,
+          220
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "transcription-06",
+      "category": "structure",
+      "description": "Trascrizione di una regione visibile della fonte: Example: trajectory generation for a pendulum (III)",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0035",
+        "modality": "visual",
+        "text_quote": null,
+        "bbox": [
+          10.35200023651123,
+          6.720991134643555,
+          312.4256591796875,
+          21.06719207763672
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "transcription-07",
+      "category": "structure",
+      "description": "Trascrizione di una regione visibile della fonte: In order to find a trajectory to move from an equilibrium to another one, we can define as desired curve",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0035",
+        "modality": "visual",
+        "text_quote": null,
+        "bbox": [
+          28.34600067138672,
+          35.43647766113281,
+          425.23504638671875,
+          44.40287780761719
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "transcription-08",
+      "category": "structure",
+      "description": "Trascrizione di una regione visibile della fonte: with desired input",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0035",
+        "modality": "visual",
+        "text_quote": null,
+        "bbox": [
+          32.126869201660156,
+          105.41348266601562,
+          101.24887084960938,
+          114.3798828125
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "transcription-09",
+      "category": "structure",
+      "description": "Trascrizione di una regione visibile della fonte: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 34 |35",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0035",
+        "modality": "visual",
+        "text_quote": null,
+        "bbox": [
+          126.95381927490234,
+          247.92864990234375,
+          447.87103271484375,
+          255.1179962158203
+        ]
+      },
+      "confidence": 0.98
+    }
+  ],
+  "contextual_role": "Costruisce il desiderato del trasferimento e rende esplicito che non è dinamicamente realizzabile come traiettoria a gradino.",
+  "context_notes": [
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0034",
+      "role": "previous",
+      "note": "La pagina 34 fornisce gli equilibri, con refuso d'indice da conservare nella revisione; qui essi determinano i livelli del riferimento."
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0036",
+      "role": "next",
+      "note": "La pagina 36 usa questi desiderati nel costo, imponendo la dinamica solo alla traiettoria effettivamente cercata."
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "x_1^{\\mathrm{des}},x_2^{\\mathrm{des}}",
+      "meaning": "Componenti del riferimento, non della traiettoria fisica cercata",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04",
+        "s05"
+      ]
+    },
+    {
+      "symbol": "u^{\\mathrm{des}}",
+      "meaning": "Riferimento dell'ingresso",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04",
+        "s05"
+      ]
+    },
+    {
+      "symbol": "T/2",
+      "meaning": "Istante di commutazione; il secondo ramo lo include",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04",
+        "s05"
+      ]
+    },
+    {
+      "symbol": "\\theta_e^1,\\theta_e^2,u_e^1,u_e^2",
+      "meaning": "Livelli associati ai due equilibri della pagina precedente",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04",
+        "s05"
+      ]
+    }
+  ],
+  "uncertainties": [],
+  "progression": {
+    "assessment": "unique",
+    "related_page_ids": [],
+    "added": [],
+    "removed": [],
+    "changed": [],
+    "observation_ids": [
+      "s01",
+      "s02",
+      "s03",
+      "s04",
+      "s05"
+    ],
+    "rationale": "Pagina con contenuto autonomo nella sequenza; nessun candidato automatico da confermare."
+  },
+  "coverage": {
+    "all_visible_regions_accounted_for": true,
+    "regions": [
+      {
+        "bbox": [
+          10.35200023651123,
+          6.720991134643555,
+          312.4256591796875,
+          21.06719207763672
+        ],
+        "description": "Regione testuale sorgente: Example: trajectory generation for a pendulum (III)",
+        "observation_ids": [
+          "transcription-06"
+        ]
+      },
+      {
+        "bbox": [
+          28.34600067138672,
+          35.43647766113281,
+          425.23504638671875,
+          44.40287780761719
+        ],
+        "description": "Regione testuale sorgente: In order to find a trajectory to move from an equilibrium to another one, we can define as desired curve",
+        "observation_ids": [
+          "transcription-07"
+        ]
+      },
+      {
+        "bbox": [
+          73.78987884521484,
+          60.862342834472656,
+          87.54888916015625,
+          71.79991149902344
+        ],
+        "description": "Regione testuale sorgente: xdes",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          79.01287841796875,
+          62.83349609375,
+          108.26602935791016,
+          73.37789916992188
+        ],
+        "description": "Regione testuale sorgente: 1 (t) =",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          110.83088684082031,
+          53.941429138183594,
+          118.25506591796875,
+          62.90782928466797
+        ],
+        "description": "Regione testuale sorgente: (",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          118.2538833618164,
+          55.36181640625,
+          126.4761962890625,
+          65.61289978027344
+        ],
+        "description": "Regione testuale sorgente: θ1",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          118.25387573242188,
+          55.497802734375,
+          183.60618591308594,
+          78.76390075683594
+        ],
+        "description": "Regione testuale sorgente: e\n0 ≤t < T\n2\nθ2",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          122.56787872314453,
+          73.89881896972656,
+          126.08868408203125,
+          79.87641906738281
+        ],
+        "description": "Regione testuale sorgente: e",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          146.6008758544922,
+          68.64781188964844,
+          150.9705047607422,
+          74.62541198730469
+        ],
+        "description": "Regione testuale sorgente: T",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          147.44387817382812,
+          69.6812973022461,
+          186.41770935058594,
+          81.68970489501953
+        ],
+        "description": "Regione testuale sorgente: 2 ≤t ≤T",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          73.78987121582031,
+          84.5133285522461,
+          87.54888153076172,
+          95.45089721679688
+        ],
+        "description": "Regione testuale sorgente: xdes",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          79.01287078857422,
+          86.48448181152344,
+          115.43913269042969,
+          97.02888488769531
+        ],
+        "description": "Regione testuale sorgente: 2 (t) = 0",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          32.126869201660156,
+          105.41348266601562,
+          101.24887084960938,
+          114.3798828125
+        ],
+        "description": "Regione testuale sorgente: with desired input",
+        "observation_ids": [
+          "transcription-08"
+        ]
+      },
+      {
+        "bbox": [
+          73.38287353515625,
+          129.8433380126953,
+          107.93901824951172,
+          140.78187561035156
+        ],
+        "description": "Regione testuale sorgente: udes(t) =",
+        "observation_ids": [
+          "s02"
+        ]
+      },
+      {
+        "bbox": [
+          110.50387573242188,
+          122.92342376708984,
+          117.92805480957031,
+          131.8898162841797
+        ],
+        "description": "Regione testuale sorgente: (",
+        "observation_ids": [
+          "s02"
+        ]
+      },
+      {
+        "bbox": [
+          117.92687225341797,
+          124.34381103515625,
+          126.88218688964844,
+          134.5948944091797
+        ],
+        "description": "Regione testuale sorgente: u1",
+        "observation_ids": [
+          "s02"
+        ]
+      },
+      {
+        "bbox": [
+          117.9268798828125,
+          124.47880554199219,
+          184.01219177246094,
+          147.74490356445312
+        ],
+        "description": "Regione testuale sorgente: e\n0 ≤t < T\n2\nu2",
+        "observation_ids": [
+          "s02"
+        ]
+      },
+      {
+        "bbox": [
+          123.2298812866211,
+          142.88082885742188,
+          126.75068664550781,
+          148.85842895507812
+        ],
+        "description": "Regione testuale sorgente: e",
+        "observation_ids": [
+          "s02"
+        ]
+      },
+      {
+        "bbox": [
+          147.00787353515625,
+          137.6298370361328,
+          151.37750244140625,
+          143.60743713378906
+        ],
+        "description": "Regione testuale sorgente: T",
+        "observation_ids": [
+          "s02"
+        ]
+      },
+      {
+        "bbox": [
+          147.8508758544922,
+          138.66229248046875,
+          186.82373046875,
+          150.67169189453125
+        ],
+        "description": "Regione testuale sorgente: 2 ≤t ≤T",
+        "observation_ids": [
+          "s02"
+        ]
+      },
+      {
+        "bbox": [
+          32.12689208984375,
+          157.98851013183594,
+          224.4981231689453,
+          169.3218994140625
+        ],
+        "description": "Regione testuale sorgente: At the same time, we want ˙θ as small as possible.",
+        "observation_ids": [
+          "s03"
+        ]
+      },
+      {
+        "bbox": [
+          35.684906005859375,
+          178.32162475585938,
+          227.00888061523438,
+          200.20590209960938
+        ],
+        "description": "Regione testuale sorgente: Important\n(xdes(t), udes(t)) is not a trajectory of the system!",
+        "observation_ids": [
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          360.0348815917969,
+          85.7424545288086,
+          363.09539794921875,
+          93.71255493164062
+        ],
+        "description": "Regione testuale sorgente: t",
+        "observation_ids": [
+          "s05"
+        ]
+      },
+      {
+        "bbox": [
+          269.78887939453125,
+          55.510833740234375,
+          277.6261901855469,
+          64.799560546875
+        ],
+        "description": "Regione testuale sorgente: θ1",
+        "observation_ids": [
+          "s05"
+        ]
+      },
+      {
+        "bbox": [
+          273.7388916015625,
+          60.315826416015625,
+          277.25970458984375,
+          66.29342651367188
+        ],
+        "description": "Regione testuale sorgente: e",
+        "observation_ids": [
+          "s05"
+        ]
+      },
+      {
+        "bbox": [
+          270.3368835449219,
+          100.86683654785156,
+          278.1741943359375,
+          110.15455627441406
+        ],
+        "description": "Regione testuale sorgente: θ2",
+        "observation_ids": [
+          "s05"
+        ]
+      },
+      {
+        "bbox": [
+          274.2868957519531,
+          105.67183685302734,
+          277.8077087402344,
+          111.6494369506836
+        ],
+        "description": "Regione testuale sorgente: e",
+        "observation_ids": [
+          "s05"
+        ]
+      },
+      {
+        "bbox": [
+          313.5408935546875,
+          88.0528335571289,
+          317.9105224609375,
+          94.03043365478516
+        ],
+        "description": "Regione testuale sorgente: T",
+        "observation_ids": [
+          "s05"
+        ]
+      },
+      {
+        "bbox": [
+          314.3838806152344,
+          87.9194564819336,
+          352.1053771972656,
+          100.4144287109375
+        ],
+        "description": "Regione testuale sorgente: 2\nT",
+        "observation_ids": [
+          "s05"
+        ]
+      },
+      {
+        "bbox": [
+          360.0348815917969,
+          165.11746215820312,
+          363.09539794921875,
+          173.08755493164062
+        ],
+        "description": "Regione testuale sorgente: t",
+        "observation_ids": [
+          "s05"
+        ]
+      },
+      {
+        "bbox": [
+          269.0718688964844,
+          180.24183654785156,
+          277.62615966796875,
+          189.53054809570312
+        ],
+        "description": "Regione testuale sorgente: u1",
+        "observation_ids": [
+          "s04",
+          "s05"
+        ]
+      },
+      {
+        "bbox": [
+          273.9738464355469,
+          185.04783630371094,
+          277.4946594238281,
+          191.0254364013672
+        ],
+        "description": "Regione testuale sorgente: e",
+        "observation_ids": [
+          "s04",
+          "s05"
+        ]
+      },
+      {
+        "bbox": [
+          269.6188659667969,
+          134.8818359375,
+          278.1741638183594,
+          144.17056274414062
+        ],
+        "description": "Regione testuale sorgente: u2",
+        "observation_ids": [
+          "s05"
+        ]
+      },
+      {
+        "bbox": [
+          274.5218505859375,
+          139.68783569335938,
+          278.04266357421875,
+          145.66543579101562
+        ],
+        "description": "Regione testuale sorgente: e",
+        "observation_ids": [
+          "s05"
+        ]
+      },
+      {
+        "bbox": [
+          313.5408935546875,
+          167.4268341064453,
+          317.9105224609375,
+          173.40443420410156
+        ],
+        "description": "Regione testuale sorgente: T",
+        "observation_ids": [
+          "s03",
+          "s05"
+        ]
+      },
+      {
+        "bbox": [
+          314.3838806152344,
+          167.28945922851562,
+          352.1053771972656,
+          179.78843688964844
+        ],
+        "description": "Regione testuale sorgente: 2\nT",
+        "observation_ids": [
+          "s03",
+          "s04",
+          "s05"
+        ]
+      },
+      {
+        "bbox": [
+          126.95381927490234,
+          247.92864990234375,
+          447.87103271484375,
+          255.1179962158203
+        ],
+        "description": "Regione testuale sorgente: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 34 |35",
+        "observation_ids": [
+          "transcription-09"
+        ]
+      }
+    ]
+  },
+  "mapping_recommendation": {
+    "mode": "one_to_one",
+    "rationale": "Due segnali coordinati e un avviso centrale; il confronto resta un'unica unità concettuale.",
+    "subpages": []
+  }
+}

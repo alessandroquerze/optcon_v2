@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0027",
+  "document_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1",
+  "source": {
+    "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+    "page_index": 26,
+    "physical_page_number": 27,
+    "pdf_label_raw": "<FEFF00320036>",
+    "pdf_label": "26",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Optimization algorithms (unconstrained): iterative descent methods",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      407.6412658691406,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 26,
+        "total": 73,
+        "raw": "26 |73",
+        "bbox": [
+          150.68800354003906,
+          247.92860412597656,
+          447.8712158203125,
+          258.29376220703125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0027/text.txt",
+      "sha256": "c6d339c4f6d3ab98b4b223df4fa8ed9e022a991b4bb3f2b584136fc99e44a895"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0027/text.reading-order.txt",
+      "sha256": "4f731e3edef3332f4a3ce282765637be63306041c2919f4b720bc48638bb23ec"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0027/layout.json",
+      "sha256": "6924864022daf9b4e05142a4f798025e86dd432b970696fedb03273764713731"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0027/render.png",
+      "sha256": "b6d54e04ad30613e82b36eed60c1398aaa9c53a45c6ddc0168155bc82cf7b1c0",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "061292159b78dd781dcfdba53c709bebc62bd64a2aa4fef47a1aac0255e22797"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0026",
+    "next_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0028"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "pending",
+    "result": null
+  }
+}

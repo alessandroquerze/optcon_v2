@@ -1,0 +1,23 @@
+Gradient methods: remarks
+
+    Remark The propositions do not guarantee that the sequence converges (to a point) and not even
+     existence of limit points. Then either ℓ(zk) →−∞or ℓ(zk) converges to a finite value and ∇ℓ(zk) →0.
+     In the second case, one can show that any subsequence {zkp} converges to some stationary point ¯z
+     satisfying ∇ℓ(¯z) = 0.                                            □
+
+
+    Remark Existence of minima can be guaranteed by excluding ℓ(zk)→−∞via suitable assumptions.
+    Assume, e.g., ℓcoercive (or radially unbounded), i.e., lim∥z∥→∞ℓ(z) = ∞.              □
+
+    Remark For general (nonconvex) problems, if coercivity is assumed, only convergence (of subsequences)
+     to stationary points (i.e., to ¯z with ∇ℓ(¯z) = 0) can be proven.                     □
+
+
+    Remark For convex programs, assuming coercivity, convergence (of subsequences) to global minima is
+    guaranteed since necessary conditions of optimality are also sufficient.                 □
+
+
+
+
+
+                                                      Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 41 |73

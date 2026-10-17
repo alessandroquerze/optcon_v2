@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0022",
+  "document_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1",
+  "source": {
+    "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+    "page_index": 21,
+    "physical_page_number": 22,
+    "pdf_label_raw": "<FEFF00320031>",
+    "pdf_label": "21",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Minimization of convex functions",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      204.04006958007812,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 21,
+        "total": 73,
+        "raw": "21 |73",
+        "bbox": [
+          150.68800354003906,
+          247.92860412597656,
+          447.8712158203125,
+          258.29376220703125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0022/text.txt",
+      "sha256": "17994b2243ae989b6cc8a6f2dace285e09787c52e7c40692328de757dbcabf42"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0022/text.reading-order.txt",
+      "sha256": "46990314f25c80baabd522e42338034746b816daa3921fea8d5167c4ab1d6b62"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0022/layout.json",
+      "sha256": "57300fb20ecae4f163644d7ba802130214323e2fa0992aabd1a4ac085fe89d44"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0022/render.png",
+      "sha256": "9e944d9ba8d45e3459192e0897665de63d40d20e40c33bf1fb85028fa8ffaa4c",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "71fa096b814ae928dfde8fad9f9062a40c6855163521d4ac8425f77fb3eb114c"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0021",
+    "next_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0023"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "pending",
+    "result": null
+  }
+}

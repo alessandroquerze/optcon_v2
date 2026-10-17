@@ -1,0 +1,659 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0010",
+  "document_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc",
+  "source": {
+    "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+    "page_index": 9,
+    "physical_page_number": 10,
+    "pdf_label_raw": "<FEFF0039>",
+    "pdf_label": "9",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Discrete-time control systems and notation",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      262.25689697265625,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 9,
+        "total": 35,
+        "raw": "9 |35",
+        "bbox": [
+          130.1300048828125,
+          247.92860412597656,
+          447.8712158203125,
+          258.29376220703125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0010/text.txt",
+      "sha256": "b7c8331e8b1a418559a40d5c2bb886ccbb263309331df3166539a3a1c1509703"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0010/text.reading-order.txt",
+      "sha256": "3688183c03b93f55ee7dfa1682113c33c58104f01b5e468d3fd5e2edb4853718"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0010/layout.json",
+      "sha256": "365ab8a43c994f7c571a2be1898beb33d1e2552d80bcbd82e7123438ef1de152"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0010/render.png",
+      "sha256": "c81dec9ae49864c20fe4da5061a0226835ec5a4dd15d7fe4960c452917933dc5",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "2a1213c6adc13dbf2d080adfa7603b7c406ea65d42abb395e165c9524790fefe"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0009",
+    "next_page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0011"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "proposed_after_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "119f86b5434a736f5e8047273260364312a580cbe97bf031f116836a0f583836",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0010",
+      "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+      "artifact_sha256": {
+        "text": "b7c8331e8b1a418559a40d5c2bb886ccbb263309331df3166539a3a1c1509703",
+        "layout": "365ab8a43c994f7c571a2be1898beb33d1e2552d80bcbd82e7123438ef1de152",
+        "render": "c81dec9ae49864c20fe4da5061a0226835ec5a4dd15d7fe4960c452917933dc5"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "Codex (identificatore esatto del modello non esposto nella sessione)",
+        "run_id": "page-analysis-ce370a19242e4173828aef04d60c36ee"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0010",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0009",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0011"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0010",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0009",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0011"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0010",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0009",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0011"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Discrete-time systems — orizzonte finito e vettori impilati",
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "T transizioni generano T+1 stati se si conta anche x₀, ma 𝐱 ne contiene solo T.",
+          "Non aggiungere uᵀ allo stack né includere x₀ come variabile libera.",
+          "La pagina non assegna una funzione di costo."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Notazione discreta e condizione iniziale",
+            "why": "Per allineare il primo e ultimo aggiornamento.",
+            "origin": "source_context",
+            "page_numbers": [
+              9
+            ]
+          },
+          {
+            "concept": "Dimensione dei vettori",
+            "why": "Per comprendere nT e mT.",
+            "origin": "source_context",
+            "page_numbers": [
+              8
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "x_{t+1}=f_t(x_t,u_t),\\quad x_0=x^0,\\quad t=0,\\ldots,T-1\\tag{1}",
+            "anchor": "xt+1 = ft(xt, ut),",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          },
+          {
+            "latex": "\\mathbf{x}\\in\\mathbb{R}^{nT},\\quad \\mathbf{u}\\in\\mathbb{R}^{mT}",
+            "anchor": "We use x",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          },
+          {
+            "latex": "\\mathbf{x}:=\\operatorname{col}(x_1,\\ldots,x_T),\\qquad\\mathbf{u}:=\\operatorname{col}(u_0,\\ldots,u_{T-1})",
+            "anchor": "x := col",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "example-1",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "Enrichment: n=m=1, T=3, x⁰=1, xₜ₊₁=xₜ+uₜ e 𝐮=col(0.5,−0.25,0).",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Cambiare T e le dimensioni rende immediato il conteggio dei blocchi senza simulare una dinamica non assegnata.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "id": "visualization",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Timeline con blocco x₀ esterno allo stack e parentesi graffe distinte per 𝐱 e 𝐮.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Contare correttamente stati, ingressi e dimensioni.",
+            "setup": "Enrichment: n=m=1, T=3, x⁰=1, xₜ₊₁=xₜ+uₜ e 𝐮=col(0.5,−0.25,0).",
+            "parameters": [
+              {
+                "symbol": "T",
+                "value": "3"
+              },
+              {
+                "symbol": "n,m",
+                "value": "1,1"
+              },
+              {
+                "symbol": "x^0",
+                "value": "1"
+              },
+              {
+                "symbol": "\\mathbf{u}",
+                "value": "(0.5,−0.25,0)"
+              }
+            ],
+            "derivation": [
+              "x₁=1.5, x₂=1.25, x₃=1.25.",
+              "𝐱=col(1.5,1.25,1.25)∈R³.",
+              "La timeline contiene quattro stati x₀,x₁,x₂,x₃ e tre ingressi."
+            ],
+            "expected_outcome": "Entrambi gli stack hanno tre blocchi, con indici diversi; x₀ resta un dato.",
+            "limitations": [
+              "La dinamica integratore e i numeri sono enrichment."
+            ],
+            "enrichment_id": "example-1",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "FiniteHorizonStackDiagram",
+          "description": "Timeline con blocco x₀ esterno allo stack e parentesi graffe distinte per 𝐱 e 𝐮.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Cambiare T e le dimensioni rende immediato il conteggio dei blocchi senza simulare una dinamica non assegnata.",
+          "component": "HorizonIndexInspector",
+          "parameters": [
+            {
+              "name": "Orizzonte",
+              "symbol": "T",
+              "origin": "source",
+              "range": "Interi 1…6",
+              "default": "3",
+              "effect_on_change": "Ridisegnare T transizioni, T+1 nodi di stato e T blocchi per ciascuno stack; aggiornare nT e mT.",
+              "edge_cases": [
+                "T=1: x₁ e u₀ sono gli unici blocchi"
+              ]
+            },
+            {
+              "name": "Dimensione stato",
+              "symbol": "n",
+              "origin": "source",
+              "range": "Interi 1…3",
+              "default": "1",
+              "effect_on_change": "Aggiornare la dimensione di ogni blocco xₜ e quella dello stack nT, senza cambiare gli indici temporali.",
+              "edge_cases": [
+                "Non trattare i componenti come istanti"
+              ]
+            },
+            {
+              "name": "Dimensione ingresso",
+              "symbol": "m",
+              "origin": "source",
+              "range": "Interi 1…3",
+              "default": "1",
+              "effect_on_change": "Aggiornare i blocchi uₜ e mT lasciando invariata la dimensione dello stato.",
+              "edge_cases": [
+                "n e m possono differire"
+              ]
+            }
+          ],
+          "outputs": [
+            "Timeline",
+            "Stack etichettati",
+            "Dimensioni nT e mT"
+          ],
+          "invariants": [
+            "x₀ escluso da 𝐱",
+            "Ultimo ingresso u_{T−1}",
+            "Range e default dei controlli sono scelte di enrichment, non della fonte"
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "T=1",
+            "expected_behavior": "Mostrare un solo ingresso u₀ e uno stato impilato x₁.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "case": "T=0",
+            "expected_behavior": "Escluderlo dal controllo proposto; gli stack vuoti richiederebbero una convenzione non discussa dalla fonte.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          }
+        ],
+        "expansion_rationale": "La notazione e il conteggio sono un'unica unità; una timeline evita la necessità di separare definizione ed esempio.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Per T transizioni: x₀ dato, 𝐱=col(x₁,…,x_T), 𝐮=col(u₀,…,u_{T−1}).",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ],
+            "enrichment_ids": [
+              "example-1",
+              "interaction",
+              "visualization"
+            ]
+          }
+        ]
+      },
+      "observations": [
+        {
+          "id": "s01",
+          "category": "equation",
+          "description": "Il sistema (1) è xₜ₊₁=fₜ(xₜ,uₜ), x₀=x⁰, t=0,…,T−1.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0010",
+            "modality": "both",
+            "text_quote": "t = 0, . . . , T −1",
+            "bbox": [
+              28,
+              32,
+              443,
+              83
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s02",
+          "category": "definition",
+          "description": "Il vettore impilato degli stati è in grassetto: 𝐱∈Rⁿᵀ e 𝐱:=col(x₁,…,x_T). Non include x₀.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0010",
+            "modality": "both",
+            "text_quote": "x := col(x1, . . . , xT )",
+            "bbox": [
+              27,
+              99,
+              434,
+              141
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s03",
+          "category": "definition",
+          "description": "Il vettore impilato degli ingressi è 𝐮∈Rᵐᵀ e 𝐮:=col(u₀,…,u_{T−1}). Gli indici degli ingressi sono sfalsati rispetto a quelli degli stati impilati.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0010",
+            "modality": "both",
+            "text_quote": "u := col(u0, . . . , uT −1).",
+            "bbox": [
+              27,
+              99,
+              434,
+              159
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s04",
+          "category": "definition",
+          "description": "col costruisce il vettore con le componenti elencate; ogni xₜ ha dimensione n e ogni uₜ dimensione m.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0010",
+            "modality": "both",
+            "text_quote": "where col(x1",
+            "bbox": [
+              27,
+              165,
+              380,
+              178
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-05",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Discrete-time control systems and notation",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0010",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              10.35200023651123,
+              6.720991134643555,
+              262.25689697265625,
+              21.06719207763672
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-06",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 9 |35",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0010",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              130.1300048828125,
+              247.92860412597656,
+              447.8712158203125,
+              255.1179962158203
+            ]
+          },
+          "confidence": 0.98
+        }
+      ],
+      "contextual_role": "Fissa i confini dell'orizzonte e l'identità delle variabili impilate usate per traiettorie e ottimizzazione.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0009",
+          "role": "previous",
+          "note": "La pagina 9 introduceva indici su N₀; qui si considera solo un intervallo finito."
+        },
+        {
+          "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0011",
+          "role": "next",
+          "note": "La pagina 11 usa le coppie di stack per definire quando una sequenza è una traiettoria."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "T",
+          "meaning": "Numero di transizioni nell'orizzonte finito",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        {
+          "symbol": "\\mathbf{x}",
+          "meaning": "Stack degli stati da x₁ a x_T, grassetto nella fonte",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        {
+          "symbol": "\\mathbf{u}",
+          "meaning": "Stack degli ingressi da u₀ a u_{T−1}, grassetto nella fonte",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        {
+          "symbol": "\\operatorname{col}",
+          "meaning": "Concatenazione verticale",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        {
+          "symbol": "x^0",
+          "meaning": "Stato iniziale fissato, non incluso in 𝐱",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ],
+        "rationale": "Pagina con contenuto autonomo nella sequenza; nessun candidato automatico da confermare."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              10.35200023651123,
+              6.720991134643555,
+              262.25689697265625,
+              21.06719207763672
+            ],
+            "description": "Regione testuale sorgente: Discrete-time control systems and notation",
+            "observation_ids": [
+              "transcription-05"
+            ]
+          },
+          {
+            "bbox": [
+              28.34600067138672,
+              34.63948059082031,
+              283.9064025878906,
+              43.60588073730469
+            ],
+            "description": "Regione testuale sorgente: Consider a nonlinear, discrete-time system on a finite time-horizon",
+            "observation_ids": [
+              "s01"
+            ]
+          },
+          {
+            "bbox": [
+              123.90799713134766,
+              51.785797119140625,
+              425.2038269042969,
+              63.5308837890625
+            ],
+            "description": "Regione testuale sorgente: xt+1 = ft(xt, ut),\nx0 = x0,\nt = 0, . . . , T −1\n(1)",
+            "observation_ids": [
+              "s01"
+            ]
+          },
+          {
+            "bbox": [
+              28.34698486328125,
+              68.6884765625,
+              340.1053771972656,
+              82.34368133544922
+            ],
+            "description": "Regione testuale sorgente: where xt ∈Rn and ut ∈Rm are the state and the input of the system at time t.",
+            "observation_ids": [
+              "s01"
+            ]
+          },
+          {
+            "bbox": [
+              28.34698486328125,
+              91.42648315429688,
+              423.9390869140625,
+              123.306884765625
+            ],
+            "description": "Regione testuale sorgente: Notation\nWe use x ∈RnT and u ∈RmT to denote, respectively, the stack of the states xt for all t = 1, . . . , T\nand the inputs ut for all t = 0, . . . , T −1, that is",
+            "observation_ids": [
+              "s02",
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              180.9590301513672,
+              132.2734832763672,
+              260.7535705566406,
+              142.2358856201172
+            ],
+            "description": "Regione testuale sorgente: x := col(x1, . . . , xT )",
+            "observation_ids": [
+              "s02",
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              180.66502380371094,
+              146.22047424316406,
+              272.8834228515625,
+              159.8917694091797
+            ],
+            "description": "Regione testuale sorgente: u := col(u0, . . . , uT −1).",
+            "observation_ids": [
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              28.347030639648438,
+              165.1494903564453,
+              278.9554138183594,
+              175.11288452148438
+            ],
+            "description": "Regione testuale sorgente: where col(x1, . . . , xT ) is the vector with components x1, . . . , xT .",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              130.1300048828125,
+              247.92860412597656,
+              447.8712158203125,
+              255.1179962158203
+            ],
+            "description": "Regione testuale sorgente: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 9 |35",
+            "observation_ids": [
+              "transcription-06"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "La notazione e il conteggio sono un'unica unità; una timeline evita la necessità di separare definizione ed esempio.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
+}

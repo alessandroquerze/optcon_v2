@@ -1,0 +1,29 @@
+Example of cost function: vector set up
+Decision variable: z ∈Rd
+Cost function:
+• Distance from a point: ℓ(z) = 1
+2∥z −¯z∥2 = 1
+2(z −¯z)⊤(z −¯z) with ¯z ∈Rd a given point.
+• Weighted distance: given a positive (semi-)definite (weight) matrix W ∈Rd×d,
+ℓ(z) = 1
+2∥z −¯z∥2
+W = 1
+2(z −¯z)⊤W(z −¯z),
+with ¯z ∈Rd a given point.
+Consider z ∈R2, z =
+z1
+z2
+
+, W =
+w1
+0
+0
+w2
+
+> 0 with w1 > 0, w2 > 0, the cost function is
+ℓ(z) = 1
+2∥z −¯z∥2
+W = 1
+2w1(z1 −¯z1)2 + 1
+2w1(z2 −¯z2)2
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 15 |35

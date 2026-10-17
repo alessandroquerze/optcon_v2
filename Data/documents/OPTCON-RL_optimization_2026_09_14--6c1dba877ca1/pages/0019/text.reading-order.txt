@@ -1,0 +1,25 @@
+Graphical interpretation of convexity
+
+
+       If ℓis differentiable and convex, then
+                                  ℓ(zB) ≥ℓ(zA) + ∇ℓ(zA)⊤(zB −zA)
+
+     for all zA, zB ∈Z.
+
+       If ℓis differentiable and µ-strongly convex, then
+                          ℓ(zB) ≥ℓ(zA) + ∇ℓ(zA)⊤(zB −zA) + µ2 ∥zB −zA∥2
+     for all zA, zB ∈Z.
+
+    That is, strong convexity imposes a quadratic lower bound on ℓ
+
+                                 ℓ(zB)
+
+
+
+
+
+                                                           (zA, ℓ(zA))
+
+
+
+                                                      Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 18 |73

@@ -1,0 +1,9 @@
+Second order sufficient conditions of optimality
+Second order sufficient condition of optimality (unconstrained)
+Let ℓ: Rd →R be twice continuously differentiable (C2) in B(z⋆, ϵ) for some ϵ > 0. Suppose that
+z⋆∈Rd satisfies
+∇ℓ(z⋆) = 0
+and
+∇2ℓ(z⋆) > 0 (positive definite).
+Then z⋆is a strict (unconstrained) local minimum of ℓ.
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 8 |73

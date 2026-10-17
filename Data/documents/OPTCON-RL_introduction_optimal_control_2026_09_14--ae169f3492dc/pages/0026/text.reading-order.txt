@@ -1,0 +1,26 @@
+Trajectory generation for an autonomous drone
+
+
+    Consider a planar drone model (continuous-time to be discretized)
+
+                         ¨px = −u1 + u2 sin θ
+             M
+                     u1 + u2
+                               cos θ −g                                  v                          ¨py =
+            M                                             θ
+                                                                                               (pdesx   , pdesy  )                L
+                             ¨θ =                          (u1 −u2)                        u2                    2J                                                                       (px, py)
+  with performance output (discrete-time)
+
+                            px,t                                          u1                    yt =              t ∈N0
+                             py,t
+
+  being, e.g., the position of the drone center of mass.
+
+
+                                                    Goal:
+     We would like the position of the drone to follow a given time law in the 3D space possibly not
+                exceeding some limits in the angles, in the angular velocities and in the inputs.
+
+
+                                            Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 25 |35

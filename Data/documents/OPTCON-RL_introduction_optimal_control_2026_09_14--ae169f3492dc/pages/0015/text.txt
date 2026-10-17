@@ -1,0 +1,6 @@
+Example of cost function: scalar set up
+Scalar set up d = 1
+Decision variable: z ∈Rd = R
+Cost function: ℓ(z) = 1
+2(z −¯z)2, with ¯z ∈R a give point.
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 14 |35

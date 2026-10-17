@@ -1,0 +1,20 @@
+Discrete-time optimal control: main ingredients (I)
+The main ingredients of a discrete-time optimal control problem are
+Dynamics: a (discrete-time) system in state space form
+xt+1 = ft(xt, ut)
+t = 0, . . . , T −1
+We will mainly work on a finite horizon, i.e. 0 < T < +∞(notation: 0, . . . , T −1). In some cases we
+will also consider an infinite horizon, i.e., T = +∞.
+The dynamics introduces T equality constraints
+x1 = f(x0, u0)
+i.e.
+ft(x0, u0) −x1 = 0
+x2 = f(x1, u1)
+i.e.
+ft(x1, u1) −x2 = 0
+...
+...
+xT = f(xT −1, uT −1)
+i.e.
+ft(xT −1, uT −1) −xT = 0
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 18 |35

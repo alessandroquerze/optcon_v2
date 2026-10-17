@@ -1,0 +1,888 @@
+{
+  "protocol_version": "1.0.0",
+  "request_sha256": "1c8323b365bad1aff0c9fe20db8a45c8253ebfe6c9bf8b4dffd799cab00dc507",
+  "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0034",
+  "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+  "artifact_sha256": {
+    "text": "2e5060b24a579889495f792a0b11299c3eb5bc30d08c5fe9413d9b81a91618c0",
+    "layout": "ca2336a2fca906ab1f46514cd59e265210d038062b498cc9dd757d73a3bd3811",
+    "render": "368ae5161d3c6a856d99b08fd5172bc5d73697210757673819b63ef00bb8d219"
+  },
+  "agent": {
+    "provider": "OpenAI",
+    "model": "Codex (identificatore esatto del modello non esposto nella sessione)",
+    "run_id": "page-analysis-ce370a19242e4173828aef04d60c36ee"
+  },
+  "inspection": {
+    "text_page_ids": [
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0034",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0033",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0035"
+    ],
+    "layout_page_ids": [
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0034",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0033",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0035"
+    ],
+    "image_page_ids": [
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0034",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0033",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0035"
+    ],
+    "source_content_treated_as_data": true
+  },
+  "title": "Pendulum (II) — trasferimento fra equilibri",
+  "companionPageCount": 1,
+  "didactic_plan": {
+    "source_scope_limits": [
+      "Non correggere silenziosamente 0=x_{1,e} in 0=x_{2,e}.",
+      "La formula u_e=mgℓsinθ_e è coerente con la dinamica se l e ℓ sono identificati; la fonte alterna i glifi.",
+      "Non sono specificati angoli numerici, durata, vincoli d'ingresso, traiettoria di trasferimento o stabilità degli equilibri."
+    ],
+    "prerequisites": [
+      {
+        "concept": "Equilibrio come stato e ingresso costanti",
+        "why": "Definizione generale già introdotta.",
+        "origin": "source_context",
+        "page_numbers": [
+          11
+        ]
+      },
+      {
+        "concept": "Dinamica e identificazione dello stato del pendolo",
+        "why": "Per verificare le condizioni e identificare il refuso.",
+        "origin": "source_context",
+        "page_numbers": [
+          33
+        ]
+      }
+    ],
+    "source_math": [
+      {
+        "latex": "0=x_{1,e}",
+        "anchor": "0 = x1,e",
+        "notes": "TRASCRIZIONE LETTERALE: la dinamica precedente richiederebbe x₂,e=0, non x₁,e=0."
+      },
+      {
+        "latex": "0=-\\frac{g}{l}\\sin x_{1,e}+\\frac{1}{m\\ell^2}u_e",
+        "anchor": "0 = −g",
+        "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+      },
+      {
+        "latex": "x_e^1=\\begin{bmatrix}\\theta_e^1\\\\0\\end{bmatrix},\\qquad u_e^1=mg\\ell\\sin\\theta_e^1",
+        "anchor": "then, the first equilibrium is",
+        "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+      },
+      {
+        "latex": "(x_e^2,u_e^2)",
+        "anchor": "second equilibrium",
+        "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+      }
+    ],
+    "enrichments": [
+      {
+        "id": "explain-1",
+        "label": "enrichment",
+        "type": "explanation",
+        "proposal": "Deduzione etichettata enrichment dalla dinamica: 0=x₂,e e u_e=(mgℓ²/l)sinx₁,e; assumendo l=ℓ si ottiene la formula mgℓsinθ_e stampata. Mostrare questa verifica accanto al refuso letterale, senza cancellarlo.",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ]
+      },
+      {
+        "id": "example-1",
+        "label": "enrichment",
+        "type": "worked_example",
+        "proposal": "Enrichment con l=ℓ=1,m=1,g=9.81: θ_e¹=0 e θ_e²=π/6.",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ]
+      },
+      {
+        "id": "interaction",
+        "label": "enrichment",
+        "type": "interaction_design",
+        "proposal": "Variare l'angolo e verificare il residuo dinamico rende visibile sia il ruolo della coppia sia l'errore d'indice.",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "id": "example-1",
+        "origin": "enrichment",
+        "purpose": "Verificare due equilibri della dinamica e rendere evidente l'errore della prima riga.",
+        "setup": "Enrichment con l=ℓ=1,m=1,g=9.81: θ_e¹=0 e θ_e²=π/6.",
+        "parameters": [
+          {
+            "symbol": "θ_e^1,θ_e^2",
+            "value": "0,π/6"
+          },
+          {
+            "symbol": "l=ℓ,m,g",
+            "value": "1,1,9.81"
+          }
+        ],
+        "derivation": [
+          "Prima coppia: x_e¹=(0,0), u_e¹=0.",
+          "Seconda coppia: x_e²=(π/6,0), u_e²=4.905.",
+          "Entrambe annullano la dinamica di pagina 33.",
+          "La seconda non soddisfa la riga letterale 0=x_{1,e}, mostrando la discrepanza; non presentare tutte le righe della fonte come simultaneamente corrette."
+        ],
+        "expected_outcome": "Le coppie si verificano sulla dinamica, ma il refuso richiede una decisione editoriale prima della companion.",
+        "limitations": [
+          "Valori e identificazione l=ℓ sono enrichment.",
+          "Non è una costruzione del trasferimento o una prova di stabilità."
+        ],
+        "enrichment_id": "example-1",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ]
+      }
+    ],
+    "example_omission_reason": null,
+    "visualization": {
+      "component": "PendulumEquilibriumPairWithErratum",
+      "description": "Due configurazioni e coppie di ingresso etichettate, con riquadro separato per la riga letterale errata e la verifica dalla dinamica.",
+      "origin": "source_derived",
+      "source_observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04",
+        "s05"
+      ]
+    },
+    "interactivity": {
+      "recommended": true,
+      "rationale": "Variare l'angolo e verificare il residuo dinamico rende visibile sia il ruolo della coppia sia l'errore d'indice.",
+      "component": "EquilibriumTorqueInspectorWithSourceWarning",
+      "parameters": [
+        {
+          "name": "Primo angolo",
+          "symbol": "θ_e^1",
+          "origin": "source",
+          "range": "[−π/2,π/2]",
+          "default": "0",
+          "effect_on_change": "Aggiornare la prima configurazione, u_e¹=9.81sinθ_e¹ e i residui della dinamica; mostrare separatamente il residuo della riga letterale x_{1,e}=0.",
+          "edge_cases": [
+            "θ_e¹=0 può nascondere il refuso"
+          ]
+        },
+        {
+          "name": "Secondo angolo",
+          "symbol": "θ_e^2",
+          "origin": "source",
+          "range": "[−π/2,π/2]",
+          "default": "π/6",
+          "effect_on_change": "Aggiornare la seconda configurazione e u_e²=9.81sinθ_e²; non animare ancora un trasferimento.",
+          "edge_cases": [
+            "Angoli uguali: stesso equilibrio"
+          ]
+        }
+      ],
+      "outputs": [
+        "Due coppie (x_e,u_e)",
+        "Residui della dinamica",
+        "Avviso sulla condizione stampata"
+      ],
+      "invariants": [
+        "l=ℓ=1,m=1,g=9.81 come enrichment",
+        "Velocità di equilibrio zero",
+        "Nessuna traiettoria intermedia o stabilità garantita",
+        "Range/default sono enrichment"
+      ],
+      "enrichment_id": "interaction"
+    },
+    "edge_cases": [
+      {
+        "case": "Due equilibri coincidenti",
+        "expected_behavior": "Il trasferimento è degenere e può essere la traiettoria costante.",
+        "origin": "enrichment",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ]
+      },
+      {
+        "case": "Angolo con coppia richiesta oltre un limite aggiunto",
+        "expected_behavior": "Non considerarlo automaticamente raggiungibile con attuatori saturi; la fonte qui non impone tali limiti.",
+        "origin": "enrichment",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ]
+      },
+      {
+        "case": "Equilibrio instabile",
+        "expected_behavior": "Può ancora soddisfare le equazioni di equilibrio.",
+        "origin": "enrichment",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ]
+      }
+    ],
+    "expansion_rationale": "Un task, due coppie e una verifica statica; la correzione segnalata richiede revisione e non una pagina supplementare.",
+    "blueprint": [
+      {
+        "companion_suffix": null,
+        "focus": "Individuare le coppie di equilibrio e segnalare il refuso prima di progettare il trasferimento.",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ],
+        "enrichment_ids": [
+          "explain-1",
+          "example-1",
+          "interaction"
+        ]
+      }
+    ]
+  },
+  "observations": [
+    {
+      "id": "s01",
+      "category": "concept",
+      "description": "Il task è trasferire il pendolo da un equilibrio a un altro.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0034",
+        "modality": "both",
+        "text_quote": "Transfer the pendulum from an equilibrium to another one.",
+        "bbox": [
+          17,
+          32,
+          280,
+          60
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "s02",
+      "category": "equation",
+      "description": "La prima condizione di equilibrio stampata è 0=x_{1,e}; la seconda è 0=−(g/l)sinx_{1,e}+u_e/(mℓ²). La prima riga contrasta con ẋ₁=x₂ della pagina 33 e con lo stato di equilibrio mostrato sotto.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0034",
+        "modality": "both",
+        "text_quote": "0 = x1,e",
+        "bbox": [
+          85,
+          83,
+          218,
+          114
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "s03",
+      "category": "equation",
+      "description": "La fonte riporta x_e¹=col(θ_e¹,0) e u_e¹=mgℓ sinθ_e¹.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0034",
+        "modality": "both",
+        "text_quote": "u1",
+        "bbox": [
+          75,
+          140,
+          249,
+          165
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "s04",
+      "category": "concept",
+      "description": "Lo stesso ragionamento viene richiamato per il secondo equilibrio (x_e²,u_e²); la pagina pone la domanda 'How to?' senza fornire una traiettoria di trasferimento.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0034",
+        "modality": "both",
+        "text_quote": "A similar reasoning holds for the second equilibrium",
+        "bbox": [
+          17,
+          170,
+          286,
+          185
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "s05",
+      "category": "diagram",
+      "description": "Due configurazioni del pendolo, etichettate con θ_e¹,u_e¹ e θ_e²,u_e², sono collegate da una freccia rossa tratteggiata.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0034",
+        "modality": "visual",
+        "text_quote": null,
+        "bbox": [
+          261,
+          74,
+          447,
+          147
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "transcription-06",
+      "category": "structure",
+      "description": "Trascrizione di una regione visibile della fonte: Example: trajectory generation for a pendulum (II)",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0034",
+        "modality": "visual",
+        "text_quote": null,
+        "bbox": [
+          10.35200023651123,
+          6.720991134643555,
+          308.2221984863281,
+          21.06719207763672
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "transcription-07",
+      "category": "structure",
+      "description": "Trascrizione di una regione visibile della fonte: Equilibrium conditions",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0034",
+        "modality": "visual",
+        "text_quote": null,
+        "bbox": [
+          18.898000717163086,
+          66.32051086425781,
+          104.38368225097656,
+          75.28691101074219
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "transcription-08",
+      "category": "structure",
+      "description": "Trascrizione di una regione visibile della fonte: then, the first equilibrium is",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0034",
+        "modality": "visual",
+        "text_quote": null,
+        "bbox": [
+          18.897979736328125,
+          125.37350463867188,
+          125.68783569335938,
+          134.33990478515625
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "transcription-09",
+      "category": "structure",
+      "description": "Trascrizione di una regione visibile della fonte: x1",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0034",
+        "modality": "visual",
+        "text_quote": null,
+        "bbox": [
+          64.40298461914062,
+          147.50083923339844,
+          73.2782974243164,
+          158.24990844726562
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "transcription-10",
+      "category": "structure",
+      "description": "Trascrizione di una regione visibile della fonte: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 33 |35",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0034",
+        "modality": "visual",
+        "text_quote": null,
+        "bbox": [
+          126.95381927490234,
+          247.92864990234375,
+          447.87103271484375,
+          255.1179962158203
+        ]
+      },
+      "confidence": 0.98
+    }
+  ],
+  "contextual_role": "Definisce le coppie agli estremi del task, con un errore d'indice esplicito da separare dalla successiva costruzione del riferimento.",
+  "context_notes": [
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0033",
+      "role": "previous",
+      "note": "La pagina 33 dà ẋ₁=x₂: all'equilibrio questa equazione impone x₂,e=0, in contrasto con la prima riga qui stampata."
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0035",
+      "role": "next",
+      "note": "La pagina 35 usa i due equilibri per una curva desiderata a gradino, dichiaratamente non una traiettoria."
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "x_e^1,u_e^1",
+      "meaning": "Prima coppia di equilibrio, apice 1 come etichetta e non tempo",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04",
+        "s05"
+      ]
+    },
+    {
+      "symbol": "x_e^2,u_e^2",
+      "meaning": "Seconda coppia di equilibrio",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04",
+        "s05"
+      ]
+    },
+    {
+      "symbol": "\\theta_e^1,\\theta_e^2",
+      "meaning": "Angoli delle due configurazioni",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04",
+        "s05"
+      ]
+    },
+    {
+      "symbol": "x_{1,e}",
+      "meaning": "Prima componente di stato al punto di equilibrio, stampata erroneamente nella prima condizione",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04",
+        "s05"
+      ]
+    },
+    {
+      "symbol": "l,\\ell",
+      "meaning": "Notazione della lunghezza ereditata dal modello",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04",
+        "s05"
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "description": "Refuso d'indice confermato a 288 DPI: è stampato 0=x_{1,e}, mentre ẋ₁=x₂ impone 0=x_{2,e}. È incompatibile con il successivo stato (θ_e,0) per angolo generico; bloccante per presentare le condizioni come corrette.",
+      "blocking": true,
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04",
+        "s05"
+      ]
+    },
+    {
+      "description": "La formula mgℓsinθ_e assume l=ℓ rispetto ai denominatori del modello; l'identificazione non è esplicitata dalla fonte.",
+      "blocking": false,
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04",
+        "s05"
+      ]
+    }
+  ],
+  "progression": {
+    "assessment": "unique",
+    "related_page_ids": [],
+    "added": [],
+    "removed": [],
+    "changed": [],
+    "observation_ids": [
+      "s01",
+      "s02",
+      "s03",
+      "s04",
+      "s05"
+    ],
+    "rationale": "Pagina con contenuto autonomo nella sequenza; nessun candidato automatico da confermare."
+  },
+  "coverage": {
+    "all_visible_regions_accounted_for": true,
+    "regions": [
+      {
+        "bbox": [
+          10.35200023651123,
+          6.720991134643555,
+          308.2221984863281,
+          21.06719207763672
+        ],
+        "description": "Regione testuale sorgente: Example: trajectory generation for a pendulum (II)",
+        "observation_ids": [
+          "transcription-06"
+        ]
+      },
+      {
+        "bbox": [
+          18.898000717163086,
+          36.43251037597656,
+          247.09283447265625,
+          56.35791015625
+        ],
+        "description": "Regione testuale sorgente: Task\nTransfer the pendulum from an equilibrium to another one.",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          18.898000717163086,
+          66.32051086425781,
+          104.38368225097656,
+          75.28691101074219
+        ],
+        "description": "Regione testuale sorgente: Equilibrium conditions",
+        "observation_ids": [
+          "transcription-07"
+        ]
+      },
+      {
+        "bbox": [
+          88.06800079345703,
+          85.24951171875,
+          119.63228607177734,
+          94.7474365234375
+        ],
+        "description": "Regione testuale sorgente: 0 = x1,e",
+        "observation_ids": [
+          "s02"
+        ]
+      },
+      {
+        "bbox": [
+          88.0679931640625,
+          98.30052185058594,
+          187.341796875,
+          119.14691162109375
+        ],
+        "description": "Regione testuale sorgente: 0 = −g\nl sin x1,e +\n1\nmℓ2 ue",
+        "observation_ids": [
+          "s02"
+        ]
+      },
+      {
+        "bbox": [
+          18.897979736328125,
+          125.37350463867188,
+          125.68783569335938,
+          134.33990478515625
+        ],
+        "description": "Regione testuale sorgente: then, the first equilibrium is",
+        "observation_ids": [
+          "transcription-08"
+        ]
+      },
+      {
+        "bbox": [
+          64.40298461914062,
+          147.50083923339844,
+          73.2782974243164,
+          158.24990844726562
+        ],
+        "description": "Regione testuale sorgente: x1",
+        "observation_ids": [
+          "transcription-09"
+        ]
+      },
+      {
+        "bbox": [
+          69.62598419189453,
+          149.28350830078125,
+          83.50113677978516,
+          159.82791137695312
+        ],
+        "description": "Regione testuale sorgente: e =",
+        "observation_ids": [
+          "s03",
+          "transcription-09"
+        ]
+      },
+      {
+        "bbox": [
+          86.06398010253906,
+          142.46983337402344,
+          99.1502914428711,
+          152.7209014892578
+        ],
+        "description": "Regione testuale sorgente: \u0014θ1",
+        "observation_ids": [
+          "s03"
+        ]
+      },
+      {
+        "bbox": [
+          92.9849853515625,
+          147.85682678222656,
+          98.76278686523438,
+          163.67991638183594
+        ],
+        "description": "Regione testuale sorgente: e\n0",
+        "observation_ids": [
+          "s03"
+        ]
+      },
+      {
+        "bbox": [
+          99.64898681640625,
+          143.0824432373047,
+          104.50877380371094,
+          152.04884338378906
+        ],
+        "description": "Regione testuale sorgente: \u0015",
+        "observation_ids": [
+          "s03"
+        ]
+      },
+      {
+        "bbox": [
+          150.01698303222656,
+          147.50083923339844,
+          158.9722900390625,
+          158.24990844726562
+        ],
+        "description": "Regione testuale sorgente: u1",
+        "observation_ids": [
+          "s03"
+        ]
+      },
+      {
+        "bbox": [
+          155.31997680664062,
+          147.50083923339844,
+          211.00628662109375,
+          159.82791137695312
+        ],
+        "description": "Regione testuale sorgente: e = mgℓsin θ1",
+        "observation_ids": [
+          "s03"
+        ]
+      },
+      {
+        "bbox": [
+          207.0979766845703,
+          153.38583374023438,
+          210.61878967285156,
+          159.36343383789062
+        ],
+        "description": "Regione testuale sorgente: e",
+        "observation_ids": [
+          "s03"
+        ]
+      },
+      {
+        "bbox": [
+          18.897979736328125,
+          173.3438262939453,
+          233.3572998046875,
+          183.59490966796875
+        ],
+        "description": "Regione testuale sorgente: A similar reasoning holds for the second equilibrium (x2",
+        "observation_ids": [
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          229.70498657226562,
+          173.3438262939453,
+          246.9073028564453,
+          184.70843505859375
+        ],
+        "description": "Regione testuale sorgente: e, u2",
+        "observation_ids": [
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          243.25498962402344,
+          174.62850952148438,
+          253.55438232421875,
+          184.70843505859375
+        ],
+        "description": "Regione testuale sorgente: e).",
+        "observation_ids": [
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          299.9408874511719,
+          83.93681335449219,
+          307.7781982421875,
+          93.22454071044922
+        ],
+        "description": "Regione testuale sorgente: θ1",
+        "observation_ids": [
+          "s05"
+        ]
+      },
+      {
+        "bbox": [
+          303.8908996582031,
+          88.7418212890625,
+          307.4117126464844,
+          94.71942138671875
+        ],
+        "description": "Regione testuale sorgente: e",
+        "observation_ids": [
+          "s05"
+        ]
+      },
+      {
+        "bbox": [
+          304.90087890625,
+          103.78681945800781,
+          313.4561767578125,
+          113.0755386352539
+        ],
+        "description": "Regione testuale sorgente: u1",
+        "observation_ids": [
+          "s05"
+        ]
+      },
+      {
+        "bbox": [
+          309.8038635253906,
+          108.59181213378906,
+          313.3246765136719,
+          114.56941223144531
+        ],
+        "description": "Regione testuale sorgente: e",
+        "observation_ids": [
+          "s05"
+        ]
+      },
+      {
+        "bbox": [
+          410.2899169921875,
+          83.93681335449219,
+          418.1282043457031,
+          93.22454071044922
+        ],
+        "description": "Regione testuale sorgente: θ2",
+        "observation_ids": [
+          "s05"
+        ]
+      },
+      {
+        "bbox": [
+          414.23992919921875,
+          88.7418212890625,
+          417.7607421875,
+          94.71942138671875
+        ],
+        "description": "Regione testuale sorgente: e",
+        "observation_ids": [
+          "s05"
+        ]
+      },
+      {
+        "bbox": [
+          404.6129150390625,
+          103.78681945800781,
+          413.168212890625,
+          113.0755386352539
+        ],
+        "description": "Regione testuale sorgente: u2",
+        "observation_ids": [
+          "s05"
+        ]
+      },
+      {
+        "bbox": [
+          409.5158996582031,
+          108.59181213378906,
+          413.0367126464844,
+          114.56941223144531
+        ],
+        "description": "Regione testuale sorgente: e",
+        "observation_ids": [
+          "s05"
+        ]
+      },
+      {
+        "bbox": [
+          343.8798828125,
+          90.39643859863281,
+          374.684326171875,
+          98.36653900146484
+        ],
+        "description": "Regione testuale sorgente: How to?",
+        "observation_ids": [
+          "s05"
+        ]
+      },
+      {
+        "bbox": [
+          126.95381927490234,
+          247.92864990234375,
+          447.87103271484375,
+          255.1179962158203
+        ],
+        "description": "Regione testuale sorgente: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 33 |35",
+        "observation_ids": [
+          "transcription-10"
+        ]
+      }
+    ]
+  },
+  "mapping_recommendation": {
+    "mode": "one_to_one",
+    "rationale": "Un task, due coppie e una verifica statica; la correzione segnalata richiede revisione e non una pagina supplementare.",
+    "subpages": []
+  }
+}

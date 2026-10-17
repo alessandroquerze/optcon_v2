@@ -1,0 +1,294 @@
+{
+  "schema_version": "1.0.0",
+  "document_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574",
+  "source": {
+    "path": "OPTCON-RL_optimality_conditions_KKT_2026_10_08.pdf",
+    "filename": "OPTCON-RL_optimality_conditions_KKT_2026_10_08.pdf",
+    "sha256": "937db0d7a574f549eb1181f22207ccfa886ae6d79206720718692bfd6015bd97",
+    "size_bytes": 312548
+  },
+  "page_count": 20,
+  "metadata": {
+    "format": "PDF 1.5",
+    "title": "Optimal Control and Reinforcement Learning  Optimality conditions for Optimal Control",
+    "author": "Giuseppe Notarstefano",
+    "subject": "",
+    "keywords": "",
+    "creator": "LaTeX with Beamer class",
+    "producer": "pdfTeX-1.40.25",
+    "creationDate": "D:20251112083318+01'00'",
+    "modDate": "D:20251112083318+01'00'",
+    "trapped": "",
+    "encryption": null
+  },
+  "pdf_page_label_rules": [
+    {
+      "startpage": 0,
+      "prefix": "<FEFF0030>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 1,
+      "prefix": "<FEFF0031>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 2,
+      "prefix": "<FEFF0032>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 3,
+      "prefix": "<FEFF0033>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 4,
+      "prefix": "<FEFF0034>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 5,
+      "prefix": "<FEFF0035>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 6,
+      "prefix": "<FEFF0036>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 7,
+      "prefix": "<FEFF0037>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 9,
+      "prefix": "<FEFF0038>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 10,
+      "prefix": "<FEFF0039>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 11,
+      "prefix": "<FEFF00310030>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 12,
+      "prefix": "<FEFF00310031>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 13,
+      "prefix": "<FEFF00310032>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 14,
+      "prefix": "<FEFF00310033>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 15,
+      "prefix": "<FEFF00310034>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 16,
+      "prefix": "<FEFF00310035>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 17,
+      "prefix": "<FEFF00310036>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 18,
+      "prefix": "<FEFF00310037>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 19,
+      "prefix": "<FEFF00310038>",
+      "firstpagenum": 1
+    }
+  ],
+  "config": {
+    "pipeline_version": "1.0.0",
+    "dpi": 144,
+    "renderer": "PyMuPDF",
+    "pymupdf_version": "1.28.2",
+    "pillow_version": "12.3.0",
+    "relations_algorithm": "text-visual-v1",
+    "thresholds": {
+      "min_body_tokens": 8,
+      "near_text_jaccard": 0.88,
+      "near_visual_difference": 0.075,
+      "progressive_containment": 0.8,
+      "progressive_visual_difference": 0.14
+    }
+  },
+  "created_at": "2026-10-17T14:32:56.605699+00:00",
+  "pages": [
+    {
+      "page_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574:p0001",
+      "physical_page_number": 1,
+      "pdf_label": "0",
+      "title": "Optimal Control and Reinforcement Learning",
+      "spec_path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/pages/0001/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574:p0002",
+      "physical_page_number": 2,
+      "pdf_label": "1",
+      "title": "Discrete-time control system and notation (Refresh)",
+      "spec_path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/pages/0002/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574:p0003",
+      "physical_page_number": 3,
+      "pdf_label": "2",
+      "title": "System trajectories (Refresh)",
+      "spec_path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/pages/0003/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574:p0004",
+      "physical_page_number": 4,
+      "pdf_label": "3",
+      "title": "Dynamics as equality constraints",
+      "spec_path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/pages/0004/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574:p0005",
+      "physical_page_number": 5,
+      "pdf_label": "4",
+      "title": "System trajectories and trajectory manifold",
+      "spec_path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/pages/0005/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574:p0006",
+      "physical_page_number": 6,
+      "pdf_label": "5",
+      "title": "System linearization and tangent hyperplane",
+      "spec_path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/pages/0006/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574:p0007",
+      "physical_page_number": 7,
+      "pdf_label": "6",
+      "title": "System linearization and tangent hyperplane",
+      "spec_path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/pages/0007/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574:p0008",
+      "physical_page_number": 8,
+      "pdf_label": "7",
+      "title": "Unconstrained optimal control problem (discrete-time)",
+      "spec_path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/pages/0008/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574:p0009",
+      "physical_page_number": 9,
+      "pdf_label": "7",
+      "title": "Unconstrained optimal control problem (discrete-time)",
+      "spec_path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/pages/0009/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574:p0010",
+      "physical_page_number": 10,
+      "pdf_label": "8",
+      "title": "Unconstrained optimal control problem (compact notation)",
+      "spec_path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/pages/0010/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574:p0011",
+      "physical_page_number": 11,
+      "pdf_label": "9",
+      "title": "Optimal control as equality constrained optimization",
+      "spec_path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/pages/0011/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574:p0012",
+      "physical_page_number": 12,
+      "pdf_label": "10",
+      "title": "Optimality conditions (Refresh from “Optimization” part)",
+      "spec_path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/pages/0012/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574:p0013",
+      "physical_page_number": 13,
+      "pdf_label": "11",
+      "title": "KKT conditions for unconstrained optimal control",
+      "spec_path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/pages/0013/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574:p0014",
+      "physical_page_number": 14,
+      "pdf_label": "12",
+      "title": "KKT conditions for unconstrained optimal control",
+      "spec_path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/pages/0014/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574:p0015",
+      "physical_page_number": 15,
+      "pdf_label": "13",
+      "title": "KKT conditions for unconstrained optimal control",
+      "spec_path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/pages/0015/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574:p0016",
+      "physical_page_number": 16,
+      "pdf_label": "14",
+      "title": "KKT conditions for constrained optimal control",
+      "spec_path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/pages/0016/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574:p0017",
+      "physical_page_number": 17,
+      "pdf_label": "15",
+      "title": "Recall KKT conditions for unconstrained optimal control",
+      "spec_path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/pages/0017/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574:p0018",
+      "physical_page_number": 18,
+      "pdf_label": "16",
+      "title": "Discrete-time optimal control problem (constrained)",
+      "spec_path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/pages/0018/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574:p0019",
+      "physical_page_number": 19,
+      "pdf_label": "17",
+      "title": "KKT conditions for constrained optimal control",
+      "spec_path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/pages/0019/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574:p0020",
+      "physical_page_number": 20,
+      "pdf_label": "18",
+      "title": "KKT conditions for constrained optimal control",
+      "spec_path": "documents/OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574/pages/0020/page_spec.json"
+    }
+  ],
+  "relation_groups": [
+    {
+      "group_id": "group-0001",
+      "page_ids": [
+        "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574:p0008",
+        "OPTCON-RL_optimality_conditions_KKT_2026_10_08--937db0d7a574:p0009"
+      ],
+      "status": "candidate_cluster",
+      "collapse_pages": false
+    }
+  ],
+  "coverage": {
+    "extracted_pages": 20,
+    "rendered_pages": 20
+  }
+}

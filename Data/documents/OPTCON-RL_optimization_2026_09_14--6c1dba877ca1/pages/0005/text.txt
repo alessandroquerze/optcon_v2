@@ -1,0 +1,10 @@
+Notation
+Optimal solution
+We denote ℓ(z∗) the optimal (minimum) value of a generic optimization problem, i.e.
+ℓ(z∗) = min
+z∈Rd ℓ(z),
+where z∗is the minimum point (optimal value for the optimization variable), i.e.,
+z∗= argmin
+z∈Rd
+ℓ(z),
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 4 |73

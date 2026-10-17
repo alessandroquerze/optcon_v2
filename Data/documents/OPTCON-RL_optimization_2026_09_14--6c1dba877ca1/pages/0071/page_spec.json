@@ -1,0 +1,161 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0071",
+  "document_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1",
+  "source": {
+    "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+    "page_index": 70,
+    "physical_page_number": 71,
+    "pdf_label_raw": "<FEFF00360033>",
+    "pdf_label": "63",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Newton’s method for equality constrained problems",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      311.2491760253906,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 63,
+        "total": 73,
+        "raw": "63 |73",
+        "bbox": [
+          150.68800354003906,
+          247.92860412597656,
+          447.8712158203125,
+          258.29376220703125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0071/text.txt",
+      "sha256": "d5ca7d1e34ea7c3c69e003c5a15371004ab9ea83b26283b7154e9f2f7ac09582"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0071/text.reading-order.txt",
+      "sha256": "33643a226d2169fb2984d99e13afadeb2e3e06e2d7dd653b4b4bd31ca2f804ea"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0071/layout.json",
+      "sha256": "b4b1c3cac442588d66dad5433e9c32960a243eba6c47e8618d12034d25285717"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0071/render.png",
+      "sha256": "d3be9ef82fd387e0333592bfc05d55c31c50ad61fba2b1c235c6d41152746701",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "4f09431e0727dfdc3976d355c9edd692320d72fa3971f70fce52954c4c8cdd2a"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0070",
+    "next_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0072"
+  },
+  "relations": [
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0072",
+      "kind": "progressive_candidate",
+      "confidence": 0.7,
+      "review_status": "candidate",
+      "reason": "Pagine adiacenti con titolo/label condiviso e contenuto compatibile con un overlay; direzione da confermare visivamente.",
+      "metrics": {
+        "text_jaccard": 0.391813,
+        "text_containment": 0.8375,
+        "left_tokens": 158,
+        "right_tokens": 80,
+        "visual_difference": 0.032086,
+        "ink_overlap": 0.020833,
+        "dhash_distance": 21
+      },
+      "delta_in_physical_order": {
+        "text": {
+          "added_lines": [
+            "Namely, search for ∆zk, ∆λk solution of",
+            "\u0015 \u0014∆z",
+            "∆λ",
+            "= −",
+            "h(zk).",
+            "Thus, ∆zk, ∆λk can be obtained as solution of a linear system of equations in the variables ∆z, ∆λ.",
+            "Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 64 |73"
+          ],
+          "removed_lines": [
+            "KKT points can be found by solving a root finding problem in variables z, λ with r(z, λ) = ∇L(z, λ).",
+            "Newton’s method for this root finding problem reads as",
+            "\u0014zk+1",
+            "λk+1",
+            "\u0015",
+            "=",
+            "\u0014zk",
+            "λk",
+            "\u0015",
+            "+",
+            "\u0014∆zk",
+            "∆λk",
+            "\u0015",
+            "with ∆zk, ∆λk solution of",
+            "∇2L(zk, λk)",
+            "\u0014∆z",
+            "∆λ",
+            "\u0015",
+            "= −∇L(zk, λk)",
+            "where",
+            "∇2L(zk, λk) :=",
+            "∇L(zk, λk) :=",
+            "h(zk)",
+            "and Bk := ∇2",
+            "11L(zk, λk).",
+            "Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 63 |73"
+          ],
+          "semantic_interpretation": "pending_visual_analysis"
+        },
+        "visual": {
+          "changed_bbox_px": [
+            57,
+            69,
+            874,
+            506
+          ],
+          "pixel_threshold": 16,
+          "changed_pixel_fraction": 0.04321
+        }
+      }
+    }
+  ],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "pending",
+    "result": null
+  }
+}

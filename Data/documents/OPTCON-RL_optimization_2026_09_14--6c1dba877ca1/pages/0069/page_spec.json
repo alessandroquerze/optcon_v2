@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0069",
+  "document_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1",
+  "source": {
+    "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+    "page_index": 68,
+    "physical_page_number": 69,
+    "pdf_label_raw": "<FEFF00360031>",
+    "pdf_label": "61",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Constrained optimization (equality and inequality constraints): optimization algorithms",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      44.250999450683594,
+      92.14999389648438,
+      409.2755432128906,
+      121.04219818115234
+    ],
+    "printed_number_candidates": [],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0069/text.txt",
+      "sha256": "96414d1d73229128bf6593923605d4ca94b4a540f789d38a98d317c1deee01df"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0069/text.reading-order.txt",
+      "sha256": "409f0dbe153bc2712386b2e5c4b37ab99b3d0a1f2579fae3919f2168ebff892a"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0069/layout.json",
+      "sha256": "31245532d7649875ff4f662989fec255c954611ed1bb1401bc4956d3889435a5"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0069/render.png",
+      "sha256": "7c965c7fa535d4846fc8af4f19c187319ec06cb031e25001af167d9f7c9edc16",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "38274c13dc71d46d2fd1be94c3b9b16ee833c8548cdaa5a3ef60beb4416be192"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0068",
+    "next_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0070"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "pending",
+    "result": null
+  }
+}

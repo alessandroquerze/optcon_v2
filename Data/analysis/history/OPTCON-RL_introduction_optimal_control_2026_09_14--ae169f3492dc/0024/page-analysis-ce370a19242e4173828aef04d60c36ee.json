@@ -1,0 +1,690 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0024",
+  "document_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc",
+  "source": {
+    "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+    "page_index": 23,
+    "physical_page_number": 24,
+    "pdf_label_raw": "<FEFF00320033>",
+    "pdf_label": "23",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Trajectory generation",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      134.87704467773438,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 23,
+        "total": 35,
+        "raw": "23 |35",
+        "bbox": [
+          126.95381927490234,
+          247.9285125732422,
+          447.87103271484375,
+          258.2936706542969
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0024/text.txt",
+      "sha256": "15e8085ae6d8cfcaf371f68cc211fa55d9343ac63a5e74b1669869919c29cdd3"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0024/text.reading-order.txt",
+      "sha256": "271e1209427a2531b6a22021ef86183b80fae8256a9eb2d0ba8ae186b7a5ed06"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0024/layout.json",
+      "sha256": "85c2af730dde941f1430133d93defa89e21610b430801dd9e41ac95f538012c9"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0024/render.png",
+      "sha256": "782ceea8d30da324515264fc3867daf4cc4d247c1b1dbacc1dfe923f47c288b6",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "53c4504730baf8b002881ab41b7badf94d41d96b9d3d8fd2c02c2178a8543b49"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0023",
+    "next_page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0025"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "1412b345fbfb6dfbc31f0e4810ab939d0e049d19967bd943ad4ba03dbabc9bc0",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0024",
+      "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+      "artifact_sha256": {
+        "text": "15e8085ae6d8cfcaf371f68cc211fa55d9343ac63a5e74b1669869919c29cdd3",
+        "layout": "85c2af730dde941f1430133d93defa89e21610b430801dd9e41ac95f538012c9",
+        "render": "782ceea8d30da324515264fc3867daf4cc4d247c1b1dbacc1dfe923f47c288b6"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "Codex (identificatore esatto del modello non esposto nella sessione)",
+        "run_id": "page-analysis-0a4e81cecdf44e8b86ded34253e8c4ba"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0024",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0023",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0025"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0024",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0023",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0025"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0024",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0023",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0025"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Trajectory generation",
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Il simbolo ≈ non specifica metrica, tolleranza o esistenza di tracking esatto.",
+          "Non sono scritti vincoli di ostacolo o un modello di drone nella formulazione di questa pagina, pur essendo presenti nella figura.",
+          "Una legge temporale contiene quando raggiungere i punti, non solo la forma geometrica del percorso.",
+          "La fonte scrive t∈N₀; una finestra finita di visualizzazione sarebbe un enrichment."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Dinamica discreta e traiettoria",
+            "why": "Il candidato deve soddisfare l'aggiornamento.",
+            "origin": "source_context",
+            "page_numbers": [
+              9,
+              11
+            ]
+          },
+          {
+            "concept": "Uscita del sistema",
+            "why": "Concetto introdotto a tempo continuo e qui declinato a tempo discreto.",
+            "origin": "source_context",
+            "page_numbers": [
+              8
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "x_{t+1}=f_t(x_t,u_t),\\quad t\\in\\mathbb{N}_0",
+            "anchor": "xt+1 = ft(xt, ut)",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          },
+          {
+            "latex": "y_t=h_t(x_t,u_t),\\quad t\\in\\mathbb{N}_0",
+            "anchor": "yt = ht(xt, ut)",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          },
+          {
+            "latex": "y_t\\approx y_t^{\\mathrm{des}},\\quad t\\in\\mathbb{N}_0",
+            "anchor": "yt ≈ydes",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "example-1",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "Enrichment: x_{t+1}=x_t+u_t, y_t=x_t, x₀=0 e limite aggiunto |u_t|≤1; desiderare y₁=2.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "id": "visualization",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Grafico temporale distinto per y^{des}, y della candidata e ingressi che la producono; evidenziare 'candidata, non soluzione ottima'.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Distinguere uscita desiderata e traiettoria fattibile.",
+            "setup": "Enrichment: x_{t+1}=x_t+u_t, y_t=x_t, x₀=0 e limite aggiunto |u_t|≤1; desiderare y₁=2.",
+            "parameters": [
+              {
+                "symbol": "limite ingresso aggiunto",
+                "value": "1"
+              },
+              {
+                "symbol": "y_1^{des}",
+                "value": "2"
+              }
+            ],
+            "derivation": [
+              "In un passo y₁≤1, quindi il salto desiderato non è esattamente realizzabile.",
+              "Scegliendo u₀=u₁=1 si ottengono y₁=1,y₂=2.",
+              "Questa è una candidata fattibile, non un ottimo: la pagina non ha assegnato un indice per confrontarla."
+            ],
+            "expected_outcome": "La generazione cerca ingressi e stati fisicamente coerenti, non una semplice copia della curva desiderata.",
+            "limitations": [
+              "Modello, limite e numeri sono enrichment; la fonte non fornisce questa istanza."
+            ],
+            "enrichment_id": "example-1",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "DesiredOutputVersusFeasibleTrajectory",
+          "description": "Grafico temporale distinto per y^{des}, y della candidata e ingressi che la producono; evidenziare 'candidata, non soluzione ottima'.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        "interactivity": {
+          "recommended": false,
+          "rationale": "Un confronto statico basta a chiarire il task; l'esplorazione di un ottimo è proposta nella pagina successiva con un costo esplicito.",
+          "component": null,
+          "parameters": [],
+          "outputs": [],
+          "invariants": [],
+          "enrichment_id": null
+        },
+        "edge_cases": [
+          {
+            "case": "h_t non iniettiva",
+            "expected_behavior": "Più coppie stato-ingresso possono produrre la stessa uscita; non dedurre un'unica traiettoria dal solo y^{des}.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "case": "Desiderato irraggiungibile",
+            "expected_behavior": "Distinguere approssimazione dell'uscita e violazione della dinamica: la seconda non è ammessa.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          }
+        ],
+        "expansion_rationale": "Una sola distinzione centrale, fra desiderato d'uscita e traiettoria dinamicamente ammissibile.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Trovare una traiettoria che rispetti la dinamica e avvicini l'uscita alla legge temporale desiderata.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ],
+            "enrichment_ids": [
+              "example-1",
+              "visualization"
+            ]
+          }
+        ]
+      },
+      "observations": [
+        {
+          "id": "s01",
+          "category": "equation",
+          "description": "Il sistema discreto è x_{t+1}=f_t(x_t,u_t) e l'uscita di prestazione è y_t=h_t(x_t,u_t), per t∈N₀.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0024",
+            "modality": "both",
+            "text_quote": "yt = ht(xt, ut)",
+            "bbox": [
+              67.6259765625,
+              88.36642456054688,
+              209.23214721679688,
+              213.4333038330078
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s02",
+          "category": "concept",
+          "description": "Si desidera che l'uscita segua una legge temporale y_t^{des}.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0024",
+            "modality": "both",
+            "text_quote": "follow a desired time law",
+            "bbox": [
+              28.3458251953125,
+              133.1392364501953,
+              309.4768371582031,
+              213.4333038330078
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s03",
+          "category": "definition",
+          "description": "Il task cerca una traiettoria stato-ingresso (𝐱,𝐮) che rispetti la dinamica per ogni t e renda y_t≈y_t^{des}.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0024",
+            "modality": "both",
+            "text_quote": "yt ≈ydes",
+            "bbox": [
+              181.66885375976562,
+              201.88124084472656,
+              215.2388458251953,
+              213.4333038330078
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s04",
+          "category": "diagram",
+          "description": "Una figura mostra un drone e un percorso blu attorno a un edificio: illustra un compito di generazione di traiettoria, senza valori del modello.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0024",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              234,
+              32,
+              407,
+              117
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-05",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Trajectory generation",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0024",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              10.35200023651123,
+              6.720991134643555,
+              134.87704467773438,
+              21.06719207763672
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-06",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Consider the nonlinear, discrete-time system",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0024",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              18.898000717163086,
+              31.57942008972168,
+              188.95477294921875,
+              40.54582214355469
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-07",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: xt+1 = ft(xt, ut)\nt ∈N0",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0024",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              63.08100128173828,
+              48.54954528808594,
+              172.64129638671875,
+              60.47181701660156
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-08",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: and let",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0024",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              18.897979736328125,
+              69.43742370605469,
+              45.53715515136719,
+              78.40382385253906
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-09",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 23 |35",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0024",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              126.95381927490234,
+              247.9285125732422,
+              447.87103271484375,
+              255.1179962158203
+            ]
+          },
+          "confidence": 0.98
+        }
+      ],
+      "contextual_role": "Traduce il problema generale in un compito di tracking di un'uscita di prestazione.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0023",
+          "role": "previous",
+          "note": "La pagina 23 formula il controllo ottimo generale; questa pagina spiega il significato di un compito concreto."
+        },
+        {
+          "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0025",
+          "role": "next",
+          "note": "La pagina 25 assegna un costo quadratico e una condizione iniziale per la generazione di traiettoria."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "y_t",
+          "meaning": "Performance output, non necessariamente l'intero stato",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        {
+          "symbol": "h_t",
+          "meaning": "Mappa d'uscita, eventualmente dipendente dall'ingresso",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        {
+          "symbol": "y_t^{\\mathrm{des}}",
+          "meaning": "Legge temporale desiderata per l'uscita",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        {
+          "symbol": "(\\mathbf{x},\\mathbf{u})",
+          "meaning": "Traiettoria da trovare, con dinamica soddisfatta",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ],
+        "rationale": "Pagina con contenuto autonomo nella sequenza; nessun candidato automatico da confermare."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              10.35200023651123,
+              6.720991134643555,
+              134.87704467773438,
+              21.06719207763672
+            ],
+            "description": "Regione testuale sorgente: Trajectory generation",
+            "observation_ids": [
+              "transcription-05"
+            ]
+          },
+          {
+            "bbox": [
+              18.898000717163086,
+              31.57942008972168,
+              188.95477294921875,
+              40.54582214355469
+            ],
+            "description": "Regione testuale sorgente: Consider the nonlinear, discrete-time system",
+            "observation_ids": [
+              "transcription-06"
+            ]
+          },
+          {
+            "bbox": [
+              63.08100128173828,
+              48.54954528808594,
+              172.64129638671875,
+              60.47181701660156
+            ],
+            "description": "Regione testuale sorgente: xt+1 = ft(xt, ut)\nt ∈N0",
+            "observation_ids": [
+              "transcription-07"
+            ]
+          },
+          {
+            "bbox": [
+              18.897979736328125,
+              69.43742370605469,
+              45.53715515136719,
+              78.40382385253906
+            ],
+            "description": "Regione testuale sorgente: and let",
+            "observation_ids": [
+              "transcription-08"
+            ]
+          },
+          {
+            "bbox": [
+              67.6259765625,
+              86.40754699707031,
+              168.0952911376953,
+              98.32981872558594
+            ],
+            "description": "Regione testuale sorgente: yt = ht(xt, ut)\nt ∈N0",
+            "observation_ids": [
+              "s01"
+            ]
+          },
+          {
+            "bbox": [
+              18.897979736328125,
+              107.29542541503906,
+              171.91323852539062,
+              116.26182556152344
+            ],
+            "description": "Regione testuale sorgente: be a performance output of the system.",
+            "observation_ids": [
+              "s01"
+            ]
+          },
+          {
+            "bbox": [
+              28.3458251953125,
+              133.1392364501953,
+              309.4768371582031,
+              143.5787811279297
+            ],
+            "description": "Regione testuale sorgente: We would like the (performance) output to follow a desired time law ydes",
+            "observation_ids": [
+              "s01",
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              300.6188049316406,
+              132.65350341796875,
+              356.7762145996094,
+              145.15577697753906
+            ],
+            "description": "Regione testuale sorgente: t , for t ∈N0.",
+            "observation_ids": [
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              48.07685089111328,
+              162.50738525390625,
+              405.4736328125,
+              194.38778686523438
+            ],
+            "description": "Regione testuale sorgente: Optimal Control Task\nFind a (state-input) trajectory (x, u)\ni.e., a function of time (xt, ut), t ∈N0, satisfying xt+1 = ft(xt, ut), for all t ∈N0, such that",
+            "observation_ids": [
+              "s01",
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              181.66885375976562,
+              201.88124084472656,
+              215.2388458251953,
+              213.20057678222656
+            ],
+            "description": "Regione testuale sorgente: yt ≈ydes",
+            "observation_ids": [
+              "s01",
+              "s02",
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              206.38082885742188,
+              201.3955078125,
+              271.8792419433594,
+              213.4333038330078
+            ],
+            "description": "Regione testuale sorgente: t\nfor all t ∈N0.",
+            "observation_ids": [
+              "s01",
+              "s02",
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              126.95381927490234,
+              247.9285125732422,
+              447.87103271484375,
+              255.1179962158203
+            ],
+            "description": "Regione testuale sorgente: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 23 |35",
+            "observation_ids": [
+              "transcription-09"
+            ]
+          },
+          {
+            "bbox": [
+              234,
+              32,
+              407,
+              117
+            ],
+            "description": "Una figura mostra un drone e un percorso blu attorno a un edificio: illustra un compito di generazione di traiettoria, senza valori del modello.",
+            "observation_ids": [
+              "s04"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Una sola distinzione centrale, fra desiderato d'uscita e traiettoria dinamicamente ammissibile.",
+        "subpages": []
+      }
+    }
+  }
+}

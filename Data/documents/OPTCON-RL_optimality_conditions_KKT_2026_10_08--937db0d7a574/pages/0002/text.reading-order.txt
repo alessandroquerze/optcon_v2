@@ -1,0 +1,25 @@
+Discrete-time control system and notation (Refresh)
+
+
+   We consider nonlinear, discrete-time systems described by
+
+                                     xt+1 = ft(xt, ut)      t ∈N0                                  (1)
+
+    where xt ∈Rn and ut ∈Rm are the state and the input of the system at time t.
+
+
+    Notation
+   We use x ∈RnT and u ∈RmT to denote, respectively, the stack of the states xt for all t ∈1, . . . , T
+    and the inputs ut for all t ∈0, . . . , T −1, that is
+
+
+                              x := col(x1, . . . , xT )
+                             u := col(u0, . . . , uT −1).
+
+    where col(x1, . . . , xT ) is the (column) vector with components x1, . . . , xT .
+
+
+
+
+
+                                   Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Optimality Conditions for Optimal Control 1 |18

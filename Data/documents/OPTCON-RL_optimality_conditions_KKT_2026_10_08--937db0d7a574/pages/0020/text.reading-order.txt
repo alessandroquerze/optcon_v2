@@ -1,0 +1,21 @@
+KKT conditions for constrained optimal control
+
+    Let (x∗, u∗) be a regular optimal (state-input) trajectory. Then there exist λ∗and µ∗≥0 such that
+    ∇L(x∗, u∗, λ∗, µ∗) = 0 + complementary slackness conditions.
+
+    Let us explicitly write condition ∇(1,2)L(x∗, u∗, λ∗, µ∗) = 0
+
+                                             ∇1L(x∗, u∗, λ∗, µ∗)                           ∇(1,2)L(x∗, u∗, λ∗, µ∗) =             = 0                                             ∇2L(x∗, u∗, λ∗, µ∗)
+
+    Since L(x, u, λ, µ) = PTt=0 Lt(xt, ut, λ), we can exploit this sparsity and write
+
+     ∇1L0(x0, u0, λ, µ) = 0        ∇1ℓ(x0, u0) + ∇1f0(x0, u0)λ1 + ∇r0(x0)λb,0 + ∇1gt(x0, u0)µ0 = 0
+     ∇2L0(x0, u0, λ, µ)                    ∇2ℓ(x0, u0) + ∇2f0(x0, u0)λ1 + ∇2gt(x0, u0)µ0
+        ∇1Lt(xt, ut, λ) = 0        ∇1ℓ(xt, ut) + ∇1ft(xt, ut)λt+1 −λt + ∇1gt(xt, ut)µt = 0  t=1, . . . , T                    ut, λ)                        ut) +         ut)λt+1 +         ut)µt              −1        ∇2Lt(xt,                     ∇2ℓ(xt,      ∇2ft(xt,          ∇2gt(xt,
+         ∇1LT (xT , λ) = 0      ∇ℓT (xT ) −λT + ∇rT (xT )λb,T = 0
+      for (xt, ut, λt, µt) = (x∗t , u∗t , λ∗t , µ∗t ).
+
+
+
+
+                                  Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Optimality Conditions for Optimal Control 18 |18

@@ -1,0 +1,25 @@
+Newton’s Method via Quadratic Optimization
+
+
+
+
+    Observe that
+
+                                   ∇ℓ(zk) + ∇2ℓ(zk)∆zk = 0
+
+      is the first-order necessary and sufficient condition of optimality for the quadratic program
+
+                      ∆zk = arg min                                    ∇ℓ(zk)⊤∆z + 12∆z⊤∇2ℓ(zk)∆z.                       (1)                                   ∆z
+
+
+    Thus, the k-th iteration of Newton’s method can be seen as
+
+                                         zk+1 = zk −∆zk
+
+    with ∆zk solution of the quadratic program (1).
+
+
+
+
+
+                                                      Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 35 |73

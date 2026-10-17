@@ -1,0 +1,614 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0028",
+  "document_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc",
+  "source": {
+    "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+    "page_index": 27,
+    "physical_page_number": 28,
+    "pdf_label_raw": "<FEFF00320037>",
+    "pdf_label": "27",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Example: trajectory generation for an autonomous drone (II)",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      366.4964294433594,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 27,
+        "total": 35,
+        "raw": "27 |35",
+        "bbox": [
+          126.9540023803711,
+          247.92860412597656,
+          447.8712158203125,
+          258.29376220703125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0028/text.txt",
+      "sha256": "bce5e7359d584101beeb0395c65ccaa87aff9c9258520c2a2780eb7d2c5db1a4"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0028/text.reading-order.txt",
+      "sha256": "7f52dd85863aa311bd7597aba7ec75d7550de28e998ff66b5ac86730e2782c88"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0028/layout.json",
+      "sha256": "841c4c537b231dc50d7afcf745f26b20897af7765d6c99f717de1b9757c08621"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0028/render.png",
+      "sha256": "d24eeb4c5aff31b629c287b2a392f349123ad428d568144d68ed3a39e61228eb",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "134853b8a3e13c414eb83a0b40c46d2d8fef25e027c48e2e7285e9c26d5dcd89"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0027",
+    "next_page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0029"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "7e8bf8f8a2471887d8f3d010dc508b16a228883f0fa9de5b4030649b4415bd13",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0028",
+      "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+      "artifact_sha256": {
+        "text": "bce5e7359d584101beeb0395c65ccaa87aff9c9258520c2a2780eb7d2c5db1a4",
+        "layout": "841c4c537b231dc50d7afcf745f26b20897af7765d6c99f717de1b9757c08621",
+        "render": "d24eeb4c5aff31b629c287b2a392f349123ad428d568144d68ed3a39e61228eb"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "Codex (identificatore esatto del modello non esposto nella sessione)",
+        "run_id": "page-analysis-2301ef8b90c348bcb8f85cd70d1cd3eb"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0028",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0027",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0029"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0028",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0027",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0029"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0028",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0027",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0029"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Drone (II) — requisiti della traiettoria",
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "'Not too high' non è un limite numerico né una disuguaglianza hard.",
+          "La pagina non assegna esplicitamente θ^{des}=ω^{des}=0: lo si riconoscerà dalla forma del costo nella pagina 29.",
+          "I requisiti non costituiscono da soli una soluzione o un algoritmo."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Dizionario dello stato e degli ingressi del drone",
+            "why": "Per associare correttamente le quattro famiglie di requisiti.",
+            "origin": "source_context",
+            "page_numbers": [
+              27
+            ]
+          },
+          {
+            "concept": "Desiderato contro traiettoria realizzabile",
+            "why": "I requisiti non cancellano la dinamica.",
+            "origin": "source_context",
+            "page_numbers": [
+              22,
+              25
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "(p_{x,t}^{\\mathrm{des}},p_{y,t}^{\\mathrm{des}}),\\quad t=1,\\ldots,T",
+            "anchor": "the time-evolution",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          },
+          {
+            "latex": "(v_{x,t}^{\\mathrm{des}},v_{y,t}^{\\mathrm{des}}),\\quad t=1,\\ldots,T",
+            "anchor": "the velocity is close",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          },
+          {
+            "latex": "\\theta_t,\\omega_t;\\qquad u_{1,t},u_{2,t}",
+            "anchor": "angle and angular velocity",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "example-1",
+            "label": "enrichment",
+            "type": "conceptual_example",
+            "proposal": "Enrichment concettuale: confrontare candidate con errori di posizione simili ma diversa velocità desiderata, oscillazione angolare e ampiezza degli ingressi.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Mostrare che il solo errore di posizione non esaurisce il task.",
+            "setup": "Enrichment concettuale: confrontare candidate con errori di posizione simili ma diversa velocità desiderata, oscillazione angolare e ampiezza degli ingressi.",
+            "parameters": [],
+            "derivation": [
+              "Valutare separatamente errore di posizione ed errore di velocità.",
+              "Controllare anche θ,ω e ingressi.",
+              "Per ordinarle serve una scelta esplicita di costo o vincoli, non presente in questa pagina."
+            ],
+            "expected_outcome": "Non dichiarare migliore una candidata soltanto perché passa vicino ai punti desiderati.",
+            "limitations": [
+              "Non si afferma l'esistenza o fattibilità dinamica delle candidate senza verifica.",
+              "Nessun peso o soglia è attribuito alla fonte."
+            ],
+            "enrichment_id": "example-1",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "DroneTaskToStateComponentMap",
+          "description": "Tabella statica: posizione→x₁,x₃; velocità→x₂,x₄; angolo/velocità angolare→x₅,x₆; ingressi→u₁,u₂. La corrispondenza usa esplicitamente la pagina 27.",
+          "origin": "source_derived",
+          "source_observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        "interactivity": {
+          "recommended": false,
+          "rationale": "Qui i requisiti sono qualitativi; i controlli sui pesi sono progettati nella pagina 29, dove il costo è esplicito.",
+          "component": null,
+          "parameters": [],
+          "outputs": [],
+          "invariants": [],
+          "enrichment_id": null
+        },
+        "edge_cases": [
+          {
+            "case": "Peso elevato confuso con limite hard",
+            "expected_behavior": "Non anticipare che una grande penalità garantisca una soglia, che qui non è assegnata.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "case": "Percorso geometrico senza velocità temporali",
+            "expected_behavior": "Evidenziare che il task richiede anche un profilo temporale e di velocità.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          }
+        ],
+        "expansion_rationale": "Quattro requisiti paralleli corrispondono allo stesso stato e si comprendono con una sola tabella.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Posizione e velocità vicine al desiderato, con angolo, velocità angolare e ingressi contenuti.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ],
+            "enrichment_ids": [
+              "example-1"
+            ]
+          }
+        ]
+      },
+      "observations": [
+        {
+          "id": "s01",
+          "category": "concept",
+          "description": "La traiettoria del centro di massa deve essere vicina alla posizione desiderata (p_{x,t}^{des},p_{y,t}^{des}) per t=1,…,T.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0028",
+            "modality": "both",
+            "text_quote": "the time-evolution of the center of mass is close",
+            "bbox": [
+              40.10200119018555,
+              48.907310485839844,
+              322.4570617675781,
+              59.34687805175781
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s02",
+          "category": "concept",
+          "description": "La velocità deve essere vicina al corrispondente profilo desiderato (v_{x,t}^{des},v_{y,t}^{des}) per t=1,…,T.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0028",
+            "modality": "both",
+            "text_quote": "the velocity is close",
+            "bbox": [
+              40.102020263671875,
+              63.85131072998047,
+              315.5820617675781,
+              74.29087829589844
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s03",
+          "category": "concept",
+          "description": "Angolo θ_t e velocità angolare ω_t devono essere 'not too high'.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0028",
+            "modality": "both",
+            "text_quote": "angle and angular velocity",
+            "bbox": [
+              40.10198974609375,
+              80.15227508544922,
+              253.52828979492188,
+              89.76640319824219
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s04",
+          "category": "concept",
+          "description": "Gli ingressi u_{1,t},u_{2,t} devono essere 'not too high'.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0028",
+            "modality": "both",
+            "text_quote": "inputs u1,t, u2,t",
+            "bbox": [
+              40.10198974609375,
+              95.09627532958984,
+              187.13278198242188,
+              105.17488098144531
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-05",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Example: trajectory generation for an autonomous drone (II)",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0028",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              10.35200023651123,
+              6.720991134643555,
+              366.4964294433594,
+              21.06719207763672
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-06",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Trajectory generation task: compute a (state-input) trajectory of the drone such that",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0028",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              28.34600067138672,
+              35.43647766113281,
+              357.1529541015625,
+              44.40287780761719
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-07",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: y,t) for all t = 1, . . . , T",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0028",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              332.43304443359375,
+              50.38047790527344,
+              420.0910949707031,
+              60.45939636230469
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-08",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: y,t) for all t = 1, . . . , T",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0028",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              325.0860290527344,
+              65.32447814941406,
+              412.74407958984375,
+              75.40339660644531
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-09",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 27 |35",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0028",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              126.9540023803711,
+              247.92860412597656,
+              447.8712158203125,
+              255.1179962158203
+            ]
+          },
+          "confidence": 0.98
+        }
+      ],
+      "contextual_role": "Traduce il task del drone in quattro requisiti prima della scelta esplicita dei pesi.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0027",
+          "role": "previous",
+          "note": "La pagina 27 fissa l'ordine x=(p_x,v_x,p_y,v_y,θ,ω) che permette di associare i requisiti alle componenti."
+        },
+        {
+          "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0029",
+          "role": "next",
+          "note": "La pagina 29 sceglie un costo diagonale che penalizza questi errori e valori; la presente pagina non assegna ancora i pesi."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "p_{x,t}^{\\mathrm{des}},p_{y,t}^{\\mathrm{des}}",
+          "meaning": "Posizione desiderata",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        {
+          "symbol": "v_{x,t}^{\\mathrm{des}},v_{y,t}^{\\mathrm{des}}",
+          "meaning": "Velocità desiderata",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        {
+          "symbol": "\\theta_t,\\omega_t",
+          "meaning": "Angolo e velocità angolare da mantenere non elevati",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        {
+          "symbol": "u_{1,t},u_{2,t}",
+          "meaning": "Ingressi da mantenere non elevati",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ],
+        "rationale": "Pagina con contenuto autonomo nella sequenza; nessun candidato automatico da confermare."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              10.35200023651123,
+              6.720991134643555,
+              366.4964294433594,
+              21.06719207763672
+            ],
+            "description": "Regione testuale sorgente: Example: trajectory generation for an autonomous drone (II)",
+            "observation_ids": [
+              "transcription-05"
+            ]
+          },
+          {
+            "bbox": [
+              28.34600067138672,
+              35.43647766113281,
+              357.1529541015625,
+              44.40287780761719
+            ],
+            "description": "Regione testuale sorgente: Trajectory generation task: compute a (state-input) trajectory of the drone such that",
+            "observation_ids": [
+              "transcription-06"
+            ]
+          },
+          {
+            "bbox": [
+              40.10200119018555,
+              48.907310485839844,
+              340.9690856933594,
+              60.45939636230469
+            ],
+            "description": "Regione testuale sorgente: • the time-evolution of the center of mass is close to a desired one, (pdes\nx,t, pdes",
+            "observation_ids": [
+              "s01"
+            ]
+          },
+          {
+            "bbox": [
+              332.43304443359375,
+              50.38047790527344,
+              420.0910949707031,
+              60.45939636230469
+            ],
+            "description": "Regione testuale sorgente: y,t) for all t = 1, . . . , T",
+            "observation_ids": [
+              "transcription-07"
+            ]
+          },
+          {
+            "bbox": [
+              40.102020263671875,
+              63.85131072998047,
+              333.9430847167969,
+              75.40339660644531
+            ],
+            "description": "Regione testuale sorgente: • the velocity is close to the corresponding desired velocity profile (vdes\nx,t, vdes",
+            "observation_ids": [
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              325.0860290527344,
+              65.32447814941406,
+              412.74407958984375,
+              75.40339660644531
+            ],
+            "description": "Regione testuale sorgente: y,t) for all t = 1, . . . , T",
+            "observation_ids": [
+              "transcription-08"
+            ]
+          },
+          {
+            "bbox": [
+              40.10198974609375,
+              80.15227508544922,
+              253.52828979492188,
+              89.76640319824219
+            ],
+            "description": "Regione testuale sorgente: • angle and angular velocity, θt, ωt, are “not too high”",
+            "observation_ids": [
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              40.10198974609375,
+              95.09627532958984,
+              187.13278198242188,
+              105.17488098144531
+            ],
+            "description": "Regione testuale sorgente: • inputs u1,t, u2,t are “not too high”.",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              126.9540023803711,
+              247.92860412597656,
+              447.8712158203125,
+              255.1179962158203
+            ],
+            "description": "Regione testuale sorgente: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 27 |35",
+            "observation_ids": [
+              "transcription-09"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Quattro requisiti paralleli corrispondono allo stesso stato e si comprendono con una sola tabella.",
+        "subpages": []
+      }
+    }
+  }
+}

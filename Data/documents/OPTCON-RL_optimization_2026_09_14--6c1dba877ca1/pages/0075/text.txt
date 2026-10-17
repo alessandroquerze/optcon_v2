@@ -1,0 +1,17 @@
+Stepsize selection for constrained optimization (I): Merit function
+Goal: Choose γk such that direction ∆zk simultaneously
+i) decreases cost ℓ(z)
+ii) reduces constraint violation, i.e., ∥h(z)∥
+Idea: Measure progress, i.e., select stepsize γk, evaluating a merit function.
+L1 merit function: Consider the optimization problem with cost ℓ(z) and equality constraint h(z) = 0,
+the associated L1 merit function reads
+M1(z; s) = ℓ(z) + s∥g(z)∥1
+where, s ∈R parameter and ∥· ∥1 is the 1-norm, i.e., for z ∈Rd, ∥z∥1 = Pd
+i=1 |zi|.
+Proposition (exact merit function) Call λ∗the optimal Lagrange multiplier associated to the original
+constrained optimization problem. Then, if s > max
+i
+|λ∗
+i |, i = 1, . . . , m, the merit function M1(z; s) is
+exact, i.e., any solution (z∗, λ∗) of the original optimization problem is a local minimizer of M1(z; s).
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 67 |73

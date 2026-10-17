@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0006",
+  "document_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1",
+  "source": {
+    "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+    "page_index": 5,
+    "physical_page_number": 6,
+    "pdf_label_raw": "<FEFF0035>",
+    "pdf_label": "5",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Remarks on notation: gradient and Hessian matrix of a function",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      386.2940673828125,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 5,
+        "total": 73,
+        "raw": "5 |73",
+        "bbox": [
+          153.86399841308594,
+          247.92860412597656,
+          447.8712158203125,
+          258.29376220703125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0006/text.txt",
+      "sha256": "0d5e7917f3b60867b6fcbe99ad75c70ba49eadb90fc61e25bd3cbdfa2cbbe121"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0006/text.reading-order.txt",
+      "sha256": "fffb9537e4b2ddb2694ceb82061467aa9dbd8de461b9c3870201a55e9999bdd8"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0006/layout.json",
+      "sha256": "c4fee51a424182526fad0454a37a280b5cc52aaf14482172d34709a2f822efa8"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0006/render.png",
+      "sha256": "ecb8dc8b60c3f3a9a70d287481b7046966303c46af3d33de80eba1c21ba87b11",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "57086af0f21c0dd014fdf8f9c5ac612ab6efd45d2fae5e7af7931463c53e82f2"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0005",
+    "next_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0007"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "pending",
+    "result": null
+  }
+}

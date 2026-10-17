@@ -1,0 +1,24 @@
+Optimization: main ingredients
+
+
+    The main ingredients of an optimization problem are
+
+    Decision vector: z ∈Rd
+
+    Cost function: ℓ(z) : Rd →R cost associated to decision z
+
+     Constraints (constraint sets): for some given functions hi : Rn →R, i = 1, . . . , m, and gj : Rn →R,
+    the decision vector z ∈Rd needs to satisfy
+
+                                        hi(z) = 0      i = 1, . . . , m
+                                         gj(z) ≤0     j = 1, . . . , r.
+
+     Equivalently we can say that we require z ∈Z with
+
+                        Z = {z ∈Rn | h(z) = 0, g(z) ≤0},
+
+    where we compactly denoted h(z) = col(h1(z), . . . , hm(z)) and g(z) = col(g1(z), . . . , gr(z)).
+
+
+
+                                            Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 13 |35

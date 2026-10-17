@@ -1,0 +1,614 @@
+[
+  {
+    "page": 31,
+    "title": "Continuous-time Optimal Control problem (I)",
+    "observations": [
+      {
+        "category": "equation",
+        "claim": "Il costo continuo è l'integrale da 0 a T di ℓ_τ(x(τ),u(τ)) più il terminal cost ℓ_T(x(T)); la prima riga di minimizzazione presenta una parentesi chiusa in più.",
+        "anchor": "ℓτ(x(τ), u(τ))dτ + ℓT (x(T)))",
+        "bbox": [
+          132,
+          50,
+          336,
+          81
+        ]
+      },
+      {
+        "category": "equation",
+        "claim": "Sono imposti ẋ(t)=f_t(x(t),u(t)) per t∈[0,T], r(x(0),x(T))=0 e g_t(x(t),u(t))≤0 per t∈[0,T).",
+        "anchor": "r(x(0), x(T)) = 0",
+        "bbox": [
+          145,
+          79,
+          356,
+          133
+        ]
+      },
+      {
+        "category": "definition",
+        "claim": "𝓕 è uno spazio di funzioni e il costo è un funzionale ℓ:𝓕→R, valutato su coppie di funzioni (x(·),u(·)).",
+        "anchor": "Cost functional ℓ: F →R",
+        "bbox": [
+          27,
+          139,
+          403,
+          186
+        ]
+      },
+      {
+        "category": "definition",
+        "claim": "Lo spazio delle traiettorie 𝓣 contiene le coppie in 𝓕 che soddisfano la dinamica; è chiamato anche trajectory manifold. Anche in questa formula compare una parentesi superflua dopo la coppia.",
+        "anchor": "Space of trajectories (or trajectory manifold)",
+        "bbox": [
+          27,
+          193,
+          445,
+          231
+        ]
+      }
+    ],
+    "math": [
+      [
+        "\\min_{(x(\\cdot),u(\\cdot))\\in\\mathcal F}\\ \\int_0^T\\ell_\\tau(x(\\tau),u(\\tau))\\,d\\tau+\\ell_T(x(T)))",
+        "ℓτ(x(τ), u(τ))dτ + ℓT (x(T)))",
+        "Trascrizione letterale della prima riga, inclusa la parentesi finale eccedente."
+      ],
+      [
+        "\\dot x(t)=f_t(x(t),u(t)),\\ t\\in[0,T];\\quad r(x(0),x(T))=0;\\quad g_t(x(t),u(t))\\leq0,\\ t\\in[0,T)",
+        "subj.to ˙x(t)"
+      ],
+      [
+        "\\ell:\\mathcal F\\to\\mathbb R,\\qquad\\ell(x(\\cdot),u(\\cdot))=\\int_0^T\\ell_\\tau(x(\\tau),u(\\tau))\\,d\\tau+\\ell_T(x(T))",
+        "Cost functional"
+      ],
+      [
+        "\\mathcal T=\\{(x(\\cdot),u(\\cdot)))\\in\\mathcal F\\mid\\dot x(t)=f_t(x(t),u(t)),\\ t\\in[0,T]\\}",
+        "Space of trajectories",
+        "Trascrizione della parentesi eccedente nella coppia come stampata; non usarla come nuova struttura matematica."
+      ]
+    ],
+    "notation": [
+      [
+        "\\mathcal F",
+        "Spazio di funzioni non ulteriormente caratterizzato"
+      ],
+      [
+        "\\ell",
+        "Funzionale che associa un numero a una coppia di funzioni"
+      ],
+      [
+        "\\ell_\\tau",
+        "Costo corrente con indice temporale τ"
+      ],
+      [
+        "\\ell_T",
+        "Costo terminale"
+      ],
+      [
+        "T",
+        "Tempo finale"
+      ],
+      [
+        "\\mathcal T",
+        "Insieme delle traiettorie, distinto dal tempo finale T"
+      ],
+      [
+        "\\tau",
+        "Variabile muta d'integrazione, non una coppia meccanica in questa pagina"
+      ]
+    ],
+    "role": "Porta la formulazione discreta a funzioni di tempo continuo e introduce il funzionale e l'insieme delle traiettorie.",
+    "previous": "La pagina 30 conclude i path constraints discreti; qui i domini temporali sono intervalli reali.",
+    "next": "La pagina 32 trascura path e terminal constraints e usa l'appartenenza a 𝓣 per scrivere il problema compatto.",
+    "scope_limits": [
+      "La fonte non specifica regolarità, norma o topologia di 𝓕; non assumere che trajectory manifold sia una dimostrazione di struttura differenziabile.",
+      "L'intervallo dei path constraints è [0,T), distinto da [0,T] della dinamica.",
+      "Le parentesi in più vengono conservate e segnalate, senza cambiare i simboli della formula.",
+      "Tempo finale T e insieme 𝓣 non sono lo stesso oggetto."
+    ],
+    "prerequisites": [
+      [
+        "ODE e uscita di stato",
+        "Per il vincolo dinamico continuo.",
+        [
+          8
+        ]
+      ],
+      [
+        "OCP discreto",
+        "Aiuta a confrontare somma e integrale, senza confonderli.",
+        [
+          23
+        ]
+      ],
+      [
+        "Integrale e funzione di una funzione",
+        "Per comprendere il concetto di funzionale.",
+        []
+      ]
+    ],
+    "examples": [
+      {
+        "purpose": "Valutare un funzionale su una coppia di funzioni dinamicamente coerente.",
+        "setup": "Enrichment: ẋ=u, x(0)=0, T=1, u(t)=1 e x(t)=t; ℓ_τ=½u², ℓ_T=½x(T)².",
+        "parameters": [
+          [
+            "T",
+            "1"
+          ],
+          [
+            "u(t)",
+            "1"
+          ]
+        ],
+        "steps": [
+          "La coppia soddisfa ẋ=u.",
+          "Integrale di ½ su [0,1]: 0.5.",
+          "Terminale: ½·1²=0.5.",
+          "Il funzionale restituisce 1."
+        ],
+        "expected": "L'oggetto scelto è una funzione/coppia di funzioni; il risultato del costo è uno scalare.",
+        "limitations": [
+          "Dinamica, condizione iniziale, funzioni di costo e numeri sono enrichment."
+        ]
+      }
+    ],
+    "visual": {
+      "component": "ContinuousFunctionalCostDiagram",
+      "origin": "enrichment",
+      "description": "Grafici di x e u, area del running cost e contributo terminale separato; freccia dalle funzioni al costo scalare."
+    },
+    "interaction": {
+      "component": "ConstantInputFunctionalEvaluator",
+      "rationale": "Una famiglia semplice permette di osservare come cambiano le funzioni e il loro costo, senza chiamarla l'intero spazio 𝓕.",
+      "parameters": [
+        [
+          "Ingresso costante dell'esempio",
+          "c",
+          "[−2,2]",
+          "1",
+          "Ricalcolare u(t)=c, x(t)=ct, integrale ½c²T e terminale ½c²T².",
+          [
+            "c=0: entrambi i contributi nulli"
+          ],
+          "enrichment"
+        ],
+        [
+          "Tempo finale",
+          "T",
+          "[0.5,3] s",
+          "1",
+          "Cambiare intervallo temporale, stato finale, area e termine terminale mantenendo la stessa legge d'ingresso.",
+          [
+            "T>0"
+          ],
+          "source"
+        ]
+      ],
+      "outputs": [
+        "Funzioni x,u",
+        "Running cost integrato",
+        "Terminal cost",
+        "Costo totale"
+      ],
+      "invariants": [
+        "Solo una sott famiglia di funzioni è esplorata",
+        "Nessuna ottimizzazione generale",
+        "La dinamica e i costi numerici sono enrichment"
+      ]
+    },
+    "edges": [
+      [
+        "Violazione della dinamica",
+        "La coppia non appartiene a 𝓣, anche se il costo è valutabile."
+      ],
+      [
+        "Path constraint al tempo terminale",
+        "Non includerlo automaticamente quando il dominio stampato è [0,T)."
+      ],
+      [
+        "Funzionale non finito",
+        "L'appartenenza a un generico spazio di funzioni non garantisce integrabilità; la fonte non specifica i dettagli."
+      ]
+    ],
+    "uncertainties": [
+      {
+        "description": "Parentesi chiuse eccedenti nella prima riga del costo e nella definizione stampata di 𝓣. Il funzionale riscritto al centro della pagina ha parentesi bilanciate; conservare entrambi i dati senza correzioni silenziose.",
+        "blocking": false
+      }
+    ],
+    "single_page_rationale": "Funzionale e spazio delle traiettorie sono i due lati dello stesso problema continuo; un piccolo diagramma con formula annotata è sufficiente.",
+    "focus": "L'OCP continuo sceglie funzioni, valuta un funzionale e impone appartenenza all'insieme dinamicamente ammissibile."
+  },
+  {
+    "page": 32,
+    "title": "Continuous-time Optimal Control problem (II)",
+    "observations": [
+      {
+        "category": "assumption",
+        "claim": "La pagina suppone di trascurare path e terminal constraints.",
+        "anchor": "Suppose we neglect path and terminal constraints.",
+        "bbox": [
+          27,
+          31,
+          441,
+          46
+        ]
+      },
+      {
+        "category": "equation",
+        "claim": "Il problema diventa min_{(x(·),u(·))∈𝓕}ℓ(x(·),u(·)) soggetto a (x(·),u(·))∈𝓣.",
+        "anchor": "subj.to (x(·), u(·)) ∈T",
+        "bbox": [
+          167,
+          50,
+          300,
+          86
+        ]
+      },
+      {
+        "category": "concept",
+        "claim": "La fonte identifica esplicitamente il problema come ottimizzazione infinito-dimensionale.",
+        "anchor": "which is an infinite dimensional optimization problem.",
+        "bbox": [
+          27,
+          93,
+          309,
+          108
+        ]
+      }
+    ],
+    "math": [
+      [
+        "\\begin{aligned}\\min_{(x(\\cdot),u(\\cdot))\\in\\mathcal F}\\;&\\ell(x(\\cdot),u(\\cdot))\\\\\\text{subj.to }&(x(\\cdot),u(\\cdot))\\in\\mathcal T\\end{aligned}",
+        "subj.to (x(·), u(·)) ∈T"
+      ]
+    ],
+    "notation": [
+      [
+        "\\mathcal F",
+        "Spazio ambiente delle coppie di funzioni"
+      ],
+      [
+        "\\mathcal T",
+        "Sottoinsieme delle coppie che rispettano la dinamica"
+      ],
+      [
+        "\\ell",
+        "Funzionale già definito, non una funzione di pochi parametri assegnati"
+      ]
+    ],
+    "role": "Condensa la formulazione continua in un'ottimizzazione su uno spazio di traiettorie e ne evidenzia la dimensione infinita.",
+    "previous": "La pagina 31 definisce 𝓕, ℓ e 𝓣; senza quelle definizioni la formula compatta non è autosufficiente.",
+    "next": "La pagina 33 fornisce il modello continuo di un pendolo per un esempio di generazione di traiettoria.",
+    "scope_limits": [
+      "Trascurare terminal constraints non significa rimuovere il terminal cost dal funzionale.",
+      "Infinito-dimensionale non significa orizzonte T infinito: anche su un intervallo finito si scelgono funzioni.",
+      "La fonte non specifica una parametrizzazione finita o un algoritmo numerico.",
+      "La formula compatta non mostra una condizione iniziale separata; non aggiungerla come se fosse stampata."
+    ],
+    "prerequisites": [
+      [
+        "Funzionale e insieme delle traiettorie",
+        "Definiti immediatamente prima.",
+        [
+          31
+        ]
+      ],
+      [
+        "Vettore finito contro funzione",
+        "Per comprendere il numero di gradi di libertà.",
+        []
+      ]
+    ],
+    "examples": [
+      {
+        "purpose": "Distinguere problema infinito-dimensionale e sua famiglia parametrizzata.",
+        "setup": "Enrichment: ẋ=u,x(0)=0 su [0,2]; restringere u a due tratti costanti, u=1 su [0,1), u=−1 su [1,2].",
+        "parameters": [
+          [
+            "Numero tratti aggiunto K",
+            "2"
+          ],
+          [
+            "Coefficienti",
+            "1,−1"
+          ]
+        ],
+        "steps": [
+          "Integrare la dinamica: x sale da 0 a 1 e poi ritorna a 0.",
+          "Questa coppia appartiene all'insieme dinamico dell'esempio.",
+          "I due coefficienti descrivono solo una sott famiglia finita, non tutte le funzioni ammesse dal problema generale."
+        ],
+        "expected": "Una rappresentazione con K parametri è un'approssimazione/restrizione aggiunta, non la dimensione della formulazione originaria.",
+        "limitations": [
+          "Modello e parametrizzazione sono enrichment.",
+          "Non è una dimostrazione di convergenza di una discretizzazione."
+        ]
+      }
+    ],
+    "visual": {
+      "component": "FunctionSpaceVersusFiniteParameterFamily",
+      "origin": "enrichment",
+      "description": "Contrasto tra coppia di funzioni su intervallo continuo e u a K tratti, con x ottenuta integrando."
+    },
+    "interaction": {
+      "component": "PiecewiseConstantFunctionFamilyExplorer",
+      "rationale": "Aumentare il numero di coefficienti rende concreta la differenza tra una famiglia finita e lo spazio di funzioni completo.",
+      "parameters": [
+        [
+          "Numero di tratti aggiunto",
+          "K",
+          "Interi 1…8",
+          "2",
+          "Suddividere [0,2] in K intervalli e reinizializzare i coefficienti a zero dichiaratamente; mostrare K gradi di libertà nell'approssimazione.",
+          [
+            "K=1: un ingresso costante"
+          ],
+          "enrichment"
+        ],
+        [
+          "Tratto selezionato",
+          "k",
+          "Interi 1…K",
+          "1",
+          "Evidenziare il tratto e caricarne il coefficiente nel controllo, senza cambiare da solo le funzioni.",
+          [
+            "Se K diminuisce, selezionare un indice valido"
+          ],
+          "enrichment"
+        ],
+        [
+          "Coefficiente selezionato",
+          "c_k",
+          "[−1,1]",
+          "1 nel caso iniziale K=2",
+          "Cambiare u solo nel tratto selezionato e ricalcolare x da quel tratto in avanti con integrazione esatta dell'integratore.",
+          [
+            "c_k=0: x costante sul tratto"
+          ],
+          "enrichment"
+        ]
+      ],
+      "outputs": [
+        "u a tratti",
+        "x continua e lineare a tratti",
+        "Numero finito K di coefficienti"
+      ],
+      "invariants": [
+        "Dinamica dell'esempio ẋ=u",
+        "Intervallo [0,2] e x(0)=0",
+        "Nessuna affermazione che K coefficienti esauriscano 𝓕"
+      ]
+    },
+    "edges": [
+      [
+        "T finito",
+        "Il problema originale resta di dimensione infinita."
+      ],
+      [
+        "K finito molto grande",
+        "Rimane una parametrizzazione finita; non attribuire accuratezza o ottimalità senza analisi."
+      ],
+      [
+        "Terminal cost presente",
+        "Non confonderlo con un terminal constraint trascurato."
+      ]
+    ],
+    "single_page_rationale": "Un'unica forma compatta e una distinzione dimensionale; l'esempio a tratti serve solo da confronto.",
+    "focus": "Ottimizzazione su funzioni: la dimensione infinita non dipende dall'avere un tempo finale infinito."
+  },
+  {
+    "page": 33,
+    "title": "Pendulum (I) — dinamica non lineare",
+    "observations": [
+      {
+        "category": "equation",
+        "claim": "La dinamica stampata è θ̈=−(g/l)sinθ+τ/(mℓ²), con l e ℓ resi con glifi diversi.",
+        "anchor": "Consider a pendulum with (nonlinear) dynamics",
+        "bbox": [
+          91,
+          50,
+          197,
+          68
+        ]
+      },
+      {
+        "category": "equation",
+        "claim": "La rappresentazione di stato è ẋ₁=x₂ e ẋ₂=−(g/l)sinx₁+u/(mℓ²).",
+        "anchor": "with state-space representation",
+        "bbox": [
+          88,
+          91,
+          203,
+          124
+        ]
+      },
+      {
+        "category": "definition",
+        "claim": "L'uscita di prestazione è y=θ.",
+        "anchor": "and performance output y = θ.",
+        "bbox": [
+          17,
+          130,
+          230,
+          146
+        ]
+      },
+      {
+        "category": "diagram",
+        "claim": "Il disegno riporta l'angolo θ, la coppia τ, una lunghezza etichettata l e la forza di peso etichettata Mg, con M maiuscola rispetto alla m delle equazioni.",
+        "bbox": [
+          266,
+          39,
+          344,
+          140
+        ]
+      }
+    ],
+    "math": [
+      [
+        "\\ddot\\theta=-\\frac{g}{l}\\sin\\theta+\\frac{1}{m\\ell^2}\\tau",
+        "¨θ =",
+        "Preservati il glifo l nel primo denominatore e ℓ nel secondo."
+      ],
+      [
+        "\\dot x_1=x_2,\\qquad\\dot x_2=-\\frac{g}{l}\\sin x_1+\\frac{1}{m\\ell^2}u",
+        "˙x1 = x2"
+      ],
+      [
+        "y=\\theta",
+        "and performance output y = θ."
+      ]
+    ],
+    "notation": [
+      [
+        "\\theta",
+        "Angolo del pendolo e uscita di prestazione"
+      ],
+      [
+        "\\tau",
+        "Coppia indicata nel modello e nel disegno; qui non è il tempo d'integrazione della pagina 31"
+      ],
+      [
+        "x_1,x_2",
+        "Componenti dello stato; identificazione con θ e θ̇ dedotta dalla rappresentazione"
+      ],
+      [
+        "u",
+        "Ingresso della rappresentazione di stato, corrispondente alla coppia nell'identificazione del modello"
+      ],
+      [
+        "l,\\ell",
+        "Due forme grafiche della lunghezza nei denominatori; non unificate nella trascrizione"
+      ],
+      [
+        "m,M",
+        "m nelle equazioni e M nel peso Mg del disegno; non è esplicitata una distinzione fisica"
+      ]
+    ],
+    "role": "Introduce la dinamica concreta dell'esempio continuo finale, senza ancora trasferire il pendolo fra equilibri.",
+    "previous": "La pagina 32 spiega la formulazione su funzioni; qui si assegna una dinamica non lineare specifica.",
+    "next": "La pagina 34 cerca coppie di equilibrio e pone il trasferimento fra due di esse.",
+    "scope_limits": [
+      "La fonte non include smorzamento, attrito, saturazioni o valori numerici.",
+      "Le identificazioni x₁=θ,x₂=θ̇,u=τ seguono dal confronto delle rappresentazioni, ma non sono stampate come tre uguaglianze separate.",
+      "L'uso l/ℓ e m/M è conservato; per i calcoli aggiunti si dichiarano le identificazioni necessarie.",
+      "Nessuna stabilità o linearizzazione sinθ≈θ è affermata in questa pagina."
+    ],
+    "prerequisites": [
+      [
+        "ODE e rappresentazione di stato",
+        "Per passare da una derivata seconda a due equazioni del primo ordine.",
+        [
+          8
+        ]
+      ],
+      [
+        "Seno, coppia e accelerazione angolare",
+        "Prerequisiti matematico-fisici, non sviluppati dalla slide.",
+        []
+      ]
+    ],
+    "enrichment_notes": [
+      "Identificazione esplicativa, etichettata enrichment: x₁=θ, x₂=θ̇ e u=τ. Nei soli esempi porre l=ℓ e m=M come parametri fisici convenzionali, senza alterare la trascrizione della fonte."
+    ],
+    "examples": [
+      {
+        "purpose": "Calcolare il contributo non lineare e della coppia.",
+        "setup": "Enrichment: assumere l=ℓ=1 m, m=1 kg, g=9.81 m/s²; θ=π/6, u=0.",
+        "parameters": [
+          [
+            "l=ℓ,m,g",
+            "1,1,9.81"
+          ],
+          [
+            "θ",
+            "π/6"
+          ],
+          [
+            "u",
+            "0"
+          ]
+        ],
+        "steps": [
+          "sin(π/6)=0.5.",
+          "ẋ₂=−9.81·0.5=−4.905 rad/s².",
+          "Con u=4.905 l'accelerazione istantanea si annulla."
+        ],
+        "expected": "La coppia può compensare il termine gravitazionale nell'istante considerato; per equilibrio serve anche velocità nulla.",
+        "limitations": [
+          "Valori, unità e identificazioni l=ℓ,m=M sono enrichment.",
+          "Accelerazione nulla da sola non certifica equilibrio o stabilità."
+        ]
+      }
+    ],
+    "visual": {
+      "component": "PendulumNonlinearAccelerationDiagram",
+      "origin": "enrichment",
+      "description": "Disegno angolo/coppia e grafico dell'accelerazione rispetto all'angolo per i parametri convenzionali dichiarati."
+    },
+    "interaction": {
+      "component": "PendulumInstantaneousAccelerationInspector",
+      "rationale": "Muovere angolo e coppia mostra il ruolo del seno senza anticipare un ottimizzatore o una linearizzazione non scritta.",
+      "parameters": [
+        [
+          "Angolo candidato",
+          "θ",
+          "[−π,π] rad",
+          "π/6",
+          "Ruotare il disegno e aggiornare −9.81sinθ+u; mantenere il modello non lineare.",
+          [
+            "θ=0 o ±π: contributo gravitazionale nullo"
+          ],
+          "source"
+        ],
+        [
+          "Coppia",
+          "u",
+          "[−12,12] N·m",
+          "0",
+          "Aggiornare l'accelerazione con contributo additivo u e la freccia di coppia.",
+          [
+            "u=9.81sinθ: accelerazione nulla"
+          ],
+          "source"
+        ]
+      ],
+      "outputs": [
+        "Accelerazione angolare",
+        "Contributi gravità e ingresso",
+        "Configurazione geometrica"
+      ],
+      "invariants": [
+        "l=ℓ=1,m=1,g=9.81 come enrichment",
+        "Calcolo istantaneo, non integrazione temporale",
+        "Nessuno smorzamento aggiunto",
+        "Range/default sono enrichment"
+      ]
+    },
+    "edges": [
+      [
+        "l=0,ℓ=0 o m=0",
+        "Parametri non validi per le formule, da escludere nei futuri controlli."
+      ],
+      [
+        "Seno nullo",
+        "Non dedurre stabilità dalla sola accelerazione gravitazionale nulla."
+      ],
+      [
+        "Velocità non nulla con accelerazione zero",
+        "La configurazione non è un equilibrio del sistema a due stati."
+      ]
+    ],
+    "uncertainties": [
+      {
+        "description": "Variazioni di notazione della fonte: l nel termine g/l e nel disegno, ℓ nel momento mℓ²; m nelle equazioni, M nel peso Mg. Conservare i glifi e dichiarare ogni identificazione fisica aggiunta.",
+        "blocking": false
+      }
+    ],
+    "single_page_rationale": "Una dinamica del secondo ordine e la sua forma di stato, lette sullo stesso pendolo, costituiscono un'unica unità.",
+    "focus": "La dinamica non lineare del pendolo e la distinzione fra angolo, velocità, ingresso e uscita."
+  }
+]

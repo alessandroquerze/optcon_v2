@@ -1,0 +1,37 @@
+Remarks on notation: gradient and Hessian matrix of a function
+Gradient of a function
+For a function r : Rd →R, the gradient is denoted as
+∇r(z) =
+
+
+∂r(z)
+∂z1...
+∂r(z)
+∂zd
+
+∈Rd×1
+Hessian matrix of a function
+For a function r : Rd →R, the Hessian matrix is denoted as
+∇2(r(z)) =
+
+
+∂2r(z)
+∂z2
+1
+· · ·
+∂2r(z)
+∂z1zn
+...
+...
+...
+∂r(z)
+∂zdz1
+· · ·
+∂2r(z)
+∂z2
+d
+
+∈Rd×d
+The Hessian matrix is a symmetric matrix, since the assumption of continuity of the second derivatives
+implies that the order of differentiation does not matter.
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 5 |73

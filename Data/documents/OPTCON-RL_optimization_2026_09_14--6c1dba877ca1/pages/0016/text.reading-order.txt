@@ -1,0 +1,22 @@
+Strong convexity and gradient monotonicity
+
+   A function ℓis strongly convex with parameter µ > 0 if for zA̸ = zB and θ ∈(0, 1)
+
+                   ℓ(θzA + (1 −θ)zB) < θℓ(zA) + (1 −θ)ℓ(zB) −µθ(1 −θ)∥zA −zB∥2
+
+
+
+    The gradient of a differentiable strongly convex function satisfies
+
+                                   ⊤                          ∇ℓ(zA) −∇ℓ(zB)   (zA −zB) ≥µ∥zA −zB∥2
+
+     for all zA, zB ∈Z.
+
+
+    That is, the gradient ∇ℓis a strongly monotone operator
+
+
+
+
+
+                                                      Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 15 |73

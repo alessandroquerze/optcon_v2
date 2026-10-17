@@ -1,0 +1,17 @@
+Gradient methods: step-size selection rules (I)
+Armijo rule (Backtracking line-search)
+Step-size is selected following the procedure:
+1. Set ¯γ0 > 0, β ∈(0, 1), c ∈(0, 1)
+2. While ℓ(zk + ¯γidk) ≥ℓ(zk) + c¯γi∇ℓ(zk)⊤dk:
+¯γi+1 = β¯γi
+3. Set γk = ¯γi
+γ
+Cost
+1
+ℓ(zk + γdk)
+ℓ(zk) + γ∇ℓ(zk)⊤dk
+ℓ(zk) + cγ∇ℓ(zk)⊤dk
+¯γ0 = 1
+Idea: Select γk such that cost is reduced while the algorithm makes progress.
+Remark Typical values are β = 0.7 and c = 0.5.
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 37 |73

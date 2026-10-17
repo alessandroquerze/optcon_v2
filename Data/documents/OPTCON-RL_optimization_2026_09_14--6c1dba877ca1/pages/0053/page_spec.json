@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0053",
+  "document_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1",
+  "source": {
+    "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+    "page_index": 52,
+    "physical_page_number": 53,
+    "pdf_label_raw": "<FEFF00340039>",
+    "pdf_label": "49",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Examples of cost functions",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      167.11293029785156,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 49,
+        "total": 73,
+        "raw": "49 |73",
+        "bbox": [
+          150.68800354003906,
+          247.92860412597656,
+          447.8712158203125,
+          258.29376220703125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0053/text.txt",
+      "sha256": "c2efc2c3ca47da85a7d409f88a9e9d5200318b39a848d530c30773272d7562c5"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0053/text.reading-order.txt",
+      "sha256": "65ddd43214dec00fd2aa77768b3ec9d38e73601c439de735182504e84d3332e2"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0053/layout.json",
+      "sha256": "931128f6aff0bf8ab4ef3e27c65cd6cc56cce2d114a90a7193f72aca1710a0d3"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0053/render.png",
+      "sha256": "21da8800df613d72b4de2fb1c710881b143ae6eb94c6346ee622f5200d68beff",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "e39f8ae8bf6519530fd0e77d7f74aa53a5c14fe1b2e98b53b86532c8c6c901c8"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0052",
+    "next_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0054"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "pending",
+    "result": null
+  }
+}

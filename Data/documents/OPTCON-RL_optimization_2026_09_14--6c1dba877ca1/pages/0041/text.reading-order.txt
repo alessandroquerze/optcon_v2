@@ -1,0 +1,27 @@
+Gradient methods: step-size selection rules (II)
+
+    Constant step-size γk = γ > 0 for all t = 0, 1, 2 . . .
+
+
+    Diminishing step-size γk →0
+      It must be avoided that becomes too small to guarantee substantial progress. For this reason we require
+
+                           ∞
+              X γk = ∞.
+
+                                                t=0
+
+
+    Remark The associated convergence rate tends to be slow.
+
+     Typical choice: γk chosen such that
+
+                    ∞          ∞       2
+           X γk = ∞  and X  γk  < ∞,
+
+                                    t=0                 t=0
+
+     e.g., γk = kα1  with 12 < α ≤1.
+
+
+                                                      Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 38 |73

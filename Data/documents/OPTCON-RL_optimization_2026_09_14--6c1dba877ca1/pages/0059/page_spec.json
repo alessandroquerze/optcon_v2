@@ -1,0 +1,136 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0059",
+  "document_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1",
+  "source": {
+    "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+    "page_index": 58,
+    "physical_page_number": 59,
+    "pdf_label_raw": "<FEFF00350035>",
+    "pdf_label": "55",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Karush-Kuhn-Tucker (KKT) necessary conditions",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      297.9358825683594,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 55,
+        "total": 73,
+        "raw": "55 |73",
+        "bbox": [
+          150.6879425048828,
+          247.9286346435547,
+          447.87115478515625,
+          258.2937927246094
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0059/text.txt",
+      "sha256": "c17b0607ffcd4fe528b83cf0e1ff7784c18c2a3a59f4696a8288f99efd7113ca"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0059/text.reading-order.txt",
+      "sha256": "4f661f10f61230aab5ebc5a50b84ceaa0afd6e882e2d26dbfbc695707ce88cc2"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0059/layout.json",
+      "sha256": "ecf0bb19433fdf2e3f9c105b4143505bd449ad709a246239abafe50959901b4d"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0059/render.png",
+      "sha256": "efd3fc683d5769a36167caa1f5d395cb745025321f559bb40a94cc8ee2743308",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "b0a326a1290fde1906c476f80ad5031807340adba0b6672bf119b9dfa5c2284f"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0058",
+    "next_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0060"
+  },
+  "relations": [
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0060",
+      "kind": "progressive_candidate",
+      "confidence": 0.9,
+      "review_status": "candidate",
+      "reason": "Etichetta PDF ripetuta su pagine adiacenti con raster differenti: possibile overlay, da verificare anche a testo identico.",
+      "metrics": {
+        "text_jaccard": 0.516393,
+        "text_containment": 1.0,
+        "left_tokens": 63,
+        "right_tokens": 122,
+        "visual_difference": 0.005695,
+        "ink_overlap": 0.514019,
+        "dhash_distance": 6
+      },
+      "delta_in_physical_order": {
+        "text": {
+          "added_lines": [
+            "Then ∃unique µ⋆",
+            "j and λ⋆",
+            "i , called Lagrange multipliers, s.t.",
+            "∇1L(z⋆, µ⋆, λ⋆) = 0",
+            "µ⋆",
+            "j ≥0",
+            "µ⋆",
+            "j gj(z⋆) = 0",
+            "j ∈{1, . . . , r}"
+          ],
+          "removed_lines": [],
+          "semantic_interpretation": "pending_visual_analysis"
+        },
+        "visual": {
+          "changed_bbox_px": [
+            57,
+            240,
+            604,
+            363
+          ],
+          "pixel_threshold": 16,
+          "changed_pixel_fraction": 0.007222
+        }
+      }
+    }
+  ],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "pending",
+    "result": null
+  }
+}

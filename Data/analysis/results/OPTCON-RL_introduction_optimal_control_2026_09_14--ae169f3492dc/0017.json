@@ -1,0 +1,698 @@
+{
+  "protocol_version": "1.0.0",
+  "request_sha256": "a59e654e34db4c26c8107177aa0e4301f3e4f620f525f52573f95b2868c3b8a1",
+  "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0017",
+  "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+  "artifact_sha256": {
+    "text": "608732b8c422fe1d8984e7d4793d308e59775536c6d4be0f21878207d0adca2d",
+    "layout": "2c4be23048399a4da2165f5bc288110a0174eda98b73502db0316f3e235fee31",
+    "render": "e22f0ac78fc5161e923adf9403f708e02cff2fe9948437444486861d36ab2240"
+  },
+  "agent": {
+    "provider": "OpenAI",
+    "model": "Codex (identificatore esatto del modello non esposto nella sessione)",
+    "run_id": "page-analysis-ce370a19242e4173828aef04d60c36ee"
+  },
+  "inspection": {
+    "text_page_ids": [
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0017",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0016",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0018"
+    ],
+    "layout_page_ids": [
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0017",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0016",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0018"
+    ],
+    "image_page_ids": [
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0017",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0016",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0018"
+    ],
+    "source_content_treated_as_data": true
+  },
+  "title": "Examples of constraint sets",
+  "companionPageCount": 1,
+  "didactic_plan": {
+    "source_scope_limits": [
+      "La fonte non impone a>0,b>0,c>0; non ogni insieme della prima forma è un'ellisse.",
+      "Un'ellisse non degenere della forma az₁²+bz₂²≤c è centrata nell'origine e allineata agli assi: il disegno inclinato e traslato è qualitativo.",
+      "L'uguaglianza quadratica può generare insiemi diversi dalla parabola disegnata.",
+      "Conservare Z nelle formule senza cancellare il riferimento testuale X."
+    ],
+    "prerequisites": [
+      {
+        "concept": "Vincoli scalari e insieme Z",
+        "why": "Definiti nella pagina 14.",
+        "origin": "source_context",
+        "page_numbers": [
+          14
+        ]
+      },
+      {
+        "concept": "Grafico di una disequazione in due variabili",
+        "why": "Per distinguere regione piena e curva.",
+        "origin": "enrichment",
+        "page_numbers": []
+      }
+    ],
+    "source_math": [
+      {
+        "latex": "Z=\\{z\\in\\mathbb{R}^2\\mid a z_1^2+b z_2^2-c\\leq0\\},\\quad a,b,c\\in\\mathbb{R}",
+        "anchor": "Then, the constraint set Z is",
+        "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+      },
+      {
+        "latex": "z^\\top Qz+q^\\top z-c=0,\\quad Q\\in\\mathbb{R}^{d\\times d},\\ q\\in\\mathbb{R}^d,\\ c\\in\\mathbb{R}",
+        "anchor": "z⊤Qz",
+        "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+      },
+      {
+        "latex": "Z=\\{z\\in\\mathbb{R}^d\\mid z^\\top Qz+q^\\top z-c=0\\}",
+        "anchor": "Z = {z ∈Rd",
+        "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+      }
+    ],
+    "enrichments": [
+      {
+        "id": "example-1",
+        "label": "enrichment",
+        "type": "worked_example",
+        "proposal": "Enrichment: a=b=c=1, quindi z₁²+z₂²≤1; confrontare con z₁²+z₂²=1 ottenuto scegliendo Q=I₂,q=0,c=1.",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ]
+      },
+      {
+        "id": "interaction",
+        "label": "enrichment",
+        "type": "interaction_design",
+        "proposal": "Variare i coefficienti mostra perché una disequazione non corrisponde sempre a un'ellisse e distingue l'insieme dal suo bordo.",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ]
+      },
+      {
+        "id": "visualization",
+        "label": "enrichment",
+        "type": "visualization_design",
+        "proposal": "Due grafici calcolati dalle equazioni, con campitura per la disequazione e sola curva per l'uguaglianza; segnalare che sostituiscono un disegno qualitativo, non dati originali.",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "id": "example-1",
+        "origin": "enrichment",
+        "purpose": "Confrontare disuguaglianza e uguaglianza su un caso verificabile.",
+        "setup": "Enrichment: a=b=c=1, quindi z₁²+z₂²≤1; confrontare con z₁²+z₂²=1 ottenuto scegliendo Q=I₂,q=0,c=1.",
+        "parameters": [
+          {
+            "symbol": "a,b,c",
+            "value": "1,1,1"
+          },
+          {
+            "symbol": "Q,q",
+            "value": "I₂,0"
+          }
+        ],
+        "derivation": [
+          "(0,0) soddisfa ≤1 ma non =1.",
+          "(1,0) soddisfa entrambe.",
+          "(2,0) non soddisfa nessuna delle due."
+        ],
+        "expected_outcome": "La disuguaglianza include l'interno e il bordo, l'uguaglianza seleziona solo il bordo in questo esempio.",
+        "limitations": [
+          "Parametri e disco unitario sono enrichment, non il disegno letterale della fonte."
+        ],
+        "enrichment_id": "example-1",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ]
+      }
+    ],
+    "example_omission_reason": null,
+    "visualization": {
+      "component": "ConstraintRegionAndLevelSetPlot",
+      "description": "Due grafici calcolati dalle equazioni, con campitura per la disequazione e sola curva per l'uguaglianza; segnalare che sostituiscono un disegno qualitativo, non dati originali.",
+      "origin": "enrichment",
+      "source_observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04",
+        "s05"
+      ]
+    },
+    "interactivity": {
+      "recommended": true,
+      "rationale": "Variare i coefficienti mostra perché una disequazione non corrisponde sempre a un'ellisse e distingue l'insieme dal suo bordo.",
+      "component": "QuadraticInequalityRegionExplorer",
+      "parameters": [
+        {
+          "name": "Coefficiente prima coordinata",
+          "symbol": "a",
+          "origin": "source",
+          "range": "[−2,2]",
+          "default": "1",
+          "effect_on_change": "Ricalcolare il segno di az₁²+bz₂²−c sulla griglia e la curva zero; con cambio di segno può cambiare la classe geometrica.",
+          "edge_cases": [
+            "a=0: dipendenza da una sola coordinata"
+          ]
+        },
+        {
+          "name": "Coefficiente seconda coordinata",
+          "symbol": "b",
+          "origin": "source",
+          "range": "[−2,2]",
+          "default": "1",
+          "effect_on_change": "Aggiornare campitura e bordo lungo la seconda coordinata senza spostare arbitrariamente il centro.",
+          "edge_cases": [
+            "a e b di segno opposto: insieme non ellittico"
+          ]
+        },
+        {
+          "name": "Livello",
+          "symbol": "c",
+          "origin": "source",
+          "range": "[−2,2]",
+          "default": "1",
+          "effect_on_change": "Ricalcolare l'insieme ammissibile e indicare quando è vuoto, degenere o non limitato.",
+          "edge_cases": [
+            "a,b>0 e c=0: solo origine",
+            "a,b>0 e c<0: vuoto"
+          ]
+        }
+      ],
+      "outputs": [
+        "Regione g≤0",
+        "Bordo g=0",
+        "Indicazione di porzione tagliata dal viewport"
+      ],
+      "invariants": [
+        "Assi z₁,z₂",
+        "Forma senza termine incrociato o lineare",
+        "Il grafico di uguaglianza nell'esempio statico usa parametri dichiarati",
+        "Range/default sono enrichment"
+      ],
+      "enrichment_id": "interaction"
+    },
+    "edge_cases": [
+      {
+        "case": "a,b>0,c=0",
+        "expected_behavior": "L'insieme si riduce all'origine.",
+        "origin": "enrichment",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ]
+      },
+      {
+        "case": "a,b>0,c<0",
+        "expected_behavior": "Insieme vuoto.",
+        "origin": "enrichment",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ]
+      },
+      {
+        "case": "a=b=0",
+        "expected_behavior": "Tutto il piano se c≥0, vuoto se c<0.",
+        "origin": "enrichment",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ]
+      },
+      {
+        "case": "a o b non positivo",
+        "expected_behavior": "Non etichettare automaticamente il risultato come ellisse; il ritaglio grafico non ne prova la limitatezza.",
+        "origin": "enrichment",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ]
+      }
+    ],
+    "expansion_rationale": "Le due famiglie di vincoli sono un confronto unitario; le note di fedeltà possono essere richiami senza espandere artificialmente.",
+    "blueprint": [
+      {
+        "companion_suffix": null,
+        "focus": "Regione di disuguaglianza e insieme di uguaglianza, evitando di generalizzare le figure qualitative.",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ],
+        "enrichment_ids": [
+          "example-1",
+          "interaction",
+          "visualization"
+        ]
+      }
+    ]
+  },
+  "observations": [
+    {
+      "id": "s01",
+      "category": "equation",
+      "description": "Il vincolo di disuguaglianza è az₁²+bz₂²−c≤0 per z∈R², con a,b,c reali assegnati; Z è l'insieme dei punti che lo soddisfano.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0017",
+        "modality": "both",
+        "text_quote": "parameters a ∈R, b ∈R, c ∈R.",
+        "bbox": [
+          17,
+          45,
+          284,
+          111
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "s02",
+      "category": "equation",
+      "description": "Il vincolo di uguaglianza è zᵀQz+qᵀz−c=0, con Q∈Rᵈˣᵈ, q∈Rᵈ, c∈R, e l'insieme è scritto Z={z∈Rᵈ | zᵀQz+qᵀz−c=0}.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0017",
+        "modality": "both",
+        "text_quote": "z⊤Qz + q⊤z −c = 0",
+        "bbox": [
+          17,
+          150,
+          320,
+          203
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "s03",
+      "category": "diagram",
+      "description": "La disuguaglianza è illustrata con una regione ellittica riempita, inclinata e spostata nel quadrante positivo; non è il grafico esatto generale della forma diagonale omogenea stampata.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0017",
+        "modality": "visual",
+        "text_quote": null,
+        "bbox": [
+          337,
+          39,
+          440,
+          124
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "s04",
+      "category": "diagram",
+      "description": "L'uguaglianza è illustrata con una curva simile a una parabola, senza area riempita.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0017",
+        "modality": "visual",
+        "text_quote": null,
+        "bbox": [
+          337,
+          133,
+          442,
+          229
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "s05",
+      "category": "structure",
+      "description": "Nel testo della seconda parte si legge 'constraints set X', mentre la formula usa Z.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0017",
+        "modality": "both",
+        "text_quote": "Then, the constraints set X is",
+        "bbox": [
+          17,
+          171,
+          254,
+          184
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "transcription-06",
+      "category": "structure",
+      "description": "Trascrizione di una regione visibile della fonte: Examples of constraint sets",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0017",
+        "modality": "visual",
+        "text_quote": null,
+        "bbox": [
+          10.35200023651123,
+          6.720991134643555,
+          170.55601501464844,
+          21.06719207763672
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "transcription-07",
+      "category": "structure",
+      "description": "Trascrizione di una regione visibile della fonte: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 16 |35",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0017",
+        "modality": "visual",
+        "text_quote": null,
+        "bbox": [
+          126.95381927490234,
+          247.92864990234375,
+          447.87103271484375,
+          255.1179962158203
+        ]
+      },
+      "confidence": 0.98
+    }
+  ],
+  "contextual_role": "Rende geometrica la differenza fra ≤0 e =0; le figure sono illustrative e contengono una discrepanza rispetto alla forma della prima equazione.",
+  "context_notes": [
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0016",
+      "role": "previous",
+      "note": "La pagina 16 definiva costi: le curve di livello di un costo non sono automaticamente vincoli."
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0018",
+      "role": "next",
+      "note": "La pagina 18 combina costo e famiglie di vincoli in una minimizzazione."
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "a,b,c",
+      "meaning": "Parametri reali della disequazione",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04",
+        "s05"
+      ]
+    },
+    {
+      "symbol": "Q,q,c",
+      "meaning": "Parametri dell'uguaglianza quadratica",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04",
+        "s05"
+      ]
+    },
+    {
+      "symbol": "Z",
+      "meaning": "Insieme ammissibile nelle formule",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04",
+        "s05"
+      ]
+    },
+    {
+      "symbol": "X",
+      "meaning": "Simbolo usato solo nel testo della seconda parte, in contrasto con Z",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04",
+        "s05"
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "description": "Il disegno della prima regione è inclinato/traslato, mentre la forma az₁²+bz₂²−c non contiene termini per rotazione o traslazione; trattarlo come schema qualitativo.",
+      "blocking": false,
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04",
+        "s05"
+      ]
+    },
+    {
+      "description": "La prosa usa X e la formula Z per il secondo insieme; preservare la discrepanza nella nota editoriale.",
+      "blocking": false,
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04",
+        "s05"
+      ]
+    }
+  ],
+  "progression": {
+    "assessment": "unique",
+    "related_page_ids": [],
+    "added": [],
+    "removed": [],
+    "changed": [],
+    "observation_ids": [
+      "s01",
+      "s02",
+      "s03",
+      "s04",
+      "s05"
+    ],
+    "rationale": "Pagina con contenuto autonomo nella sequenza; nessun candidato automatico da confermare."
+  },
+  "coverage": {
+    "all_visible_regions_accounted_for": true,
+    "regions": [
+      {
+        "bbox": [
+          10.35200023651123,
+          6.720991134643555,
+          170.55601501464844,
+          21.06719207763672
+        ],
+        "description": "Regione testuale sorgente: Examples of constraint sets",
+        "observation_ids": [
+          "transcription-06"
+        ]
+      },
+      {
+        "bbox": [
+          18.898000717163086,
+          46.446502685546875,
+          103.43531036376953,
+          66.37190246582031
+        ],
+        "description": "Regione testuale sorgente: Inequality constraint\nz ∈R2, such that az2",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          18.897979736328125,
+          56.120819091796875,
+          221.6812744140625,
+          88.28990173339844
+        ],
+        "description": "Regione testuale sorgente: 1 + bz2\n2 −c ≤0, for some given\nparameters a ∈R, b ∈R, c ∈R.\nThen, the constraint set Z is",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          70.40199279785156,
+          93.82830047607422,
+          141.65530395507812,
+          107.21890258789062
+        ],
+        "description": "Regione testuale sorgente: Z = {z ∈R2 | az2",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          137.614990234375,
+          96.46882629394531,
+          205.5103759765625,
+          108.7958984375
+        ],
+        "description": "Regione testuale sorgente: 1 + bz2\n2 −c ≤0}.",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          422.8369140625,
+          113.6854476928711,
+          430.4282531738281,
+          122.263427734375
+        ],
+        "description": "Regione testuale sorgente: z1",
+        "observation_ids": [
+          "s03"
+        ]
+      },
+      {
+        "bbox": [
+          337.79791259765625,
+          42.81845474243164,
+          345.3882141113281,
+          51.397430419921875
+        ],
+        "description": "Regione testuale sorgente: z2",
+        "observation_ids": [
+          "s03"
+        ]
+      },
+      {
+        "bbox": [
+          359.492919921875,
+          54.281829833984375,
+          371.91925048828125,
+          63.569549560546875
+        ],
+        "description": "Regione testuale sorgente: az2",
+        "observation_ids": [
+          "s03"
+        ]
+      },
+      {
+        "bbox": [
+          367.929931640625,
+          54.281829833984375,
+          424.3590393066406,
+          71.82247161865234
+        ],
+        "description": "Regione testuale sorgente: 1 + bz2\n2 −c ≤0",
+        "observation_ids": [
+          "s03"
+        ]
+      },
+      {
+        "bbox": [
+          18.897857666015625,
+          139.37545776367188,
+          233.62515258789062,
+          181.2178497314453
+        ],
+        "description": "Regione testuale sorgente: Equality constraint\nz ∈Rd, such that z⊤Qz + q⊤z −c = 0, for some given\nparameters Q ∈Rd×d, q ∈Rd, c ∈R.\nThen, the constraints set X is",
+        "observation_ids": [
+          "s02",
+          "s05"
+        ]
+      },
+      {
+        "bbox": [
+          64.42984771728516,
+          186.7572479248047,
+          211.48223876953125,
+          200.14686584472656
+        ],
+        "description": "Regione testuale sorgente: Z = {z ∈Rd | z⊤Qz + q⊤z −c = 0}.",
+        "observation_ids": [
+          "s02"
+        ]
+      },
+      {
+        "bbox": [
+          354.1478576660156,
+          163.46958923339844,
+          430.09747314453125,
+          178.59243774414062
+        ],
+        "description": "Regione testuale sorgente: z⊤Qz + q⊤z −c = 0",
+        "observation_ids": [
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          423.035888671875,
+          206.88841247558594,
+          430.627197265625,
+          215.46737670898438
+        ],
+        "description": "Regione testuale sorgente: z1",
+        "observation_ids": [
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          340.26385498046875,
+          136.02239990234375,
+          347.85516357421875,
+          144.6013641357422
+        ],
+        "description": "Regione testuale sorgente: z2",
+        "observation_ids": [
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          126.95381927490234,
+          247.92864990234375,
+          447.87103271484375,
+          255.1179962158203
+        ],
+        "description": "Regione testuale sorgente: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 16 |35",
+        "observation_ids": [
+          "transcription-07"
+        ]
+      }
+    ]
+  },
+  "mapping_recommendation": {
+    "mode": "one_to_one",
+    "rationale": "Le due famiglie di vincoli sono un confronto unitario; le note di fedeltà possono essere richiami senza espandere artificialmente.",
+    "subpages": []
+  }
+}

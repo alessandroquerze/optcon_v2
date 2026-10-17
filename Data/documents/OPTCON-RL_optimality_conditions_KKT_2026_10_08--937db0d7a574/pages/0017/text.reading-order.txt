@@ -1,0 +1,19 @@
+Recall KKT conditions for unconstrained optimal control
+
+    Let (x∗, u∗) be a regular point for the dynamics constraints and an optimal (state-input) trajectory.
+    Then there exists λ∗such that ∇L(x∗, u∗, λ∗) = 0, i.e.,
+
+
+                                             ∇1L(x∗, u∗, λ∗)                              ∇(1,2)L(x∗, u∗, λ∗) =           = 0                                             ∇2L(x∗, u∗, λ∗)
+
+    and
+
+                                            h(x∗, u∗) = 0
+
+    namely, x∗, u∗is a trajectory of the system, i.e., it satisfies the dynamics.
+
+
+
+
+
+                                  Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Optimality Conditions for Optimal Control 15 |18

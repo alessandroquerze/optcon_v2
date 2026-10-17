@@ -1,0 +1,33 @@
+Optimal control for trajectory generation
+We can pose a trajectory generation problem as
+min
+x∈RnT ,u∈RmT
+T −1
+X
+t=0
+1
+2||xt −xdes
+t ||2
+Q + 1
+2||ut −udes
+t ||2
+R + 1
+2||xT −xdes
+T ||2
+QT
+subj.to xt+1 = ft(xt, ut),
+t = 0, . . . , T −1
+x0 = x0,
+with x0 a given initial condition.
+The state-input curve (function of time) (xdes
+t , udes
+t ), t ∈N0, represents a desired behavior of the system
+and (in general) does NOT satisfy the dynamics.
+The curve (xdes
+t , udes
+t ), t ∈N0 is related to the performance output, i.e., ydes
+t
+= ht(xdes
+t , udes
+t ).
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 24 |35

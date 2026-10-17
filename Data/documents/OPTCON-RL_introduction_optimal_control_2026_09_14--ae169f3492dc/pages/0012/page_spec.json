@@ -1,0 +1,648 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0012",
+  "document_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc",
+  "source": {
+    "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+    "page_index": 11,
+    "physical_page_number": 12,
+    "pdf_label_raw": "<FEFF00310031>",
+    "pdf_label": "11",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Linearization of a system about a trajectory",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      266.33123779296875,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 11,
+        "total": 35,
+        "raw": "11 |35",
+        "bbox": [
+          126.9540023803711,
+          247.92860412597656,
+          447.8712158203125,
+          258.29376220703125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0012/text.txt",
+      "sha256": "3562d6c6761fe4bc4f17323ace5e85825a0556db0d521122394d99847d9d09ba"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0012/text.reading-order.txt",
+      "sha256": "ab0e550c8bf9fdae299ff98471b308ca022282bf00bc65fadfcd571c2954c4b8"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0012/layout.json",
+      "sha256": "118f7585ae97e38a2131a22524a434bbdb5b009bbeb74d75412a41639e1fe8ed"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0012/render.png",
+      "sha256": "c0003ac216caef3add48704fc3070f5793e1a22793a098be26b90110da975199",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "e15ac082e296f68249e85045621d66406ed6ae62c185b4ebb565af3402c79083"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0011",
+    "next_page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0013"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "proposed_after_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "fbc8e46049e8308fe213629848bc8e69336c504f971021debc5c85e6e13e0d8a",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0012",
+      "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+      "artifact_sha256": {
+        "text": "3562d6c6761fe4bc4f17323ace5e85825a0556db0d521122394d99847d9d09ba",
+        "layout": "118f7585ae97e38a2131a22524a434bbdb5b009bbeb74d75412a41639e1fe8ed",
+        "render": "c0003ac216caef3add48704fc3070f5793e1a22793a098be26b90110da975199"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "Codex (identificatore esatto del modello non esposto nella sessione)",
+        "run_id": "page-analysis-ce370a19242e4173828aef04d60c36ee"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0012",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0011",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0013"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0012",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0011",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0013"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0012",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0011",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0013"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Linearization of a system about a trajectory",
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "La fonte non fornisce una stima dell'errore, un raggio di validità o un teorema di stabilità.",
+          "Le formule esplicite delle derivate parziali e Δx=x−x̄ sono chiarimenti derivati, non equazioni scritte nella slide.",
+          "Anche una dinamica time-invariant può dare Aₜ,Bₜ variabili lungo una traiettoria non costante."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Traiettoria nominale",
+            "why": "La cancellazione del termine nominale richiede coerenza con la dinamica.",
+            "origin": "source_context",
+            "page_numbers": [
+              11
+            ]
+          },
+          {
+            "concept": "Jacobiano e approssimazione al primo ordine",
+            "why": "Prerequisito matematico necessario che la pagina richiama senza svilupparlo.",
+            "origin": "enrichment",
+            "page_numbers": []
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "x_{t+1}=f_t(x_t,u_t),\\quad t\\in\\mathbb{N}_0",
+            "anchor": "xt+1 = ft(xt, ut)",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          },
+          {
+            "latex": "\\bar{x}_{t+1}=f_t(\\bar{x}_t,\\bar{u}_t)",
+            "anchor": "¯xt+1 = ft(¯xt, ¯ut)",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          },
+          {
+            "latex": "\\Delta x_{t+1}=A_t\\Delta x_t+B_t\\Delta u_t,\\quad t\\in\\mathbb{N}_0",
+            "anchor": "∆xt+1 = At∆xt + Bt∆ut",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explain-1",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Enrichment esplicativo: Δxₜ=xₜ−x̄ₜ e Δuₜ=uₜ−ūₜ; Aₜ=∂fₜ/∂x|_(x̄ₜ,ūₜ), Bₜ=∂fₜ/∂u|_(x̄ₜ,ūₜ). Il testo identifica i Jacobiani ma non stampa queste formule.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "id": "example-1",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "Enrichment: f(x,u)=x²+u, nominale di equilibrio x̄=1, ū=0; Δx=0.1, Δu=0.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Variare piccole perturbazioni mostra quando il modello delle variazioni approssima bene la dinamica.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "id": "visualization",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Curva f(1+Δx,Δu)−f(1,0) e sua approssimazione 2Δx+Δu, con residuo evidenziato.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Quantificare l'errore della linearizzazione in un caso semplice.",
+            "setup": "Enrichment: f(x,u)=x²+u, nominale di equilibrio x̄=1, ū=0; Δx=0.1, Δu=0.",
+            "parameters": [
+              {
+                "symbol": "\\bar{x},\\bar{u}",
+                "value": "1,0"
+              },
+              {
+                "symbol": "\\Delta x",
+                "value": "0.1"
+              },
+              {
+                "symbol": "\\Delta u",
+                "value": "0"
+              }
+            ],
+            "derivation": [
+              "f(1,0)=1: la nominale è coerente.",
+              "A=2x̄=2, B=1.",
+              "Variazione prevista: 2·0.1=0.2.",
+              "Variazione esatta: f(1.1,0)−f(1,0)=0.21; errore=0.01=(Δx)²."
+            ],
+            "expected_outcome": "L'approssimazione coincide al primo ordine e l'errore cresce con la perturbazione.",
+            "limitations": [
+              "Modello, perturbazioni e calcolo dell'errore sono enrichment; il risultato è di un singolo passo."
+            ],
+            "enrichment_id": "example-1",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "NonlinearVersusLinearizedOneStepPlot",
+          "description": "Curva f(1+Δx,Δu)−f(1,0) e sua approssimazione 2Δx+Δu, con residuo evidenziato.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Variare piccole perturbazioni mostra quando il modello delle variazioni approssima bene la dinamica.",
+          "component": "LinearizationPerturbationExplorer",
+          "parameters": [
+            {
+              "name": "Perturbazione di stato",
+              "symbol": "\\Delta x",
+              "origin": "source",
+              "range": "[−0.25,0.25]",
+              "default": "0.1",
+              "effect_on_change": "Aggiornare variazione esatta, lineare e residuo (Δx)²; mantenere fisso A=2.",
+              "edge_cases": [
+                "Δx=0: nessun errore di stato"
+              ]
+            },
+            {
+              "name": "Perturbazione d'ingresso",
+              "symbol": "\\Delta u",
+              "origin": "source",
+              "range": "[−0.1,0.1]",
+              "default": "0",
+              "effect_on_change": "Traslare entrambe le predizioni di Δu; il residuo resta (Δx)² per questo esempio.",
+              "edge_cases": [
+                "L'ingresso è già affine nell'esempio"
+              ]
+            }
+          ],
+          "outputs": [
+            "Predizione esatta e lineare",
+            "Residuo assoluto",
+            "Punto nominale"
+          ],
+          "invariants": [
+            "Nominale (1,0) e Jacobiani fissati",
+            "Modello x²+u esplicitamente enrichment",
+            "Nessuna simulazione di stabilità o ottimalità"
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "Perturbazione nulla",
+            "expected_behavior": "La variazione è nulla e il modello lineare coincide con la nominale.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "case": "Perturbazioni grandi",
+            "expected_behavior": "Segnalare la perdita possibile di accuratezza; non estrapolare garanzie globali.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "case": "fₜ non differenziabile",
+            "expected_behavior": "Il Jacobiano richiesto può non esistere; prerequisito matematico da dichiarare come enrichment.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          }
+        ],
+        "expansion_rationale": "Una formula centrale e un esempio di un solo passo permettono una trattazione completa senza espansione.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Linearizzare attorno a una traiettoria coerente: variazioni, Jacobiani e limiti dell'approssimazione.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ],
+            "enrichment_ids": [
+              "explain-1",
+              "example-1",
+              "interaction",
+              "visualization"
+            ]
+          }
+        ]
+      },
+      "observations": [
+        {
+          "id": "s01",
+          "category": "equation",
+          "description": "La dinamica di partenza è xₜ₊₁=fₜ(xₜ,uₜ), t∈N₀.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0012",
+            "modality": "both",
+            "text_quote": "xt+1 = ft(xt, ut)",
+            "bbox": [
+              165,
+              51,
+              289,
+              65
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s02",
+          "category": "assumption",
+          "description": "La coppia nominale (x̄ in grassetto, ū in grassetto) è una traiettoria: soddisfa x̄ₜ₊₁=fₜ(x̄ₜ,ūₜ).",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0012",
+            "modality": "both",
+            "text_quote": "and a trajectory (¯x, ¯u)",
+            "bbox": [
+              27,
+              71,
+              442,
+              92
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s03",
+          "category": "equation",
+          "description": "La linearizzazione è il sistema lineare, possibilmente time-varying, Δxₜ₊₁=AₜΔxₜ+BₜΔuₜ, t∈N₀.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0012",
+            "modality": "both",
+            "text_quote": "∆xt+1 = At∆xt + Bt∆ut",
+            "bbox": [
+              148,
+              98,
+              304,
+              113
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s04",
+          "category": "definition",
+          "description": "Aₜ e Bₜ sono i Jacobiani di fₜ rispetto rispettivamente a stato e ingresso, valutati lungo la traiettoria nominale.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0012",
+            "modality": "both",
+            "text_quote": "with At and Bt the Jacobians of ft",
+            "bbox": [
+              27,
+              119,
+              442,
+              132
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-05",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Linearization of a system about a trajectory",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0012",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              10.35200023651123,
+              6.720991134643555,
+              266.33123779296875,
+              21.06719207763672
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-06",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Given the dynamics",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0012",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              28.34600067138672,
+              34.63948059082031,
+              103.46650695800781,
+              43.60588073730469
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-07",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 11 |35",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0012",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              126.9540023803711,
+              247.92860412597656,
+              447.8712158203125,
+              255.1179962158203
+            ]
+          },
+          "confidence": 0.98
+        }
+      ],
+      "contextual_role": "Collega il modello non lineare e una traiettoria nominale al sistema delle variazioni.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0011",
+          "role": "previous",
+          "note": "La pagina 11 spiega che la nominale deve soddisfare la dinamica e che un equilibrio è soltanto un caso particolare."
+        },
+        {
+          "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0013",
+          "role": "next",
+          "note": "La pagina 13 riepiloga gli strumenti di analisi/controllo e ne distingue gli obiettivi dall'ottimizzazione vincolata."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "A_t",
+          "meaning": "Jacobiano della dinamica rispetto allo stato lungo la nominale",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        {
+          "symbol": "B_t",
+          "meaning": "Jacobiano rispetto all'ingresso lungo la nominale",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        {
+          "symbol": "\\Delta x_t,\\Delta u_t",
+          "meaning": "Variazioni di stato e ingresso nella linearizzazione",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        {
+          "symbol": "(\\bar{\\mathbf{x}},\\bar{\\mathbf{u}})",
+          "meaning": "Traiettoria nominale; non necessariamente equilibrio",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ],
+        "rationale": "Pagina con contenuto autonomo nella sequenza; nessun candidato automatico da confermare."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              10.35200023651123,
+              6.720991134643555,
+              266.33123779296875,
+              21.06719207763672
+            ],
+            "description": "Regione testuale sorgente: Linearization of a system about a trajectory",
+            "observation_ids": [
+              "transcription-05"
+            ]
+          },
+          {
+            "bbox": [
+              28.34600067138672,
+              34.63948059082031,
+              103.46650695800781,
+              43.60588073730469
+            ],
+            "description": "Regione testuale sorgente: Given the dynamics",
+            "observation_ids": [
+              "transcription-06"
+            ]
+          },
+          {
+            "bbox": [
+              170.46200561523438,
+              51.60960388183594,
+              283.0854187011719,
+              63.5308837890625
+            ],
+            "description": "Regione testuale sorgente: xt+1 = ft(xt, ut)\nt ∈N0,",
+            "observation_ids": [
+              "s01"
+            ]
+          },
+          {
+            "bbox": [
+              28.346023559570312,
+              70.53860473632812,
+              425.193603515625,
+              92.42288208007812
+            ],
+            "description": "Regione testuale sorgente: and a trajectory (¯x, ¯u) (i.e., ¯xt+1 = ft(¯xt, ¯ut) for all t ∈N0), the linearization of (1) about (¯x, ¯u) is\ngiven by the linear (possibly) time-varying system",
+            "observation_ids": [
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              152.56304931640625,
+              100.42660522460938,
+              300.98443603515625,
+              112.34788513183594
+            ],
+            "description": "Regione testuale sorgente: ∆xt+1 = At∆xt + Bt∆ut\nt ∈N0,",
+            "observation_ids": [
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              28.346038818359375,
+              121.18948364257812,
+              418.6484680175781,
+              131.27688598632812
+            ],
+            "description": "Regione testuale sorgente: with At and Bt the Jacobians of ft, with respect to state and input respectively, evaluated at (¯x, ¯u).",
+            "observation_ids": [
+              "s04"
+            ]
+          },
+          {
+            "bbox": [
+              126.9540023803711,
+              247.92860412597656,
+              447.8712158203125,
+              255.1179962158203
+            ],
+            "description": "Regione testuale sorgente: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 11 |35",
+            "observation_ids": [
+              "transcription-07"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Una formula centrale e un esempio di un solo passo permettono una trattazione completa senza espansione.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
+}

@@ -1,0 +1,16 @@
+Gradient methods: selecting the descent direction
+
+   Some choices of Dk
+      • Steepest descent Dk = Id
+                                      −1      • Newton’s method Dk =  ∇2ℓ(zk)
+             It can be used when ∇2ℓ(zk) > 0. It typically converges very fast asymptotically. For γk = 1
+         pure Newton’s method.
+                                              −1      • Discretized Newton’s method Dk =  H(zk)      ,
+         where H(zk) is a positive definite symmetric approximation of ∇2ℓ(zk) obtained by using finite
+           difference approximations of the second derivatives.
+
+
+
+
+
+                                                      Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 31 |73

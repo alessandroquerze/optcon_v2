@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:optconv:source-warning:1.0.0",
+  "title": "Policy additiva, esclusivamente per la futura companion",
+  "type": "object", "additionalProperties": false,
+  "required": ["policy_version", "scope", "type", "review_status", "original_analysis_sha256", "issues", "companion_overrides", "technical_only_legacy_paths"],
+  "properties": {
+    "policy_version": {"const": "1.0.0"},
+    "scope": {"const": "companion_only"},
+    "type": {"enum": ["NO_WARNING", "INFO_WARNING", "CORRECTION_WARNING"]},
+    "review_status": {"const": "resolved"},
+    "original_analysis_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "issues": {"type": "array", "minItems": 1, "items": {
+      "type": "object", "additionalProperties": false,
+      "required": ["issue_id", "source_issue_index", "issue", "type", "source_expression", "corrected_expression", "companion_uses", "short_warning", "correction_reason", "use_corrected_value_for_examples", "use_corrected_value_for_simulation", "resolved", "source_references", "context_pages_consulted", "calculation_policy", "ui"],
+      "properties": {
+        "issue_id": {"type": "string", "minLength": 1},
+        "source_issue_index": {"type": "integer", "minimum": 0},
+        "issue": {"type": "string", "minLength": 1},
+        "type": {"enum": ["NO_WARNING", "INFO_WARNING", "CORRECTION_WARNING"]},
+        "source_expression": {"type": "string", "minLength": 1},
+        "corrected_expression": {"type": ["string", "null"]},
+        "companion_uses": {"type": "string", "minLength": 1},
+        "short_warning": {"type": ["string", "null"]},
+        "correction_reason": {"type": "string", "minLength": 1},
+        "use_corrected_value_for_examples": {"type": "boolean"},
+        "use_corrected_value_for_simulation": {"type": "boolean"},
+        "resolved": {"const": true},
+        "source_references": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "context_pages_consulted": {"type": "array", "uniqueItems": true, "items": {"type": "integer", "minimum": 1}},
+        "calculation_policy": {"type": "string", "minLength": 1},
+        "ui": {"type": "object", "additionalProperties": false,
+          "required": ["show", "color", "placement", "when", "student_text_field"],
+          "properties": {"show": {"type": "boolean"}, "color": {"enum": ["red", null]},
+            "placement": {"type": ["string", "null"]}, "when": {"type": ["string", "null"]},
+            "student_text_field": {"const": "short_warning"}}}
+      },
+      "allOf": [
+        {"if": {"properties": {"type": {"const": "CORRECTION_WARNING"}}},
+         "then": {"properties": {"corrected_expression": {"type": "string", "minLength": 1},
+           "short_warning": {"type": "string", "minLength": 1},
+           "use_corrected_value_for_examples": {"const": true}, "use_corrected_value_for_simulation": {"const": true}}}},
+        {"if": {"properties": {"type": {"const": "NO_WARNING"}}},
+         "then": {"properties": {"short_warning": {"type": "null"}, "corrected_expression": {"type": "null"}}}}
+      ]
+    }},
+    "companion_overrides": {"type": "array", "items": {
+      "type": "object", "additionalProperties": false, "required": ["path", "value"],
+      "properties": {"path": {"type": "string", "pattern": "^/(examples|interactivity|visualization|enrichments|blueprint|source_scope_limits)(/.*)?$"}, "value": {}}
+    }},
+    "technical_only_legacy_paths": {"type": "array", "items": {"type": "string"}}
+  }
+}

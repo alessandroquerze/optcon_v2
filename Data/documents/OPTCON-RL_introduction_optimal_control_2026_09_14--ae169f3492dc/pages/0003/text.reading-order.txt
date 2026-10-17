@@ -1,0 +1,29 @@
+Optimal Control: motivating domains
+
+
+     Aircraft systems
+
+     Performance index
+
+       • distance from desired “behavior”
+            (position path, velocities, ...)
+
+       • minimum time
+
+       • fuel/battery consumption
+
+       • passenger confort
+
+      Constraints
+
+       • geometric (obstacles, attitude, stall limits,...)
+
+       • inputs (thrust, flaps)
+
+       •  internal systems (angular and linear velocities,
+          aerodynamic limits,...)
+
+
+
+
+                                              Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 2 |35

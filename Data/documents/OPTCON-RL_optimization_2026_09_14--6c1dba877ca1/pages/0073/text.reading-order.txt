@@ -1,0 +1,23 @@
+Newton’s method via Quadratic Programming
+
+    The linear system of equations can be rewritten as
+                      Bk∆zk + ∇h(zk)∆λk = −∇ℓ(zk) −∇h(zk)λk
+                              ∇h(zk)⊤∆zk = −h(zk).
+
+    and equivalently as
+                               ∇ℓ(zk) + Bk∆zk + ∇h(zk)λk+1 = 0
+                                           h(zk) + ∇h(zk)⊤∆zk = 0.
+
+
+   We can observe that
+                                 ∇ℓ(zk) + Bk∆z + ∇h(zk)λ = 0
+                                          h(zk) + ∇h(zk)⊤∆z = 0
+
+     are the necessary and sufficient optimality conditions for the Quadratic Program (QP)
+
+                               min                                   ∇ℓ(zk)⊤∆z + 12∆z⊤Bk∆z                                  ∆z
+                                        subj.to h(zk) + ∇h(zk)⊤∆z = 0.
+
+     Therefore, in the Newton’s update, we can obtain (∆zk, λk+1) by solving this QP.
+
+                                                      Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 65 |73

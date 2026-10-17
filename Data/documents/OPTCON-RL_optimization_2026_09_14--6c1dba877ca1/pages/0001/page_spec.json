@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0001",
+  "document_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1",
+  "source": {
+    "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+    "page_index": 0,
+    "physical_page_number": 1,
+    "pdf_label_raw": "<FEFF0030>",
+    "pdf_label": "0",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Optimal Control and Reinforcement Learning",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      103.2760009765625,
+      67.85562133789062,
+      350.2704772949219,
+      79.81082153320312
+    ],
+    "printed_number_candidates": [],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0001/text.txt",
+      "sha256": "010b3b3fd6ffa080c546068e50a4beaa2a9c2136b04a7ce2df1c56ed6c4ae802"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0001/text.reading-order.txt",
+      "sha256": "abfd781722fa9ec73688a4199d57b441abf10154d0b3b85ae0fb12b7d48f89b9"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0001/layout.json",
+      "sha256": "b8372eaa995d227bfb1d1735ca0ec9675c6a556f701eba1a1ca861b49d843e22"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0001/render.png",
+      "sha256": "4b4adccc5eab87cbfe13a481f44b26df6e5f25ceebec82b6ca84a7cf25526f2c",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "91e191363c47ad59f87dc902dda065347e76c2971826cbf867de1d62f4e2ec6c"
+    }
+  },
+  "context": {
+    "previous_page_id": null,
+    "next_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0002"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "pending",
+    "result": null
+  }
+}

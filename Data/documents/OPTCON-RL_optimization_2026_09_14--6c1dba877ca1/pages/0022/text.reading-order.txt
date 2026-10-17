@@ -1,0 +1,22 @@
+Minimization of convex functions
+
+    Necessary and sufficient condition of optimality (unconstrained)
+    For the unconstrained minimization of a convex function it can be shown that the first order necessary
+     condition of optimality is also sufficient (for a global minimum).
+
+     Proposition (Prop. 1.1.2 Nonlin. Progr.)
+    Let ℓ: Rd →R be a convex function. Then z⋆is a global minimum if and only if ∇ℓ(z⋆) = 0.
+
+    Proof (sketch)
+    Use the fact (Proposition B3 in Nonlinear Programming) that ℓconvex if and only if
+
+                                       ℓ(z) ≥ℓ(z⋆) + ∇ℓ(z⋆)T (z −z⋆)
+
+     for all z ∈Rd. Thus, if ∇ℓ(z⋆) = 0 it follows immediately ℓ(z) ≥ℓ(z⋆) for all z ∈Rd. The converse is
+     true by the first order necessary condition and the fact that a local minimum is a global minimum.
+
+
+
+
+
+                                                      Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 21 |73

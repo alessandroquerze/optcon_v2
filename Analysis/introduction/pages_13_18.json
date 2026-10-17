@@ -1,0 +1,1055 @@
+[
+  {
+    "page": 13,
+    "title": "Recall some tools for nonlinear systems analysis and control",
+    "observations": [
+      {
+        "category": "concept",
+        "claim": "Il riepilogo richiama traiettorie ed equilibri e linearizzazione.",
+        "anchor": "System Trajectories and equilibria",
+        "bbox": [
+          36,
+          35,
+          313,
+          62
+        ]
+      },
+      {
+        "category": "concept",
+        "claim": "La stabilizzazione dell'equilibrio/origine è associata tipicamente a sistemi time-invariant, mentre output/trajectory tracking a sistemi time-varying.",
+        "anchor": "Equilibrium (origin) stabilization (typically time-invariant systems)",
+        "bbox": [
+          36,
+          68,
+          373,
+          96
+        ]
+      },
+      {
+        "category": "concept",
+        "claim": "La fonte dice che gli strumenti richiamati non trattano esplicitamente l'ottimizzazione di un performance index, come sforzo di controllo, distanza da un target o tempo.",
+        "anchor": "Optimize a performance index",
+        "bbox": [
+          27,
+          115,
+          437,
+          144
+        ]
+      },
+      {
+        "category": "concept",
+        "claim": "Sono indicati come non esplicitamente trattati i vincoli: saturazioni degli ingressi, collision/obstacle avoidance e regioni entro cui confinare lo stato.",
+        "anchor": "Explicitly handle constraints",
+        "bbox": [
+          37,
+          145,
+          443,
+          171
+        ]
+      }
+    ],
+    "role": "Pagina ponte: rende esplicito perché introdurre l'ottimizzazione dopo gli strumenti di analisi e controllo.",
+    "previous": "La pagina 12 ha definito la linearizzazione lungo una traiettoria; il riepilogo la colloca fra gli strumenti già noti.",
+    "next": "La pagina 14 definisce decisione, costo e vincoli di un problema di ottimizzazione.",
+    "scope_limits": [
+      "'Typically' non è un'impossibilità di tracking con modelli time-invariant o di stabilizzazione in altri casi.",
+      "La fonte non afferma che tutto il controllo non ottimo ignori sempre performance o vincoli.",
+      "Non viene assegnato un nuovo modello matematico."
+    ],
+    "prerequisites": [
+      [
+        "Traiettorie, equilibri e linearizzazione",
+        "Sono gli strumenti richiamati, non ridefiniti nella pagina.",
+        [
+          11,
+          12
+        ]
+      ],
+      [
+        "Tracking e stabilizzazione",
+        "Vocabolario richiamato dall'introduzione al feedback.",
+        [
+          2
+        ]
+      ]
+    ],
+    "examples": [
+      {
+        "purpose": "Distinguere raggiungimento dell'obiettivo e ottimizzazione di una prestazione.",
+        "setup": "Enrichment: assumere che due controllori siano già stati verificati stabilizzanti, ma producano consumi o sforzi diversi.",
+        "steps": [
+          "La stabilizzazione da sola non ordina i due sforzi.",
+          "Definire un indice se si vuole scegliere il controllo meno costoso.",
+          "Verificare separatamente le saturazioni richieste."
+        ],
+        "expected": "Ottimizzazione e vincoli espliciti pongono domande ulteriori rispetto al solo raggiungimento/stabilizzazione.",
+        "limitations": [
+          "Nessun controllore, prova di stabilità o consumo è fornito nella fonte."
+        ]
+      }
+    ],
+    "visual": {
+      "component": "ControlToolsVersusOptimizationRequirements",
+      "description": "Due colonne statiche: strumenti richiamati e questioni non trattate esplicitamente; conservare la qualificazione 'typically'."
+    },
+    "no_interaction_reason": "Il contenuto è una mappa concettuale, non un problema numerico da simulare.",
+    "edges": [
+      [
+        "Trattare typically come sempre",
+        "Conservare la natura indicativa dell'associazione fra tipo di sistema e compito."
+      ]
+    ],
+    "single_page_rationale": "Un riepilogo e una motivazione coerente; non richiede una seconda companion.",
+    "focus": "Che cosa aggiungono indice di prestazione e vincoli agli strumenti di controllo già richiamati."
+  },
+  {
+    "page": 14,
+    "title": "Optimization: main ingredients",
+    "observations": [
+      {
+        "category": "definition",
+        "claim": "Il vettore decisionale è z∈Rᵈ e il costo è ℓ(z):Rᵈ→R, associato alla decisione z.",
+        "anchor": "Decision vector: z ∈Rd",
+        "bbox": [
+          27,
+          52,
+          342,
+          94
+        ]
+      },
+      {
+        "category": "definition",
+        "claim": "I vincoli sono hᵢ(z)=0 per i=1,…,m e gⱼ(z)≤0 per j=1,…,r.",
+        "anchor": "hi(z) = 0",
+        "bbox": [
+          169,
+          135,
+          290,
+          163
+        ]
+      },
+      {
+        "category": "definition",
+        "claim": "La forma insiemistica è Z={z∈Rⁿ | h(z)=0,g(z)≤0}, con h e g ottenuti impilando le rispettive componenti.",
+        "anchor": "Z = {z ∈Rn | h(z) = 0, g(z) ≤0}",
+        "bbox": [
+          27,
+          170,
+          443,
+          220
+        ]
+      },
+      {
+        "category": "structure",
+        "claim": "La pagina usa Rᵈ per z e ℓ, ma Rⁿ per i domini di hᵢ,gⱼ e per Z; entrambe le lettere sono effettivamente stampate nella fonte.",
+        "anchor": "functions hi : Rn",
+        "bbox": [
+          27,
+          106,
+          443,
+          199
+        ]
+      }
+    ],
+    "math": [
+      [
+        "z\\in\\mathbb{R}^d,\\qquad\\ell(z):\\mathbb{R}^d\\to\\mathbb{R}",
+        "Decision vector"
+      ],
+      [
+        "h_i:\\mathbb{R}^n\\to\\mathbb{R},\\quad g_j:\\mathbb{R}^n\\to\\mathbb{R}",
+        "functions hi : Rn",
+        "Riprodotto n come nella fonte, senza sostituirlo con d."
+      ],
+      [
+        "h_i(z)=0\\ (i=1,\\ldots,m),\\qquad g_j(z)\\leq0\\ (j=1,\\ldots,r)",
+        "hi(z) = 0"
+      ],
+      [
+        "Z=\\{z\\in\\mathbb{R}^n\\mid h(z)=0,\\ g(z)\\leq0\\}",
+        "Z = {z ∈Rn",
+        "La fonte usa n qui, pur avendo introdotto z∈R^d."
+      ],
+      [
+        "h(z)=\\operatorname{col}(h_1(z),\\ldots,h_m(z)),\\quad g(z)=\\operatorname{col}(g_1(z),\\ldots,g_r(z))",
+        "where we compactly denoted"
+      ]
+    ],
+    "notation": [
+      [
+        "z",
+        "Vettore decisionale"
+      ],
+      [
+        "d",
+        "Dimensione decisionale nella prima parte"
+      ],
+      [
+        "n",
+        "Lettera usata nella fonte per alcuni domini; discrepanza da non occultare"
+      ],
+      [
+        "\\ell",
+        "Costo scalare"
+      ],
+      [
+        "h_i,h",
+        "Uguaglianze scalari e loro stack"
+      ],
+      [
+        "g_j,g",
+        "Disuguaglianze scalari e loro stack"
+      ],
+      [
+        "m,r",
+        "Numero di uguaglianze e disuguaglianze in questa pagina, non necessariamente le dimensioni di ingresso viste prima"
+      ],
+      [
+        "Z",
+        "Insieme ammissibile"
+      ]
+    ],
+    "role": "Introduce gli ingredienti astratti dell'ottimizzazione prima degli esempi di costo e di insieme ammissibile.",
+    "previous": "La pagina 13 motiva perché servano costo e vincoli espliciti.",
+    "next": "La pagina 15 assegna una specifica funzione di costo nel caso scalare; qui il costo resta generale.",
+    "scope_limits": [
+      "Non viene ancora formulato un algoritmo di soluzione o una condizione di ottimalità.",
+      "L'uso alternato di n e d è mantenuto e segnalato; per l'esempio si dichiarano esplicitamente uguali.",
+      "g(z)≤0 va letto componente per componente."
+    ],
+    "prerequisites": [
+      [
+        "Vettori, funzioni reali e uguaglianze/disequazioni",
+        "Prerequisito matematico per le tre famiglie di ingredienti.",
+        []
+      ],
+      [
+        "Perché ottimizzare nel controllo",
+        "Motivazione precedente senza richiedere ancora una dinamica.",
+        [
+          13
+        ]
+      ]
+    ],
+    "examples": [
+      {
+        "purpose": "Identificare decisione, costo e vincoli in un esempio completo.",
+        "setup": "Enrichment con d=n=2: z=(z₁,z₂), ℓ(z)=0.5(z₁²+z₂²), h₁(z)=z₁+z₂−1, g₁(z)=−z₁.",
+        "parameters": [
+          [
+            "z candidato",
+            "(0.5,0.5)"
+          ]
+        ],
+        "steps": [
+          "h₁(0.5,0.5)=0.",
+          "g₁(0.5,0.5)=−0.5≤0.",
+          "ℓ(0.5,0.5)=0.25."
+        ],
+        "expected": "Il punto è ammissibile e ha costo 0.25; questi ingredienti non costituiscono ancora un metodo di ottimizzazione.",
+        "limitations": [
+          "Formule e numeri dell'esempio sono enrichment.",
+          "Non attribuire alla fonte la scelta d=n=2."
+        ]
+      }
+    ],
+    "visual": {
+      "component": "DecisionCostConstraintIngredientCards",
+      "description": "Tre schede statiche collegate a z, ℓ e Z, con un avviso esplicito sulla discrepanza d/n."
+    },
+    "no_interaction_reason": "La classificazione degli ingredienti è prioritaria; l'esplorazione geometrica dei vincoli è proposta nella pagina 17.",
+    "edges": [
+      [
+        "gⱼ(z)=0",
+        "Il vincolo ≤0 è soddisfatto anche sul bordo."
+      ],
+      [
+        "Insieme Z vuoto",
+        "Non vi sono decisioni ammissibili; non cercare un minimo inesistente."
+      ],
+      [
+        "m o r nulli",
+        "Famiglia assente come convenzione di enrichment, non caso discusso nella slide."
+      ]
+    ],
+    "uncertainties": [
+      {
+        "description": "Discrepanza dimensionale della fonte: z e ℓ usano d, mentre hᵢ,gⱼ e Z usano n. Conservare il testo letterale e richiedere revisione prima della produzione didattica.",
+        "blocking": false
+      }
+    ],
+    "single_page_rationale": "Le tre schede e la notazione compatta costituiscono un'unica definizione; l'avviso tipografico non richiede espansione.",
+    "focus": "Decisione z, costo ℓ e insieme ammissibile Z, preservando l'irregolarità d/n della fonte."
+  },
+  {
+    "page": 15,
+    "title": "Example of cost function: scalar set up",
+    "observations": [
+      {
+        "category": "definition",
+        "claim": "Il caso è scalare: d=1 e z∈Rᵈ=R.",
+        "anchor": "Scalar set up d = 1",
+        "bbox": [
+          27,
+          31,
+          206,
+          74
+        ]
+      },
+      {
+        "category": "equation",
+        "claim": "La funzione di costo è ℓ(z)=½(z−z̄)², con z̄∈R punto assegnato.",
+        "anchor": "Cost function: ℓ(z) =",
+        "bbox": [
+          27,
+          77,
+          262,
+          93
+        ]
+      }
+    ],
+    "math": [
+      [
+        "d=1,\\quad z\\in\\mathbb{R}^d=\\mathbb{R}",
+        "Scalar set up d = 1"
+      ],
+      [
+        "\\ell(z)=\\frac12(z-\\bar z)^2,\\qquad\\bar z\\in\\mathbb{R}",
+        "Cost function: ℓ(z) ="
+      ]
+    ],
+    "notation": [
+      [
+        "z",
+        "Variabile scalare di decisione"
+      ],
+      [
+        "\\bar z",
+        "Punto assegnato"
+      ],
+      [
+        "\\ell(z)",
+        "Metà della distanza quadratica dal punto assegnato"
+      ]
+    ],
+    "role": "Concretizza il costo generale della pagina 14 prima della versione vettoriale.",
+    "previous": "La pagina 14 distingue costo e vincoli; questa pagina specifica solo il primo.",
+    "next": "La pagina 16 generalizza la distanza quadratica ai vettori e ai pesi.",
+    "scope_limits": [
+      "La pagina non impone vincoli a z.",
+      "Il minimo in z̄ e la derivata sono deduzioni dalla formula, non enunciati espliciti aggiuntivi della slide.",
+      "Non sostituire ℓ con J né rinominare z̄ come x_ref nella trascrizione della fonte."
+    ],
+    "prerequisites": [
+      [
+        "Funzione di costo e variabile decisionale",
+        "Ruoli introdotti nella pagina 14.",
+        [
+          14
+        ]
+      ],
+      [
+        "Quadrato e grafico di una parabola",
+        "Per comprendere la distanza quadratica.",
+        []
+      ]
+    ],
+    "examples": [
+      {
+        "purpose": "Valutare la formula mantenendo il fattore 1/2.",
+        "setup": "Enrichment numerico della formula sorgente: z̄=2.",
+        "parameters": [
+          [
+            "\\bar z",
+            "2"
+          ],
+          [
+            "z",
+            "0,2,3"
+          ]
+        ],
+        "steps": [
+          "ℓ(0)=½(−2)²=2.",
+          "ℓ(2)=0.",
+          "ℓ(3)=½·1²=0.5."
+        ],
+        "expected": "Il costo è nullo al punto assegnato e dipende simmetricamente dalla distanza.",
+        "limitations": [
+          "I valori e l'osservazione sul minimo sono enrichment derivati dalla formula."
+        ]
+      }
+    ],
+    "visual": {
+      "component": "ScalarQuadraticCostPlot",
+      "origin": "enrichment",
+      "description": "Parabola con punto corrente z e punto assegnato z̄, indicatore del costo e distanza orizzontale."
+    },
+    "interaction": {
+      "component": "ScalarQuadraticCostExplorer",
+      "rationale": "Il movimento del punto e del riferimento mostra la distinzione fra scegliere z e definire il costo.",
+      "parameters": [
+        [
+          "Decisione",
+          "z",
+          "[−4,4]",
+          "3",
+          "Spostare il punto sulla parabola e ricalcolare ℓ(z); non traslare la parabola.",
+          [
+            "z=z̄: costo zero"
+          ],
+          "source"
+        ],
+        [
+          "Punto assegnato",
+          "\\bar z",
+          "[−3,3]",
+          "2",
+          "Traslare orizzontalmente la parabola e ricalcolare il costo del medesimo z.",
+          [
+            "Riferimento fuori dal viewport: adattare gli assi senza modificare i valori"
+          ],
+          "source"
+        ]
+      ],
+      "outputs": [
+        "Valore ℓ(z)",
+        "Grafico e distanza |z−z̄|"
+      ],
+      "invariants": [
+        "Fattore 1/2",
+        "Nessun vincolo aggiunto",
+        "Range/default sono enrichment"
+      ]
+    },
+    "edges": [
+      [
+        "z=z̄",
+        "Mostrare esattamente costo zero, entro la tolleranza numerica."
+      ],
+      [
+        "Scarti uguali di segno opposto",
+        "Mostrare costi uguali."
+      ]
+    ],
+    "single_page_rationale": "Una sola formula e una parabola interattiva sono sufficienti.",
+    "focus": "Il costo scalare ½(z−z̄)² misura quanto la decisione si discosta dal punto assegnato."
+  },
+  {
+    "page": 16,
+    "title": "Example of cost function: vector set up",
+    "observations": [
+      {
+        "category": "definition",
+        "claim": "La decisione è z∈Rᵈ; il costo di distanza è ℓ(z)=½‖z−z̄‖²=½(z−z̄)ᵀ(z−z̄), con z̄ assegnato.",
+        "anchor": "Distance from a point:",
+        "bbox": [
+          37,
+          63,
+          398,
+          80
+        ]
+      },
+      {
+        "category": "equation",
+        "claim": "Per una matrice W∈Rᵈˣᵈ positiva (semi-)definita la fonte scrive ℓ(z)=½‖z−z̄‖²_W=½(z−z̄)ᵀW(z−z̄).",
+        "anchor": "Weighted distance:",
+        "bbox": [
+          37,
+          83,
+          397,
+          132
+        ]
+      },
+      {
+        "category": "assumption",
+        "claim": "Nel caso bidimensionale sono indicati z=col(z₁,z₂), W=diag(w₁,w₂)>0, con w₁>0 e w₂>0.",
+        "anchor": "Consider z ∈R2",
+        "bbox": [
+          27,
+          151,
+          421,
+          177
+        ]
+      },
+      {
+        "category": "equation",
+        "claim": "L'espansione finale effettivamente stampata usa w₁ in entrambi i termini: ½w₁(z₁−z̄₁)²+½w₁(z₂−z̄₂)². Non coincide in generale con la precedente W=diag(w₁,w₂).",
+        "anchor": "2w1(z1 −¯z1)2",
+        "bbox": [
+          117,
+          180,
+          435,
+          198
+        ]
+      }
+    ],
+    "math": [
+      [
+        "\\ell(z)=\\frac12\\|z-\\bar z\\|^2=\\frac12(z-\\bar z)^\\top(z-\\bar z),\\quad z,\\bar z\\in\\mathbb{R}^d",
+        "Distance from a point:"
+      ],
+      [
+        "\\ell(z)=\\frac12\\|z-\\bar z\\|_W^2=\\frac12(z-\\bar z)^\\top W(z-\\bar z),\\quad W\\in\\mathbb{R}^{d\\times d}",
+        "Weighted distance:"
+      ],
+      [
+        "z=\\begin{bmatrix}z_1\\\\z_2\\end{bmatrix},\\quad W=\\begin{bmatrix}w_1&0\\\\0&w_2\\end{bmatrix}>0,\\quad w_1>0,\\ w_2>0",
+        "Consider z ∈R2"
+      ],
+      [
+        "\\ell(z)=\\frac12\\|z-\\bar z\\|_W^2=\\frac12w_1(z_1-\\bar z_1)^2+\\frac12w_1(z_2-\\bar z_2)^2",
+        "2w1(z1 −¯z1)2",
+        "TRASCRIZIONE LETTERALE: il secondo coefficiente stampato è w₁, non w₂. Non correggerlo senza segnalazione."
+      ]
+    ],
+    "notation": [
+      [
+        "z,\\bar z",
+        "Decisione e punto assegnato in Rᵈ"
+      ],
+      [
+        "W",
+        "Matrice dei pesi positiva (semi-)definita"
+      ],
+      [
+        "w_1,w_2",
+        "Pesi diagonali nel caso d=2"
+      ],
+      [
+        "\\|z-\\bar z\\|_W^2",
+        "Espressione quadratica pesata usata dalla fonte"
+      ]
+    ],
+    "role": "Generalizza il costo scalare e introduce l'anisotropia dei pesi, ma presenta una discrepanza nell'espansione finale.",
+    "previous": "La pagina 15 contiene il caso d=1 e il fattore 1/2.",
+    "next": "La pagina 17 introduce insiemi di vincolo; i pesi di costo non sono parametri di quei vincoli.",
+    "scope_limits": [
+      "L'espansione finale contiene un probabile refuso; non presentare come letteralmente presente la versione con w₂ nel secondo termine.",
+      "La frase positiva (semi-)definita è generale, mentre il caso diagonale successivo richiede entrambi i pesi strettamente positivi.",
+      "Per W singolare l'espressione può essere una seminorma; questa precisazione è enrichment matematico."
+    ],
+    "prerequisites": [
+      [
+        "Costo quadratico scalare",
+        "La distanza vettoriale estende la formula precedente.",
+        [
+          15
+        ]
+      ],
+      [
+        "Prodotto matriciale e positività (semi-)definita",
+        "Necessari per interpretare W e il costo.",
+        []
+      ]
+    ],
+    "enrichment_notes": [
+      "Derivazione dichiarata come enrichment dalla formula matriciale: se W=diag(w₁,w₂), il secondo termine coerente è ½w₂(z₂−z̄₂)². Mostrare accanto la trascrizione letterale della fonte e l'avviso, senza sostituirla silenziosamente.",
+      "Un peso nullo lascia una direzione non penalizzata; non chiamare automaticamente norma una forma con W semidefinita."
+    ],
+    "examples": [
+      {
+        "purpose": "Rendere visibile il ruolo distinto dei pesi e il refuso.",
+        "setup": "Enrichment derivato dalla formula matriciale: z̄=(0,0), z=(1,1), W=diag(1,4).",
+        "parameters": [
+          [
+            "w_1,w_2",
+            "1,4"
+          ],
+          [
+            "z",
+            "(1,1)"
+          ],
+          [
+            "\\bar z",
+            "(0,0)"
+          ]
+        ],
+        "steps": [
+          "Dal prodotto matriciale: ℓ=½(1+4)=2.5.",
+          "Applicando letteralmente l'ultima riga stampata si otterrebbe ½(1+1)=1.",
+          "La differenza mostra l'incompatibilità per w₁≠w₂; non attribuire la correzione alla fonte."
+        ],
+        "expected": "La matrice pesa diversamente le due coordinate; l'espansione finale richiede revisione.",
+        "limitations": [
+          "La numerica è aggiunta.",
+          "Il grafico proposto segue dichiaratamente la definizione matriciale, non la riga incoerente."
+        ]
+      }
+    ],
+    "visual": {
+      "component": "WeightedQuadraticContoursWithSourceDiscrepancy",
+      "origin": "enrichment",
+      "description": "Curve di livello della formula matriciale con pannello letterale del refuso; etichettare esplicitamente quale espressione viene valutata."
+    },
+    "interaction": {
+      "component": "DiagonalWeightContourExplorer",
+      "rationale": "Variare pesi distinti rende comprensibile l'anisotropia e permette di vedere la discrepanza invece di occultarla.",
+      "parameters": [
+        [
+          "Primo peso",
+          "w_1",
+          "[0,5]",
+          "1",
+          "Ricalcolare ellissi/livelli e costo dalla matrice, modificando la penalizzazione del primo scarto.",
+          [
+            "w₁=0: forma semidefinita, fuori dal caso strettamente positivo illustrato"
+          ],
+          "source"
+        ],
+        [
+          "Secondo peso",
+          "w_2",
+          "[0,5]",
+          "4",
+          "Ricalcolare costo e compressione delle curve lungo la seconda coordinata; non sostituire w₂ con w₁.",
+          [
+            "w₂=0: direzione non penalizzata"
+          ],
+          "source"
+        ]
+      ],
+      "outputs": [
+        "Costo matriciale",
+        "Costo della riga letterale per confronto",
+        "Curve di livello",
+        "Avviso sulla positività"
+      ],
+      "invariants": [
+        "z=(1,1), z̄=(0,0) nell'esempio",
+        "Matrice diagonale",
+        "Trascrizione della fonte conservata",
+        "Range/default sono enrichment"
+      ]
+    },
+    "edges": [
+      [
+        "w₁=w₂>0",
+        "Le due espressioni coincidono accidentalmente e le curve sono circolari."
+      ],
+      [
+        "Un peso nullo",
+        "Le curve possono essere non chiuse; mostrare la perdita di positività definita."
+      ],
+      [
+        "Entrambi i pesi nulli",
+        "Costo identicamente zero; nessun minimo unico deducibile."
+      ]
+    ],
+    "uncertainties": [
+      {
+        "description": "Refuso matematico confermato visivamente: l'ultima espansione ripete w₁ dove la formula con W=diag(w₁,w₂) comporterebbe w₂. Bloccante per usare quell'espansione come identità corretta senza revisione esplicita.",
+        "blocking": true
+      }
+    ],
+    "single_page_rationale": "La definizione matriciale, il caso diagonale e un avviso di coerenza restano un solo concetto; una seconda pagina non risolverebbe il refuso.",
+    "focus": "Distanza quadratica pesata e ruolo dei pesi, con trascrizione letterale e avviso sull'espansione incoerente."
+  },
+  {
+    "page": 17,
+    "title": "Examples of constraint sets",
+    "observations": [
+      {
+        "category": "equation",
+        "claim": "Il vincolo di disuguaglianza è az₁²+bz₂²−c≤0 per z∈R², con a,b,c reali assegnati; Z è l'insieme dei punti che lo soddisfano.",
+        "anchor": "parameters a ∈R, b ∈R, c ∈R.",
+        "bbox": [
+          17,
+          45,
+          284,
+          111
+        ]
+      },
+      {
+        "category": "equation",
+        "claim": "Il vincolo di uguaglianza è zᵀQz+qᵀz−c=0, con Q∈Rᵈˣᵈ, q∈Rᵈ, c∈R, e l'insieme è scritto Z={z∈Rᵈ | zᵀQz+qᵀz−c=0}.",
+        "anchor": "z⊤Qz + q⊤z −c = 0",
+        "bbox": [
+          17,
+          150,
+          320,
+          203
+        ]
+      },
+      {
+        "category": "diagram",
+        "claim": "La disuguaglianza è illustrata con una regione ellittica riempita, inclinata e spostata nel quadrante positivo; non è il grafico esatto generale della forma diagonale omogenea stampata.",
+        "bbox": [
+          337,
+          39,
+          440,
+          124
+        ]
+      },
+      {
+        "category": "diagram",
+        "claim": "L'uguaglianza è illustrata con una curva simile a una parabola, senza area riempita.",
+        "bbox": [
+          337,
+          133,
+          442,
+          229
+        ]
+      },
+      {
+        "category": "structure",
+        "claim": "Nel testo della seconda parte si legge 'constraints set X', mentre la formula usa Z.",
+        "anchor": "Then, the constraints set X is",
+        "bbox": [
+          17,
+          171,
+          254,
+          184
+        ]
+      }
+    ],
+    "math": [
+      [
+        "Z=\\{z\\in\\mathbb{R}^2\\mid a z_1^2+b z_2^2-c\\leq0\\},\\quad a,b,c\\in\\mathbb{R}",
+        "Then, the constraint set Z is"
+      ],
+      [
+        "z^\\top Qz+q^\\top z-c=0,\\quad Q\\in\\mathbb{R}^{d\\times d},\\ q\\in\\mathbb{R}^d,\\ c\\in\\mathbb{R}",
+        "z⊤Qz"
+      ],
+      [
+        "Z=\\{z\\in\\mathbb{R}^d\\mid z^\\top Qz+q^\\top z-c=0\\}",
+        "Z = {z ∈Rd"
+      ]
+    ],
+    "notation": [
+      [
+        "a,b,c",
+        "Parametri reali della disequazione"
+      ],
+      [
+        "Q,q,c",
+        "Parametri dell'uguaglianza quadratica"
+      ],
+      [
+        "Z",
+        "Insieme ammissibile nelle formule"
+      ],
+      [
+        "X",
+        "Simbolo usato solo nel testo della seconda parte, in contrasto con Z"
+      ]
+    ],
+    "role": "Rende geometrica la differenza fra ≤0 e =0; le figure sono illustrative e contengono una discrepanza rispetto alla forma della prima equazione.",
+    "previous": "La pagina 16 definiva costi: le curve di livello di un costo non sono automaticamente vincoli.",
+    "next": "La pagina 18 combina costo e famiglie di vincoli in una minimizzazione.",
+    "scope_limits": [
+      "La fonte non impone a>0,b>0,c>0; non ogni insieme della prima forma è un'ellisse.",
+      "Un'ellisse non degenere della forma az₁²+bz₂²≤c è centrata nell'origine e allineata agli assi: il disegno inclinato e traslato è qualitativo.",
+      "L'uguaglianza quadratica può generare insiemi diversi dalla parabola disegnata.",
+      "Conservare Z nelle formule senza cancellare il riferimento testuale X."
+    ],
+    "prerequisites": [
+      [
+        "Vincoli scalari e insieme Z",
+        "Definiti nella pagina 14.",
+        [
+          14
+        ]
+      ],
+      [
+        "Grafico di una disequazione in due variabili",
+        "Per distinguere regione piena e curva.",
+        []
+      ]
+    ],
+    "examples": [
+      {
+        "purpose": "Confrontare disuguaglianza e uguaglianza su un caso verificabile.",
+        "setup": "Enrichment: a=b=c=1, quindi z₁²+z₂²≤1; confrontare con z₁²+z₂²=1 ottenuto scegliendo Q=I₂,q=0,c=1.",
+        "parameters": [
+          [
+            "a,b,c",
+            "1,1,1"
+          ],
+          [
+            "Q,q",
+            "I₂,0"
+          ]
+        ],
+        "steps": [
+          "(0,0) soddisfa ≤1 ma non =1.",
+          "(1,0) soddisfa entrambe.",
+          "(2,0) non soddisfa nessuna delle due."
+        ],
+        "expected": "La disuguaglianza include l'interno e il bordo, l'uguaglianza seleziona solo il bordo in questo esempio.",
+        "limitations": [
+          "Parametri e disco unitario sono enrichment, non il disegno letterale della fonte."
+        ]
+      }
+    ],
+    "visual": {
+      "component": "ConstraintRegionAndLevelSetPlot",
+      "origin": "enrichment",
+      "description": "Due grafici calcolati dalle equazioni, con campitura per la disequazione e sola curva per l'uguaglianza; segnalare che sostituiscono un disegno qualitativo, non dati originali."
+    },
+    "interaction": {
+      "component": "QuadraticInequalityRegionExplorer",
+      "rationale": "Variare i coefficienti mostra perché una disequazione non corrisponde sempre a un'ellisse e distingue l'insieme dal suo bordo.",
+      "parameters": [
+        [
+          "Coefficiente prima coordinata",
+          "a",
+          "[−2,2]",
+          "1",
+          "Ricalcolare il segno di az₁²+bz₂²−c sulla griglia e la curva zero; con cambio di segno può cambiare la classe geometrica.",
+          [
+            "a=0: dipendenza da una sola coordinata"
+          ],
+          "source"
+        ],
+        [
+          "Coefficiente seconda coordinata",
+          "b",
+          "[−2,2]",
+          "1",
+          "Aggiornare campitura e bordo lungo la seconda coordinata senza spostare arbitrariamente il centro.",
+          [
+            "a e b di segno opposto: insieme non ellittico"
+          ],
+          "source"
+        ],
+        [
+          "Livello",
+          "c",
+          "[−2,2]",
+          "1",
+          "Ricalcolare l'insieme ammissibile e indicare quando è vuoto, degenere o non limitato.",
+          [
+            "a,b>0 e c=0: solo origine",
+            "a,b>0 e c<0: vuoto"
+          ],
+          "source"
+        ]
+      ],
+      "outputs": [
+        "Regione g≤0",
+        "Bordo g=0",
+        "Indicazione di porzione tagliata dal viewport"
+      ],
+      "invariants": [
+        "Assi z₁,z₂",
+        "Forma senza termine incrociato o lineare",
+        "Il grafico di uguaglianza nell'esempio statico usa parametri dichiarati",
+        "Range/default sono enrichment"
+      ]
+    },
+    "edges": [
+      [
+        "a,b>0,c=0",
+        "L'insieme si riduce all'origine."
+      ],
+      [
+        "a,b>0,c<0",
+        "Insieme vuoto."
+      ],
+      [
+        "a=b=0",
+        "Tutto il piano se c≥0, vuoto se c<0."
+      ],
+      [
+        "a o b non positivo",
+        "Non etichettare automaticamente il risultato come ellisse; il ritaglio grafico non ne prova la limitatezza."
+      ]
+    ],
+    "uncertainties": [
+      {
+        "description": "Il disegno della prima regione è inclinato/traslato, mentre la forma az₁²+bz₂²−c non contiene termini per rotazione o traslazione; trattarlo come schema qualitativo.",
+        "blocking": false
+      },
+      {
+        "description": "La prosa usa X e la formula Z per il secondo insieme; preservare la discrepanza nella nota editoriale.",
+        "blocking": false
+      }
+    ],
+    "single_page_rationale": "Le due famiglie di vincoli sono un confronto unitario; le note di fedeltà possono essere richiami senza espandere artificialmente.",
+    "focus": "Regione di disuguaglianza e insieme di uguaglianza, evitando di generalizzare le figure qualitative."
+  },
+  {
+    "page": 18,
+    "title": "Optimization problem (minimization)",
+    "observations": [
+      {
+        "category": "equation",
+        "claim": "Il problema è min su z∈Rᵈ di ℓ(z), soggetto a hᵢ(z)=0, i=1,…,m, e gⱼ(z)≤0, j=1,…,r.",
+        "anchor": "We can write our optimization problem as",
+        "bbox": [
+          27,
+          34,
+          330,
+          118
+        ]
+      },
+      {
+        "category": "definition",
+        "claim": "hᵢ e gⱼ hanno dominio Rᵈ e valori reali; la forma compatta usa h:Rᵈ→Rᵐ e g:Rᵈ→Rʳ.",
+        "anchor": "where h : Rd →Rm and g : Rd →Rr.",
+        "bbox": [
+          27,
+          205,
+          310,
+          220
+        ]
+      },
+      {
+        "category": "equation",
+        "claim": "La seconda formulazione impila i vincoli come h(z)=0 e g(z)≤0 senza cambiare il costo né il dominio decisionale.",
+        "anchor": "We can write it more compactly as",
+        "bbox": [
+          27,
+          133,
+          320,
+          197
+        ]
+      }
+    ],
+    "math": [
+      [
+        "\\begin{aligned}\\min_{z\\in\\mathbb{R}^d}\\;&\\ell(z)\\\\\\text{subj.to }&h_i(z)=0,\\quad i=1,\\ldots,m\\\\&g_j(z)\\leq0,\\quad j=1,\\ldots,r\\end{aligned}",
+        "We can write our optimization problem as"
+      ],
+      [
+        "h_i:\\mathbb{R}^d\\to\\mathbb{R},\\quad g_j:\\mathbb{R}^d\\to\\mathbb{R}",
+        "where hi : Rd"
+      ],
+      [
+        "\\begin{aligned}\\min_{z\\in\\mathbb{R}^d}\\;&\\ell(z)\\\\\\text{subj.to }&h(z)=0\\\\&g(z)\\leq0\\end{aligned}",
+        "We can write it more compactly"
+      ],
+      [
+        "h:\\mathbb{R}^d\\to\\mathbb{R}^m,\\quad g:\\mathbb{R}^d\\to\\mathbb{R}^r",
+        "where h : Rd"
+      ]
+    ],
+    "notation": [
+      [
+        "z",
+        "Decisione in Rᵈ"
+      ],
+      [
+        "\\ell",
+        "Costo da minimizzare"
+      ],
+      [
+        "h",
+        "Stack di m uguaglianze"
+      ],
+      [
+        "g",
+        "Stack di r disuguaglianze, lette componente per componente"
+      ],
+      [
+        "\\mathrm{subj.to}",
+        "Soggetto ai vincoli elencati"
+      ]
+    ],
+    "role": "Combina gli ingredienti separati delle pagine 14–17 in un problema completo di minimizzazione.",
+    "previous": "La pagina 17 mostra esempi di insiemi ammissibili senza costo.",
+    "next": "La pagina 19 riporta il quadro all'optimal control, dove la dinamica stessa genera uguaglianze.",
+    "scope_limits": [
+      "La fonte non dà algoritmo, condizioni KKT, convessità, esistenza o unicità del minimo.",
+      "I domini sono ora tutti Rᵈ; ciò non autorizza a riscrivere retroattivamente il n stampato a pagina 14."
+    ],
+    "prerequisites": [
+      [
+        "Decisione, costo e vincoli",
+        "Introdotti separatamente nelle pagine precedenti.",
+        [
+          14,
+          15,
+          16,
+          17
+        ]
+      ]
+    ],
+    "examples": [
+      {
+        "purpose": "Mostrare perché il minimo vincolato può stare sul bordo.",
+        "setup": "Enrichment scalare: min ℓ(z)=½(z−z̄)² soggetto a z−b≤0, con z̄=2 e b=1.",
+        "parameters": [
+          [
+            "\\bar z",
+            "2"
+          ],
+          [
+            "b",
+            "1"
+          ]
+        ],
+        "steps": [
+          "Il minimo senza vincolo è z=2, ma non è ammissibile.",
+          "L'ammissibile più vicino a 2 è z=1.",
+          "Il costo al minimo vincolato è ½(1−2)²=0.5."
+        ],
+        "expected": "Per questo esempio z*=min(z̄,b); è un risultato dell'esempio, non un teorema enunciato dalla fonte.",
+        "limitations": [
+          "Costo, vincolo e soluzione esplicita sono enrichment.",
+          "Non estendere la regola min a problemi generali."
+        ]
+      }
+    ],
+    "visual": {
+      "component": "ConstrainedScalarMinimumPlot",
+      "origin": "enrichment",
+      "description": "Parabola e semiretta ammissibile, con minimo libero e minimo vincolato distinti."
+    },
+    "interaction": {
+      "component": "ScalarConstrainedOptimumExplorer",
+      "rationale": "Muovere il riferimento e il bordo mostra il passaggio fra vincolo inattivo e attivo.",
+      "parameters": [
+        [
+          "Riferimento",
+          "\\bar z",
+          "[−2,2]",
+          "2",
+          "Traslare il costo e ricalcolare z*=min(z̄,b) e il valore ottimo.",
+          [
+            "z̄=b: minimo sul bordo con costo zero"
+          ],
+          "enrichment"
+        ],
+        [
+          "Limite superiore",
+          "b",
+          "[−2,2]",
+          "1",
+          "Spostare la regione z≤b, aggiornare fattibilità del minimo libero e soluzione dell'esempio.",
+          [
+            "b<z̄: bordo attivo"
+          ],
+          "enrichment"
+        ]
+      ],
+      "outputs": [
+        "Regione ammissibile",
+        "z* e ℓ(z*)",
+        "Indicatore di vincolo attivo"
+      ],
+      "invariants": [
+        "Il problema generale della fonte resta simbolico",
+        "Solo la famiglia scalare aggiunta è risolta",
+        "Il singolo limite superiore non rende vuota R"
+      ]
+    },
+    "edges": [
+      [
+        "Problema generale infeasible",
+        "Non mostrare un minimizzatore."
+      ],
+      [
+        "Costo illimitato inferiormente o infimo non raggiunto",
+        "Non confondere la scrittura min della fonte con una garanzia di esistenza."
+      ],
+      [
+        "g(z)=0",
+        "Il bordo è incluso dalla disuguaglianza non stretta."
+      ]
+    ],
+    "single_page_rationale": "Le forme estesa e compatta esprimono un solo problema; il confronto grafico resta un esempio dello stesso concetto.",
+    "focus": "Minimizzare ℓ fra decisioni che soddisfano tutte le uguaglianze e disuguaglianze."
+  }
+]

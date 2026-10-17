@@ -1,0 +1,9 @@
+Gradient methods: selecting the descent direction
+Several gradient methods can be written as
+zk+1 = zk −γkDk∇ℓ(zk)
+k = 1, 2, . . .
+where Dk ∈Rd×d is a symmetric positive definite matrix.
+It can be immediately seen that
+−∇ℓ(zk)T Dk∇ℓ(zk) < 0,
+i.e., dk = −Dk∇ℓ(zk) is a descent direction.
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 30 |73

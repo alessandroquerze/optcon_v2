@@ -1,0 +1,35 @@
+Optimal Control: motivating domains
+Autonomous driving
+Performance index
+• distance from desired “behavior”
+(lane center, velocity,...)
+• minimum time (race vehicles)
+• passengers confort
+• fuel consumption
+Constraints
+• geometric (lane, obstacles,...)
+• inputs (throttle, steering wheel)
+• internal systems (tire limits, normal load, velocities,...)
+−120
+−110
+−100
+−90
+−80
+−70
+−60
+65
+70
+75
+80
+85
+90
+95
+100
+105
+110
+115
+acceleration
+brake
+[m]
+[m]
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 4 |35

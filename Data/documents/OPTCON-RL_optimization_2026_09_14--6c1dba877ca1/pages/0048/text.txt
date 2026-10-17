@@ -1,0 +1,13 @@
+Optimization over convex sets
+Consider the optimization problem
+min
+z∈Z ℓ(z),
+where Z ⊂Rd is nonempty, convex and closed, and ℓis continuously differentiable on Z.
+Remark Recall that a set Z is closed if it contains all of its limit points.
+Important
+The function ℓcan be nonconvex.
+Optimality Conditions
+If a point z∗∈Z is a local minimum of ℓ(z) over Z, then
+∇ℓ(z∗)⊤(¯z −z∗) ≥0
+∀¯z ∈Z
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 44 |73

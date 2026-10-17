@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0070",
+  "document_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1",
+  "source": {
+    "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+    "page_index": 69,
+    "physical_page_number": 70,
+    "pdf_label_raw": "<FEFF00360032>",
+    "pdf_label": "62",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Optimality conditions for equality constrained problems (refresh)",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      387.7431335449219,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 62,
+        "total": 73,
+        "raw": "62 |73",
+        "bbox": [
+          150.68800354003906,
+          247.92860412597656,
+          447.8712158203125,
+          258.29376220703125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0070/text.txt",
+      "sha256": "5d583d7a40262ba788c2b3b186d341d839f9703f63453418a5849292cbdfad9a"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0070/text.reading-order.txt",
+      "sha256": "69033bbca02608f158930dd2743db36708506f1287233fe3959d41fa526b9149"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0070/layout.json",
+      "sha256": "76bf0639dc9dfd9d53a8d452c6665cde5c438291d7887466dc74fd4e73c2d295"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0070/render.png",
+      "sha256": "bf9fea6a97f95cf30a6a626325fe513535a244f8f841196d3499c75354b1e9e0",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "ebbb5c55b2d6d9a2fc0fcf49fe3c577d91959db257558e03095a51f9c191bc0d"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0069",
+    "next_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0071"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "pending",
+    "result": null
+  }
+}

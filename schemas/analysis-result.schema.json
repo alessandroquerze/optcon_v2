@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:optconv:analysis-result:1.0.0",
+  "title": "Risultato di analisi multimodale di una singola pagina; nessuna companion",
+  "type": "object", "additionalProperties": false,
+  "required": ["protocol_version", "request_sha256", "page_id", "pdf_sha256", "artifact_sha256", "agent", "inspection", "title", "observations", "contextual_role", "context_notes", "notation", "uncertainties", "progression", "coverage", "mapping_recommendation"],
+  "properties": {
+    "protocol_version": {"const": "1.0.0"}, "request_sha256": {"$ref": "#/$defs/sha256"}, "page_id": {"type": "string"},
+    "pdf_sha256": {"$ref": "#/$defs/sha256"},
+    "artifact_sha256": {"type": "object", "additionalProperties": false, "required": ["text", "layout", "render"],
+      "properties": {"text": {"$ref": "#/$defs/sha256"}, "layout": {"$ref": "#/$defs/sha256"}, "render": {"$ref": "#/$defs/sha256"}}},
+    "agent": {"type": "object", "additionalProperties": false, "required": ["provider", "model", "run_id"],
+      "properties": {"provider": {"type": "string", "minLength": 1}, "model": {"type": "string", "minLength": 1}, "run_id": {"type": "string", "minLength": 1}}},
+    "inspection": {"type": "object", "additionalProperties": false,
+      "required": ["text_page_ids", "layout_page_ids", "image_page_ids", "source_content_treated_as_data"],
+      "properties": {"text_page_ids": {"$ref": "#/$defs/page_ids"}, "layout_page_ids": {"$ref": "#/$defs/page_ids"},
+                     "image_page_ids": {"$ref": "#/$defs/page_ids"}, "source_content_treated_as_data": {"const": true}}},
+    "title": {"type": "string", "minLength": 1},
+    "companionPageCount": {"type": "integer", "minimum": 1, "maximum": 26},
+    "didactic_plan": {"$ref": "urn:optconv:didactic-plan:1.0.0"},
+    "observations": {"type": "array", "minItems": 1, "items": {
+      "type": "object", "additionalProperties": false, "required": ["id", "category", "description", "evidence", "confidence"],
+      "properties": {"id": {"type": "string", "minLength": 1},
+        "category": {"enum": ["concept", "definition", "equation", "diagram", "assumption", "algorithm", "structure", "other"]},
+        "description": {"type": "string", "minLength": 1}, "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+        "evidence": {"type": "object", "additionalProperties": false, "required": ["page_id", "modality", "text_quote", "bbox"],
+          "properties": {"page_id": {"type": "string"}, "modality": {"enum": ["text", "visual", "both"]},
+                         "text_quote": {"type": ["string", "null"]}, "bbox": {"oneOf": [{"$ref": "#/$defs/bbox"}, {"type": "null"}]}},
+          "allOf": [
+            {"if": {"properties": {"modality": {"enum": ["text", "both"]}}}, "then": {"properties": {"text_quote": {"type": "string", "minLength": 1}}}},
+            {"if": {"properties": {"modality": {"enum": ["visual", "both"]}}}, "then": {"properties": {"bbox": {"$ref": "#/$defs/bbox"}}}}
+          ]}
+      }
+    }},
+    "contextual_role": {"type": "string", "minLength": 1},
+    "context_notes": {"type": "array", "items": {
+      "type": "object", "additionalProperties": false, "required": ["page_id", "role", "note"],
+      "properties": {"page_id": {"type": "string"}, "role": {"enum": ["previous", "next"]}, "note": {"type": "string", "minLength": 1}}
+    }},
+    "notation": {"type": "array", "items": {
+      "type": "object", "additionalProperties": false, "required": ["symbol", "meaning", "observation_ids"],
+      "properties": {"symbol": {"type": "string", "minLength": 1}, "meaning": {"type": ["string", "null"]},
+                     "observation_ids": {"$ref": "#/$defs/page_ids"}}
+    }},
+    "uncertainties": {"type": "array", "items": {
+      "type": "object", "additionalProperties": false, "required": ["description", "blocking", "observation_ids"],
+      "properties": {"description": {"type": "string", "minLength": 1}, "blocking": {"type": "boolean"},
+                     "observation_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}}}
+    }},
+    "progression": {"type": "object", "additionalProperties": false,
+      "required": ["assessment", "related_page_ids", "added", "removed", "changed", "observation_ids", "rationale"],
+      "properties": {"assessment": {"enum": ["unique", "duplicate", "progressive", "uncertain"]},
+        "related_page_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+        "added": {"$ref": "#/$defs/strings"}, "removed": {"$ref": "#/$defs/strings"}, "changed": {"$ref": "#/$defs/strings"},
+        "observation_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}}, "rationale": {"type": "string", "minLength": 1}}},
+    "coverage": {"type": "object", "additionalProperties": false,
+      "required": ["all_visible_regions_accounted_for", "regions"],
+      "properties": {"all_visible_regions_accounted_for": {"const": true},
+        "regions": {"type": "array", "minItems": 1, "items": {
+          "type": "object", "additionalProperties": false, "required": ["bbox", "description", "observation_ids"],
+          "properties": {"bbox": {"$ref": "#/$defs/bbox"}, "description": {"type": "string", "minLength": 1},
+                         "observation_ids": {"$ref": "#/$defs/page_ids"}}
+        }}}
+    },
+    "mapping_recommendation": {"type": "object", "additionalProperties": false, "required": ["mode", "rationale", "subpages"],
+      "properties": {"mode": {"enum": ["one_to_one", "subpages"]}, "rationale": {"type": "string", "minLength": 1},
+        "subpages": {"type": "array", "items": {
+          "type": "object", "additionalProperties": false, "required": ["suffix", "scope"],
+          "properties": {"suffix": {"type": "string", "pattern": "^[a-z]$"}, "scope": {"type": "string", "minLength": 1}}
+        }}},
+      "allOf": [{"if": {"properties": {"mode": {"const": "one_to_one"}}}, "then": {"properties": {"subpages": {"maxItems": 0}}},
+                 "else": {"properties": {"subpages": {"minItems": 2, "maxItems": 26}}}}]
+    }
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "bbox": {"type": "array", "minItems": 4, "maxItems": 4, "items": {"type": "number"}},
+    "page_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "strings": {"type": "array", "items": {"type": "string"}}
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0034",
+  "document_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1",
+  "source": {
+    "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+    "page_index": 33,
+    "physical_page_number": 34,
+    "pdf_label_raw": "<FEFF00330033>",
+    "pdf_label": "33",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Newton’s method for root finding",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      207.0097198486328,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 33,
+        "total": 73,
+        "raw": "33 |73",
+        "bbox": [
+          150.68800354003906,
+          247.92860412597656,
+          447.8712158203125,
+          258.29376220703125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0034/text.txt",
+      "sha256": "68bdd4fa79f16f9874c0b024d44117772a723e95900878adc6434187107d8465"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0034/text.reading-order.txt",
+      "sha256": "8dbe50d6b5a563d8752574dad34dbb47e3331f24fa7545394dffa032bf515d9f"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0034/layout.json",
+      "sha256": "71ab89b539fcf1105938fdd457111941e5b31799331404a8881f0073c08e1c2e"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0034/render.png",
+      "sha256": "db635c885d99b005db4d42947d15e6149e8144d4c7fd233cbdb6e97c4f4e07a9",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "e592ea8cd9ae628bdc0327a12685d100cd3c5baab3963b7c928972dd62fdb76b"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0033",
+    "next_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0035"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "pending",
+    "result": null
+  }
+}

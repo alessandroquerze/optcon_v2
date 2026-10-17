@@ -1,0 +1,34 @@
+Unconstrained optimal control problem (compact notation)
+Consider the discrete-time system xt+1 = ft(xt, ut). We can introduce the compact notation
+x :=
+
+
+x1
+...
+xT
+
+
+u :=
+
+
+u0
+...
+uT −1
+
+
+which let us write compactly the cost function as
+ℓ(x, u) :=
+T −1
+X
+t=0
+ℓt(xt, ut) + ℓT (xT ).
+and the equality constraint represented by the dynamics
+h(x, u) :=
+
+
+f0(x0, u0) −x1
+...
+fT −1(xT −1, uT −1) −xT
+
+
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Optimality Conditions for Optimal Control 8 |18

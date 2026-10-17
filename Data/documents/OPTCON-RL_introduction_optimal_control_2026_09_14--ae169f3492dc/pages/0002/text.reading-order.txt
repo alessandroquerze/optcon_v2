@@ -1,0 +1,29 @@
+Optimal Control
+
+    So far, feedback control design paradigm
+
+       • given a “control system”
+          (model of an actual systems)
+
+       • goal: track a desired/reference output                                                                                                    disturbance
+            (or stabilize an equilibrium)
+                                                                                                                                        reference                                  input                               output
+       • design input as function of output/state                            CONTROLLER                    SYSTEM
+
+    Two ingredients are mainly missing
+
+       • performance index
+
+       • constraints
+           (input limitations, geometric constraints,...)
+
+    Optimization:
+     theory to find “best” decision while handling constraints
+
+                        pervasive in Engineering... and several other fields!
+
+
+                     Optimal Control: combine optimization with (feedback) control!
+
+
+                                              Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 1 |35

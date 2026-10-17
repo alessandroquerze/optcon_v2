@@ -1,0 +1,476 @@
+{
+  "protocol_version": "1.0.0",
+  "request_sha256": "a00053a30f7dffc12d4f1c5140e9d7e239eb136cc28a11e1b38877f2430ce4b3",
+  "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0003",
+  "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+  "artifact_sha256": {
+    "text": "0e3c2efdbeff53eed1eefb06d00b276d15c915605e1b52c431393ea9336a2839",
+    "layout": "5fc9e1d1771f10d70a149ff9f67a9fa6d364373b1654c31cc96b6327f3cfdf14",
+    "render": "aa64ae71ea319f348c654ff789cebd95218d7413ff31df36a842606dc8f143fe"
+  },
+  "agent": {
+    "provider": "OpenAI",
+    "model": "Codex (identificatore esatto del modello non esposto nella sessione)",
+    "run_id": "page-analysis-ce370a19242e4173828aef04d60c36ee"
+  },
+  "inspection": {
+    "text_page_ids": [
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0003",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0002",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0004"
+    ],
+    "layout_page_ids": [
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0003",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0002",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0004"
+    ],
+    "image_page_ids": [
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0003",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0002",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0004"
+    ],
+    "source_content_treated_as_data": true
+  },
+  "title": "Motivating domains — Aircraft systems",
+  "companionPageCount": 1,
+  "didactic_plan": {
+    "source_scope_limits": [
+      "Non sono assegnati coefficienti, equazioni aerodinamiche o una formula per il comfort.",
+      "Le voci elencate non sono dichiarate contemporaneamente sommate in un particolare costo pesato."
+    ],
+    "prerequisites": [
+      {
+        "concept": "Distinzione fra indice e vincolo",
+        "why": "Evita di trattare un limite di stallo come semplice penalità opzionale.",
+        "origin": "source_context",
+        "page_numbers": [
+          2
+        ]
+      }
+    ],
+    "source_math": [],
+    "enrichments": [
+      {
+        "id": "example-1",
+        "label": "enrichment",
+        "type": "conceptual_example",
+        "proposal": "Enrichment: confrontare due manovre candidate, A più rapida ma oltre un limite di stallo e B più lenta ma rispettosa dei limiti.",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "id": "example-1",
+        "origin": "enrichment",
+        "purpose": "Separare ammissibilità e preferenza.",
+        "setup": "Enrichment: confrontare due manovre candidate, A più rapida ma oltre un limite di stallo e B più lenta ma rispettosa dei limiti.",
+        "parameters": [],
+        "derivation": [
+          "Verificare prima i limiti per entrambe le manovre.",
+          "Escludere A se viola un vincolo imposto.",
+          "Confrontare tempo, energia e comfort fra le sole candidate ammissibili."
+        ],
+        "expected_outcome": "Il tempo minore non rende automaticamente migliore una manovra inammissibile.",
+        "limitations": [
+          "Nessun calcolo aerodinamico o dato sperimentale è fornito dalla fonte."
+        ],
+        "enrichment_id": "example-1",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ]
+      }
+    ],
+    "example_omission_reason": null,
+    "visualization": {
+      "component": "AircraftObjectiveConstraintMatrix",
+      "description": "Matrice statica che distingue quattro criteri di prestazione e tre famiglie di vincoli, con miniature della fonte.",
+      "origin": "source_derived",
+      "source_observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04",
+        "s05"
+      ]
+    },
+    "interactivity": {
+      "recommended": false,
+      "rationale": "Senza una dinamica o dati di traiettoria, slider di assetto o thrust suggerirebbero una simulazione fisica non sostenuta dalla pagina.",
+      "component": null,
+      "parameters": [],
+      "outputs": [],
+      "invariants": [],
+      "enrichment_id": null
+    },
+    "edge_cases": [
+      {
+        "case": "Obiettivi incompatibili",
+        "expected_behavior": "Esplicitare che scegliere pesi o priorità sarebbe un enrichment, non una scelta della fonte.",
+        "origin": "enrichment",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ]
+      },
+      {
+        "case": "Traiettoria al limite di stallo",
+        "expected_behavior": "Non attribuire alla slide una soglia numerica o una legge di stallo non specificata.",
+        "origin": "enrichment",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ]
+      }
+    ],
+    "expansion_rationale": "Un esempio applicativo unitario con elenchi paralleli e immagini illustrative.",
+    "blueprint": [
+      {
+        "companion_suffix": null,
+        "focus": "Nel volo, prestazione e vincoli hanno ruoli distinti.",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "s05"
+        ],
+        "enrichment_ids": [
+          "example-1"
+        ]
+      }
+    ]
+  },
+  "observations": [
+    {
+      "id": "s01",
+      "category": "structure",
+      "description": "Il dominio applicativo della pagina è Aircraft systems.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0003",
+        "modality": "both",
+        "text_quote": "Aircraft systems",
+        "bbox": [
+          28.34600067138672,
+          34.63948059082031,
+          90.33072662353516,
+          43.60588073730469
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "s02",
+      "category": "concept",
+      "description": "Gli indici elencati riguardano distanza dal comportamento desiderato (percorso di posizione, velocità), tempo minimo, consumo di carburante/batteria e comfort dei passeggeri.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0003",
+        "modality": "both",
+        "text_quote": "fuel/battery consumption",
+        "bbox": [
+          29,
+          52,
+          291,
+          133
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "s03",
+      "category": "assumption",
+      "description": "I vincoli geometrici comprendono ostacoli, assetto e limiti di stallo.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0003",
+        "modality": "both",
+        "text_quote": "geometric (obstacles, attitude, stall limits,...)",
+        "bbox": [
+          28,
+          143,
+          293,
+          161
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "s04",
+      "category": "assumption",
+      "description": "Gli ingressi citati sono thrust e flaps; i vincoli interni riguardano velocità angolari e lineari e limiti aerodinamici.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0003",
+        "modality": "both",
+        "text_quote": "inputs (thrust, flaps)",
+        "bbox": [
+          27,
+          165,
+          294,
+          204
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "s05",
+      "category": "diagram",
+      "description": "Due immagini illustrano un velivolo e una superficie/profilo alare; non costituiscono un grafico quantitativo di prestazione.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0003",
+        "modality": "visual",
+        "text_quote": null,
+        "bbox": [
+          298,
+          66,
+          393,
+          189
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "transcription-06",
+      "category": "structure",
+      "description": "Trascrizione di una regione visibile della fonte: Optimal Control: motivating domains",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0003",
+        "modality": "visual",
+        "text_quote": null,
+        "bbox": [
+          10.35200023651123,
+          6.720991134643555,
+          230.5518035888672,
+          21.06719207763672
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "transcription-07",
+      "category": "structure",
+      "description": "Trascrizione di una regione visibile della fonte: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 2 |35",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0003",
+        "modality": "visual",
+        "text_quote": null,
+        "bbox": [
+          130.12982177734375,
+          247.92868041992188,
+          447.87103271484375,
+          255.1179962158203
+        ]
+      },
+      "confidence": 0.98
+    }
+  ],
+  "contextual_role": "Primo esempio del binomio performance index/constraints introdotto nella pagina 2.",
+  "context_notes": [
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0002",
+      "role": "previous",
+      "note": "La pagina 2 spiega perché considerare simultaneamente indice di prestazione e vincoli."
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0004",
+      "role": "next",
+      "note": "La pagina 4 mantiene la struttura obiettivi/vincoli, ma passa alla robotica: è un diverso dominio, non un overlay."
+    }
+  ],
+  "notation": [],
+  "uncertainties": [],
+  "progression": {
+    "assessment": "unique",
+    "related_page_ids": [],
+    "added": [],
+    "removed": [],
+    "changed": [],
+    "observation_ids": [
+      "s01",
+      "s02",
+      "s03",
+      "s04",
+      "s05"
+    ],
+    "rationale": "Pagina con contenuto autonomo nella sequenza; nessun candidato automatico da confermare."
+  },
+  "coverage": {
+    "all_visible_regions_accounted_for": true,
+    "regions": [
+      {
+        "bbox": [
+          10.35200023651123,
+          6.720991134643555,
+          230.5518035888672,
+          21.06719207763672
+        ],
+        "description": "Regione testuale sorgente: Optimal Control: motivating domains",
+        "observation_ids": [
+          "transcription-06"
+        ]
+      },
+      {
+        "bbox": [
+          28.34600067138672,
+          34.63948059082031,
+          90.33072662353516,
+          43.60588073730469
+        ],
+        "description": "Regione testuale sorgente: Aircraft systems",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          32.125,
+          51.57548522949219,
+          103.15682983398438,
+          60.54188537597656
+        ],
+        "description": "Regione testuale sorgente: Performance index",
+        "observation_ids": [
+          "s02"
+        ]
+      },
+      {
+        "bbox": [
+          43.88100051879883,
+          66.40328216552734,
+          180.3064727783203,
+          86.44488525390625
+        ],
+        "description": "Regione testuale sorgente: • distance from desired “behavior”\n(position path, velocities, ...)",
+        "observation_ids": [
+          "s02"
+        ]
+      },
+      {
+        "bbox": [
+          43.88100051879883,
+          92.30628204345703,
+          109.82162475585938,
+          101.38888549804688
+        ],
+        "description": "Regione testuale sorgente: • minimum time",
+        "observation_ids": [
+          "s02"
+        ]
+      },
+      {
+        "bbox": [
+          43.88100051879883,
+          107.25028228759766,
+          151.56021118164062,
+          116.3328857421875
+        ],
+        "description": "Regione testuale sorgente: • fuel/battery consumption",
+        "observation_ids": [
+          "s02"
+        ]
+      },
+      {
+        "bbox": [
+          43.88100051879883,
+          122.19428253173828,
+          121.09236145019531,
+          131.27688598632812
+        ],
+        "description": "Regione testuale sorgente: • passenger confort",
+        "observation_ids": [
+          "s02"
+        ]
+      },
+      {
+        "bbox": [
+          32.125,
+          137.25448608398438,
+          75.63894653320312,
+          146.22088623046875
+        ],
+        "description": "Regione testuale sorgente: Constraints",
+        "observation_ids": [
+          "s03"
+        ]
+      },
+      {
+        "bbox": [
+          43.88100051879883,
+          152.082275390625,
+          227.5414581298828,
+          161.16488647460938
+        ],
+        "description": "Regione testuale sorgente: • geometric (obstacles, attitude, stall limits,...)",
+        "observation_ids": [
+          "s03"
+        ]
+      },
+      {
+        "bbox": [
+          43.88100051879883,
+          167.02627563476562,
+          133.6812286376953,
+          176.10888671875
+        ],
+        "description": "Regione testuale sorgente: • inputs (thrust, flaps)",
+        "observation_ids": [
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          43.88100051879883,
+          181.97027587890625,
+          231.4149169921875,
+          202.0118865966797
+        ],
+        "description": "Regione testuale sorgente: • internal systems (angular and linear velocities,\naerodynamic limits,...)",
+        "observation_ids": [
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          130.12982177734375,
+          247.92868041992188,
+          447.87103271484375,
+          255.1179962158203
+        ],
+        "description": "Regione testuale sorgente: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 2 |35",
+        "observation_ids": [
+          "transcription-07"
+        ]
+      },
+      {
+        "bbox": [
+          298,
+          66,
+          393,
+          189
+        ],
+        "description": "Due immagini illustrano un velivolo e una superficie/profilo alare; non costituiscono un grafico quantitativo di prestazione.",
+        "observation_ids": [
+          "s05"
+        ]
+      }
+    ]
+  },
+  "mapping_recommendation": {
+    "mode": "one_to_one",
+    "rationale": "Un esempio applicativo unitario con elenchi paralleli e immagini illustrative.",
+    "subpages": []
+  }
+}

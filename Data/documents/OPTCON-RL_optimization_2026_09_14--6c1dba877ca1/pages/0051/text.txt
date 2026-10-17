@@ -1,0 +1,21 @@
+Feasible direction method
+Find ˜z ∈Rd such that
+˜z = argmin
+z∈Z
+
+ℓ(zk) + ∇ℓ(zk)⊤(z −zk) + 1
+2(z −zk)⊤(z −zk)
+Update the solution
+zk+1 = zk + γk (˜z −zk)
+|
+{z
+}
+feasible direction
+Note: For γk sufficiently small, zk+1 ∈Z.
+zk+1 = zk + γk(˜z −zk)
+= (1 −γk)zk + γk˜z
+Z
+zk
+˜z
+zk+1
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Nonlinear Optimization 47 |73

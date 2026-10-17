@@ -1,0 +1,463 @@
+{
+  "phase": "F06",
+  "status": "COMPLETED",
+  "verified_at": "2026-10-17T20:53:02.598831+00:00",
+  "document_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc",
+  "scope": [
+    2,
+    8,
+    12,
+    16,
+    17,
+    27,
+    30,
+    34
+  ],
+  "pages": [
+    {
+      "page": 2,
+      "status": "PASS",
+      "renderer": "FeedbackLesson",
+      "page_spec": "Data/documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0002/page_spec.json",
+      "page_spec_sha256": "0b76a674ef165f8dfd88655e7f4e6308c9763200b7d15a6a39d102ccc68b0b28",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0002",
+      "companionPageCount": 1,
+      "visualizationMode": "2D_ONLY",
+      "initialView": "2D",
+      "warning_type": "NO_WARNING",
+      "notice_ids": [],
+      "formula_ids": [],
+      "control_ids": [],
+      "physical_state_dimension_added": false,
+      "default_ui_values": {},
+      "visual_review": "PASS"
+    },
+    {
+      "page": 8,
+      "status": "PASS",
+      "renderer": "ContinuousResponseLesson",
+      "page_spec": "Data/documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0008/page_spec.json",
+      "page_spec_sha256": "8bfd49b4253e321304066833e74af13ed6f36f28b2db9a6ffaaa371514c36f64",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0008",
+      "companionPageCount": 1,
+      "visualizationMode": "2D_PRIMARY_WITH_3D",
+      "initialView": "2D",
+      "warning_type": "NO_WARNING",
+      "notice_ids": [],
+      "formula_ids": [
+        "p08-source-math-1",
+        "p08-source-math-2",
+        "p08-source-math-3",
+        "p08-source-math-5",
+        "p08-enrichment-0"
+      ],
+      "control_ids": [
+        "p08-control-1",
+        "p08-control-2",
+        "p08-control-3"
+      ],
+      "physical_state_dimension_added": false,
+      "default_ui_values": {
+        "continuous-at-one": "0.6321",
+        "continuous-initial": "0.0000",
+        "continuous-input": "1.0000"
+      },
+      "visual_review": "PASS"
+    },
+    {
+      "page": 12,
+      "status": "PASS",
+      "renderer": "LinearizationLesson",
+      "page_spec": "Data/documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0012/page_spec.json",
+      "page_spec_sha256": "9aafae3af9753bde1682b201aa1ceae0126de324b3d17500625f3c591203738b",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0012",
+      "companionPageCount": 1,
+      "visualizationMode": "3D_PRIMARY_WITH_2D",
+      "initialView": "3D",
+      "warning_type": "NO_WARNING",
+      "notice_ids": [],
+      "formula_ids": [
+        "p12-source-math-0",
+        "p12-source-math-1",
+        "p12-source-math-2",
+        "p12-enrichment-0",
+        "p12-enrichment-1",
+        "p12-enrichment-2"
+      ],
+      "control_ids": [
+        "p12-control-1",
+        "p12-control-2"
+      ],
+      "physical_state_dimension_added": false,
+      "default_ui_values": {
+        "linearization-exact": "0.2100",
+        "linearization-linear": "0.2000",
+        "linearization-error": "0.0100"
+      },
+      "visual_review": "PASS"
+    },
+    {
+      "page": 16,
+      "status": "PASS",
+      "renderer": "WeightedCostLesson",
+      "page_spec": "Data/documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0016/page_spec.json",
+      "page_spec_sha256": "960b340696ca44624ca4c3b350bdb65d8c8549724e1b1c9b25156e732112df93",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0016",
+      "companionPageCount": 1,
+      "visualizationMode": "3D_PRIMARY_WITH_2D",
+      "initialView": "3D",
+      "warning_type": "CORRECTION_WARNING",
+      "notice_ids": [
+        "intro-p16-issue-1"
+      ],
+      "formula_ids": [
+        "p16-source-math-0",
+        "p16-source-math-1",
+        "p16-source-math-2",
+        "p16-correction-0"
+      ],
+      "control_ids": [
+        "p16-control-1",
+        "p16-control-2"
+      ],
+      "physical_state_dimension_added": false,
+      "default_ui_values": {
+        "weighted-total": "2.5000"
+      },
+      "visual_review": "PASS"
+    },
+    {
+      "page": 17,
+      "status": "PASS",
+      "renderer": "ConstraintSetsLesson",
+      "page_spec": "Data/documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0017/page_spec.json",
+      "page_spec_sha256": "977e2e06603332075f34051d18e4e2b206e4547f93857350be357c505c51d56a",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0017",
+      "companionPageCount": 1,
+      "visualizationMode": "2D_AND_3D_EQUAL",
+      "initialView": "2D",
+      "warning_type": "INFO_WARNING",
+      "notice_ids": [
+        "intro-p17-issue-1"
+      ],
+      "formula_ids": [
+        "p17-source-math-0",
+        "p17-source-math-1",
+        "p17-enrichment-0"
+      ],
+      "control_ids": [
+        "p17-control-1",
+        "p17-control-2",
+        "p17-control-3"
+      ],
+      "physical_state_dimension_added": false,
+      "default_ui_values": {
+        "constraint-kind": "ellisse e interno",
+        "constraint-residual": "0.00",
+        "constraint-status": "bordo"
+      },
+      "visual_review": "PASS"
+    },
+    {
+      "page": 27,
+      "status": "PASS",
+      "renderer": "EulerDiscretizationLesson",
+      "page_spec": "Data/documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0027/page_spec.json",
+      "page_spec_sha256": "99d1bc3fc229a3ca47bbdfe3ed75c80fb75c9e620a158879f1819c5599aea26a",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0027",
+      "companionPageCount": 1,
+      "visualizationMode": "3D_PRIMARY_WITH_2D",
+      "initialView": "3D",
+      "warning_type": "NO_WARNING",
+      "notice_ids": [],
+      "formula_ids": [
+        "p27-source-math-0",
+        "p27-source-math-1",
+        "p27-source-math-2",
+        "p27-enrichment-0"
+      ],
+      "control_ids": [
+        "p27-control-1"
+      ],
+      "physical_state_dimension_added": false,
+      "default_ui_values": {
+        "euler-state-0": "0.000",
+        "euler-state-1": "0.000",
+        "euler-state-2": "0.000",
+        "euler-state-3": "0.000",
+        "euler-state-4": "0.000",
+        "euler-state-5": "0.000",
+        "euler-final-altitude": "0.9855",
+        "euler-exact-altitude": "1.0950",
+        "euler-error": "0.1095"
+      },
+      "visual_review": "PASS"
+    },
+    {
+      "page": 30,
+      "status": "PASS",
+      "renderer": "PathConstraintsLesson",
+      "page_spec": "Data/documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0030/page_spec.json",
+      "page_spec_sha256": "a493878d20f8cfafac7903c01850a1cd608e9a1d4d035222b99278cf15203867",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0030",
+      "companionPageCount": 1,
+      "visualizationMode": "2D_PRIMARY_WITH_3D",
+      "initialView": "2D",
+      "warning_type": "CORRECTION_WARNING",
+      "notice_ids": [
+        "intro-p30-issue-1"
+      ],
+      "formula_ids": [
+        "p30-correction-0",
+        "p30-enrichment-0"
+      ],
+      "control_ids": [
+        "p30-control-1",
+        "p30-control-2",
+        "p30-control-3"
+      ],
+      "physical_state_dimension_added": false,
+      "default_ui_values": {
+        "path-status": "interno",
+        "path-violation": "0.00",
+        "path-residual-min": "-1.00",
+        "path-residual-max": "-1.00",
+        "path-residual": "-1.00"
+      },
+      "visual_review": "PASS"
+    },
+    {
+      "page": 34,
+      "status": "PASS",
+      "renderer": "PendulumEquilibriumLesson",
+      "page_spec": "Data/documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0034/page_spec.json",
+      "page_spec_sha256": "a7c530a91a8d7228ed533549c21aaab19071c7a9a276de8fb4ee71db9f9c5e3d",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0034",
+      "companionPageCount": 1,
+      "visualizationMode": "3D_PRIMARY_WITH_2D",
+      "initialView": "3D",
+      "warning_type": "CORRECTION_WARNING",
+      "notice_ids": [
+        "intro-p34-issue-1"
+      ],
+      "formula_ids": [
+        "p34-source-math-1",
+        "p34-source-math-2",
+        "p34-correction-0",
+        "p34-enrichment-0"
+      ],
+      "control_ids": [
+        "p34-control-1",
+        "p34-control-2"
+      ],
+      "physical_state_dimension_added": false,
+      "default_ui_values": {
+        "pendulum-torque-1": "0.0000",
+        "pendulum-torque-2": "4.9050",
+        "pendulum-residual": "(0, 0) · (0, 0)"
+      },
+      "visual_review": "PASS"
+    }
+  ],
+  "source_page_count": 36,
+  "other_companion_implementations": 0,
+  "placeholder_pages": [
+    1,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    13,
+    14,
+    15,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    28,
+    29,
+    31,
+    32,
+    33,
+    35,
+    36
+  ],
+  "next_phase": {
+    "phase": "F07",
+    "status": "NOT_STARTED"
+  },
+  "checks": {
+    "PAGE_2": "PASS",
+    "PAGE_8": "PASS",
+    "PAGE_12": "PASS",
+    "PAGE_16": "PASS",
+    "PAGE_17": "PASS",
+    "PAGE_27": "PASS",
+    "PAGE_30": "PASS",
+    "PAGE_34": "PASS",
+    "SOURCE_WARNINGS": "PASS",
+    "MATH_VALIDATION": "PASS",
+    "GRAPHICS_2D": "PASS",
+    "GRAPHICS_3D": "PASS",
+    "COMBINED_VIEWS": "PASS",
+    "VISUAL_REVIEW": "PASS",
+    "PAGE_SYNC": "PASS",
+    "BUILD": "PASS",
+    "VERTICAL_SLICE_PAGES": "8/8",
+    "TESTS": "116/116",
+    "OTHER_COMPANIONS_IMPLEMENTED": 0,
+    "UNRESOLVED_VERTICAL_SLICE_ISSUES": 0,
+    "READY_FOR_HUMAN_REVIEW": "YES",
+    "READY_FOR_F07": "YES"
+  },
+  "tests": {
+    "frontend": 62,
+    "browser": 20,
+    "pipeline": 34,
+    "total": 116,
+    "failed": 0,
+    "numeric_and_buffer_contract_tests": 32,
+    "frontend_evidence": "frontend/test-reports/unit-results.json",
+    "browser_evidence": "Data/reports/f06_browser_tests.json",
+    "pipeline_evidence": "Data/reports/f06_pipeline_tests.json"
+  },
+  "typescript": "PASS",
+  "production_build": {
+    "status": "PASS",
+    "command": "npm run build",
+    "directory": "frontend/dist",
+    "index_sha256": "0b6795f783769bdb1f28310e6f863854bbe464c9d71cfdc40211cf92b6794581",
+    "static_smoke": "Data/reports/f06_visual_measurements.json"
+  },
+  "source_integrity": {
+    "baseline": "Data/reviews/f05_source_baseline.json",
+    "protected_files": 969,
+    "changed_files": [],
+    "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+    "manifest_sha256": "7b34b4ab222d71852d3bf5c6a2dc17f047d2c134a5112a552f75b9991d4e591b",
+    "source_pdf_modified": false,
+    "page_specs_modified": false,
+    "F03_F04_F04_1_modified": false
+  },
+  "visual_review": {
+    "status": "PASS",
+    "reviewer": "Codex: direct inspection of actual screenshots",
+    "human_usability_review_performed": false,
+    "logical_canvas": [
+      960,
+      1280
+    ],
+    "desktop_viewport": [
+      1500,
+      1000
+    ],
+    "screenshots": [
+      {
+        "path": "Docs/F06_assets/page-02-companion.png",
+        "sha256": "538df66c2e838c945fb7a2d95671c360da403b3a790a481812270b5d26cdc9d0"
+      },
+      {
+        "path": "Docs/F06_assets/page-02-desktop.png",
+        "sha256": "c43618046a0bbf7213344f8fd3075f63e7cf84078f823467224a951500a7c21c"
+      },
+      {
+        "path": "Docs/F06_assets/page-08-3d.png",
+        "sha256": "beac9979bd3595e4294a979fe9fe0c62fd54d9ca34d51c097842a0b72fba1784"
+      },
+      {
+        "path": "Docs/F06_assets/page-08-companion.png",
+        "sha256": "e9eefd8f7e55d704f1b5f193af1263e8fe5cf6b85a92d371f21c1d8dcf0fe29e"
+      },
+      {
+        "path": "Docs/F06_assets/page-08-desktop.png",
+        "sha256": "ad1adfcc36c6e75fe3a389a42e299fd90eaea2196c486b0e8f346c72299c2ae8"
+      },
+      {
+        "path": "Docs/F06_assets/page-12-2d.png",
+        "sha256": "1a6d0d81daa949a18f657ba00d9ab32f2d6e17d4d60652617f96159523d47586"
+      },
+      {
+        "path": "Docs/F06_assets/page-12-companion.png",
+        "sha256": "bac4478d1b563c3913b3a467aa9ff552d8efaec9f06b854b2c18bb7edc83b189"
+      },
+      {
+        "path": "Docs/F06_assets/page-12-desktop.png",
+        "sha256": "1f7a0aefc189109b41c257b25ba5d5b43afb3c6ade96bc10bea45b8f5f671176"
+      },
+      {
+        "path": "Docs/F06_assets/page-16-2d.png",
+        "sha256": "7e775a2e52301340155f31d07c1210411fbd176015b56625cca46ffe7fd4e3fc"
+      },
+      {
+        "path": "Docs/F06_assets/page-16-companion.png",
+        "sha256": "d860d7d17df2bff9b36b45fda7d9f461ecd8afb72c0686d575709e1ce9b75268"
+      },
+      {
+        "path": "Docs/F06_assets/page-16-desktop.png",
+        "sha256": "85dc849ba10e16e1541e0f6a7141dd6931e7aaf2ae159e461604c82d61ae5971"
+      },
+      {
+        "path": "Docs/F06_assets/page-17-3d.png",
+        "sha256": "8ca3c7c439f8222ded1e4bbdf3beec066ec80d18dd604895e4c0df0cc95b4890"
+      },
+      {
+        "path": "Docs/F06_assets/page-17-companion.png",
+        "sha256": "9283df976af66a0e8ae88f924be2399396efa527f65394980ed9189df87cbd21"
+      },
+      {
+        "path": "Docs/F06_assets/page-17-desktop.png",
+        "sha256": "268f62e428539c2fff718e798deaaec8047f2441669df8ba46df8edf6e817567"
+      },
+      {
+        "path": "Docs/F06_assets/page-27-2d.png",
+        "sha256": "8f4f6464fa5c544e0557a23ec74673820dcb8ecc32b9cf4e67f3c150e4e34996"
+      },
+      {
+        "path": "Docs/F06_assets/page-27-companion.png",
+        "sha256": "3ea23467a32bed80a4d2377e4b3f582066e3f383cdf780977ab96bf579fe4e61"
+      },
+      {
+        "path": "Docs/F06_assets/page-27-desktop.png",
+        "sha256": "2b0ff117d98933f0030ad4d2b255de24fa3240d6e31f23182c0043dc5979bf17"
+      },
+      {
+        "path": "Docs/F06_assets/page-30-3d.png",
+        "sha256": "bc131fb473c3f83e1fc1123755c6740aacec2a0af1ba0212f61c695d620aa474"
+      },
+      {
+        "path": "Docs/F06_assets/page-30-companion.png",
+        "sha256": "0b94e28bc459678a95c72ae2fbab6eb3598e63a79af6d1cc21790197d7b3cbb6"
+      },
+      {
+        "path": "Docs/F06_assets/page-30-desktop.png",
+        "sha256": "e96400534de481611f6552b2074677e3afcff45eb3958703f7fef00a1c6e45c3"
+      },
+      {
+        "path": "Docs/F06_assets/page-34-2d.png",
+        "sha256": "d2c796b9e05fa8718578816296af6c286540d35a200aaaff431cba43d1ff6e3b"
+      },
+      {
+        "path": "Docs/F06_assets/page-34-companion.png",
+        "sha256": "e7ead92b0812ec72749a71b0fbb3d72c9c242322d6d572ac981c1b97ad56799f"
+      },
+      {
+        "path": "Docs/F06_assets/page-34-desktop.png",
+        "sha256": "41ea782d5c80f14f17132f2bab2032c6f35718ca01072cd30df67c116d34a38e"
+      }
+    ],
+    "geometry_and_runtime": "Data/reports/f06_visual_measurements.json",
+    "performance": "Data/reports/f06_runtime_measurements.json",
+    "physical_gpu_benchmark_performed": false
+  },
+  "unresolved_issues": [],
+  "documentation": "Docs/F06_VERTICAL_SLICE.md"
+}

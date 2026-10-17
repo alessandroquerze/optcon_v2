@@ -1,0 +1,491 @@
+{
+  "schema_version": "1.0.0",
+  "document_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc",
+  "source": {
+    "path": "OPTCON-RL_introduction_optimal_control_2026_09_14.pdf",
+    "filename": "OPTCON-RL_introduction_optimal_control_2026_09_14.pdf",
+    "sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+    "size_bytes": 2298470
+  },
+  "page_count": 36,
+  "metadata": {
+    "format": "PDF 1.5",
+    "title": "Optimal Control and Reinforcement Learning  Introduction to Optimal Control",
+    "author": "Giuseppe Notarstefano",
+    "subject": "",
+    "keywords": "",
+    "creator": "LaTeX with Beamer class",
+    "producer": "pdfTeX-1.40.25",
+    "creationDate": "D:20260914112231+02'00'",
+    "modDate": "D:20260914112231+02'00'",
+    "trapped": "",
+    "encryption": null
+  },
+  "pdf_page_label_rules": [
+    {
+      "startpage": 0,
+      "prefix": "<FEFF0030>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 1,
+      "prefix": "<FEFF0031>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 2,
+      "prefix": "<FEFF0032>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 3,
+      "prefix": "<FEFF0033>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 4,
+      "prefix": "<FEFF0034>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 5,
+      "prefix": "<FEFF0035>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 6,
+      "prefix": "<FEFF0036>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 7,
+      "prefix": "<FEFF0037>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 8,
+      "prefix": "<FEFF0038>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 9,
+      "prefix": "<FEFF0039>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 10,
+      "prefix": "<FEFF00310030>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 11,
+      "prefix": "<FEFF00310031>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 12,
+      "prefix": "<FEFF00310032>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 13,
+      "prefix": "<FEFF00310033>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 14,
+      "prefix": "<FEFF00310034>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 15,
+      "prefix": "<FEFF00310035>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 16,
+      "prefix": "<FEFF00310036>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 17,
+      "prefix": "<FEFF00310037>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 18,
+      "prefix": "<FEFF00310038>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 19,
+      "prefix": "<FEFF00310039>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 20,
+      "prefix": "<FEFF00320030>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 21,
+      "prefix": "<FEFF00320031>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 22,
+      "prefix": "<FEFF00320032>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 23,
+      "prefix": "<FEFF00320033>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 24,
+      "prefix": "<FEFF00320034>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 25,
+      "prefix": "<FEFF00320035>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 26,
+      "prefix": "<FEFF00320036>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 27,
+      "prefix": "<FEFF00320037>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 28,
+      "prefix": "<FEFF00320038>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 29,
+      "prefix": "<FEFF00320039>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 30,
+      "prefix": "<FEFF00330030>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 31,
+      "prefix": "<FEFF00330031>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 32,
+      "prefix": "<FEFF00330032>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 33,
+      "prefix": "<FEFF00330033>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 34,
+      "prefix": "<FEFF00330034>",
+      "firstpagenum": 1
+    },
+    {
+      "startpage": 35,
+      "prefix": "<FEFF00330035>",
+      "firstpagenum": 1
+    }
+  ],
+  "config": {
+    "pipeline_version": "1.0.0",
+    "dpi": 144,
+    "renderer": "PyMuPDF",
+    "pymupdf_version": "1.28.2",
+    "pillow_version": "12.3.0",
+    "relations_algorithm": "text-visual-v1",
+    "thresholds": {
+      "min_body_tokens": 8,
+      "near_text_jaccard": 0.88,
+      "near_visual_difference": 0.075,
+      "progressive_containment": 0.8,
+      "progressive_visual_difference": 0.14
+    }
+  },
+  "created_at": "2026-10-17T14:32:53.755276+00:00",
+  "pages": [
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0001",
+      "physical_page_number": 1,
+      "pdf_label": "0",
+      "title": "Optimal Control and Reinforcement Learning",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0001/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0002",
+      "physical_page_number": 2,
+      "pdf_label": "1",
+      "title": "Optimal Control",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0002/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0003",
+      "physical_page_number": 3,
+      "pdf_label": "2",
+      "title": "Optimal Control: motivating domains",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0003/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0004",
+      "physical_page_number": 4,
+      "pdf_label": "3",
+      "title": "Optimal Control: motivating domains",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0004/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0005",
+      "physical_page_number": 5,
+      "pdf_label": "4",
+      "title": "Optimal Control: motivating domains",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0005/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0006",
+      "physical_page_number": 6,
+      "pdf_label": "5",
+      "title": "Optimal Control: motivating domains",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0006/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0007",
+      "physical_page_number": 7,
+      "pdf_label": "6",
+      "title": "Optimal Control: motivating domains",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0007/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0008",
+      "physical_page_number": 8,
+      "pdf_label": "7",
+      "title": "Continuous-time control systems",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0008/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0009",
+      "physical_page_number": 9,
+      "pdf_label": "8",
+      "title": "Discrete-time control systems and notation",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0009/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0010",
+      "physical_page_number": 10,
+      "pdf_label": "9",
+      "title": "Discrete-time control systems and notation",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0010/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0011",
+      "physical_page_number": 11,
+      "pdf_label": "10",
+      "title": "System trajectories",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0011/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0012",
+      "physical_page_number": 12,
+      "pdf_label": "11",
+      "title": "Linearization of a system about a trajectory",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0012/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0013",
+      "physical_page_number": 13,
+      "pdf_label": "12",
+      "title": "Recall some tools for nonlinear systems analysis and control",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0013/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0014",
+      "physical_page_number": 14,
+      "pdf_label": "13",
+      "title": "Optimization: main ingredients",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0014/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0015",
+      "physical_page_number": 15,
+      "pdf_label": "14",
+      "title": "Example of cost function: scalar set up",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0015/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0016",
+      "physical_page_number": 16,
+      "pdf_label": "15",
+      "title": "Example of cost function: vector set up",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0016/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0017",
+      "physical_page_number": 17,
+      "pdf_label": "16",
+      "title": "Examples of constraint sets",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0017/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0018",
+      "physical_page_number": 18,
+      "pdf_label": "17",
+      "title": "Optimization problem (minimization)",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0018/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0019",
+      "physical_page_number": 19,
+      "pdf_label": "18",
+      "title": "Discrete-time optimal control: main ingredients (I)",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0019/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0020",
+      "physical_page_number": 20,
+      "pdf_label": "19",
+      "title": "Discrete-time optimal control: main ingredients (II)",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0020/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0021",
+      "physical_page_number": 21,
+      "pdf_label": "20",
+      "title": "Discrete-time optimal control: main ingredients (III)",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0021/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0022",
+      "physical_page_number": 22,
+      "pdf_label": "21",
+      "title": "Cost function: examples",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0022/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0023",
+      "physical_page_number": 23,
+      "pdf_label": "22",
+      "title": "Discrete-time optimal control problem",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0023/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0024",
+      "physical_page_number": 24,
+      "pdf_label": "23",
+      "title": "Trajectory generation",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0024/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0025",
+      "physical_page_number": 25,
+      "pdf_label": "24",
+      "title": "Optimal control for trajectory generation",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0025/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0026",
+      "physical_page_number": 26,
+      "pdf_label": "25",
+      "title": "Trajectory generation for an autonomous drone",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0026/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0027",
+      "physical_page_number": 27,
+      "pdf_label": "26",
+      "title": "Example: trajectory generation for an autonomous drone (I)",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0027/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0028",
+      "physical_page_number": 28,
+      "pdf_label": "27",
+      "title": "Example: trajectory generation for an autonomous drone (II)",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0028/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0029",
+      "physical_page_number": 29,
+      "pdf_label": "28",
+      "title": "Example: trajectory generation for an autonomous drone (III)",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0029/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0030",
+      "physical_page_number": 30,
+      "pdf_label": "29",
+      "title": "Example: path constraints",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0030/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0031",
+      "physical_page_number": 31,
+      "pdf_label": "30",
+      "title": "Continuous-time Optimal Control problem (I)",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0031/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0032",
+      "physical_page_number": 32,
+      "pdf_label": "31",
+      "title": "Continuous-time Optimal Control problem (II)",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0032/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0033",
+      "physical_page_number": 33,
+      "pdf_label": "32",
+      "title": "Example: trajectory generation for a pendulum (I)",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0033/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0034",
+      "physical_page_number": 34,
+      "pdf_label": "33",
+      "title": "Example: trajectory generation for a pendulum (II)",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0034/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0035",
+      "physical_page_number": 35,
+      "pdf_label": "34",
+      "title": "Example: trajectory generation for a pendulum (III)",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0035/page_spec.json"
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0036",
+      "physical_page_number": 36,
+      "pdf_label": "35",
+      "title": "Example: trajectory generation for a pendulum (IV)",
+      "spec_path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0036/page_spec.json"
+    }
+  ],
+  "relation_groups": [
+    {
+      "group_id": "group-0001",
+      "page_ids": [
+        "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0006",
+        "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0007"
+      ],
+      "status": "candidate_cluster",
+      "collapse_pages": false
+    }
+  ],
+  "coverage": {
+    "extracted_pages": 36,
+    "rendered_pages": 36
+  }
+}

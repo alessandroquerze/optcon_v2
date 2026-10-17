@@ -1,0 +1,131 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0062",
+  "document_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1",
+  "source": {
+    "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+    "page_index": 61,
+    "physical_page_number": 62,
+    "pdf_label_raw": "<FEFF00350035>",
+    "pdf_label": "55",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Karush-Kuhn-Tucker (KKT) necessary conditions",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      297.9358825683594,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 55,
+        "total": 73,
+        "raw": "55 |73",
+        "bbox": [
+          150.6879425048828,
+          247.9285888671875,
+          447.87115478515625,
+          258.29376220703125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0062/text.txt",
+      "sha256": "56cec7f65d2dd0a10c39797eb72a8cef88bef8c4aecb640e4a75f23e5d2ab3a9"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0062/text.reading-order.txt",
+      "sha256": "0cce3a17d7fac18820842e380ef762ad389145e872666613f65aabb7d7ef519b"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0062/layout.json",
+      "sha256": "c5d4e7f2a5e2ae65f2d395effb6ef4a32374b5bc730c21a912a08d66b71d3dbc"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0062/render.png",
+      "sha256": "bcf1e4465d80671152920a345b4717fc704f554c60a8d9b9b8daad38b9cabfc9",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "272b845707c5c83572b8ceab44a64317383adf2b87f2702e6a54474d381106e1"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0061",
+    "next_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0063"
+  },
+  "relations": [
+    {
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0061",
+      "kind": "progressive_candidate",
+      "confidence": 0.9,
+      "review_status": "candidate",
+      "reason": "Etichetta PDF ripetuta su pagine adiacenti con raster differenti: possibile overlay, da verificare anche a testo identico.",
+      "metrics": {
+        "text_jaccard": 0.770186,
+        "text_containment": 0.911765,
+        "left_tokens": 136,
+        "right_tokens": 149,
+        "visual_difference": 0.007806,
+        "ink_overlap": 0.70297,
+        "dhash_distance": 4
+      },
+      "delta_in_physical_order": {
+        "text": {
+          "added_lines": [
+            "Notation Points satisfying the KKT necessary conditions of optimality are referred to as KKT points.",
+            "They are the counterpart of stationary points in constrained optimization."
+          ],
+          "removed_lines": [
+            "Remark If ℓ, hi and gj twice differentiable, second order conditions."
+          ],
+          "semantic_interpretation": "pending_visual_analysis"
+        },
+        "visual": {
+          "changed_bbox_px": [
+            57,
+            419,
+            835,
+            458
+          ],
+          "pixel_threshold": 16,
+          "changed_pixel_fraction": 0.016395
+        }
+      }
+    }
+  ],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "pending",
+    "result": null
+  }
+}

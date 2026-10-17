@@ -1,0 +1,10 @@
+System linearization and tangent hyperplane
+Let (¯x, ¯u) ∈T be a trajectory of the system, i.e., a point on the trajectory manifold T .
+µ
+α
+T
+T(¯x,¯u)T
+(¯x, ¯u)
+The tangent space to T at a given trajectory (point) (¯x, ¯u), denoted as T(¯x,¯u)T , is the set of trajectories
+satisfying the linearization of xt+1 = ft(xt, ut) about the trajectory (¯x, ¯u).
+Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Optimality Conditions for Optimal Control 5 |18

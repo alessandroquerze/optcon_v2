@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0056",
+  "document_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1",
+  "source": {
+    "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+    "page_index": 55,
+    "physical_page_number": 56,
+    "pdf_label_raw": "<FEFF00350032>",
+    "pdf_label": "52",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Constrained optimization problem set-up",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      248.21202087402344,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 52,
+        "total": 73,
+        "raw": "52 |73",
+        "bbox": [
+          150.68800354003906,
+          247.92860412597656,
+          447.8712158203125,
+          258.29376220703125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0056/text.txt",
+      "sha256": "343588a55c789c4736fabaa179f6a50c01600751bd1e98413766517e9bd2821a"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0056/text.reading-order.txt",
+      "sha256": "8f4135771565910cd4c053d9405c4b120e5c633d8bf37aff4cea43ffcee8c55b"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0056/layout.json",
+      "sha256": "8767825b7b01332e175d2d2cb99d531184264005043846298b905cf2a9f2221d"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0056/render.png",
+      "sha256": "fef177bce760a616cf4ddf7f6412662854e47d6b8bb6d1532abc5ac57d3ee269",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "d21648d92ffc7a74b4523ee813a2d48cf44d69edb7fda4900b5e442c3d46f01c"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0055",
+    "next_page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0057"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "pending_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "pending",
+    "result": null
+  }
+}

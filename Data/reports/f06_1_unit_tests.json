@@ -1,0 +1,320 @@
+{
+  "verified_at": "2026-10-17T21:43:49.884924+00:00",
+  "success": true,
+  "tests": 78,
+  "passed": 78,
+  "assertions": [
+    {
+      "name": "single source of truth limita 0 a 1",
+      "status": "passed"
+    },
+    {
+      "name": "single source of truth limita 37 a 36",
+      "status": "passed"
+    },
+    {
+      "name": "single source of truth limita -5 a 1",
+      "status": "passed"
+    },
+    {
+      "name": "single source of truth limita 12 a 12",
+      "status": "passed"
+    },
+    {
+      "name": "single source of truth limita NaN a 1",
+      "status": "passed"
+    },
+    {
+      "name": "single source of truth interpreta jump interi con bounds e rifiuta testo/decimali",
+      "status": "passed"
+    },
+    {
+      "name": "single source of truth sincronizza due consumer, Next, Previous e jump",
+      "status": "passed"
+    },
+    {
+      "name": "single source of truth non oltrepassa prima e ultima pagina",
+      "status": "passed"
+    },
+    {
+      "name": "contratto permanente delle spiegazioni matematiche limita il catalogo alle otto companion esistenti",
+      "status": "passed"
+    },
+    {
+      "name": "contratto permanente delle spiegazioni matematiche p2: copertura della fonte, provenienza e riferimenti risolvibili",
+      "status": "passed"
+    },
+    {
+      "name": "contratto permanente delle spiegazioni matematiche p8: copertura della fonte, provenienza e riferimenti risolvibili",
+      "status": "passed"
+    },
+    {
+      "name": "contratto permanente delle spiegazioni matematiche p12: copertura della fonte, provenienza e riferimenti risolvibili",
+      "status": "passed"
+    },
+    {
+      "name": "contratto permanente delle spiegazioni matematiche p16: copertura della fonte, provenienza e riferimenti risolvibili",
+      "status": "passed"
+    },
+    {
+      "name": "contratto permanente delle spiegazioni matematiche p17: copertura della fonte, provenienza e riferimenti risolvibili",
+      "status": "passed"
+    },
+    {
+      "name": "contratto permanente delle spiegazioni matematiche p27: copertura della fonte, provenienza e riferimenti risolvibili",
+      "status": "passed"
+    },
+    {
+      "name": "contratto permanente delle spiegazioni matematiche p30: copertura della fonte, provenienza e riferimenti risolvibili",
+      "status": "passed"
+    },
+    {
+      "name": "contratto permanente delle spiegazioni matematiche p34: copertura della fonte, provenienza e riferimenti risolvibili",
+      "status": "passed"
+    },
+    {
+      "name": "contratto permanente delle spiegazioni matematiche rifiuta espressioni non censite, anziché aggiungere una spiegazione generica",
+      "status": "passed"
+    },
+    {
+      "name": "contratto permanente delle spiegazioni matematiche mantiene esclusivamente le tre correzioni F03 autorizzate",
+      "status": "passed"
+    },
+    {
+      "name": "F06 registra soltanto le otto pagine autorizzate; le altre 28 restano placeholder",
+      "status": "passed"
+    },
+    {
+      "name": "componenti riusabili renderizza KaTeX e la rappresentazione MathML",
+      "status": "passed"
+    },
+    {
+      "name": "componenti riusabili segnala una formula non valida senza nascondere l’errore",
+      "status": "passed"
+    },
+    {
+      "name": "componenti riusabili mostra solo warning pertinenti, senza motivazioni editoriali",
+      "status": "passed"
+    },
+    {
+      "name": "componenti riusabili NO_WARNING non produce UI",
+      "status": "passed"
+    },
+    {
+      "name": "componenti riusabili accetta input fuori dalla griglia slider, ma nel dominio",
+      "status": "passed"
+    },
+    {
+      "name": "componenti riusabili rifiuta valori infiniti, fuori dominio e non interi",
+      "status": "passed"
+    },
+    {
+      "name": "componenti riusabili gestisce parametri discreti",
+      "status": "passed"
+    },
+    {
+      "name": "componenti riusabili compone blocchi nell’ordine dell’archetipo senza contenuto di pagina hardcoded",
+      "status": "passed"
+    },
+    {
+      "name": "componenti riusabili timeline T=1 include x0,x1 e solo u0",
+      "status": "passed"
+    },
+    {
+      "name": "ExplainedEquation mostra il concetto senza richiedere interazione e rende espandibili i dettagli",
+      "status": "passed"
+    },
+    {
+      "name": "ExplainedEquation non accetta una spiegazione vuota o solo spazi",
+      "status": "passed"
+    },
+    {
+      "name": "ExplainedEquation tratta le spiegazioni come testo, senza HTML eseguibile",
+      "status": "passed"
+    },
+    {
+      "name": "ExplainedEquation può spiegare un risultato o una formula già presente nel contesto",
+      "status": "passed"
+    },
+    {
+      "name": "ExplainedEquation spezza soltanto la presentazione di formule lunghe conservando simboli e termini",
+      "status": "passed"
+    },
+    {
+      "name": "manifest F04.1 reale indicizza tutte le 36 pagine fisiche",
+      "status": "passed"
+    },
+    {
+      "name": "manifest F04.1 reale legge modalità, semantica, camera e interattività F04.1",
+      "status": "passed"
+    },
+    {
+      "name": "manifest F04.1 reale rifiuta una pagina mancante",
+      "status": "passed"
+    },
+    {
+      "name": "manifest F04.1 reale rifiuta indici fisici duplicati",
+      "status": "passed"
+    },
+    {
+      "name": "manifest F04.1 reale rifiuta 3D senza un terzo asse",
+      "status": "passed"
+    },
+    {
+      "name": "manifest F04.1 reale proietta soltanto i campi UI autorizzati di F03",
+      "status": "passed"
+    },
+    {
+      "name": "manifest F04.1 reale rifiuta warning aggiunti a NO_WARNING",
+      "status": "passed"
+    },
+    {
+      "name": "oracoli indipendenti della vertical slice p8: soluzione esatta, condizione iniziale, integratore ed equilibrio",
+      "status": "passed"
+    },
+    {
+      "name": "oracoli indipendenti della vertical slice p12: nominale coerente, Jacobiani e oracle .21/.2/.01",
+      "status": "passed"
+    },
+    {
+      "name": "oracoli indipendenti della vertical slice p12: perturbazioni (-0.25,-0.1), errore quadratico",
+      "status": "passed"
+    },
+    {
+      "name": "oracoli indipendenti della vertical slice p12: perturbazioni (0,0.1), errore quadratico",
+      "status": "passed"
+    },
+    {
+      "name": "oracoli indipendenti della vertical slice p12: perturbazioni (0.25,0.1), errore quadratico",
+      "status": "passed"
+    },
+    {
+      "name": "oracoli indipendenti della vertical slice p16: secondo contributo w2, pesi degeneri e simmetria",
+      "status": "passed"
+    },
+    {
+      "name": "oracoli indipendenti della vertical slice p17: i tre punti testano interno, bordo ed esterno",
+      "status": "passed"
+    },
+    {
+      "name": "oracoli indipendenti della vertical slice p17: casi degeneri e non limitati non etichettati come ellissi",
+      "status": "passed"
+    },
+    {
+      "name": "oracoli indipendenti della vertical slice p27: dinamica planare, hover e segni delle accelerazioni",
+      "status": "passed"
+    },
+    {
+      "name": "oracoli indipendenti della vertical slice p27: Euler simultaneo e confronto analitico a durata fissa",
+      "status": "passed"
+    },
+    {
+      "name": "oracoli indipendenti della vertical slice p30: T=1 non crea u1; residui, bordo e insieme vuoto",
+      "status": "passed"
+    },
+    {
+      "name": "oracoli indipendenti della vertical slice p34: equilibrio 0, velocità nulla e residui nulli",
+      "status": "passed"
+    },
+    {
+      "name": "oracoli indipendenti della vertical slice p34: equilibrio 0.5235987755982988, velocità nulla e residui nulli",
+      "status": "passed"
+    },
+    {
+      "name": "oracoli indipendenti della vertical slice p34: equilibrio -1.5707963267948966, velocità nulla e residui nulli",
+      "status": "passed"
+    },
+    {
+      "name": "oracoli indipendenti della vertical slice p34: π/6 richiede 4.905; senza coppia non è equilibrio",
+      "status": "passed"
+    },
+    {
+      "name": "p8: la sezione e la famiglia usano la stessa soluzione analitica",
+      "status": "passed"
+    },
+    {
+      "name": "p12: superficie e piano contengono esattamente l’oracolo nella griglia",
+      "status": "passed"
+    },
+    {
+      "name": "p16: contour e surface ricevono la stessa griglia corretta al punto candidato",
+      "status": "passed"
+    },
+    {
+      "name": "p17: maschera = segno del residuo, anche nei casi degeneri",
+      "status": "passed"
+    },
+    {
+      "name": "p27: ID temporali condivisi, terza coordinata è la velocità esistente",
+      "status": "passed"
+    },
+    {
+      "name": "p30: la famiglia dei limiti restituisce .2 a quota 3.2, min=1, max=3",
+      "status": "passed"
+    },
+    {
+      "name": "p34: tutto il luogo di equilibrio ha velocità esattamente zero",
+      "status": "passed"
+    },
+    {
+      "name": "matematica indipendente dalla UI usa ogni peso sulla coordinata corretta e richiede scala esplicita",
+      "status": "passed"
+    },
+    {
+      "name": "matematica indipendente dalla UI rifiuta dimensioni o pesi non validi",
+      "status": "passed"
+    },
+    {
+      "name": "matematica indipendente dalla UI linearizza variazioni con Jacobiani forniti dal modello",
+      "status": "passed"
+    },
+    {
+      "name": "matematica indipendente dalla UI mantiene distinti ingressi e stati previsti",
+      "status": "passed"
+    },
+    {
+      "name": "matematica indipendente dalla UI riconosce bordo, violazione e intervallo vuoto senza riordinare limiti",
+      "status": "passed"
+    },
+    {
+      "name": "matematica indipendente dalla UI Euler usa simultaneamente il vecchio stato",
+      "status": "passed"
+    },
+    {
+      "name": "matematica indipendente dalla UI campiona superfici senza inventare valori in punti non definiti",
+      "status": "passed"
+    },
+    {
+      "name": "matematica indipendente dalla UI preserva ID e dimensioni nelle proiezioni",
+      "status": "passed"
+    },
+    {
+      "name": "una mutazione del backend non raggiunge i dati matematici",
+      "status": "passed"
+    },
+    {
+      "name": "un punto aggiornato non invalida il buffer di una superficie invariata",
+      "status": "passed"
+    },
+    {
+      "name": "foundation 2D/3D rispetta la vista primaria definita dalla policy",
+      "status": "passed"
+    },
+    {
+      "name": "foundation 2D/3D toggle cambia vista senza alterare dati",
+      "status": "passed"
+    },
+    {
+      "name": "foundation 2D/3D offre entrambe le viste affiancate",
+      "status": "passed"
+    },
+    {
+      "name": "foundation 2D/3D aggiorna la policy passando a una pagina esclusivamente 2D",
+      "status": "passed"
+    },
+    {
+      "name": "foundation 2D/3D sincronizza selezione fra consumer 2D e 3D",
+      "status": "passed"
+    }
+  ]
+}

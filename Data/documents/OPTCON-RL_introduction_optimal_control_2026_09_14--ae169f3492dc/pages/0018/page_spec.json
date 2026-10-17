@@ -1,0 +1,653 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0018",
+  "document_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc",
+  "source": {
+    "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+    "page_index": 17,
+    "physical_page_number": 18,
+    "pdf_label_raw": "<FEFF00310037>",
+    "pdf_label": "17",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Optimization problem (minimization)",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      227.6395263671875,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 17,
+        "total": 35,
+        "raw": "17 |35",
+        "bbox": [
+          126.9540023803711,
+          247.92860412597656,
+          447.8712158203125,
+          258.29376220703125
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0018/text.txt",
+      "sha256": "6e2254f2108804140032e8b5c26715810e2304f3de8c292ae12f99acefecc7f0"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0018/text.reading-order.txt",
+      "sha256": "c346753227a1d0a98c1d840d6ed0f5860f7b2cf9c4fca2213d5e7ce4c816e4c0"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0018/layout.json",
+      "sha256": "d1958d1e9ec47e978006bfacc3f030c55c9c45539577ab1d496626053154b104"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0018/render.png",
+      "sha256": "bba30c958653425e9953c194d94f2e9c52cd8c71ad7a72a0d0ee128f634b8da7",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "5c799b3b9e34f026aa67c19afa6c35afe9151a9216f8727e72636178e6f06605"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0017",
+    "next_page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0019"
+  },
+  "relations": [],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "proposed_after_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "cf18c464f4ea573628a2f8929b24a01965b12173d2e9a1f141c280b28694d705",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0018",
+      "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+      "artifact_sha256": {
+        "text": "6e2254f2108804140032e8b5c26715810e2304f3de8c292ae12f99acefecc7f0",
+        "layout": "d1958d1e9ec47e978006bfacc3f030c55c9c45539577ab1d496626053154b104",
+        "render": "bba30c958653425e9953c194d94f2e9c52cd8c71ad7a72a0d0ee128f634b8da7"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "Codex (identificatore esatto del modello non esposto nella sessione)",
+        "run_id": "page-analysis-ce370a19242e4173828aef04d60c36ee"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0018",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0017",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0019"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0018",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0017",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0019"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0018",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0017",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0019"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Optimization problem (minimization)",
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "La fonte non dà algoritmo, condizioni KKT, convessità, esistenza o unicità del minimo.",
+          "I domini sono ora tutti Rᵈ; ciò non autorizza a riscrivere retroattivamente il n stampato a pagina 14."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Decisione, costo e vincoli",
+            "why": "Introdotti separatamente nelle pagine precedenti.",
+            "origin": "source_context",
+            "page_numbers": [
+              14,
+              15,
+              16,
+              17
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\begin{aligned}\\min_{z\\in\\mathbb{R}^d}\\;&\\ell(z)\\\\\\text{subj.to }&h_i(z)=0,\\quad i=1,\\ldots,m\\\\&g_j(z)\\leq0,\\quad j=1,\\ldots,r\\end{aligned}",
+            "anchor": "We can write our optimization problem as",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          },
+          {
+            "latex": "h_i:\\mathbb{R}^d\\to\\mathbb{R},\\quad g_j:\\mathbb{R}^d\\to\\mathbb{R}",
+            "anchor": "where hi : Rd",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          },
+          {
+            "latex": "\\begin{aligned}\\min_{z\\in\\mathbb{R}^d}\\;&\\ell(z)\\\\\\text{subj.to }&h(z)=0\\\\&g(z)\\leq0\\end{aligned}",
+            "anchor": "We can write it more compactly",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          },
+          {
+            "latex": "h:\\mathbb{R}^d\\to\\mathbb{R}^m,\\quad g:\\mathbb{R}^d\\to\\mathbb{R}^r",
+            "anchor": "where h : Rd",
+            "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "example-1",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "Enrichment scalare: min ℓ(z)=½(z−z̄)² soggetto a z−b≤0, con z̄=2 e b=1.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Muovere il riferimento e il bordo mostra il passaggio fra vincolo inattivo e attivo.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03"
+            ]
+          },
+          {
+            "id": "visualization",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Parabola e semiretta ammissibile, con minimo libero e minimo vincolato distinti.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Mostrare perché il minimo vincolato può stare sul bordo.",
+            "setup": "Enrichment scalare: min ℓ(z)=½(z−z̄)² soggetto a z−b≤0, con z̄=2 e b=1.",
+            "parameters": [
+              {
+                "symbol": "\\bar z",
+                "value": "2"
+              },
+              {
+                "symbol": "b",
+                "value": "1"
+              }
+            ],
+            "derivation": [
+              "Il minimo senza vincolo è z=2, ma non è ammissibile.",
+              "L'ammissibile più vicino a 2 è z=1.",
+              "Il costo al minimo vincolato è ½(1−2)²=0.5."
+            ],
+            "expected_outcome": "Per questo esempio z*=min(z̄,b); è un risultato dell'esempio, non un teorema enunciato dalla fonte.",
+            "limitations": [
+              "Costo, vincolo e soluzione esplicita sono enrichment.",
+              "Non estendere la regola min a problemi generali."
+            ],
+            "enrichment_id": "example-1",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "ConstrainedScalarMinimumPlot",
+          "description": "Parabola e semiretta ammissibile, con minimo libero e minimo vincolato distinti.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "s01",
+            "s02",
+            "s03"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Muovere il riferimento e il bordo mostra il passaggio fra vincolo inattivo e attivo.",
+          "component": "ScalarConstrainedOptimumExplorer",
+          "parameters": [
+            {
+              "name": "Riferimento",
+              "symbol": "\\bar z",
+              "origin": "enrichment",
+              "range": "[−2,2]",
+              "default": "2",
+              "effect_on_change": "Traslare il costo e ricalcolare z*=min(z̄,b) e il valore ottimo.",
+              "edge_cases": [
+                "z̄=b: minimo sul bordo con costo zero"
+              ]
+            },
+            {
+              "name": "Limite superiore",
+              "symbol": "b",
+              "origin": "enrichment",
+              "range": "[−2,2]",
+              "default": "1",
+              "effect_on_change": "Spostare la regione z≤b, aggiornare fattibilità del minimo libero e soluzione dell'esempio.",
+              "edge_cases": [
+                "b<z̄: bordo attivo"
+              ]
+            }
+          ],
+          "outputs": [
+            "Regione ammissibile",
+            "z* e ℓ(z*)",
+            "Indicatore di vincolo attivo"
+          ],
+          "invariants": [
+            "Il problema generale della fonte resta simbolico",
+            "Solo la famiglia scalare aggiunta è risolta",
+            "Il singolo limite superiore non rende vuota R"
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "Problema generale infeasible",
+            "expected_behavior": "Non mostrare un minimizzatore.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03"
+            ]
+          },
+          {
+            "case": "Costo illimitato inferiormente o infimo non raggiunto",
+            "expected_behavior": "Non confondere la scrittura min della fonte con una garanzia di esistenza.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03"
+            ]
+          },
+          {
+            "case": "g(z)=0",
+            "expected_behavior": "Il bordo è incluso dalla disuguaglianza non stretta.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03"
+            ]
+          }
+        ],
+        "expansion_rationale": "Le forme estesa e compatta esprimono un solo problema; il confronto grafico resta un esempio dello stesso concetto.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Minimizzare ℓ fra decisioni che soddisfano tutte le uguaglianze e disuguaglianze.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03"
+            ],
+            "enrichment_ids": [
+              "example-1",
+              "interaction",
+              "visualization"
+            ]
+          }
+        ]
+      },
+      "observations": [
+        {
+          "id": "s01",
+          "category": "equation",
+          "description": "Il problema è min su z∈Rᵈ di ℓ(z), soggetto a hᵢ(z)=0, i=1,…,m, e gⱼ(z)≤0, j=1,…,r.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0018",
+            "modality": "both",
+            "text_quote": "We can write our optimization problem as",
+            "bbox": [
+              27,
+              34,
+              330,
+              118
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s02",
+          "category": "definition",
+          "description": "hᵢ e gⱼ hanno dominio Rᵈ e valori reali; la forma compatta usa h:Rᵈ→Rᵐ e g:Rᵈ→Rʳ.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0018",
+            "modality": "both",
+            "text_quote": "where h : Rd →Rm and g : Rd →Rr.",
+            "bbox": [
+              27,
+              205,
+              310,
+              220
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s03",
+          "category": "equation",
+          "description": "La seconda formulazione impila i vincoli come h(z)=0 e g(z)≤0 senza cambiare il costo né il dominio decisionale.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0018",
+            "modality": "both",
+            "text_quote": "We can write it more compactly as",
+            "bbox": [
+              27,
+              133,
+              320,
+              197
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-04",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Optimization problem (minimization)",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0018",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              10.35200023651123,
+              6.720991134643555,
+              227.6395263671875,
+              21.06719207763672
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-05",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 17 |35",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0018",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              126.9540023803711,
+              247.92860412597656,
+              447.8712158203125,
+              255.1179962158203
+            ]
+          },
+          "confidence": 0.98
+        }
+      ],
+      "contextual_role": "Combina gli ingredienti separati delle pagine 14–17 in un problema completo di minimizzazione.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0017",
+          "role": "previous",
+          "note": "La pagina 17 mostra esempi di insiemi ammissibili senza costo."
+        },
+        {
+          "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0019",
+          "role": "next",
+          "note": "La pagina 19 riporta il quadro all'optimal control, dove la dinamica stessa genera uguaglianze."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "z",
+          "meaning": "Decisione in Rᵈ",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03"
+          ]
+        },
+        {
+          "symbol": "\\ell",
+          "meaning": "Costo da minimizzare",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03"
+          ]
+        },
+        {
+          "symbol": "h",
+          "meaning": "Stack di m uguaglianze",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03"
+          ]
+        },
+        {
+          "symbol": "g",
+          "meaning": "Stack di r disuguaglianze, lette componente per componente",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03"
+          ]
+        },
+        {
+          "symbol": "\\mathrm{subj.to}",
+          "meaning": "Soggetto ai vincoli elencati",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "s01",
+          "s02",
+          "s03"
+        ],
+        "rationale": "Pagina con contenuto autonomo nella sequenza; nessun candidato automatico da confermare."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              10.35200023651123,
+              6.720991134643555,
+              227.6395263671875,
+              21.06719207763672
+            ],
+            "description": "Regione testuale sorgente: Optimization problem (minimization)",
+            "observation_ids": [
+              "transcription-04"
+            ]
+          },
+          {
+            "bbox": [
+              28.34600067138672,
+              35.43647766113281,
+              190.5302276611328,
+              44.40287780761719
+            ],
+            "description": "Regione testuale sorgente: We can write our optimization problem as",
+            "observation_ids": [
+              "s01"
+            ]
+          },
+          {
+            "bbox": [
+              167.79200744628906,
+              54.365478515625,
+              205.84056091308594,
+              73.70877075195312
+            ],
+            "description": "Regione testuale sorgente: min\nz∈Rd ℓ(z)",
+            "observation_ids": [
+              "s01"
+            ]
+          },
+          {
+            "bbox": [
+              159.0679931640625,
+              74.21347045898438,
+              294.498779296875,
+              83.71139526367188
+            ],
+            "description": "Regione testuale sorgente: subj.to hi(z) = 0\ni = 1, . . . , m",
+            "observation_ids": [
+              "s01"
+            ]
+          },
+          {
+            "bbox": [
+              190.1909942626953,
+              88.04427337646484,
+              291.4886169433594,
+              97.65939331054688
+            ],
+            "description": "Regione testuale sorgente: gj(z) ≤0\nj = 1, . . . , r",
+            "observation_ids": [
+              "s01"
+            ]
+          },
+          {
+            "bbox": [
+              28.345993041992188,
+              104.44927215576172,
+              171.84637451171875,
+              118.33787536621094
+            ],
+            "description": "Regione testuale sorgente: where hi : Rd →R and gj : Rd →R.",
+            "observation_ids": [
+              "s01"
+            ]
+          },
+          {
+            "bbox": [
+              28.345977783203125,
+              135.2744903564453,
+              163.16476440429688,
+              144.2408905029297
+            ],
+            "description": "Regione testuale sorgente: We can write it more compactly as",
+            "observation_ids": [
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              202.91098022460938,
+              154.20347595214844,
+              240.95953369140625,
+              173.54676818847656
+            ],
+            "description": "Regione testuale sorgente: min\nz∈Rd ℓ(z)",
+            "observation_ids": [
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              194.1869659423828,
+              174.05047607421875,
+              259.3572082519531,
+              183.01687622070312
+            ],
+            "description": "Regione testuale sorgente: subj.to h(z) = 0",
+            "observation_ids": [
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              225.30996704101562,
+              187.88226318359375,
+              258.7626953125,
+              196.96487426757812
+            ],
+            "description": "Regione testuale sorgente: g(z) ≤0",
+            "observation_ids": [
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              28.345977783203125,
+              204.28726196289062,
+              176.29737854003906,
+              217.1788787841797
+            ],
+            "description": "Regione testuale sorgente: where h : Rd →Rm and g : Rd →Rr.",
+            "observation_ids": [
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              126.9540023803711,
+              247.92860412597656,
+              447.8712158203125,
+              255.1179962158203
+            ],
+            "description": "Regione testuale sorgente: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 17 |35",
+            "observation_ids": [
+              "transcription-05"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Le forme estesa e compatta esprimono un solo problema; il confronto grafico resta un esempio dello stesso concetto.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
+}

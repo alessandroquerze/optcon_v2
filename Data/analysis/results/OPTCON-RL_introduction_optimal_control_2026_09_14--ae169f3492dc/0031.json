@@ -1,0 +1,740 @@
+{
+  "protocol_version": "1.0.0",
+  "request_sha256": "91cfde35ed3f32018af17e5ac2ffa60ce84d4e419c340b4ace1013be301bae4b",
+  "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0031",
+  "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+  "artifact_sha256": {
+    "text": "b50618150a49f32c6fdc5ada4bb02dc7b3bf36351b727bfa6f160d282b99df65",
+    "layout": "f99f69c28a61b021448810191588ce4452ff4f64e10bc932884683dc492ab184",
+    "render": "19007dff58337e8546af7da63cdce46d32969e656a9c3f00a836925f298edef3"
+  },
+  "agent": {
+    "provider": "OpenAI",
+    "model": "Codex (identificatore esatto del modello non esposto nella sessione)",
+    "run_id": "page-analysis-ce370a19242e4173828aef04d60c36ee"
+  },
+  "inspection": {
+    "text_page_ids": [
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0031",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0030",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0032"
+    ],
+    "layout_page_ids": [
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0031",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0030",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0032"
+    ],
+    "image_page_ids": [
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0031",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0030",
+      "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0032"
+    ],
+    "source_content_treated_as_data": true
+  },
+  "title": "Continuous-time Optimal Control problem (I)",
+  "companionPageCount": 1,
+  "didactic_plan": {
+    "source_scope_limits": [
+      "La fonte non specifica regolarità, norma o topologia di 𝓕; non assumere che trajectory manifold sia una dimostrazione di struttura differenziabile.",
+      "L'intervallo dei path constraints è [0,T), distinto da [0,T] della dinamica.",
+      "Le parentesi in più vengono conservate e segnalate, senza cambiare i simboli della formula.",
+      "Tempo finale T e insieme 𝓣 non sono lo stesso oggetto."
+    ],
+    "prerequisites": [
+      {
+        "concept": "ODE e uscita di stato",
+        "why": "Per il vincolo dinamico continuo.",
+        "origin": "source_context",
+        "page_numbers": [
+          8
+        ]
+      },
+      {
+        "concept": "OCP discreto",
+        "why": "Aiuta a confrontare somma e integrale, senza confonderli.",
+        "origin": "source_context",
+        "page_numbers": [
+          23
+        ]
+      },
+      {
+        "concept": "Integrale e funzione di una funzione",
+        "why": "Per comprendere il concetto di funzionale.",
+        "origin": "enrichment",
+        "page_numbers": []
+      }
+    ],
+    "source_math": [
+      {
+        "latex": "\\min_{(x(\\cdot),u(\\cdot))\\in\\mathcal F}\\ \\int_0^T\\ell_\\tau(x(\\tau),u(\\tau))\\,d\\tau+\\ell_T(x(T)))",
+        "anchor": "ℓτ(x(τ), u(τ))dτ + ℓT (x(T)))",
+        "notes": "Trascrizione letterale della prima riga, inclusa la parentesi finale eccedente."
+      },
+      {
+        "latex": "\\dot x(t)=f_t(x(t),u(t)),\\ t\\in[0,T];\\quad r(x(0),x(T))=0;\\quad g_t(x(t),u(t))\\leq0,\\ t\\in[0,T)",
+        "anchor": "subj.to ˙x(t)",
+        "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+      },
+      {
+        "latex": "\\ell:\\mathcal F\\to\\mathbb R,\\qquad\\ell(x(\\cdot),u(\\cdot))=\\int_0^T\\ell_\\tau(x(\\tau),u(\\tau))\\,d\\tau+\\ell_T(x(T))",
+        "anchor": "Cost functional",
+        "notes": "Trascrizione visiva della notazione sorgente; nessuna sostituzione di simboli."
+      },
+      {
+        "latex": "\\mathcal T=\\{(x(\\cdot),u(\\cdot)))\\in\\mathcal F\\mid\\dot x(t)=f_t(x(t),u(t)),\\ t\\in[0,T]\\}",
+        "anchor": "Space of trajectories",
+        "notes": "Trascrizione della parentesi eccedente nella coppia come stampata; non usarla come nuova struttura matematica."
+      }
+    ],
+    "enrichments": [
+      {
+        "id": "example-1",
+        "label": "enrichment",
+        "type": "worked_example",
+        "proposal": "Enrichment: ẋ=u, x(0)=0, T=1, u(t)=1 e x(t)=t; ℓ_τ=½u², ℓ_T=½x(T)².",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ]
+      },
+      {
+        "id": "interaction",
+        "label": "enrichment",
+        "type": "interaction_design",
+        "proposal": "Una famiglia semplice permette di osservare come cambiano le funzioni e il loro costo, senza chiamarla l'intero spazio 𝓕.",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ]
+      },
+      {
+        "id": "visualization",
+        "label": "enrichment",
+        "type": "visualization_design",
+        "proposal": "Grafici di x e u, area del running cost e contributo terminale separato; freccia dalle funzioni al costo scalare.",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "id": "example-1",
+        "origin": "enrichment",
+        "purpose": "Valutare un funzionale su una coppia di funzioni dinamicamente coerente.",
+        "setup": "Enrichment: ẋ=u, x(0)=0, T=1, u(t)=1 e x(t)=t; ℓ_τ=½u², ℓ_T=½x(T)².",
+        "parameters": [
+          {
+            "symbol": "T",
+            "value": "1"
+          },
+          {
+            "symbol": "u(t)",
+            "value": "1"
+          }
+        ],
+        "derivation": [
+          "La coppia soddisfa ẋ=u.",
+          "Integrale di ½ su [0,1]: 0.5.",
+          "Terminale: ½·1²=0.5.",
+          "Il funzionale restituisce 1."
+        ],
+        "expected_outcome": "L'oggetto scelto è una funzione/coppia di funzioni; il risultato del costo è uno scalare.",
+        "limitations": [
+          "Dinamica, condizione iniziale, funzioni di costo e numeri sono enrichment."
+        ],
+        "enrichment_id": "example-1",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ]
+      }
+    ],
+    "example_omission_reason": null,
+    "visualization": {
+      "component": "ContinuousFunctionalCostDiagram",
+      "description": "Grafici di x e u, area del running cost e contributo terminale separato; freccia dalle funzioni al costo scalare.",
+      "origin": "enrichment",
+      "source_observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    },
+    "interactivity": {
+      "recommended": true,
+      "rationale": "Una famiglia semplice permette di osservare come cambiano le funzioni e il loro costo, senza chiamarla l'intero spazio 𝓕.",
+      "component": "ConstantInputFunctionalEvaluator",
+      "parameters": [
+        {
+          "name": "Ingresso costante dell'esempio",
+          "symbol": "c",
+          "origin": "enrichment",
+          "range": "[−2,2]",
+          "default": "1",
+          "effect_on_change": "Ricalcolare u(t)=c, x(t)=ct, integrale ½c²T e terminale ½c²T².",
+          "edge_cases": [
+            "c=0: entrambi i contributi nulli"
+          ]
+        },
+        {
+          "name": "Tempo finale",
+          "symbol": "T",
+          "origin": "source",
+          "range": "[0.5,3] s",
+          "default": "1",
+          "effect_on_change": "Cambiare intervallo temporale, stato finale, area e termine terminale mantenendo la stessa legge d'ingresso.",
+          "edge_cases": [
+            "T>0"
+          ]
+        }
+      ],
+      "outputs": [
+        "Funzioni x,u",
+        "Running cost integrato",
+        "Terminal cost",
+        "Costo totale"
+      ],
+      "invariants": [
+        "Solo una sott famiglia di funzioni è esplorata",
+        "Nessuna ottimizzazione generale",
+        "La dinamica e i costi numerici sono enrichment"
+      ],
+      "enrichment_id": "interaction"
+    },
+    "edge_cases": [
+      {
+        "case": "Violazione della dinamica",
+        "expected_behavior": "La coppia non appartiene a 𝓣, anche se il costo è valutabile.",
+        "origin": "enrichment",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ]
+      },
+      {
+        "case": "Path constraint al tempo terminale",
+        "expected_behavior": "Non includerlo automaticamente quando il dominio stampato è [0,T).",
+        "origin": "enrichment",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ]
+      },
+      {
+        "case": "Funzionale non finito",
+        "expected_behavior": "L'appartenenza a un generico spazio di funzioni non garantisce integrabilità; la fonte non specifica i dettagli.",
+        "origin": "enrichment",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ]
+      }
+    ],
+    "expansion_rationale": "Funzionale e spazio delle traiettorie sono i due lati dello stesso problema continuo; un piccolo diagramma con formula annotata è sufficiente.",
+    "blueprint": [
+      {
+        "companion_suffix": null,
+        "focus": "L'OCP continuo sceglie funzioni, valuta un funzionale e impone appartenenza all'insieme dinamicamente ammissibile.",
+        "source_observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ],
+        "enrichment_ids": [
+          "example-1",
+          "interaction",
+          "visualization"
+        ]
+      }
+    ]
+  },
+  "observations": [
+    {
+      "id": "s01",
+      "category": "equation",
+      "description": "Il costo continuo è l'integrale da 0 a T di ℓ_τ(x(τ),u(τ)) più il terminal cost ℓ_T(x(T)); la prima riga di minimizzazione presenta una parentesi chiusa in più.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0031",
+        "modality": "both",
+        "text_quote": "ℓτ(x(τ), u(τ))dτ + ℓT (x(T)))",
+        "bbox": [
+          132,
+          50,
+          336,
+          81
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "s02",
+      "category": "equation",
+      "description": "Sono imposti ẋ(t)=f_t(x(t),u(t)) per t∈[0,T], r(x(0),x(T))=0 e g_t(x(t),u(t))≤0 per t∈[0,T).",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0031",
+        "modality": "both",
+        "text_quote": "r(x(0), x(T)) = 0",
+        "bbox": [
+          145,
+          79,
+          356,
+          133
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "s03",
+      "category": "definition",
+      "description": "𝓕 è uno spazio di funzioni e il costo è un funzionale ℓ:𝓕→R, valutato su coppie di funzioni (x(·),u(·)).",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0031",
+        "modality": "both",
+        "text_quote": "Cost functional ℓ: F →R",
+        "bbox": [
+          27,
+          139,
+          403,
+          186
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "s04",
+      "category": "definition",
+      "description": "Lo spazio delle traiettorie 𝓣 contiene le coppie in 𝓕 che soddisfano la dinamica; è chiamato anche trajectory manifold. Anche in questa formula compare una parentesi superflua dopo la coppia.",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0031",
+        "modality": "both",
+        "text_quote": "Space of trajectories (or trajectory manifold)",
+        "bbox": [
+          27,
+          193,
+          445,
+          231
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "transcription-05",
+      "category": "structure",
+      "description": "Trascrizione di una regione visibile della fonte: Continuous-time Optimal Control problem (I)",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0031",
+        "modality": "visual",
+        "text_quote": null,
+        "bbox": [
+          10.35200023651123,
+          6.720991134643555,
+          276.7609558105469,
+          21.06719207763672
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "transcription-06",
+      "category": "structure",
+      "description": "Trascrizione di una regione visibile della fonte: A continuous-time optimal control problem, i.e., t ∈R, can be written as",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0031",
+        "modality": "visual",
+        "text_quote": null,
+        "bbox": [
+          28.34600067138672,
+          33.47760009765625,
+          310.55487060546875,
+          44.40287780761719
+        ]
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "transcription-07",
+      "category": "structure",
+      "description": "Trascrizione di una regione visibile della fonte: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 30 |35",
+      "evidence": {
+        "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0031",
+        "modality": "visual",
+        "text_quote": null,
+        "bbox": [
+          126.9540023803711,
+          247.92860412597656,
+          447.8712158203125,
+          255.1179962158203
+        ]
+      },
+      "confidence": 0.98
+    }
+  ],
+  "contextual_role": "Porta la formulazione discreta a funzioni di tempo continuo e introduce il funzionale e l'insieme delle traiettorie.",
+  "context_notes": [
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0030",
+      "role": "previous",
+      "note": "La pagina 30 conclude i path constraints discreti; qui i domini temporali sono intervalli reali."
+    },
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0032",
+      "role": "next",
+      "note": "La pagina 32 trascura path e terminal constraints e usa l'appartenenza a 𝓣 per scrivere il problema compatto."
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "\\mathcal F",
+      "meaning": "Spazio di funzioni non ulteriormente caratterizzato",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    },
+    {
+      "symbol": "\\ell",
+      "meaning": "Funzionale che associa un numero a una coppia di funzioni",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    },
+    {
+      "symbol": "\\ell_\\tau",
+      "meaning": "Costo corrente con indice temporale τ",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    },
+    {
+      "symbol": "\\ell_T",
+      "meaning": "Costo terminale",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    },
+    {
+      "symbol": "T",
+      "meaning": "Tempo finale",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    },
+    {
+      "symbol": "\\mathcal T",
+      "meaning": "Insieme delle traiettorie, distinto dal tempo finale T",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    },
+    {
+      "symbol": "\\tau",
+      "meaning": "Variabile muta d'integrazione, non una coppia meccanica in questa pagina",
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "description": "Parentesi chiuse eccedenti nella prima riga del costo e nella definizione stampata di 𝓣. Il funzionale riscritto al centro della pagina ha parentesi bilanciate; conservare entrambi i dati senza correzioni silenziose.",
+      "blocking": false,
+      "observation_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    }
+  ],
+  "progression": {
+    "assessment": "unique",
+    "related_page_ids": [],
+    "added": [],
+    "removed": [],
+    "changed": [],
+    "observation_ids": [
+      "s01",
+      "s02",
+      "s03",
+      "s04"
+    ],
+    "rationale": "Pagina con contenuto autonomo nella sequenza; nessun candidato automatico da confermare."
+  },
+  "coverage": {
+    "all_visible_regions_accounted_for": true,
+    "regions": [
+      {
+        "bbox": [
+          10.35200023651123,
+          6.720991134643555,
+          276.7609558105469,
+          21.06719207763672
+        ],
+        "description": "Regione testuale sorgente: Continuous-time Optimal Control problem (I)",
+        "observation_ids": [
+          "transcription-05"
+        ]
+      },
+      {
+        "bbox": [
+          28.34600067138672,
+          33.47760009765625,
+          310.55487060546875,
+          44.40287780761719
+        ],
+        "description": "Regione testuale sorgente: A continuous-time optimal control problem, i.e., t ∈R, can be written as",
+        "observation_ids": [
+          "transcription-06"
+        ]
+      },
+      {
+        "bbox": [
+          135.7329864501953,
+          58.91148376464844,
+          178.6276092529297,
+          77.56376647949219
+        ],
+        "description": "Regione testuale sorgente: min\n(x(·),u(·))∈F",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          185.89198303222656,
+          49.2318115234375,
+          199.4766082763672,
+          62.094825744628906
+        ],
+        "description": "Regione testuale sorgente: Z T",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          191.01197814941406,
+          58.9114990234375,
+          317.81866455078125,
+          75.63241577148438
+        ],
+        "description": "Regione testuale sorgente: 0\nℓτ(x(τ), u(τ))dτ + ℓT (x(T)))",
+        "observation_ids": [
+          "s01"
+        ]
+      },
+      {
+        "bbox": [
+          153.23301696777344,
+          78.9192886352539,
+          316.46942138671875,
+          88.53440856933594
+        ],
+        "description": "Regione testuale sorgente: subj.to ˙x(t) = ft(x(t), u(t))\nt ∈[0, T]",
+        "observation_ids": [
+          "s01",
+          "s02"
+        ]
+      },
+      {
+        "bbox": [
+          184.3560333251953,
+          92.98348999023438,
+          252.97686767578125,
+          101.94989013671875
+        ],
+        "description": "Regione testuale sorgente: r(x(0), x(T)) = 0",
+        "observation_ids": [
+          "s02"
+        ]
+      },
+      {
+        "bbox": [
+          184.35604858398438,
+          106.8152847290039,
+          306.3016052246094,
+          116.42941284179688
+        ],
+        "description": "Regione testuale sorgente: gt(x(t), u(t)) ≤0\nt ∈[0, T)",
+        "observation_ids": [
+          "s02"
+        ]
+      },
+      {
+        "bbox": [
+          28.3460693359375,
+          124.68328094482422,
+          214.30882263183594,
+          133.76588439941406
+        ],
+        "description": "Regione testuale sorgente: Note F is a space of functions (function space).",
+        "observation_ids": [
+          "s02"
+        ]
+      },
+      {
+        "bbox": [
+          40.102073669433594,
+          145.224609375,
+          151.40780639648438,
+          156.14988708496094
+        ],
+        "description": "Regione testuale sorgente: • Cost functional ℓ: F →R",
+        "observation_ids": [
+          "s03"
+        ]
+      },
+      {
+        "bbox": [
+          144.84506225585938,
+          168.7992706298828,
+          199.62872314453125,
+          177.8818817138672
+        ],
+        "description": "Regione testuale sorgente: ℓ(x(·), u(·)) =",
+        "observation_ids": [
+          "s03"
+        ]
+      },
+      {
+        "bbox": [
+          202.1820526123047,
+          159.2348175048828,
+          215.7666778564453,
+          172.0978240966797
+        ],
+        "description": "Regione testuale sorgente: Z T",
+        "observation_ids": [
+          "s03"
+        ]
+      },
+      {
+        "bbox": [
+          207.3020477294922,
+          168.9154815673828,
+          330.522216796875,
+          185.6363983154297
+        ],
+        "description": "Regione testuale sorgente: 0\nℓτ(x(τ), u(τ))dτ + ℓT (x(T))",
+        "observation_ids": [
+          "s03"
+        ]
+      },
+      {
+        "bbox": [
+          40.103118896484375,
+          193.3762664794922,
+          222.03968811035156,
+          202.45887756347656
+        ],
+        "description": "Regione testuale sorgente: • Space of trajectories (or trajectory manifold)",
+        "observation_ids": [
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          125.91912841796875,
+          213.83526611328125,
+          142.99227905273438,
+          222.91787719726562
+        ],
+        "description": "Regione testuale sorgente: T =",
+        "observation_ids": [
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          145.5551300048828,
+          210.4394073486328,
+          151.69711303710938,
+          219.4058074951172
+        ],
+        "description": "Regione testuale sorgente: n",
+        "observation_ids": [
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          151.69912719726562,
+          213.83526611328125,
+          343.3036193847656,
+          223.44940185546875
+        ],
+        "description": "Regione testuale sorgente: (x(·), u(·))) ∈F | ˙x(t) = ft(x(t), u(t)), t ∈[0, T]",
+        "observation_ids": [
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          343.2992248535156,
+          210.4394073486328,
+          349.44122314453125,
+          219.4058074951172
+        ],
+        "description": "Regione testuale sorgente: o",
+        "observation_ids": [
+          "s04"
+        ]
+      },
+      {
+        "bbox": [
+          126.9540023803711,
+          247.92860412597656,
+          447.8712158203125,
+          255.1179962158203
+        ],
+        "description": "Regione testuale sorgente: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 30 |35",
+        "observation_ids": [
+          "transcription-07"
+        ]
+      }
+    ]
+  },
+  "mapping_recommendation": {
+    "mode": "one_to_one",
+    "rationale": "Funzionale e spazio delle traiettorie sono i due lati dello stesso problema continuo; un piccolo diagramma con formula annotata è sufficiente.",
+    "subpages": []
+  }
+}

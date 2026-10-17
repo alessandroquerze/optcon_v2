@@ -1,0 +1,601 @@
+{
+  "schema_version": "1.0.0",
+  "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0006",
+  "document_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc",
+  "source": {
+    "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+    "page_index": 5,
+    "physical_page_number": 6,
+    "pdf_label_raw": "<FEFF0035>",
+    "pdf_label": "5",
+    "geometry": {
+      "width_pt": 453.5429992675781,
+      "height_pt": 255.1179962158203,
+      "rotation": 0,
+      "cropbox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        453.5429992675781,
+        255.1179962158203
+      ]
+    }
+  },
+  "identity": {
+    "title": "Optimal Control: motivating domains",
+    "title_method": "top_lines_font_geometry",
+    "title_confidence": 0.8,
+    "title_bbox": [
+      10.35200023651123,
+      6.720991134643555,
+      230.5518035888672,
+      21.06719207763672
+    ],
+    "printed_number_candidates": [
+      {
+        "number": 5,
+        "total": 35,
+        "raw": "5 |35",
+        "bbox": [
+          130.12982177734375,
+          247.92874145507812,
+          447.87103271484375,
+          258.2939147949219
+        ]
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "artifacts": {
+    "text": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0006/text.txt",
+      "sha256": "ac91b528f10e96e9c11952b4fe2c84217e472837813de0713ec8ea3434428af8"
+    },
+    "reading_order_text": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0006/text.reading-order.txt",
+      "sha256": "8d8a0b5521bc060be654cbf54ae2103b44d77e38861811b37f30986809941b24"
+    },
+    "layout": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0006/layout.json",
+      "sha256": "9ba737bc9e16aa66240a714910bfd59f0b0da8822b26a6d33a5921cf2eadec9e"
+    },
+    "render": {
+      "path": "documents/OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc/pages/0006/render.png",
+      "sha256": "223354d4bda24237e4fd9ffdd57a6f5caeb7eca285d54b49c322f8d48e0fe8eb",
+      "width_px": 908,
+      "height_px": 511,
+      "dpi": 144,
+      "renderer": "PyMuPDF 1.28.2",
+      "pixel_sha256": "fdba775dfe18dd3788e54201654c8da129d07b48c0e162bb024682453f275793"
+    }
+  },
+  "context": {
+    "previous_page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0005",
+    "next_page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0007"
+  },
+  "relations": [
+    {
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0007",
+      "kind": "progressive_candidate",
+      "confidence": 0.7,
+      "review_status": "candidate",
+      "reason": "Pagine adiacenti con titolo/label condiviso e contenuto compatibile con un overlay; direzione da confermare visivamente.",
+      "metrics": {
+        "text_jaccard": 0.6375,
+        "text_containment": 0.836066,
+        "left_tokens": 70,
+        "right_tokens": 61,
+        "visual_difference": 0.055664,
+        "ink_overlap": 0.30695,
+        "dhash_distance": 11
+      },
+      "delta_in_physical_order": {
+        "text": {
+          "added_lines": [
+            "Space systems",
+            "(desired orbit, velocities,...)",
+            "• energy consumption",
+            "• geometric (orbit, orientation wrt sun/Earth, ...)",
+            "Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 6 |35"
+          ],
+          "removed_lines": [
+            "Autonomous aerial vehicles (drones)",
+            "(given 3D path, velocities,...)",
+            "• fuel/battery consumption",
+            "• exploration cost",
+            "• geometric (buildings, other obstacles, attitude,...)",
+            "Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 5 |35"
+          ],
+          "semantic_interpretation": "pending_visual_analysis"
+        },
+        "visual": {
+          "changed_bbox_px": [
+            57,
+            69,
+            874,
+            505
+          ],
+          "pixel_threshold": 16,
+          "changed_pixel_fraction": 0.113231
+        }
+      }
+    }
+  ],
+  "companion_mapping": {
+    "default_count": 1,
+    "decision": "proposed_after_analysis",
+    "subpages": [],
+    "split_rationale": null
+  },
+  "analysis": {
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "852280fd5efbd1251465b09a013324ef58324f16aee2a7f08168a8af6dbe4ee3",
+      "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0006",
+      "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+      "artifact_sha256": {
+        "text": "ac91b528f10e96e9c11952b4fe2c84217e472837813de0713ec8ea3434428af8",
+        "layout": "9ba737bc9e16aa66240a714910bfd59f0b0da8822b26a6d33a5921cf2eadec9e",
+        "render": "223354d4bda24237e4fd9ffdd57a6f5caeb7eca285d54b49c322f8d48e0fe8eb"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "Codex (identificatore esatto del modello non esposto nella sessione)",
+        "run_id": "page-analysis-ce370a19242e4173828aef04d60c36ee"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0006",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0005",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0007"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0006",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0005",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0007"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0006",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0005",
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0007"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Motivating domains — Autonomous aerial vehicles (drones)",
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Exploration cost è soltanto elencato: nessuna formula o politica esplorativa è definita.",
+          "Non sono ancora presenti modello quadrotor, massa, gravità, limiti di thrust numerici o algoritmo di pianificazione."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Obiettivi e vincoli",
+            "why": "Per leggere la stessa struttura applicativa in un ambiente tridimensionale.",
+            "origin": "source_context",
+            "page_numbers": [
+              2
+            ]
+          },
+          {
+            "concept": "Posizione 3D e ostacoli",
+            "why": "Vocabolario geometrico necessario; non è un prerequisito di dinamica del quadrotor.",
+            "origin": "enrichment",
+            "page_numbers": []
+          }
+        ],
+        "source_math": [],
+        "enrichments": [
+          {
+            "id": "example-1",
+            "label": "enrichment",
+            "type": "conceptual_example",
+            "proposal": "Enrichment: fra due punti, un segmento diretto attraversa un edificio mentre una deviazione lo aggira.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Distinguere percorso breve e percorso ammissibile.",
+            "setup": "Enrichment: fra due punti, un segmento diretto attraversa un edificio mentre una deviazione lo aggira.",
+            "parameters": [],
+            "derivation": [
+              "Classificare l'edificio come vincolo geometrico.",
+              "Escludere il segmento che lo attraversa.",
+              "Confrontare eventuali percorsi rimanenti con l'indice scelto; la lunghezza non coincide automaticamente con consumo o exploration cost."
+            ],
+            "expected_outcome": "Un percorso più corto può essere inammissibile; il costo di esplorazione resta da definire.",
+            "limitations": [
+              "Nessun algoritmo di routing o modello energetico è specificato dalla fonte."
+            ],
+            "enrichment_id": "example-1",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "DroneEnvironmentConstraintSketch",
+          "description": "Schema statico 3D del percorso e dell'edificio affiancato alla classificazione degli indici.",
+          "origin": "source_derived",
+          "source_observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04"
+          ]
+        },
+        "interactivity": {
+          "recommended": false,
+          "rationale": "Rimandare la simulazione alle pagine con dinamica e parametri assegnati; qui l'interazione sarebbe decorativa.",
+          "component": null,
+          "parameters": [],
+          "outputs": [],
+          "invariants": [],
+          "enrichment_id": null
+        },
+        "edge_cases": [
+          {
+            "case": "Edificio invalicabile fra partenza e arrivo",
+            "expected_behavior": "Indicare che può non esistere un percorso ammissibile nell'ambiente considerato.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          },
+          {
+            "case": "Confusione fra costo energetico e exploration cost",
+            "expected_behavior": "Mantenerli distinti, perché la fonte li elenca separatamente senza formule.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un solo scenario motivazionale con obiettivi/vincoli e due immagini; nessuna derivazione da espandere.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Per i droni, ottimizzare una prestazione richiede rispettare ambiente 3D e limiti di attuazione.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04"
+            ],
+            "enrichment_ids": [
+              "example-1"
+            ]
+          }
+        ]
+      },
+      "observations": [
+        {
+          "id": "s01",
+          "category": "structure",
+          "description": "La pagina è dedicata ad Autonomous aerial vehicles (drones).",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0006",
+            "modality": "both",
+            "text_quote": "Autonomous aerial vehicles (drones)",
+            "bbox": [
+              28.34600067138672,
+              34.63948059082031,
+              167.8094024658203,
+              43.60588073730469
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s02",
+          "category": "concept",
+          "description": "Gli indici elencati sono deviazione da un percorso 3D/velocità desiderati, tempo minimo, consumo di carburante/batteria ed exploration cost.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0006",
+            "modality": "both",
+            "text_quote": "exploration cost",
+            "bbox": [
+              28,
+              52,
+              295,
+              133
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s03",
+          "category": "assumption",
+          "description": "I vincoli geometrici includono edifici, altri ostacoli e assetto; l'ingresso citato è thrust; i vincoli interni includono velocità angolari e lineari.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0006",
+            "modality": "both",
+            "text_quote": "geometric (buildings, other obstacles, attitude,...)",
+            "bbox": [
+              28,
+              138,
+              298,
+              192
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "s04",
+          "category": "diagram",
+          "description": "La figura superiore mostra un percorso blu attorno a un edificio; la fotografia inferiore mostra un ambiente di magazzino con un drone, senza fornire valori o una formulazione dinamica.",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0006",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              299,
+              64,
+              419,
+              201
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-05",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Optimal Control: motivating domains",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0006",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              10.35200023651123,
+              6.720991134643555,
+              230.5518035888672,
+              21.06719207763672
+            ]
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "transcription-06",
+          "category": "structure",
+          "description": "Trascrizione di una regione visibile della fonte: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 5 |35",
+          "evidence": {
+            "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0006",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              130.12982177734375,
+              247.92874145507812,
+              447.87103271484375,
+              255.1179962158203
+            ]
+          },
+          "confidence": 0.98
+        }
+      ],
+      "contextual_role": "Ultimo esempio di mobilità prima dei sistemi spaziali; prepara il richiamo ai droni nelle pagine 26–30 senza anticiparne le equazioni.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0005",
+          "role": "previous",
+          "note": "La pagina 5 parla di guida autonoma su piano e usa vincoli legati a pneumatici e corsia; qui compaiono percorso 3D ed exploration cost."
+        },
+        {
+          "page_id": "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0007",
+          "role": "next",
+          "note": "La pagina 7 passa a Space systems e sostituisce gli esempi con orbita e orientamento rispetto a Sole/Terra. La somiglianza del layout non la rende una progressiva."
+        }
+      ],
+      "notation": [],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [
+          "OPTCON-RL_introduction_optimal_control_2026_09_14--ae169f3492dc:p0007"
+        ],
+        "added": [],
+        "removed": [],
+        "changed": [
+          "La pagina 6 tratta droni; la 7 tratta sistemi spaziali, con obiettivi, vincoli e immagini differenti."
+        ],
+        "observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04"
+        ],
+        "rationale": "Respinto il candidato automatico 6↔7: layout ed elenchi generici simili, ma domini e contenuti applicativi distinti; non è un overlay progressivo."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              10.35200023651123,
+              6.720991134643555,
+              230.5518035888672,
+              21.06719207763672
+            ],
+            "description": "Regione testuale sorgente: Optimal Control: motivating domains",
+            "observation_ids": [
+              "transcription-05"
+            ]
+          },
+          {
+            "bbox": [
+              28.34600067138672,
+              34.63948059082031,
+              167.8094024658203,
+              43.60588073730469
+            ],
+            "description": "Regione testuale sorgente: Autonomous aerial vehicles (drones)",
+            "observation_ids": [
+              "s01"
+            ]
+          },
+          {
+            "bbox": [
+              32.125,
+              52.07353210449219,
+              103.15682983398438,
+              61.03993225097656
+            ],
+            "description": "Regione testuale sorgente: Performance index",
+            "observation_ids": [
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              43.88100051879883,
+              66.90132904052734,
+              180.3064727783203,
+              86.94293212890625
+            ],
+            "description": "Regione testuale sorgente: • distance from desired “behavior”\n(given 3D path, velocities,...)",
+            "observation_ids": [
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              43.88100051879883,
+              92.80432891845703,
+              109.82162475585938,
+              101.88693237304688
+            ],
+            "description": "Regione testuale sorgente: • minimum time",
+            "observation_ids": [
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              43.88100051879883,
+              107.74832916259766,
+              151.56021118164062,
+              116.8309326171875
+            ],
+            "description": "Regione testuale sorgente: • fuel/battery consumption",
+            "observation_ids": [
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              43.88100051879883,
+              122.69232940673828,
+              114.70830535888672,
+              131.77493286132812
+            ],
+            "description": "Regione testuale sorgente: • exploration cost",
+            "observation_ids": [
+              "s02"
+            ]
+          },
+          {
+            "bbox": [
+              32.125,
+              137.75253295898438,
+              75.63894653320312,
+              146.71893310546875
+            ],
+            "description": "Regione testuale sorgente: Constraints",
+            "observation_ids": [
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              43.88100051879883,
+              152.580322265625,
+              244.81076049804688,
+              161.66293334960938
+            ],
+            "description": "Regione testuale sorgente: • geometric (buildings, other obstacles, attitude,...)",
+            "observation_ids": [
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              43.88100051879883,
+              167.52432250976562,
+              110.37754821777344,
+              176.60693359375
+            ],
+            "description": "Regione testuale sorgente: • inputs (thrust)",
+            "observation_ids": [
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              43.88100051879883,
+              182.46832275390625,
+              242.6946563720703,
+              191.55093383789062
+            ],
+            "description": "Regione testuale sorgente: • internal systems (angular and linear velocities,...)",
+            "observation_ids": [
+              "s03"
+            ]
+          },
+          {
+            "bbox": [
+              130.12982177734375,
+              247.92874145507812,
+              447.87103271484375,
+              255.1179962158203
+            ],
+            "description": "Regione testuale sorgente: Prof. Giuseppe Notarstefano – Optimal Control and Reinforcement Learning – Introduction to Optimal Control 5 |35",
+            "observation_ids": [
+              "transcription-06"
+            ]
+          },
+          {
+            "bbox": [
+              299,
+              64,
+              419,
+              201
+            ],
+            "description": "La figura superiore mostra un percorso blu attorno a un edificio; la fotografia inferiore mostra un ambiente di magazzino con un drone, senza fornire valori o una formulazione dinamica.",
+            "observation_ids": [
+              "s04"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un solo scenario motivazionale con obiettivi/vincoli e due immagini; nessuna derivazione da espandere.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
+}
