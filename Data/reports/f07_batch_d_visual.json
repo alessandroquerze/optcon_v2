@@ -1,0 +1,1093 @@
+{
+  "verified_at": "2026-10-18T01:58:00.251Z",
+  "batch": "D",
+  "base_url": "http://127.0.0.1:4173",
+  "browser": "Chrome / SwiftShader",
+  "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+  "pages": [
+    {
+      "page": 28,
+      "mode": "2D_PRIMARY_WITH_3D",
+      "defaultView": "2D",
+      "loadAndReviewMs": 1190,
+      "geometry": {
+        "height": 1280,
+        "scrollHeight": 1280,
+        "blocks": [
+          {
+            "top": 40,
+            "bottom": 110.65625
+          },
+          {
+            "top": 116.65625,
+            "bottom": 269.53125
+          },
+          {
+            "top": 275.53125,
+            "bottom": 631.125
+          },
+          {
+            "top": 637.125,
+            "bottom": 790.90625
+          },
+          {
+            "top": 796.90625,
+            "bottom": 1161.328125
+          },
+          {
+            "top": 1195.609375,
+            "bottom": 1240
+          }
+        ],
+        "bottom": 1240,
+        "overlaps": false,
+        "equations": [
+          {
+            "width": 850,
+            "scrollWidth": 850
+          }
+        ],
+        "orphanEquations": 0,
+        "outputs": {
+          "requirement-time": "1.00",
+          "requirement-position-error": "-0.1095",
+          "requirement-velocity-error": "0.0000"
+        },
+        "warnings": [],
+        "alerts": [],
+        "concepts": [
+          "Il requisito riguarda dove arrivare a ogni istante, non soltanto quale percorso geometrico attraversare. Gli indici della lista vanno da 1 a T."
+        ],
+        "formulaOccurrences": [
+          {
+            "id": "p28-source-math-0",
+            "canonical": "(p_{x,t}^{\\mathrm{des}},p_{y,t}^{\\mathrm{des}}),\\quad t=1,\\ldots,T"
+          },
+          {
+            "id": "p28-example",
+            "canonical": "p_y^{\\mathrm{des}}(\\tau)=1.095\\tau^2,\\quad v_y^{\\mathrm{des}}(\\tau)=2.19\\tau"
+          }
+        ],
+        "formulaContexts": [
+          "p28-example"
+        ]
+      },
+      "alternatives": [
+        {
+          "view": "3D",
+          "height": 1280,
+          "scrollHeight": 1280,
+          "blocks": [
+            {
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "top": 116.65625,
+              "bottom": 269.53125
+            },
+            {
+              "top": 275.53125,
+              "bottom": 631.125
+            },
+            {
+              "top": 637.125,
+              "bottom": 790.90625
+            },
+            {
+              "top": 796.90625,
+              "bottom": 1161.328125
+            },
+            {
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "bottom": 1240,
+          "overlaps": false,
+          "equations": [
+            {
+              "width": 850,
+              "scrollWidth": 850
+            }
+          ],
+          "orphanEquations": 0,
+          "outputs": {
+            "requirement-time": "1.00",
+            "requirement-position-error": "-0.1095",
+            "requirement-velocity-error": "0.0000"
+          },
+          "warnings": [],
+          "alerts": [],
+          "concepts": [
+            "Il requisito riguarda dove arrivare a ogni istante, non soltanto quale percorso geometrico attraversare. Gli indici della lista vanno da 1 a T."
+          ],
+          "formulaOccurrences": [
+            {
+              "id": "p28-source-math-0",
+              "canonical": "(p_{x,t}^{\\mathrm{des}},p_{y,t}^{\\mathrm{des}}),\\quad t=1,\\ldots,T"
+            },
+            {
+              "id": "p28-example",
+              "canonical": "p_y^{\\mathrm{des}}(\\tau)=1.095\\tau^2,\\quad v_y^{\\mathrm{des}}(\\tau)=2.19\\tau"
+            }
+          ],
+          "formulaContexts": [
+            "p28-example"
+          ]
+        }
+      ],
+      "formulas": [
+        {
+          "formulaId": "p28-source-math-0",
+          "latex": "(p_{x,t}^{\\mathrm{des}},p_{y,t}^{\\mathrm{des}}),\\quad t=1,\\ldots,T",
+          "conceptualExplanation": "Il requisito riguarda dove arrivare a ogni istante, non soltanto quale percorso geometrico attraversare. Gli indici della lista vanno da 1 a T.",
+          "details": "A cosa serve. Associare il tracking di posizione alle componenti x₁ e x₃.px,tdes,py,tdesp_{x,t}^{\\mathrm{des}},p_{y,t}^{\\mathrm{des}}px,tdes​,py,tdes​Posizione desiderata nel piano."
+        },
+        {
+          "formulaId": "p28-source-math-1",
+          "latex": "(v_{x,t}^{\\mathrm{des}},v_{y,t}^{\\mathrm{des}}),\\quad t=1,\\ldots,T",
+          "conceptualExplanation": "Passare vicino alla posizione giusta non assicura la velocità giusta. Il task richiede di confrontare anche il profilo temporale delle velocità.",
+          "details": "A cosa serve. Associare il tracking di velocità alle componenti x₂ e x₄.vx,tdes,vy,tdesv_{x,t}^{\\mathrm{des}},v_{y,t}^{\\mathrm{des}}vx,tdes​,vy,tdes​Velocità desiderate nel piano."
+        },
+        {
+          "formulaId": "p28-source-math-2",
+          "latex": "\\theta_t,\\omega_t;\\qquad u_{1,t},u_{2,t}",
+          "conceptualExplanation": "La fonte chiede angolo, velocità angolare e ingressi non troppo elevati. Qui non assegna ancora soglie numeriche né pesi per ordinare le candidate.",
+          "details": "A cosa serve. Collegare i requisiti qualitativi alle variabili del modello.θt,ωt\\theta_t,\\omega_tθt​,ωt​Angolo e velocità angolare: x₅ e x₆.u1,t,u2,tu_{1,t},u_{2,t}u1,t​,u2,t​Spinte dei due rotori.Vale quando. Non si impongono riferimenti angolari nulli come dati di questa slide."
+        },
+        {
+          "formulaId": "p28-example",
+          "latex": "p_y^{\\mathrm{des}}(\\tau)=1.095\\tau^2,\\quad v_y^{\\mathrm{des}}(\\tau)=2.19\\tau",
+          "conceptualExplanation": "Il riferimento aggiunto è la soluzione continua campionata dell’esempio di p27. Euler ne riproduce la velocità ma accumula uno scarto di posizione: i due requisiti vanno letti separatamente.",
+          "details": "A cosa serve. Ispezionare posizione e velocità della stessa candidata discreta.τ=0.1k\\tau=0.1kτ=0.1kTempo fisico in secondi, distinto dall’indice discreto.Vale quando. δ=0.1 s, u₁=u₂=6 N; p_x=v_x=θ=ω=0. Dati e unità aggiunti. Il riferimento continuo non è una traiettoria esatta del modello Euler. Nessun criterio di ottimalità assegnato.k seleziona il campione e gli errori; traiettorie, riferimenti e spinte rimangono fissi."
+        }
+      ],
+      "formulaOverflow": []
+    },
+    {
+      "page": 29,
+      "mode": "3D_PRIMARY_WITH_2D",
+      "defaultView": "3D",
+      "loadAndReviewMs": 1637,
+      "geometry": {
+        "height": 1280,
+        "scrollHeight": 1280,
+        "blocks": [
+          {
+            "top": 40,
+            "bottom": 110.65625
+          },
+          {
+            "top": 116.65625,
+            "bottom": 269.359375
+          },
+          {
+            "top": 275.359375,
+            "bottom": 659.546875
+          },
+          {
+            "top": 665.546875,
+            "bottom": 946.3125
+          },
+          {
+            "top": 952.3125,
+            "bottom": 1138.984375
+          },
+          {
+            "top": 1195.609375,
+            "bottom": 1240
+          }
+        ],
+        "bottom": 1240,
+        "overlaps": false,
+        "equations": [
+          {
+            "width": 850,
+            "scrollWidth": 850
+          }
+        ],
+        "orphanEquations": 0,
+        "outputs": {
+          "drone-stage-cost": "3.0500"
+        },
+        "warnings": [],
+        "alerts": [],
+        "concepts": [
+          "Lo snapshot fissa errore di posizione 1, angolo 0.1 e spinte 2, con gli altri errori nulli. Cambiare i pesi cambia le barre e la superficie, senza muovere la candidata."
+        ],
+        "formulaOccurrences": [
+          {
+            "id": "p29-example",
+            "canonical": "\\ell_t=\\tfrac12q_1e_{px}^2+\\tfrac12q_5\\theta^2+2r_1+2r_2"
+          },
+          {
+            "id": "p29-source-math-1",
+            "canonical": "\\begin{aligned}\\ell(\\mathbf{x},\\mathbf{u})=\\sum_{t=0}^{T-1}\\frac12\\big[&q_1(x_{1,t}-p_{x,t}^{\\mathrm{des}})^2+q_2(x_{2,t}-v_{x,t}^{\\mathrm{des}})^2+q_3(x_{3,t}-p_{y,t}^{\\mathrm{des}})^2+q_4(x_{4,t}-v_{y,t}^{\\mathrm{des}})^2\\\\&+q_5x_{5,t}^2+q_6x_{6,t}^2+r_1u_{1,t}^2+r_2u_{2,t}^2\\big]+\\frac12\\|x_T-x_T^{\\mathrm{des}}\\|_{Q_T}^2\\end{aligned}"
+          }
+        ],
+        "formulaContexts": [
+          "p29-source-math-1"
+        ]
+      },
+      "alternatives": [
+        {
+          "view": "2D",
+          "height": 1280,
+          "scrollHeight": 1280,
+          "blocks": [
+            {
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "top": 116.65625,
+              "bottom": 269.359375
+            },
+            {
+              "top": 275.359375,
+              "bottom": 689.515625
+            },
+            {
+              "top": 695.515625,
+              "bottom": 976.28125
+            },
+            {
+              "top": 982.28125,
+              "bottom": 1168.953125
+            },
+            {
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "bottom": 1240,
+          "overlaps": false,
+          "equations": [
+            {
+              "width": 850,
+              "scrollWidth": 850
+            }
+          ],
+          "orphanEquations": 0,
+          "outputs": {
+            "drone-stage-cost": "3.0500"
+          },
+          "warnings": [],
+          "alerts": [],
+          "concepts": [
+            "Lo snapshot fissa errore di posizione 1, angolo 0.1 e spinte 2, con gli altri errori nulli. Cambiare i pesi cambia le barre e la superficie, senza muovere la candidata."
+          ],
+          "formulaOccurrences": [
+            {
+              "id": "p29-example",
+              "canonical": "\\ell_t=\\tfrac12q_1e_{px}^2+\\tfrac12q_5\\theta^2+2r_1+2r_2"
+            },
+            {
+              "id": "p29-source-math-1",
+              "canonical": "\\begin{aligned}\\ell(\\mathbf{x},\\mathbf{u})=\\sum_{t=0}^{T-1}\\frac12\\big[&q_1(x_{1,t}-p_{x,t}^{\\mathrm{des}})^2+q_2(x_{2,t}-v_{x,t}^{\\mathrm{des}})^2+q_3(x_{3,t}-p_{y,t}^{\\mathrm{des}})^2+q_4(x_{4,t}-v_{y,t}^{\\mathrm{des}})^2\\\\&+q_5x_{5,t}^2+q_6x_{6,t}^2+r_1u_{1,t}^2+r_2u_{2,t}^2\\big]+\\frac12\\|x_T-x_T^{\\mathrm{des}}\\|_{Q_T}^2\\end{aligned}"
+            }
+          ],
+          "formulaContexts": [
+            "p29-source-math-1"
+          ]
+        }
+      ],
+      "formulas": [
+        {
+          "formulaId": "p29-source-math-0",
+          "latex": "Q=\\begin{bmatrix}q_1&&\\\\&\\ddots&\\\\&&q_6\\end{bmatrix},\\quad Q_T=\\begin{bmatrix}q_{T1}&&\\\\&\\ddots&\\\\&&q_{T6}\\end{bmatrix},\\quad R=\\begin{bmatrix}r_1&0\\\\0&r_2\\end{bmatrix}",
+          "conceptualExplanation": "La scelta diagonale assegna un peso a ogni componente senza prodotti incrociati. I pesi di stadio e terminali restano distinti.",
+          "details": "A cosa serve. Leggere l’associazione tra pesi e ordine esatto dello stato.q1,…,q6q_1,\\ldots,q_6q1​,…,q6​Pesi di p_x,v_x,p_y,v_y,θ,ω nello stesso ordine.qT1,…,qT6q_{T1},\\ldots,q_{T6}qT1​,…,qT6​Pesi terminali.r1,r2r_1,r_2r1​,r2​Pesi delle spinte."
+        },
+        {
+          "formulaId": "p29-source-math-1",
+          "latex": "\\begin{aligned}\\ell(\\mathbf{x},\\mathbf{u})=\\sum_{t=0}^{T-1}\\frac12\\big[&q_1(x_{1,t}-p_{x,t}^{\\mathrm{des}})^2+q_2(x_{2,t}-v_{x,t}^{\\mathrm{des}})^2+q_3(x_{3,t}-p_{y,t}^{\\mathrm{des}})^2+q_4(x_{4,t}-v_{y,t}^{\\mathrm{des}})^2\\\\&+q_5x_{5,t}^2+q_6x_{6,t}^2+r_1u_{1,t}^2+r_2u_{2,t}^2\\big]+\\frac12\\|x_T-x_T^{\\mathrm{des}}\\|_{Q_T}^2\\end{aligned}",
+          "conceptualExplanation": "I primi quattro termini pesano errori di posizione e velocità; gli altri pesano direttamente angolo, velocità angolare e spinte rispetto a zero. Una penalità alta non è un limite rigido.",
+          "details": "A cosa serve. Attribuire correttamente ogni contributo del costo del drone.x1,t,…,x6,tx_{1,t},\\ldots,x_{6,t}x1,t​,…,x6,t​Stato del drone nell’ordine fissato in p27.Vale quando. Non sostituire le spinte con deviazioni dalla spinta di hover. Il terminal target rimane generale nella fonte."
+        },
+        {
+          "formulaId": "p29-example",
+          "latex": "\\ell_t=\\tfrac12q_1e_{px}^2+\\tfrac12q_5\\theta^2+2r_1+2r_2",
+          "conceptualExplanation": "Lo snapshot fissa errore di posizione 1, angolo 0.1 e spinte 2, con gli altri errori nulli. Cambiare i pesi cambia le barre e la superficie, senza muovere la candidata.",
+          "details": "A cosa serve. Valutare un singolo stadio senza confonderlo col costo totale.epxe_{px}epx​Errore di posizione orizzontale normalizzato dell’esempio.Vale quando. È una valutazione normalizzata; non si certifica la fattibilità dinamica dello snapshot. Nessun terminale viene inventato per questo singolo stadio. Con un errore nullo la sua penalità resta zero.q₁ cambia la curvatura lungo l’errore orizzontale e la relativa barra.q₅ cambia la curvatura lungo l’angolo e la relativa barra.r₁ cambia la prima barra di ingresso e trasla la superficie di 2Δr₁.r₂ cambia la seconda barra di ingresso e trasla la superficie di 2Δr₂."
+        }
+      ],
+      "formulaOverflow": []
+    },
+    {
+      "page": 31,
+      "mode": "2D_PRIMARY_WITH_3D",
+      "defaultView": "2D",
+      "loadAndReviewMs": 1362,
+      "geometry": {
+        "height": 1280,
+        "scrollHeight": 1280,
+        "blocks": [
+          {
+            "top": 40,
+            "bottom": 110.65625
+          },
+          {
+            "top": 116.65625,
+            "bottom": 303.71875
+          },
+          {
+            "top": 309.71875,
+            "bottom": 693.90625
+          },
+          {
+            "top": 699.90625,
+            "bottom": 853.6875
+          },
+          {
+            "top": 859.6875,
+            "bottom": 1159.546875
+          },
+          {
+            "top": 1195.609375,
+            "bottom": 1240
+          }
+        ],
+        "bottom": 1240,
+        "overlaps": false,
+        "equations": [
+          {
+            "width": 850,
+            "scrollWidth": 850
+          }
+        ],
+        "orphanEquations": 0,
+        "outputs": {
+          "functional-cost": "1.0000"
+        },
+        "warnings": [],
+        "alerts": [],
+        "concepts": [
+          "Il funzionale riceve due funzioni e restituisce un numero. L’integrale accumula il costo corrente; il termine finale valuta solo l’arrivo."
+        ],
+        "formulaOccurrences": [
+          {
+            "id": "p31-source-math-2",
+            "canonical": "\\ell:\\mathcal F\\to\\mathbb R,\\qquad\\ell(x(\\cdot),u(\\cdot))=\\int_0^T\\ell_\\tau(x(\\tau),u(\\tau))\\,d\\tau+\\ell_T(x(T))"
+          },
+          {
+            "id": "p31-enrichment-0",
+            "canonical": "u(t)=c,\\quad x(t)=ct,\\quad\\ell=\\frac12c^2T+\\frac12c^2T^2"
+          }
+        ],
+        "formulaContexts": [
+          "p31-enrichment-0"
+        ]
+      },
+      "alternatives": [
+        {
+          "view": "3D",
+          "height": 1280,
+          "scrollHeight": 1280,
+          "blocks": [
+            {
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "top": 116.65625,
+              "bottom": 303.71875
+            },
+            {
+              "top": 309.71875,
+              "bottom": 693.90625
+            },
+            {
+              "top": 699.90625,
+              "bottom": 853.6875
+            },
+            {
+              "top": 859.6875,
+              "bottom": 1159.546875
+            },
+            {
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "bottom": 1240,
+          "overlaps": false,
+          "equations": [
+            {
+              "width": 850,
+              "scrollWidth": 850
+            }
+          ],
+          "orphanEquations": 0,
+          "outputs": {
+            "functional-cost": "1.0000"
+          },
+          "warnings": [],
+          "alerts": [],
+          "concepts": [
+            "Il funzionale riceve due funzioni e restituisce un numero. L’integrale accumula il costo corrente; il termine finale valuta solo l’arrivo."
+          ],
+          "formulaOccurrences": [
+            {
+              "id": "p31-source-math-2",
+              "canonical": "\\ell:\\mathcal F\\to\\mathbb R,\\qquad\\ell(x(\\cdot),u(\\cdot))=\\int_0^T\\ell_\\tau(x(\\tau),u(\\tau))\\,d\\tau+\\ell_T(x(T))"
+            },
+            {
+              "id": "p31-enrichment-0",
+              "canonical": "u(t)=c,\\quad x(t)=ct,\\quad\\ell=\\frac12c^2T+\\frac12c^2T^2"
+            }
+          ],
+          "formulaContexts": [
+            "p31-enrichment-0"
+          ]
+        }
+      ],
+      "formulas": [
+        {
+          "formulaId": "p31-source-math-1",
+          "latex": "\\dot x(t)=f_t(x(t),u(t)),\\ t\\in[0,T];\\quad r(x(0),x(T))=0;\\quad g_t(x(t),u(t))\\leq0,\\ t\\in[0,T)",
+          "conceptualExplanation": "Nel continuo la dinamica vale su un intervallo reale. La fonte distingue [0,T] per la dinamica da [0,T) per i vincoli di percorso: non si aggiunge automaticamente il punto terminale.",
+          "details": "A cosa serve. Separare dinamica, endpoint e dominio dei path constraints.r,gtr,g_tr,gt​Funzioni dei vincoli, come nella formulazione discreta."
+        },
+        {
+          "formulaId": "p31-source-math-2",
+          "latex": "\\ell:\\mathcal F\\to\\mathbb R,\\qquad\\ell(x(\\cdot),u(\\cdot))=\\int_0^T\\ell_\\tau(x(\\tau),u(\\tau))\\,d\\tau+\\ell_T(x(T))",
+          "conceptualExplanation": "Il funzionale riceve due funzioni e restituisce un numero. L’integrale accumula il costo corrente; il termine finale valuta solo l’arrivo.",
+          "details": "A cosa serve. Distinguere un funzionale da una funzione di pochi numeri.F\\mathcal FFSpazio ambiente di funzioni.τ\\tauτVariabile muta d’integrazione, non coppia meccanica.TTTTempo finale.Vale quando. La fonte non specifica norma, topologia o regolarità dello spazio di funzioni."
+        },
+        {
+          "formulaId": "p31-trajectory-set",
+          "latex": "\\mathcal T=\\{(x(\\cdot),u(\\cdot))\\in\\mathcal F\\mid\\dot x(t)=f_t(x(t),u(t)),\\ t\\in[0,T]\\}",
+          "conceptualExplanation": "L’insieme 𝓣 raccoglie le coppie compatibili con la dinamica. T è il tempo finale; 𝓣 è un insieme. Il nome trajectory manifold non fornisce qui una prova di struttura differenziabile.",
+          "details": "A cosa serve. Leggere l’insieme delle traiettorie senza aggiungere ipotesi.T\\mathcal TTSottoinsieme dinamicamente compatibile di 𝓕."
+        },
+        {
+          "formulaId": "p31-enrichment-0",
+          "latex": "u(t)=c,\\quad x(t)=ct,\\quad\\ell=\\frac12c^2T+\\frac12c^2T^2",
+          "conceptualExplanation": "Un comando costante genera una retta di stato. Il costo corrente dipende dalla durata, quello terminale dal quadrato dello stato finale. È una sola famiglia dentro lo spazio di funzioni.",
+          "details": "A cosa serve. Calcolare esattamente un funzionale su una coppia dinamicamente coerente.cccIngresso costante aggiunto nell’integratore.Vale quando. Dinamica aggiunta ẋ=u, x(0)=0; costo corrente ½u², terminale ½x(T)². Nessun vincolo terminale nell’esempio. c=0 produce stato e costo nulli; non costituisce un risultato sull’OCP generale.c cambia la pendenza dello stato, la densità di costo e il terminale.T cambia il dominio temporale, l’arrivo e i due contributi."
+        }
+      ],
+      "formulaOverflow": []
+    },
+    {
+      "page": 32,
+      "mode": "3D_PRIMARY_WITH_2D",
+      "defaultView": "3D",
+      "loadAndReviewMs": 2001,
+      "geometry": {
+        "height": 1280,
+        "scrollHeight": 1280,
+        "blocks": [
+          {
+            "top": 40,
+            "bottom": 110.65625
+          },
+          {
+            "top": 116.65625,
+            "bottom": 326.203125
+          },
+          {
+            "top": 332.203125,
+            "bottom": 716.390625
+          },
+          {
+            "top": 722.390625,
+            "bottom": 876.171875
+          },
+          {
+            "top": 882.171875,
+            "bottom": 1169.625
+          },
+          {
+            "top": 1195.609375,
+            "bottom": 1240
+          }
+        ],
+        "bottom": 1240,
+        "overlaps": false,
+        "equations": [
+          {
+            "width": 850,
+            "scrollWidth": 850
+          }
+        ],
+        "orphanEquations": 0,
+        "outputs": {
+          "functional-coefficients": "2",
+          "functional-endpoint": "0.0000"
+        },
+        "warnings": [],
+        "alerts": [],
+        "concepts": [
+          "Si scelgono funzioni nello spazio 𝓕 e si richiede che rispettino la dinamica tramite 𝓣. Anche con tempo finale finito, la scelta di funzioni resta infinito-dimensionale."
+        ],
+        "formulaOccurrences": [
+          {
+            "id": "p32-source-math-0",
+            "canonical": "\\begin{aligned}\\min_{(x(\\cdot),u(\\cdot))\\in\\mathcal F}\\;&\\ell(x(\\cdot),u(\\cdot))\\\\\\text{subj.to }&(x(\\cdot),u(\\cdot))\\in\\mathcal T\\end{aligned}"
+          },
+          {
+            "id": "p32-example",
+            "canonical": "u(t)=\\begin{cases}c_1&0\\le t<1\\\\c_2&1\\le t\\le2\\end{cases},\\quad x(t)=\\begin{cases}c_1t&t\\le1\\\\c_1+c_2(t-1)&t\\ge1\\end{cases}"
+          }
+        ],
+        "formulaContexts": [
+          "p32-example"
+        ]
+      },
+      "alternatives": [
+        {
+          "view": "2D",
+          "height": 1280,
+          "scrollHeight": 1280,
+          "blocks": [
+            {
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "top": 116.65625,
+              "bottom": 326.203125
+            },
+            {
+              "top": 332.203125,
+              "bottom": 716.390625
+            },
+            {
+              "top": 722.390625,
+              "bottom": 876.171875
+            },
+            {
+              "top": 882.171875,
+              "bottom": 1169.625
+            },
+            {
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "bottom": 1240,
+          "overlaps": false,
+          "equations": [
+            {
+              "width": 850,
+              "scrollWidth": 850
+            }
+          ],
+          "orphanEquations": 0,
+          "outputs": {
+            "functional-coefficients": "2",
+            "functional-endpoint": "0.0000"
+          },
+          "warnings": [],
+          "alerts": [],
+          "concepts": [
+            "Si scelgono funzioni nello spazio 𝓕 e si richiede che rispettino la dinamica tramite 𝓣. Anche con tempo finale finito, la scelta di funzioni resta infinito-dimensionale."
+          ],
+          "formulaOccurrences": [
+            {
+              "id": "p32-source-math-0",
+              "canonical": "\\begin{aligned}\\min_{(x(\\cdot),u(\\cdot))\\in\\mathcal F}\\;&\\ell(x(\\cdot),u(\\cdot))\\\\\\text{subj.to }&(x(\\cdot),u(\\cdot))\\in\\mathcal T\\end{aligned}"
+            },
+            {
+              "id": "p32-example",
+              "canonical": "u(t)=\\begin{cases}c_1&0\\le t<1\\\\c_2&1\\le t\\le2\\end{cases},\\quad x(t)=\\begin{cases}c_1t&t\\le1\\\\c_1+c_2(t-1)&t\\ge1\\end{cases}"
+            }
+          ],
+          "formulaContexts": [
+            "p32-example"
+          ]
+        }
+      ],
+      "formulas": [
+        {
+          "formulaId": "p32-source-math-0",
+          "latex": "\\begin{aligned}\\min_{(x(\\cdot),u(\\cdot))\\in\\mathcal F}\\;&\\ell(x(\\cdot),u(\\cdot))\\\\\\text{subj.to }&(x(\\cdot),u(\\cdot))\\in\\mathcal T\\end{aligned}",
+          "conceptualExplanation": "Si scelgono funzioni nello spazio 𝓕 e si richiede che rispettino la dinamica tramite 𝓣. Anche con tempo finale finito, la scelta di funzioni resta infinito-dimensionale.",
+          "details": "A cosa serve. Distinguere orizzonte finito e numero di gradi di libertà.F,T\\mathcal F,\\mathcal TF,TSpazio ambiente e sottoinsieme dinamicamente compatibile.Vale quando. Qui si trascurano path e terminal constraints, non il terminal cost. La formula non stampa una condizione iniziale separata."
+        },
+        {
+          "formulaId": "p32-example",
+          "latex": "u(t)=\\begin{cases}c_1&0\\le t<1\\\\c_2&1\\le t\\le2\\end{cases},\\quad x(t)=\\begin{cases}c_1t&t\\le1\\\\c_1+c_2(t-1)&t\\ge1\\end{cases}",
+          "conceptualExplanation": "Due coefficienti descrivono solo una sottofamiglia finita di ingressi. Lo stato integra i due tratti e resta continuo al cambio: questa restrizione non è lo spazio funzionale completo.",
+          "details": "A cosa serve. Visualizzare una parametrizzazione finita senza attribuirla alla fonte.c1,c2c_1,c_2c1​,c2​Coefficienti dei due tratti, K=2 fisso.Vale quando. Esempio ẋ=u, x(0)=0 su [0,2]. Stato assolutamente continuo; uguaglianza dinamica quasi ovunque. Al cambio non si pretende una derivata classica se c₁≠c₂. Nessuna prova di convergenza o ottimalità della parametrizzazione.c₁ cambia il primo tratto e l’intera famiglia di stati dopo il cambio.c₂ seleziona una sezione della famiglia, il secondo tratto e l’arrivo."
+        }
+      ],
+      "formulaOverflow": []
+    },
+    {
+      "page": 33,
+      "mode": "3D_PRIMARY_WITH_2D",
+      "defaultView": "3D",
+      "loadAndReviewMs": 1627,
+      "geometry": {
+        "height": 1280,
+        "scrollHeight": 1280,
+        "blocks": [
+          {
+            "top": 40,
+            "bottom": 110.65625
+          },
+          {
+            "top": 116.65625,
+            "bottom": 289.84375
+          },
+          {
+            "top": 295.84375,
+            "bottom": 680.03125
+          },
+          {
+            "top": 686.03125,
+            "bottom": 865.59375
+          },
+          {
+            "top": 871.59375,
+            "bottom": 1058.265625
+          },
+          {
+            "top": 1195.609375,
+            "bottom": 1240
+          }
+        ],
+        "bottom": 1240,
+        "overlaps": false,
+        "equations": [
+          {
+            "width": 850,
+            "scrollWidth": 850
+          }
+        ],
+        "orphanEquations": 0,
+        "outputs": {
+          "pendulum-acceleration": "-4.9050",
+          "pendulum-support": "4.9050"
+        },
+        "warnings": [],
+        "alerts": [],
+        "concepts": [
+          "La prima equazione aggiorna l’angolo attraverso la velocità; la seconda calcola l’accelerazione. Accelerazione nulla da sola non basta per avere un equilibrio."
+        ],
+        "formulaOccurrences": [
+          {
+            "id": "p33-source-math-1",
+            "canonical": "\\dot x_1=x_2,\\qquad\\dot x_2=-\\frac{g}{l}\\sin x_1+\\frac{1}{m\\ell^2}u"
+          },
+          {
+            "id": "p33-enrichment-0",
+            "canonical": "x_1=\\theta,\\quad x_2=\\dot\\theta,\\quad u=\\tau"
+          }
+        ],
+        "formulaContexts": [
+          "p33-enrichment-0"
+        ]
+      },
+      "alternatives": [
+        {
+          "view": "2D",
+          "height": 1280,
+          "scrollHeight": 1280,
+          "blocks": [
+            {
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "top": 116.65625,
+              "bottom": 289.84375
+            },
+            {
+              "top": 295.84375,
+              "bottom": 680.03125
+            },
+            {
+              "top": 686.03125,
+              "bottom": 865.59375
+            },
+            {
+              "top": 871.59375,
+              "bottom": 1058.265625
+            },
+            {
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "bottom": 1240,
+          "overlaps": false,
+          "equations": [
+            {
+              "width": 850,
+              "scrollWidth": 850
+            }
+          ],
+          "orphanEquations": 0,
+          "outputs": {
+            "pendulum-acceleration": "-4.9050",
+            "pendulum-support": "4.9050"
+          },
+          "warnings": [],
+          "alerts": [],
+          "concepts": [
+            "La prima equazione aggiorna l’angolo attraverso la velocità; la seconda calcola l’accelerazione. Accelerazione nulla da sola non basta per avere un equilibrio."
+          ],
+          "formulaOccurrences": [
+            {
+              "id": "p33-source-math-1",
+              "canonical": "\\dot x_1=x_2,\\qquad\\dot x_2=-\\frac{g}{l}\\sin x_1+\\frac{1}{m\\ell^2}u"
+            },
+            {
+              "id": "p33-enrichment-0",
+              "canonical": "x_1=\\theta,\\quad x_2=\\dot\\theta,\\quad u=\\tau"
+            }
+          ],
+          "formulaContexts": [
+            "p33-enrichment-0"
+          ]
+        }
+      ],
+      "formulas": [
+        {
+          "formulaId": "p33-source-math-0",
+          "latex": "\\ddot\\theta=-\\frac{g}{l}\\sin\\theta+\\frac{1}{m\\ell^2}\\tau",
+          "conceptualExplanation": "La gravità e la coppia contribuiscono all’accelerazione angolare. Il seno rende il modello non lineare: non si sostituisce l’angolo al seno.",
+          "details": "A cosa serve. Interpretare i due contributi della dinamica meccanica.τ\\tauτCoppia meccanica, non variabile d’integrazione.l,ℓl,\\elll,ℓGlifi della lunghezza conservati come nella fonte.m,gm,gm,gMassa e gravità."
+        },
+        {
+          "formulaId": "p33-source-math-1",
+          "latex": "\\dot x_1=x_2,\\qquad\\dot x_2=-\\frac{g}{l}\\sin x_1+\\frac{1}{m\\ell^2}u",
+          "conceptualExplanation": "La prima equazione aggiorna l’angolo attraverso la velocità; la seconda calcola l’accelerazione. Accelerazione nulla da sola non basta per avere un equilibrio.",
+          "details": "A cosa serve. Passare dalla seconda derivata alla rappresentazione a due stati.x1,x2,ux_1,x_2,ux1​,x2​,uAngolo, velocità angolare e coppia nell’identificazione del modello.Vale quando. Esempio con l≡ℓ=1 m, m≡M=1 kg, g=9.81 m/s², velocità dell’istantanea zero. Nessun attrito, smorzamento o integrazione temporale aggiunti.θ muove il punto e aggiorna il contributo gravitazionale e la coppia di sostegno.u muove il punto e trasla la sezione 2D dell’accelerazione."
+        },
+        {
+          "formulaId": "p33-source-math-2",
+          "latex": "y=\\theta",
+          "conceptualExplanation": "L’uscita è il solo angolo, mentre lo stato comprende anche la sua velocità. Osservare l’angolo non elimina il secondo stato dalla dinamica.",
+          "details": "A cosa serve. Distinguere uscita di prestazione e stato.yyyUscita scelta dal modello."
+        },
+        {
+          "formulaId": "p33-enrichment-0",
+          "latex": "x_1=\\theta,\\quad x_2=\\dot\\theta,\\quad u=\\tau",
+          "conceptualExplanation": "Il confronto delle due rappresentazioni identifica angolo, velocità e ingresso meccanico. Queste uguaglianze esplicitano la lettura del modello senza cambiare le sue equazioni.",
+          "details": "A cosa serve. Collegare notazione meccanica e notazione di stato.θ˙\\dot\\thetaθ˙Velocità angolare."
+        }
+      ],
+      "formulaOverflow": []
+    },
+    {
+      "page": 35,
+      "mode": "2D_PRIMARY_WITH_3D",
+      "defaultView": "2D",
+      "loadAndReviewMs": 1129,
+      "geometry": {
+        "height": 1280,
+        "scrollHeight": 1280,
+        "blocks": [
+          {
+            "top": 40,
+            "bottom": 110.65625
+          },
+          {
+            "top": 116.65625,
+            "bottom": 361.296875
+          },
+          {
+            "top": 367.296875,
+            "bottom": 780.078125
+          },
+          {
+            "top": 786.078125,
+            "bottom": 965.640625
+          },
+          {
+            "top": 971.640625,
+            "bottom": 1168.3125
+          },
+          {
+            "top": 1195.609375,
+            "bottom": 1240
+          }
+        ],
+        "bottom": 1240,
+        "overlaps": false,
+        "equations": [
+          {
+            "width": 850,
+            "scrollWidth": 850
+          }
+        ],
+        "orphanEquations": 0,
+        "outputs": {
+          "reference-switch": "1.00",
+          "reference-switch-angle": "0.5236",
+          "reference-switch-torque": "4.9050",
+          "reference-valid": "salto non realizzabile"
+        },
+        "warnings": [],
+        "alerts": [],
+        "concepts": [
+          "Il riferimento chiede un angolo prima di metà intervallo e un altro dopo, con velocità desiderata nulla. Per equilibri distinti il salto non è un moto del pendolo."
+        ],
+        "formulaOccurrences": [
+          {
+            "id": "p35-source-math-0",
+            "canonical": "x_1^{\\mathrm{des}}(t)=\\begin{cases}\\theta_e^1&0\\leq t<T/2\\\\\\theta_e^2&T/2\\leq t\\leq T\\end{cases},\\qquad x_2^{\\mathrm{des}}(t)=0"
+          },
+          {
+            "id": "p35-support",
+            "canonical": "u_e^i=mg\\ell\\sin\\theta_e^i,\\qquad i=1,2"
+          }
+        ],
+        "formulaContexts": [
+          "p35-support"
+        ]
+      },
+      "alternatives": [
+        {
+          "view": "3D",
+          "height": 1280,
+          "scrollHeight": 1280,
+          "blocks": [
+            {
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "top": 116.65625,
+              "bottom": 361.296875
+            },
+            {
+              "top": 367.296875,
+              "bottom": 780.078125
+            },
+            {
+              "top": 786.078125,
+              "bottom": 965.640625
+            },
+            {
+              "top": 971.640625,
+              "bottom": 1168.3125
+            },
+            {
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "bottom": 1240,
+          "overlaps": false,
+          "equations": [
+            {
+              "width": 850,
+              "scrollWidth": 850
+            }
+          ],
+          "orphanEquations": 0,
+          "outputs": {
+            "reference-switch": "1.00",
+            "reference-switch-angle": "0.5236",
+            "reference-switch-torque": "4.9050",
+            "reference-valid": "salto non realizzabile"
+          },
+          "warnings": [],
+          "alerts": [],
+          "concepts": [
+            "Il riferimento chiede un angolo prima di metà intervallo e un altro dopo, con velocità desiderata nulla. Per equilibri distinti il salto non è un moto del pendolo."
+          ],
+          "formulaOccurrences": [
+            {
+              "id": "p35-source-math-0",
+              "canonical": "x_1^{\\mathrm{des}}(t)=\\begin{cases}\\theta_e^1&0\\leq t<T/2\\\\\\theta_e^2&T/2\\leq t\\leq T\\end{cases},\\qquad x_2^{\\mathrm{des}}(t)=0"
+            },
+            {
+              "id": "p35-support",
+              "canonical": "u_e^i=mg\\ell\\sin\\theta_e^i,\\qquad i=1,2"
+            }
+          ],
+          "formulaContexts": [
+            "p35-support"
+          ]
+        }
+      ],
+      "formulas": [
+        {
+          "formulaId": "p35-source-math-0",
+          "latex": "x_1^{\\mathrm{des}}(t)=\\begin{cases}\\theta_e^1&0\\leq t<T/2\\\\\\theta_e^2&T/2\\leq t\\leq T\\end{cases},\\qquad x_2^{\\mathrm{des}}(t)=0",
+          "conceptualExplanation": "Il riferimento chiede un angolo prima di metà intervallo e un altro dopo, con velocità desiderata nulla. Per equilibri distinti il salto non è un moto del pendolo.",
+          "details": "A cosa serve. Leggere correttamente i due rami e distinguere desiderato e traiettoria.θe1,θe2\\theta_e^1,\\theta_e^2θe1​,θe2​Angoli dei due equilibri.T/2T/2T/2Cambio incluso nel secondo ramo.Vale quando. Se i due angoli coincidono, il riferimento diventa una traiettoria di equilibrio costante. La fonte desidera anche velocità angolare piccola; qui non si inventa una traiettoria ottima.θₑ¹ cambia il primo livello e la sua coppia di sostegno.θₑ² cambia il secondo livello e verifica se il salto scompare.T sposta il cambio a T/2 e la durata dei due rami."
+        },
+        {
+          "formulaId": "p35-source-math-1",
+          "latex": "u^{\\mathrm{des}}(t)=\\begin{cases}u_e^1&0\\leq t<T/2\\\\u_e^2&T/2\\leq t\\leq T\\end{cases}",
+          "conceptualExplanation": "La coppia desiderata sostiene il rispettivo equilibrio in ciascun ramo. Non rende fisicamente possibile un salto istantaneo dello stato angolare.",
+          "details": "A cosa serve. Associare i riferimenti di angolo e ingresso senza interpolare il salto.ue1,ue2u_e^1,u_e^2ue1​,ue2​Coppie di equilibrio calcolate dalla dinamica corretta."
+        },
+        {
+          "formulaId": "p35-support",
+          "latex": "u_e^i=mg\\ell\\sin\\theta_e^i,\\qquad i=1,2",
+          "conceptualExplanation": "Le coppie si ottengono annullando velocità e accelerazione nella dinamica. Si usa la condizione di equilibrio corretta di p34 anche quando si costruisce il desiderato.",
+          "details": "A cosa serve. Calcolare i livelli di ingresso dell’esempio a gradino.m=1,ℓ=1,g=9.81m=1,\\ell=1,g=9.81m=1,ℓ=1,g=9.81Valori e unità aggiunti, con l≡ℓ.Vale quando. Rami disegnati separatamente, senza segmento di collegamento. T/2 usa il secondo valore."
+        }
+      ],
+      "formulaOverflow": []
+    },
+    {
+      "page": 36,
+      "mode": "3D_PRIMARY_WITH_2D",
+      "defaultView": "3D",
+      "loadAndReviewMs": 1724,
+      "geometry": {
+        "height": 1280,
+        "scrollHeight": 1280,
+        "blocks": [
+          {
+            "top": 40,
+            "bottom": 110.65625
+          },
+          {
+            "top": 116.65625,
+            "bottom": 391.03125
+          },
+          {
+            "top": 397.03125,
+            "bottom": 781.21875
+          },
+          {
+            "top": 787.21875,
+            "bottom": 966.78125
+          },
+          {
+            "top": 972.78125,
+            "bottom": 1130.859375
+          },
+          {
+            "top": 1195.609375,
+            "bottom": 1240
+          }
+        ],
+        "bottom": 1240,
+        "overlaps": false,
+        "equations": [
+          {
+            "width": 850,
+            "scrollWidth": 850
+          }
+        ],
+        "orphanEquations": 0,
+        "outputs": {
+          "pendulum-running": "2.6801",
+          "pendulum-terminal": "0.5483",
+          "pendulum-candidate-total": "3.2284"
+        },
+        "warnings": [],
+        "alerts": [],
+        "concepts": [
+          "Dinamica e dato iniziale vincolano il moto; il costo corrente e finale pesa gli scarti dal desiderato. La fonte usa questo costo senza ½."
+        ],
+        "formulaOccurrences": [
+          {
+            "id": "p36-source-math-0",
+            "canonical": "\\begin{aligned}\\min_{(x(\\cdot),u(\\cdot))\\in\\mathcal F}\\;&\\int_0^T\\big[q_1(x_1(\\tau)-x_1^{\\mathrm{des}}(\\tau))^2+q_2x_2(\\tau)^2+r(u(\\tau)-u^{\\mathrm{des}}(\\tau))^2\\big]d\\tau\\\\&+q_{T1}(x_1(T)-x_1^{\\mathrm{des}}(T))^2+q_{T2}x_2(T)^2\\\\\\text{subj.to }&\\dot x_1(t)=x_2(t)\\\\&\\dot x_2(t)=-\\frac{g}{l}\\sin x_1(t)+\\frac{1}{m\\ell^2}u(t)\\\\&x(0)=x^0\\end{aligned}"
+          },
+          {
+            "id": "p36-enrichment-0",
+            "canonical": "\\alpha=\\pi/6,\\quad\\ell_{\\rm candidate}=q_1\\alpha^2+r\\,(4.905)^2+q_{T1}\\alpha^2"
+          }
+        ],
+        "formulaContexts": [
+          "p36-enrichment-0"
+        ]
+      },
+      "alternatives": [
+        {
+          "view": "2D",
+          "height": 1280,
+          "scrollHeight": 1280,
+          "blocks": [
+            {
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "top": 116.65625,
+              "bottom": 391.03125
+            },
+            {
+              "top": 397.03125,
+              "bottom": 642.203125
+            },
+            {
+              "top": 648.203125,
+              "bottom": 827.765625
+            },
+            {
+              "top": 833.765625,
+              "bottom": 991.84375
+            },
+            {
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "bottom": 1240,
+          "overlaps": false,
+          "equations": [
+            {
+              "width": 850,
+              "scrollWidth": 850
+            }
+          ],
+          "orphanEquations": 0,
+          "outputs": {
+            "pendulum-running": "2.6801",
+            "pendulum-terminal": "0.5483",
+            "pendulum-candidate-total": "3.2284"
+          },
+          "warnings": [],
+          "alerts": [],
+          "concepts": [
+            "Dinamica e dato iniziale vincolano il moto; il costo corrente e finale pesa gli scarti dal desiderato. La fonte usa questo costo senza ½."
+          ],
+          "formulaOccurrences": [
+            {
+              "id": "p36-source-math-0",
+              "canonical": "\\begin{aligned}\\min_{(x(\\cdot),u(\\cdot))\\in\\mathcal F}\\;&\\int_0^T\\big[q_1(x_1(\\tau)-x_1^{\\mathrm{des}}(\\tau))^2+q_2x_2(\\tau)^2+r(u(\\tau)-u^{\\mathrm{des}}(\\tau))^2\\big]d\\tau\\\\&+q_{T1}(x_1(T)-x_1^{\\mathrm{des}}(T))^2+q_{T2}x_2(T)^2\\\\\\text{subj.to }&\\dot x_1(t)=x_2(t)\\\\&\\dot x_2(t)=-\\frac{g}{l}\\sin x_1(t)+\\frac{1}{m\\ell^2}u(t)\\\\&x(0)=x^0\\end{aligned}"
+            },
+            {
+              "id": "p36-enrichment-0",
+              "canonical": "\\alpha=\\pi/6,\\quad\\ell_{\\rm candidate}=q_1\\alpha^2+r\\,(4.905)^2+q_{T1}\\alpha^2"
+            }
+          ],
+          "formulaContexts": [
+            "p36-enrichment-0"
+          ]
+        }
+      ],
+      "formulas": [
+        {
+          "formulaId": "p36-source-math-0",
+          "latex": "\\begin{aligned}\\min_{(x(\\cdot),u(\\cdot))\\in\\mathcal F}\\;&\\int_0^T\\big[q_1(x_1(\\tau)-x_1^{\\mathrm{des}}(\\tau))^2+q_2x_2(\\tau)^2+r(u(\\tau)-u^{\\mathrm{des}}(\\tau))^2\\big]d\\tau\\\\&+q_{T1}(x_1(T)-x_1^{\\mathrm{des}}(T))^2+q_{T2}x_2(T)^2\\\\\\text{subj.to }&\\dot x_1(t)=x_2(t)\\\\&\\dot x_2(t)=-\\frac{g}{l}\\sin x_1(t)+\\frac{1}{m\\ell^2}u(t)\\\\&x(0)=x^0\\end{aligned}",
+          "conceptualExplanation": "Dinamica e dato iniziale vincolano il moto; il costo corrente e finale pesa gli scarti dal desiderato. La fonte usa questo costo senza ½.",
+          "details": "A cosa serve. Riunire obiettivo e vincoli dell’OCP del pendolo.q1,q2,rq_1,q_2,rq1​,q2​,rPesi correnti di errore angolare, velocità e scarto di coppia.qT1,qT2q_{T1},q_{T2}qT1​,qT2​Pesi terminali.τ\\tauτVariabile muta dell’integrale.Vale quando. Non è imposto un endpoint hard né un limite di ingresso in questa formulazione. La fonte non fornisce una soluzione."
+        },
+        {
+          "formulaId": "p36-source-math-1",
+          "latex": "Q=\\begin{bmatrix}q_1&0\\\\0&q_2\\end{bmatrix},\\quad Q_T=\\begin{bmatrix}q_{T1}&0\\\\0&q_{T2}\\end{bmatrix},\\quad R=r",
+          "conceptualExplanation": "Le matrici diagonali organizzano le penalità di angolo e velocità; l’ingresso è scalare. La scelta dei pesi non costituisce un vincolo di ampiezza.",
+          "details": "A cosa serve. Leggere i pesi del funzionale del pendolo.R=rR=rR=rPeso scalare della coppia, diverso dalla funzione di endpoint delle pagine generali."
+        },
+        {
+          "formulaId": "p36-enrichment-0",
+          "latex": "\\alpha=\\pi/6,\\quad\\ell_{\\rm candidate}=q_1\\alpha^2+r\\,(4.905)^2+q_{T1}\\alpha^2",
+          "conceptualExplanation": "La candidata resta ferma in zero e soddisfa la dinamica. Nel secondo secondo paga errore angolare e di coppia; all’arrivo paga ancora l’errore angolare. Non raggiungere il target non viola un vincolo terminale qui assente.",
+          "details": "A cosa serve. Valutare esattamente una candidata fattibile senza dichiararla ottima.α=π/6\\alpha=\\pi/6α=π/6Secondo angolo desiderato dell’esempio.4.9054.9054.905Coppia desiderata nel secondo intervallo, in N m.Vale quando. T=2, cambio a t=1; x=(0,0), u=0 e x⁰=(0,0) fissi. l≡ℓ=m=1, g=9.81 aggiunti. q₂=q_T2=1, contributi nulli perché x₂=0. Non si minimizza. La mesh è interrotta al cambio del riferimento: non si disegna una rampa artificiale.q₁ cambia il contributo integrale angolare, la superficie e il totale.r cambia il contributo di ingresso nel secondo intervallo e il salto della superficie.q_T1 cambia soltanto il terminale e il totale; il running cost resta invariato."
+        }
+      ],
+      "formulaOverflow": []
+    }
+  ],
+  "errors": [],
+  "failed_requests": [],
+  "success": true,
+  "reconfirmation": "Subset of the final 36-page production capture after shared formula reflow and final source-integrity checks."
+}

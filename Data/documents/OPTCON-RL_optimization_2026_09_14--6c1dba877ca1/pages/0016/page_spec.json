@@ -81,12 +81,487 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
+    "status": "needs_review",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "53dc079571c74fd5c99f2b1d1e65946c690ac0403a7e8bc3b50cc833581e0efa",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0016",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "b6f723d1c1c44ef0d3edbea15784d850ba7901ea717cb12251f974d1074dd326",
+        "layout": "a153df06575f4552f67670cfea170f2470b5cf059dc917a74794d1a52678302d",
+        "render": "eb2b5c0c548e816c534cf66cd96b5264b398b323284cbcf8be4e6d778d449106"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-b-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0016",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0015",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0017"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0016",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0015",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0017"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0016",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0015",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0017"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Strong convexity and gradient monotonicity",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "definition",
+          "description": "La definizione stampata usa < e sottrae µθ(1−θ)||z_A−z_B||², senza il fattore 1/2.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0016",
+            "modality": "both",
+            "text_quote": "parameter µ > 0",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "equation",
+          "description": "La monotonia forte stampata ha modulo µ: prodotto ≥µ||z_A−z_B||².",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0016",
+            "modality": "both",
+            "text_quote": "strongly monotone operator",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "concept",
+          "description": "La definizione della pagina è più forte della convenzione µ/2 usata dal limite inferiore di pagina 19; non trascriverla silenziosamente come convenzione standard.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0016",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0016",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Interpretare µ come limite uniforme inferiore e conservare una normalizzazione coerente.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0015",
+          "role": "previous",
+          "note": "Distinguere monotonia stretta da un limite quadratico uniforme."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0017",
+          "role": "next",
+          "note": "Leggere insieme limite Lipschitz e cocoercività per una funzione convessa."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\ell(\\theta z_A+(1-\\theta)z_B)<\\theta\\ell(z_A)+(1-\\theta)\\ell(z_B)-\\mu\\theta(1-\\theta)\\|z_A-z_B\\|^2",
+          "meaning": "La slide usa questa normalizzazione, più restrittiva. La companion adotta µ/2 e ≤ per mantenere µ coerente con monotonia e pagine successive.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "(\\nabla\\ell(z_A)-\\nabla\\ell(z_B))^\\top(z_A-z_B)\\ge\\mu\\|z_A-z_B\\|^2",
+          "meaning": "Per ℓ µ-fortemente convessa e differenziabile, un’unica µ>0 garantisce questo limite per tutte le coppie.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [
+        {
+          "description": "Discrepanza della fonte esaminata e risolta nella policy companion: La slide definisce una condizione più forte con < e µ, mentre il modulo del gradiente e il limite di pagina 19 usano la convenzione standard µ/2. Per ℓ(z)=µ||z||²/2, lo scarto dalla corda è esattamente µθ(1−θ)||δ||²/2: soddisfa il limite di monotonia con modulo µ e il supporto quadratico di pagina 19, ma non la definizione letterale con la stessa µ. La versione stampata può essere una definizione più restrittiva con costante diversa e implica comunque il limite più debole successivo: non si afferma che tutti i risultati della slide siano falsi. La companion dichiara esplicitamente la scelta ≤ e µ/2, conserva SOURCE_LITERAL e usa una sola normalizzazione in tutti gli esempi e in 17–18.",
+          "blocking": false,
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        }
+      ],
+      "progression": {
+        "assessment": "progressive",
+        "related_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0015"
+        ],
+        "added": [
+          "Interpretare µ come limite uniforme inferiore e conservare una normalizzazione coerente."
+        ],
+        "removed": [],
+        "changed": [
+          "Ipotesi e limite quantitativo cambiano: conservare entrambe le pagine."
+        ],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "structure"
+        ],
+        "rationale": "Progressione concettuale verificata, non duplicazione eliminabile."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "La slide definisce una condizione più forte con < e µ, mentre il modulo del gradiente e il limite di pagina 19 usano la convenzione standard µ/2. Per ℓ(z)=µ||z||²/2, lo scarto dalla corda è esattamente µθ(1−θ)||δ||²/2: soddisfa il limite di monotonia con modulo µ e il supporto quadratico di pagina 19, ma non la definizione letterale con la stessa µ. La versione stampata può essere una definizione più restrittiva con costante diversa e implica comunque il limite più debole successivo: non si afferma che tutti i risultati della slide siano falsi. La companion dichiara esplicitamente la scelta ≤ e µ/2, conserva SOURCE_LITERAL e usa una sola normalizzazione in tutti gli esempi e in 17–18."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Convessità stretta",
+            "why": "Positività puntuale non dà un modulo uniforme.",
+            "origin": "source_context",
+            "page_numbers": [
+              15
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\ell(\\theta z_A+(1-\\theta)z_B)<\\theta\\ell(z_A)+(1-\\theta)\\ell(z_B)-\\mu\\theta(1-\\theta)\\|z_A-z_B\\|^2",
+            "anchor": "parameter µ > 0",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "(\\nabla\\ell(z_A)-\\nabla\\ell(z_B))^\\top(z_A-z_B)\\ge\\mu\\|z_A-z_B\\|^2",
+            "anchor": "parameter µ > 0",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Il prodotto cresce almeno come µ volte la distanza quadratica. µ è una garanzia uniforme, non un valore ricavato da una sola coppia di punti.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "µ=0.5, h=0.7",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Funzione e base quadratica µz²/2 sulla stessa scala, punti ±h e confronto uniforme del prodotto.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Interpretare µ come limite uniforme inferiore e conservare una normalizzazione coerente.",
+            "setup": "µ=0.5, h=0.7",
+            "parameters": [],
+            "derivation": [
+              "M=4h²(µ+h²), limite inferiore=4µh².",
+              "La differenza è 4h⁴≥0.",
+              "Per una pura quadratica µz²/2, Jensen raggiunge esattamente il margine µ/2: non vale la definizione letterale stampata con la stessa µ."
+            ],
+            "expected_outcome": "La convenzione scelta è dichiarata; la definizione letterale è una condizione più forte, non un controesempio ai risultati che ne seguono.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "SceneViewport",
+          "description": "Funzione e base quadratica µz²/2 sulla stessa scala, punti ±h e confronto uniforme del prodotto.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Variare un solo aspetto del confronto mantenendo esplicite le invarianti.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Modulo di curvatura",
+              "symbol": "\\mu",
+              "origin": "enrichment",
+              "range": "{'min': 0, 'max': 2, 'step': 0.1, 'integer': False}",
+              "default": "0.5",
+              "effect_on_change": "Alza la curvatura minima, il gradiente e il limite inferiore; zero esplora soltanto il confine non forte.",
+              "edge_cases": [
+                "µ=0",
+                "h=0",
+                "Normalizzazione"
+              ]
+            },
+            {
+              "name": "Semidistanza dei punti",
+              "symbol": "h",
+              "origin": "enrichment",
+              "range": "{'min': 0, 'max': 1, 'step': 0.05, 'integer': False}",
+              "default": "0.7",
+              "effect_on_change": "Sposta la coppia ±h e aggiorna M e µ distanza²; la funzione non cambia.",
+              "edge_cases": [
+                "µ=0",
+                "h=0",
+                "Normalizzazione"
+              ]
+            }
+          ],
+          "outputs": [
+            "Interpretare µ come limite uniforme inferiore e conservare una normalizzazione coerente."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "µ=0",
+            "expected_behavior": "Il quartico resta strettamente convesso ma non fortemente convesso.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "h=0",
+            "expected_behavior": "Prodotto e limite nulli; non dividere per la distanza.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "Normalizzazione",
+            "expected_behavior": "Usare µ/2 e ≤ nei confronti di Jensen; non cambiare il letterale.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Interpretare µ come limite uniforme inferiore e conservare una normalizzazione coerente.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1,
+  "source_warning": {
+    "policy_version": "1.0.0",
+    "scope": "companion_only",
+    "type": "CORRECTION_WARNING",
+    "review_status": "resolved",
+    "original_analysis_sha256": "da9f12528aec6e51e1e4c928d9899110fd35abcc41eb48e2856ba0861b7fad09",
+    "issues": [
+      {
+        "issue_id": "opt16-source-review",
+        "source_issue_index": 0,
+        "issue": "Forte convessità: una curvatura minima",
+        "type": "CORRECTION_WARNING",
+        "source_expression": "\\ell(\\theta z_A+(1-\\theta)z_B)<\\theta\\ell(z_A)+(1-\\theta)\\ell(z_B)-\\mu\\theta(1-\\theta)\\|z_A-z_B\\|^2",
+        "corrected_expression": "\\ell(\\theta z_A+(1-\\theta)z_B)\\le\\theta\\ell(z_A)+(1-\\theta)\\ell(z_B)-\\frac{\\mu}{2}\\theta(1-\\theta)\\|z_A-z_B\\|^2",
+        "companion_uses": "\\ell(\\theta z_A+(1-\\theta)z_B)\\le\\theta\\ell(z_A)+(1-\\theta)\\ell(z_B)-\\frac{\\mu}{2}\\theta(1-\\theta)\\|z_A-z_B\\|^2",
+        "short_warning": "⚠ Warning: possibile errore nella slide originale. Nella definizione usiamo ≤ e µ/2.",
+        "correction_reason": "La slide definisce una condizione più forte con < e µ, mentre il modulo del gradiente e il limite di pagina 19 usano la convenzione standard µ/2. Per ℓ(z)=µ||z||²/2, lo scarto dalla corda è esattamente µθ(1−θ)||δ||²/2: soddisfa il limite di monotonia con modulo µ e il supporto quadratico di pagina 19, ma non la definizione letterale con la stessa µ. La versione stampata può essere una definizione più restrittiva con costante diversa e implica comunque il limite più debole successivo: non si afferma che tutti i risultati della slide siano falsi. La companion dichiara esplicitamente la scelta ≤ e µ/2, conserva SOURCE_LITERAL e usa una sola normalizzazione in tutti gli esempi e in 17–18.",
+        "use_corrected_value_for_examples": true,
+        "use_corrected_value_for_simulation": true,
+        "resolved": true,
+        "source_references": [
+          "analysis/result/observations"
+        ],
+        "context_pages_consulted": [
+          15,
+          16,
+          17,
+          19
+        ],
+        "calculation_policy": "SOURCE_LITERAL immutabile; calcoli basati sulla versione companion e sulle ipotesi dichiarate.",
+        "ui": {
+          "show": true,
+          "color": "red",
+          "placement": "Accanto al concetto interessato",
+          "when": "Enunciato o esempio pertinente",
+          "student_text_field": "short_warning"
+        }
+      }
+    ],
+    "companion_overrides": [],
+    "technical_only_legacy_paths": []
   }
 }

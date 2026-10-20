@@ -81,12 +81,427 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "0a2d908fd1b982c9f13dfc6137a40148e73348c76b24384a5c704225eb1c117a",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0020",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "12a08e5985cbe57f02ae435229bcd7437deda632729fff25079db51a013c1480",
+        "layout": "347a69b911f12ca3906e40d631e3514ab9037e9289964e384121cb01d24fd0e7",
+        "render": "e4e0445deb3d77ab2a256909bdfd9d8fcff2582a431df6564ec12ad79e48caa9"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-c-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0020",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0019",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0021"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0020",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0019",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0021"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0020",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0019",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0021"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Graphical interpretation of Lipschitz continuity of the gradient",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "assumption",
+          "description": "La fonte richiede differenziabilità e gradiente Lipschitz, senza ipotesi di convessità.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0020",
+            "modality": "both",
+            "text_quote": "If ℓis differentiable with Lipschitz continuous gradient",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "equation",
+          "description": "Il termine quadratico superiore ha coefficiente L/2.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0020",
+            "modality": "both",
+            "text_quote": "quadratic upper bound",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "diagram",
+          "description": "Parabola rossa sopra il costo blu e tangente nera tratteggiata nel punto condiviso (z_A,ℓ(z_A)); disegno qualitativo.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0020",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0020",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Leggere il limite L senza aggiungere un’ipotesi di convessità assente nella fonte.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0019",
+          "role": "previous",
+          "note": "Distinguere supporto affine e limite inferiore quadratico, con la stessa tangenza."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0021",
+          "role": "next",
+          "note": "Comprendere la contraddizione geometrica e il ruolo di punti arbitrariamente vicini."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\ell(z_B)\\le\\ell(z_A)+\\nabla\\ell(z_A)^\\top(z_B-z_A)+\\frac L2\\|z_B-z_A\\|^2",
+          "meaning": "Il gradiente L-Lipschitz garantisce che la parabola resti sopra il costo. Si integra la variazione del gradiente lungo il segmento; la convessità non è necessaria.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "progressive",
+        "related_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0019"
+        ],
+        "added": [
+          "Leggere il limite L senza aggiungere un’ipotesi di convessità assente nella fonte."
+        ],
+        "removed": [],
+        "changed": [
+          "Nuova ipotesi, verso del limite o conseguenza: non eliminare la pagina."
+        ],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "structure"
+        ],
+        "rationale": "Sviluppo distinto di una famiglia concettuale, non duplicazione eliminabile."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "Nessuna correzione matematica necessaria dopo confronto con la pagina precedente e successiva."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Gradiente Lipschitz",
+            "why": "L controlla la variazione del gradiente, non è il valore della funzione.",
+            "origin": "source_context",
+            "page_numbers": [
+              17
+            ]
+          },
+          {
+            "concept": "Limite inferiore",
+            "why": "Confrontare il verso della disuguaglianza con pagina 19.",
+            "origin": "source_context",
+            "page_numbers": [
+              19
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\ell(z_B)\\le\\ell(z_A)+\\nabla\\ell(z_A)^\\top(z_B-z_A)+\\frac L2\\|z_B-z_A\\|^2",
+            "anchor": "If ℓis differentiable with Lipschitz continuous gradient",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Un gradiente L-Lipschitz impedisce al costo di superare il modello quadratico costruito in A. Non occorre che la funzione sia convessa.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "L=1, A=−0.4, B=0.9",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Costo blu, parabola superiore rossa e tangente tratteggiata; stessi ruoli dei punti della pagina 19, verso del margine invertito.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Leggere il limite L senza aggiungere un’ipotesi di convessità assente nella fonte.",
+            "setup": "L=1, A=−0.4, B=0.9",
+            "parameters": [],
+            "derivation": [
+              "Il maggiorante vale 1−cos(−0.4)+sin(−0.4)·1.3+1.3²/2.",
+              "Il costo vale 1−cos(0.9).",
+              "La differenza maggiorante−costo è non negativa."
+            ],
+            "expected_outcome": "Anche fuori dalle regioni convesse di 1−cos z la maggiorazione resta valida.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "SceneViewport",
+          "description": "Costo blu, parabola superiore rossa e tangente tratteggiata; stessi ruoli dei punti della pagina 19, verso del margine invertito.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Variare un solo aspetto del confronto mantenendo esplicite le invarianti.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Punto di tangenza",
+              "symbol": "z_A",
+              "origin": "enrichment",
+              "range": "{'min': -1.2, 'max': 1.2, 'step': 0.1, 'integer': False}",
+              "default": "-0.4",
+              "effect_on_change": "Ricostruisce tangente e maggiorante, mantenendo fisso il costo e L=1.",
+              "edge_cases": [
+                "A=B",
+                "Regioni concave",
+                "L=0"
+              ]
+            },
+            {
+              "name": "Punto di confronto",
+              "symbol": "z_B",
+              "origin": "enrichment",
+              "range": "{'min': -1.2, 'max': 1.2, 'step': 0.1, 'integer': False}",
+              "default": "0.9",
+              "effect_on_change": "Sposta B e aggiorna maggiorante, costo e margine superiore.",
+              "edge_cases": [
+                "A=B",
+                "Regioni concave",
+                "L=0"
+              ]
+            }
+          ],
+          "outputs": [
+            "Leggere il limite L senza aggiungere un’ipotesi di convessità assente nella fonte."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "A=B",
+            "expected_behavior": "Maggiorante e costo coincidono; margine zero.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "Regioni concave",
+            "expected_behavior": "La garanzia resta valida, non attribuire convessità globale al costo.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "L=0",
+            "expected_behavior": "Non previsto dal controllo; non dividere per L.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Leggere il limite L senza aggiungere un’ipotesi di convessità assente nella fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

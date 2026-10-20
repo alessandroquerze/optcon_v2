@@ -1,0 +1,7 @@
+.step-size-lesson .opt-choice { min-width:0; }
+.step-size-lesson .opt-choice select { text-overflow:ellipsis; }
+.step-size-lesson .iteration-picker { min-width:0; }
+.step-size-lesson .iteration-buttons { display:flex; flex-wrap:wrap; gap:8px; margin-top:5px; }
+.step-size-lesson .iteration-buttons button { font-size:22px; padding:2px 10px; }
+.step-size-lesson .live-metrics dd { overflow-wrap:anywhere; }
+.step-size-four-controls .controls-block { grid-template-columns:repeat(4,minmax(0,1fr)); }

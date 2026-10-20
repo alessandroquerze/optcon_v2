@@ -81,12 +81,546 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
+    "status": "needs_review",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "7c31058ffac6323b0aa6c9b233b36cf34d8f35ce195f05edab6833209adef152",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0041",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "d0a76bcf7732f21d9acade03e00784fb86b229e79b97e7482a43f1b719181121",
+        "layout": "e38edc84d4eecbcd627df92ba38f103d381172652d075fdef9426d1d2ab2fce4",
+        "render": "9754398101bbdf3d3f687e7fb292a9b30f73ecd22f3f61077f48b96a490b8e4b"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-f-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0041",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0040",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0042"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0041",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0040",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0042"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0041",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0040",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0042"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Gradient methods: step-size selection rules (II)",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "definition",
+          "description": "Passo costante γ^k=γ>0; la frase usa t per l’indice della sequenza di γ^k.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0041",
+            "modality": "both",
+            "text_quote": "Constant step-size",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "assumption",
+          "description": "Per passi decrescenti si richiedono γ^k→0 e somma infinita; viene segnalata lentezza tipica.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0041",
+            "modality": "both",
+            "text_quote": "Diminishing step-size",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "equation",
+          "description": "Scelta tipica: somma dei passi infinita, somma dei quadrati finita; esempio 1/k^α con 1/2<α≤1. Gli indici delle somme sono t=0 pur usando k negli addendi.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0041",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0041",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Distinguere limite zero, somma infinita e quadrati sommabili delle successioni di passi.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0040",
+          "role": "previous",
+          "note": "Si accetta il primo candidato che soddisfa il confronto stretto della fonte."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0042",
+          "role": "next",
+          "note": "Leggere ipotesi uniformi e conclusione sui punti limite, distinguendola dall’esistenza di tali punti."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\gamma^k\\to0,\\qquad\\sum_{t=0}^{\\infty}\\gamma^k=\\infty",
+          "meaning": "Il passo svanisce, ma la somma totale deve restare infinita. Sono due condizioni distinte.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\gamma^k=\\gamma>0",
+          "meaning": "Il passo costante non svanisce. La sua efficacia richiede un valore adatto al problema.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\sum_{t=0}^{\\infty}\\gamma^k=\\infty,\\qquad\\sum_{t=0}^{\\infty}(\\gamma^k)^2<\\infty",
+          "meaning": "La prima serie impone persistenza; la seconda limita l’accumulo dei quadrati. La fonte la presenta come scelta tipica.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\gamma^k=\\frac1{k^\\alpha},\\qquad\\frac12<\\alpha\\le1",
+          "meaning": "L’esempio letterale è definito per k≥1. Un indice iniziale finito non cambia il carattere delle serie.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [
+        {
+          "description": "Discrepanza della fonte esaminata e risolta nella policy companion: La potenza 1/k^α è definita da k=1; la slide scrive somme da t=0 con addendi indicizzati k. È una convenzione iniziale incoerente, risolta senza modificare la fonte. Un traslato finito non cambia sommabilità o divergenza; nei calcoli si usa k=0,1,... e 1/(k+1)^α. Si mantiene 1/2<α≤1 come scelta tipica e si esplorano anche α esterni dichiaratamente. Nessuna divisione per zero.",
+          "blocking": false,
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        }
+      ],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "structure"
+        ],
+        "rationale": "Scopo e contenuto autonomi."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "La potenza 1/k^α è definita da k=1; la slide scrive somme da t=0 con addendi indicizzati k. È una convenzione iniziale incoerente, risolta senza modificare la fonte. Un traslato finito non cambia sommabilità o divergenza; nei calcoli si usa k=0,1,... e 1/(k+1)^α. Si mantiene 1/2<α≤1 come scelta tipica e si esplorano anche α esterni dichiaratamente. Nessuna divisione per zero.",
+          "La formula 1/k^α è mantenuta come letterale. Nei calcoli k parte da zero e si usa il traslato 1/(k+1)^α.",
+          "La sommabilità dei quadrati è una scelta tipica, non viene aggiunta come ipotesi obbligatoria alla proposizione della 43."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Serie p",
+            "why": "I criteri di convergenza si applicano ad α e 2α.",
+            "origin": "enrichment",
+            "page_numbers": []
+          },
+          {
+            "concept": "Scelta del passo",
+            "why": "γ controlla la lunghezza dell’aggiornamento.",
+            "origin": "source_context",
+            "page_numbers": [
+              28,
+              38
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\gamma^k\\to0,\\qquad\\sum_{t=0}^{\\infty}\\gamma^k=\\infty",
+            "anchor": "Constant step-size",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\gamma^k=\\gamma>0",
+            "anchor": "Constant step-size",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\sum_{t=0}^{\\infty}\\gamma^k=\\infty,\\qquad\\sum_{t=0}^{\\infty}(\\gamma^k)^2<\\infty",
+            "anchor": "Constant step-size",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\gamma^k=\\frac1{k^\\alpha},\\qquad\\frac12<\\alpha\\le1",
+            "anchor": "Constant step-size",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Far tendere il passo a zero non basta: se la somma totale è finita, il progresso disponibile può esaurirsi. Il criterio sulle serie è asintotico, non si prova con pochi campioni.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "α=0.75, γᵏ=1/(k+1)^0.75",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Grafico discreto con selettore tra γᵏ, somma parziale dei passi e dei quadrati; assi k e quantità esplicita. Verdetti analitici separati dai valori finiti.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Distinguere limite zero, somma infinita e quadrati sommabili delle successioni di passi.",
+            "setup": "α=0.75, γᵏ=1/(k+1)^0.75",
+            "parameters": [],
+            "derivation": [
+              "I passi tendono a zero.",
+              "La serie dei passi ha esponente 0.75≤1: diverge.",
+              "I quadrati hanno esponente 1.5>1: sono sommabili."
+            ],
+            "expected_outcome": "Cambiare N non certifica né confuta una proprietà infinita.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "SceneViewport",
+          "description": "Grafico discreto con selettore tra γᵏ, somma parziale dei passi e dei quadrati; assi k e quantità esplicita. Verdetti analitici separati dai valori finiti.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Cambiare α attraversa esattamente le soglie 1/2 e 1; il selettore separa passi e somme.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Esponente",
+              "symbol": "\\alpha",
+              "origin": "enrichment",
+              "range": "{'min': 0.25, 'max': 1.5, 'step': 0.05, 'integer': False}",
+              "default": "0.75",
+              "effect_on_change": "Cambia l’intera successione e le due somme parziali; il numero di campioni resta fisso.",
+              "edge_cases": [
+                "α=1/2",
+                "α=1",
+                "α>1",
+                "N finito"
+              ]
+            },
+            {
+              "name": "Campioni",
+              "symbol": "N",
+              "origin": "enrichment",
+              "range": "{'min': 10, 'max': 100, 'step': 10, 'integer': True}",
+              "default": "40",
+              "effect_on_change": "Estende la finestra finita senza cambiare α o la classificazione asintotica.",
+              "edge_cases": [
+                "α=1/2",
+                "α=1",
+                "α>1",
+                "N finito"
+              ]
+            },
+            {
+              "name": "Quantità mostrata",
+              "symbol": "s",
+              "origin": "enrichment",
+              "range": "Passi / somma parziale / somma dei quadrati",
+              "default": "Passi",
+              "effect_on_change": "Cambia la quantità sull’asse verticale; dati e N restano comuni, ogni quantità ha una scala fissa esplicita.",
+              "edge_cases": [
+                "α=1/2",
+                "α=1",
+                "α>1",
+                "N finito"
+              ]
+            }
+          ],
+          "outputs": [
+            "Distinguere limite zero, somma infinita e quadrati sommabili delle successioni di passi."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "α=1/2",
+            "expected_behavior": "Somma dei quadrati divergente; escluso dalla scelta tipica stretta.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "α=1",
+            "expected_behavior": "Somma dei passi armonica divergente, quadrati sommabili.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "α>1",
+            "expected_behavior": "Passi a zero ma somma finita: non soddisfa il criterio di persistenza.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "N finito",
+            "expected_behavior": "Mai chiamare infinita una somma parziale numerica.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Distinguere limite zero, somma infinita e quadrati sommabili delle successioni di passi.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1,
+  "source_warning": {
+    "policy_version": "1.0.0",
+    "scope": "companion_only",
+    "type": "INFO_WARNING",
+    "review_status": "resolved",
+    "original_analysis_sha256": "7f6cb3be13f13eff8fee15856c554a28ef7e449c7599e9d0cb4aec3174529594",
+    "issues": [
+      {
+        "issue_id": "opt41-source-review",
+        "source_issue_index": 0,
+        "issue": "Un passo piccolo può essere troppo piccolo",
+        "type": "INFO_WARNING",
+        "source_expression": "\\gamma^k=1/k^\\alpha,\\quad 1/2<\\alpha\\le1",
+        "corrected_expression": "\\gamma^k=\\frac1{(k+1)^\\alpha},\\qquad k=0,1,\\ldots",
+        "companion_uses": "\\gamma^k=\\frac1{(k+1)^\\alpha},\\qquad k=0,1,\\ldots",
+        "short_warning": "⚠ Nota: usiamo γᵏ=1/(k+1)ᵅ per partire da k=0.",
+        "correction_reason": "La potenza 1/k^α è definita da k=1; la slide scrive somme da t=0 con addendi indicizzati k. È una convenzione iniziale incoerente, risolta senza modificare la fonte. Un traslato finito non cambia sommabilità o divergenza; nei calcoli si usa k=0,1,... e 1/(k+1)^α. Si mantiene 1/2<α≤1 come scelta tipica e si esplorano anche α esterni dichiaratamente. Nessuna divisione per zero.",
+        "use_corrected_value_for_examples": true,
+        "use_corrected_value_for_simulation": true,
+        "resolved": true,
+        "source_references": [
+          "analysis/result/observations"
+        ],
+        "context_pages_consulted": [
+          40,
+          41,
+          42
+        ],
+        "calculation_policy": "SOURCE_LITERAL immutabile; esempi e calcoli usano la versione companion dichiarata.",
+        "ui": {
+          "show": true,
+          "color": "red",
+          "placement": "Accanto al concetto interessato",
+          "when": "Concetto pertinente",
+          "student_text_field": "short_warning"
+        }
+      }
+    ],
+    "companion_overrides": [],
+    "technical_only_legacy_paths": []
   }
 }

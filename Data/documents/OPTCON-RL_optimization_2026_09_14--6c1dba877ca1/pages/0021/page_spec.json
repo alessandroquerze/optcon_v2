@@ -81,12 +81,508 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
+    "status": "needs_review",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "c55438551fd7e500523f48252b53e99845cd3d8b697993570b150eba4b0970e0",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0021",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "fc62fde0e448dc18e6fc78a5d5564bedf011264b2394a0b57b4a6236474db3b6",
+        "layout": "03a6821d6725a9abced177f63a03b307d01f59a046ce7ff0bcda98e00c0b3f5f",
+        "render": "d5dbd61e066aacfdafcb158fd963507a8b5bb9b858015845b0b68d240267efe4"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-c-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0021",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0020",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0022"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0021",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0020",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0022"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0021",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0020",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0022"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Minimization of convex functions",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "assumption",
+          "description": "L’enunciato richiede insieme Z convesso e funzione ℓ convessa; non richiede differenziabilità.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0021",
+            "modality": "both",
+            "text_quote": "Let Z ⊂Rd be a convex set",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "concept",
+          "description": "Ogni minimo locale è anche globale; il teorema non afferma l’esistenza di un minimo.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0021",
+            "modality": "both",
+            "text_quote": "local minimum of ℓis also a",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "concept",
+          "description": "La prova assume un global minimum z̄∈X con costo più basso, benché basti un qualunque punto migliore in Z.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0021",
+            "modality": "both",
+            "text_quote": "there",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-4",
+          "category": "equation",
+          "description": "La catena di Jensen è stretta per θ∈[0,1), e il punto interpolato tende a z⋆ quando θ tende a uno.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0021",
+            "modality": "both",
+            "text_quote": "Using the definition of convexity",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0021",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Comprendere la contraddizione geometrica e il ruolo di punti arbitrariamente vicini.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0020",
+          "role": "previous",
+          "note": "Leggere il limite L senza aggiungere un’ipotesi di convessità assente nella fonte."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0022",
+          "role": "next",
+          "note": "Separare sufficienza globale, unicità ed esistenza nella minimizzazione convessa differenziabile."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\exists\\text{ global minimum }\\bar z\\in X:\\quad\\ell(\\bar z)<\\ell(z^\\star)",
+          "meaning": "La prova stampata introduce un minimo globale e usa X, mentre il dominio dell’enunciato è Z.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\begin{aligned}\\ell(\\theta z^\\star+(1-\\theta)\\bar z)&\\le\\theta\\ell(z^\\star)+(1-\\theta)\\ell(\\bar z)\\\\&<\\theta\\ell(z^\\star)+(1-\\theta)\\ell(z^\\star)=\\ell(z^\\star)\\end{aligned}",
+          "meaning": "La convessità dà il primo confronto. Il punto migliore dà quello stretto se θ<1; con θ vicino a uno la contraddizione avviene in ogni intorno.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [
+        {
+          "description": "Discrepanza della fonte esaminata e risolta nella policy companion: La negazione di globalità fornisce un punto ammissibile di costo inferiore, non garantisce esistenza di un minimizzatore globale. Il dominio dell’enunciato è Z; X nella prova non è definito. Sostituire solo questa premessa nella companion. La catena di Jensen è corretta per θ<1, e θ→1− contraddice la minimalità locale. Nessuna ipotesi di esistenza/coercività o differenziabilità va aggiunta.",
+          "blocking": false,
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        }
+      ],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "source-4",
+          "structure"
+        ],
+        "rationale": "Pagina con enunciato e scopo autonomi."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "La negazione di globalità fornisce un punto ammissibile di costo inferiore, non garantisce esistenza di un minimizzatore globale. Il dominio dell’enunciato è Z; X nella prova non è definito. Sostituire solo questa premessa nella companion. La catena di Jensen è corretta per θ<1, e θ→1− contraddice la minimalità locale. Nessuna ipotesi di esistenza/coercività o differenziabilità va aggiunta."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Convessità",
+            "why": "Mantiene il segmento ammissibile e il costo sotto la corda.",
+            "origin": "source_context",
+            "page_numbers": [
+              10,
+              11
+            ]
+          },
+          {
+            "concept": "Minimo locale",
+            "why": "Richiede un intorno favorevole: basta confutarlo con punti sempre più vicini.",
+            "origin": "source_context",
+            "page_numbers": [
+              3
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\exists\\text{ global minimum }\\bar z\\in X:\\quad\\ell(\\bar z)<\\ell(z^\\star)",
+            "anchor": "Let Z ⊂Rd be a convex set",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\begin{aligned}\\ell(\\theta z^\\star+(1-\\theta)\\bar z)&\\le\\theta\\ell(z^\\star)+(1-\\theta)\\ell(\\bar z)\\\\&<\\theta\\ell(z^\\star)+(1-\\theta)\\ell(z^\\star)=\\ell(z^\\star)\\end{aligned}",
+            "anchor": "Let Z ⊂Rd be a convex set",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Se esistesse un punto migliore, il segmento verso quel punto porterebbe un costo più basso anche vicinissimo al presunto minimo locale.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "Candidato 1 per ℓ=z²; punto migliore 0",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Curva e corda fra 0 e candidato 1; punto interpolato arancio, confronto con costo del candidato, distanza e miglioramento.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Comprendere la contraddizione geometrica e il ruolo di punti arbitrariamente vicini.",
+            "setup": "Candidato 1 per ℓ=z²; punto migliore 0",
+            "parameters": [],
+            "derivation": [
+              "Con θ=0.8, punto interpolato 0.8 e costo 0.64<1.",
+              "La distanza dal candidato è 0.2; il miglioramento è 0.36.",
+              "θ→1 da sinistra dà punti arbitrariamente vicini ancora migliori."
+            ],
+            "expected_outcome": "A θ=1 il costo pareggia: non è il punto usato nella contraddizione.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "SceneViewport",
+          "description": "Curva e corda fra 0 e candidato 1; punto interpolato arancio, confronto con costo del candidato, distanza e miglioramento.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Variare un solo aspetto del confronto mantenendo esplicite le invarianti.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Vicino al candidato",
+              "symbol": "\\theta",
+              "origin": "enrichment",
+              "range": "{'min': 0, 'max': 1, 'step': 0.05, 'integer': False}",
+              "default": "0.8",
+              "effect_on_change": "Muove il punto da z̄=0 verso il candidato 1; aggiorna distanza e miglioramento, senza cambiare costo o estremi.",
+              "edge_cases": [
+                "θ=1",
+                "Non esistenza del minimo",
+                "θ prossimo a 1"
+              ]
+            }
+          ],
+          "outputs": [
+            "Comprendere la contraddizione geometrica e il ruolo di punti arbitrariamente vicini."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "θ=1",
+            "expected_behavior": "Candidato raggiunto: nessun miglioramento, la disuguaglianza stretta esclude questo estremo.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "Non esistenza del minimo",
+            "expected_behavior": "Il teorema è condizionale; non rende coerciva la funzione.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "θ prossimo a 1",
+            "expected_behavior": "Non arrotondare prematuramente il miglioramento positivo a zero.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Comprendere la contraddizione geometrica e il ruolo di punti arbitrariamente vicini.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1,
+  "source_warning": {
+    "policy_version": "1.0.0",
+    "scope": "companion_only",
+    "type": "CORRECTION_WARNING",
+    "review_status": "resolved",
+    "original_analysis_sha256": "c348f5b73dec67a7aa9cffd56c743fbcfe2587381192d5169e99cfd8d1c003df",
+    "issues": [
+      {
+        "issue_id": "opt21-source-review",
+        "source_issue_index": 0,
+        "issue": "Convesso: un minimo locale è globale",
+        "type": "CORRECTION_WARNING",
+        "source_expression": "Then there\nexists a global minimum ¯z ∈X such that ℓ(¯z) < ℓ(z⋆).",
+        "corrected_expression": "\\exists\\bar z\\in\\mathbb Z:\\ \\ell(\\bar z)<\\ell(z^\\star),\\quad\\tilde z=\\theta z^\\star+(1-\\theta)\\bar z",
+        "companion_uses": "\\exists\\bar z\\in\\mathbb Z:\\ \\ell(\\bar z)<\\ell(z^\\star),\\quad\\tilde z=\\theta z^\\star+(1-\\theta)\\bar z",
+        "short_warning": "⚠ Warning: possibile errore nella slide originale. Basta un punto migliore in Z, non un minimo globale.",
+        "correction_reason": "La negazione di globalità fornisce un punto ammissibile di costo inferiore, non garantisce esistenza di un minimizzatore globale. Il dominio dell’enunciato è Z; X nella prova non è definito. Sostituire solo questa premessa nella companion. La catena di Jensen è corretta per θ<1, e θ→1− contraddice la minimalità locale. Nessuna ipotesi di esistenza/coercività o differenziabilità va aggiunta.",
+        "use_corrected_value_for_examples": true,
+        "use_corrected_value_for_simulation": true,
+        "resolved": true,
+        "source_references": [
+          "analysis/result/observations"
+        ],
+        "context_pages_consulted": [
+          20,
+          21,
+          22
+        ],
+        "calculation_policy": "SOURCE_LITERAL immutabile; esempi e calcoli usano le ipotesi e le formule companion dichiarate.",
+        "ui": {
+          "show": true,
+          "color": "red",
+          "placement": "Accanto all’enunciato interessato",
+          "when": "Concetto pertinente",
+          "student_text_field": "short_warning"
+        }
+      }
+    ],
+    "companion_overrides": [],
+    "technical_only_legacy_paths": []
   }
 }

@@ -1,0 +1,540 @@
+{
+  "reviewed_at": "2026-10-18T15:48:33.795Z",
+  "success": true,
+  "pages": [
+    {
+      "page": 19,
+      "views": [
+        {
+          "view": "2D",
+          "screenshot": "Docs/Optimization_C_assets/p19-2d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 327.515625
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 333.515625,
+              "bottom": 710.109375
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 716.109375,
+              "bottom": 869.890625
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 875.890625,
+              "bottom": 1120.171875
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1163.21875,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt19-cost": "0.3665",
+            "opt19-bound": "0.1257",
+            "opt19-margin": "0.2408"
+          }
+        }
+      ]
+    },
+    {
+      "page": 20,
+      "views": [
+        {
+          "view": "2D",
+          "screenshot": "Docs/Optimization_C_assets/p20-2d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 334.578125
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 340.578125,
+              "bottom": 717.171875
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 723.171875,
+              "bottom": 876.953125
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 882.953125,
+              "bottom": 1135.21875
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1163.21875,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt20-cost": "0.3784",
+            "opt20-bound": "0.4177",
+            "opt20-margin": "0.0393"
+          }
+        }
+      ]
+    },
+    {
+      "page": 21,
+      "views": [
+        {
+          "view": "2D",
+          "screenshot": "Docs/Optimization_C_assets/p21-2d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 344.421875
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 350.421875,
+              "bottom": 712.015625
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 718.015625,
+              "bottom": 871.796875
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 877.796875,
+              "bottom": 1130.0625
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1163.21875,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt21-distance": "0.2000",
+            "opt21-cost": "0.6400",
+            "opt21-improvement": "0.3600"
+          }
+        }
+      ]
+    },
+    {
+      "page": 22,
+      "views": [
+        {
+          "view": "2D",
+          "screenshot": "Docs/Optimization_C_assets/p22-2d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 301.828125
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 307.828125,
+              "bottom": 664.421875
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 670.421875,
+              "bottom": 824.203125
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 830.203125,
+              "bottom": 1131.671875
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1163.21875,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt22-gradient": "0.6000",
+            "opt22-hessian": "1.0000",
+            "opt22-minimum": "no"
+          }
+        }
+      ]
+    },
+    {
+      "page": 23,
+      "views": [
+        {
+          "view": "2D",
+          "screenshot": "Docs/Optimization_C_assets/p23-2d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 294.171875
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 300.171875,
+              "bottom": 710.765625
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 716.765625,
+              "bottom": 870.546875
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 876.546875,
+              "bottom": 1160.40625
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt23-curvature": "2; 1.0000",
+            "opt23-cost": "-0.2500",
+            "opt23-convex": "sì"
+          }
+        },
+        {
+          "view": "3D",
+          "screenshot": "Docs/Optimization_C_assets/p23-3d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 294.171875
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 300.171875,
+              "bottom": 710.765625
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 716.765625,
+              "bottom": 870.546875
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 876.546875,
+              "bottom": 1160.40625
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt23-curvature": "2; 1.0000",
+            "opt23-cost": "-0.2500",
+            "opt23-convex": "sì"
+          }
+        }
+      ]
+    },
+    {
+      "page": 24,
+      "views": [
+        {
+          "view": "2D",
+          "screenshot": "Docs/Optimization_C_assets/p24-2d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 269.234375
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 275.234375,
+              "bottom": 685.828125
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 691.828125,
+              "bottom": 845.609375
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 851.609375,
+              "bottom": 1135.46875
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt24-residual": "0.0000",
+            "opt24-psd": "sì",
+            "opt24-candidate": "sì, globale"
+          }
+        },
+        {
+          "view": "3D",
+          "screenshot": "Docs/Optimization_C_assets/p24-3d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 269.234375
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 275.234375,
+              "bottom": 685.828125
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 691.828125,
+              "bottom": 845.609375
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 851.609375,
+              "bottom": 1135.46875
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt24-residual": "0.0000",
+            "opt24-psd": "sì",
+            "opt24-candidate": "sì, globale"
+          }
+        }
+      ]
+    },
+    {
+      "page": 25,
+      "views": [
+        {
+          "view": "2D",
+          "screenshot": "Docs/Optimization_C_assets/p25-2d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 315.828125
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 321.828125,
+              "bottom": 732.421875
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 738.421875,
+              "bottom": 892.203125
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 898.203125,
+              "bottom": 1182.0625
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt25-inverse": "sì",
+            "opt25-solution": "(0.5, 0.125)",
+            "opt25-minimum": "-0.2656"
+          }
+        },
+        {
+          "view": "3D",
+          "screenshot": "Docs/Optimization_C_assets/p25-3d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 315.828125
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 321.828125,
+              "bottom": 732.421875
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 738.421875,
+              "bottom": 892.203125
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 898.203125,
+              "bottom": 1182.0625
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt25-inverse": "sì",
+            "opt25-solution": "(0.5, 0.125)",
+            "opt25-minimum": "-0.2656"
+          }
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "name": "lower and upper support including coincidence",
+      "status": "PASS"
+    },
+    {
+      "name": "proof limit and endpoint",
+      "status": "PASS"
+    },
+    {
+      "name": "zero gradient flat Hessian and nonuniqueness",
+      "status": "PASS"
+    },
+    {
+      "name": "quadratic definition has no positivity restriction",
+      "status": "PASS"
+    },
+    {
+      "name": "joint conditions singular drift and saddle",
+      "status": "PASS"
+    },
+    {
+      "name": "inverse unique and singular solution sets",
+      "status": "PASS"
+    },
+    {
+      "name": "previous batches introduction and next batch placeholder",
+      "status": "PASS"
+    }
+  ],
+  "errors": [],
+  "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+  "manual_visual_review": "PASS: all seven companions inspected, including ten standard views, fullscreen and representative edge cases. Text and source images reviewed separately in physical order.",
+  "build": "PASS",
+  "targeted_unit_tests": {
+    "status": "PASS",
+    "test_files": 3,
+    "tests": 23
+  },
+  "integrity": {
+    "status": "PASS",
+    "protected_files": 354,
+    "previous_manifest_definitions_unchanged": 18,
+    "source_artifacts_unchanged": 324,
+    "pdf_unchanged": true,
+    "source_page_count": 81,
+    "authored_pages": 25,
+    "future_pages_pending": 56
+  }
+}

@@ -1,0 +1,1071 @@
+{
+  "phase": "F07",
+  "completed_at": "2026-10-18T01:58:39.713994+00:00",
+  "TOTAL_COMPANION_PAGES": "36/36",
+  "NEW_PAGES_IMPLEMENTED": "28/28",
+  "PLACEHOLDER_PAGES": 0,
+  "FORMULA_EXPLANATION_POLICY": "PASS",
+  "MEANINGFUL_FORMULAS": 110,
+  "FORMULAS_WITH_CONCEPTUAL_EXPLANATION": "110/110",
+  "UNEXPLAINED_FORMULAS": 0,
+  "SOURCE_INTEGRITY": "PASS",
+  "SOURCE_WARNINGS": "PASS",
+  "MATH_VALIDATION": "PASS",
+  "GRAPHICS_2D": "PASS",
+  "GRAPHICS_3D": "PASS",
+  "COMBINED_VIEWS": "PASS",
+  "INTERACTIONS": "PASS",
+  "VISUAL_REVIEW": "PASS",
+  "PAGE_SYNC": "PASS",
+  "BUILD": "PASS",
+  "F06_F06_1_REGRESSIONS": 0,
+  "TESTS": "218/218",
+  "UNRESOLVED_ISSUES": 0,
+  "READY_FOR_FINAL_HUMAN_REVIEW": "YES",
+  "tests": {
+    "unit": 128,
+    "browser": 56,
+    "pipeline": 34,
+    "runtime_boundary_assertions": 19,
+    "typecheck": "PASS"
+  },
+  "source_integrity": {
+    "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+    "protected_baseline_entries_checked": 1011,
+    "modified_files": []
+  },
+  "batches": [
+    {
+      "batch": "A",
+      "completed_at": "2026-10-17T22:10:37.944358+00:00",
+      "status": "PASS",
+      "implemented_pages": 15,
+      "unit_tests": 87,
+      "browser_tests": 35,
+      "typecheck": "PASS",
+      "build": "PASS",
+      "build_command": "npm run build (includes tsc --noEmit)",
+      "build_index_sha256": "1df7fc3510614e8eaf9d56732c2c3871f5590f2ef00d9a1c451ab7ed44c52d45",
+      "visual_review": "PASS",
+      "source_integrity": "PASS",
+      "regressions": 0
+    },
+    {
+      "batch": "B",
+      "completed_at": "2026-10-17T22:22:17.091326+00:00",
+      "status": "PASS",
+      "implemented_pages": 22,
+      "unit_tests": 100,
+      "browser_tests": 42,
+      "typecheck": "PASS",
+      "build": "PASS",
+      "build_command": "npm run build (includes tsc --noEmit)",
+      "build_index_sha256": "4b04c71259f598345402fc2502a4508ac45a5110c9674319db5df97335cd5092",
+      "visual_review": "PASS",
+      "source_integrity": "PASS",
+      "regressions": 0
+    },
+    {
+      "batch": "C",
+      "completed_at": "2026-10-17T22:35:23.390419+00:00",
+      "status": "PASS",
+      "implemented_pages": 29,
+      "unit_tests": 113,
+      "browser_tests": 49,
+      "typecheck": "PASS",
+      "build": "PASS",
+      "build_command": "npm run build (includes tsc --noEmit)",
+      "build_index_sha256": "2eabd3e9bdf2e04ea1c29c93147f008135aa2303dc9416f3a9b6558da88941bb",
+      "visual_review": "PASS",
+      "source_integrity": "PASS",
+      "regressions": 0
+    },
+    {
+      "batch": "D",
+      "completed_at": "2026-10-18T01:58:39.169995+00:00",
+      "status": "PASS",
+      "implemented_pages": 36,
+      "unit_tests": 128,
+      "browser_tests": 56,
+      "typecheck": "PASS",
+      "build": "PASS",
+      "build_command": "npm run build (includes tsc --noEmit)",
+      "build_index_sha256": "7ce3a3bc6278c6cb5162d7a3adbac3c873258718940256955233ffd6e158d19a",
+      "visual_review": "PASS",
+      "source_integrity": "PASS",
+      "regressions": 0
+    }
+  ],
+  "reused_components": [
+    "LessonFrame",
+    "ExplainedEquation",
+    "FormulaDeck",
+    "FormulaContext",
+    "ParameterControl",
+    "CostBreakdown",
+    "ComparisonTable",
+    "StateInputTimeline",
+    "TrajectoryViewer",
+    "SurfacePlot3D",
+    "VisualizationSwitch",
+    "ProjectionLink",
+    "AlignedTimeSeries",
+    "SceneViewport",
+    "PDF.js shell"
+  ],
+  "new_shared_components": [
+    "CourseExplorer",
+    "interactiveDefinition",
+    "IngredientMatrix",
+    "TrackingExplorer (fixed/optimal modes)"
+  ],
+  "mathematical_modules": [
+    "courseFoundations.ts",
+    "courseOptimization.ts",
+    "courseOcp.ts",
+    "courseContinuous.ts"
+  ],
+  "formula_policy": {
+    "counting_unit": "Distinct semantic formula groups per physical page, including enrichment; repeated graph/readout uses link to the same explanation.",
+    "canonical_notation_preserved": true,
+    "display_line_breaks": "Separate displayLatex metadata; canonical source expressions untouched."
+  },
+  "post_full_suite_targeted_smoke": {
+    "verified_at": "2026-10-18T01:57:44.654242+00:00",
+    "status": "PASS",
+    "tests": 1,
+    "command": "npm run test:browser -- --grep F07 p23: --output=test-results-f07-final-p23 --reporter=list",
+    "log": "frontend/test-reports/f07-p23-smoke.txt",
+    "log_sha256": "db3a5f386cee71ce9ee8c7118de09a85e93d9d927e31edc471e2f5b9ce52da14",
+    "reason": "Final sampling fix lifts the box boundary to the real quadratic cost, including intermediate edge points. Full suite passed after shared formula reflow; this targeted run checks the only subsequently affected page."
+  },
+  "runtime": {
+    "verified_at": "2026-10-18T01:57:31.154Z",
+    "base_url": "http://127.0.0.1:4173",
+    "environment": "Chrome headless / SwiftShader; software rendering, includes browser automation",
+    "checks": [
+      {
+        "id": "endpoint-feasible",
+        "expected": "no",
+        "status": "PASS"
+      },
+      {
+        "id": "endpoint-residual",
+        "expected": "-1.0000",
+        "status": "PASS"
+      },
+      {
+        "id": "endpoint-feasible",
+        "expected": "sì",
+        "status": "PASS"
+      },
+      {
+        "id": "endpoint-residual",
+        "expected": "0.0000",
+        "status": "PASS"
+      },
+      {
+        "id": "ocp-feasible",
+        "expected": "no",
+        "status": "PASS"
+      },
+      {
+        "id": "ocp-cost",
+        "expected": "non disponibile",
+        "status": "PASS"
+      },
+      {
+        "id": "ocp-feasible",
+        "expected": "sì",
+        "status": "PASS"
+      },
+      {
+        "id": "ocp-cost",
+        "expected": "0.0000",
+        "status": "PASS"
+      },
+      {
+        "id": "tracking-command",
+        "expected": "0.0000",
+        "status": "PASS"
+      },
+      {
+        "id": "tracking-cost",
+        "expected": "0.0000",
+        "status": "PASS"
+      },
+      {
+        "id": "drone-ay",
+        "expected": "-9.8100",
+        "status": "PASS"
+      },
+      {
+        "id": "drone-angular",
+        "expected": "0.0000",
+        "status": "PASS"
+      },
+      {
+        "id": "drone-stage-cost",
+        "expected": "3.0500",
+        "status": "PASS"
+      },
+      {
+        "id": "functional-endpoint",
+        "expected": "0.0000",
+        "status": "PASS"
+      },
+      {
+        "id": "pendulum-acceleration",
+        "expected": "-4.9050",
+        "status": "PASS"
+      },
+      {
+        "id": "pendulum-acceleration",
+        "expected": "0.0000",
+        "status": "PASS"
+      },
+      {
+        "id": "reference-valid",
+        "expected": "equilibrio costante",
+        "status": "PASS"
+      },
+      {
+        "id": "pendulum-candidate-total",
+        "expected": "3.2284",
+        "status": "PASS"
+      },
+      {
+        "id": "pendulum-terminal",
+        "expected": "0.0000",
+        "status": "PASS"
+      }
+    ],
+    "updates": [
+      {
+        "target": 0.1,
+        "input_to_completed_plot_ms": 169
+      },
+      {
+        "target": 0.2,
+        "input_to_completed_plot_ms": 121
+      },
+      {
+        "target": 0.3,
+        "input_to_completed_plot_ms": 113
+      },
+      {
+        "target": 0.4,
+        "input_to_completed_plot_ms": 123
+      },
+      {
+        "target": 0.5,
+        "input_to_completed_plot_ms": 192
+      },
+      {
+        "target": 0.6,
+        "input_to_completed_plot_ms": 106
+      },
+      {
+        "target": 0.7,
+        "input_to_completed_plot_ms": 86
+      },
+      {
+        "target": 0.8,
+        "input_to_completed_plot_ms": 120
+      },
+      {
+        "target": 0.9,
+        "input_to_completed_plot_ms": 89
+      },
+      {
+        "target": 1,
+        "input_to_completed_plot_ms": 108
+      },
+      {
+        "target": 1.1,
+        "input_to_completed_plot_ms": 127
+      },
+      {
+        "target": 1.2,
+        "input_to_completed_plot_ms": 107
+      }
+    ],
+    "median_update_ms": 120,
+    "maximum_update_ms": 192,
+    "preserved": {
+      "dom": true,
+      "camera": true
+    },
+    "navigation": [
+      {
+        "page": 28,
+        "scenes": 1,
+        "webglCanvases": 0
+      },
+      {
+        "page": 29,
+        "scenes": 1,
+        "webglCanvases": 1
+      },
+      {
+        "page": 31,
+        "scenes": 1,
+        "webglCanvases": 0
+      },
+      {
+        "page": 32,
+        "scenes": 1,
+        "webglCanvases": 1
+      },
+      {
+        "page": 33,
+        "scenes": 1,
+        "webglCanvases": 1
+      },
+      {
+        "page": 35,
+        "scenes": 1,
+        "webglCanvases": 0
+      },
+      {
+        "page": 36,
+        "scenes": 1,
+        "webglCanvases": 1
+      },
+      {
+        "page": 24,
+        "scenes": 1,
+        "webglCanvases": 0
+      },
+      {
+        "page": 26,
+        "scenes": 0,
+        "webglCanvases": 0
+      },
+      {
+        "page": 2,
+        "scenes": 0,
+        "webglCanvases": 0
+      },
+      {
+        "page": 8,
+        "scenes": 1,
+        "webglCanvases": 0
+      },
+      {
+        "page": 12,
+        "scenes": 1,
+        "webglCanvases": 1
+      },
+      {
+        "page": 16,
+        "scenes": 1,
+        "webglCanvases": 1
+      },
+      {
+        "page": 17,
+        "scenes": 1,
+        "webglCanvases": 0
+      },
+      {
+        "page": 27,
+        "scenes": 1,
+        "webglCanvases": 1
+      },
+      {
+        "page": 30,
+        "scenes": 0,
+        "webglCanvases": 0
+      },
+      {
+        "page": 34,
+        "scenes": 1,
+        "webglCanvases": 1
+      },
+      {
+        "page": 1,
+        "scenes": 0,
+        "webglCanvases": 0
+      }
+    ],
+    "heap_before": 66729957,
+    "heap_after_navigation": 69923722,
+    "limitations": "No forced GC; heap snapshots are observations and do not prove absence of leaks. Not a hardware GPU benchmark.",
+    "errors": [],
+    "success": true
+  },
+  "pages": [
+    {
+      "page": 1,
+      "status": "IMPLEMENTED",
+      "companionPageCount": 1,
+      "mode": "2D_ONLY",
+      "formula_ids": [],
+      "formula_count": 0,
+      "warning_type": "NO_WARNING",
+      "screenshots": [
+        "Docs/F07_assets/page-01-companion.png"
+      ],
+      "source_sync": "PASS",
+      "visual_review": "PASS"
+    },
+    {
+      "page": 2,
+      "status": "IMPLEMENTED",
+      "companionPageCount": 1,
+      "mode": "2D_ONLY",
+      "formula_ids": [
+        "p02-example-choice"
+      ],
+      "formula_count": 1,
+      "warning_type": "NO_WARNING",
+      "screenshots": [
+        "Docs/F07_assets/page-02-companion.png"
+      ],
+      "source_sync": "PASS",
+      "visual_review": "PASS"
+    },
+    {
+      "page": 3,
+      "status": "IMPLEMENTED",
+      "companionPageCount": 1,
+      "mode": "2D_ONLY",
+      "formula_ids": [],
+      "formula_count": 0,
+      "warning_type": "NO_WARNING",
+      "screenshots": [
+        "Docs/F07_assets/page-03-companion.png"
+      ],
+      "source_sync": "PASS",
+      "visual_review": "PASS"
+    },
+    {
+      "page": 4,
+      "status": "IMPLEMENTED",
+      "companionPageCount": 1,
+      "mode": "2D_ONLY",
+      "formula_ids": [],
+      "formula_count": 0,
+      "warning_type": "NO_WARNING",
+      "screenshots": [
+        "Docs/F07_assets/page-04-companion.png"
+      ],
+      "source_sync": "PASS",
+      "visual_review": "PASS"
+    },
+    {
+      "page": 5,
+      "status": "IMPLEMENTED",
+      "companionPageCount": 1,
+      "mode": "2D_ONLY",
+      "formula_ids": [],
+      "formula_count": 0,
+      "warning_type": "NO_WARNING",
+      "screenshots": [
+        "Docs/F07_assets/page-05-companion.png"
+      ],
+      "source_sync": "PASS",
+      "visual_review": "PASS"
+    },
+    {
+      "page": 6,
+      "status": "IMPLEMENTED",
+      "companionPageCount": 1,
+      "mode": "3D_PRIMARY",
+      "formula_ids": [
+        "p06-geometry"
+      ],
+      "formula_count": 1,
+      "warning_type": "NO_WARNING",
+      "screenshots": [
+        "Docs/F07_assets/page-06-companion.png"
+      ],
+      "source_sync": "PASS",
+      "visual_review": "PASS"
+    },
+    {
+      "page": 7,
+      "status": "IMPLEMENTED",
+      "companionPageCount": 1,
+      "mode": "2D_ONLY",
+      "formula_ids": [],
+      "formula_count": 0,
+      "warning_type": "NO_WARNING",
+      "screenshots": [
+        "Docs/F07_assets/page-07-companion.png"
+      ],
+      "source_sync": "PASS",
+      "visual_review": "PASS"
+    },
+    {
+      "page": 8,
+      "status": "IMPLEMENTED",
+      "companionPageCount": 1,
+      "mode": "2D_PRIMARY_WITH_3D",
+      "formula_ids": [
+        "p08-source-math-1",
+        "p08-source-math-2",
+        "p08-source-math-3",
+        "p08-source-math-5",
+        "p08-enrichment-0"
+      ],
+      "formula_count": 5,
+      "warning_type": "NO_WARNING",
+      "screenshots": [
+        "Docs/F07_assets/page-08-companion.png",
+        "Docs/F07_assets/page-08-3d.png"
+      ],
+      "source_sync": "PASS",
+      "visual_review": "PASS"
+    },
+    {
+      "page": 9,
+      "status": "IMPLEMENTED",
+      "companionPageCount": 1,
+      "mode": "2D_PRIMARY_WITH_3D",
+      "formula_ids": [
+        "p09-source-math-0",
+        "p09-source-math-1",
+        "p09-source-math-2",
+        "p09-enrichment-0"
+      ],
+      "formula_count": 4,
+      "warning_type": "NO_WARNING",
+      "screenshots": [
+        "Docs/F07_assets/page-09-companion.png",
+        "Docs/F07_assets/page-09-3d.png"
+      ],
+      "source_sync": "PASS",
+      "visual_review": "PASS"
+    },
+    {
+      "page": 10,
+      "status": "IMPLEMENTED",
+      "companionPageCount": 1,
+      "mode": "2D_ONLY",
+      "formula_ids": [
+        "p10-source-math-0",
+        "p10-source-math-1",
+        "p10-source-math-2",
+        "p10-example"
+      ],
+      "formula_count": 4,
+      "warning_type": "NO_WARNING",
+      "screenshots": [
+        "Docs/F07_assets/page-10-companion.png"
+      ],
+      "source_sync": "PASS",
+      "visual_review": "PASS"
+    },
+    {
+      "page": 11,
+      "status": "IMPLEMENTED",
+      "companionPageCount": 1,
+      "mode": "2D_AND_3D_EQUAL",
+      "formula_ids": [
+        "p11-source-math-0",
+        "p11-source-math-1",
+        "p11-source-math-2",
+        "p11-enrichment-0"
+      ],
+      "formula_count": 4,
+      "warning_type": "NO_WARNING",
+      "screenshots": [
+        "Docs/F07_assets/page-11-companion.png",
+        "Docs/F07_assets/page-11-3d.png"
+      ],
+      "source_sync": "PASS",
+      "visual_review": "PASS"
+    },
+    {
+      "page": 12,
+      "status": "IMPLEMENTED",
+      "companionPageCount": 1,
+      "mode": "3D_PRIMARY_WITH_2D",
+      "formula_ids": [
+        "p12-source-math-0",
+        "p12-source-math-1",
+        "p12-source-math-2",
+        "p12-enrichment-0",
+        "p12-enrichment-1",
+        "p12-enrichment-2",
+        "p12-example-error"
+      ],
+      "formula_count": 7,
+      "warning_type": "NO_WARNING",
+      "screenshots": [
+        "Docs/F07_assets/page-12-companion.png",
+        "Docs/F07_assets/page-12-2d.png"
+      ],
+      "source_sync": "PASS",
+      "visual_review": "PASS"
+    },
+    {
+      "page": 13,
+      "status": "IMPLEMENTED",
+      "companionPageCount": 1,
+      "mode": "2D_ONLY",
+      "formula_ids": [],
+      "formula_count": 0,
+      "warning_type": "NO_WARNING",
+      "screenshots": [
+        "Docs/F07_assets/page-13-companion.png"
+      ],
+      "source_sync": "PASS",
+      "visual_review": "PASS"
+    },
+    {
+      "page": 14,
+      "status": "IMPLEMENTED",
+      "companionPageCount": 1,
+      "mode": "2D_AND_3D_EQUAL",
+      "formula_ids": [
+        "p14-dimension",
+        "p14-example"
+      ],
+      "formula_count": 2,
+      "warning_type": "INFO_WARNING",
+      "screenshots": [
+        "Docs/F07_assets/page-14-companion.png",
+        "Docs/F07_assets/page-14-3d.png"
+      ],
+      "source_sync": "PASS",
+      "visual_review": "PASS"
+    },
+    {
+      "page": 15,
+      "status": "IMPLEMENTED",
+      "companionPageCount": 1,
+      "mode": "2D_ONLY",
+      "formula_ids": [
+        "p15-source-math-0",
+        "p15-source-math-1"
+      ],
+      "formula_count": 2,
+      "warning_type": "NO_WARNING",
+      "screenshots": [
+        "Docs/F07_assets/page-15-companion.png"
+      ],
+      "source_sync": "PASS",
+      "visual_review": "PASS"
+    },
+    {
+      "page": 16,
+      "status": "IMPLEMENTED",
+      "companionPageCount": 1,
+      "mode": "3D_PRIMARY_WITH_2D",
+      "formula_ids": [
+        "p16-source-math-0",
+        "p16-source-math-1",
+        "p16-source-math-2",
+        "p16-correction-0"
+      ],
+      "formula_count": 4,
+      "warning_type": "CORRECTION_WARNING",
+      "screenshots": [
+        "Docs/F07_assets/page-16-companion.png",
+        "Docs/F07_assets/page-16-2d.png"
+      ],
+      "source_sync": "PASS",
+      "visual_review": "PASS"
+    },
+    {
+      "page": 17,
+      "status": "IMPLEMENTED",
+      "companionPageCount": 1,
+      "mode": "2D_AND_3D_EQUAL",
+      "formula_ids": [
+        "p17-source-math-0",
+        "p17-source-math-1",
+        "p17-enrichment-0",
+        "p17-residual"
+      ],
+      "formula_count": 4,
+      "warning_type": "INFO_WARNING",
+      "screenshots": [
+        "Docs/F07_assets/page-17-companion.png",
+        "Docs/F07_assets/page-17-3d.png"
+      ],
+      "source_sync": "PASS",
+      "visual_review": "PASS"
+    },
+    {
+      "page": 18,
+      "status": "IMPLEMENTED",
+      "companionPageCount": 1,
+      "mode": "2D_PRIMARY_WITH_3D",
+      "formula_ids": [
+        "p18-source-math-2",
+        "p18-source-math-3",
+        "p18-enrichment-0"
+      ],
+      "formula_count": 3,
+      "warning_type": "NO_WARNING",
+      "screenshots": [
+        "Docs/F07_assets/page-18-companion.png",
+        "Docs/F07_assets/page-18-3d.png"
+      ],
+      "source_sync": "PASS",
+      "visual_review": "PASS"
+    },
+    {
+      "page": 19,
+      "status": "IMPLEMENTED",
+      "companionPageCount": 1,
+      "mode": "3D_PRIMARY_WITH_2D",
+      "formula_ids": [
+        "p19-source-math-0",
+        "p19-source-math-1",
+        "p19-enrichment-0",
+        "p19-example"
+      ],
+      "formula_count": 4,
+      "warning_type": "INFO_WARNING",
+      "screenshots": [
+        "Docs/F07_assets/page-19-companion.png",
+        "Docs/F07_assets/page-19-2d.png"
+      ],
+      "source_sync": "PASS",
+      "visual_review": "PASS"
+    },
+    {
+      "page": 20,
+      "status": "IMPLEMENTED",
+      "companionPageCount": 1,
+      "mode": "2D_PRIMARY_WITH_3D",
+      "formula_ids": [
+        "p20-source-math-0",
+        "p20-source-math-1",
+        "p20-source-math-2",
+        "p20-enrichment-0"
+      ],
+      "formula_count": 4,
+      "warning_type": "NO_WARNING",
+      "screenshots": [
+        "Docs/F07_assets/page-20-companion.png",
+        "Docs/F07_assets/page-20-3d.png"
+      ],
+      "source_sync": "PASS",
+      "visual_review": "PASS"
+    },
+    {
+      "page": 21,
+      "status": "IMPLEMENTED",
+      "companionPageCount": 1,
+      "mode": "2D_PRIMARY_WITH_3D",
+      "formula_ids": [
+        "p21-source-math-0",
+        "p21-source-math-1",
+        "p21-enrichment-0"
+      ],
+      "formula_count": 3,
+      "warning_type": "NO_WARNING",
+      "screenshots": [
+        "Docs/F07_assets/page-21-companion.png",
+        "Docs/F07_assets/page-21-3d.png"
+      ],
+      "source_sync": "PASS",
+      "visual_review": "PASS"
+    },
+    {
+      "page": 22,
+      "status": "IMPLEMENTED",
+      "companionPageCount": 1,
+      "mode": "2D_PRIMARY_WITH_3D",
+      "formula_ids": [
+        "p22-source-math-0",
+        "p22-source-math-1",
+        "p22-source-math-4",
+        "p22-enrichment-0"
+      ],
+      "formula_count": 4,
+      "warning_type": "INFO_WARNING",
+      "screenshots": [
+        "Docs/F07_assets/page-22-companion.png",
+        "Docs/F07_assets/page-22-3d.png"
+      ],
+      "source_sync": "PASS",
+      "visual_review": "PASS"
+    },
+    {
+      "page": 23,
+      "status": "IMPLEMENTED",
+      "companionPageCount": 1,
+      "mode": "3D_PRIMARY_WITH_2D",
+      "formula_ids": [
+        "p23-source-math-0",
+        "p23-source-math-1",
+        "p23-enrichment-0"
+      ],
+      "formula_count": 3,
+      "warning_type": "NO_WARNING",
+      "screenshots": [
+        "Docs/F07_assets/page-23-companion.png",
+        "Docs/F07_assets/page-23-2d.png"
+      ],
+      "source_sync": "PASS",
+      "visual_review": "PASS"
+    },
+    {
+      "page": 24,
+      "status": "IMPLEMENTED",
+      "companionPageCount": 1,
+      "mode": "2D_PRIMARY_WITH_3D",
+      "formula_ids": [
+        "p24-source-math-0",
+        "p24-source-math-1",
+        "p24-source-math-2",
+        "p24-example"
+      ],
+      "formula_count": 4,
+      "warning_type": "NO_WARNING",
+      "screenshots": [
+        "Docs/F07_assets/page-24-companion.png",
+        "Docs/F07_assets/page-24-3d.png"
+      ],
+      "source_sync": "PASS",
+      "visual_review": "PASS"
+    },
+    {
+      "page": 25,
+      "status": "IMPLEMENTED",
+      "companionPageCount": 1,
+      "mode": "2D_AND_3D_EQUAL",
+      "formula_ids": [
+        "p25-source-math-0",
+        "p25-source-math-1",
+        "p25-enrichment-0"
+      ],
+      "formula_count": 3,
+      "warning_type": "NO_WARNING",
+      "screenshots": [
+        "Docs/F07_assets/page-25-companion.png",
+        "Docs/F07_assets/page-25-3d.png"
+      ],
+      "source_sync": "PASS",
+      "visual_review": "PASS"
+    },
+    {
+      "page": 26,
+      "status": "IMPLEMENTED",
+      "companionPageCount": 1,
+      "mode": "2D_PRIMARY_WITH_3D",
+      "formula_ids": [
+        "p26-source-math-0",
+        "p26-source-math-1",
+        "p26-source-math-2",
+        "p26-source-math-3"
+      ],
+      "formula_count": 4,
+      "warning_type": "INFO_WARNING",
+      "screenshots": [
+        "Docs/F07_assets/page-26-companion.png",
+        "Docs/F07_assets/page-26-3d.png"
+      ],
+      "source_sync": "PASS",
+      "visual_review": "PASS"
+    },
+    {
+      "page": 27,
+      "status": "IMPLEMENTED",
+      "companionPageCount": 1,
+      "mode": "3D_PRIMARY_WITH_2D",
+      "formula_ids": [
+        "p27-source-math-0",
+        "p27-source-math-1",
+        "p27-source-math-2",
+        "p27-enrichment-0",
+        "p27-example-acceleration",
+        "p27-time-sampling",
+        "p27-example-reference"
+      ],
+      "formula_count": 7,
+      "warning_type": "NO_WARNING",
+      "screenshots": [
+        "Docs/F07_assets/page-27-companion.png",
+        "Docs/F07_assets/page-27-2d.png"
+      ],
+      "source_sync": "PASS",
+      "visual_review": "PASS"
+    },
+    {
+      "page": 28,
+      "status": "IMPLEMENTED",
+      "companionPageCount": 1,
+      "mode": "2D_PRIMARY_WITH_3D",
+      "formula_ids": [
+        "p28-source-math-0",
+        "p28-source-math-1",
+        "p28-source-math-2",
+        "p28-example"
+      ],
+      "formula_count": 4,
+      "warning_type": "NO_WARNING",
+      "screenshots": [
+        "Docs/F07_assets/page-28-companion.png",
+        "Docs/F07_assets/page-28-3d.png"
+      ],
+      "source_sync": "PASS",
+      "visual_review": "PASS"
+    },
+    {
+      "page": 29,
+      "status": "IMPLEMENTED",
+      "companionPageCount": 1,
+      "mode": "3D_PRIMARY_WITH_2D",
+      "formula_ids": [
+        "p29-source-math-0",
+        "p29-source-math-1",
+        "p29-example"
+      ],
+      "formula_count": 3,
+      "warning_type": "NO_WARNING",
+      "screenshots": [
+        "Docs/F07_assets/page-29-companion.png",
+        "Docs/F07_assets/page-29-2d.png"
+      ],
+      "source_sync": "PASS",
+      "visual_review": "PASS"
+    },
+    {
+      "page": 30,
+      "status": "IMPLEMENTED",
+      "companionPageCount": 1,
+      "mode": "2D_PRIMARY_WITH_3D",
+      "formula_ids": [
+        "p30-correction-0",
+        "p30-enrichment-0",
+        "p30-maximum-residual",
+        "p30-index-example"
+      ],
+      "formula_count": 4,
+      "warning_type": "CORRECTION_WARNING",
+      "screenshots": [
+        "Docs/F07_assets/page-30-companion.png",
+        "Docs/F07_assets/page-30-3d.png"
+      ],
+      "source_sync": "PASS",
+      "visual_review": "PASS"
+    },
+    {
+      "page": 31,
+      "status": "IMPLEMENTED",
+      "companionPageCount": 1,
+      "mode": "2D_PRIMARY_WITH_3D",
+      "formula_ids": [
+        "p31-source-math-1",
+        "p31-source-math-2",
+        "p31-trajectory-set",
+        "p31-enrichment-0"
+      ],
+      "formula_count": 4,
+      "warning_type": "NO_WARNING",
+      "screenshots": [
+        "Docs/F07_assets/page-31-companion.png",
+        "Docs/F07_assets/page-31-3d.png"
+      ],
+      "source_sync": "PASS",
+      "visual_review": "PASS"
+    },
+    {
+      "page": 32,
+      "status": "IMPLEMENTED",
+      "companionPageCount": 1,
+      "mode": "3D_PRIMARY_WITH_2D",
+      "formula_ids": [
+        "p32-source-math-0",
+        "p32-example"
+      ],
+      "formula_count": 2,
+      "warning_type": "NO_WARNING",
+      "screenshots": [
+        "Docs/F07_assets/page-32-companion.png",
+        "Docs/F07_assets/page-32-2d.png"
+      ],
+      "source_sync": "PASS",
+      "visual_review": "PASS"
+    },
+    {
+      "page": 33,
+      "status": "IMPLEMENTED",
+      "companionPageCount": 1,
+      "mode": "3D_PRIMARY_WITH_2D",
+      "formula_ids": [
+        "p33-source-math-0",
+        "p33-source-math-1",
+        "p33-source-math-2",
+        "p33-enrichment-0"
+      ],
+      "formula_count": 4,
+      "warning_type": "NO_WARNING",
+      "screenshots": [
+        "Docs/F07_assets/page-33-companion.png",
+        "Docs/F07_assets/page-33-2d.png"
+      ],
+      "source_sync": "PASS",
+      "visual_review": "PASS"
+    },
+    {
+      "page": 34,
+      "status": "IMPLEMENTED",
+      "companionPageCount": 1,
+      "mode": "3D_PRIMARY_WITH_2D",
+      "formula_ids": [
+        "p34-source-math-1",
+        "p34-source-math-2",
+        "p34-correction-0",
+        "p34-enrichment-0",
+        "p34-equilibrium-law",
+        "p34-residuals"
+      ],
+      "formula_count": 6,
+      "warning_type": "CORRECTION_WARNING",
+      "screenshots": [
+        "Docs/F07_assets/page-34-companion.png",
+        "Docs/F07_assets/page-34-2d.png"
+      ],
+      "source_sync": "PASS",
+      "visual_review": "PASS"
+    },
+    {
+      "page": 35,
+      "status": "IMPLEMENTED",
+      "companionPageCount": 1,
+      "mode": "2D_PRIMARY_WITH_3D",
+      "formula_ids": [
+        "p35-source-math-0",
+        "p35-source-math-1",
+        "p35-support"
+      ],
+      "formula_count": 3,
+      "warning_type": "NO_WARNING",
+      "screenshots": [
+        "Docs/F07_assets/page-35-companion.png",
+        "Docs/F07_assets/page-35-3d.png"
+      ],
+      "source_sync": "PASS",
+      "visual_review": "PASS"
+    },
+    {
+      "page": 36,
+      "status": "IMPLEMENTED",
+      "companionPageCount": 1,
+      "mode": "3D_PRIMARY_WITH_2D",
+      "formula_ids": [
+        "p36-source-math-0",
+        "p36-source-math-1",
+        "p36-enrichment-0"
+      ],
+      "formula_count": 3,
+      "warning_type": "NO_WARNING",
+      "screenshots": [
+        "Docs/F07_assets/page-36-companion.png",
+        "Docs/F07_assets/page-36-2d.png"
+      ],
+      "source_sync": "PASS",
+      "visual_review": "PASS"
+    }
+  ],
+  "screenshots": 62,
+  "unresolved_issues": []
+}

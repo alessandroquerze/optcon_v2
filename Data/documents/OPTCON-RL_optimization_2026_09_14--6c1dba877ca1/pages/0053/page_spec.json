@@ -81,12 +81,546 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "fae5d2bf87f9594da813b81630fc8e3578e168e44b474f0b8fb880c409dfb5f0",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0053",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "c2efc2c3ca47da85a7d409f88a9e9d5200318b39a848d530c30773272d7562c5",
+        "layout": "931128f6aff0bf8ab4ef3e27c65cd6cc56cce2d114a90a7193f72aca1710a0d3",
+        "render": "21da8800df613d72b4de2fb1c710881b143ae6eb94c6346ee622f5200d68beff"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-g-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0053",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0052",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0054"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0053",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0052",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0054"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0053",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0052",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0054"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Examples of cost functions",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "equation",
+          "description": "Prima funzione scalare: ℓ(z)=z².",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0053",
+            "modality": "both",
+            "text_quote": "Examples of cost functions",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "equation",
+          "description": "Seconda scalare: z⁴+2z³−12z²−2z+6, con coefficienti e segni letti sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0053",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "equation",
+          "description": "Terza in due variabili: e^{z₁+3z₂−0.1}+e^{z₁−3z₂−0.1}+e^{−z₁−0.1}.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0053",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-4",
+          "category": "equation",
+          "description": "Quarta: 1/2 zᵀQz+rᵀz; la pagina non specifica Q, r o ipotesi di convessità.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0053",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0053",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Esplorare tutte le quattro funzioni della fonte senza supporre convessità comune.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0052",
+          "role": "previous",
+          "note": "Applicare il gradiente proiettato a un QP convesso, compresi minimi al bordo e non unici."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0054",
+          "role": "next",
+          "note": "Spiegare dominio stretto, peso ε e avvicinamento al bordo nel modello logaritmico."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\ell(z)=z^2",
+          "meaning": "Costo scalare strettamente convesso, con minimo in zero. La classificazione segue dalle derivate.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\ell(z)=z^4+2z^3-12z^2-2z+6",
+          "meaning": "Il polinomio non è convesso su tutta R e ha due valli. Un grafico ritagliato non basta a certificarne i minimi.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\ell(z)=e^{z_1+3z_2-0.1}+e^{z_1-3z_2-0.1}+e^{-z_1-0.1}",
+          "meaning": "Tre esponenziali di forme affini: costo in due variabili. Il 3D rappresenta proprio il valore di questa somma.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\ell(z)=\\tfrac12z^TQz+r^Tz",
+          "meaning": "La fonte qui non assegna Q e r. La companion dichiara i dati scelti per disegnare un esempio.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "source-4",
+          "structure"
+        ],
+        "rationale": "Scopo e contenuto autonomi."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "Nessuna correzione matematica necessaria dopo confronto con la pagina precedente e successiva.",
+          "Nessuna sola funzione sostitutiva per l’intera pagina: tutte e quattro sono navigabili.",
+          "Q e r della quarta formula non sono dati dalla fonte; solo l’istanza aggiunta Q=diag(1,4),r=(−1,−1) viene simulata.",
+          "Le scale sono fisse per ogni funzione e non cambiano muovendo la sonda. Passare a un’altra funzione può cambiare dimensione e scala, dichiarate dagli assi."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Gradiente e Hessiana",
+            "why": "Dimensioni e derivate coerenti con la variabile.",
+            "origin": "source_context",
+            "page_numbers": [
+              5,
+              6
+            ]
+          },
+          {
+            "concept": "Convessità",
+            "why": "Si verifica sulla funzione specifica.",
+            "origin": "source_context",
+            "page_numbers": [
+              11,
+              24
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\ell(z)=z^2",
+            "anchor": "Examples of cost functions",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\ell(z)=z^4+2z^3-12z^2-2z+6",
+            "anchor": "Examples of cost functions",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\ell(z)=e^{z_1+3z_2-0.1}+e^{z_1-3z_2-0.1}+e^{-z_1-0.1}",
+            "anchor": "Examples of cost functions",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\ell(z)=\\tfrac12z^TQz+r^Tz",
+            "anchor": "Examples of cost functions",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Una formula del costo determina numero di variabili, gradienti e curvature. Le quattro funzioni non condividono automaticamente convessità, numero di minimi o dimensione.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "Somma di esponenziali",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Selettore di tutte e quattro le funzioni; curve per d=1 e livelli/superficie per d=2, con sonda e minimi noti. Stesse coordinate e stessa funzione fra 2D/3D.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Esplorare tutte le quattro funzioni della fonte senza supporre convessità comune.",
+            "setup": "Somma di esponenziali",
+            "parameters": [],
+            "derivation": [
+              "In z=(0,0), costo 3e^{−0.1}.",
+              "Il gradiente è (e^{−0.1},0).",
+              "La simmetria impone z₂=0 al minimo e il bilancio dà z₁=−log(2)/2."
+            ],
+            "expected_outcome": "I dati delle funzioni restano esattamente quelli della fonte; classificazioni e Q,r numerici sono aggiunte dichiarate.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "FunctionExplorer",
+          "description": "Selettore di tutte e quattro le funzioni; curve per d=1 e livelli/superficie per d=2, con sonda e minimi noti. Stesse coordinate e stessa funzione fra 2D/3D.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Il selettore mette a confronto geometrie reali; la sonda collega costo, norma del gradiente e curvatura minima senza introdurre algoritmi non presenti.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Punto scalare",
+              "symbol": "a",
+              "origin": "enrichment",
+              "range": "{'min': -4, 'max': 3, 'step': 0.1, 'integer': False}",
+              "default": "0",
+              "effect_on_change": "Muove il punto sulle funzioni scalari; formula e stazionari restano fissi.",
+              "edge_cases": [
+                "Cambio dimensione",
+                "Quartica",
+                "QP generico",
+                "Esponenziali"
+              ]
+            },
+            {
+              "name": "Prima coordinata",
+              "symbol": "z_1",
+              "origin": "enrichment",
+              "range": "{'min': -1, 'max': 1, 'step': 0.1, 'integer': False}",
+              "default": "0",
+              "effect_on_change": "Muove il punto sulle funzioni in due variabili; stessa selezione in 2D/3D.",
+              "edge_cases": [
+                "Cambio dimensione",
+                "Quartica",
+                "QP generico",
+                "Esponenziali"
+              ]
+            },
+            {
+              "name": "Seconda coordinata",
+              "symbol": "z_2",
+              "origin": "enrichment",
+              "range": "{'min': -1, 'max': 1, 'step': 0.1, 'integer': False}",
+              "default": "0",
+              "effect_on_change": "Muove solo la seconda coordinata della sonda sulla funzione selezionata.",
+              "edge_cases": [
+                "Cambio dimensione",
+                "Quartica",
+                "QP generico",
+                "Esponenziali"
+              ]
+            },
+            {
+              "name": "Costo",
+              "symbol": "f",
+              "origin": "enrichment",
+              "range": "z² / quartica / somma di esponenziali / QP",
+              "default": "Somma di esponenziali",
+              "effect_on_change": "Cambia la funzione e mostra solo i controlli pertinenti. I costi scalari usano una curva 2D; le funzioni a due variabili hanno livelli 2D e superficie 3D.",
+              "edge_cases": [
+                "Cambio dimensione",
+                "Quartica",
+                "QP generico",
+                "Esponenziali"
+              ]
+            }
+          ],
+          "outputs": [
+            "Esplorare tutte le quattro funzioni della fonte senza supporre convessità comune."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "Cambio dimensione",
+            "expected_behavior": "Nessun asse o coordinata fittizia per il caso scalare; 3D soltanto per d=2.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "Quartica",
+            "expected_behavior": "Stazionari numerici e minimo globale distinti; non classificare ogni radice come minimo.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "QP generico",
+            "expected_behavior": "Non chiamare ogni QP convesso: la convessità riguarda l’istanza esplicita scelta.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "Esponenziali",
+            "expected_behavior": "Conservare −0.1 in tutti e tre gli esponenti.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Esplorare tutte le quattro funzioni della fonte senza supporre convessità comune.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

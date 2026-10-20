@@ -81,12 +81,524 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
+    "status": "needs_review",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "5c0b4d257ea68fc337ee7de0004bf1c2a2926d82f4de96038691d8ec98d4e026",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0013",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "bf29c91ca64189c61977bd5109de5c576cd937dbf389c221b654c855056cd2c7",
+        "layout": "2d954ae4576766740a1c3fd3c371f9ab60c2a03a9f719aa63e4d5790929de36c",
+        "render": "0163061ae84a8011e97cd57958a4982e4efe4f450c8b10beb7a884ff56e13ea8"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-b-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0013",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0012",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0014"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0013",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0012",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0014"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0013",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0012",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0014"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Equality constraints and convex sets",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "equation",
+          "description": "h:R^d→R^p definisce Z_eq mediante h(z)=0.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0013",
+            "modality": "both",
+            "text_quote": "Let h",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "concept",
+          "description": "Il solo se h affine è falso: funzioni non affini possono avere lo stesso insieme degli zeri.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0013",
+            "modality": "both",
+            "text_quote": "if and only if",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "concept",
+          "description": "La fonte chiama linear spaces gli insiemi convessi di uguaglianza: in generale, per sistemi affini si tratta di insiemi affini, eventualmente vuoti.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0013",
+            "modality": "both",
+            "text_quote": "linear spaces (hyperplanes)",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-4",
+          "category": "diagram",
+          "description": "La figura contrappone una curva quadratica e una retta; il segmento fra punti della curva può lasciarla.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0013",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0013",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Separare insieme affine, sottospazio lineare e rappresentazione nonlineare dello stesso insieme.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0012",
+          "role": "previous",
+          "note": "Distinguere sottolivello zero, bordo e condizione sufficiente di convessità."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0014",
+          "role": "next",
+          "note": "Collegare supporto affine e monotonia del gradiente senza invertirne i segni."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\mathbb Z_{\\mathrm{eq}}=\\{z\\in\\mathbb R^d\\mid h(z)=0\\}",
+          "meaning": "Sono ammessi soltanto gli zeri. In 2D una retta o una circonferenza non ammettono automaticamente il loro interno.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [
+        {
+          "description": "Discrepanza della fonte esaminata e risolta nella policy companion: h=(z₁+z₂−1)³ è non affine e ha l’insieme convesso degli zeri z₁+z₂=1: il solo se è falso. Con h(z)=Az−c il sistema, se compatibile, dà un insieme affine; è sottospazio quando c=0. Per p>1 non è necessariamente un unico iperpiano; può essere vuoto. Gli zeri di funzioni generiche possono essere convessi senza essere affini, ad esempio h=(max(0,||z||²−1))². Nessuna correzione dei letterali originali.",
+          "blocking": false,
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        }
+      ],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "source-4",
+          "structure"
+        ],
+        "rationale": "Pagina distinta per definizione, vincolo o interpretazione; non accorpare."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "h=(z₁+z₂−1)³ è non affine e ha l’insieme convesso degli zeri z₁+z₂=1: il solo se è falso. Con h(z)=Az−c il sistema, se compatibile, dà un insieme affine; è sottospazio quando c=0. Per p>1 non è necessariamente un unico iperpiano; può essere vuoto. Gli zeri di funzioni generiche possono essere convessi senza essere affini, ad esempio h=(max(0,||z||²−1))². Nessuna correzione dei letterali originali."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Vincoli di disuguaglianza",
+            "why": "L’uguaglianza ammette soltanto il livello, non tutta la regione.",
+            "origin": "source_context",
+            "page_numbers": [
+              12
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\mathbb Z_{\\mathrm{eq}}=\\{z\\in\\mathbb R^d\\mid h(z)=0\\}",
+            "anchor": "Let h",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Un sistema affine Az=c definisce un insieme affine, se compatibile. Una funzione nonlineare può avere lo stesso insieme degli zeri: la sola forma di h non dà un “se e solo se”.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "h=z₁+z₂−1 e h=(z₁+z₂−1)³",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Zeri analitici 2D senza area riempita; 3D opzionale della funzione h e del piano zero, stessa sonda.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Separare insieme affine, sottospazio lineare e rappresentazione nonlineare dello stesso insieme.",
+            "setup": "h=z₁+z₂−1 e h=(z₁+z₂−1)³",
+            "parameters": [],
+            "derivation": [
+              "Entrambe si annullano sulla stessa retta z₁+z₂=1.",
+              "La retta non contiene l’origine, quindi non è un sottospazio.",
+              "La seconda h non è affine: controesempio al solo se."
+            ],
+            "expected_outcome": "Separare proprietà dell’insieme e proprietà della sua rappresentazione.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "FunctionExplorer",
+          "description": "Zeri analitici 2D senza area riempita; 3D opzionale della funzione h e del piano zero, stessa sonda.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Variare un solo aspetto del confronto mantenendo esplicite le invarianti.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Costante del vincolo",
+              "symbol": "c",
+              "origin": "enrichment",
+              "range": "{'min': 0, 'max': 2, 'step': 0.1, 'integer': False}",
+              "default": "1",
+              "effect_on_change": "Trasla la retta, oppure modifica il raggio della circonferenza; c=0 è gestito esplicitamente.",
+              "edge_cases": [
+                "c=0 e circonferenza",
+                "c=0 e retta",
+                "Punto fuori dallo zero",
+                "Rappresentazioni equivalenti"
+              ]
+            },
+            {
+              "name": "Coordinata della sonda",
+              "symbol": "z_1",
+              "origin": "enrichment",
+              "range": "{'min': -1.5, 'max': 1.5, 'step': 0.1, 'integer': False}",
+              "default": "1",
+              "effect_on_change": "Muove solo (z₁,0) e verifica se h(z)=0.",
+              "edge_cases": [
+                "c=0 e circonferenza",
+                "c=0 e retta",
+                "Punto fuori dallo zero",
+                "Rappresentazioni equivalenti"
+              ]
+            },
+            {
+              "name": "Uguaglianza",
+              "symbol": "s",
+              "origin": "enrichment",
+              "range": "Retta affine / cubo della stessa retta / circonferenza",
+              "default": "Retta affine",
+              "effect_on_change": "Sostituisce h; retta e cubo conservano lo stesso insieme degli zeri.",
+              "edge_cases": [
+                "c=0 e circonferenza",
+                "c=0 e retta",
+                "Punto fuori dallo zero",
+                "Rappresentazioni equivalenti"
+              ]
+            }
+          ],
+          "outputs": [
+            "Separare insieme affine, sottospazio lineare e rappresentazione nonlineare dello stesso insieme."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "c=0 e circonferenza",
+            "expected_behavior": "Singleton, che è convesso; non continuare a chiamarlo circonferenza non convessa.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "c=0 e retta",
+            "expected_behavior": "Sottospazio lineare.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "Punto fuori dallo zero",
+            "expected_behavior": "Non è ammissibile anche se è interno al cerchio.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "Rappresentazioni equivalenti",
+            "expected_behavior": "Per la retta e il suo cubo verificare geometricamente lo stesso insieme degli zeri: una tolleranza assoluta sul solo residuo cubico creerebbe una falsa banda ammissibile.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Separare insieme affine, sottospazio lineare e rappresentazione nonlineare dello stesso insieme.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1,
+  "source_warning": {
+    "policy_version": "1.0.0",
+    "scope": "companion_only",
+    "type": "CORRECTION_WARNING",
+    "review_status": "resolved",
+    "original_analysis_sha256": "ffd0f5c22db3ae3e9843ac87bd2fb4b83da03a38384c0b8d2cf12ec396721751",
+    "issues": [
+      {
+        "issue_id": "opt13-source-review",
+        "source_issue_index": 0,
+        "issue": "Uguaglianze: affine è sufficiente",
+        "type": "CORRECTION_WARNING",
+        "source_expression": "The set Zeq is convex if and only if h is an affine function. Convex sets identified through equality\nconstraints are linear spaces (hyperplanes).",
+        "corrected_expression": "h(z)=Az-c\\ \\Longrightarrow\\ \\mathbb Z_{\\mathrm{eq}}=\\{z:Az=c\\}\\ \\text{convesso}",
+        "companion_uses": "h(z)=Az-c\\ \\Longrightarrow\\ \\mathbb Z_{\\mathrm{eq}}=\\{z:Az=c\\}\\ \\text{convesso}",
+        "short_warning": "⚠ Warning: possibile errore nella slide originale. Affinità sufficiente; insieme affine.",
+        "correction_reason": "h=(z₁+z₂−1)³ è non affine e ha l’insieme convesso degli zeri z₁+z₂=1: il solo se è falso. Con h(z)=Az−c il sistema, se compatibile, dà un insieme affine; è sottospazio quando c=0. Per p>1 non è necessariamente un unico iperpiano; può essere vuoto. Gli zeri di funzioni generiche possono essere convessi senza essere affini, ad esempio h=(max(0,||z||²−1))². Nessuna correzione dei letterali originali.",
+        "use_corrected_value_for_examples": true,
+        "use_corrected_value_for_simulation": true,
+        "resolved": true,
+        "source_references": [
+          "analysis/result/observations"
+        ],
+        "context_pages_consulted": [
+          12,
+          13,
+          14
+        ],
+        "calculation_policy": "SOURCE_LITERAL immutabile; calcoli basati sulla versione companion e sulle ipotesi dichiarate.",
+        "ui": {
+          "show": true,
+          "color": "red",
+          "placement": "Accanto al concetto interessato",
+          "when": "Enunciato o esempio pertinente",
+          "student_text_field": "short_warning"
+        }
+      }
+    ],
+    "companion_overrides": [],
+    "technical_only_legacy_paths": []
   }
 }

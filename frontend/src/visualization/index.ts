@@ -1,4 +1,6 @@
 export { SceneViewport } from './core/SceneViewport';
+export { GraphicViewport } from './core/GraphicViewport';
+export { MatrixVisualizer } from './shared/MatrixVisualizer';
 export { FunctionPlot2D, TimeSeriesPlot } from './2d/FunctionPlot2D';
 export { ContourPlot2D } from './2d/ContourPlot2D';
 export { SurfacePlot3D } from './3d/SurfacePlot3D';

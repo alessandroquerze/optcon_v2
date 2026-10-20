@@ -69,12 +69,255 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "c9a41a4f348e9e45d137e0b4c7b4c78635646a15fb5d66798713c34215a6d812",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0001",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "010b3b3fd6ffa080c546068e50a4beaa2a9c2136b04a7ce2df1c56ed6c4ae802",
+        "layout": "b8372eaa995d227bfb1d1735ca0ec9675c6a556f701eba1a1ca861b49d843e22",
+        "render": "4b4adccc5eab87cbfe13a481f44b26df6e5f25ceebec82b6ca84a7cf25526f2c"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-a-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0001",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0002"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0001",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0002"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0001",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0002"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Optimal Control and Reinforcement Learning",
+      "observations": [
+        {
+          "id": "s01",
+          "category": "structure",
+          "description": "Il documento è Nonlinear Optimization, parte del corso Optimal Control and Reinforcement Learning.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0001",
+            "modality": "both",
+            "text_quote": "Nonlinear Optimization",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "s02",
+          "category": "other",
+          "description": "Autore Giuseppe Notarstefano, Università di Bologna; slide per uso interno al corso.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0001",
+            "modality": "both",
+            "text_quote": "The present slides are for internal use of the course",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, disposizione e crediti/footer letti visivamente; nessun dato numerico dedotto dagli elementi decorativi.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0001",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Orientarsi: dal problema alla scelta di un metodo.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0002",
+          "role": "next",
+          "note": "Separare definire una soluzione, riconoscerla e cercarla."
+        }
+      ],
+      "notation": [],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "s01",
+          "s02",
+          "structure"
+        ],
+        "rationale": "Contenuto distinto dalle vicine: non eliminare o accorpare la pagina."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo o spazio della copertina.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Tutto il contenuto, incluse formule, grafici, affiliazione e remark quando presenti.",
+            "observation_ids": [
+              "s01",
+              "s02",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer e decorazione, o spazio bianco finale.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Copertina con titolo, autore, affiliazione e nota d’uso interno. Nessun teorema o algoritmo.",
+          "La mappa della companion è un orientamento aggiunto, non una formula della slide."
+        ],
+        "prerequisites": [],
+        "source_math": [],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "L’ottimizzazione sceglie una decisione confrontando i valori di un costo. Qui iniziamo dalle definizioni, poi studieremo condizioni e algoritmi.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Mappa editoriale: definizioni → geometria → algoritmi → vincoli, con crediti della fonte.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [],
+        "example_omission_reason": "Copertina/divisorio senza contenuto tecnico da esemplificare numericamente.",
+        "visualization": {
+          "component": "ModelDiagram",
+          "description": "Mappa editoriale: definizioni → geometria → algoritmi → vincoli, con crediti della fonte.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "s01",
+            "s02",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": false,
+          "rationale": "Mappa concettuale statica: nessuna dinamica inventata.",
+          "component": null,
+          "parameters": [],
+          "outputs": [
+            "Orientarsi: dal problema alla scelta di un metodo."
+          ],
+          "invariants": [
+            "Copertina con titolo, autore, affiliazione e nota d’uso interno. Nessun teorema o algoritmo.",
+            "La mappa della companion è un orientamento aggiunto, non una formula della slide."
+          ],
+          "enrichment_id": null
+        },
+        "edge_cases": [
+          {
+            "case": "Nessuna formula in copertina",
+            "expected_behavior": "Non introdurre un risultato matematico come affermazione della copertina.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un focus principale, una figura e dettagli su richiesta consentono una singola companion leggibile; nessuna riduzione tipografica.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Orientarsi: dal problema alla scelta di un metodo.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "visual"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un focus principale, una figura e dettagli su richiesta consentono una singola companion leggibile; nessuna riduzione tipografica.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

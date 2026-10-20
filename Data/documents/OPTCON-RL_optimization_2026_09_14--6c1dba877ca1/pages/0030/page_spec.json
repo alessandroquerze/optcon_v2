@@ -81,12 +81,419 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "bf9a0228b0380f960460ef4c8fff49d6d4231f6f5d931d3b890d949fd7281c64",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0030",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "c0db088920d728e2076897bfd09d7f3f5233424f9fa53f5d1f63c9bd602b8ca6",
+        "layout": "87627523670e9fd4899da61c7e9034f3e196d75d4bca25236f6c4f3de0ea65af",
+        "render": "837a43bb2b0894075e953fd00b6762bd643f8c200520ed0ff637473a54da45f5"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-d-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0030",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0029",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0031"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0030",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0029",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0031"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0030",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0029",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0031"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Gradient methods: introduction",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "algorithm",
+          "description": "La pagina riprende il gradiente e passa all’aggiornamento generale z^{k+1}=z^k+γ^k d^k.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0030",
+            "modality": "both",
+            "text_quote": "can be generalized",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "equation",
+          "description": "La condizione sulle direzioni è ∇ℓ(z^k)^T d^k<0.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0030",
+            "modality": "both",
+            "text_quote": "with dk such that",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0030",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Leggere il prodotto scalare come pendenza iniziale e classificare direzioni diverse.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0029",
+          "role": "previous",
+          "note": "Capire il termine negativo di primo ordine e il ruolo del resto per un passo finito."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0031",
+          "role": "next",
+          "note": "Capire perché una trasformazione simmetrica positiva definita preserva una pendenza negativa."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\nabla\\ell(z^k)^T d^k<0",
+          "meaning": "Il prodotto è la pendenza iniziale lungo d. Un angolo ottuso rispetto al gradiente dà discesa per passi abbastanza piccoli, non per qualsiasi lunghezza.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "z^{k+1}=z^k+\\gamma^k d^k",
+          "meaning": "Il parametro positivo γ scala la direzione scelta. La condizione locale sulla direzione deve essere seguita dalla scelta del passo.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "z^{k+1}=z^k-\\gamma^k\\nabla\\ell(z^k)",
+          "meaning": "Il gradiente negativo è il caso particolare da cui parte la generalizzazione, non l’unica direzione ammessa.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "progressive",
+        "related_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0029"
+        ],
+        "added": [
+          "Leggere il prodotto scalare come pendenza iniziale e classificare direzioni diverse."
+        ],
+        "removed": [],
+        "changed": [
+          "Nuova scelta o caratterizzazione della direzione; mantenere una pagina fisica distinta."
+        ],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "structure"
+        ],
+        "rationale": "Progressione concettuale, non duplicato eliminabile."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "Nessuna correzione matematica necessaria dopo confronto con la pagina precedente e successiva.",
+          "Freccia unitaria e spostamento γd hanno lunghezze e ruoli distinti."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Pendenza lungo una retta",
+            "why": "È il prodotto fra gradiente e direzione.",
+            "origin": "source_context",
+            "page_numbers": [
+              28,
+              29
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\nabla\\ell(z^k)^T d^k<0",
+            "anchor": "can be generalized",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "z^{k+1}=z^k+\\gamma^k d^k",
+            "anchor": "can be generalized",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "z^{k+1}=z^k-\\gamma^k\\nabla\\ell(z^k)",
+            "anchor": "can be generalized",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Il gradiente negativo è una scelta possibile. Ogni direzione con prodotto scalare negativo rispetto al gradiente ha pendenza iniziale favorevole.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "ψ=45°, γ=0.5",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Livelli del costo, punto iniziale, gradiente normalizzato rosso, direzione unitaria viola e spostamento arancio; costo e pendenza analitici.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Leggere il prodotto scalare come pendenza iniziale e classificare direzioni diverse.",
+            "setup": "ψ=45°, γ=0.5",
+            "parameters": [],
+            "derivation": [
+              "La pendenza è −√5/√2<0.",
+              "Calcolare il punto (1,0.5)+γd e il costo con la stessa quadratica.",
+              "Con ψ=90° la pendenza è zero; con ψ=180° è positiva."
+            ],
+            "expected_outcome": "Una pendenza negativa non garantisce il costo finale per ogni γ.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "SceneViewport",
+          "description": "Livelli del costo, punto iniziale, gradiente normalizzato rosso, direzione unitaria viola e spostamento arancio; costo e pendenza analitici.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "La rotazione distingue discesa, ortogonalità e salita; il passo modifica il risultato senza riclassificare la direzione.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Rotazione della direzione",
+              "symbol": "\\psi",
+              "origin": "enrichment",
+              "range": "{'min': -180, 'max': 180, 'step': 15, 'integer': False}",
+              "default": "45",
+              "effect_on_change": "Ruota d e aggiorna pendenza e punto d’arrivo, conservando norma unitaria, costo e punto iniziale.",
+              "edge_cases": [
+                "ψ=±90°",
+                "γ=0",
+                "Passo oltre il tratto favorevole"
+              ]
+            },
+            {
+              "name": "Lunghezza del passo",
+              "symbol": "\\gamma",
+              "origin": "enrichment",
+              "range": "{'min': 0, 'max': 1.6, 'step': 0.1, 'integer': False}",
+              "default": "0.5",
+              "effect_on_change": "Scala solo lo spostamento arancio e aggiorna il costo nuovo; direzione e classificazione locale restano fisse.",
+              "edge_cases": [
+                "ψ=±90°",
+                "γ=0",
+                "Passo oltre il tratto favorevole"
+              ]
+            }
+          ],
+          "outputs": [
+            "Leggere il prodotto scalare come pendenza iniziale e classificare direzioni diverse."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "ψ=±90°",
+            "expected_behavior": "Pendenza zero; non chiamare direzione di discesa stretta.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "case": "γ=0",
+            "expected_behavior": "Punto fermo ma direzione ancora classificabile.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "case": "Passo oltre il tratto favorevole",
+            "expected_behavior": "Mostrare costo aumentato anche con prodotto negativo.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Leggere il prodotto scalare come pendenza iniziale e classificare direzioni diverse.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

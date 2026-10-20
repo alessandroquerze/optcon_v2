@@ -81,12 +81,565 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
+    "status": "needs_review",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "253607fa40b2c532b3fa63d8e34fb56c0603dadf4fb6f7cf48145e5b8b151635",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0078",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "65261da53c2657c910185caa294cb58467746fe7a15cc943a5929ebb7fc90465",
+        "layout": "edc0589a95e16959afd9b4d289659539c78873ae91bf30dd0819151523da2f85",
+        "render": "c85b0dab4cbc852aa7e98ce7710fe37408a9e0670d932f91478a45983bacf619"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-k-2026-10-19"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0078",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0077",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0079"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0078",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0077",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0079"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0078",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0077",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0079"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Barrier function strategy for inequality constraints",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "definition",
+          "description": "Problema con gⱼ≤0 e h=0; trasforma soltanto le disuguaglianze aggiungendo εΣ−log(−gⱼ).",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0078",
+            "modality": "both",
+            "text_quote": "Inequality constraints",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "equation",
+          "description": "h(z)=0 rimane scritto sotto il costo modificato, benché il testo chiami il problema unconstrained.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0078",
+            "modality": "both",
+            "text_quote": "unconstrained problem",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "diagram",
+          "description": "Il grafico di −ε log(z) mostra dominio positivo, crescita al bordo, valori negativi per z>1 e famiglia ε→0; nessuna scala numerica affidabile deducibile.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0078",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-4",
+          "category": "algorithm",
+          "description": "Suggerisce di ridurre ε ogni poche iterazioni; non specifica un solver interno o una frequenza numerica.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0078",
+            "modality": "both",
+            "text_quote": "every few iterations",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0078",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Capire dominio stretto, limite ε→0 e permanenza del vincolo h=0.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0077",
+          "role": "previous",
+          "note": "Seguire un passo SQP globalizzato e l’aggiornamento rilassato del moltiplicatore."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0079",
+          "role": "next",
+          "note": "Preparare la distinzione fra variabile, iterazione e tempo."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\min_z\\ \\ell(z)-\\varepsilon\\sum_{j=1}^r\\log(-g_j(z))\\quad\\text{s.t. }h(z)=0",
+          "meaning": "Serve gⱼ<0 ed ε>0. La barriera non impone h=0 da sola.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "-\\varepsilon\\log(z),\\quad z>0",
+          "meaning": "Diverge a +∞ vicino a zero; può essere negativa per z>1.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [
+        {
+          "description": "Discrepanza della fonte esaminata e risolta nella policy companion: La parola unconstrained è imprecisa in presenza di h(z)=0, che resta correttamente stampato nella formulazione. Nessuna correzione aritmetica: si chiarisce l’ambito della trasformazione, usando sempre gⱼ<0 per il dominio del log e mantenendo h separato. Il modello aggiunto dimostra che un punto può avere costo trasformato finito e violare l’uguaglianza.",
+          "blocking": false,
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        }
+      ],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "source-4",
+          "structure"
+        ],
+        "rationale": "Scopo e contenuto autonomi."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "La parola unconstrained è imprecisa in presenza di h(z)=0, che resta correttamente stampato nella formulazione. Nessuna correzione aritmetica: si chiarisce l’ambito della trasformazione, usando sempre gⱼ<0 per il dominio del log e mantenendo h separato. Il modello aggiunto dimostra che un punto può avere costo trasformato finito e violare l’uguaglianza.",
+          "INFO_WARNING: unconstrained significa soltanto rimozione delle disuguaglianze; h=0 resta esplicito.",
+          "Modello e minimo analitico aggiunti; nessuna coordinata dedotta dal disegno qualitativo.",
+          "Il limite del minimo è dimostrato per l’esempio, non attribuito a problemi generici senza ipotesi."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Dominio logaritmico",
+            "why": "Argomento strettamente positivo.",
+            "origin": "source_context",
+            "page_numbers": [
+              54
+            ]
+          },
+          {
+            "concept": "Uguaglianze",
+            "why": "La trasformazione conserva h=0.",
+            "origin": "source_context",
+            "page_numbers": [
+              74
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\min_z\\ \\ell(z)-\\varepsilon\\sum_{j=1}^r\\log(-g_j(z))\\quad\\text{s.t. }h(z)=0",
+            "anchor": "Inequality constraints",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "-\\varepsilon\\log(z),\\quad z>0",
+            "anchor": "Inequality constraints",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "La barriera logaritmica penalizza l’avvicinamento al bordo delle disuguaglianze dall’interno. Le uguaglianze continuano a essere imposte separatamente.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "ε=.4, h=z₂−.6",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Livelli 2D e superficie 3D del costo con barriera soltanto per z₁>0, retta h=0, punto di prova e minimo interno. Profilo lungo h=0 confrontato al costo originale. Bordo x=0 escluso dal dominio, senza log fittizi.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Capire dominio stretto, limite ε→0 e permanenza del vincolo h=0.",
+            "setup": "ε=.4, h=z₂−.6",
+            "parameters": [],
+            "derivation": [
+              "Minimo interno z₁=2ε/(1+√(1+4ε))≈.306226, z₂=.6.",
+              "Punto di prova (.4,1.2): g=−.4<0, ma h=.6≠0.",
+              "A z₁=0 il problema originale ammette il bordo, mentre log(0) non è definito."
+            ],
+            "expected_outcome": "Costo trasformato e fattibilità dell’uguaglianza sono controlli distinti.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "FunctionExplorer",
+          "description": "Livelli 2D e superficie 3D del costo con barriera soltanto per z₁>0, retta h=0, punto di prova e minimo interno. Profilo lungo h=0 confrontato al costo originale. Bordo x=0 escluso dal dominio, senza log fittizi.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Il parametro muove il minimo interno; i due controlli del punto separano dominio e uguaglianza.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Peso della barriera",
+              "symbol": "\\varepsilon",
+              "origin": "enrichment",
+              "range": "{'min': 0.01, 'max': 1, 'step': 0.01, 'integer': False}",
+              "default": "0.4",
+              "effect_on_change": "Cambia la superficie e il minimo interno, non il bordo z₁=0 o la retta z₂=.6.",
+              "edge_cases": [
+                "z₁=0",
+                "z₁>1",
+                "h≠0",
+                "ε piccolo positivo"
+              ]
+            },
+            {
+              "name": "Ascissa di prova",
+              "symbol": "z_1",
+              "origin": "enrichment",
+              "range": "{'min': 0, 'max': 2, 'step': 0.05, 'integer': False}",
+              "default": "0.4",
+              "effect_on_change": "Muove il punto; a zero il costo con barriera non viene valutato.",
+              "edge_cases": [
+                "z₁=0",
+                "z₁>1",
+                "h≠0",
+                "ε piccolo positivo"
+              ]
+            },
+            {
+              "name": "Ordinata di prova",
+              "symbol": "z_2",
+              "origin": "enrichment",
+              "range": "{'min': -0.5, 'max': 1.5, 'step': 0.1, 'integer': False}",
+              "default": "1.2",
+              "effect_on_change": "Cambia h senza modificare l’ammissibilità stretta della disuguaglianza.",
+              "edge_cases": [
+                "z₁=0",
+                "z₁>1",
+                "h≠0",
+                "ε piccolo positivo"
+              ]
+            },
+            {
+              "name": "Dimezza ε",
+              "symbol": "preset",
+              "origin": "enrichment",
+              "range": "ε/2 entro il dominio [.01,1]",
+              "default": "ε=.4",
+              "effect_on_change": "Riduce ε e ricalcola il minimo analitico; non finge di aver eseguito iterazioni di un solver interno.",
+              "edge_cases": [
+                "z₁=0",
+                "z₁>1",
+                "h≠0",
+                "ε piccolo positivo"
+              ]
+            }
+          ],
+          "outputs": [
+            "Capire dominio stretto, limite ε→0 e permanenza del vincolo h=0."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "z₁=0",
+            "expected_behavior": "Originale ammissibile, barriera fuori dominio.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "z₁>1",
+            "expected_behavior": "Contributo logaritmico negativo possibile.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "h≠0",
+            "expected_behavior": "Punto non ammissibile anche se costo trasformato finito.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "ε piccolo positivo",
+            "expected_behavior": "Usare formula stabile; non sostituire ε con zero.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Capire dominio stretto, limite ε→0 e permanenza del vincolo h=0.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1,
+  "source_warning": {
+    "policy_version": "1.0.0",
+    "scope": "companion_only",
+    "type": "INFO_WARNING",
+    "review_status": "resolved",
+    "original_analysis_sha256": "ff02e527942e859a6359a8c61af42bea87126b08727d0fc08124ffbf2edefb74",
+    "issues": [
+      {
+        "issue_id": "opt78-source-review",
+        "source_issue_index": 0,
+        "issue": "La barriera conserva le uguaglianze",
+        "type": "INFO_WARNING",
+        "source_expression": "The resulting unconstrained problem reads as",
+        "corrected_expression": "Problema con sole uguaglianze: h(z)=0 resta imposto.",
+        "companion_uses": "Problema con sole uguaglianze: h(z)=0 resta imposto.",
+        "short_warning": "⚠ Nota: la barriera assorbe solo le disuguaglianze. h(z)=0 resta imposto.",
+        "correction_reason": "La parola unconstrained è imprecisa in presenza di h(z)=0, che resta correttamente stampato nella formulazione. Nessuna correzione aritmetica: si chiarisce l’ambito della trasformazione, usando sempre gⱼ<0 per il dominio del log e mantenendo h separato. Il modello aggiunto dimostra che un punto può avere costo trasformato finito e violare l’uguaglianza.",
+        "use_corrected_value_for_examples": false,
+        "use_corrected_value_for_simulation": false,
+        "resolved": true,
+        "source_references": [
+          "/analysis/result/observations"
+        ],
+        "context_pages_consulted": [
+          77,
+          78,
+          79
+        ],
+        "calculation_policy": "SOURCE_LITERAL immutabile; esempi e calcoli usano la versione companion dichiarata.",
+        "ui": {
+          "show": true,
+          "color": "red",
+          "placement": "Accanto al concetto interessato",
+          "when": "Concetto pertinente",
+          "student_text_field": "short_warning"
+        }
+      }
+    ],
+    "companion_overrides": [],
+    "technical_only_legacy_paths": []
   }
 }

@@ -81,12 +81,396 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "ea0a4dfb7acbccf1430e601a6630d8d9dc257cb14ec56d017a83a8ce2e23e7f7",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0080",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "862ec17e8afa9442295ab7775e8671cf09dfd8dd826a0d5be6797215e7e994f4",
+        "layout": "4be1fb2c0c7912387e0ec9571598eaee061ff8029d4e93b21126998f0834c942",
+        "render": "dbe9ef9ba5f0be36b40dc982ce8bb68d268f24f38ed33585689ef274cc4f033f"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-k-2026-10-19"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0080",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0079",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0081"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0080",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0079",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0081"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0080",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0079",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0081"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Warning on notation in Optimization and Optimal Control",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "definition",
+          "description": "z∈R^d è la variabile generica del problema min ℓ(z), con costo ℓ:R^d→R.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0080",
+            "modality": "both",
+            "text_quote": "generic optimization variable",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "definition",
+          "description": "z^k∈R^d è la stima della soluzione all’iterazione k∈N di un algoritmo.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0080",
+            "modality": "both",
+            "text_quote": "solution estimate",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0080",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Distinguere variabile libera e stima numerata nello stesso spazio decisionale.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0079",
+          "role": "previous",
+          "note": "Preparare la distinzione fra variabile, iterazione e tempo."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0081",
+          "role": "next",
+          "note": "Leggere (x,u), (xᵏ,uᵏ) e (xᵏ_t,uᵏ_t) come livelli diversi della stessa decisione."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "z\\in\\mathbb R^d,\\qquad z^k\\in\\mathbb R^d",
+          "meaning": "Stesso spazio decisionale; k numera la stima, senza elevare z a potenza.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\min_{z\\in\\mathbb R^d}\\ell(z),\\qquad\\ell:\\mathbb R^d\\to\\mathbb R",
+          "meaning": "La variabile e il costo sono generici; la slide non assegna un algoritmo.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "structure"
+        ],
+        "rationale": "Scopo e contenuto autonomi."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "Nessuna correzione matematica necessaria dopo confronto con la pagina precedente e successiva.",
+          "Il titolo Warning on notation non è una source_issue: nessun warning editoriale inutile.",
+          "80 e 81 hanno lo stesso titolo ma contenuti e footer distinti, non overlay duplicati.",
+          "k è intero; d=1 è solo l’esempio."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Variabile di decisione",
+            "why": "Il suo ruolo è distinto dall’indice.",
+            "origin": "source_context",
+            "page_numbers": [
+              5
+            ]
+          },
+          {
+            "concept": "Iterazione",
+            "why": "Le stime sono prodotte da un algoritmo.",
+            "origin": "source_context",
+            "page_numbers": [
+              27
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "z\\in\\mathbb R^d,\\qquad z^k\\in\\mathbb R^d",
+            "anchor": "generic optimization variable",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\min_{z\\in\\mathbb R^d}\\ell(z),\\qquad\\ell:\\mathbb R^d\\to\\mathbb R",
+            "anchor": "generic optimization variable",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "z indica una decisione generica. L’apice k di zᵏ identifica l’iterazione dell’algoritmo, non una potenza e non un istante del sistema.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "d=1, costo quadratico, z⁰=−2",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "A sinistra costo scalare rispetto alla decisione z, con punto di prova e stima zᵏ distinti. A destra sequenza delle stime contro k. Solo 2D, senza terza coordinata artificiale.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Distinguere variabile libera e stima numerata nello stesso spazio decisionale.",
+            "setup": "d=1, costo quadratico, z⁰=−2",
+            "parameters": [],
+            "derivation": [
+              "z¹=−.5, z²=.25, z³=.625.",
+              "Con k=2 e z=.5, il punto di prova e la stima sono diversi.",
+              "L’algoritmo e i dati sono enrichment; la definizione della fonte vale per d generico."
+            ],
+            "expected_outcome": "Nessun tempo fisico compare nel grafico.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "SceneViewport",
+          "description": "A sinistra costo scalare rispetto alla decisione z, con punto di prova e stima zᵏ distinti. A destra sequenza delle stime contro k. Solo 2D, senza terza coordinata artificiale.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Due selettori indipendenti rendono concreta la differenza fra variabile e stima.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Iterazione selezionata",
+              "symbol": "k",
+              "origin": "enrichment",
+              "range": "{'min': 0, 'max': 6, 'step': 1, 'integer': False}",
+              "default": "2",
+              "effect_on_change": "Seleziona un campione della sequenza aggiunta; non cambia il punto di prova libero.",
+              "edge_cases": [
+                "k=0",
+                "z=zᵏ"
+              ]
+            },
+            {
+              "name": "Decisione di prova",
+              "symbol": "z",
+              "origin": "enrichment",
+              "range": "{'min': -2, 'max': 2, 'step': 0.1, 'integer': False}",
+              "default": "0.5",
+              "effect_on_change": "Sposta solo il punto di prova sul costo; non ricalcola l’algoritmo.",
+              "edge_cases": [
+                "k=0",
+                "z=zᵏ"
+              ]
+            }
+          ],
+          "outputs": [
+            "Distinguere variabile libera e stima numerata nello stesso spazio decisionale."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "k=0",
+            "expected_behavior": "Stima iniziale, non potenza zero.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "case": "z=zᵏ",
+            "expected_behavior": "I due punti coincidono, ma i ruoli restano distinti.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Distinguere variabile libera e stima numerata nello stesso spazio decisionale.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

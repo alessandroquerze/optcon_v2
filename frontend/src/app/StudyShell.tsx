@@ -6,15 +6,15 @@ import { CompanionViewer } from '../companion/CompanionViewer';
 
 export function StudyShell({ repository }: { repository: ManifestRepository }) {
   const { currentSourcePage, pageCount, next, previous, goToPage } = usePageState();
-  const definition = repository.getPage(currentSourcePage);
+  const definition = repository.bySourcePage.get(currentSourcePage);
   const [draft, setDraft] = useState(String(currentSourcePage));
   const [invalid, setInvalid] = useState(false);
   const [split, setSplit] = useState(50);
   const layout = useRef<HTMLDivElement>(null);
   useEffect(() => { setDraft(String(currentSourcePage)); setInvalid(false); }, [currentSourcePage]);
-  return <main className="study-shell">
+  return <main className="study-shell" data-document-id={repository.manifest.document_id}>
     <nav className="study-toolbar" aria-label="Navigazione pagine">
-      <div className="toolbar-document"><span className="document-mark">PDF</span><span>{repository.manifest.pages[0].title}</span></div>
+      <div className="toolbar-document"><span className="document-mark">PDF</span><span>{repository.manifest.course_title??repository.manifest.pages[0].title}</span></div>
       <div className="page-navigation">
         <button onClick={previous} disabled={currentSourcePage === 1} aria-label="Pagina precedente">← <span>Previous</span></button>
         <form onSubmit={e => {
@@ -48,7 +48,7 @@ export function StudyShell({ repository }: { repository: ManifestRepository }) {
           setSplit(Math.max(35, Math.min(65, (e.clientX - bounds.left) / bounds.width * 100)));
         }}
         onPointerUp={e => e.currentTarget.releasePointerCapture(e.pointerId)} />
-      <CompanionViewer definition={definition} repository={repository}/>
+      <CompanionViewer definition={definition} sourcePage={currentSourcePage} repository={repository}/>
     </div>
   </main>;
 }

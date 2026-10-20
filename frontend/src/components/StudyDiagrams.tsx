@@ -1,5 +1,6 @@
 import { useId } from 'react';
 import { ModelDiagram } from './DataViews';
+import { GraphicViewport } from '../visualization/core/GraphicViewport';
 
 export function FeedbackDiagram() {
   return <ModelDiagram width={880} height={230} nodeWidth={170} fontSize={22} label="Anello di feedback con disturbo"
@@ -22,7 +23,7 @@ export function IntervalBand({ minimum, maximum, value, empty, status }: {
   minimum: number; maximum: number; value: number; empty: boolean; status: string;
 }) {
   const y = (altitude: number) => 230 - 48 * altitude;
-  return <svg viewBox="0 0 880 275" className="study-diagram interval-band" role="img" aria-label="Fascia di quota e centro di massa candidato">
+  return <GraphicViewport label="Fascia di quota e centro di massa candidato"><svg viewBox="0 0 880 275" className="study-diagram interval-band" role="img" aria-label="Fascia di quota e centro di massa candidato">
     {!empty && <rect x="190" y={y(maximum)} width="470" height={Math.max(0, y(minimum) - y(maximum))} fill="#d8eee5"/>}
     {[0, 1, 2, 3, 4].map(tick => <g key={tick}><text x="95" y={y(tick) + 8} textAnchor="end">{tick}</text>
       <line x1="110" x2="660" y1={y(tick)} y2={y(tick)} stroke="#e1e8ec"/></g>)}
@@ -35,10 +36,10 @@ export function IntervalBand({ minimum, maximum, value, empty, status }: {
     <circle cx="420" cy={y(value)} r="11" fill={status === 'non ammissibile' || empty ? '#a72d32' : '#126879'} stroke="white" strokeWidth="3"/>
     <text x="445" y={y(value) - 14}>Candidato {value.toFixed(1)} m</text>
     <text x="180" y="266">{empty ? 'Intervallo vuoto: nessuna quota ammessa' : 'Il bordo è incluso · verifica puntuale, nessun moto simulato'}</text>
-  </svg>;
+  </svg></GraphicViewport>;
 }
 export function EquilibriumPoses({ poses }: { poses: readonly { angle: number; torque: number }[] }) {
-  return <svg viewBox="0 0 880 130" className="study-diagram equilibrium-poses" role="img" aria-label="Due configurazioni planari di equilibrio">
+  return <GraphicViewport label="Due configurazioni planari di equilibrio"><svg viewBox="0 0 880 130" className="study-diagram equilibrium-poses" role="img" aria-label="Due configurazioni planari di equilibrio">
     {poses.map((pose, i) => {
       const pivot = 135 + i * 420, x = pivot + 55 * Math.sin(pose.angle), y = 25 + 55 * Math.cos(pose.angle);
       return <g key={i}><line x1={pivot - 25} x2={pivot + 25} y1="23" y2="23" stroke="#78909e" strokeWidth="5"/>
@@ -50,15 +51,15 @@ export function EquilibriumPoses({ poses }: { poses: readonly { angle: number; t
         <text x={pivot - 70} y="123">u_e = {pose.torque.toFixed(3)} N m</text>
       </g>;
     })}
-  </svg>;
+  </svg></GraphicViewport>;
 }
 export function UnitCircleInset() {
   const id = useId();
-  return <svg viewBox="0 0 220 160" role="img" aria-labelledby={id} className="unit-circle-inset">
+  return <GraphicViewport label="Circonferenza del vincolo di uguaglianza"><svg viewBox="0 0 220 160" role="img" aria-labelledby={id} className="unit-circle-inset">
     <title id={id}>Uguaglianza fissa z₁²+z₂²=1: solo la circonferenza</title>
     <line x1="20" x2="200" y1="80" y2="80" stroke="#afbec7"/><line x1="80" x2="80" y1="10" y2="150" stroke="#afbec7"/>
     <circle cx="80" cy="80" r="50" fill="none" stroke="#8057a5" strokeWidth="3"/>
     {[80, 130, 180].map((x, i) => <g key={x}><circle cx={x} cy="80" r="5" fill="#cf6b24"/><text x={x} y="108">{i}</text></g>)}
     <text x="20" y="150">Q = I₂, q = 0, c = 1</text>
-  </svg>;
+  </svg></GraphicViewport>;
 }

@@ -69,12 +69,226 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "426d176073643bd931b7b8f09e618a0d8eb6ba981932f2e7c8cf2de624e9745a",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0026",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "49671415e68cb5c1e5edd313f84b45f1298e31d2c655165a5f3b45a34da5a192",
+        "layout": "42372f521b60159f0823cc630345fbaad9023270c5aba1d4927f18dbc61ea86c",
+        "render": "a8d97e3a28a657f283458d7c25bf5beef2d90d60c823f877165b016f7aec9a3f"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-d-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0026",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0025",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0027"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0026",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0025",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0027"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0026",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0025",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0027"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Unconstrained optimization: algorithms",
+      "observations": [
+        {
+          "id": "s01",
+          "category": "structure",
+          "description": "Divisoria con il solo titolo Unconstrained optimization: algorithms; nessuna formula o regola di aggiornamento.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0026",
+            "modality": "both",
+            "text_quote": "Unconstrained optimization: algorithms",
+            "bbox": [
+              20,
+              28,
+              443.5429992675781,
+              241.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Solo titolo centrale su fondo bianco; nessun footer, numero visibile, formula o figura tecnica.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0026",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Orientarsi nella sezione algoritmi, separando decisioni successive e tempo fisico.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0025",
+          "role": "previous",
+          "note": "Per Q simmetrica, Q>0 dà minimo unico; con Q singolare servono condizioni congiunte. Solo contesto."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0027",
+          "role": "next",
+          "note": "Leggere una sequenza di decisioni e il confronto fra costi successivi."
+        }
+      ],
+      "notation": [],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "s01",
+          "structure"
+        ],
+        "rationale": "Scopo e contenuto autonomi."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Titolo centrale e tutti gli spazi bianchi; assenza di altri elementi verificata.",
+            "observation_ids": [
+              "s01",
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "La fonte contiene solo il titolo: percorso e spiegazioni sono enrichment, non risultati già enunciati.",
+          "La fonte contiene solo il titolo: percorso e spiegazioni sono enrichment, non risultati già enunciati."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Condizioni di ottimalità",
+            "why": "Servono a riconoscere una soluzione, ma non costituiscono ancora un procedimento di ricerca.",
+            "origin": "source_context",
+            "page_numbers": [
+              8,
+              9,
+              25
+            ]
+          }
+        ],
+        "source_math": [],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Finora abbiamo riconosciuto i minimi. Ora costruiamo una sequenza di decisioni: scegliere una direzione, scegliere quanto muoversi, poi valutare il risultato.",
+            "source_observation_ids": [
+              "s01",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Mappa editoriale aggiunta in tre riquadri: direzione, passo, iterazione; distinzione fra indice k e tempo del sistema.",
+            "source_observation_ids": [
+              "s01",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [],
+        "example_omission_reason": "Divisoria: la fonte contiene soltanto il titolo. La companion propone una mappa, senza esempio numerico inventato.",
+        "visualization": {
+          "component": "ModelDiagram",
+          "description": "Mappa editoriale aggiunta in tre riquadri: direzione, passo, iterazione; distinzione fra indice k e tempo del sistema.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "s01",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": false,
+          "rationale": "Mappa statica sufficiente per orientarsi.",
+          "component": null,
+          "parameters": [],
+          "outputs": [
+            "Orientarsi nella sezione algoritmi, separando decisioni successive e tempo fisico."
+          ],
+          "invariants": [
+            "La fonte contiene solo il titolo: percorso e spiegazioni sono enrichment, non risultati già enunciati.",
+            "La fonte contiene solo il titolo: percorso e spiegazioni sono enrichment, non risultati già enunciati."
+          ],
+          "enrichment_id": null
+        },
+        "edge_cases": [
+          {
+            "case": "Divisoria",
+            "expected_behavior": "Non inventare un teorema o una simulazione per riempire la pagina.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un focus principale, una figura e dettagli su richiesta consentono una singola companion leggibile; nessuna riduzione tipografica.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Orientarsi nella sezione algoritmi, separando decisioni successive e tempo fisico.",
+            "source_observation_ids": [
+              "s01",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "visual"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un focus principale, una figura e dettagli su richiesta consentono una singola companion leggibile; nessuna riduzione tipografica.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

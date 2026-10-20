@@ -1,8 +1,21 @@
 import type { FormulaExplanation } from '../components/ExplainedEquation';
 import type { CompanionDefinition } from '../data/manifest';
+import { extendedFormulaNotes } from './extendedFormulaNotes';
+import { optimizationFormulaNotes } from './optimization/formulaNotes';
+import { convexityFormulaNotes } from './optimization/convexityNotes';
+import { minimizationFormulaNotes } from './optimization/minimizationNotes';
+import { descentFormulaNotes } from './optimization/descentNotes';
+import { newtonFormulaNotes } from './optimization/newtonNotes';
+import { stepSizeFormulaNotes } from './optimization/stepSizeNotes';
+import { projectionFormulaNotes } from './optimization/projectionNotes';
+import { kktFormulaNotes } from './optimization/kktNotes';
+import { constrainedQpFormulaNotes } from './optimization/constrainedQpNotes';
+import { sqpFormulaNotes } from './optimization/sqpNotes';
+import { meritFormulaNotes } from './optimization/meritNotes';
+import { documentFromId } from '../data/documents';
 
 type Notes = Omit<FormulaExplanation, 'formulaId' | 'latex' | 'origin' | 'sourceFormulaIds'>;
-type Entry = Partial<Notes> & Pick<Notes, 'conceptualExplanation' | 'purpose'> & {
+export type Entry = Partial<Notes> & Pick<Notes, 'conceptualExplanation' | 'purpose'> & {
   latex?: string; origin?: FormulaExplanation['origin']; sourceFormulaIds?: readonly string[];
 };
 const symbols = (...entries: readonly [string, string][]) => entries.map(([symbol, meaning]) => ({ symbol, meaning }));
@@ -301,14 +314,21 @@ export const introductionFormulaNotes: Readonly<Record<number, Readonly<Record<s
 };
 
 export function pageFormulaExplanations(definition: CompanionDefinition): readonly FormulaExplanation[] {
-  const notes = introductionFormulaNotes[definition.source_page];
+  if(documentFromId(definition.page_id)==='optimization') {
+    const entries:Readonly<Record<number,readonly FormulaExplanation[]>>={...optimizationFormulaNotes,...convexityFormulaNotes,...minimizationFormulaNotes,...descentFormulaNotes,...newtonFormulaNotes,...stepSizeFormulaNotes,...projectionFormulaNotes,...kktFormulaNotes,...constrainedQpFormulaNotes,...sqpFormulaNotes,...meritFormulaNotes};
+    const formulas=entries[definition.source_page];
+    if(!formulas)throw new Error('Catalogo formule Optimization non disponibile.');
+    for(const source of definition.formulas_to_show)if(!formulas.some(f=>f.formulaId===source.id&&f.latex===source.expression))throw new Error('Formula Optimization non allineata: '+source.id);
+    return formulas;
+  }
+  const notes = introductionFormulaNotes[definition.source_page] ?? extendedFormulaNotes[definition.source_page];
   if (!notes) throw new Error('Catalogo formule non disponibile per questa companion.');
   const source = new Map(definition.formulas_to_show.map(f => [f.id, f]));
   for (const id of source.keys()) if (!notes[id]) throw new Error('Formula priva di spiegazione: ' + id);
   return Object.entries(notes).map(([formulaId, n]) => {
     const original = source.get(formulaId), latex = original?.expression ?? n.latex;
     if (!latex || !n.conceptualExplanation.trim()) throw new Error('Formula o spiegazione mancante: ' + formulaId);
-    return { formulaId, latex, conceptualExplanation: n.conceptualExplanation, purpose: n.purpose,
+    return { formulaId, latex, displayLatex: n.displayLatex, conceptualExplanation: n.conceptualExplanation, purpose: n.purpose,
       symbolDefinitions: n.symbolDefinitions ?? [], assumptions: n.assumptions ?? [], optionalDetails: n.optionalDetails ?? [],
       relatedFormulaIds: n.relatedFormulaIds ?? [], parameterInterpretation: n.parameterInterpretation ?? [],
       graphExplanation: n.graphExplanation, origin: original?.origin === 'correction' ? 'correction' : original?.origin === 'source' ? 'source' : 'enrichment',

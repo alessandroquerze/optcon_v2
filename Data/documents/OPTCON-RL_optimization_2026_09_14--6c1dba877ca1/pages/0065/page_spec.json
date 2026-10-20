@@ -125,12 +125,519 @@
   ],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "1428a51dda23ecf301e1c033366fb4da16c43b541eed50d3312ace81aed92bab",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0065",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "20ce633f609f306b175f3001d334b990123329539767eba686cfd46cdd10b6c1",
+        "layout": "a93c6aac25c7d47617d221827964a65ccf327d5e459b6c9c7655f6d6aa609b02",
+        "render": "849e3ab4859323fb5cd487238d2e02d7dedaaaea1c98557fd556646ff2c43b77"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-i-2026-10-19"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0065",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0064",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0066"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0065",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0064",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0066"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0065",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0064",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0066"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Karush-Kuhn-Tucker (KKT) necessary conditions (second order)",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "assumption",
+          "description": "Ripete tutte le ipotesi e condizioni KKT della 64.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0065",
+            "modality": "both",
+            "text_quote": "Lagrange multipliers",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "assumption",
+          "description": "Aggiunge ℓ,g_j,h_i di classe C².",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0065",
+            "modality": "both",
+            "text_quote": "Moreover",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "equation",
+          "description": "La forma yᵀ∇²₁₁L(z⋆,μ⋆,λ⋆)y è ≥0 per tutte le y ortogonali ai gradienti di tutte le uguaglianze e di tutte le disuguaglianze attive.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0065",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-4",
+          "category": "concept",
+          "description": "La notazione delle righe dei gradienti usa z e A(z), senza stella; il contesto fissa il punto z=z⋆ del test. Non viene enunciata sufficienza.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0065",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0065",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Usare la Hessiana della Lagrangiana sulle direzioni ortogonali ai gradienti dei vincoli pertinenti, con ipotesi C².",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0064",
+          "role": "previous",
+          "note": "Riconoscere che questa prima progressiva ripropone soltanto il primo ordine e le sue ipotesi, prima della nuova condizione nella 65."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0066",
+          "role": "next",
+          "note": "Leggere il QP con uguaglianze lineari e separare simmetria di Q, convessità e curvatura sulle decisioni ammissibili."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "y^\\top\\nabla^2_{11}L(z^\\star,\\mu^\\star,\\lambda^\\star)y\\ge0",
+          "meaning": "Con minimo locale regolare e funzioni C², vale sulle y ortogonali a ∇hᵢ e a tutti i ∇gⱼ attivi, valutati in z⋆.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\nabla h_i(z)^\\top y=0,\\ i=1,\\ldots,m,\\qquad\\nabla g_j(z)^\\top y=0,\\ j\\in A(z)",
+          "meaning": "Nel teorema z è il punto z⋆. La fonte restringe il test anche imponendo uguaglianza per tutti i vincoli attivi.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\begin{gathered}\\nabla_1L(z^\\star,\\mu^\\star,\\lambda^\\star)=0\\\\\\mu_j^\\star\\ge0,\\quad\\mu_j^\\star g_j(z^\\star)=0,\\quad j\\in\\{1,\\ldots,r\\}\\end{gathered}",
+          "meaning": "Le condizioni del primo ordine della progressiva precedente restano richieste.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "progressive",
+        "related_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0064"
+        ],
+        "added": [
+          "Aggiunge C², Hessiana della Lagrangiana e sottospazio dei gradienti ortogonali."
+        ],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "source-4",
+          "structure"
+        ],
+        "rationale": "Stessa slide stampata 57|73: la 64 presenta solo le KKT del primo ordine; la 65 aggiunge ipotesi C², forma quadratica e spazio delle direzioni. Raster e testo verificati individualmente, nessuna pagina eliminata."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "Nessuna correzione matematica necessaria dopo confronto con la pagina precedente e successiva.",
+          "La mancanza di stelle nelle righe del sottospazio è un’abbreviazione contestuale chiarita in prosa, non un warning rosso utile.",
+          "Con sole uguaglianze, il sottospazio della fonte coincide qui con lo spazio tangente; non generalizzare questo caso al cono critico con disuguaglianze."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Primo ordine e regolarità",
+            "why": "Punto e moltiplicatore del modello ricorrente.",
+            "origin": "source_context",
+            "page_numbers": [
+              64
+            ]
+          },
+          {
+            "concept": "Hessiana",
+            "why": "Forma quadratica e curvatura direzionale.",
+            "origin": "source_context",
+            "page_numbers": [
+              6,
+              9
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "y^\\top\\nabla^2_{11}L(z^\\star,\\mu^\\star,\\lambda^\\star)y\\ge0",
+            "anchor": "Lagrange multipliers",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\nabla h_i(z)^\\top y=0,\\ i=1,\\ldots,m,\\qquad\\nabla g_j(z)^\\top y=0,\\ j\\in A(z)",
+            "anchor": "Lagrange multipliers",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\begin{gathered}\\nabla_1L(z^\\star,\\mu^\\star,\\lambda^\\star)=0\\\\\\mu_j^\\star\\ge0,\\quad\\mu_j^\\star g_j(z^\\star)=0,\\quad j\\in\\{1,\\ldots,r\\}\\end{gathered}",
+            "anchor": "Lagrange multipliers",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Per un minimo regolare, la Hessiana della Lagrangiana deve essere non negativa sulle direzioni indicate. Non si richiede che tutta la Hessiana del costo sia positiva.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "α=−0.5, β=1, φ=0",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Stessa circonferenza, costo e profilo della 64. In 2D normale e direzione y unitaria, con colore di appartenenza; 3D del costo sul cerchio senza inventare una traiettoria. Readout di ∇hᵀy, forma quadratica e α+β.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Usare la Hessiana della Lagrangiana sulle direzioni ortogonali ai gradienti dei vincoli pertinenti, con ipotesi C².",
+            "setup": "α=−0.5, β=1, φ=0",
+            "parameters": [],
+            "derivation": [
+              "Hessiana di ℓ=diag(−0.5,0), Hessiana di h=I.",
+              "λ=1 dà Hessiana di L=diag(0.5,1).",
+              "La tangente y=(1,0) ha curvatura 0.5≥0.",
+              "Per α=2,β=−1, la normale ha curvatura −1 ma non appartiene al test."
+            ],
+            "expected_outcome": "Il vincolo curvo contribuisce alla matrice; un vettore non tangente non deve essere usato per respingere la condizione.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "FunctionExplorer",
+          "description": "Stessa circonferenza, costo e profilo della 64. In 2D normale e direzione y unitaria, con colore di appartenenza; 3D del costo sul cerchio senza inventare una traiettoria. Readout di ∇hᵀy, forma quadratica e α+β.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Ruotare y separa un valore negativo da una violazione effettiva; α e β mostrano separatamente costo e contributo del vincolo.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Curvatura del costo",
+              "symbol": "\\alpha",
+              "origin": "enrichment",
+              "range": "{'min': -2, 'max': 2, 'step': 0.25, 'integer': False}",
+              "default": "-0.5",
+              "effect_on_change": "Cambia la curvatura del costo lungo x e quella ridotta α+β; il vincolo resta fisso.",
+              "edge_cases": [
+                "Direzione normale",
+                "α+β=0",
+                "y=0",
+                "Gradienti attivi in numero d"
+              ]
+            },
+            {
+              "name": "Moltiplicatore esatto",
+              "symbol": "\\beta",
+              "origin": "enrichment",
+              "range": "{'min': -1, 'max': 1, 'step': 0.25, 'integer': False}",
+              "default": "1",
+              "effect_on_change": "Cambia λ=β, il contributo λ∇²h e la forma quadratica.",
+              "edge_cases": [
+                "Direzione normale",
+                "α+β=0",
+                "y=0",
+                "Gradienti attivi in numero d"
+              ]
+            },
+            {
+              "name": "Direzione da esaminare",
+              "symbol": "\\varphi",
+              "origin": "enrichment",
+              "range": "{'min': -90, 'max': 90, 'step': 15, 'integer': False}",
+              "default": "0",
+              "effect_on_change": "Ruota la direzione unitaria y: il residuo ∇h(v)ᵀy decide se appartiene al test. Una direzione esclusa non confuta il criterio.",
+              "edge_cases": [
+                "Direzione normale",
+                "α+β=0",
+                "y=0",
+                "Gradienti attivi in numero d"
+              ]
+            }
+          ],
+          "outputs": [
+            "Usare la Hessiana della Lagrangiana sulle direzioni ortogonali ai gradienti dei vincoli pertinenti, con ipotesi C²."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "Direzione normale",
+            "expected_behavior": "Fuori test anche se la forma è negativa.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "α+β=0",
+            "expected_behavior": "Test nullo e inconclusivo: non etichettare automaticamente non minimo.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "y=0",
+            "expected_behavior": "Escluso dal selettore unitario, ma discusso nei dettagli.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "Gradienti attivi in numero d",
+            "expected_behavior": "Il sottospazio può essere {0}; la necessità diventa vacua, non sufficiente.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Usare la Hessiana della Lagrangiana sulle direzioni ortogonali ai gradienti dei vincoli pertinenti, con ipotesi C².",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

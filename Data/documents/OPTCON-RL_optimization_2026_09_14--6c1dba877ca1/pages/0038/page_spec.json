@@ -156,12 +156,539 @@
   ],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "99e93e596da182f0cbe879b14990f68e8cb5d9584d371568854d440ac4c38936",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0038",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "78ae8d11f4c04883b1b6ff111c994e5d3cc506a36d91f1d7bdae41d93ddd5300",
+        "layout": "6650e4541692b286057bd543204a9ad037b98afe76967bb0cc1a7bfd5ca9fb6f",
+        "render": "7d13aee91724f00323a1195b675f3782a21c3a02ceb7edfac8fdb101cf1afb2a"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-f-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0038",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0037",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0039",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0040"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0038",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0037",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0039",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0040"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0038",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0037",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0039",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0040"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Gradient methods: step-size selection rules (I)",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "algorithm",
+          "description": "Parametri iniziali: γ̄⁰>0, β∈(0,1), c∈(0,1); il while usa ≥, quindi l’uscita richiede <.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0038",
+            "modality": "both",
+            "text_quote": "Armijo rule",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "equation",
+          "description": "A ogni rifiuto si usa γ̄^{i+1}=βγ̄^i; all’uscita γ^k=γ̄^i.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0038",
+            "modality": "both",
+            "text_quote": "Step-size",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "concept",
+          "description": "L’idea è ridurre il costo facendo progresso; valori tipici β=0.7 e c=0.5.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0038",
+            "modality": "both",
+            "text_quote": "Typical values",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-4",
+          "category": "diagram",
+          "description": "Nella figura costo nero, tangente nera tratteggiata, soglia rossa tratteggiata e candidato blu γ̄⁰=1 sopra la soglia.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0038",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0038",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Il candidato iniziale può fallire il test di riduzione sufficiente.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0037",
+          "role": "previous",
+          "note": "Modello quadratico con D: il minimo del modello può aumentare il costo reale."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0039",
+          "role": "next",
+          "note": "Ridurre una volta non garantisce ancora l’accettazione."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\ell(z^k+\\bar\\gamma^id^k)\\ge\\ell(z^k)+c\\bar\\gamma^i\\nabla\\ell(z^k)^\\top d^k",
+          "meaning": "Il candidato viene rifiutato quando il suo costo è maggiore o uguale alla soglia di sufficiente diminuzione.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\bar\\gamma^{i+1}=\\beta\\bar\\gamma^i,\\qquad \\gamma^k=\\bar\\gamma^i",
+          "meaning": "β riduce geometricamente il candidato. All’uscita il valore corrente diventa il passo dell’iterazione esterna.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\bar\\gamma^0>0,\\quad\\beta\\in(0,1),\\quad c\\in(0,1)",
+          "meaning": "c determina la diminuzione richiesta; β determina quanto si riduce a ogni rifiuto. La fonte indica 0.7 e 0.5 come valori tipici.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "progressive",
+        "related_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0039",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0040"
+        ],
+        "added": [
+          "Il candidato iniziale può fallire il test di riduzione sufficiente."
+        ],
+        "removed": [],
+        "changed": [
+          "Posizione del candidato blu: gamma barra apice 0."
+        ],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "source-4",
+          "structure"
+        ],
+        "rationale": "Tre rendering distinti della stessa slide 37/73; il nuovo candidato rende visibile un passaggio del backtracking. Non eliminarli come duplicati."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "Nessuna correzione matematica necessaria dopo confronto con la pagina precedente e successiva.",
+          "La figura originale è qualitativa: non se ne ricavano coefficienti, curvature o coordinate numeriche.",
+          "β,c modificano la ricerca, non la funzione scalare o il punto corrente.",
+          "Il numero i di tentativi è distinto dall’iterazione k; si conserva una companion per ciascuna pagina fisica."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Direzione di discesa",
+            "why": "Assicura esistenza di passi sufficientemente piccoli accettabili.",
+            "origin": "source_context",
+            "page_numbers": [
+              29,
+              30
+            ]
+          },
+          {
+            "concept": "Modello e costo reale",
+            "why": "Minimizzare un modello non basta a ridurre il costo originale.",
+            "origin": "source_context",
+            "page_numbers": [
+              37
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\ell(z^k+\\bar\\gamma^id^k)\\ge\\ell(z^k)+c\\bar\\gamma^i\\nabla\\ell(z^k)^\\top d^k",
+            "anchor": "Armijo rule",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\bar\\gamma^{i+1}=\\beta\\bar\\gamma^i,\\qquad \\gamma^k=\\bar\\gamma^i",
+            "anchor": "Armijo rule",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\bar\\gamma^0>0,\\quad\\beta\\in(0,1),\\quad c\\in(0,1)",
+            "anchor": "Armijo rule",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Armijo confronta il costo reale con una frazione della diminuzione lineare prevista. Se il candidato non passa il test, lo moltiplica per β e riprova.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "ℓ=z², zᵏ=1, dᵏ=−2; β=0.7,c=0.5",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Profilo blu φ(γ), soglia rossa A(γ), tangente viola e candidati colorati, asse γ fisso [0,1.05]. Il candidato selezionato è evidenziato; margine e decisione coerenti col ≥ originale.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Il candidato iniziale può fallire il test di riduzione sufficiente.",
+            "setup": "ℓ=z², zᵏ=1, dᵏ=−2; β=0.7,c=0.5",
+            "parameters": [],
+            "derivation": [
+              "γ=1: costo 1, soglia −1, rifiutato.",
+              "γ=0.7: costo 0.16, soglia −0.4, rifiutato.",
+              "γ=0.49: costo 0.0004, soglia 0.02, accettato."
+            ],
+            "expected_outcome": "Il punto finale accettato è 1−2×0.49=0.02. Non confondere il tentativo interno con una nuova linearizzazione.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "SceneViewport",
+          "description": "Profilo blu φ(γ), soglia rossa A(γ), tangente viola e candidati colorati, asse γ fisso [0,1.05]. Il candidato selezionato è evidenziato; margine e decisione coerenti col ≥ originale.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Seguire ogni rifiuto mostra perché una riduzione può non bastare e come c/β cambiano accettazione e lavoro.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Fattore di riduzione",
+              "symbol": "\\beta",
+              "origin": "enrichment",
+              "range": "{'min': 0.2, 'max': 0.9, 'step': 0.05, 'integer': False}",
+              "default": "0.7",
+              "effect_on_change": "Ricalcola tutti i candidati moltiplicando per β; funzione, direzione e soglia fissata da c restano invariate.",
+              "edge_cases": [
+                "Uguaglianza",
+                "Candidato iniziale accettato",
+                "c vicino a 1",
+                "Gradiente zero"
+              ]
+            },
+            {
+              "name": "Frazione richiesta",
+              "symbol": "c",
+              "origin": "enrichment",
+              "range": "{'min': 0.05, 'max': 0.95, 'step': 0.05, 'integer': False}",
+              "default": "0.5",
+              "effect_on_change": "Cambia soltanto la soglia e quindi il primo candidato accettabile; curva del costo e direzione restano fisse.",
+              "edge_cases": [
+                "Uguaglianza",
+                "Candidato iniziale accettato",
+                "c vicino a 1",
+                "Gradiente zero"
+              ]
+            },
+            {
+              "name": "Tentativo",
+              "symbol": "i",
+              "origin": "enrichment",
+              "range": "Da 0 al primo candidato accettato",
+              "default": "0",
+              "effect_on_change": "Seleziona un candidato già calcolato, senza applicare il passo esterno. Il default evidenzia iniziale/prima riduzione/accettazione secondo la pagina.",
+              "edge_cases": [
+                "Uguaglianza",
+                "Candidato iniziale accettato",
+                "c vicino a 1",
+                "Gradiente zero"
+              ]
+            },
+            {
+              "name": "Prossimo tentativo",
+              "symbol": "i+1",
+              "origin": "enrichment",
+              "range": "Disponibile fino all’accettazione",
+              "default": "In pausa",
+              "effect_on_change": "Avanza di un solo rifiuto, senza animazioni di tempo fisico.",
+              "edge_cases": [
+                "Uguaglianza",
+                "Candidato iniziale accettato",
+                "c vicino a 1",
+                "Gradiente zero"
+              ]
+            }
+          ],
+          "outputs": [
+            "Il candidato iniziale può fallire il test di riduzione sufficiente."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "Uguaglianza",
+            "expected_behavior": "Rifiutare il pareggio secondo il ≥ del while originale.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "Candidato iniziale accettato",
+            "expected_behavior": "Fermarsi a i=0 senza riduzioni artificiali.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "c vicino a 1",
+            "expected_behavior": "Richiede maggiore diminuzione, quindi passi più piccoli; β vicino a 1 può richiedere più tentativi.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "Gradiente zero",
+            "expected_behavior": "Arresto prima del backtracking: il test stretto non è un criterio di continuazione a punto stazionario.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Il candidato iniziale può fallire il test di riduzione sufficiente.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

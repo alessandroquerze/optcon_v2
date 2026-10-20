@@ -81,12 +81,556 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
+    "status": "needs_review",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "88998bf1285020c8bdd4629d0a4d98bcecba46254afec3f2cdca6efea7ab9d98",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0068",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "c5a7b3fc98ffe27bfd4b61ac94f5e130003f2dd4183e83d2eb63eafe2065d56a",
+        "layout": "eec7ae3b421503dc583a74b4cdad80aa06f0d12beaa9a8451173390baa486ec9",
+        "render": "c53cacdf3cd423f4472ac0511a548b32190e6eaba2ecc899eab4ddfb3dfb38ca"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-i-2026-10-19"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0068",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0067",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0069"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0068",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0067",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0069"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0068",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0067",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0069"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Quadratic Programming (constrained): optimality conditions",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "equation",
+          "description": "Secondo ordine necessario: yᵀ∇²₁₁L(z⋆,λ⋆)y=yᵀQy≥0.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0068",
+            "modality": "both",
+            "text_quote": "Second-order necessary",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "equation",
+          "description": "La riga ∇h_i(z)ᵀy=0 viene trasformata nella fonte in Aᵀy=0; la frase finale nomina lo spazio nullo di Aᵀ.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0068",
+            "modality": "both",
+            "text_quote": "null-space",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "concept",
+          "description": "Con A∈R^{m×d} della 66 e h(z)=Az−b della 67, il prodotto corretto è Ay. La versione stampata non è dimensionalmente definita per m≠d.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0068",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0068",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Correggere la trasposizione della fonte e verificare la forma quadratica soltanto sulle direzioni Ay=0.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0067",
+          "role": "previous",
+          "note": "Derivare stazionarietà e ammissibilità del QP senza confondere solvibilità, unicità dei moltiplicatori e minimo."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0069",
+          "role": "next",
+          "note": "Divisoria degli algoritmi vincolati, letta solo come contesto. Non implementare J."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "y^\\top\\nabla^2_{11}L(z^\\star,\\lambda^\\star)y=y^\\top Qy\\ge0",
+          "meaning": "Poiché il vincolo è affine, non aggiunge termini alla Hessiana in z. La condizione necessaria vale soltanto sulle direzioni ammissibili.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\nabla h_i(z)^\\top y=0,\\ i=1,\\ldots,m\\ \\Longrightarrow\\ A^\\top y=0,\\quad y\\in\\ker(A^\\top)",
+          "meaning": "Trascrizione della fonte: il passaggio ad Aᵀ è un probabile refuso, conservato solo come riferimento.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [
+        {
+          "description": "Discrepanza della fonte esaminata e risolta nella policy companion: La 66 dichiara A∈R^{m×d}; la 67 usa h(z)=Az−b e la stazionarietà Qz+q+Aᵀλ=0. I gradienti di h sono colonne della matrice ∇h=Aᵀ, secondo la convenzione d×m della 7. Pertanto il vettore delle derivate direzionali è (∇h)ᵀy=Ay∈R^m. Aᵀy non è dimensionalmente compatibile per y∈R^d quando m≠d e, anche se quadrata, selezionerebbe in generale il sottospazio sbagliato. Il test necessario è yᵀQy≥0 su ker(A). Nel modello esplicito A=(1,1) e ker(A)=span((1,−1)); tutti i calcoli e grafici usano questo spazio. Fonte, raster, testo e SOURCE_LITERAL immutati.",
+          "blocking": false,
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        }
+      ],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "structure"
+        ],
+        "rationale": "Scopo e contenuto autonomi."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "La 66 dichiara A∈R^{m×d}; la 67 usa h(z)=Az−b e la stazionarietà Qz+q+Aᵀλ=0. I gradienti di h sono colonne della matrice ∇h=Aᵀ, secondo la convenzione d×m della 7. Pertanto il vettore delle derivate direzionali è (∇h)ᵀy=Ay∈R^m. Aᵀy non è dimensionalmente compatibile per y∈R^d quando m≠d e, anche se quadrata, selezionerebbe in generale il sottospazio sbagliato. Il test necessario è yᵀQy≥0 su ker(A). Nel modello esplicito A=(1,1) e ker(A)=span((1,−1)); tutti i calcoli e grafici usano questo spazio. Fonte, raster, testo e SOURCE_LITERAL immutati.",
+          "CORRECTION_WARNING limitato alla trasposizione: usare solo Ay=0 e ker(A) in esempi e grafici.",
+          "Tutti i risultati numerici sono della famiglia aggiunta; la fonte enuncia necessità, non la sufficienza specifica spiegata nei dettagli.",
+          "La direzione y è una variazione nello spazio delle decisioni, non un nuovo punto da sollevare arbitrariamente sul costo."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Dimensioni del QP",
+            "why": "A è m×d, non d×m.",
+            "origin": "source_context",
+            "page_numbers": [
+              66
+            ]
+          },
+          {
+            "concept": "Primo ordine",
+            "why": "Compatibilità del sistema oltre alla curvatura.",
+            "origin": "source_context",
+            "page_numbers": [
+              67
+            ]
+          },
+          {
+            "concept": "Secondo ordine vincolato",
+            "why": "Forma quadratica sulle direzioni pertinenti.",
+            "origin": "source_context",
+            "page_numbers": [
+              65
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "y^\\top\\nabla^2_{11}L(z^\\star,\\lambda^\\star)y=y^\\top Qy\\ge0",
+            "anchor": "Second-order necessary",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\nabla h_i(z)^\\top y=0,\\ i=1,\\ldots,m\\ \\Longrightarrow\\ A^\\top y=0,\\quad y\\in\\ker(A^\\top)",
+            "anchor": "Second-order necessary",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Per un QP con uguaglianze, la Hessiana in z della Lagrangiana è Q. Il test necessario riguarda le direzioni che mantengono Az=b: sono quelle con Ay=0.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "κ=1,ν=−1,σ=−0.5,φ=0",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Livelli e retta ammissibile 2D, direzione y basata nell’origine e profilo corretto sul vincolo; stessa superficie e retta in 3D. Valori Ay, yᵀQy e κ distinti; freccia solo in 2D e indicatore incluso/escluso.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Correggere la trasposizione della fonte e verificare la forma quadratica soltanto sulle direzioni Ay=0.",
+            "setup": "κ=1,ν=−1,σ=−0.5,φ=0",
+            "parameters": [],
+            "derivation": [
+              "Q ha autovalori 1 e −1, ma y=v soddisfa Ay=0 e yᵀQy=1.",
+              "Il minimo è s=0.5 sul vincolo, nonostante Q indefinita.",
+              "Per φ=90°, y=n e yᵀQy=−1, ma Ay=√2≠0: direzione esclusa.",
+              "Per κ=0,σ≠0 la curvatura ridotta zero non evita il costo illimitato."
+            ],
+            "expected_outcome": "Nessun risultato viene calcolato sullo spazio nullo sbagliato.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "FunctionExplorer",
+          "description": "Livelli e retta ammissibile 2D, direzione y basata nell’origine e profilo corretto sul vincolo; stessa superficie e retta in 3D. Valori Ay, yᵀQy e κ distinti; freccia solo in 2D e indicatore incluso/escluso.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "La rotazione di y distingue geometria e segno della forma; κ,ν e σ separano secondo ordine, direzioni escluse e solvibilità del primo ordine.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Curvatura tangente",
+              "symbol": "\\kappa",
+              "origin": "enrichment",
+              "range": "{'min': -1, 'max': 2, 'step': 0.25, 'integer': False}",
+              "default": "1",
+              "effect_on_change": "Cambia la forma su ker(A), il costo sul vincolo e il tipo del punto.",
+              "edge_cases": [
+                "ν<0 e κ>0",
+                "φ=90°",
+                "κ=0,σ=0",
+                "κ=0,σ≠0",
+                "κ piccolo non nullo"
+              ]
+            },
+            {
+              "name": "Curvatura normale",
+              "symbol": "\\nu",
+              "origin": "enrichment",
+              "range": "{'min': -2, 'max': 2, 'step': 0.25, 'integer': False}",
+              "default": "-1",
+              "effect_on_change": "Cambia il costo fuori dal vincolo, ma con b=0 non modifica il profilo ammissibile.",
+              "edge_cases": [
+                "ν<0 e κ>0",
+                "φ=90°",
+                "κ=0,σ=0",
+                "κ=0,σ≠0",
+                "κ piccolo non nullo"
+              ]
+            },
+            {
+              "name": "Termine lineare",
+              "symbol": "\\sigma",
+              "origin": "enrichment",
+              "range": "{'min': -1, 'max': 1, 'step': 0.25, 'integer': False}",
+              "default": "-0.5",
+              "effect_on_change": "Sposta il punto stazionario se κ≠0; per κ=0 separa minimi multipli e costo illimitato.",
+              "edge_cases": [
+                "ν<0 e κ>0",
+                "φ=90°",
+                "κ=0,σ=0",
+                "κ=0,σ≠0",
+                "κ piccolo non nullo"
+              ]
+            },
+            {
+              "name": "Direzione di prova",
+              "symbol": "\\varphi",
+              "origin": "enrichment",
+              "range": "{'min': -90, 'max': 90, 'step': 15, 'integer': False}",
+              "default": "0",
+              "effect_on_change": "Ruota il vettore unitario y fra tangente v e normale n; cambia Ay e la forma, mantenendo Q e il vincolo.",
+              "edge_cases": [
+                "ν<0 e κ>0",
+                "φ=90°",
+                "κ=0,σ=0",
+                "κ=0,σ≠0",
+                "κ piccolo non nullo"
+              ]
+            }
+          ],
+          "outputs": [
+            "Correggere la trasposizione della fonte e verificare la forma quadratica soltanto sulle direzioni Ay=0."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "ν<0 e κ>0",
+            "expected_behavior": "Q indefinita può dare minimo unico sul vincolo.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "φ=90°",
+            "expected_behavior": "Valore negativo fuori dal test: non classificare come violazione.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "κ=0,σ=0",
+            "expected_behavior": "Test nullo e minimi multipli.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "κ=0,σ≠0",
+            "expected_behavior": "Test nullo ma primo ordine incompatibile, nessun minimo.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "κ piccolo non nullo",
+            "expected_behavior": "Non trattarlo come zero; candidato fuori ritaglio dichiarato.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Correggere la trasposizione della fonte e verificare la forma quadratica soltanto sulle direzioni Ay=0.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1,
+  "source_warning": {
+    "policy_version": "1.0.0",
+    "scope": "companion_only",
+    "type": "CORRECTION_WARNING",
+    "review_status": "resolved",
+    "original_analysis_sha256": "0f401bb69cdf648d1e305aa70e262acda66a0cb4701d482e0c95bd71994ee231",
+    "issues": [
+      {
+        "issue_id": "opt68-source-review",
+        "source_issue_index": 0,
+        "issue": "La curvatura del QP si restringe a ker(A)",
+        "type": "CORRECTION_WARNING",
+        "source_expression": "A^\\top y=0;\\quad y\\in\\ker(A^\\top)",
+        "corrected_expression": "Ay=0;\\quad y\\in\\ker(A)",
+        "companion_uses": "Ay=0;\\quad y\\in\\ker(A)",
+        "short_warning": "⚠ Warning: possibile errore nella slide originale. Qui usiamo Ay=0 e ker(A).",
+        "correction_reason": "La 66 dichiara A∈R^{m×d}; la 67 usa h(z)=Az−b e la stazionarietà Qz+q+Aᵀλ=0. I gradienti di h sono colonne della matrice ∇h=Aᵀ, secondo la convenzione d×m della 7. Pertanto il vettore delle derivate direzionali è (∇h)ᵀy=Ay∈R^m. Aᵀy non è dimensionalmente compatibile per y∈R^d quando m≠d e, anche se quadrata, selezionerebbe in generale il sottospazio sbagliato. Il test necessario è yᵀQy≥0 su ker(A). Nel modello esplicito A=(1,1) e ker(A)=span((1,−1)); tutti i calcoli e grafici usano questo spazio. Fonte, raster, testo e SOURCE_LITERAL immutati.",
+        "use_corrected_value_for_examples": true,
+        "use_corrected_value_for_simulation": true,
+        "resolved": true,
+        "source_references": [
+          "analysis/result/observations"
+        ],
+        "context_pages_consulted": [
+          67,
+          68,
+          69
+        ],
+        "calculation_policy": "SOURCE_LITERAL immutabile; esempi e calcoli usano la versione companion dichiarata.",
+        "ui": {
+          "show": true,
+          "color": "red",
+          "placement": "Accanto al concetto interessato",
+          "when": "Concetto pertinente",
+          "student_text_field": "short_warning"
+        }
+      }
+    ],
+    "companion_overrides": [],
+    "technical_only_legacy_paths": []
   }
 }

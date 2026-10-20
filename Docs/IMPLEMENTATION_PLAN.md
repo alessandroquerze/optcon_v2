@@ -14,7 +14,7 @@ da quella del piano originario riportato più sotto.
 | F05 | Application shell, graphics foundation e component library | **COMPLETATA**: 78/78 test, TypeScript e build PASS, 969 file protetti invariati |
 | F06 | Vertical slice [2, 8, 12, 16, 17, 27, 30, 34] | **COMPLETATA**: 8/8, 116/116 test, build e revisione visiva PASS |
 | F06.1 | Global formula explanation policy sulle otto companion esistenti | **COMPLETATA**: 38/38 formule spiegate, 140/140 test, TypeScript/build e revisione visiva PASS |
-| F07 | Fase successiva alla vertical slice | **NON INIZIATA**: le altre 28 companion restano placeholder |
+| F07 | Complete Introduction companion implementation | **COMPLETATA**: 36/36, 110/110 formule spiegate, 218/218 test, build e audit visivo PASS |
 
 Requisito permanente da F06.1: [GLOBAL_FORMULA_EXPLANATION_POLICY](GLOBAL_FORMULA_EXPLANATION_POLICY.md).
 F07 e tutte le fasi successive, inclusi i documenti Optimization e KKT, devono
@@ -29,7 +29,8 @@ ipotesi e parametri accessibili nel contesto; grafici e simulazioni invariati;
 warning F03 conservati; 32 screenshot salvati e ispezionati; geometria 960×1280
 valida in entrambe le viste. Nessuna modifica alle fonti o ai report storici.
 Evidenze: [F06_1_FORMULA_EXPLANATIONS](F06_1_FORMULA_EXPLANATIONS.md).
-F07 rimane **NON INIZIATA** e le altre 28 pagine restano placeholder.
+F07 completata in quattro batch, ciascuno con test e revisione visiva prima del successivo.
+Evidenze: [F07_COMPLETE_INTRODUCTION](F07_COMPLETE_INTRODUCTION.md).
 
 Criteri di chiusura F05:
 

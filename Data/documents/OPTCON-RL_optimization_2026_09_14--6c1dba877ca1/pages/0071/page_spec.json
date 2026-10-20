@@ -150,12 +150,532 @@
   ],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "2098db46837c82f4d43dea0a09532875409b1653019b00f53f1e7596fa37e2fd",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0071",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "d5ca7d1e34ea7c3c69e003c5a15371004ab9ea83b26283b7154e9f2f7ac09582",
+        "layout": "b4b1c3cac442588d66dad5433e9c32960a243eba6c47e8618d12034d25285717",
+        "render": "d3be9ef82fd387e0333592bfc05d55c31c50ad61fba2b1c235c6d41152746701"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-j-2026-10-19"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0071",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0070",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0072"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0071",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0070",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0072"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0071",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0070",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0072"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Newton’s method for equality constrained problems",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "concept",
+          "description": "Definisce r(z,λ)=∇L(z,λ) e tratta i punti KKT come radici in entrambe le variabili.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0071",
+            "modality": "both",
+            "text_quote": "root finding",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "equation",
+          "description": "Aggiorna z e λ sommando rispettivamente Δz e Δλ.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0071",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "equation",
+          "description": "Gli incrementi risolvono ∇²L(z^k,λ^k)[Δz;Δλ]=−∇L(z^k,λ^k).",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0071",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-4",
+          "category": "definition",
+          "description": "La Hessiana completa ha blocchi B^k, ∇h, ∇hᵀ,0; B^k=∇²₁₁L. Il residuo espanso è riportato a destra.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0071",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0071",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Comprendere l’aggiornamento congiunto e il ruolo della Hessiana completa della Lagrangiana come Jacobiano del residuo.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0070",
+          "role": "previous",
+          "note": "Leggere ∇L come gradiente congiunto in z e λ, composto da stazionarietà e fattibilità."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0072",
+          "role": "next",
+          "note": "Leggere le due righe del sistema Newton e distinguere fattibilità linearizzata e fattibilità dopo il passo."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\begin{bmatrix}z^{k+1}\\\\\\lambda^{k+1}\\end{bmatrix}=\\begin{bmatrix}z^k\\\\\\lambda^k\\end{bmatrix}+\\begin{bmatrix}\\Delta z^k\\\\\\Delta\\lambda^k\\end{bmatrix}",
+          "meaning": "Δλᵏ si somma a λᵏ. Si aggiorna anche z; k conta iterazioni.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\nabla^2L(z^k,\\lambda^k)\\begin{bmatrix}\\Delta z\\\\\\Delta\\lambda\\end{bmatrix}=-\\nabla L(z^k,\\lambda^k)",
+          "meaning": "È Newton per il residuo r=∇L; il suo Jacobiano è la Hessiana congiunta. Servono derivabilità adeguata e sistema risolvibile.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\nabla^2L(z^k,\\lambda^k)=\\begin{bmatrix}B^k&\\nabla h(z^k)\\\\\\nabla h(z^k)^\\top&0\\end{bmatrix},\\quad B^k=\\nabla^2_{11}L(z^k,\\lambda^k)",
+          "meaning": "Bᵏ include la curvatura dei vincoli pesata da λᵏ; il blocco zero deriva dalla linearità di L nei moltiplicatori.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "progressive",
+        "related_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0072"
+        ],
+        "added": [
+          "Definizione del root finding, aggiornamento e Hessiana a blocchi."
+        ],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "source-4",
+          "structure"
+        ],
+        "rationale": "Sviluppo in due pagine con stesso titolo ma footer 63|73 e 64|73 distinti: non sono raster duplicati. La 72 riprende ed espande il sistema."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "Nessuna correzione matematica necessaria dopo confronto con la pagina precedente e successiva.",
+          "Dodici passi massimi e tolleranza 10⁻¹⁰ sono scelte operative dell’esempio. Nessuna garanzia globale attribuita alla fonte.",
+          "Singolarità esatta distinta da valori piccoli non nulli; arresti numerici distinti da teoremi di divergenza."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Residuo congiunto",
+            "why": "Due variabili da aggiornare insieme.",
+            "origin": "source_context",
+            "page_numbers": [
+              70
+            ]
+          },
+          {
+            "concept": "Newton per radici",
+            "why": "Si risolve un sistema lineare, non necessariamente un problema di minimo.",
+            "origin": "source_context",
+            "page_numbers": [
+              34
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\begin{bmatrix}z^{k+1}\\\\\\lambda^{k+1}\\end{bmatrix}=\\begin{bmatrix}z^k\\\\\\lambda^k\\end{bmatrix}+\\begin{bmatrix}\\Delta z^k\\\\\\Delta\\lambda^k\\end{bmatrix}",
+            "anchor": "root finding",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\nabla^2L(z^k,\\lambda^k)\\begin{bmatrix}\\Delta z\\\\\\Delta\\lambda\\end{bmatrix}=-\\nabla L(z^k,\\lambda^k)",
+            "anchor": "root finding",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\nabla^2L(z^k,\\lambda^k)=\\begin{bmatrix}B^k&\\nabla h(z^k)\\\\\\nabla h(z^k)^\\top&0\\end{bmatrix},\\quad B^k=\\nabla^2_{11}L(z^k,\\lambda^k)",
+            "anchor": "root finding",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Newton risolve un sistema per gli incrementi di z e λ. È un metodo per trovare una radice KKT: una radice trovata può ancora non essere un minimo.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "z⁰=(1,1), λ⁰=0",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Iterati z^k sui livelli 2D, parabola ammissibile e norma del residuo rispetto a k; vista 3D del costo con gli stessi campioni. λ corrente nei risultati, mai come altezza della superficie.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Comprendere l’aggiornamento congiunto e il ruolo della Hessiana completa della Lagrangiana come Jacobiano del residuo.",
+            "setup": "z⁰=(1,1), λ⁰=0",
+            "parameters": [],
+            "derivation": [
+              "B⁰=I; Δz⁰=(−0.2,−0.4), Δλ⁰=0.4.",
+              "z¹=(0.8,0.6), λ¹=0.4, h(z¹)=−0.04.",
+              "Il modello lineare del vincolo era zero, ma il vincolo reale non lo è.",
+              "Da (0,0.4),λ=1 si arriva invece alla radice (0,0),λ=1, massimo locale sul vincolo."
+            ],
+            "expected_outcome": "Newton per KKT può convergere a una radice non ottima.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "FunctionExplorer",
+          "description": "Iterati z^k sui livelli 2D, parabola ammissibile e norma del residuo rispetto a k; vista 3D del costo con gli stessi campioni. λ corrente nei risultati, mai come altezza della superficie.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "L’iterazione collega movimento delle decisioni, moltiplicatore e residuo; i valori iniziali cambiano il bacino e la solvibilità.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Ascissa iniziale",
+              "symbol": "z_1^0",
+              "origin": "enrichment",
+              "range": "{'min': -1.2, 'max': 1.2, 'step': 0.1, 'integer': False}",
+              "default": "1",
+              "effect_on_change": "Muove il punto iniziale e ricalcola l’intera sequenza con gli stessi costo e vincolo.",
+              "edge_cases": [
+                "Radice massimo",
+                "Sistema singolare",
+                "Valori fuori ritaglio",
+                "Cambio parametri"
+              ]
+            },
+            {
+              "name": "Ordinata iniziale",
+              "symbol": "z_2^0",
+              "origin": "enrichment",
+              "range": "{'min': -0.2, 'max': 1.5, 'step': 0.1, 'integer': False}",
+              "default": "1",
+              "effect_on_change": "Cambia l’ammissibilità iniziale e ricalcola la sequenza; al cambio dei parametri Play si ferma e k torna a zero.",
+              "edge_cases": [
+                "Radice massimo",
+                "Sistema singolare",
+                "Valori fuori ritaglio",
+                "Cambio parametri"
+              ]
+            },
+            {
+              "name": "Moltiplicatore iniziale",
+              "symbol": "\\lambda^0",
+              "origin": "enrichment",
+              "range": "{'min': -0.5, 'max': 1.5, 'step': 0.1, 'integer': False}",
+              "default": "0",
+              "effect_on_change": "Inizializza anche λ⁰, necessario per B⁰. Cambia i QP e ricalcola la sequenza, senza cambiare ℓ o h.",
+              "edge_cases": [
+                "Radice massimo",
+                "Sistema singolare",
+                "Valori fuori ritaglio",
+                "Cambio parametri"
+              ]
+            },
+            {
+              "name": "Iterazione / Play-Pausa / Passo / Riparti",
+              "symbol": "k",
+              "origin": "enrichment",
+              "range": "Iterati disponibili, massimo dodici passi",
+              "default": "k=0",
+              "effect_on_change": "Seleziona un campione algoritmico già calcolato; non integra una dinamica.",
+              "edge_cases": [
+                "Radice massimo",
+                "Sistema singolare",
+                "Valori fuori ritaglio",
+                "Cambio parametri"
+              ]
+            }
+          ],
+          "outputs": [
+            "Comprendere l’aggiornamento congiunto e il ruolo della Hessiana completa della Lagrangiana come Jacobiano del residuo."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "Radice massimo",
+            "expected_behavior": "Fermarsi come radice KKT, senza dichiarare minimo.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "Sistema singolare",
+            "expected_behavior": "Distinguere famiglia e incompatibilità; nessuna direzione inventata.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "Valori fuori ritaglio",
+            "expected_behavior": "Conservare i numeri e omettere le coordinate estreme dai buffer grafici.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "Cambio parametri",
+            "expected_behavior": "Pausa e ritorno a k=0.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Comprendere l’aggiornamento congiunto e il ruolo della Hessiana completa della Lagrangiana come Jacobiano del residuo.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

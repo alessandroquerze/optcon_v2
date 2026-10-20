@@ -127,12 +127,564 @@
   ],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
+    "status": "needs_review",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "666185e27f3eefed696ba4e2e10b5cf9ab0edf2ecc1a852961827803ba16894a",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0045",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "3c4d8f6f3e4af60910df60d7c7c6c0f4f7e53b6054af01dea610a3bf1be82a60",
+        "layout": "ce1e431dc128c9c8bc3cb0c7c4bbdc25b951ea282ab9692f17ee2e05206c6d40",
+        "render": "8c9c1ae75743d2e13f8eaf0be0c1838f8cb3ef90cb1521a99251cde31c5b92ee"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-f-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0045",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0044",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0046"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0045",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0044",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0046"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0045",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0044",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0046"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Gradient methods: remarks",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "concept",
+          "description": "La prima remark esclude garanzie di convergenza della sequenza e perfino di esistenza di punti limite.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0045",
+            "modality": "both",
+            "text_quote": "The propositions do not guarantee",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "concept",
+          "description": "Si presentano le alternative costo verso −∞ oppure costo finito e gradiente verso zero; la frase successiva afferma troppo: any subsequence converges.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0045",
+            "modality": "both",
+            "text_quote": "any subsequence",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "assumption",
+          "description": "Coercività/radiale illimitatezza è definita dal costo verso +∞ a norma crescente.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0045",
+            "modality": "both",
+            "text_quote": "radially unbounded",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-4",
+          "category": "concept",
+          "description": "Nel caso non convesso con coercività la conclusione riguarda stazionari, non minimi globali.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0045",
+            "modality": "both",
+            "text_quote": "general (nonconvex)",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-5",
+          "category": "diagram",
+          "description": "La figura alternante scompare e viene aggiunta la remark: per programmi convessi con coercività, i limiti di sottosuccessioni sono minimi globali.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0045",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0045",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Separare coercività, stazionarietà e convessità nella conclusione sui minimi globali.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0044",
+          "role": "previous",
+          "note": "Distinguere convergenza totale e sottosuccessioni, correggendo il quantificatore troppo forte."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0046",
+          "role": "next",
+          "note": "Applicare l’aggiornamento a un costo quadratico senza supporre positività definita o esistenza di un minimo."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\text{any subsequence }\\{z^{k_p}\\}\\text{ converges to some stationary point }\\bar z",
+          "meaning": "La remark stampata dice ‘any subsequence’. La companion conserva il letterale e precisa ‘ogni sottosuccessione convergente’.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "source-5",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\lim_{\\|z\\|\\to\\infty}\\ell(z)=+\\infty",
+          "meaning": "Lontano dall’origine il costo cresce senza limite. Per un costo continuo questo impedisce ai suoi sottolivelli di estendersi all’infinito.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "source-5",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [
+        {
+          "description": "Discrepanza della fonte esaminata e risolta nella policy companion: La frase ‘any subsequence ... converges’ implica la convergenza della sequenza completa (essa stessa una sottosuccessione) ed è incompatibile con la precedente assenza di garanzia e con la figura alternante della 44. La conclusione corretta delle proposizioni è: ogni punto limite è stazionario, cioè se una sottosuccessione converge, il suo limite ha gradiente nullo. Limitatezza/compattezza garantisce esistenza di sottosuccessioni convergenti, non che ogni sottosuccessione converga. Coercività di un costo continuo dà sottolivelli compatti ed esistenza di minimi. Per dedurre iterati limitati occorre anche contenerli in un sottolivello: ciò vale nel regime di discesa/Armijo pertinente, non per una successione arbitraria. In convessità i limiti stazionari sono globali, senza inferire unicità o convergenza totale. Il grafico (-1)^k è un esempio di successione, non iterati certificati dell’algoritmo. Fonte e letterali rimangono intatti.",
+          "blocking": false,
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "source-5",
+            "structure"
+          ]
+        }
+      ],
+      "progression": {
+        "assessment": "progressive",
+        "related_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0044"
+        ],
+        "added": [
+          "Nuova remark sulla globalità sotto convessità."
+        ],
+        "removed": [
+          "Figura alternante sostituita dalla remark convessa."
+        ],
+        "changed": [
+          "Stesse prime tre remark; la quarta e la figura distinguono i due rendering 41/73."
+        ],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "source-4",
+          "source-5",
+          "structure"
+        ],
+        "rationale": "Pagine fisiche distinte della stessa slide progressiva; conservare entrambe con focus didattici complementari."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "source-5",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "La frase ‘any subsequence ... converges’ implica la convergenza della sequenza completa (essa stessa una sottosuccessione) ed è incompatibile con la precedente assenza di garanzia e con la figura alternante della 44. La conclusione corretta delle proposizioni è: ogni punto limite è stazionario, cioè se una sottosuccessione converge, il suo limite ha gradiente nullo. Limitatezza/compattezza garantisce esistenza di sottosuccessioni convergenti, non che ogni sottosuccessione converga. Coercività di un costo continuo dà sottolivelli compatti ed esistenza di minimi. Per dedurre iterati limitati occorre anche contenerli in un sottolivello: ciò vale nel regime di discesa/Armijo pertinente, non per una successione arbitraria. In convessità i limiti stazionari sono globali, senza inferire unicità o convergenza totale. Il grafico (-1)^k è un esempio di successione, non iterati certificati dell’algoritmo. Fonte e letterali rimangono intatti.",
+          "Il testo ‘any subsequence converges’ resta SOURCE_LITERAL, ma la companion limita la conclusione alle sottosuccessioni convergenti.",
+          "Coercività e continuità garantiscono esistenza di minimi; stazionarietà è globalmente sufficiente soltanto sotto convessità.",
+          "Nessuna affermazione di convergenza dell’intera sequenza o unicità viene aggiunta."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Punto limite",
+            "why": "È il limite di una sottosuccessione, non necessariamente di tutta la sequenza.",
+            "origin": "source_context",
+            "page_numbers": [
+              42,
+              43
+            ]
+          },
+          {
+            "concept": "Convessità e ottimalità",
+            "why": "Gradiente nullo è sufficiente al minimo globale sotto convessità.",
+            "origin": "source_context",
+            "page_numbers": [
+              22
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\text{any subsequence }\\{z^{k_p}\\}\\text{ converges to some stationary point }\\bar z",
+            "anchor": "The propositions do not guarantee",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\lim_{\\|z\\|\\to\\infty}\\ell(z)=+\\infty",
+            "anchor": "The propositions do not guarantee",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "La coercività assicura esistenza di minimi per un costo continuo. Con convessità, ogni punto stazionario è globale; senza convessità può essere anche un massimo.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "source-5",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "Confronto dei costi in a=0",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "source-5",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Curva del costo selezionato, punto a, minimi globali noti e massimo locale quando presente; proprietà analitiche e gradiente nei risultati.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "source-5",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "source-5",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Separare coercività, stazionarietà e convessità nella conclusione sui minimi globali.",
+            "setup": "Confronto dei costi in a=0",
+            "parameters": [],
+            "derivation": [
+              "Il quadratico ha gradiente zero: minimo globale.",
+              "La doppia valle ha gradiente zero: massimo locale, non minimo.",
+              "L’esponenziale è convessa ma non coerciva, senza minimo raggiunto."
+            ],
+            "expected_outcome": "Coercività, convessità e stazionarietà rispondono a domande diverse.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "source-5",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "SceneViewport",
+          "description": "Curva del costo selezionato, punto a, minimi globali noti e massimo locale quando presente; proprietà analitiche e gradiente nei risultati.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "source-5",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Lo stesso punto su tre costi rende visibili proprietà diverse senza confondere stazionario e minimo.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Punto da esaminare",
+              "symbol": "a",
+              "origin": "enrichment",
+              "range": "{'min': -1.5, 'max': 1.5, 'step': 0.1, 'integer': False}",
+              "default": "0",
+              "effect_on_change": "Muove il punto e rivaluta costo/gradiente; funzione, minimi noti e proprietà restano fissi.",
+              "edge_cases": [
+                "Doppia valle, a=0",
+                "Doppia valle, a=±1",
+                "Esponenziale"
+              ]
+            },
+            {
+              "name": "Costo",
+              "symbol": "f",
+              "origin": "enrichment",
+              "range": "Quadratico / doppia valle / esponenziale",
+              "default": "Quadratico",
+              "effect_on_change": "Cambia costo e classificazione; conserva il punto a per confrontare le proprietà.",
+              "edge_cases": [
+                "Doppia valle, a=0",
+                "Doppia valle, a=±1",
+                "Esponenziale"
+              ]
+            }
+          ],
+          "outputs": [
+            "Separare coercività, stazionarietà e convessità nella conclusione sui minimi globali."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "Doppia valle, a=0",
+            "expected_behavior": "Gradiente zero ma massimo locale; nessuna etichetta di minimo.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "source-5",
+              "structure"
+            ]
+          },
+          {
+            "case": "Doppia valle, a=±1",
+            "expected_behavior": "Due minimi globali: nessuna unicità.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "source-5",
+              "structure"
+            ]
+          },
+          {
+            "case": "Esponenziale",
+            "expected_behavior": "Nessun minimo o stazionario finito; infimo non raggiunto.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "source-5",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Separare coercività, stazionarietà e convessità nella conclusione sui minimi globali.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "source-5",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1,
+  "source_warning": {
+    "policy_version": "1.0.0",
+    "scope": "companion_only",
+    "type": "CORRECTION_WARNING",
+    "review_status": "resolved",
+    "original_analysis_sha256": "2ece186b4d0cd684ff14a6fb565a29782ad206b0aaf7b3bc56328e917ede20c8",
+    "issues": [
+      {
+        "issue_id": "opt45-source-review",
+        "source_issue_index": 0,
+        "issue": "Convessità trasforma stazionari in minimi",
+        "type": "CORRECTION_WARNING",
+        "source_expression": "\\text{any subsequence }\\{z^{k_p}\\}\\text{ converges to some stationary point }\\bar z",
+        "corrected_expression": "z^{k_p}\\to\\bar z\\quad\\Longrightarrow\\quad\\nabla\\ell(\\bar z)=0",
+        "companion_uses": "z^{k_p}\\to\\bar z\\quad\\Longrightarrow\\quad\\nabla\\ell(\\bar z)=0",
+        "short_warning": "⚠ Warning: possibile errore nella slide originale. La conclusione riguarda sottosuccessioni convergenti.",
+        "correction_reason": "La frase ‘any subsequence ... converges’ implica la convergenza della sequenza completa (essa stessa una sottosuccessione) ed è incompatibile con la precedente assenza di garanzia e con la figura alternante della 44. La conclusione corretta delle proposizioni è: ogni punto limite è stazionario, cioè se una sottosuccessione converge, il suo limite ha gradiente nullo. Limitatezza/compattezza garantisce esistenza di sottosuccessioni convergenti, non che ogni sottosuccessione converga. Coercività di un costo continuo dà sottolivelli compatti ed esistenza di minimi. Per dedurre iterati limitati occorre anche contenerli in un sottolivello: ciò vale nel regime di discesa/Armijo pertinente, non per una successione arbitraria. In convessità i limiti stazionari sono globali, senza inferire unicità o convergenza totale. Il grafico (-1)^k è un esempio di successione, non iterati certificati dell’algoritmo. Fonte e letterali rimangono intatti.",
+        "use_corrected_value_for_examples": true,
+        "use_corrected_value_for_simulation": true,
+        "resolved": true,
+        "source_references": [
+          "analysis/result/observations"
+        ],
+        "context_pages_consulted": [
+          44,
+          45,
+          46
+        ],
+        "calculation_policy": "SOURCE_LITERAL immutabile; esempi e calcoli usano la versione companion dichiarata.",
+        "ui": {
+          "show": true,
+          "color": "red",
+          "placement": "Accanto al concetto interessato",
+          "when": "Concetto pertinente",
+          "student_text_field": "short_warning"
+        }
+      }
+    ],
+    "companion_overrides": [],
+    "technical_only_legacy_paths": []
   }
 }

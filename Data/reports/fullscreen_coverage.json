@@ -1,0 +1,1187 @@
+{
+  "verified_at": "2026-10-18T02:31:19.838Z",
+  "base_url": "http://127.0.0.1:5173",
+  "pages_checked": 36,
+  "graphs_checked": 76,
+  "uncovered_graphs": [],
+  "pages": [
+    {
+      "page": 1,
+      "views": [
+        {
+          "view": "default",
+          "graphics": [],
+          "fullscreen_controls": 0
+        }
+      ],
+      "f07_outputs_and_formulas_unchanged": true
+    },
+    {
+      "page": 2,
+      "views": [
+        {
+          "view": "default",
+          "graphics": [
+            {
+              "kind": "svg",
+              "label": "Anello di feedback con disturbo",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        }
+      ],
+      "f07_outputs_and_formulas_unchanged": true
+    },
+    {
+      "page": 3,
+      "views": [
+        {
+          "view": "default",
+          "graphics": [],
+          "fullscreen_controls": 0
+        }
+      ],
+      "f07_outputs_and_formulas_unchanged": true
+    },
+    {
+      "page": 4,
+      "views": [
+        {
+          "view": "default",
+          "graphics": [
+            {
+              "kind": "svg",
+              "label": "Il punto passa, il carico urta",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        }
+      ],
+      "f07_outputs_and_formulas_unchanged": true
+    },
+    {
+      "page": 5,
+      "views": [
+        {
+          "view": "default",
+          "graphics": [],
+          "fullscreen_controls": 0
+        }
+      ],
+      "f07_outputs_and_formulas_unchanged": true
+    },
+    {
+      "page": 6,
+      "views": [
+        {
+          "view": "default",
+          "graphics": [
+            {
+              "kind": "scene-3d",
+              "label": "Due percorsi geometrici e un edificio",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        }
+      ],
+      "f07_outputs_and_formulas_unchanged": true
+    },
+    {
+      "page": 7,
+      "views": [
+        {
+          "view": "default",
+          "graphics": [
+            {
+              "kind": "svg",
+              "label": "Prima orientamento, poi confronto delle manovre",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        }
+      ],
+      "f07_outputs_and_formulas_unchanged": true
+    },
+    {
+      "page": 8,
+      "views": [
+        {
+          "view": "2D",
+          "graphics": [
+            {
+              "kind": "scene-2d",
+              "label": "Serie temporali allineate",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        },
+        {
+          "view": "3D",
+          "graphics": [
+            {
+              "kind": "scene-3d",
+              "label": "Superficie 3D",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        }
+      ],
+      "f07_outputs_and_formulas_unchanged": true
+    },
+    {
+      "page": 9,
+      "views": [
+        {
+          "view": "2D",
+          "graphics": [
+            {
+              "kind": "scene-2d",
+              "label": "Traiettoria",
+              "covered": true,
+              "in_example": false
+            },
+            {
+              "kind": "state-timeline",
+              "label": "Timeline stato ingresso",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 2
+        },
+        {
+          "view": "3D",
+          "graphics": [
+            {
+              "kind": "scene-3d",
+              "label": "Superficie 3D",
+              "covered": true,
+              "in_example": false
+            },
+            {
+              "kind": "state-timeline",
+              "label": "Timeline stato ingresso",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 2
+        }
+      ],
+      "f07_outputs_and_formulas_unchanged": true
+    },
+    {
+      "page": 10,
+      "views": [
+        {
+          "view": "default",
+          "graphics": [
+            {
+              "kind": "state-timeline",
+              "label": "Timeline stato ingresso",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        }
+      ],
+      "f07_outputs_and_formulas_unchanged": true
+    },
+    {
+      "page": 11,
+      "views": [
+        {
+          "view": "2D",
+          "graphics": [
+            {
+              "kind": "scene-2d",
+              "label": "Traiettoria",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        },
+        {
+          "view": "3D",
+          "graphics": [
+            {
+              "kind": "scene-3d",
+              "label": "Superficie 3D",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        }
+      ],
+      "f07_outputs_and_formulas_unchanged": true
+    },
+    {
+      "page": 12,
+      "views": [
+        {
+          "view": "2D",
+          "graphics": [
+            {
+              "kind": "scene-2d",
+              "label": "Sezione esatta e lineare",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        },
+        {
+          "view": "3D",
+          "graphics": [
+            {
+              "kind": "scene-3d",
+              "label": "Superficie 3D",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        }
+      ],
+      "f07_outputs_and_formulas_unchanged": true
+    },
+    {
+      "page": 13,
+      "views": [
+        {
+          "view": "default",
+          "graphics": [
+            {
+              "kind": "svg",
+              "label": "Dal modello alla scelta ottima",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        }
+      ],
+      "f07_outputs_and_formulas_unchanged": true
+    },
+    {
+      "page": 14,
+      "views": [
+        {
+          "view": "2D",
+          "graphics": [
+            {
+              "kind": "scene-2d",
+              "label": "Traiettoria",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        },
+        {
+          "view": "3D",
+          "graphics": [
+            {
+              "kind": "scene-3d",
+              "label": "Superficie 3D",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        }
+      ],
+      "f07_outputs_and_formulas_unchanged": true
+    },
+    {
+      "page": 15,
+      "views": [
+        {
+          "view": "default",
+          "graphics": [
+            {
+              "kind": "scene-2d",
+              "label": "Traiettoria",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        }
+      ],
+      "f07_outputs_and_formulas_unchanged": true
+    },
+    {
+      "page": 16,
+      "views": [
+        {
+          "view": "2D",
+          "graphics": [
+            {
+              "kind": "scene-2d",
+              "label": "Contorno 2D",
+              "covered": true,
+              "in_example": false
+            },
+            {
+              "kind": "cost-breakdown",
+              "label": "Contributi al costo",
+              "covered": true,
+              "in_example": true
+            }
+          ],
+          "fullscreen_controls": 2
+        },
+        {
+          "view": "3D",
+          "graphics": [
+            {
+              "kind": "scene-3d",
+              "label": "Superficie 3D",
+              "covered": true,
+              "in_example": false
+            },
+            {
+              "kind": "cost-breakdown",
+              "label": "Contributi al costo",
+              "covered": true,
+              "in_example": true
+            }
+          ],
+          "fullscreen_controls": 2
+        }
+      ],
+      "f07_outputs_and_formulas_unchanged": true
+    },
+    {
+      "page": 17,
+      "views": [
+        {
+          "view": "2D",
+          "graphics": [
+            {
+              "kind": "scene-2d",
+              "label": "Regione ammissibile 2D",
+              "covered": true,
+              "in_example": false
+            },
+            {
+              "kind": "svg",
+              "label": "Uguaglianza fissa z₁²+z₂²=1: solo la circonferenza",
+              "covered": true,
+              "in_example": true
+            }
+          ],
+          "fullscreen_controls": 2
+        },
+        {
+          "view": "3D",
+          "graphics": [
+            {
+              "kind": "scene-3d",
+              "label": "Superficie 3D",
+              "covered": true,
+              "in_example": false
+            },
+            {
+              "kind": "svg",
+              "label": "Uguaglianza fissa z₁²+z₂²=1: solo la circonferenza",
+              "covered": true,
+              "in_example": true
+            }
+          ],
+          "fullscreen_controls": 2
+        }
+      ],
+      "f07_outputs_and_formulas_unchanged": true
+    },
+    {
+      "page": 18,
+      "views": [
+        {
+          "view": "2D",
+          "graphics": [
+            {
+              "kind": "scene-2d",
+              "label": "Traiettoria",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        },
+        {
+          "view": "3D",
+          "graphics": [
+            {
+              "kind": "scene-3d",
+              "label": "Superficie 3D",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        }
+      ],
+      "f07_outputs_and_formulas_unchanged": true
+    },
+    {
+      "page": 19,
+      "views": [
+        {
+          "view": "2D",
+          "graphics": [
+            {
+              "kind": "scene-2d",
+              "label": "Traiettoria",
+              "covered": true,
+              "in_example": false
+            },
+            {
+              "kind": "state-timeline",
+              "label": "Timeline stato ingresso",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 2
+        },
+        {
+          "view": "3D",
+          "graphics": [
+            {
+              "kind": "scene-3d",
+              "label": "Superficie 3D",
+              "covered": true,
+              "in_example": false
+            },
+            {
+              "kind": "state-timeline",
+              "label": "Timeline stato ingresso",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 2
+        }
+      ],
+      "f07_outputs_and_formulas_unchanged": true
+    },
+    {
+      "page": 20,
+      "views": [
+        {
+          "view": "2D",
+          "graphics": [
+            {
+              "kind": "state-timeline",
+              "label": "Timeline stato ingresso",
+              "covered": true,
+              "in_example": false
+            },
+            {
+              "kind": "cost-breakdown",
+              "label": "Contributi al costo",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        },
+        {
+          "view": "3D",
+          "graphics": [
+            {
+              "kind": "scene-3d",
+              "label": "Superficie 3D",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        }
+      ],
+      "f07_outputs_and_formulas_unchanged": true
+    },
+    {
+      "page": 21,
+      "views": [
+        {
+          "view": "2D",
+          "graphics": [
+            {
+              "kind": "svg",
+              "label": "Intervallo degli stati finali raggiungibili e target",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        },
+        {
+          "view": "3D",
+          "graphics": [
+            {
+              "kind": "scene-3d",
+              "label": "Superficie 3D",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        }
+      ],
+      "f07_outputs_and_formulas_unchanged": true
+    },
+    {
+      "page": 22,
+      "views": [
+        {
+          "view": "2D",
+          "graphics": [
+            {
+              "kind": "state-timeline",
+              "label": "Timeline stato ingresso",
+              "covered": true,
+              "in_example": false
+            },
+            {
+              "kind": "cost-breakdown",
+              "label": "Contributi al costo",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        },
+        {
+          "view": "3D",
+          "graphics": [
+            {
+              "kind": "scene-3d",
+              "label": "Superficie 3D",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        }
+      ],
+      "f07_outputs_and_formulas_unchanged": true
+    },
+    {
+      "page": 23,
+      "views": [
+        {
+          "view": "2D",
+          "graphics": [
+            {
+              "kind": "scene-2d",
+              "label": "Traiettoria",
+              "covered": true,
+              "in_example": false
+            },
+            {
+              "kind": "state-timeline",
+              "label": "Timeline stato ingresso",
+              "covered": true,
+              "in_example": true
+            }
+          ],
+          "fullscreen_controls": 2
+        },
+        {
+          "view": "3D",
+          "graphics": [
+            {
+              "kind": "scene-3d",
+              "label": "Superficie 3D",
+              "covered": true,
+              "in_example": false
+            },
+            {
+              "kind": "state-timeline",
+              "label": "Timeline stato ingresso",
+              "covered": true,
+              "in_example": true
+            }
+          ],
+          "fullscreen_controls": 2
+        }
+      ],
+      "f07_outputs_and_formulas_unchanged": true
+    },
+    {
+      "page": 24,
+      "views": [
+        {
+          "view": "2D",
+          "graphics": [
+            {
+              "kind": "scene-2d",
+              "label": "Traiettoria",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        },
+        {
+          "view": "3D",
+          "graphics": [
+            {
+              "kind": "scene-3d",
+              "label": "Traiettoria",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        }
+      ],
+      "f07_outputs_and_formulas_unchanged": true
+    },
+    {
+      "page": 25,
+      "views": [
+        {
+          "view": "2D",
+          "graphics": [
+            {
+              "kind": "scene-2d",
+              "label": "Traiettoria",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        },
+        {
+          "view": "3D",
+          "graphics": [
+            {
+              "kind": "scene-3d",
+              "label": "Superficie 3D",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        }
+      ],
+      "f07_outputs_and_formulas_unchanged": true
+    },
+    {
+      "page": 26,
+      "views": [
+        {
+          "view": "2D",
+          "graphics": [
+            {
+              "kind": "svg",
+              "label": "Drone planare con spinte e accelerazione istantanea",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        },
+        {
+          "view": "3D",
+          "graphics": [
+            {
+              "kind": "scene-3d",
+              "label": "Superficie 3D",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        }
+      ],
+      "f07_outputs_and_formulas_unchanged": true
+    },
+    {
+      "page": 27,
+      "views": [
+        {
+          "view": "2D",
+          "graphics": [
+            {
+              "kind": "scene-2d",
+              "label": "Serie temporali allineate",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        },
+        {
+          "view": "3D",
+          "graphics": [
+            {
+              "kind": "scene-3d",
+              "label": "Tempo, quota e velocità del drone planare",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        }
+      ],
+      "f07_outputs_and_formulas_unchanged": true
+    },
+    {
+      "page": 28,
+      "views": [
+        {
+          "view": "2D",
+          "graphics": [
+            {
+              "kind": "scene-2d",
+              "label": "Serie temporali allineate",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        },
+        {
+          "view": "3D",
+          "graphics": [
+            {
+              "kind": "scene-3d",
+              "label": "Traiettoria",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        }
+      ],
+      "f07_outputs_and_formulas_unchanged": true
+    },
+    {
+      "page": 29,
+      "views": [
+        {
+          "view": "2D",
+          "graphics": [
+            {
+              "kind": "cost-breakdown",
+              "label": "Contributi al costo",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        },
+        {
+          "view": "3D",
+          "graphics": [
+            {
+              "kind": "scene-3d",
+              "label": "Superficie 3D",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        }
+      ],
+      "f07_outputs_and_formulas_unchanged": true
+    },
+    {
+      "page": 30,
+      "views": [
+        {
+          "view": "2D",
+          "graphics": [
+            {
+              "kind": "svg",
+              "label": "Fascia di quota e centro di massa candidato",
+              "covered": true,
+              "in_example": false
+            },
+            {
+              "kind": "state-timeline",
+              "label": "Timeline stato ingresso",
+              "covered": true,
+              "in_example": true
+            }
+          ],
+          "fullscreen_controls": 2
+        },
+        {
+          "view": "3D",
+          "graphics": [
+            {
+              "kind": "scene-3d",
+              "label": "Superficie 3D",
+              "covered": true,
+              "in_example": false
+            },
+            {
+              "kind": "state-timeline",
+              "label": "Timeline stato ingresso",
+              "covered": true,
+              "in_example": true
+            }
+          ],
+          "fullscreen_controls": 2
+        }
+      ],
+      "f07_outputs_and_formulas_unchanged": true
+    },
+    {
+      "page": 31,
+      "views": [
+        {
+          "view": "2D",
+          "graphics": [
+            {
+              "kind": "scene-2d",
+              "label": "Serie temporali allineate",
+              "covered": true,
+              "in_example": false
+            },
+            {
+              "kind": "cost-breakdown",
+              "label": "Contributi al costo",
+              "covered": true,
+              "in_example": true
+            }
+          ],
+          "fullscreen_controls": 2
+        },
+        {
+          "view": "3D",
+          "graphics": [
+            {
+              "kind": "scene-3d",
+              "label": "Superficie 3D",
+              "covered": true,
+              "in_example": false
+            },
+            {
+              "kind": "cost-breakdown",
+              "label": "Contributi al costo",
+              "covered": true,
+              "in_example": true
+            }
+          ],
+          "fullscreen_controls": 2
+        }
+      ],
+      "f07_outputs_and_formulas_unchanged": true
+    },
+    {
+      "page": 32,
+      "views": [
+        {
+          "view": "2D",
+          "graphics": [
+            {
+              "kind": "scene-2d",
+              "label": "Serie temporali allineate",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        },
+        {
+          "view": "3D",
+          "graphics": [
+            {
+              "kind": "scene-3d",
+              "label": "Superficie 3D",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        }
+      ],
+      "f07_outputs_and_formulas_unchanged": true
+    },
+    {
+      "page": 33,
+      "views": [
+        {
+          "view": "2D",
+          "graphics": [
+            {
+              "kind": "scene-2d",
+              "label": "Traiettoria",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        },
+        {
+          "view": "3D",
+          "graphics": [
+            {
+              "kind": "scene-3d",
+              "label": "Superficie 3D",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        }
+      ],
+      "f07_outputs_and_formulas_unchanged": true
+    },
+    {
+      "page": 34,
+      "views": [
+        {
+          "view": "2D",
+          "graphics": [
+            {
+              "kind": "svg",
+              "label": "Due configurazioni planari di equilibrio",
+              "covered": true,
+              "in_example": false
+            },
+            {
+              "kind": "scene-2d",
+              "label": "Angolo e coppia di equilibrio",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        },
+        {
+          "view": "3D",
+          "graphics": [
+            {
+              "kind": "scene-3d",
+              "label": "Coppie nello spazio stato ingresso",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        }
+      ],
+      "f07_outputs_and_formulas_unchanged": true
+    },
+    {
+      "page": 35,
+      "views": [
+        {
+          "view": "2D",
+          "graphics": [
+            {
+              "kind": "scene-2d",
+              "label": "Serie temporali allineate",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        },
+        {
+          "view": "3D",
+          "graphics": [
+            {
+              "kind": "scene-3d",
+              "label": "Riferimento di angolo e coppia",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        }
+      ],
+      "f07_outputs_and_formulas_unchanged": true
+    },
+    {
+      "page": 36,
+      "views": [
+        {
+          "view": "2D",
+          "graphics": [
+            {
+              "kind": "cost-breakdown",
+              "label": "Contributi al costo",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        },
+        {
+          "view": "3D",
+          "graphics": [
+            {
+              "kind": "scene-3d",
+              "label": "Superficie 3D",
+              "covered": true,
+              "in_example": false
+            }
+          ],
+          "fullscreen_controls": 1
+        }
+      ],
+      "f07_outputs_and_formulas_unchanged": true
+    }
+  ],
+  "checks": [
+    {
+      "name": "p04-inline-svg",
+      "root": {
+        "width": 1500,
+        "height": 1000
+      },
+      "target": {
+        "width": 1468,
+        "height": 916
+      },
+      "controls": 0
+    },
+    {
+      "name": "p16-3d",
+      "root": {
+        "width": 1500,
+        "height": 1000
+      },
+      "target": {
+        "width": 1468,
+        "height": 741.21875
+      },
+      "controls": 162.78125
+    },
+    {
+      "name": "p16-example-bars",
+      "root": {
+        "width": 1500,
+        "height": 1000
+      },
+      "target": {
+        "width": 1440,
+        "height": 721.21875
+      },
+      "controls": 162.78125
+    },
+    {
+      "name": "p17-example-circle",
+      "root": {
+        "width": 1500,
+        "height": 1000
+      },
+      "target": {
+        "width": 1440,
+        "height": 721.21875
+      },
+      "controls": 162.78125
+    },
+    {
+      "name": "p20-cost-and-timeline",
+      "root": {
+        "width": 1500,
+        "height": 1000
+      },
+      "target": {
+        "width": 1468,
+        "height": 741.21875
+      },
+      "controls": 162.78125
+    },
+    {
+      "name": "p10-timeline",
+      "root": {
+        "width": 1500,
+        "height": 1000
+      },
+      "target": {
+        "width": 1468,
+        "height": 741.21875
+      },
+      "controls": 162.78125
+    },
+    {
+      "name": "p27-simulation",
+      "root": {
+        "width": 1500,
+        "height": 1000
+      },
+      "target": {
+        "width": 1468,
+        "height": 740.8125
+      },
+      "controls": 163.1875
+    },
+    {
+      "name": "p34-equilibrium-poses-and-curve",
+      "root": {
+        "width": 1500,
+        "height": 1000
+      },
+      "target": {
+        "width": 1468,
+        "height": 741.21875
+      },
+      "controls": 162.78125
+    },
+    {
+      "name": "2d_zoom_and_height_only_resize",
+      "unchanged_ranges": {
+        "x": [
+          -2,
+          2
+        ],
+        "y": [
+          4,
+          14
+        ]
+      },
+      "node_retained": true
+    }
+  ],
+  "screenshots": [
+    "Docs/fullscreen_assets/p04-inline-svg-fullscreen.png",
+    "Docs/fullscreen_assets/p16-3d-fullscreen.png",
+    "Docs/fullscreen_assets/p16-restored.png",
+    "Docs/fullscreen_assets/p16-example-bars-fullscreen.png",
+    "Docs/fullscreen_assets/p17-example-circle-fullscreen.png",
+    "Docs/fullscreen_assets/p20-cost-and-timeline-fullscreen.png",
+    "Docs/fullscreen_assets/p10-timeline-fullscreen.png",
+    "Docs/fullscreen_assets/p27-simulation-fullscreen.png",
+    "Docs/fullscreen_assets/p34-equilibrium-poses-and-curve-fullscreen.png",
+    "Docs/fullscreen_assets/p15-2d-zoom-resized-fullscreen.png",
+    "Docs/fullscreen_assets/future-combined-2d-3d-fullscreen.png"
+  ],
+  "preserved": {
+    "Data/reviews/fullscreen_baseline.json": {
+      "checked": 1032,
+      "changed": []
+    },
+    "Data/reviews/f05_source_baseline.json": {
+      "checked": 969,
+      "changed": []
+    }
+  },
+  "browser_errors": [],
+  "success": true
+}

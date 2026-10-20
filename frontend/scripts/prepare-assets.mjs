@@ -5,7 +5,10 @@ import path from 'node:path';
 
 const root = path.resolve(fileURLToPath(new URL('../../', import.meta.url)));
 const frontend = path.join(root, 'frontend');
-const manifestBytes = await readFile(path.join(root, 'Data/introduction_companion_manifest.json'));
+const target = path.join(frontend, 'public/course-assets');
+await mkdir(target, { recursive: true });
+for(const [source,destination] of [['introduction_companion_manifest.json','manifest.json'],['optimization_companion_manifest.json','optimization-manifest.json']]) {
+const manifestBytes = await readFile(path.join(root, 'Data',source));
 const manifest = JSON.parse(manifestBytes.toString('utf8'));
 const pdfPath = path.resolve(root, manifest.source_pdf.path);
 if (path.dirname(pdfPath) !== root || path.basename(pdfPath) !== manifest.source_pdf.filename) {
@@ -14,10 +17,9 @@ if (path.dirname(pdfPath) !== root || path.basename(pdfPath) !== manifest.source
 const pdf = await readFile(pdfPath);
 const hash = createHash('sha256').update(pdf).digest('hex');
 if (hash !== manifest.source_pdf.sha256) throw new Error('SHA-256 PDF diverso dal manifest.');
-const target = path.join(frontend, 'public/course-assets');
-await mkdir(target, { recursive: true });
-await writeFile(path.join(target, 'manifest.json'), manifestBytes);
+await writeFile(path.join(target,destination),manifestBytes);
 await writeFile(path.join(target, manifest.source_pdf.filename), pdf);
+}
 async function copyLocalTree(source, destination) {
   await mkdir(destination, { recursive: true });
   for (const entry of await readdir(source, { withFileTypes: true })) {

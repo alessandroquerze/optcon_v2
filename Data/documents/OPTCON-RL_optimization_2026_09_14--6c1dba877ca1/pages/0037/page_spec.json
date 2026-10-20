@@ -81,12 +81,606 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
+    "status": "needs_review",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "967c477a3a1938eaa7996aafe9ccdf80ec424f80106cb762beffa4e50846cbcb",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0037",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "b1fbbeb69c1e73ccef027cf726747e7df910cd12b2bc7322239989834dfec7a4",
+        "layout": "c41b57fd344d32283b929a4714a48eccbdfaa00aeecac1da098dca0be8edb59c",
+        "render": "b51fbd8eda44c0a80e6f2759971eee1e4576fd9d98691d916220104155e7615a"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-e-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0037",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0036",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0038"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0037",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0036",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0038"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0037",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0036",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0038"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Gradient methods via quadratic optimization",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "equation",
+          "description": "La prima riga chiama direzione di discesa Δz^k=D^k∇ℓ(z^k), con segno positivo.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0037",
+            "modality": "both",
+            "text_quote": "a descent direction",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "equation",
+          "description": "Il modello ℓ^k(z) usa curvatura (D^k)^{-1} ed è tangente in valore e gradiente al costo in z^k.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0037",
+            "modality": "both",
+            "text_quote": "quadratic approximation",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "equation",
+          "description": "Derivata nulla dà ∇ℓ(z^k)+(D^k)^{-1}(z−z^k)=0; la pagina conclude z^{k+1}=z^k−D^k∇ℓ e Δz^k=−D^k∇ℓ.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0037",
+            "modality": "both",
+            "text_quote": "By setting the derivative",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-4",
+          "category": "concept",
+          "description": "La remark segnala utilità quando risolvere un QP è più facile e per dominio compatto convesso; non fornisce qui un algoritmo vincolato o un oracolo privo di gradiente.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0037",
+            "modality": "both",
+            "text_quote": "Remark",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0037",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Capire che D⁻¹ è la curvatura del modello e che minimizzare un surrogato non basta a ridurre il costo reale.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0036",
+          "role": "previous",
+          "note": "Interpretare il QP del passo, usare il segno corretto e richiedere curvatura adatta."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0038",
+          "role": "next",
+          "note": "Armijo e scelta del passo: solo contesto del prossimo batch, non implementato."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\ell^k(z)=\\ell(z^k)+\\nabla\\ell(z^k)^\\top(z-z^k)+\\frac12(z-z^k)^\\top(D^k)^{-1}(z-z^k)",
+          "meaning": "Modello tangente al costo, con curvatura (Dᵏ)⁻¹. Si assume Dᵏ>0.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\Delta z^k=D^k\\nabla\\ell(z^k)",
+          "meaning": "La prima riga stampa il segno positivo; il sistema e le due formule finali della stessa pagina usano il segno negativo.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\nabla\\ell(z^k)+(D^k)^{-1}(z-z^k)=0",
+          "meaning": "Annullare il gradiente del modello e moltiplicare per Dᵏ dà lo spostamento −Dᵏ∇ℓ. Con Dᵏ>0 il minimo è unico.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "z^{k+1}=z^k-D^k\\nabla\\ell(z^k)",
+          "meaning": "Il minimizzatore del modello diventa il prossimo iterato. Può però avere un costo reale maggiore: il modello non è automaticamente un maggiorante.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [
+        {
+          "description": "Discrepanza della fonte esaminata e risolta nella policy companion: Il segno positivo della frase iniziale è incompatibile con la condizione ∇ℓ+D^{-1}(z−z^k)=0 e con le due formule finali negative della stessa slide. Per D simmetrica PD e g≠0, il passo corretto −Dg ha prodotto gᵀΔ=−gᵀDg<0, quello positivo dà salita. La companion conserva modello e aggiornamento finali corretti, usa la versione negativa per tutti i calcoli e dichiara SPD dal contesto di pagina 31. D^{-1} è la curvatura del surrogato, non necessariamente la Hessiana reale; il minimo del modello può aumentare il costo reale. La remark non dimostra disponibilità di un QP senza informazioni di primo ordine e non viene trasformata in un algoritmo vincolato.",
+          "blocking": false,
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        }
+      ],
+      "progression": {
+        "assessment": "progressive",
+        "related_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0036"
+        ],
+        "added": [
+          "Capire che D⁻¹ è la curvatura del modello e che minimizzare un surrogato non basta a ridurre il costo reale."
+        ],
+        "removed": [],
+        "changed": [
+          "Nuova scelta o caratterizzazione della direzione; mantenere una pagina fisica distinta."
+        ],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "source-4",
+          "structure"
+        ],
+        "rationale": "Progressione concettuale, non duplicato eliminabile."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "Il segno positivo della frase iniziale è incompatibile con la condizione ∇ℓ+D^{-1}(z−z^k)=0 e con le due formule finali negative della stessa slide. Per D simmetrica PD e g≠0, il passo corretto −Dg ha prodotto gᵀΔ=−gᵀDg<0, quello positivo dà salita. La companion conserva modello e aggiornamento finali corretti, usa la versione negativa per tutti i calcoli e dichiara SPD dal contesto di pagina 31. D^{-1} è la curvatura del surrogato, non necessariamente la Hessiana reale; il minimo del modello può aumentare il costo reale. La remark non dimostra disponibilità di un QP senza informazioni di primo ordine e non viene trasformata in un algoritmo vincolato.",
+          "Segno positivo iniziale conservato come SOURCE_LITERAL; usare −Dᵏ∇ℓ per passo e calcoli.",
+          "D>0 è l’ipotesi della famiglia di metodi nel contesto; non usare matrici indefinite.",
+          "Nessuna implementazione di Armijo della pagina 38: solo contesto per la necessità di scegliere il passo."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Trasformazione SPD",
+            "why": "D positiva definita dà un modello convesso con inversa definita.",
+            "origin": "source_context",
+            "page_numbers": [
+              31,
+              32
+            ]
+          },
+          {
+            "concept": "QP del passo",
+            "why": "Il minimizzatore è uno spostamento con segno.",
+            "origin": "source_context",
+            "page_numbers": [
+              36
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\ell^k(z)=\\ell(z^k)+\\nabla\\ell(z^k)^\\top(z-z^k)+\\frac12(z-z^k)^\\top(D^k)^{-1}(z-z^k)",
+            "anchor": "a descent direction",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\Delta z^k=D^k\\nabla\\ell(z^k)",
+            "anchor": "a descent direction",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\nabla\\ell(z^k)+(D^k)^{-1}(z-z^k)=0",
+            "anchor": "a descent direction",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "z^{k+1}=z^k-D^k\\nabla\\ell(z^k)",
+            "anchor": "a descent direction",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Una Dᵏ simmetrica positiva definita costruisce un modello convesso con curvatura (Dᵏ)⁻¹. Il suo minimo dà il passo, ma il costo reale va verificato.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "D=I",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Livelli 2D e superficie 3D della funzione selezionata, con stesso punto corrente e minimizzatore del modello. Il terzo asse è ℓ o ℓᵏ, sempre dichiarato. Minimo reale evidenziato solo nella vista del costo.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Capire che D⁻¹ è la curvatura del modello e che minimizzare un surrogato non basta a ridurre il costo reale.",
+            "setup": "D=I",
+            "parameters": [],
+            "derivation": [
+              "Curvatura del modello I; punto corrente (1,0.5) e costo 1.",
+              "Il minimo del modello è (0,−1.5), valore −1.5.",
+              "Il costo reale lì è 4.5: aumenta di 3.5.",
+              "Scegliere D=diag(1,0.25) rende il modello identico al costo."
+            ],
+            "expected_outcome": "Il minimo di un modello tangente non garantisce una diminuzione del costo reale.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "FunctionExplorer",
+          "description": "Livelli 2D e superficie 3D della funzione selezionata, con stesso punto corrente e minimizzatore del modello. Il terzo asse è ℓ o ℓᵏ, sempre dichiarato. Minimo reale evidenziato solo nella vista del costo.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Le due diagonali mostrano l’inversione della curvatura; cambiare funzione confronta modello e costo senza alterare i dati.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Prima diagonale D",
+              "symbol": "D^k_{11}",
+              "origin": "enrichment",
+              "range": "{'min': 0.25, 'max': 1.5, 'step': 0.05, 'integer': False}",
+              "default": "1",
+              "effect_on_change": "Cambia la prima curvatura del modello in 1/D₁₁ e la prima componente del passo; costo reale e punto corrente restano fissi.",
+              "edge_cases": [
+                "D=I",
+                "D=diag(1,0.25)",
+                "D singolare o indefinita",
+                "Cambio vista",
+                "Pareggio"
+              ]
+            },
+            {
+              "name": "Seconda diagonale D",
+              "symbol": "D^k_{22}",
+              "origin": "enrichment",
+              "range": "{'min': 0.1, 'max': 1, 'step': 0.05, 'integer': False}",
+              "default": "1",
+              "effect_on_change": "Cambia la seconda curvatura del modello in 1/D₂₂ e la seconda componente del passo; il costo reale resta fisso.",
+              "edge_cases": [
+                "D=I",
+                "D=diag(1,0.25)",
+                "D singolare o indefinita",
+                "Cambio vista",
+                "Pareggio"
+              ]
+            },
+            {
+              "name": "Funzione mostrata",
+              "symbol": "f",
+              "origin": "enrichment",
+              "range": "Modello quadratico / costo reale",
+              "default": "Modello quadratico",
+              "effect_on_change": "Sostituisce livelli/superficie con la funzione scelta; conserva D, punto corrente, passo e tutti i valori calcolati.",
+              "edge_cases": [
+                "D=I",
+                "D=diag(1,0.25)",
+                "D singolare o indefinita",
+                "Cambio vista",
+                "Pareggio"
+              ]
+            }
+          ],
+          "outputs": [
+            "Capire che D⁻¹ è la curvatura del modello e che minimizzare un surrogato non basta a ridurre il costo reale."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "D=I",
+            "expected_behavior": "Modello minimo non certifica diminuzione reale.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "D=diag(1,0.25)",
+            "expected_behavior": "Modello e costo coincidono su tutto il dominio.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "D singolare o indefinita",
+            "expected_behavior": "Esclusa dal dominio dei controlli; nessuna inversa inventata.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "Cambio vista",
+            "expected_behavior": "Punto e parametri invariati fra 2D/3D e modello/costo.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "Pareggio",
+            "expected_behavior": "D=diag(0.8,0.6) conserva il costo iniziale. Entro 16 epsilon macchina scalati dichiarare pareggio numerico, senza certificare discesa stretta.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Capire che D⁻¹ è la curvatura del modello e che minimizzare un surrogato non basta a ridurre il costo reale.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1,
+  "source_warning": {
+    "policy_version": "1.0.0",
+    "scope": "companion_only",
+    "type": "CORRECTION_WARNING",
+    "review_status": "resolved",
+    "original_analysis_sha256": "75506e201d9079f3eb88b67827da4ef8df602c7797567677cbdb2cbb62bd6989",
+    "issues": [
+      {
+        "issue_id": "opt37-source-review",
+        "source_issue_index": 0,
+        "issue": "Dᵏ sceglie il modello da minimizzare",
+        "type": "CORRECTION_WARNING",
+        "source_expression": "\\Delta z^k=D^k\\nabla\\ell(z^k)",
+        "corrected_expression": "\\Delta z^k=-D^k\\nabla\\ell(z^k)",
+        "companion_uses": "\\Delta z^k=-D^k\\nabla\\ell(z^k)",
+        "short_warning": "⚠ Warning: possibile errore nella slide originale. Qui usiamo Δzᵏ=−Dᵏ∇ℓ(zᵏ).",
+        "correction_reason": "Il segno positivo della frase iniziale è incompatibile con la condizione ∇ℓ+D^{-1}(z−z^k)=0 e con le due formule finali negative della stessa slide. Per D simmetrica PD e g≠0, il passo corretto −Dg ha prodotto gᵀΔ=−gᵀDg<0, quello positivo dà salita. La companion conserva modello e aggiornamento finali corretti, usa la versione negativa per tutti i calcoli e dichiara SPD dal contesto di pagina 31. D^{-1} è la curvatura del surrogato, non necessariamente la Hessiana reale; il minimo del modello può aumentare il costo reale. La remark non dimostra disponibilità di un QP senza informazioni di primo ordine e non viene trasformata in un algoritmo vincolato.",
+        "use_corrected_value_for_examples": true,
+        "use_corrected_value_for_simulation": true,
+        "resolved": true,
+        "source_references": [
+          "analysis/result/observations"
+        ],
+        "context_pages_consulted": [
+          36,
+          37,
+          38
+        ],
+        "calculation_policy": "SOURCE_LITERAL immutabile; esempi e calcoli usano la versione companion dichiarata.",
+        "ui": {
+          "show": true,
+          "color": "red",
+          "placement": "Accanto al concetto interessato",
+          "when": "Concetto pertinente",
+          "student_text_field": "short_warning"
+        }
+      }
+    ],
+    "companion_overrides": [],
+    "technical_only_legacy_paths": []
   }
 }

@@ -81,12 +81,445 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "0370c08d29e3f48ef2157029c87af5609c49573b429c307f4caea41822099b34",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0081",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "1fc9bbb2c41951254eddcea5f16c0eecb57ea51998592d42d0a568d32805c117",
+        "layout": "dce5b770186c6aeec757f6ae1450d3306981d73f80b79453897a5b32e2da39ba",
+        "render": "47d6c5e901655b14c96586d565b16d819f713c68109942897923e9b0c64a994d"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-k-2026-10-19"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0081",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0080"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0081",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0080"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0081",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0080"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Warning on notation in Optimization and Optimal Control",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "definition",
+          "description": "Definisce x_t:=x(t),u_t:=u(t) per un sistema a tempo discreto con t∈N.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0081",
+            "modality": "both",
+            "text_quote": "discrete-time system",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "equation",
+          "description": "La dinamica è x_{t+1}=f_t(x_t,u_t).",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0081",
+            "modality": "both",
+            "text_quote": "xt+1",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "definition",
+          "description": "La decisione del controllo ottimo è (x,u); (x^k,u^k) è la stima all’iterazione k e (x_t^k,u_t^k) la sua componente al tempo t.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0081",
+            "modality": "both",
+            "text_quote": "vector component",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0081",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Leggere (x,u), (xᵏ,uᵏ) e (xᵏ_t,uᵏ_t) come livelli diversi della stessa decisione.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0080",
+          "role": "previous",
+          "note": "Distinguere variabile libera e stima numerata nello stesso spazio decisionale."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\begin{gathered}x_{t+1}=f_t(x_t,u_t)\\\\(x,u),\\quad(x^k,u^k),\\quad(x_t^k,u_t^k)\\end{gathered}",
+          "meaning": "k cambia la stima completa; t ne sceglie una componente temporale.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "x_t:=x(t),\\quad u_t:=u(t),\\quad t\\in\\mathbb N",
+          "meaning": "Il pedice è una notazione compatta per il tempo discreto.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "structure"
+        ],
+        "rationale": "Scopo e contenuto autonomi."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "Nessuna correzione matematica necessaria dopo confronto con la pagina precedente e successiva.",
+          "Il modello, il costo, l’orizzonte, il passo e la sequenza sono enrichment; la fonte definisce solo la notazione.",
+          "Le unità di tempo sono passi discreti, non secondi.",
+          "Stato iniziale e terminale presenti; ingresso terminale assente.",
+          "Stesso titolo della 80 ma nuove definizioni, non duplicato. Pagina finale: nessuna pagina successiva inventata."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Stima zᵏ",
+            "why": "Ora la decisione contiene sequenze complete.",
+            "origin": "source_context",
+            "page_numbers": [
+              80
+            ]
+          },
+          {
+            "concept": "Dinamica discreta",
+            "why": "Stato e ingresso hanno indici temporali.",
+            "origin": "enrichment",
+            "page_numbers": []
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\begin{gathered}x_{t+1}=f_t(x_t,u_t)\\\\(x,u),\\quad(x^k,u^k),\\quad(x_t^k,u_t^k)\\end{gathered}",
+            "anchor": "discrete-time system",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "x_t:=x(t),\\quad u_t:=u(t),\\quad t\\in\\mathbb N",
+            "anchor": "discrete-time system",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Una stima dell’algoritmo contiene un’intera sequenza di stati e ingressi. k seleziona la stima completa; t seleziona una componente temporale al suo interno.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "Integratore scalare, T=3, u⁰=(0,0,0)",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Matrice 2D: colonne t, righe k, celle x_t^k. Evidenza di riga e componente selezionate; accanto traiettoria nel tempo della stima k. Nessun 3D necessario.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Leggere (x,u), (xᵏ,uᵏ) e (xᵏ_t,uᵏ_t) come livelli diversi della stessa decisione.",
+            "setup": "Integratore scalare, T=3, u⁰=(0,0,0)",
+            "parameters": [],
+            "derivation": [
+              "A k=0: x=(2,2,2,2), u=(0,0,0).",
+              "A k=1: u=(−.4,−.4,−.4), x=(2,1.6,1.2,.8).",
+              "A k=2: u=(−.48,−.48,−.48), x=(2,1.52,1.04,.56).",
+              "Con k=2,t=1 si leggono x₁²=1.52 e u₁²=−.48.",
+              "Con t=3 si legge x₃²=.56, ma nessun ingresso u₃."
+            ],
+            "expected_outcome": "k e t si muovono indipendentemente e ogni riga rispetta la dinamica.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "SceneViewport",
+          "description": "Matrice 2D: colonne t, righe k, celle x_t^k. Evidenza di riga e componente selezionate; accanto traiettoria nel tempo della stima k. Nessun 3D necessario.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Selezionare riga e colonna rende verificabile la distinzione fra aggiornamento e componente temporale.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Iterazione selezionata",
+              "symbol": "k",
+              "origin": "enrichment",
+              "range": "{'min': 0, 'max': 5, 'step': 1, 'integer': False}",
+              "default": "2",
+              "effect_on_change": "Cambia tutta la riga di stati e ingressi e la traiettoria selezionata; t resta fisso.",
+              "edge_cases": [
+                "k=0",
+                "t=0",
+                "t=T",
+                "Cambio k"
+              ]
+            },
+            {
+              "name": "Tempo selezionato",
+              "symbol": "t",
+              "origin": "enrichment",
+              "range": "{'min': 0, 'max': 3, 'step': 1, 'integer': False}",
+              "default": "1",
+              "effect_on_change": "Seleziona una componente della stessa stima; non esegue un aggiornamento dell’algoritmo.",
+              "edge_cases": [
+                "k=0",
+                "t=0",
+                "t=T",
+                "Cambio k"
+              ]
+            }
+          ],
+          "outputs": [
+            "Leggere (x,u), (xᵏ,uᵏ) e (xᵏ_t,uᵏ_t) come livelli diversi della stessa decisione."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "k=0",
+            "expected_behavior": "Stima iniziale, con t ancora selezionabile.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "t=0",
+            "expected_behavior": "Stato iniziale identico in tutte le stime.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "t=T",
+            "expected_behavior": "Stato terminale definito, ingresso assente.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "Cambio k",
+            "expected_behavior": "Non avanza il tempo del sistema.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Leggere (x,u), (xᵏ,uᵏ) e (xᵏ_t,uᵏ_t) come livelli diversi della stessa decisione.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

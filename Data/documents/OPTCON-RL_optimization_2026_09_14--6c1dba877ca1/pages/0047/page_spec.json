@@ -69,12 +69,214 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "21df68b2af620016ed8f1afe761b675009ebf4b25c66da91753bc721833f7840",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0047",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "67dc4b0b8baba6c9da6ad2110fb2513e71f6002bf6bc8917051d3f848ca6bc24",
+        "layout": "a15292f24107cea89040e94ec0c623c0672aa32aebe8a4c05569d3f9d1be3e0b",
+        "render": "4825359b467bd74f63c6da4fc24662c45cb238fda1b48cadc2b9f1561397af94"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-g-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0047",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0046",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0048"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0047",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0046",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0048"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0047",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0046",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0048"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Optimization (constrained) over convex sets: optimality conditions and algorithms",
+      "observations": [
+        {
+          "id": "s01",
+          "category": "structure",
+          "description": "Solo titolo di sezione: ottimizzazione vincolata su insiemi convessi, condizioni di ottimalità e algoritmi. Nessuna formula, figura o footer.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0047",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              20,
+              28,
+              443.5429992675781,
+              241.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Solo titolo centrale su fondo bianco; nessun footer, numero visibile, formula o figura tecnica.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0047",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Orientarsi fra condizioni di ottimalità, proiezione e algoritmi ammissibili.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0046",
+          "role": "previous",
+          "note": "Gradiente per QP non vincolati: il passo può uscire dall’insieme."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0048",
+          "role": "next",
+          "note": "Interpretare la condizione necessaria vincolata e il suo limite per costi non convessi."
+        }
+      ],
+      "notation": [],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "s01",
+          "structure"
+        ],
+        "rationale": "Scopo e contenuto autonomi."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Titolo centrale e tutti gli spazi bianchi; assenza di altri elementi verificata.",
+            "observation_ids": [
+              "s01",
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Divisoria senza enunciati tecnici; nessun risultato o esempio numerico attribuito alla fonte.",
+          "Divisoria senza enunciati tecnici; nessun risultato o esempio numerico attribuito alla fonte."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Metodi non vincolati",
+            "why": "Il passo libero può uscire dall’insieme.",
+            "origin": "source_context",
+            "page_numbers": [
+              46
+            ]
+          }
+        ],
+        "source_math": [],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Ora la decisione deve appartenere a un insieme. La geometria dell’insieme cambia sia il riconoscimento di una soluzione sia il modo di costruire gli aggiornamenti.",
+            "source_observation_ids": [
+              "s01",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Tre schede statiche di orientamento: riconoscere una soluzione, proiettare un punto, generare decisioni ammissibili. Mappa aggiunta al solo titolo.",
+            "source_observation_ids": [
+              "s01",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [],
+        "example_omission_reason": "Divisoria: la fonte contiene soltanto il titolo. La companion propone una mappa, senza esempio numerico inventato.",
+        "visualization": {
+          "component": "ModelDiagram",
+          "description": "Tre schede statiche di orientamento: riconoscere una soluzione, proiettare un punto, generare decisioni ammissibili. Mappa aggiunta al solo titolo.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "s01",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": false,
+          "rationale": "Mappa statica sufficiente per orientarsi.",
+          "component": null,
+          "parameters": [],
+          "outputs": [
+            "Orientarsi fra condizioni di ottimalità, proiezione e algoritmi ammissibili."
+          ],
+          "invariants": [
+            "Divisoria senza enunciati tecnici; nessun risultato o esempio numerico attribuito alla fonte.",
+            "Divisoria senza enunciati tecnici; nessun risultato o esempio numerico attribuito alla fonte."
+          ],
+          "enrichment_id": null
+        },
+        "edge_cases": [],
+        "expansion_rationale": "Un focus principale, una figura e dettagli su richiesta consentono una singola companion leggibile; nessuna riduzione tipografica.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Orientarsi fra condizioni di ottimalità, proiezione e algoritmi ammissibili.",
+            "source_observation_ids": [
+              "s01",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "visual"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un focus principale, una figura e dettagli su richiesta consentono una singola companion leggibile; nessuna riduzione tipografica.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

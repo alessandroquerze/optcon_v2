@@ -81,12 +81,555 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "aa4186cd92655679a52498eaa5b2700f66c426ce4dcdc4a5571ecdc2b1fc9274",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0043",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "eea28010739e84959189e09233051a34d5a450189f554ac2a79c42bda4d1046c",
+        "layout": "d0e32992654bda79f62a26d771354cd54c51e12705bd6782bd79b522f86c3923",
+        "render": "3de5095deb23fa4aec130564a56ea40cb1cfd15ba0c0129a009bcc51089d4069"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-f-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0043",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0042",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0044"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0043",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0042",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0044"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0043",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0042",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0044"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Gradient methods: convergence result (constant/diminishing)",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "assumption",
+          "description": "La fonte ripete il metodo e i limiti uniformi di D e impone Lipschitz globale del gradiente.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0043",
+            "modality": "both",
+            "text_quote": "for some L",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "concept",
+          "description": "Costante sufficientemente piccolo, oppure γ^k→0 e somma infinita: ogni punto limite è stazionario.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0043",
+            "modality": "both",
+            "text_quote": "sufficiently small",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "concept",
+          "description": "La remark chiede di verificare il problema lineare min cᵀz. Il tipo stampato c∈Rᵀ è incoerente con la dimensione d, senza cambiare il senso dell’esercizio.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0043",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0043",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Interpretare il passo sufficientemente piccolo e il controesempio lineare senza inventare punti limite.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0042",
+          "role": "previous",
+          "note": "Leggere ipotesi uniformi e conclusione sui punti limite, distinguendola dall’esistenza di tali punti."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0044",
+          "role": "next",
+          "note": "Distinguere convergenza totale e sottosuccessioni, correggendo il quantificatore troppo forte."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\nabla\\ell(\\bar z)=0",
+          "meaning": "Con gradiente L-Lipschitz, 0<d₁I≤Dᵏ≤d₂I e passi adatti, ogni eventuale punto limite è stazionario.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\|\\nabla\\ell(z)-\\nabla\\ell(y)\\|\\le L\\|z-y\\|,\\quad\\forall z,y\\in\\mathbb R^d",
+          "meaning": "L controlla quanto può cambiare il gradiente su tutto il dominio.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "z^{k+1}=z^k-\\gamma^kD^k\\nabla\\ell(z^k)",
+          "meaning": "Dᵏ e γᵏ hanno gli stessi ruoli delle pagine precedenti.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "d_1I\\le D^k\\le d_2I,\\qquad d_1>0,\\ d_2>0",
+          "meaning": "d₁,d₂ sono costanti comuni a tutte le iterazioni.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\gamma^k=\\gamma>0\\ \\text{sufficiently small},\\quad\\text{or}\\quad\\gamma^k\\to0,\\ \\sum_{t=0}^\\infty\\gamma^k=\\infty",
+          "meaning": "Il primo caso richiede una soglia adatta al costo; il secondo richiede persistenza, non solo passi a zero.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\min_{z\\in\\mathbb R^d}c^\\top z,\\qquad c\\in\\mathbb R^\\top",
+          "meaning": "L’esercizio è un costo lineare; il vettore dei coefficienti deve avere la dimensione della decisione. La scritta del tipo è conservata nel letterale.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "structure"
+        ],
+        "rationale": "Scopo e contenuto autonomi."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "Nessuna correzione matematica necessaria dopo confronto con la pagina precedente e successiva.",
+          "Il c∈Rᵀ della remark è un refuso di tipo: nei calcoli si usa l’esempio scalare c=1; nessun cambiamento al letterale.",
+          "L>0 non implica che il problema lineare sia limitato inferiormente.",
+          "Le soglie mostrate per γ sono derivate per il costo scalare, non attribuite alla fonte."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Lipschitz",
+            "why": "La proposizione richiede un L globale.",
+            "origin": "source_context",
+            "page_numbers": [
+              17,
+              20
+            ]
+          },
+          {
+            "concept": "Passi decrescenti",
+            "why": "Somma infinita distinta dal limite zero.",
+            "origin": "source_context",
+            "page_numbers": [
+              41
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\nabla\\ell(\\bar z)=0",
+            "anchor": "for some L",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\|\\nabla\\ell(z)-\\nabla\\ell(y)\\|\\le L\\|z-y\\|,\\quad\\forall z,y\\in\\mathbb R^d",
+            "anchor": "for some L",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "z^{k+1}=z^k-\\gamma^kD^k\\nabla\\ell(z^k)",
+            "anchor": "for some L",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "d_1I\\le D^k\\le d_2I,\\qquad d_1>0,\\ d_2>0",
+            "anchor": "for some L",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\gamma^k=\\gamma>0\\ \\text{sufficiently small},\\quad\\text{or}\\quad\\gamma^k\\to0,\\ \\sum_{t=0}^\\infty\\gamma^k=\\infty",
+            "anchor": "for some L",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\min_{z\\in\\mathbb R^d}c^\\top z,\\qquad c\\in\\mathbb R^\\top",
+            "anchor": "for some L",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Con gradiente Lipschitz e D uniformemente positiva, il teorema ammette passi costanti piccoli oppure decrescenti con somma infinita. Non assicura che esista un punto limite.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "Costo lineare ℓ=z con D=1",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Sequenza discreta zᵏ contro k; retta z=0 marcata come minimo solo nel caso quadratico. Nessuna linea obiettivo nel caso lineare. Casi oltre ritaglio dichiarati.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Interpretare il passo sufficientemente piccolo e il controesempio lineare senza inventare punti limite.",
+            "setup": "Costo lineare ℓ=z con D=1",
+            "parameters": [],
+            "derivation": [
+              "∇ℓ=1, differenza dei gradienti sempre zero.",
+              "Con passo costante γ, zᵏ=1−kγ.",
+              "Con passi decrescenti a somma infinita, zᵏ=1−Σγʲ→−∞."
+            ],
+            "expected_outcome": "Nessun punto limite: non contraddice la conclusione sui punti limite.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "SceneViewport",
+          "description": "Sequenza discreta zᵏ contro k; retta z=0 marcata come minimo solo nel caso quadratico. Nessuna linea obiettivo nel caso lineare. Casi oltre ritaglio dichiarati.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Il confronto lineare/quadratico separa le ipotesi dalla presunta esistenza del limite; γ=2 espone il ruolo di sufficientemente piccolo.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Passo costante",
+              "symbol": "\\gamma",
+              "origin": "enrichment",
+              "range": "{'min': 0.1, 'max': 2.2, 'step': 0.1, 'integer': False}",
+              "default": "0.5",
+              "effect_on_change": "Cambia la ricorrenza soltanto nel regime costante. γ≥2 esce dalla garanzia illustrata per il quadratico.",
+              "edge_cases": [
+                "Quadratico, γ=2",
+                "Quadratico, γ>2",
+                "Lineare",
+                "Cambio modello o passo"
+              ]
+            },
+            {
+              "name": "Esponente decrescente",
+              "symbol": "\\alpha",
+              "origin": "enrichment",
+              "range": "{'min': 0.55, 'max': 1, 'step': 0.05, 'integer': False}",
+              "default": "1",
+              "effect_on_change": "Cambia γᵏ=1/(k+1)^α soltanto nel regime decrescente; la somma è infinita in tutto il dominio.",
+              "edge_cases": [
+                "Quadratico, γ=2",
+                "Quadratico, γ>2",
+                "Lineare",
+                "Cambio modello o passo"
+              ]
+            },
+            {
+              "name": "Costo",
+              "symbol": "f",
+              "origin": "enrichment",
+              "range": "Quadratico / lineare",
+              "default": "Quadratico",
+              "effect_on_change": "Cambia funzione e gradiente, preserva z⁰=1 e la regola scelta.",
+              "edge_cases": [
+                "Quadratico, γ=2",
+                "Quadratico, γ>2",
+                "Lineare",
+                "Cambio modello o passo"
+              ]
+            },
+            {
+              "name": "Regola del passo",
+              "symbol": "s",
+              "origin": "enrichment",
+              "range": "Costante / decrescente",
+              "default": "Costante",
+              "effect_on_change": "Mostra solo il parametro pertinente e ricostruisce da k=0.",
+              "edge_cases": [
+                "Quadratico, γ=2",
+                "Quadratico, γ>2",
+                "Lineare",
+                "Cambio modello o passo"
+              ]
+            },
+            {
+              "name": "Iterazione",
+              "symbol": "k",
+              "origin": "enrichment",
+              "range": "0…20",
+              "default": "0",
+              "effect_on_change": "Seleziona uno degli iterati già calcolati; Play/Pausa, Passo e Riparti disponibili.",
+              "edge_cases": [
+                "Quadratico, γ=2",
+                "Quadratico, γ>2",
+                "Lineare",
+                "Cambio modello o passo"
+              ]
+            }
+          ],
+          "outputs": [
+            "Interpretare il passo sufficientemente piccolo e il controesempio lineare senza inventare punti limite."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "Quadratico, γ=2",
+            "expected_behavior": "Alternanza ±1 e costo costante: fuori dalla discesa garantita.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "Quadratico, γ>2",
+            "expected_behavior": "Divergenza mostrata senza clamp; numeri fuori grafico restano nei risultati.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "Lineare",
+            "expected_behavior": "Gradiente costante non nullo; non inventare soluzione o punto limite.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "Cambio modello o passo",
+            "expected_behavior": "Pausa e ritorno al medesimo z⁰.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Interpretare il passo sufficientemente piccolo e il controesempio lineare senza inventare punti limite.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

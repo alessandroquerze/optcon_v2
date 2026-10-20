@@ -81,12 +81,435 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "4e88d2f4edeaf1e603dc80d9498e5a942d22beafbbc05a8016ade4aa90d8f951",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0066",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "0d1a537458445fcb43de57521bf899d8a70b78ce01780d1bf6cfedb37a6bb593",
+        "layout": "74ba03179349f71d1ddcd08018e21efc3148870818a858d080b98024d2e3319b",
+        "render": "5eb1d1beceec0595f8850d41d819b2dae2eb4f08918d53eea8ebe10ff491da96"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-i-2026-10-19"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0066",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0065",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0067"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0066",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0065",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0067"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0066",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0065",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0067"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Quadratic Programming (constrained)",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "definition",
+          "description": "Definisce il QP con costo zᵀQz/2+qᵀz, uguaglianza Az=b e z∈R^d.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0066",
+            "modality": "both",
+            "text_quote": "Quadratic program",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "assumption",
+          "description": "Q=Qᵀ∈R^{d×d}, q∈R^d, A∈R^{m×d}, b∈R^m. Non dichiara Q semidefinita né rango pieno di A.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0066",
+            "modality": "both",
+            "text_quote": "linear equality constraints",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0066",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Leggere il QP con uguaglianze lineari e separare simmetria di Q, convessità e curvatura sulle decisioni ammissibili.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0065",
+          "role": "previous",
+          "note": "Usare la Hessiana della Lagrangiana sulle direzioni ortogonali ai gradienti dei vincoli pertinenti, con ipotesi C²."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0067",
+          "role": "next",
+          "note": "Derivare stazionarietà e ammissibilità del QP senza confondere solvibilità, unicità dei moltiplicatori e minimo."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\begin{aligned}\\min_{z\\in\\mathbb R^d}\\;&\\tfrac12z^TQz+q^Tz\\\\\\text{subj.to }&Az=b\\end{aligned}",
+          "meaning": "Q=Qᵀ, q∈Rᵈ, A∈Rᵐˣᵈ e b∈Rᵐ. Per avere una soluzione, Az=b deve essere compatibile.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "structure"
+        ],
+        "rationale": "Scopo e contenuto autonomi."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "Nessuna correzione matematica necessaria dopo confronto con la pagina precedente e successiva.",
+          "La fonte non garantisce esistenza di una soluzione; κ≤0 con il termine lineare scelto dà costo illimitato inferiormente sul vincolo.",
+          "La retta è infinita; il disegno ne mostra soltanto un intervallo fisso, senza sostituirlo con un vincolo di scatola."
+        ],
+        "prerequisites": [
+          {
+            "concept": "QP non vincolato",
+            "why": "Ruolo di Q,q e limiti della sola simmetria.",
+            "origin": "source_context",
+            "page_numbers": [
+              23,
+              25
+            ]
+          },
+          {
+            "concept": "Uguaglianze",
+            "why": "Az=b definisce un insieme affine.",
+            "origin": "source_context",
+            "page_numbers": [
+              13,
+              56
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\begin{aligned}\\min_{z\\in\\mathbb R^d}\\;&\\tfrac12z^TQz+q^Tz\\\\\\text{subj.to }&Az=b\\end{aligned}",
+            "anchor": "Quadratic program",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "La fonte richiede Q simmetrica, senza imporla positiva. L’uguaglianza limita le decisioni a un insieme affine; il comportamento del costo va letto su quell’insieme.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "κ=1, ν=−1, b=0.5, s=0.5",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Retta affine e livelli 2D con sonda; accanto profilo del costo rispetto a s. Superficie 3D dello stesso costo, retta sollevata alla sua altezza reale. Nessun dato attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Leggere il QP con uguaglianze lineari e separare simmetria di Q, convessità e curvatura sulle decisioni ammissibili.",
+            "setup": "κ=1, ν=−1, b=0.5, s=0.5",
+            "parameters": [],
+            "derivation": [
+              "Q ha autovalori 1 e −1: costo non convesso nello spazio.",
+              "z(s)≈(0.603553,−0.103553) e Az=b.",
+              "Sul vincolo ℓ(s)=s²/2−s/2−0.0625, costo sonda −0.1875."
+            ],
+            "expected_outcome": "Il profilo sulla retta è convesso anche se Q è indefinita.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "FunctionExplorer",
+          "description": "Retta affine e livelli 2D con sonda; accanto profilo del costo rispetto a s. Superficie 3D dello stesso costo, retta sollevata alla sua altezza reale. Nessun dato attribuito alla fonte.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "κ e ν separano direzioni tangenti e normali; b e s distinguono modifica del vincolo e scelta di una decisione.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Curvatura tangente",
+              "symbol": "\\kappa",
+              "origin": "enrichment",
+              "range": "{'min': -1, 'max': 2, 'step': 0.25, 'integer': False}",
+              "default": "1",
+              "effect_on_change": "Cambia la curvatura lungo la retta, i livelli e il profilo; non cambia il vincolo.",
+              "edge_cases": [
+                "κ=0",
+                "κ<0",
+                "ν<0,κ>0",
+                "b cambia"
+              ]
+            },
+            {
+              "name": "Curvatura normale",
+              "symbol": "\\nu",
+              "origin": "enrichment",
+              "range": "{'min': -2, 'max': 2, 'step': 0.25, 'integer': False}",
+              "default": "-1",
+              "effect_on_change": "Cambia Q nelle direzioni normali. Sulla retta modifica solo la costante νb²/4, senza cambiarne la curvatura.",
+              "edge_cases": [
+                "κ=0",
+                "κ<0",
+                "ν<0,κ>0",
+                "b cambia"
+              ]
+            },
+            {
+              "name": "Posizione della retta",
+              "symbol": "b",
+              "origin": "enrichment",
+              "range": "{'min': -1, 'max': 1, 'step': 0.1, 'integer': False}",
+              "default": "0.5",
+              "effect_on_change": "Trasla la retta z₁+z₂=b; costo e matrici Q,q restano fissi.",
+              "edge_cases": [
+                "κ=0",
+                "κ<0",
+                "ν<0,κ>0",
+                "b cambia"
+              ]
+            },
+            {
+              "name": "Punto sulla retta",
+              "symbol": "s",
+              "origin": "enrichment",
+              "range": "{'min': -1.5, 'max': 1.5, 'step': 0.1, 'integer': False}",
+              "default": "0.5",
+              "effect_on_change": "Muove la sonda ammissibile e il suo valore sullo stesso profilo; non cambia Q o la retta.",
+              "edge_cases": [
+                "κ=0",
+                "κ<0",
+                "ν<0,κ>0",
+                "b cambia"
+              ]
+            }
+          ],
+          "outputs": [
+            "Leggere il QP con uguaglianze lineari e separare simmetria di Q, convessità e curvatura sulle decisioni ammissibili."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "κ=0",
+            "expected_behavior": "Profilo lineare non costante: nessun minimo finito.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "case": "κ<0",
+            "expected_behavior": "Costo quadratico illimitato inferiormente lungo la retta.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "case": "ν<0,κ>0",
+            "expected_behavior": "Q indefinita, ma profilo vincolato strettamente convesso.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "case": "b cambia",
+            "expected_behavior": "La retta si sposta; non è un nuovo punto sulla vecchia retta.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Leggere il QP con uguaglianze lineari e separare simmetria di Q, convessità e curvatura sulle decisioni ammissibili.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

@@ -1,0 +1,417 @@
+{
+  "reviewed_at": "2026-10-18T17:01:30.620Z",
+  "success": true,
+  "pages": [
+    {
+      "page": 34,
+      "views": [
+        {
+          "view": "2D",
+          "screenshot": "Docs/Optimization_E_assets/p34-2d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 273.734375
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 279.734375,
+              "bottom": 651.328125
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 657.328125,
+              "bottom": 856.90625
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 862.90625,
+              "bottom": 1143.9375
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt34-residual": "1.2500",
+            "opt34-next": "1.0833",
+            "opt34-new-residual": "0.1736"
+          }
+        }
+      ]
+    },
+    {
+      "page": 35,
+      "views": [
+        {
+          "view": "2D",
+          "screenshot": "Docs/Optimization_E_assets/p35-2d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 269.40625
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 275.40625,
+              "bottom": 647
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 653,
+              "bottom": 806.78125
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 812.78125,
+              "bottom": 1114.25
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1163.21875,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt35-hessian": "3.0000",
+            "opt35-step": "-0.4167",
+            "opt35-cost-change": "-0.2845"
+          }
+        }
+      ]
+    },
+    {
+      "page": 36,
+      "views": [
+        {
+          "view": "2D",
+          "screenshot": "Docs/Optimization_E_assets/p36-2d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 344.59375
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 350.59375,
+              "bottom": 722.1875
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 728.1875,
+              "bottom": 881.96875
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 887.96875,
+              "bottom": 1140.234375
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt36-type": "minimo unico",
+            "opt36-step": "0.7500",
+            "opt36-next": "1.2500"
+          }
+        }
+      ]
+    },
+    {
+      "page": 37,
+      "views": [
+        {
+          "view": "2D",
+          "screenshot": "Docs/Optimization_E_assets/p37-2d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 307.84375
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 313.84375,
+              "bottom": 724.4375
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 730.4375,
+              "bottom": 884.21875
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 890.21875,
+              "bottom": 1163.09375
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt37-model-minimum": "-1.5000",
+            "opt37-real-cost": "4.5000",
+            "opt37-change": "3.5000"
+          }
+        },
+        {
+          "view": "3D",
+          "screenshot": "Docs/Optimization_E_assets/p37-3d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 307.84375
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 313.84375,
+              "bottom": 724.4375
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 730.4375,
+              "bottom": 884.21875
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 890.21875,
+              "bottom": 1163.09375
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt37-model-minimum": "-1.5000",
+            "opt37-real-cost": "4.5000",
+            "opt37-change": "3.5000"
+          }
+        },
+        {
+          "view": "2D costo reale",
+          "screenshot": "Docs/Optimization_E_assets/p37-real-2d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 307.84375
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 313.84375,
+              "bottom": 724.4375
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 730.4375,
+              "bottom": 884.21875
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 890.21875,
+              "bottom": 1163.09375
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt37-model-minimum": "-1.5000",
+            "opt37-real-cost": "4.5000",
+            "opt37-change": "3.5000"
+          }
+        },
+        {
+          "view": "3D costo reale",
+          "screenshot": "Docs/Optimization_E_assets/p37-real-3d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 307.84375
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 313.84375,
+              "bottom": 724.4375
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 730.4375,
+              "bottom": 884.21875
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 890.21875,
+              "bottom": 1163.09375
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt37-model-minimum": "-1.5000",
+            "opt37-real-cost": "4.5000",
+            "opt37-change": "3.5000"
+          }
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "name": "root model versus real residual and iteration",
+      "status": "PASS"
+    },
+    {
+      "name": "singular nonroot already root and offscreen update",
+      "status": "PASS"
+    },
+    {
+      "name": "stationarity may be a maximum and Hessian may be singular",
+      "status": "PASS"
+    },
+    {
+      "name": "corrected sign and valid model minimization",
+      "status": "PASS"
+    },
+    {
+      "name": "surrogate minimum differs from real decrease and recovers exact Hessian",
+      "status": "PASS"
+    },
+    {
+      "name": "function selection and fullscreen preserve parameters view and camera",
+      "status": "PASS"
+    },
+    {
+      "name": "previous companions and next batch placeholder",
+      "status": "PASS"
+    }
+  ],
+  "errors": [],
+  "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+  "completion": {
+    "batch": "E",
+    "physical_pages": [
+      34,
+      35,
+      36,
+      37
+    ],
+    "analysis_and_design": "PASS",
+    "build": "PASS",
+    "targeted_tests": {
+      "status": "PASS",
+      "files": 3,
+      "tests": 25
+    },
+    "manual_visual_review": {
+      "status": "PASS",
+      "pages": [
+        34,
+        35,
+        36,
+        37
+      ],
+      "views": 7,
+      "scope": "Normal slide, applicable 2D/3D and model/real-cost views, fullscreen, numerical outputs and edge cases; final screenshots inspected."
+    },
+    "integrity": {
+      "status": "PASS",
+      "protected_files_unchanged": 380,
+      "source_artifacts_unchanged": 324,
+      "previous_manifest_definitions_unchanged": 33,
+      "original_pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea"
+    },
+    "correction_warnings_resolved": [
+      36,
+      37
+    ],
+    "unresolved_blocking_issues": 0,
+    "companions_complete": 37,
+    "future_page_specs_pending": 44,
+    "next_batch": "F",
+    "next_batch_started": false,
+    "completed_at": "2026-10-18T17:03:10.602964+00:00"
+  }
+}

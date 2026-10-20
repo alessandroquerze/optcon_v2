@@ -1,0 +1,95 @@
+{
+  "verified_at": "2026-10-18T02:39:16.599Z",
+  "success": true,
+  "scope": "Fullscreen condiviso per tutte le visualizzazioni delle companion esistenti e future",
+  "architecture": {
+    "common_boundary": "frontend/src/visualization/core/GraphicViewport.tsx",
+    "plot_boundary": "frontend/src/visualization/core/SceneViewport.tsx",
+    "inline_svg_adapter": "CompanionPage / AutoGraphicFullscreen",
+    "native_fullscreen": true,
+    "popover_fallback": true,
+    "plot_nodes_reused": true,
+    "companion_renderers_modified": []
+  },
+  "coverage": {
+    "physical_pages": 36,
+    "views": 62,
+    "graphic_occurrences": 76,
+    "entry_points": 73,
+    "kinds": {
+      "svg": 10,
+      "scene-3d": 27,
+      "scene-2d": 20,
+      "state-timeline": 11,
+      "cost-breakdown": 8
+    },
+    "pages_without_graphics": [
+      1,
+      3,
+      5
+    ],
+    "uncovered_graphs": []
+  },
+  "validation": {
+    "build": {
+      "status": "PASS",
+      "command": "npm run build (TypeScript + Vite)",
+      "index_sha256": "4ce7069462ebab28870459b7b84e5008d2fc9b36f05c5bb80d14f313e535aaa9"
+    },
+    "unit": {
+      "passed": 137,
+      "failed": 0,
+      "report": "frontend/test-reports/fullscreen-unit.json"
+    },
+    "browser_full_suite": {
+      "startTime": "2026-10-18T02:21:17.801Z",
+      "duration": 827949.318,
+      "expected": 95,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0,
+      "report": "frontend/test-reports/fullscreen-browser.json"
+    },
+    "browser_layout_validation": {
+      "startTime": "2026-10-18T02:33:37.866Z",
+      "duration": 313268.02,
+      "expected": 39,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0,
+      "report": "frontend/test-reports/fullscreen-layout-browser.json",
+      "subset_of_full_suite": true
+    },
+    "runtime_audit": "Data/reports/fullscreen_coverage.json",
+    "visual_review": "Data/reports/fullscreen_visual_review.json"
+  },
+  "preservation": [
+    {
+      "baseline": "Data/reviews/fullscreen_baseline.json",
+      "checked": 1032,
+      "changed": []
+    },
+    {
+      "baseline": "Data/reviews/f05_source_baseline.json",
+      "checked": 969,
+      "changed": []
+    }
+  ],
+  "artifacts": {
+    "Docs/fullscreen_assets/p04-inline-svg-fullscreen.png": "806c914cf221da2dec1115f6bc5476331ae5223c1713522dc08ee2c63d5c312f",
+    "Docs/fullscreen_assets/p16-3d-fullscreen.png": "5b6b256aa89a0ea38399b80a1cac94ab1ca7bc500175c01b1b4d54cd0bd32bac",
+    "Docs/fullscreen_assets/p16-restored.png": "404fbed6a82dd7f537a3cdb5771031858e304ff815e5594c6fa95b9eb744e502",
+    "Docs/fullscreen_assets/p16-example-bars-fullscreen.png": "0a997f235e5cd54aa92260f4fdcfad08a1e2fdb9a5d16257f7686b7fc4286265",
+    "Docs/fullscreen_assets/p17-example-circle-fullscreen.png": "419430f45ee1d8ff8c8d2ff348d77383d53463f305a89d6df325d1673f3bc6d6",
+    "Docs/fullscreen_assets/p20-cost-and-timeline-fullscreen.png": "721b81369d64a65bfc3028dcf4252b00fdd0054a811f899f402b4a13f7a0b4ab",
+    "Docs/fullscreen_assets/p10-timeline-fullscreen.png": "18a2c88b5a03ba81236a88d6e39aa583124b085cb328309a5cdba90ea90a586d",
+    "Docs/fullscreen_assets/p27-simulation-fullscreen.png": "be8a0519e3bb6980453388bdca82715bf0dbdb21ad7f83d7934704d5ecc9afca",
+    "Docs/fullscreen_assets/p34-equilibrium-poses-and-curve-fullscreen.png": "28e41d63438fb1c55f18a321c596487020b9c6a96034794ee6ba67254c279d03",
+    "Docs/fullscreen_assets/p15-2d-zoom-resized-fullscreen.png": "f5ec9651c2ef70fa1131daa1973a00d27386f6bd9b32b1ee093a2b374754b7f6",
+    "Docs/fullscreen_assets/future-combined-2d-3d-fullscreen.png": "28b3d9584a22fe56a8450966eb8c223d38113ce5bb3e84c651f84c1a9c4400f2"
+  },
+  "unresolved_issues": [],
+  "limitations": [
+    "Browser verificato: Chrome headless / SwiftShader; fallback popover verificato disabilitando la Fullscreen API."
+  ]
+}

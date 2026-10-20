@@ -81,12 +81,462 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "67e27682c1ab513564c57a3be38edb7e90ac069c1924c7d0230f90e78e5dde09",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0052",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "d57eeae22ea1c989eda98c73b7e6dca6d824f6f848ede1406620b2fdfd3b0022",
+        "layout": "4936859f36d7778594c6ae180192caf8ceb80d9344ee47ae705985847db776b9",
+        "render": "a1866b2189ff5bb4f809a6a7e2c6a9dd1f63c1cd25e4986337dd2aa1a5cdc45b"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-g-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0052",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0051",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0053"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0052",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0051",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0053"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0052",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0051",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0053"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Example: Projected Gradient Method for Quadratic Programs",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "definition",
+          "description": "QP su Z: costo 1/2 zᵀQz+qᵀz, Q=Qᵀ≥0 e q∈R^d.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0052",
+            "modality": "both",
+            "text_quote": "Quadratic program",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "algorithm",
+          "description": "La fonte ripete il gradiente proiettato e sostituisce ∇ℓ(z^k) con Qz^k+q.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0052",
+            "modality": "both",
+            "text_quote": "Projected gradient method",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0052",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Applicare il gradiente proiettato a un QP convesso, compresi minimi al bordo e non unici.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0051",
+          "role": "previous",
+          "note": "Distinguere proiezione a passo unitario e rilassamento lungo il segmento ammissibile."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0053",
+          "role": "next",
+          "note": "Esplorare tutte le quattro funzioni della fonte senza supporre convessità comune."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "z^{k+1}=P_{\\mathbb Z}\\big(z^k-\\gamma^k(Qz^k+q)\\big)",
+          "meaning": "Si usa il gradiente Qzᵏ+q e si proietta su Z. Serve un passo adeguato.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\min_{z\\in\\mathbb Z}\\tfrac12z^TQz+q^Tz,\\qquad Q=Q^T\\ge0",
+          "meaning": "Q semidefinita positiva dà convessità, ma non impone unicità del minimo.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "z^{k+1}=P_{\\mathbb Z}\\big(z^k-\\gamma^k\\nabla\\ell(z^k)\\big)",
+          "meaning": "È lo stesso algoritmo della pagina 50 con gradiente ora esplicito.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "structure"
+        ],
+        "rationale": "Scopo e contenuto autonomi."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "Nessuna correzione matematica necessaria dopo confronto con la pagina precedente e successiva.",
+          "Il quadrato, i parametri e il residuo proiettato sono enrichment; Q≥0 della fonte non viene sostituito da Q>0.",
+          "Le simulazioni sono finite e non dimostrano il teorema generale; i punti rimangono ammissibili anche quando il passo non dà discesa."
+        ],
+        "prerequisites": [
+          {
+            "concept": "QP non vincolato",
+            "why": "Gradiente esplicito Qz+q.",
+            "origin": "source_context",
+            "page_numbers": [
+              46
+            ]
+          },
+          {
+            "concept": "Proiezione",
+            "why": "La formula genera punti ammissibili.",
+            "origin": "source_context",
+            "page_numbers": [
+              49,
+              50
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "z^{k+1}=P_{\\mathbb Z}\\big(z^k-\\gamma^k(Qz^k+q)\\big)",
+            "anchor": "Quadratic program",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\min_{z\\in\\mathbb Z}\\tfrac12z^TQz+q^Tz,\\qquad Q=Q^T\\ge0",
+            "anchor": "Quadratic program",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "z^{k+1}=P_{\\mathbb Z}\\big(z^k-\\gamma^k\\nabla\\ell(z^k)\\big)",
+            "anchor": "Quadratic program",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Il gradiente del QP è Qz+q. Dopo ogni passo si proietta sull’insieme: anche con gradiente non nullo si può essere già al minimo vincolato.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "λ=4,a=2,γ=0.25",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Livelli e superficie del QP con quadrato ammissibile, stessi iterati e punto corrente; minimo al bordo o intero segmento di minimi con λ=0.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Applicare il gradiente proiettato a un QP convesso, compresi minimi al bordo e non unici.",
+            "setup": "λ=4,a=2,γ=0.25",
+            "parameters": [],
+            "derivation": [
+              "z⁰=(0.6,0.8), costo 0.26.",
+              "z¹=(0.95,0), costo −1.44875.",
+              "z²=(1,0), costo −1.5; gradiente (−1,0), residuo proiettato zero."
+            ],
+            "expected_outcome": "Il gradiente non nullo è coerente con ottimalità al bordo.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "FunctionExplorer",
+          "description": "Livelli e superficie del QP con quadrato ammissibile, stessi iterati e punto corrente; minimo al bordo o intero segmento di minimi con λ=0.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "λ=0 mostra minimi non unici, a>1 mostra gradiente non nullo al minimo e γ grande mostra oscillazioni ammissibili.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Seconda curvatura",
+              "symbol": "\\lambda",
+              "origin": "enrichment",
+              "range": "{'min': 0, 'max': 6, 'step': 0.5, 'integer': False}",
+              "default": "4",
+              "effect_on_change": "Cambia Q e ricalcola dal medesimo z⁰; pausa e ritorno a k=0.",
+              "edge_cases": [
+                "λ=0",
+                "a>1",
+                "γ oltre soglia",
+                "Cambio parametri"
+              ]
+            },
+            {
+              "name": "Termine lineare",
+              "symbol": "a",
+              "origin": "enrichment",
+              "range": "{'min': 0, 'max': 2, 'step': 0.25, 'integer': False}",
+              "default": "2",
+              "effect_on_change": "Cambia q₁=−a e il minimo sul quadrato, mantenendo λ e γ; ritorno a k=0.",
+              "edge_cases": [
+                "λ=0",
+                "a>1",
+                "γ oltre soglia",
+                "Cambio parametri"
+              ]
+            },
+            {
+              "name": "Passo",
+              "symbol": "\\gamma",
+              "origin": "enrichment",
+              "range": "{'min': 0.05, 'max': 1, 'step': 0.05, 'integer': False}",
+              "default": "0.25",
+              "effect_on_change": "Cambia il percorso, non il costo o l’insieme; nessuna correzione nascosta di passi instabili.",
+              "edge_cases": [
+                "λ=0",
+                "a>1",
+                "γ oltre soglia",
+                "Cambio parametri"
+              ]
+            },
+            {
+              "name": "Iterazione",
+              "symbol": "k",
+              "origin": "enrichment",
+              "range": "0…20",
+              "default": "0",
+              "effect_on_change": "Seleziona campioni con Play/Pausa, Passo e Riparti; k non è tempo fisico.",
+              "edge_cases": [
+                "λ=0",
+                "a>1",
+                "γ oltre soglia",
+                "Cambio parametri"
+              ]
+            }
+          ],
+          "outputs": [
+            "Applicare il gradiente proiettato a un QP convesso, compresi minimi al bordo e non unici."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "λ=0",
+            "expected_behavior": "Minimi su un segmento; non scegliere arbitrariamente y=0.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "case": "a>1",
+            "expected_behavior": "Minimo al bordo con gradiente non nullo.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "case": "γ oltre soglia",
+            "expected_behavior": "Percorso limitato dalla proiezione, ma possibile oscillazione e aumento del costo.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "case": "Cambio parametri",
+            "expected_behavior": "Pausa e ritorno allo stesso z⁰.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Applicare il gradiente proiettato a un QP convesso, compresi minimi al bordo e non unici.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

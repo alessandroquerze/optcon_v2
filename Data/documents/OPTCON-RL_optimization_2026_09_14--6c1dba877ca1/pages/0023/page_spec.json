@@ -81,12 +81,391 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "831e25d945aae3aa3bfc9b2f55969378ca0ab5d16f95c1a5c78e2f08c3a14fba",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0023",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "745a9e4b2518beb21e9c9a29d04f971639e70cc4ad303273244120ac3b1b618c",
+        "layout": "d1d963bcd1056c9e64639330e43de248638c59f3f49bf98e1732b84483db3879",
+        "render": "4dc5ec0e504932ab568eee928ac9a61ef321a984bb3c48251e87ad3cdf4bcd1f"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-c-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0023",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0022",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0024"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0023",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0022",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0024"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0023",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0022",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0024"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Quadratic Programming (unconstrained)",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "definition",
+          "description": "La pagina introduce programmi quadratici senza vincoli; non impone Q≥0.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0023",
+            "modality": "both",
+            "text_quote": "quadratic optimization problems",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "equation",
+          "description": "Il costo è 1/2 z^TQz+q^Tz; Q=Q^T∈R^{d×d} e q∈R^d.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0023",
+            "modality": "both",
+            "text_quote": "with Q = QT",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0023",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Leggere Q simmetrica come curvatura e q come inclinazione di un problema quadratico.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0022",
+          "role": "previous",
+          "note": "Separare sufficienza globale, unicità ed esistenza nella minimizzazione convessa differenziabile."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0024",
+          "role": "next",
+          "note": "Distinguere stazionarietà, semidefinita positività e compatibilità del sistema lineare."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\min_{z\\in\\mathbb R^d}\\frac12z^\\top Qz+q^\\top z,\\quad Q=Q^\\top",
+          "meaning": "Q ha dimensione d×d ed è simmetrica; q e z sono colonne di d componenti. Nessuna positività di Q è richiesta dalla definizione.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "structure"
+        ],
+        "rationale": "Pagina con enunciato e scopo autonomi."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "Nessuna correzione matematica necessaria dopo confronto con la pagina precedente e successiva."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Prodotto quadratico",
+            "why": "Produce uno scalare da una matrice simmetrica e una decisione.",
+            "origin": "source_context",
+            "page_numbers": [
+              6
+            ]
+          },
+          {
+            "concept": "Geometria del costo",
+            "why": "Le curve di livello rappresentano valori uguali di ℓ.",
+            "origin": "source_context",
+            "page_numbers": [
+              11
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\min_{z\\in\\mathbb R^d}\\frac12z^\\top Qz+q^\\top z,\\quad Q=Q^\\top",
+            "anchor": "quadratic optimization problems",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "La matrice simmetrica Q definisce la curvatura del costo; q aggiunge una parte lineare. La definizione non impone che Q sia positiva.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "Q=diag(2,1), q=(−1,−0.25)",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Livelli 2D e superficie 3D della stessa quadratica; sonda arancio fissa, livelli/altezza mostrano separatamente λ e b.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Leggere Q simmetrica come curvatura e q come inclinazione di un problema quadratico.",
+            "setup": "Q=diag(2,1), q=(−1,−0.25)",
+            "parameters": [],
+            "derivation": [
+              "Alla sonda (0.5,0.5), ℓ=−0.25.",
+              "La seconda curvatura è 1: Q è positiva definita.",
+              "Spostare b inclina la valle; rendere λ negativo crea una sella."
+            ],
+            "expected_outcome": "La definizione della fonte non garantisce l’esistenza di un minimo.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "FunctionExplorer",
+          "description": "Livelli 2D e superficie 3D della stessa quadratica; sonda arancio fissa, livelli/altezza mostrano separatamente λ e b.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Variare un solo aspetto del confronto mantenendo esplicite le invarianti.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Curvatura seconda",
+              "symbol": "\\lambda",
+              "origin": "enrichment",
+              "range": "{'min': -1, 'max': 2, 'step': 0.25, 'integer': False}",
+              "default": "1",
+              "effect_on_change": "Deforma livelli e superficie e cambia la classificazione di Q; q e sonda restano fissi.",
+              "edge_cases": [
+                "λ=0,b=0",
+                "λ=0,b≠0",
+                "λ<0"
+              ]
+            },
+            {
+              "name": "Inclinazione seconda",
+              "symbol": "b",
+              "origin": "enrichment",
+              "range": "{'min': -0.5, 'max': 0.5, 'step': 0.125, 'integer': False}",
+              "default": "-0.25",
+              "effect_on_change": "Sposta i livelli e il costo alla sonda; Q, curvature e sonda restano fissi.",
+              "edge_cases": [
+                "λ=0,b=0",
+                "λ=0,b≠0",
+                "λ<0"
+              ]
+            }
+          ],
+          "outputs": [
+            "Leggere Q simmetrica come curvatura e q come inclinazione di un problema quadratico."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "λ=0,b=0",
+            "expected_behavior": "Valle piatta e infiniti minimi; nessuna inversione singolare.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "case": "λ=0,b≠0",
+            "expected_behavior": "Deriva lineare, nessun minimo.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "case": "λ<0",
+            "expected_behavior": "Curvatura negativa, nessuna falsa soluzione dal ritaglio.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Leggere Q simmetrica come curvatura e q come inclinazione di un problema quadratico.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

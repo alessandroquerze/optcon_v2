@@ -1,0 +1,19 @@
+{
+  "files": {
+    "Data/documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0001/page_spec.json": "838c793ab0d7d6638ee026d10bc161eee1e94008068510aa0f7552d83d81e720",
+    "Data/documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0002/page_spec.json": "200f0c64c44206b37a8aa3d3f47e9ed444299553b2e89c6ef6e5c7a55e16b651",
+    "Data/documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0003/page_spec.json": "7138ce4408b53c2e65d632a4bedc6763d7fa3f5fd55196db8fd97d6fa8000017",
+    "Data/documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0004/page_spec.json": "c2875f4677ff154271c5d5b5c2bb9774fd558e6dd57e8522d288dfefdfd52ba3",
+    "Data/documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0005/page_spec.json": "1ceede3c7848a115a902710e8e6b59bd3f24acc330531917bae319fae7156e3c",
+    "Data/documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0006/page_spec.json": "b7a5f5b60887e1a955ecf702323dba8fd056cc52832416e20a1de023387eb9af",
+    "Data/documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0007/page_spec.json": "531138e4f9a168cd6c7d9a8e8f1419c66013f8127d595cdefceefc9cf40e0963",
+    "Data/documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0008/page_spec.json": "ddb9ba6b7b2afffe4fceebbbb14b0b81955783b55eb52e497235056954789a20",
+    "Data/documents/OPTCON-RL_optimization_2026_09_14--6c1dba877ca1/pages/0009/page_spec.json": "662508177784d51756595516c0ee8b93a164220ecd7e7f41d3257f3395b07496",
+    "frontend/src/companion/optimization/lessons.tsx": "9b2fa6318e5a440e271210e85c49e99848c2be44519977d50b8fcb233d6f43bd",
+    "frontend/src/companion/optimization/formulaNotes.ts": "da59d2c02786e2c91ba7189709bd1dd4fd48e9696af52652710bf93395fc1d4e",
+    "frontend/src/math/optimizationFoundations.ts": "cc95af63a215d201330882d775cf72db10a4a0021954011811dde05d208e99d7",
+    "frontend/src/styles/optimization.css": "6c5b94ca430c28b1c8448bc3a97a8c5aedeeb4f05b80c93dcf27852cc8401041",
+    "Data/introduction_companion_manifest.json": "7b34b4ab222d71852d3bf5c6a2dc17f047d2c134a5112a552f75b9991d4e591b"
+  },
+  "authored_A_sha256": "c7b9b2720f348d0ba1994238432732294a8cc4ffeb58d642ddb18a18f450c7b4"
+}

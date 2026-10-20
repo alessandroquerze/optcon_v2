@@ -81,12 +81,368 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "a9fbad868d24636de2d80219e6881a996159008c64160cda4ed2fa2b5c35dbb1",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0010",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "825b9faf241b2d0812d65fbec7ec995e3c043ba6bb74ed5ec1770f4f94aa0a62",
+        "layout": "f41ef6b82f535b802ccbeb4bc8afff36d18538ed4987ad4f7030e3e3d33b7e32",
+        "render": "78397821eb8b40e45fe7145a8513e720e9f5643b3f08a6f11deeb5433f946c9c"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-b-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0010",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0009",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0011"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0010",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0009",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0011"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0010",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0009",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0011"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Convex sets",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "definition",
+          "description": "La definizione quantifica su ogni coppia z_A,z_B∈Z e ogni θ∈[0,1].",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0010",
+            "modality": "both",
+            "text_quote": "A set Z",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "diagram",
+          "description": "Il disegno contrappone una regione convessa e una non convessa, con estremi interni e segmento tratteggiato.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0010",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0010",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Distinguere appartenenza dei due estremi e appartenenza dell'intero segmento.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0009",
+          "role": "previous",
+          "note": "Pagina 9: sufficienza locale, senza convessità globale."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0011",
+          "role": "next",
+          "note": "Leggere la disuguaglianza di convessità come confronto fra costo interpolato e interpolazione dei costi."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\theta z_A+(1-\\theta)z_B\\in\\mathbb Z,\\quad\\theta\\in[0,1]",
+          "meaning": "θ percorre il segmento: da B per θ=0 ad A per θ=1. La proprietà deve valere per tutte le coppie dell’insieme.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "structure"
+        ],
+        "rationale": "Pagina distinta per definizione, vincolo o interpretazione; non accorpare."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "Nessuna correzione matematica necessaria dopo confronto con la pagina precedente e successiva."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Combinazioni convesse",
+            "why": "θ e 1−θ sono pesi non negativi che sommano a uno.",
+            "origin": "enrichment",
+            "page_numbers": []
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\theta z_A+(1-\\theta)z_B\\in\\mathbb Z,\\quad\\theta\\in[0,1]",
+            "anchor": "A set Z",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Un insieme è convesso quando ogni segmento fra due suoi punti resta nell’insieme. Un solo segmento che esce basta a confutare la convessità.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "Ellisse e corona esplicite",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Regione 2D, segmento completo e punto corrente; foro bianco e appartenenza calcolata analiticamente.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Distinguere appartenenza dei due estremi e appartenenza dell'intero segmento.",
+            "setup": "Ellisse e corona esplicite",
+            "parameters": [],
+            "derivation": [
+              "Nell’ellisse ogni combinazione convessa resta dentro.",
+              "Nella corona, θ=1/2 produce z=0, escluso dal foro."
+            ],
+            "expected_outcome": "Un test favorevole di un solo segmento non dimostra la proprietà universale.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "SceneViewport",
+          "description": "Regione 2D, segmento completo e punto corrente; foro bianco e appartenenza calcolata analiticamente.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Variare un solo aspetto del confronto mantenendo esplicite le invarianti.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Peso del segmento",
+              "symbol": "\\theta",
+              "origin": "enrichment",
+              "range": "{'min': 0, 'max': 1, 'step': 0.05, 'integer': False}",
+              "default": "0.5",
+              "effect_on_change": "Muove solo il punto sul segmento; estremi, regione e segmento restano fissi.",
+              "edge_cases": [
+                "θ=0 o 1",
+                "Corona al punto medio"
+              ]
+            },
+            {
+              "name": "Insieme",
+              "symbol": "s",
+              "origin": "enrichment",
+              "range": "Ellisse piena / corona con foro",
+              "default": "Ellisse piena",
+              "effect_on_change": "Sostituisce regione ed estremi ammissibili; aggiorna appartenenza e controesempio.",
+              "edge_cases": [
+                "θ=0 o 1",
+                "Corona al punto medio"
+              ]
+            }
+          ],
+          "outputs": [
+            "Distinguere appartenenza dei due estremi e appartenenza dell'intero segmento."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "θ=0 o 1",
+            "expected_behavior": "Il punto coincide con un estremo, sempre ammissibile.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "case": "Corona al punto medio",
+            "expected_behavior": "Il punto non appartiene all’insieme anche se gli estremi vi appartengono.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Distinguere appartenenza dei due estremi e appartenenza dell'intero segmento.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

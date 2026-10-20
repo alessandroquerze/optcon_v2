@@ -81,12 +81,480 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
+    "status": "needs_review",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "d2824f839efa091dffbbd693782a9676620933f614d205d96030589387a25c06",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0025",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "5b5d9b34e6a04f7e56526e5f00676614d0581f6679e0cdfa1525a445a6ad07be",
+        "layout": "75403c209e519bdbc88036618edd401f1993150374a3ccbfef77c202199e1062",
+        "render": "70d323e4f6dc2232430ae3271ddc1f054e35c6224e782128ef8522f674a5f93a"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-c-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0025",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0024",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0026"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0025",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0024",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0026"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0025",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0024",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0026"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Quadratic Programming (unconstrained): properties",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "concept",
+          "description": "La frase introduttiva dice che i quadratic programs sono convex; pagina 24 limita l’affermazione a quelli che ammettono un minimo.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0025",
+            "modality": "both",
+            "text_quote": "Since quadratic programs are convex program",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "concept",
+          "description": "Il riquadro importante dice che le condizioni necessarie sono sufficienti e i minimi globali; occorrono congiuntamente primo e secondo ordine.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0025",
+            "modality": "both",
+            "text_quote": "necessary conditions of optimality are also sufficient",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "equation",
+          "description": "Q>0 garantisce esistenza e unicità del minimo globale z⋆=−Q⁻¹q.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0025",
+            "modality": "both",
+            "text_quote": "If Q > 0",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0025",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Applicare l’inversa soltanto a Q definita positiva e rappresentare correttamente la singolarità.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0024",
+          "role": "previous",
+          "note": "Distinguere stazionarietà, semidefinita positività e compatibilità del sistema lineare."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0026",
+          "role": "next",
+          "note": "Pagina divisoria: algoritmi di ottimizzazione non vincolata. Solo contesto; non implementata."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "Q>0\\quad\\Longrightarrow\\quad z^\\star=-Q^{-1}q",
+          "meaning": "Q>0: curvatura positiva in ogni direzione, inversa definita e minimo globale unico.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [
+        {
+          "description": "Discrepanza della fonte esaminata e risolta nella policy companion: La definizione di pagina 23 impone simmetria, non positività. Una quadratica con Q indefinita non è convessa: la frase iniziale, letta senza la restrizione del contesto di pagina 24 ai QP che ammettono minimi, è troppo generale. Per matrice simmetrica, un punto è minimo se e solo se Q è PSD e soddisfa Qz+q=0. Q PSD da sola non garantisce esistenza: occorre −q nell’immagine di Q; altrimenti una direzione nulla con componente lineare non nulla dà −∞. Q PD implica esistenza, unicità e formula inversa come stampato. La companion esplicita entrambe le condizioni; nessuna correzione alla formula inversa sotto Q>0.",
+          "blocking": false,
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        }
+      ],
+      "progression": {
+        "assessment": "progressive",
+        "related_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0024"
+        ],
+        "added": [
+          "Applicare l’inversa soltanto a Q definita positiva e rappresentare correttamente la singolarità."
+        ],
+        "removed": [],
+        "changed": [
+          "Nuova ipotesi, verso del limite o conseguenza: non eliminare la pagina."
+        ],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "structure"
+        ],
+        "rationale": "Sviluppo distinto di una famiglia concettuale, non duplicazione eliminabile."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "La definizione di pagina 23 impone simmetria, non positività. Una quadratica con Q indefinita non è convessa: la frase iniziale, letta senza la restrizione del contesto di pagina 24 ai QP che ammettono minimi, è troppo generale. Per matrice simmetrica, un punto è minimo se e solo se Q è PSD e soddisfa Qz+q=0. Q PSD da sola non garantisce esistenza: occorre −q nell’immagine di Q; altrimenti una direzione nulla con componente lineare non nulla dà −∞. Q PD implica esistenza, unicità e formula inversa come stampato. La companion esplicita entrambe le condizioni; nessuna correzione alla formula inversa sotto Q>0."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Condizioni congiunte",
+            "why": "Q≥0 e sistema compatibile sono entrambi necessari.",
+            "origin": "source_context",
+            "page_numbers": [
+              24
+            ]
+          },
+          {
+            "concept": "Invertibilità",
+            "why": "Q>0 garantisce inversa e soluzione unica.",
+            "origin": "source_context",
+            "page_numbers": [
+              6,
+              23
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "Q>0\\quad\\Longrightarrow\\quad z^\\star=-Q^{-1}q",
+            "anchor": "Since quadratic programs are convex program",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Con Q>0 il sistema stazionario ha una sola soluzione. Se Q è singolare, possono esistere infiniti minimi oppure una deriva senza minimo.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "λ=2, b=−0.25",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Livelli 2D e superficie 3D, minimo verde o intera retta verde; lettura dinamica della soluzione e del valore minimo, messaggio esplicito se non esistono.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Applicare l’inversa soltanto a Q definita positiva e rappresentare correttamente la singolarità.",
+            "setup": "λ=2, b=−0.25",
+            "parameters": [],
+            "derivation": [
+              "z⋆=(0.5,0.125); costo minimo −0.265625.",
+              "Con λ=0.5, lo stesso b porta z⋆=(0.5,0.5).",
+              "Con λ=0 e b=0 si ottiene una retta di minimi; con b≠0 nessun minimo."
+            ],
+            "expected_outcome": "Non attribuire un unico minimizzatore al caso singolare compatibile.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "FunctionExplorer",
+          "description": "Livelli 2D e superficie 3D, minimo verde o intera retta verde; lettura dinamica della soluzione e del valore minimo, messaggio esplicito se non esistono.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Variare un solo aspetto del confronto mantenendo esplicite le invarianti.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Inclinazione seconda",
+              "symbol": "b",
+              "origin": "enrichment",
+              "range": "{'min': -0.5, 'max': 0.5, 'step': 0.125, 'integer': False}",
+              "default": "-0.25",
+              "effect_on_change": "Sposta il minimo quando Q>0; nel caso singolare crea o elimina la deriva. Q resta fissa.",
+              "edge_cases": [
+                "λ=0,b=0",
+                "λ=0,b≠0",
+                "Piccola curvatura"
+              ]
+            },
+            {
+              "name": "Curvatura di Q",
+              "symbol": "s",
+              "origin": "enrichment",
+              "range": "λ=2 / λ=0.5 / λ=0",
+              "default": "λ=2",
+              "effect_on_change": "Cambia la geometria e la validità dell’inversa; conserva b. Le tre opzioni hanno valori espliciti, senza clamp nascosti.",
+              "edge_cases": [
+                "λ=0,b=0",
+                "λ=0,b≠0",
+                "Piccola curvatura"
+              ]
+            }
+          ],
+          "outputs": [
+            "Applicare l’inversa soltanto a Q definita positiva e rappresentare correttamente la singolarità."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "λ=0,b=0",
+            "expected_behavior": "Infiniti minimi: mostrare insieme, non una finta soluzione unica.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "λ=0,b≠0",
+            "expected_behavior": "Nessuna inversa né minimo; spiegare la direzione di fuga.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "Piccola curvatura",
+            "expected_behavior": "Il minimo si sposta più per lo stesso b; scala fissa fra le opzioni.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Applicare l’inversa soltanto a Q definita positiva e rappresentare correttamente la singolarità.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1,
+  "source_warning": {
+    "policy_version": "1.0.0",
+    "scope": "companion_only",
+    "type": "CORRECTION_WARNING",
+    "review_status": "resolved",
+    "original_analysis_sha256": "aed8d94394923162ab85b1ed7aa8ae0e36ba5f2e67df75b5cc646a7c85046d99",
+    "issues": [
+      {
+        "issue_id": "opt25-source-review",
+        "source_issue_index": 0,
+        "issue": "Quando la soluzione è unica",
+        "type": "CORRECTION_WARNING",
+        "source_expression": "Since quadratic programs are convex program (Q ≥0 is necessary to have a local minimum), then the\nfollowing holds.",
+        "corrected_expression": "z^\\star\\text{ minimo globale}\\quad\\Longleftrightarrow\\quad Q\\ge0\\ \\text{e}\\ Qz^\\star+q=0",
+        "companion_uses": "z^\\star\\text{ minimo globale}\\quad\\Longleftrightarrow\\quad Q\\ge0\\ \\text{e}\\ Qz^\\star+q=0",
+        "short_warning": "⚠ Warning: possibile errore nella slide originale. Per la sufficienza usiamo insieme Q≥0 e Qz⋆+q=0.",
+        "correction_reason": "La definizione di pagina 23 impone simmetria, non positività. Una quadratica con Q indefinita non è convessa: la frase iniziale, letta senza la restrizione del contesto di pagina 24 ai QP che ammettono minimi, è troppo generale. Per matrice simmetrica, un punto è minimo se e solo se Q è PSD e soddisfa Qz+q=0. Q PSD da sola non garantisce esistenza: occorre −q nell’immagine di Q; altrimenti una direzione nulla con componente lineare non nulla dà −∞. Q PD implica esistenza, unicità e formula inversa come stampato. La companion esplicita entrambe le condizioni; nessuna correzione alla formula inversa sotto Q>0.",
+        "use_corrected_value_for_examples": true,
+        "use_corrected_value_for_simulation": true,
+        "resolved": true,
+        "source_references": [
+          "analysis/result/observations"
+        ],
+        "context_pages_consulted": [
+          24,
+          25,
+          26
+        ],
+        "calculation_policy": "SOURCE_LITERAL immutabile; esempi e calcoli usano le ipotesi e le formule companion dichiarate.",
+        "ui": {
+          "show": true,
+          "color": "red",
+          "placement": "Accanto all’enunciato interessato",
+          "when": "Concetto pertinente",
+          "student_text_field": "short_warning"
+        }
+      }
+    ],
+    "companion_overrides": [],
+    "technical_only_legacy_paths": []
   }
 }

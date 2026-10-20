@@ -1,0 +1,415 @@
+{
+  "verified_at": "2026-10-17T22:10:31.244Z",
+  "batch": "A",
+  "base_url": "http://127.0.0.1:4173",
+  "browser": "Chrome / SwiftShader",
+  "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+  "pages": [
+    {
+      "page": 1,
+      "mode": "2D_ONLY",
+      "defaultView": "2D",
+      "loadAndReviewMs": 1525,
+      "geometry": {
+        "height": 1280,
+        "scrollHeight": 1280,
+        "blocks": [
+          {
+            "top": 40,
+            "bottom": 110.65625
+          },
+          {
+            "top": 116.65625,
+            "bottom": 183.84375
+          },
+          {
+            "top": 189.84375,
+            "bottom": 889.359375
+          },
+          {
+            "top": 1163.21875,
+            "bottom": 1240
+          }
+        ],
+        "bottom": 1240,
+        "overlaps": false,
+        "equations": [],
+        "orphanEquations": 0,
+        "outputs": {},
+        "warnings": [],
+        "alerts": [],
+        "concepts": []
+      },
+      "alternatives": [],
+      "formulas": []
+    },
+    {
+      "page": 3,
+      "mode": "2D_ONLY",
+      "defaultView": "2D",
+      "loadAndReviewMs": 470,
+      "geometry": {
+        "height": 1280,
+        "scrollHeight": 1280,
+        "blocks": [
+          {
+            "top": 40,
+            "bottom": 110.65625
+          },
+          {
+            "top": 116.65625,
+            "bottom": 183.84375
+          },
+          {
+            "top": 189.84375,
+            "bottom": 456.59375
+          },
+          {
+            "top": 462.59375,
+            "bottom": 687.546875
+          },
+          {
+            "top": 1195.609375,
+            "bottom": 1240
+          }
+        ],
+        "bottom": 1240,
+        "overlaps": false,
+        "equations": [],
+        "orphanEquations": 0,
+        "outputs": {},
+        "warnings": [],
+        "alerts": [],
+        "concepts": []
+      },
+      "alternatives": [],
+      "formulas": []
+    },
+    {
+      "page": 4,
+      "mode": "2D_ONLY",
+      "defaultView": "2D",
+      "loadAndReviewMs": 496,
+      "geometry": {
+        "height": 1280,
+        "scrollHeight": 1280,
+        "blocks": [
+          {
+            "top": 40,
+            "bottom": 110.65625
+          },
+          {
+            "top": 116.65625,
+            "bottom": 183.84375
+          },
+          {
+            "top": 189.84375,
+            "bottom": 578
+          },
+          {
+            "top": 584,
+            "bottom": 808.953125
+          },
+          {
+            "top": 1195.609375,
+            "bottom": 1240
+          }
+        ],
+        "bottom": 1240,
+        "overlaps": false,
+        "equations": [],
+        "orphanEquations": 0,
+        "outputs": {},
+        "warnings": [],
+        "alerts": [],
+        "concepts": []
+      },
+      "alternatives": [],
+      "formulas": []
+    },
+    {
+      "page": 5,
+      "mode": "2D_ONLY",
+      "defaultView": "2D",
+      "loadAndReviewMs": 921,
+      "geometry": {
+        "height": 1280,
+        "scrollHeight": 1280,
+        "blocks": [
+          {
+            "top": 40,
+            "bottom": 110.65625
+          },
+          {
+            "top": 116.65625,
+            "bottom": 183.84375
+          },
+          {
+            "top": 189.84375,
+            "bottom": 428
+          },
+          {
+            "top": 434,
+            "bottom": 687.546875
+          },
+          {
+            "top": 1195.609375,
+            "bottom": 1240
+          }
+        ],
+        "bottom": 1240,
+        "overlaps": false,
+        "equations": [],
+        "orphanEquations": 0,
+        "outputs": {},
+        "warnings": [],
+        "alerts": [],
+        "concepts": []
+      },
+      "alternatives": [],
+      "formulas": []
+    },
+    {
+      "page": 6,
+      "mode": "3D_PRIMARY",
+      "defaultView": "3D",
+      "loadAndReviewMs": 1842,
+      "geometry": {
+        "height": 1280,
+        "scrollHeight": 1280,
+        "blocks": [
+          {
+            "top": 40,
+            "bottom": 110.65625
+          },
+          {
+            "top": 116.65625,
+            "bottom": 150.25
+          },
+          {
+            "top": 156.25,
+            "bottom": 725
+          },
+          {
+            "top": 731,
+            "bottom": 884.78125
+          },
+          {
+            "top": 890.78125,
+            "bottom": 1176.84375
+          },
+          {
+            "top": 1195.609375,
+            "bottom": 1240
+          }
+        ],
+        "bottom": 1240,
+        "overlaps": false,
+        "equations": [
+          {
+            "width": 822,
+            "scrollWidth": 822
+          }
+        ],
+        "orphanEquations": 0,
+        "outputs": {
+          "aerial-direct": "sì",
+          "aerial-detour": "no",
+          "aerial-clearance": "-1.00"
+        },
+        "warnings": [],
+        "alerts": [],
+        "concepts": [
+          "Il segmento diretto attraversa l’edificio se la quota non supera il tetto. La deviazione aggira l’ostacolo: è geometria di un punto, senza dinamica."
+        ]
+      },
+      "alternatives": [],
+      "formulas": [
+        {
+          "formulaId": "p06-geometry",
+          "latex": "\\mathcal O=[-0.5,0.5]^2\\times[0,2],\\qquad z=h",
+          "conceptualExplanation": "Il segmento diretto attraversa l’edificio se la quota non supera il tetto. La deviazione aggira l’ostacolo: è geometria di un punto, senza dinamica.",
+          "details": "A cosa serve. Distinguere un percorso corto da un percorso geometricamente ammissibile.O\\mathcal OOEdificio chiuso della geometria giocattolo, in metri.hhhQuota comune dei due percorsi.Vale quando. Contatto con il tetto o con una faccia conta come intersezione. Nessuna dimensione del veicolo, velocità, spinta o fattibilità dinamica è certificata.h trasla entrambi i percorsi verticalmente e aggiorna intersezione e distanza firmata dal tetto; non modifica l’edificio.A va da (−2,0,h) a (2,0,h). B passa per (−1,1,h) e (1,1,h). La lunghezza di un percorso non equivale automaticamente a consumo o costo di esplorazione."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "mode": "2D_ONLY",
+      "defaultView": "2D",
+      "loadAndReviewMs": 470,
+      "geometry": {
+        "height": 1280,
+        "scrollHeight": 1280,
+        "blocks": [
+          {
+            "top": 40,
+            "bottom": 110.65625
+          },
+          {
+            "top": 116.65625,
+            "bottom": 183.84375
+          },
+          {
+            "top": 189.84375,
+            "bottom": 537
+          },
+          {
+            "top": 543,
+            "bottom": 767.953125
+          },
+          {
+            "top": 1195.609375,
+            "bottom": 1240
+          }
+        ],
+        "bottom": 1240,
+        "overlaps": false,
+        "equations": [],
+        "orphanEquations": 0,
+        "outputs": {},
+        "warnings": [],
+        "alerts": [],
+        "concepts": []
+      },
+      "alternatives": [],
+      "formulas": []
+    },
+    {
+      "page": 9,
+      "mode": "2D_PRIMARY_WITH_3D",
+      "defaultView": "2D",
+      "loadAndReviewMs": 1528,
+      "geometry": {
+        "height": 1280,
+        "scrollHeight": 1280,
+        "blocks": [
+          {
+            "top": 40,
+            "bottom": 110.65625
+          },
+          {
+            "top": 116.65625,
+            "bottom": 269.234375
+          },
+          {
+            "top": 275.234375,
+            "bottom": 737.015625
+          },
+          {
+            "top": 743.015625,
+            "bottom": 922.578125
+          },
+          {
+            "top": 928.578125,
+            "bottom": 1119.25
+          },
+          {
+            "top": 1195.609375,
+            "bottom": 1240
+          }
+        ],
+        "bottom": 1240,
+        "overlaps": false,
+        "equations": [
+          {
+            "width": 850,
+            "scrollWidth": 850
+          }
+        ],
+        "orphanEquations": 0,
+        "outputs": {
+          "discrete-x1": "1.0000",
+          "discrete-x2": "1.0000",
+          "discrete-x6": "1.0000"
+        },
+        "warnings": [],
+        "alerts": [],
+        "concepts": [
+          "Ogni comando uₜ governa una transizione. Il pedice di fₜ permette una legge diversa a ogni passo; x⁰ è il dato che assegna x₀."
+        ]
+      },
+      "alternatives": [
+        {
+          "view": "3D",
+          "height": 1280,
+          "scrollHeight": 1280,
+          "blocks": [
+            {
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "top": 116.65625,
+              "bottom": 269.234375
+            },
+            {
+              "top": 275.234375,
+              "bottom": 737.015625
+            },
+            {
+              "top": 743.015625,
+              "bottom": 922.578125
+            },
+            {
+              "top": 928.578125,
+              "bottom": 1119.25
+            },
+            {
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "bottom": 1240,
+          "overlaps": false,
+          "equations": [
+            {
+              "width": 850,
+              "scrollWidth": 850
+            }
+          ],
+          "orphanEquations": 0,
+          "outputs": {
+            "discrete-x1": "1.0000",
+            "discrete-x2": "1.0000",
+            "discrete-x6": "1.0000"
+          },
+          "warnings": [],
+          "alerts": [],
+          "concepts": [
+            "Ogni comando uₜ governa una transizione. Il pedice di fₜ permette una legge diversa a ogni passo; x⁰ è il dato che assegna x₀."
+          ]
+        }
+      ],
+      "formulas": [
+        {
+          "formulaId": "p09-source-math-0",
+          "latex": "x(t+1)=f(x(t),u(t),t),\\quad x(0)=x^0,\\quad t\\in\\mathbb{N}_0",
+          "conceptualExplanation": "La mappa usa la situazione e l’azione attuali per calcolare lo stato al passo seguente. Il tempo è un indice intero: questa formula non specifica una discretizzazione di un’ODE.",
+          "details": "A cosa serve. Leggere il modello discreto prima del cambio di notazione.x(t),u(t)x(t),u(t)x(t),u(t)Stato e ingresso al passo t.x0x^0x0Dato iniziale assegnato.t∈N0t\\in\\mathbb N_0t∈N0​Indice discreto che comprende zero."
+        },
+        {
+          "formulaId": "p09-source-math-1",
+          "latex": "x_{t+1}=f_t(x_t,u_t),\\quad x_0=x^0,\\quad t\\in\\mathbb{N}_0",
+          "conceptualExplanation": "Ogni comando uₜ governa una transizione. Il pedice di fₜ permette una legge diversa a ogni passo; x⁰ è il dato che assegna x₀.",
+          "details": "A cosa serve. Associare correttamente ingresso, stato precedente e stato successivo.xt,utx_t,u_txt​,ut​Stato e ingresso al passo t.ftf_tft​Mappa di transizione, non derivata."
+        },
+        {
+          "formulaId": "p09-source-math-2",
+          "latex": "x_t\\in\\mathbb{R}^n,\\quad u_t\\in\\mathbb{R}^m",
+          "conceptualExplanation": "Stato e azione possono avere dimensioni diverse: una transizione deve restituire tutte le n componenti dello stato.",
+          "details": "A cosa serve. Controllare la compatibilità delle dimensioni del modello discreto.n,mn,mn,mNumeri di componenti di stato e ingresso."
+        },
+        {
+          "formulaId": "p09-enrichment-0",
+          "latex": "x_{t+1}=a x_t+u",
+          "conceptualExplanation": "a conserva o inverte parte dello stato; u aggiunge un contributo a ogni passo. La sequenza può crescere o oscillare: non è sempre convergente.",
+          "details": "A cosa serve. Eseguire sei aggiornamenti e visualizzare geometricamente la stessa mappa.aaaCoefficiente scalare senza unità, assegnato solo nell’esempio.uuuIngresso costante dell’esempio.x0x^0x0Primo stato della sequenza.Vale quando. Esempio aggiunto indipendente dal modello continuo di p8. In 3D gli assi sono stato corrente, ingresso e stato successivo; non posizioni fisiche.a inclina il piano e cambia la propagazione: a=0 elimina la dipendenza dallo stato precedente.u sposta la sezione del piano e tutti gli stati successivi, lasciando x₀ fisso.x⁰ cambia la partenza e tutta la sequenza, senza inclinare il piano."
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "failed_requests": [],
+  "success": true
+}

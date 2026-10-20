@@ -81,12 +81,559 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
+    "status": "needs_review",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "152bb7eae9ebff2280bd441e147bfa5635b74f2ae7708a635038b17f46aaba7e",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0036",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "12f671a2b4b0b1a6f7cc919b61424b569392b60c20c0b7dd482d7513be366829",
+        "layout": "1427f4d5904047b03cd1d1908c1988750a82147a1e0ddea951d74e7e307d37dd",
+        "render": "01db2b4846feb352b46c28093d0acc5aa390c5da472515442e54d239c14b7ce2"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-e-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0036",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0035",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0037"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0036",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0035",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0037"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0036",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0035",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0037"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Newton’s Method via Quadratic Optimization",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "equation",
+          "description": "La pagina riprende il sistema ∇ℓ+∇²ℓΔz=0.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0036",
+            "modality": "both",
+            "text_quote": "Observe that",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "concept",
+          "description": "La fonte lo chiama condizione necessaria e sufficiente del QP senza esplicitare positività della Hessiana.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0036",
+            "modality": "both",
+            "text_quote": "necessary and sufficient",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "equation",
+          "description": "Il QP definisce Δz^k come argmin di gradienteᵀΔz+1/2 ΔzᵀHessianaΔz.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0036",
+            "modality": "both",
+            "text_quote": "quadratic program",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-4",
+          "category": "equation",
+          "description": "La riga finale stampa z^{k+1}=z^k−Δz^k, in conflitto col passo firmato del QP e pagina 35.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0036",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0036",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Interpretare il QP del passo, usare il segno corretto e richiedere curvatura adatta.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0035",
+          "role": "previous",
+          "note": "Collegare ricerca di radici e ottimizzazione senza confondere punto stazionario e minimo."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0037",
+          "role": "next",
+          "note": "Capire che D⁻¹ è la curvatura del modello e che minimizzare un surrogato non basta a ridurre il costo reale."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\Delta z^k=\\operatorname*{arg\\,min}_{\\Delta z}\\nabla\\ell(z^k)^\\top\\Delta z+\\frac12\\Delta z^\\top\\nabla^2\\ell(z^k)\\Delta z",
+          "meaning": "Il QP determina lo spostamento, non la nuova coordinata. Con Hessiana positiva definita è un minimo unico; con curvatura negativa è solo uno stazionario del modello.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\nabla\\ell(z^k)+\\nabla^2\\ell(z^k)\\Delta z^k=0",
+          "meaning": "La derivata del QP rispetto allo spostamento dà lo stesso sistema di Newton. La sufficienza richiede convessità del modello; l’unicità richiede positività definita.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "z^{k+1}=z^k-\\Delta z^k",
+          "meaning": "Questa è la riga stampata: il QP precedente ha già dato a Δzᵏ il segno del passo. La companion usa il più per sommarlo.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [
+        {
+          "description": "Discrepanza della fonte esaminata e risolta nella policy companion: Il QP firmato dà Δz=−H^{-1}g quando H è PD. L’aggiornamento coerente è z nuovo=z+Δz, come pagina 35: il meno finale stampato lo invertirebbe. Per g≠0,H>0 il meno letterale dà una direzione di salita; esempio a=0.5 del cubico, g=−0.75,H=1: Δ=+0.75 e il nuovo punto corretto 1.25, mentre il meno porta a −0.25. Inoltre la sola stazionarietà del QP è sufficiente sotto PSD, non per Hessiane indefinite. PD è sufficiente a garantire un argmin unico e la formula Newton con inversa, non necessaria per ogni QP: PSD singolare compatibile può avere minimi non unici. Per H≤0 nel laboratorio non produrre un finto minimizzatore. Fonte e riga con il meno restano immutabili.",
+          "blocking": false,
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        }
+      ],
+      "progression": {
+        "assessment": "progressive",
+        "related_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0035"
+        ],
+        "added": [
+          "Interpretare il QP del passo, usare il segno corretto e richiedere curvatura adatta."
+        ],
+        "removed": [],
+        "changed": [
+          "Nuova scelta o caratterizzazione della direzione; mantenere una pagina fisica distinta."
+        ],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "source-4",
+          "structure"
+        ],
+        "rationale": "Progressione concettuale, non duplicato eliminabile."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "Il QP firmato dà Δz=−H^{-1}g quando H è PD. L’aggiornamento coerente è z nuovo=z+Δz, come pagina 35: il meno finale stampato lo invertirebbe. Per g≠0,H>0 il meno letterale dà una direzione di salita; esempio a=0.5 del cubico, g=−0.75,H=1: Δ=+0.75 e il nuovo punto corretto 1.25, mentre il meno porta a −0.25. Inoltre la sola stazionarietà del QP è sufficiente sotto PSD, non per Hessiane indefinite. PD è sufficiente a garantire un argmin unico e la formula Newton con inversa, non necessaria per ogni QP: PSD singolare compatibile può avere minimi non unici. Per H≤0 nel laboratorio non produrre un finto minimizzatore. Fonte e riga con il meno restano immutabili.",
+          "SOURCE_LITERAL finale conservato; calcoli usano +Δz.",
+          "L’ipotesi PD rende coerenti argmin unico e inversa; con H≤0 l’esempio non viene simulato come minimizzazione valida."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Newton sul gradiente",
+            "why": "Il sistema assegna a Δz il segno dello spostamento.",
+            "origin": "source_context",
+            "page_numbers": [
+              35
+            ]
+          },
+          {
+            "concept": "QP senza vincoli",
+            "why": "Convessità, compatibilità e positività definita hanno ruoli diversi.",
+            "origin": "source_context",
+            "page_numbers": [
+              24,
+              25
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\Delta z^k=\\operatorname*{arg\\,min}_{\\Delta z}\\nabla\\ell(z^k)^\\top\\Delta z+\\frac12\\Delta z^\\top\\nabla^2\\ell(z^k)\\Delta z",
+            "anchor": "Observe that",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\nabla\\ell(z^k)+\\nabla^2\\ell(z^k)\\Delta z^k=0",
+            "anchor": "Observe that",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "z^{k+1}=z^k-\\Delta z^k",
+            "anchor": "Observe that",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Il modello quadratico determina uno spostamento con segno. Se la Hessiana è positiva definita, il suo minimo è unico; lo spostamento va sommato al punto corrente.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "a=0.5",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Asse orizzontale Δz: variazione reale del costo blu e QP viola, entrambi zero in Δz=0. Stazionario del modello arancio, etichettato minimo solo con curvatura positiva.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Interpretare il QP del passo, usare il segno corretto e richiedere curvatura adatta.",
+            "setup": "a=0.5",
+            "parameters": [],
+            "derivation": [
+              "g=−0.75, H=1; q(Δz)=−0.75Δz+0.5Δz².",
+              "Il minimo è Δz=0.75; nuovo punto 0.5+0.75=1.25.",
+              "q minimo=−0.28125; vera variazione del costo=−0.140625."
+            ],
+            "expected_outcome": "Il passo si somma; il valore del modello e il costo reale possono differire.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "SceneViewport",
+          "description": "Asse orizzontale Δz: variazione reale del costo blu e QP viola, entrambi zero in Δz=0. Stazionario del modello arancio, etichettato minimo solo con curvatura positiva.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Il punto a cambia il segno della curvatura; il grafico separa spostamento e nuova decisione e mostra quando argmin non esiste.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Punto di costruzione",
+              "symbol": "a",
+              "origin": "enrichment",
+              "range": "{'min': -1.8, 'max': 1.8, 'step': 0.1, 'integer': False}",
+              "default": "0.5",
+              "effect_on_change": "Ricostruisce la variazione reale e il QP; aggiorna passo, tipo di stazionario e nuovo punto, mantenendo il cubico.",
+              "edge_cases": [
+                "a>0",
+                "a<0",
+                "a=0",
+                "Fuori intervallo"
+              ]
+            },
+            {
+              "name": "Esegui un passo",
+              "symbol": "k",
+              "origin": "enrichment",
+              "range": "Solo se il modello ha minimo unico e il nuovo punto sta in [−1.8,1.8]",
+              "default": "a=0.5",
+              "effect_on_change": "Applica a←a+Δz, mai a−Δz. Se il QP non ha minimo, non avanza come se ne avesse uno.",
+              "edge_cases": [
+                "a>0",
+                "a<0",
+                "a=0",
+                "Fuori intervallo"
+              ]
+            }
+          ],
+          "outputs": [
+            "Interpretare il QP del passo, usare il segno corretto e richiedere curvatura adatta."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "a>0",
+            "expected_behavior": "QP strettamente convesso, minimo unico; applicare il più. Il passo pieno può comunque aumentare il costo reale, per esempio a=0.32.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "a<0",
+            "expected_behavior": "QP concavo e illimitato inferiormente: lo stazionario non è minimo.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "a=0",
+            "expected_behavior": "QP lineare non costante, niente minimo né inversa.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "Fuori intervallo",
+            "expected_behavior": "Nessun clamp del minimizzatore o del nuovo punto.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Interpretare il QP del passo, usare il segno corretto e richiedere curvatura adatta.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1,
+  "source_warning": {
+    "policy_version": "1.0.0",
+    "scope": "companion_only",
+    "type": "CORRECTION_WARNING",
+    "review_status": "resolved",
+    "original_analysis_sha256": "afa87c5f9e769970dad091b8eac2fe07b3be5c7835584cbad60fa8362a6d1dd5",
+    "issues": [
+      {
+        "issue_id": "opt36-source-review",
+        "source_issue_index": 0,
+        "issue": "Il passo è il minimo del modello",
+        "type": "CORRECTION_WARNING",
+        "source_expression": "\\nabla\\ell(z^k)+\\nabla^2\\ell(z^k)\\Delta z^k=0; \\Delta z^k=\\operatorname*{arg\\,min}_{\\Delta z}\\nabla\\ell(z^k)^\\top\\Delta z+\\frac12\\Delta z^\\top\\nabla^2\\ell(z^k)\\Delta z;\\quad z^{k+1}=z^k-\\Delta z^k",
+        "corrected_expression": "z^{k+1}=z^k+\\Delta z^k,\\qquad\\nabla^2\\ell(z^k)>0",
+        "companion_uses": "z^{k+1}=z^k+\\Delta z^k,\\qquad\\nabla^2\\ell(z^k)>0",
+        "short_warning": "⚠ Warning: possibile errore nella slide originale. Usiamo +Δzᵏ e richiediamo Hessiana positiva definita.",
+        "correction_reason": "Il QP firmato dà Δz=−H^{-1}g quando H è PD. L’aggiornamento coerente è z nuovo=z+Δz, come pagina 35: il meno finale stampato lo invertirebbe. Per g≠0,H>0 il meno letterale dà una direzione di salita; esempio a=0.5 del cubico, g=−0.75,H=1: Δ=+0.75 e il nuovo punto corretto 1.25, mentre il meno porta a −0.25. Inoltre la sola stazionarietà del QP è sufficiente sotto PSD, non per Hessiane indefinite. PD è sufficiente a garantire un argmin unico e la formula Newton con inversa, non necessaria per ogni QP: PSD singolare compatibile può avere minimi non unici. Per H≤0 nel laboratorio non produrre un finto minimizzatore. Fonte e riga con il meno restano immutabili.",
+        "use_corrected_value_for_examples": true,
+        "use_corrected_value_for_simulation": true,
+        "resolved": true,
+        "source_references": [
+          "analysis/result/observations"
+        ],
+        "context_pages_consulted": [
+          35,
+          36,
+          37
+        ],
+        "calculation_policy": "SOURCE_LITERAL immutabile; esempi e calcoli usano la versione companion dichiarata.",
+        "ui": {
+          "show": true,
+          "color": "red",
+          "placement": "Accanto al concetto interessato",
+          "when": "Concetto pertinente",
+          "student_text_field": "short_warning"
+        }
+      }
+    ],
+    "companion_overrides": [],
+    "technical_only_legacy_paths": []
   }
 }

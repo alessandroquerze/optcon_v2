@@ -81,12 +81,583 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
+    "status": "needs_review",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "22eb96469de3ee6dff102286b7d3c923fd27d85a601d275eb722b20c2c62480c",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0075",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "667d6638a434cebc8ca3ec313ba7632f939ce1450870c43c179c1c3f4e108067",
+        "layout": "65024eae9280a263f157bc7fc15d626cae8dfade054f95d2ce8bff78116bd6bf",
+        "render": "07c10bbec9fb8b5e04da09c6551325530429c40737e50d0fc2bf40c97fdc2a44"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-k-2026-10-19"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0075",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0074",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0076"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0075",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0074",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0076"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0075",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0074",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0076"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Stepsize selection for constrained optimization (I): Merit function",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "concept",
+          "description": "Obiettivo dichiarato: scegliere γ^k per diminuire costo e violazione; propone una merit function come misura del progresso. Non enuncia una garanzia di discesa separata.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0075",
+            "modality": "both",
+            "text_quote": "Measure progress",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "equation",
+          "description": "Per il problema con uguaglianza h(z)=0 stampa M₁=ℓ+s||g(z)||₁: g è incoerente con il vincolo dichiarato.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0075",
+            "modality": "both",
+            "text_quote": "M1(z; s)",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "definition",
+          "description": "Definisce la norma 1 come somma dei valori assoluti e permette s∈R. La soglia di esattezza richiede s>max_i |λ_i*|.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0075",
+            "modality": "both",
+            "text_quote": "exact merit function",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-4",
+          "category": "concept",
+          "description": "La proposizione riguarda soluzioni del problema originale, non qualunque punto KKT. La minimizzazione locale di M₁ riguarda z*, poiché λ non è argomento di M₁.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0075",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0075",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Leggere una penalità esatta senza confondere diminuzione della merit function e diminuzione separata di costo e vincolo.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0074",
+          "role": "previous",
+          "note": "SQP a passo pieno: QP e moltiplicatore completo; la 77 aggiunge la ricerca del passo."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0076",
+          "role": "next",
+          "note": "Seguire il backtracking con M₁ e distinguere tentativo i da iterazione k."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "M_1(z;s)=\\ell(z)+s\\|g(z)\\|_1",
+          "meaning": "Formula originale conservata: il simbolo g non è il vincolo di uguaglianza definito qui.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\|z\\|_1=\\sum_{i=1}^d|z_i|",
+          "meaning": "Si sommano moduli delle componenti, senza compensazione dei segni.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "s>\\max_i|\\lambda_i^\\star|",
+          "meaning": "Soglia di esattezza locale presso un minimo regolare; non rende minimo ogni punto KKT.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [
+        {
+          "description": "Discrepanza della fonte esaminata e risolta nella policy companion: La slide introduce esclusivamente h(z)=0, ma la definizione usa g. La pagina successiva usa correttamente ||h||₁ nella derivata; 74 e 77 hanno il QP con h. Usare M₁=ℓ+s||h||₁ in esempi, grafici, line search e SQP. Il testo originale e SOURCE_LITERAL sono conservati. La soglia della proposizione è interpretata presso un minimo regolare, senza trasformare una radice KKT in un minimo né promettere discesa separata di costo e violazione.",
+          "blocking": false,
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        }
+      ],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "source-4",
+          "structure"
+        ],
+        "rationale": "Scopo e contenuto autonomi."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "La slide introduce esclusivamente h(z)=0, ma la definizione usa g. La pagina successiva usa correttamente ||h||₁ nella derivata; 74 e 77 hanno il QP con h. Usare M₁=ℓ+s||h||₁ in esempi, grafici, line search e SQP. Il testo originale e SOURCE_LITERAL sono conservati. La soglia della proposizione è interpretata presso un minimo regolare, senza trasformare una radice KKT in un minimo né promettere discesa separata di costo e violazione.",
+          "CORRECTION_WARNING: g→h solo nella companion. Fonte e SOURCE_LITERAL intatti.",
+          "s≥0 è il dominio operativo dell’esempio, non una modifica del dichiarato s∈R.",
+          "La regolarità è una condizione d’uso esplicita, non un’ipotesi testuale inventata. La proposizione non promette discesa separata di ℓ e ||h||."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Moltiplicatore ottimo e regolarità",
+            "why": "La soglia usa λ⋆, non un moltiplicatore corrente qualsiasi.",
+            "origin": "source_context",
+            "page_numbers": [
+              57,
+              60
+            ]
+          },
+          {
+            "concept": "SQP locale",
+            "why": "Serve una misura del progresso oltre al solo costo.",
+            "origin": "source_context",
+            "page_numbers": [
+              74
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "M_1(z;s)=\\ell(z)+s\\|g(z)\\|_1",
+            "anchor": "Measure progress",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\|z\\|_1=\\sum_{i=1}^d|z_i|",
+            "anchor": "Measure progress",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "s>\\max_i|\\lambda_i^\\star|",
+            "anchor": "Measure progress",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "La merit function somma costo e violazione pesata. Il peso s cambia il compromesso; una diminuzione della somma può accompagnarsi a un aumento del solo costo.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "Modello 70–74, s≥0",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Livelli 2D e superficie 3D di M₁, stessa parabola e stessi punti. Barre di ℓ e s|h| al punto di prova. Minimi noti e famiglia alla soglia distinti dal punto corrente.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Leggere una penalità esatta senza confondere diminuzione della merit function e diminuzione separata di costo e vincolo.",
+            "setup": "Modello 70–74, s≥0",
+            "parameters": [],
+            "derivation": [
+              "I minimi vincolati sono (±1/√2,1/2), costo 3/8, |λ⋆|=1/2.",
+              "Per s=.2 il minimo di M₁ è (0,.8), h=.8 e M₁=.18.",
+              "Per s=.5, ogni (x,.5) con |x|≤1/√2 minimizza M₁: non tutti sono ammissibili.",
+              "Per s=.8 i minimi sono i due punti vincolati."
+            ],
+            "expected_outcome": "Il peso può rendere esatta la penalità; uguaglianza alla soglia non dà l’equivalenza completa dei minimi.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "FunctionExplorer",
+          "description": "Livelli 2D e superficie 3D di M₁, stessa parabola e stessi punti. Barre di ℓ e s|h| al punto di prova. Minimi noti e famiglia alla soglia distinti dal punto corrente.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Variare s rende visibile il passaggio dalla penalità debole alla famiglia di soglia e ai minimi ammissibili.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Peso della penalità",
+              "symbol": "s",
+              "origin": "enrichment",
+              "range": "{'min': 0, 'max': 1.5, 'step': 0.05, 'integer': False}",
+              "default": "0.8",
+              "effect_on_change": "Cambia M₁ e i suoi minimi, senza cambiare ℓ o la parabola h=0.",
+              "edge_cases": [
+                "s=0",
+                "s=1/2",
+                "s>1/2",
+                "h=0"
+              ]
+            },
+            {
+              "name": "Ascissa di prova",
+              "symbol": "z_1",
+              "origin": "enrichment",
+              "range": "{'min': -1.2, 'max': 1.2, 'step': 0.1, 'integer': False}",
+              "default": "1",
+              "effect_on_change": "Muove il punto di prova e aggiorna costo, violazione e merit function.",
+              "edge_cases": [
+                "s=0",
+                "s=1/2",
+                "s>1/2",
+                "h=0"
+              ]
+            },
+            {
+              "name": "Ordinata di prova",
+              "symbol": "z_2",
+              "origin": "enrichment",
+              "range": "{'min': -0.2, 'max': 1.5, 'step': 0.1, 'integer': False}",
+              "default": "1",
+              "effect_on_change": "Modifica il residuo h e la penalità; il punto non viene proiettato sul vincolo.",
+              "edge_cases": [
+                "s=0",
+                "s=1/2",
+                "s>1/2",
+                "h=0"
+              ]
+            },
+            {
+              "name": "Soglia esatta",
+              "symbol": "preset",
+              "origin": "enrichment",
+              "range": "s=1/2",
+              "default": "s=.8",
+              "effect_on_change": "Porta s alla soglia e mostra l’intera famiglia di minimi, senza scegliere arbitrariamente un punto.",
+              "edge_cases": [
+                "s=0",
+                "s=1/2",
+                "s>1/2",
+                "h=0"
+              ]
+            }
+          ],
+          "outputs": [
+            "Leggere una penalità esatta senza confondere diminuzione della merit function e diminuzione separata di costo e vincolo."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "s=0",
+            "expected_behavior": "Nessuna penalità; minimo libero non ammissibile.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "s=1/2",
+            "expected_behavior": "Famiglia di minimi, inclusi punti non ammissibili.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "s>1/2",
+            "expected_behavior": "Due minimi vincolati nel modello, non uno solo.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "h=0",
+            "expected_behavior": "M₁=ℓ al punto, senza garantire stazionarietà.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Leggere una penalità esatta senza confondere diminuzione della merit function e diminuzione separata di costo e vincolo.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1,
+  "source_warning": {
+    "policy_version": "1.0.0",
+    "scope": "companion_only",
+    "type": "CORRECTION_WARNING",
+    "review_status": "resolved",
+    "original_analysis_sha256": "8596d532c289c83248a7e85c1fa7d54c1e1bd72011a4bbb588cb6a26de08a01a",
+    "issues": [
+      {
+        "issue_id": "opt75-source-review",
+        "source_issue_index": 0,
+        "issue": "Merit function: costo e violazione insieme",
+        "type": "CORRECTION_WARNING",
+        "source_expression": "M_1(z;s)=\\ell(z)+s\\|g(z)\\|_1",
+        "corrected_expression": "M_1(z;s)=\\ell(z)+s\\|h(z)\\|_1",
+        "companion_uses": "M_1(z;s)=\\ell(z)+s\\|h(z)\\|_1",
+        "short_warning": "⚠ Warning: possibile errore nella slide originale. Qui penalizziamo h(z), il vincolo di uguaglianza.",
+        "correction_reason": "La slide introduce esclusivamente h(z)=0, ma la definizione usa g. La pagina successiva usa correttamente ||h||₁ nella derivata; 74 e 77 hanno il QP con h. Usare M₁=ℓ+s||h||₁ in esempi, grafici, line search e SQP. Il testo originale e SOURCE_LITERAL sono conservati. La soglia della proposizione è interpretata presso un minimo regolare, senza trasformare una radice KKT in un minimo né promettere discesa separata di costo e violazione.",
+        "use_corrected_value_for_examples": true,
+        "use_corrected_value_for_simulation": true,
+        "resolved": true,
+        "source_references": [
+          "/analysis/result/observations"
+        ],
+        "context_pages_consulted": [
+          74,
+          75,
+          76
+        ],
+        "calculation_policy": "SOURCE_LITERAL immutabile; esempi e calcoli usano la versione companion dichiarata.",
+        "ui": {
+          "show": true,
+          "color": "red",
+          "placement": "Accanto al concetto interessato",
+          "when": "Concetto pertinente",
+          "student_text_field": "short_warning"
+        }
+      }
+    ],
+    "companion_overrides": [],
+    "technical_only_legacy_paths": []
   }
 }

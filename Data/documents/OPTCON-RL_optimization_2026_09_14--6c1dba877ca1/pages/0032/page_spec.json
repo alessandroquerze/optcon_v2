@@ -81,12 +81,519 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "d6218ffe792bc29554b73bd42a45ee7c85a4b774e411eb6f854c1d078039c7c4",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0032",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "e30362cc2729a0e12061b0b0b439eaafab5f69bfc30fb593e51090226cfc269b",
+        "layout": "18d965a7a9b77ab8798547a443872620ade11ed78a7012fc1688df0b2f0a50f1",
+        "render": "67718a8d4865d35e6c551d2a1f688a9c8018c27e3d6c336d7819d3cea698b5bd"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-d-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0032",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0031",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0033"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0032",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0031",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0033"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0032",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0031",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0033"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Gradient methods: selecting the descent direction",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "algorithm",
+          "description": "Steepest descent sceglie D^k=I_d.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0032",
+            "modality": "both",
+            "text_quote": "Steepest descent",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "algorithm",
+          "description": "Newton sceglie D^k=(∇²ℓ(z^k))^{-1}, richiede Hessiana>0; γ^k=1 è Newton puro.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0032",
+            "modality": "both",
+            "text_quote": "pure Newton",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "concept",
+          "description": "La fonte qualifica la rapidità di Newton come tipica e asintotica, non una garanzia globale.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0032",
+            "modality": "both",
+            "text_quote": "asymptotically",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-4",
+          "category": "algorithm",
+          "description": "Newton discretizzato usa H(z^k)^{-1}, con H approssimazione simmetrica positiva definita della Hessiana tramite differenze finite.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0032",
+            "modality": "both",
+            "text_quote": "finite",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0032",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Confrontare identità, inversa della Hessiana e inversa di un’approssimazione positiva definita.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0031",
+          "role": "previous",
+          "note": "Capire perché una trasformazione simmetrica positiva definita preserva una pendenza negativa."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0033",
+          "role": "next",
+          "note": "Comprendere la minimizzazione della pendenza sulle direzioni unitarie e il limite del gradiente nullo."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "D^k=I_d",
+          "meaning": "Si segue il gradiente negativo senza riscalarlo secondo la curvatura. Anche con una direzione valida, un passo unitario può essere eccessivo.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "D^k=\\big(\\nabla^2\\ell(z^k)\\big)^{-1}",
+          "meaning": "La curvatura locale riscalibra il gradiente. Occorre Hessiana positiva definita per ottenere la direzione di discesa descritta nella pagina precedente.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "D^k=\\big(H(z^k)\\big)^{-1}",
+          "meaning": "Il metodo discretizzato sostituisce la Hessiana con una stima simmetrica positiva definita da differenze finite. È questa matrice che viene usata nel sistema lineare.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "progressive",
+        "related_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0031"
+        ],
+        "added": [
+          "Confrontare identità, inversa della Hessiana e inversa di un’approssimazione positiva definita."
+        ],
+        "removed": [],
+        "changed": [
+          "Nuova scelta o caratterizzazione della direzione; mantenere una pagina fisica distinta."
+        ],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "source-4",
+          "structure"
+        ],
+        "rationale": "Progressione concettuale, non duplicato eliminabile."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "Nessuna correzione matematica necessaria dopo confronto con la pagina precedente e successiva.",
+          "La pagina introduce scelte di D; la derivazione di Newton per radici della pagina 34 è solo contesto, non viene implementata qui."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Trasformazione SPD",
+            "why": "I tre metodi sono scelte della matrice D.",
+            "origin": "source_context",
+            "page_numbers": [
+              31
+            ]
+          },
+          {
+            "concept": "Derivate seconde",
+            "why": "Hessiana e differenze finite non sono sinonimi.",
+            "origin": "source_context",
+            "page_numbers": [
+              6
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "D^k=I_d",
+            "anchor": "Steepest descent",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "D^k=\\big(\\nabla^2\\ell(z^k)\\big)^{-1}",
+            "anchor": "Steepest descent",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "D^k=\\big(H(z^k)\\big)^{-1}",
+            "anchor": "Steepest descent",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Lo stesso aggiornamento cambia direzione quando cambia Dᵏ. Newton usa curvatura locale; il metodo discretizzato la stima da valutazioni del costo.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "z^k=(0.8,0.6), γ=1",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Livelli 2D e superficie 3D dello stesso costo quartico; punto iniziale, segmento dell’aggiornamento e punto finale del metodo selezionato.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Confrontare identità, inversa della Hessiana e inversa di un’approssimazione positiva definita.",
+            "setup": "z^k=(0.8,0.6), γ=1",
+            "parameters": [],
+            "derivation": [
+              "Gradiente (1.312,2.4); Hessiana diag(2.92,4).",
+              "Steepest arriva a (−0.512,−1.8), aumentando il costo: il passo pieno è eccessivo.",
+              "Newton usa il sistema con Hessiana esatta; il discretizzato con h=0.5 usa prima diagonale 3.045.",
+              "Il confronto è un singolo aggiornamento, senza un teorema di convergenza globale."
+            ],
+            "expected_outcome": "γ=1 denota Newton puro solo quando la matrice è la Hessiana esatta inversa.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "FunctionExplorer",
+          "description": "Livelli 2D e superficie 3D dello stesso costo quartico; punto iniziale, segmento dell’aggiornamento e punto finale del metodo selezionato.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Cambiare metodo a punto e passo fissi rende visibile la diversa curvatura usata; h separa discretizzazione e passo algoritmico.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Passo comune",
+              "symbol": "\\gamma",
+              "origin": "enrichment",
+              "range": "{'min': 0.05, 'max': 1, 'step': 0.05, 'integer': False}",
+              "default": "1",
+              "effect_on_change": "Scala l’unico aggiornamento per il metodo selezionato; costo e punto iniziale restano identici.",
+              "edge_cases": [
+                "γ=1 con steepest",
+                "γ=1 con Newton",
+                "h",
+                "Cambio metodo"
+              ]
+            },
+            {
+              "name": "Passo delle differenze",
+              "symbol": "h",
+              "origin": "enrichment",
+              "range": "{'min': 0.1, 'max': 1.5, 'step': 0.1, 'integer': False}",
+              "default": "0.5",
+              "effect_on_change": "Solo nel metodo discretizzato: ricostruisce H_h e direzione. Non è il passo γ dell’algoritmo; nascosto negli altri metodi.",
+              "edge_cases": [
+                "γ=1 con steepest",
+                "γ=1 con Newton",
+                "h",
+                "Cambio metodo"
+              ]
+            },
+            {
+              "name": "Metodo",
+              "symbol": "D",
+              "origin": "enrichment",
+              "range": "Steepest / Newton esatto / Newton discretizzato",
+              "default": "Steepest",
+              "effect_on_change": "Cambia D e direzione mantenendo γ e z^k; h compare solo quando viene realmente usato.",
+              "edge_cases": [
+                "γ=1 con steepest",
+                "γ=1 con Newton",
+                "h",
+                "Cambio metodo"
+              ]
+            }
+          ],
+          "outputs": [
+            "Confrontare identità, inversa della Hessiana e inversa di un’approssimazione positiva definita."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "γ=1 con steepest",
+            "expected_behavior": "Il costo può aumentare: non modificare il passo di nascosto.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "γ=1 con Newton",
+            "expected_behavior": "Newton puro nel senso della fonte, senza promessa globale.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "h",
+            "expected_behavior": "Positivo e distinto da γ; Hessiana SPD verificata nel modello.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "Cambio metodo",
+            "expected_behavior": "Conservare γ; nascondere h quando non influisce sul calcolo.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Confrontare identità, inversa della Hessiana e inversa di un’approssimazione positiva definita.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

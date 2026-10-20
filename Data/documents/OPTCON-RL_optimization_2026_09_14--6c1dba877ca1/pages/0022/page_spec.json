@@ -81,12 +81,494 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
+    "status": "needs_review",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "1fe3afc7836ca8e23a0d86d34017bb2ba99ae26404aa0b5567439899861fb702",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0022",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "17994b2243ae989b6cc8a6f2dace285e09787c52e7c40692328de757dbcabf42",
+        "layout": "57300fb20ecae4f163644d7ba802130214323e2fa0992aabd1a4ac085fe89d44",
+        "render": "9e944d9ba8d45e3459192e0897665de63d40d20e40c33bf1fb85028fa8ffaa4c"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-c-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0022",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0021",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0023"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0022",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0021",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0023"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0022",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0021",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0023"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Minimization of convex functions",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "assumption",
+          "description": "Il problema è non vincolato su R^d e ℓ è convessa; il gradiente implica differenziabilità, non esplicitata nella proposizione.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0022",
+            "modality": "both",
+            "text_quote": "Let ℓ: Rd →R be a convex function",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "equation",
+          "description": "La proposizione enuncia minimo globale se e solo se ∇ℓ(z⋆)=0.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0022",
+            "modality": "both",
+            "text_quote": "global minimum if and only if",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "concept",
+          "description": "La sufficienza sostituisce il gradiente nullo nel supporto affine; la necessità richiama FNC.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0022",
+            "modality": "both",
+            "text_quote": "The converse is",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0022",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Separare sufficienza globale, unicità ed esistenza nella minimizzazione convessa differenziabile.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0021",
+          "role": "previous",
+          "note": "Comprendere la contraddizione geometrica e il ruolo di punti arbitrariamente vicini."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0023",
+          "role": "next",
+          "note": "Leggere Q simmetrica come curvatura e q come inclinazione di un problema quadratico."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "z^\\star\\text{ minimo globale}\\quad\\Longleftrightarrow\\quad\\nabla\\ell(z^\\star)=0",
+          "meaning": "Per un costo convesso e differenziabile su ℝᵈ, gradiente zero equivale al minimo globale. Esistenza e unicità richiedono altre ipotesi.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\ell(z)\\ge\\ell(z^\\star)+\\nabla\\ell(z^\\star)^T(z-z^\\star)",
+          "meaning": "Se il gradiente è zero, il termine lineare scompare: nessun punto ha costo minore. L’altro verso segue dalla necessità del primo ordine.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [
+        {
+          "description": "Discrepanza della fonte esaminata e risolta nella policy companion: La proposizione usa ∇ℓ e la caratterizzazione al primo ordine senza esplicitare differenziabilità: assunzione implicita precisata nella companion. Non è un’estensione a costi convessi non differenziabili.",
+          "blocking": false,
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        }
+      ],
+      "progression": {
+        "assessment": "progressive",
+        "related_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0021"
+        ],
+        "added": [
+          "Separare sufficienza globale, unicità ed esistenza nella minimizzazione convessa differenziabile."
+        ],
+        "removed": [],
+        "changed": [
+          "Nuova ipotesi, verso del limite o conseguenza: non eliminare la pagina."
+        ],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "structure"
+        ],
+        "rationale": "Sviluppo distinto di una famiglia concettuale, non duplicazione eliminabile."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "La proposizione usa ∇ℓ e la caratterizzazione al primo ordine senza esplicitare differenziabilità: assunzione implicita precisata nella companion. Non è un’estensione a costi convessi non differenziabili."
+        ],
+        "prerequisites": [
+          {
+            "concept": "FNC",
+            "why": "Senza convessità gradiente zero non basta.",
+            "origin": "source_context",
+            "page_numbers": [
+              8
+            ]
+          },
+          {
+            "concept": "Minimi convessi",
+            "why": "Locale implica globale, senza promessa di esistenza o unicità.",
+            "origin": "source_context",
+            "page_numbers": [
+              21
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "z^\\star\\text{ minimo globale}\\quad\\Longleftrightarrow\\quad\\nabla\\ell(z^\\star)=0",
+            "anchor": "Let ℓ: Rd →R be a convex function",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\ell(z)\\ge\\ell(z^\\star)+\\nabla\\ell(z^\\star)^T(z-z^\\star)",
+            "anchor": "Let ℓ: Rd →R be a convex function",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Senza vincoli, convessità e differenziabilità rendono il gradiente nullo equivalente al minimo globale. L’unicità richiede ipotesi ulteriori.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "Quadratica, quartica, costante",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Curva e tangente al candidato; simbolo del minimo distinto dal candidato, una retta intera nel caso costante.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Separare sufficienza globale, unicità ed esistenza nella minimizzazione convessa differenziabile.",
+            "setup": "Quadratica, quartica, costante",
+            "parameters": [],
+            "derivation": [
+              "In zero, le tre funzioni hanno gradiente nullo.",
+              "La quartica ha Hessiana zero ma minimo unico.",
+              "La funzione costante ha gradiente zero ovunque e infiniti minimi."
+            ],
+            "expected_outcome": "Un costo convesso non differenziabile, come |z|, richiede altri strumenti: questo enunciato usa il gradiente.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "SceneViewport",
+          "description": "Curva e tangente al candidato; simbolo del minimo distinto dal candidato, una retta intera nel caso costante.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Variare un solo aspetto del confronto mantenendo esplicite le invarianti.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Punto candidato",
+              "symbol": "z",
+              "origin": "enrichment",
+              "range": "{'min': -1.2, 'max': 1.2, 'step': 0.1, 'integer': False}",
+              "default": "0.6",
+              "effect_on_change": "Muove il candidato e aggiorna gradiente, costo e test; non cambia la funzione selezionata.",
+              "edge_cases": [
+                "z=0",
+                "Costo costante",
+                "Derivabilità"
+              ]
+            },
+            {
+              "name": "Costo",
+              "symbol": "s",
+              "origin": "enrichment",
+              "range": "Quadratica / quartica / costante",
+              "default": "Quadratica",
+              "effect_on_change": "Sostituisce costo e gradiente, conservando il punto; mostra unico minimo o intera retta.",
+              "edge_cases": [
+                "z=0",
+                "Costo costante",
+                "Derivabilità"
+              ]
+            }
+          ],
+          "outputs": [
+            "Separare sufficienza globale, unicità ed esistenza nella minimizzazione convessa differenziabile."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "z=0",
+            "expected_behavior": "Il gradiente nullo certifica sempre il minimo degli esempi.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "Costo costante",
+            "expected_behavior": "Ogni candidato è minimo; non evidenziare un unico ottimo.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "Derivabilità",
+            "expected_behavior": "Precisata vicino all’enunciato; non applicare il gradiente a |z| in zero.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Separare sufficienza globale, unicità ed esistenza nella minimizzazione convessa differenziabile.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1,
+  "source_warning": {
+    "policy_version": "1.0.0",
+    "scope": "companion_only",
+    "type": "INFO_WARNING",
+    "review_status": "resolved",
+    "original_analysis_sha256": "84da4fa130ebc04aad4e658b2d5b3233c28bbe9a97f8908349a2f094211addef",
+    "issues": [
+      {
+        "issue_id": "opt22-source-review",
+        "source_issue_index": 0,
+        "issue": "Gradiente nullo: qui basta davvero",
+        "type": "INFO_WARNING",
+        "source_expression": "Let ℓ: Rd →R be a convex function.",
+        "corrected_expression": "\\ell:\\mathbb R^d\\to\\mathbb R\\text{ convessa e differenziabile}",
+        "companion_uses": "\\ell:\\mathbb R^d\\to\\mathbb R\\text{ convessa e differenziabile}",
+        "short_warning": "Nota: il criterio con il gradiente richiede anche differenziabilità.",
+        "correction_reason": "La proposizione usa ∇ℓ e la caratterizzazione al primo ordine senza esplicitare differenziabilità: assunzione implicita precisata nella companion. Non è un’estensione a costi convessi non differenziabili.",
+        "use_corrected_value_for_examples": true,
+        "use_corrected_value_for_simulation": true,
+        "resolved": true,
+        "source_references": [
+          "analysis/result/observations"
+        ],
+        "context_pages_consulted": [
+          21,
+          22,
+          23
+        ],
+        "calculation_policy": "SOURCE_LITERAL immutabile; esempi e calcoli usano le ipotesi e le formule companion dichiarate.",
+        "ui": {
+          "show": true,
+          "color": "red",
+          "placement": "Accanto all’enunciato interessato",
+          "when": "Concetto pertinente",
+          "student_text_field": "short_warning"
+        }
+      }
+    ],
+    "companion_overrides": [],
+    "technical_only_legacy_paths": []
   }
 }

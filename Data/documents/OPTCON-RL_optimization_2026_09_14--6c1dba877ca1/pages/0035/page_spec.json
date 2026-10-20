@@ -81,12 +81,521 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "e782e74493eb0fe6eccc59d0f871d89cfb253857c17d6da724c8a8310f471ea7",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0035",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "45b050fae975295f6d20dd5533e3d48262e49a7bc3afc97cf18a7cc9be639fda",
+        "layout": "80113d7fa96cd01590fca691b6e423c9a50d5705a5957ca350df989af55df10b",
+        "render": "1cef12f0bbac7b0fcbc87055466bbb47a6199e5060343977674a18a1726cfb4c"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-e-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0035",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0034",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0036"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0035",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0034",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0036"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0035",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0034",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0036"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Newton’s Method for Unconstrained Optimization",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "definition",
+          "description": "Il problema è min ℓ(z) su R^d; i punti stazionari z̄ soddisfano ∇ℓ(z̄)=0.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0035",
+            "modality": "both",
+            "text_quote": "stationary points",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "concept",
+          "description": "La fonte propone r(z)=∇ℓ(z) come problema di radici.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0035",
+            "modality": "both",
+            "text_quote": "root finding problem",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "equation",
+          "description": "Il passo risolve ∇ℓ(z^k)+∇²ℓ(z^k)Δz^k=0.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0035",
+            "modality": "both",
+            "text_quote": "linearization",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-4",
+          "category": "algorithm",
+          "description": "Il passo negativo Hessiana-inversa per gradiente è evidenziato dalla parentesi graffa sotto l’aggiornamento.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0035",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0035",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Collegare ricerca di radici e ottimizzazione senza confondere punto stazionario e minimo.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0034",
+          "role": "previous",
+          "note": "Distinguere zero della linearizzazione e zero della funzione originale, con l’inversa correttamente dimensionata."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0036",
+          "role": "next",
+          "note": "Interpretare il QP del passo, usare il segno corretto e richiedere curvatura adatta."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "z^{k+1}=z^k-\\nabla^2\\ell(z^k)^{-1}\\nabla\\ell(z^k)",
+          "meaning": "Con Hessiana invertibile, questo è Newton applicato al gradiente. Cerca stazionari: invertibile non significa positiva definita né minimo.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\nabla\\ell(z^k)+\\nabla^2\\ell(z^k)\\Delta z^k=0",
+          "meaning": "La Hessiana è il Jacobiano del gradiente: il sistema annulla la sua linearizzazione. Per un costo C² la simmetria rende coerente la trasposta usata nella pagina 34.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "r(z)=\\nabla\\ell(z),\\qquad\\nabla\\ell(\\bar z)=0",
+          "meaning": "L’equazione di radici esprime stazionarietà, una condizione necessaria al primo ordine. Non esclude massimi o selle.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "progressive",
+        "related_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0034"
+        ],
+        "added": [
+          "Collegare ricerca di radici e ottimizzazione senza confondere punto stazionario e minimo."
+        ],
+        "removed": [],
+        "changed": [
+          "Nuova scelta o caratterizzazione della direzione; mantenere una pagina fisica distinta."
+        ],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "source-4",
+          "structure"
+        ],
+        "rationale": "Progressione concettuale, non duplicato eliminabile."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "Nessuna correzione matematica necessaria dopo confronto con la pagina precedente e successiva.",
+          "La positività della Hessiana garantisce il quadro di discesa della 32; la 35 descrive una ricerca di radici quando l’inversa esiste.",
+          "Il grafico rappresenta il gradiente, non il costo cubico."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Ricerca di radici",
+            "why": "Ora il residuo da linearizzare è il gradiente.",
+            "origin": "source_context",
+            "page_numbers": [
+              34
+            ]
+          },
+          {
+            "concept": "Condizioni di ottimalità",
+            "why": "La stazionarietà non basta in assenza di convessità.",
+            "origin": "source_context",
+            "page_numbers": [
+              8,
+              9,
+              22
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "z^{k+1}=z^k-\\nabla^2\\ell(z^k)^{-1}\\nabla\\ell(z^k)",
+            "anchor": "stationary points",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\nabla\\ell(z^k)+\\nabla^2\\ell(z^k)\\Delta z^k=0",
+            "anchor": "stationary points",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "r(z)=\\nabla\\ell(z),\\qquad\\nabla\\ell(\\bar z)=0",
+            "anchor": "stationary points",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Si applica Newton al residuo r=∇ℓ. Risolvere il sistema linearizzato cerca un punto stazionario; con curvatura negativa si può arrivare anche a un massimo.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "a=−0.5",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Grafico del gradiente r(z)=z²−1 e sua tangente. Zeri classificati come massimo/minimo locale del cubico, con Hessiana e variazione di costo visibili.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Collegare ricerca di radici e ottimizzazione senza confondere punto stazionario e minimo.",
+            "setup": "a=−0.5",
+            "parameters": [],
+            "derivation": [
+              "Gradiente −0.75 e Hessiana −1: invertibile ma negativa.",
+              "Il sistema dà Δz=−0.75, nuovo punto −1.25.",
+              "Il costo passa da 0.458333 a 0.598958: aumenta, verso un massimo locale."
+            ],
+            "expected_outcome": "Non reinterpretare una radice del gradiente come un minimo.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "SceneViewport",
+          "description": "Grafico del gradiente r(z)=z²−1 e sua tangente. Zeri classificati come massimo/minimo locale del cubico, con Hessiana e variazione di costo visibili.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Attraversare a=0 mostra singolarità e cambiamento di curvatura; gli aggiornamenti possono avvicinare anche un massimo.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Punto corrente",
+              "symbol": "a",
+              "origin": "enrichment",
+              "range": "{'min': -1.8, 'max': 1.8, 'step': 0.1, 'integer': False}",
+              "default": "1.5",
+              "effect_on_change": "Cambia gradiente, Hessiana e tangente del gradiente; il costo cubico resta fisso.",
+              "edge_cases": [
+                "a=0",
+                "a<0",
+                "a=−1 o +1",
+                "Gradiente entro 10⁻¹²",
+                "Passo fuori intervallo"
+              ]
+            },
+            {
+              "name": "Esegui un passo",
+              "symbol": "k",
+              "origin": "enrichment",
+              "range": "Avanza se il nuovo punto è finito e dentro [−1.8,1.8]",
+              "default": "Punto scelto",
+              "effect_on_change": "Sostituisce a con il punto Newton; non blocca una curvatura negativa fingendo che sia un minimo.",
+              "edge_cases": [
+                "a=0",
+                "a<0",
+                "a=−1 o +1",
+                "Gradiente entro 10⁻¹²",
+                "Passo fuori intervallo"
+              ]
+            }
+          ],
+          "outputs": [
+            "Collegare ricerca di radici e ottimizzazione senza confondere punto stazionario e minimo."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "a=0",
+            "expected_behavior": "Hessiana nulla con gradiente non nullo: niente inversa.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "a<0",
+            "expected_behavior": "Hessiana negativa: non etichettare il punto come minimo.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "a=−1 o +1",
+            "expected_behavior": "Stazionario già raggiunto: distinguere massimo e minimo locale.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "Gradiente entro 10⁻¹²",
+            "expected_behavior": "Arresto numerico dichiarato vicino a uno stazionario; non chiamarlo passo fuori intervallo o zero esatto.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "Passo fuori intervallo",
+            "expected_behavior": "Dichiararlo, senza clamp.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Collegare ricerca di radici e ottimizzazione senza confondere punto stazionario e minimo.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

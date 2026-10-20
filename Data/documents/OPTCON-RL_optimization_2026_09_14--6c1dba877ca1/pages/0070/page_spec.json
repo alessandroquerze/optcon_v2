@@ -81,12 +81,465 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "7e57e9839500b925a0fa24662e564f336a1c5e318fba28c3a08b958adbf349f6",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0070",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "5d583d7a40262ba788c2b3b186d341d839f9703f63453418a5849292cbdfad9a",
+        "layout": "76bf0639dc9dfd9d53a8d452c6665cde5c438291d7887466dc74fd4e73c2d295",
+        "render": "bf9fea6a97f95cf30a6a626325fe513535a244f8f841196d3499c75354b1e9e0"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-j-2026-10-19"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0070",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0069",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0071"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0070",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0069",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0071"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0070",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0069",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0071"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Optimality conditions for equality constrained problems (refresh)",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "definition",
+          "description": "Minimizzazione di ℓ:R^d→R soggetta a h:R^d→R^m con h(z)=0.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0070",
+            "modality": "both",
+            "text_quote": "equality-constrained minimization",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "equation",
+          "description": "Le condizioni del primo ordine sono ∇ℓ(z)+∇h(z)λ=0 e h(z)=0.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0070",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "equation",
+          "description": "Le raccoglie nel gradiente congiunto ∇L(z,λ); ∇h ha forma d×m nella convenzione del corso.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0070",
+            "modality": "both",
+            "text_quote": "which can be written",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0070",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Leggere ∇L come gradiente congiunto in z e λ, composto da stazionarietà e fattibilità.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0069",
+          "role": "previous",
+          "note": "Orientarsi fra residuo KKT, sistema Newton e sequenza di QP locali."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0071",
+          "role": "next",
+          "note": "Comprendere l’aggiornamento congiunto e il ruolo della Hessiana completa della Lagrangiana come Jacobiano del residuo."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\nabla L(z,\\lambda)=\\begin{bmatrix}\\nabla\\ell(z)+\\nabla h(z)\\lambda\\\\h(z)\\end{bmatrix}=0",
+          "meaning": "La parte superiore impone stazionarietà, quella inferiore h=0. ∇h∈Rᵈˣᵐ e ∇L∈Rᵈ⁺ᵐ.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\min_{z\\in\\mathbb R^d}\\ell(z)\\quad\\text{subj.to }h(z)=0",
+          "meaning": "Qui ci sono solo uguaglianze: λ è libero nel segno.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "structure"
+        ],
+        "rationale": "Scopo e contenuto autonomi."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "Nessuna correzione matematica necessaria dopo confronto con la pagina precedente e successiva.",
+          "Il problema numerico e le tre radici sono enrichment. Non chiamare ottimo un punto di prova.",
+          "Le norme quasi nulle da arrotondamento sono indicate come approssimate."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Moltiplicatori e gradiente congiunto",
+            "why": "∇L non coincide con la sola ∇₁L.",
+            "origin": "source_context",
+            "page_numbers": [
+              58,
+              63
+            ]
+          },
+          {
+            "concept": "Necessità e sufficienza",
+            "why": "Un punto KKT può non essere minimo.",
+            "origin": "source_context",
+            "page_numbers": [
+              62
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\nabla L(z,\\lambda)=\\begin{bmatrix}\\nabla\\ell(z)+\\nabla h(z)\\lambda\\\\h(z)\\end{bmatrix}=0",
+            "anchor": "equality-constrained minimization",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\min_{z\\in\\mathbb R^d}\\ell(z)\\quad\\text{subj.to }h(z)=0",
+            "anchor": "equality-constrained minimization",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Annullare solo il bilancio dei gradienti non impone il vincolo. Il residuo congiunto raccoglie entrambe le equazioni e vive in R^{d+m}.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "z=(1,1), λ=0.2",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Livelli del costo e parabola h=0 in 2D; accanto barre con segno dei tre residui. Superficie 3D dello stesso costo con lo stesso punto. λ non è l’altezza e non modifica la superficie.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Leggere ∇L come gradiente congiunto in z e λ, composto da stazionarietà e fattibilità.",
+            "setup": "z=(1,1), λ=0.2",
+            "parameters": [],
+            "derivation": [
+              "r=(0.6,0.2,0).",
+              "Il punto è ammissibile ma non stazionario; ||r||=√0.4≈0.632456.",
+              "Nel punto (0,0),λ=1, r=0 ma ℓ(x,x²)=0.5−0.5x²+0.5x⁴ ha massimo locale all’origine."
+            ],
+            "expected_outcome": "Annullare il residuo non risolve la classificazione del punto.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "FunctionExplorer",
+          "description": "Livelli del costo e parabola h=0 in 2D; accanto barre con segno dei tre residui. Superficie 3D dello stesso costo con lo stesso punto. λ non è l’altezza e non modifica la superficie.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Le tre barre distinguono i residui; i preset confrontano minimo e massimo con le stesse equazioni nulle.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Ascissa corrente",
+              "symbol": "z_1^k",
+              "origin": "enrichment",
+              "range": "{'min': -1.2, 'max': 1.2, 'step': 0.1, 'integer': False}",
+              "default": "1",
+              "effect_on_change": "Cambia punto, gradiente del vincolo, residuo e sistema locale; non cambia il problema.",
+              "edge_cases": [
+                "h=0 ma gradiente non nullo",
+                "r=0 al massimo",
+                "λ cambia"
+              ]
+            },
+            {
+              "name": "Ordinata corrente",
+              "symbol": "z_2^k",
+              "origin": "enrichment",
+              "range": "{'min': -0.2, 'max': 1.5, 'step': 0.1, 'integer': False}",
+              "default": "1",
+              "effect_on_change": "Modifica h e il termine noto; il vincolo linearizzato corregge il residuo solo al primo ordine.",
+              "edge_cases": [
+                "h=0 ma gradiente non nullo",
+                "r=0 al massimo",
+                "λ cambia"
+              ]
+            },
+            {
+              "name": "Moltiplicatore corrente",
+              "symbol": "\\lambda^k",
+              "origin": "enrichment",
+              "range": "{'min': -0.5, 'max': 1.5, 'step': 0.1, 'integer': False}",
+              "default": "0.2",
+              "effect_on_change": "Cambia B=diag(1−2λ,1), il residuo di stazionarietà e la direzione; costo e vincolo restano fissi.",
+              "edge_cases": [
+                "h=0 ma gradiente non nullo",
+                "r=0 al massimo",
+                "λ cambia"
+              ]
+            },
+            {
+              "name": "Mostra minimo KKT / Mostra massimo KKT",
+              "symbol": "preset",
+              "origin": "enrichment",
+              "range": "Due radici analitiche",
+              "default": "Punto corrente (1,1), λ=.2",
+              "effect_on_change": "Imposta punto e moltiplicatore a una radice nota, conservando costo e parabola.",
+              "edge_cases": [
+                "h=0 ma gradiente non nullo",
+                "r=0 al massimo",
+                "λ cambia"
+              ]
+            }
+          ],
+          "outputs": [
+            "Leggere ∇L come gradiente congiunto in z e λ, composto da stazionarietà e fattibilità."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "h=0 ma gradiente non nullo",
+            "expected_behavior": "Ammissibile, non KKT.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "r=0 al massimo",
+            "expected_behavior": "KKT valido, minimo assente.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "λ cambia",
+            "expected_behavior": "Il costo resta fisso; cambiano i residui.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Leggere ∇L come gradiente congiunto in z e λ, composto da stazionarietà e fattibilità.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

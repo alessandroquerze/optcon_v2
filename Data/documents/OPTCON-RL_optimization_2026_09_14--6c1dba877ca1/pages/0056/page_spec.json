@@ -81,12 +81,390 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "31cdb5e9b17d263cd1399598ab3bfee177b2ffa2124ea545fe9ac492dd9391ad",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0056",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "343588a55c789c4736fabaa179f6a50c01600751bd1e98413766517e9bd2821a",
+        "layout": "8767825b7b01332e175d2d2cb99d531184264005043846298b905cf2a9f2221d",
+        "render": "fef177bce760a616cf4ddf7f6412662854e47d6b8bb6d1532abc5ac57d3ee269"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-h-2026-10-19"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0056",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0055",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0057"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0056",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0055",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0057"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0056",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0055",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0057"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Constrained optimization problem set-up",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "equation",
+          "description": "Unico contenuto tecnico: min su z∈R^d di ℓ(z), g_j(z)≤0 per j=1,…,r, h_i(z)=0 per i=1,…,m. Nessun dato, ipotesi di convessità o disegno.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0056",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0056",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Separare costo, disuguaglianze componente per componente e uguaglianze, visualizzandone l’intersezione.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0055",
+          "role": "previous",
+          "note": "Orientarsi nel passaggio dagli algoritmi su insiemi alle condizioni per uguaglianze e disuguaglianze."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0057",
+          "role": "next",
+          "note": "Distinguere vincolo attivo, punto ammissibile e indipendenza lineare dei gradienti pertinenti."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\begin{aligned}\\min_{z\\in\\mathbb R^d}\\;&\\ell(z)\\\\\\text{subj.to }&g_j(z)\\le0,\\ j\\in\\{1,\\ldots,r\\}\\\\&h_i(z)=0,\\ i\\in\\{1,\\ldots,m\\}\\end{aligned}",
+          "meaning": "Tutti i gⱼ≤0 e tutti gli hᵢ=0. Il costo confronta soltanto i punti ammissibili.",
+          "observation_ids": [
+            "source-1",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "source-1",
+          "structure"
+        ],
+        "rationale": "Scopo e contenuto autonomi."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "Nessuna correzione matematica necessaria dopo confronto con la pagina precedente e successiva.",
+          "Fonte senza convessità dichiarata; la convessità e l’unicità valgono per il solo esempio esplicito.",
+          "La sonda non è presentata come ottimo."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Insiemi definiti da vincoli",
+            "why": "Intersecare sottolivelli e zeri.",
+            "origin": "source_context",
+            "page_numbers": [
+              12,
+              13
+            ]
+          },
+          {
+            "concept": "Proiezione",
+            "why": "Leggere il minimo di un costo di distanza.",
+            "origin": "source_context",
+            "page_numbers": [
+              49
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\begin{aligned}\\min_{z\\in\\mathbb R^d}\\;&\\ell(z)\\\\\\text{subj.to }&g_j(z)\\le0,\\ j\\in\\{1,\\ldots,r\\}\\\\&h_i(z)=0,\\ i\\in\\{1,\\ldots,m\\}\\end{aligned}",
+            "anchor": "Constrained optimization problem set-up",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Le disuguaglianze ammettono regioni, le uguaglianze soltanto i loro zeri. Si cerca il costo minore nell’intersezione di tutte queste condizioni.",
+            "source_observation_ids": [
+              "source-1",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "a=−0.5, b=0.6, sonda (0.5,0)",
+            "source_observation_ids": [
+              "source-1",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Stessi livelli 2D e superficie 3D di ℓ; linea verde soltanto sul segmento ammissibile, minimo vincolato e sonda. Residui separati, nessuna area riempita come se l’uguaglianza fosse una regione.",
+            "source_observation_ids": [
+              "source-1",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Separare costo, disuguaglianze componente per componente e uguaglianze, visualizzandone l’intersezione.",
+            "setup": "a=−0.5, b=0.6, sonda (0.5,0)",
+            "parameters": [],
+            "derivation": [
+              "g₁=−0.5, g₂=−0.5, h₁=0: sonda ammissibile.",
+              "Minimo libero (−0.5,0.6), escluso.",
+              "Minimo vincolato (0,0), costo 0.305."
+            ],
+            "expected_outcome": "La soluzione soddisfa insieme costo e vincoli.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "FunctionExplorer",
+          "description": "Stessi livelli 2D e superficie 3D di ℓ; linea verde soltanto sul segmento ammissibile, minimo vincolato e sonda. Residui separati, nessuna area riempita come se l’uguaglianza fosse una regione.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Spostare bersaglio e sonda separa effetto sul costo ed effetto sull’ammissibilità.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Bersaglio orizzontale",
+              "symbol": "a",
+              "origin": "enrichment",
+              "range": "{'min': -0.5, 'max': 1.5, 'step': 0.1, 'integer': False}",
+              "default": "-0.5",
+              "effect_on_change": "Sposta i livelli e il minimo vincolato, saturandone l’ascissa fra 0 e 1.",
+              "edge_cases": [
+                "Sonda fuori segmento",
+                "a=0 o 1",
+                "b cambia"
+              ]
+            },
+            {
+              "name": "Bersaglio verticale",
+              "symbol": "b",
+              "origin": "enrichment",
+              "range": "{'min': -1, 'max': 1, 'step': 0.1, 'integer': False}",
+              "default": "0.6",
+              "effect_on_change": "Sposta il minimo libero e i livelli; il minimo vincolato resta sulla stessa ascissa.",
+              "edge_cases": [
+                "Sonda fuori segmento",
+                "a=0 o 1",
+                "b cambia"
+              ]
+            },
+            {
+              "name": "Ascissa della sonda",
+              "symbol": "z_1",
+              "origin": "enrichment",
+              "range": "{'min': -0.4, 'max': 1.4, 'step': 0.1, 'integer': False}",
+              "default": "0.5",
+              "effect_on_change": "Muove la sonda e i residui delle due disuguaglianze; non sposta l’insieme.",
+              "edge_cases": [
+                "Sonda fuori segmento",
+                "a=0 o 1",
+                "b cambia"
+              ]
+            },
+            {
+              "name": "Ordinata della sonda",
+              "symbol": "z_2",
+              "origin": "enrichment",
+              "range": "{'min': -1, 'max': 1, 'step': 0.1, 'integer': False}",
+              "default": "0",
+              "effect_on_change": "Esplora anche punti fuori dall’uguaglianza; il segmento ammissibile resta fisso.",
+              "edge_cases": [
+                "Sonda fuori segmento",
+                "a=0 o 1",
+                "b cambia"
+              ]
+            }
+          ],
+          "outputs": [
+            "Separare costo, disuguaglianze componente per componente e uguaglianze, visualizzandone l’intersezione."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "Sonda fuori segmento",
+            "expected_behavior": "Costo valutabile ma punto inammissibile.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "structure"
+            ]
+          },
+          {
+            "case": "a=0 o 1",
+            "expected_behavior": "Minimo al bordo anche quando il gradiente orizzontale è nullo.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "structure"
+            ]
+          },
+          {
+            "case": "b cambia",
+            "expected_behavior": "Il minimo vincolato non si muove verticalmente.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Separare costo, disuguaglianze componente per componente e uguaglianze, visualizzandone l’intersezione.",
+            "source_observation_ids": [
+              "source-1",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

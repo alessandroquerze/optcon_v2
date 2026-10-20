@@ -81,12 +81,455 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "72a38f64b48808af9aa63488274e15c69bc582813be9938a8530e1ce55dcbb1f",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0008",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "cc6cd3a747228d70a58506b77958a67d970ce41b241fd83715921459c94cbb82",
+        "layout": "ce94c6db42e11c013f663a85982a84c05fe4592b164bdb0cedaac20f5780425b",
+        "render": "df386d958400f8a784a539178ec3cd26e6d25fa28353b7e04748ae7a92d5e285"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-a-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0008",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0007",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0009"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0008",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0007",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0009"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0008",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0007",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0009"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Necessary conditions of optimality (unconstrainted)",
+      "observations": [
+        {
+          "id": "s01",
+          "category": "assumption",
+          "description": "ℓ è C¹ nell’intorno del minimo locale z⋆; allora ∇ℓ(z⋆)=0.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0008",
+            "modality": "both",
+            "text_quote": "First order necessary condition",
+            "bbox": [
+              20,
+              28,
+              443.5429992675781,
+              241.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "s02",
+          "category": "equation",
+          "description": "Con ℓ C², la Hessiana al minimo è positiva semidefinita, ∇²ℓ(z⋆)≥0.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0008",
+            "modality": "both",
+            "text_quote": "positive semidefinite",
+            "bbox": [
+              20,
+              28,
+              443.5429992675781,
+              241.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "s03",
+          "category": "definition",
+          "description": "I punti con gradiente nullo sono stazionari; includono minimi, massimi e selle.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0008",
+            "modality": "both",
+            "text_quote": "stationary points",
+            "bbox": [
+              20,
+              28,
+              443.5429992675781,
+              241.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "s04",
+          "category": "diagram",
+          "description": "Il disegno qualitativo mostra un minimo globale stretto, massimo locale, minimi piatti e un punto stazionario non minimo etichettato saddle point.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0008",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              20,
+              28,
+              443.5429992675781,
+              241.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, disposizione e crediti/footer letti visivamente; nessun dato numerico dedotto dagli elementi decorativi.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0008",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Interpretare le condizioni necessarie senza invertirne l’implicazione.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0007",
+          "role": "previous",
+          "note": "Conservare la convenzione d×m per una funzione a valori vettoriali."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0009",
+          "role": "next",
+          "note": "Applicare la sufficienza del secondo ordine e riconoscerne i limiti."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\nabla\\ell(z^\\star)=0,\\qquad\\nabla^2\\ell(z^\\star)\\ge0",
+          "meaning": "Sono conseguenze del minimo locale sotto le ipotesi di regolarità. La freccia logica parte dal minimo, non dal semplice annullamento delle derivate.",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\nabla\\ell(\\bar z)=0",
+          "meaning": "Stazionario significa che le variazioni del primo ordine si annullano; la geometria può ancora essere una valle, una cima o una sella.",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "structure"
+        ],
+        "rationale": "Contenuto distinto dalle vicine: non eliminare o accorpare la pagina."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo o spazio della copertina.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Tutto il contenuto, incluse formule, grafici, affiliazione e remark quando presenti.",
+            "observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer e decorazione, o spazio bianco finale.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "La fonte assume C¹ in un intorno per FNC, C² per SNC; il problema è non vincolato.",
+          "Il profilo qualitativo etichetta saddle point su un tratto 1D: nell’esempio si usa una vera sella 2D; non si attribuiscono coordinate o formule al disegno."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Minimo locale",
+            "why": "È la premessa delle implicazioni.",
+            "origin": "source_context",
+            "page_numbers": [
+              3
+            ]
+          },
+          {
+            "concept": "Gradiente e Hessiana",
+            "why": "Sono gli oggetti controllati nelle condizioni.",
+            "origin": "source_context",
+            "page_numbers": [
+              6
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\nabla\\ell(z^\\star)=0,\\qquad\\nabla^2\\ell(z^\\star)\\ge0",
+            "anchor": "First order necessary condition",
+            "notes": "Trascrizione della fonte; le forme equivalenti aggiunte sono enrichment."
+          },
+          {
+            "latex": "\\nabla\\ell(\\bar z)=0",
+            "anchor": "First order necessary condition",
+            "notes": "Trascrizione della fonte; le forme equivalenti aggiunte sono enrichment."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Ogni minimo locale regolare deve avere gradiente nullo; con ℓ∈C² la Hessiana deve essere semidefinita positiva. Superare questi controlli non basta a dimostrare un minimo.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Cinque preset sulla stessa griglia 2D/3D, punto fisso z=0, autovalori e verifiche FNC/SNC.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "Cinque funzioni aggiunte al punto z=0",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli dichiarati nel piano: Cinque preset sulla stessa griglia 2D/3D, punto fisso z=0, autovalori e verifiche FNC/SNC.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Interpretare le condizioni necessarie senza invertirne l’implicazione.",
+            "setup": "Cinque funzioni aggiunte al punto z=0",
+            "parameters": [],
+            "derivation": [
+              "z₁²+z₂²: H=diag(2,2), minimo.",
+              "z₁²−z₂²: H=diag(2,−2), sella.",
+              "−z₁²−z₂²: H=diag(−2,−2), massimo.",
+              "±(z₁⁴+z₂⁴): H=0 in entrambi i casi, ma minimo nel caso + e massimo nel caso −."
+            ],
+            "expected_outcome": "Il massimo quartico supera FNC e SNC e rimane un massimo: le condizioni non sono sufficienti.",
+            "limitations": [
+              "La fonte assume C¹ in un intorno per FNC, C² per SNC; il problema è non vincolato.",
+              "Il profilo qualitativo etichetta saddle point su un tratto 1D: nell’esempio si usa una vera sella 2D; non si attribuiscono coordinate o formule al disegno."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "FunctionExplorer",
+          "description": "Cinque preset sulla stessa griglia 2D/3D, punto fisso z=0, autovalori e verifiche FNC/SNC.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "L’effetto parametrico isola il concetto della pagina.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Funzione dell’esempio",
+              "symbol": "s",
+              "origin": "enrichment",
+              "range": "Minimo quadratico / sella / massimo quadratico / minimo quartico piatto / massimo quartico piatto",
+              "default": "Sella",
+              "effect_on_change": "Cambia funzione, superficie, livelli, formula, autovalori e classificazione; il candidato resta z=0.",
+              "edge_cases": [
+                "H=0",
+                "Sella",
+                "Non derivabilità"
+              ]
+            }
+          ],
+          "outputs": [
+            "Interpretare le condizioni necessarie senza invertirne l’implicazione."
+          ],
+          "invariants": [
+            "La fonte assume C¹ in un intorno per FNC, C² per SNC; il problema è non vincolato.",
+            "Il profilo qualitativo etichetta saddle point su un tratto 1D: nell’esempio si usa una vera sella 2D; non si attribuiscono coordinate o formule al disegno."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "H=0",
+            "expected_behavior": "Semidefinita positiva non significa minimo; confrontare i due quartici.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04",
+              "structure"
+            ]
+          },
+          {
+            "case": "Sella",
+            "expected_behavior": "Gradiente zero ma una direzione di curvatura negativa.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04",
+              "structure"
+            ]
+          },
+          {
+            "case": "Non derivabilità",
+            "expected_behavior": "Le condizioni C¹/C² della fonte non si applicano senza le rispettive ipotesi.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un focus principale, una figura e dettagli su richiesta consentono una singola companion leggibile; nessuna riduzione tipografica.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Interpretare le condizioni necessarie senza invertirne l’implicazione.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "visual",
+              "example",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un focus principale, una figura e dettagli su richiesta consentono una singola companion leggibile; nessuna riduzione tipografica.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

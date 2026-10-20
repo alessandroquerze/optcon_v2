@@ -1,0 +1,255 @@
+{
+  "verified_at": "2026-10-18T01:57:31.154Z",
+  "base_url": "http://127.0.0.1:4173",
+  "environment": "Chrome headless / SwiftShader; software rendering, includes browser automation",
+  "checks": [
+    {
+      "id": "endpoint-feasible",
+      "expected": "no",
+      "status": "PASS"
+    },
+    {
+      "id": "endpoint-residual",
+      "expected": "-1.0000",
+      "status": "PASS"
+    },
+    {
+      "id": "endpoint-feasible",
+      "expected": "sì",
+      "status": "PASS"
+    },
+    {
+      "id": "endpoint-residual",
+      "expected": "0.0000",
+      "status": "PASS"
+    },
+    {
+      "id": "ocp-feasible",
+      "expected": "no",
+      "status": "PASS"
+    },
+    {
+      "id": "ocp-cost",
+      "expected": "non disponibile",
+      "status": "PASS"
+    },
+    {
+      "id": "ocp-feasible",
+      "expected": "sì",
+      "status": "PASS"
+    },
+    {
+      "id": "ocp-cost",
+      "expected": "0.0000",
+      "status": "PASS"
+    },
+    {
+      "id": "tracking-command",
+      "expected": "0.0000",
+      "status": "PASS"
+    },
+    {
+      "id": "tracking-cost",
+      "expected": "0.0000",
+      "status": "PASS"
+    },
+    {
+      "id": "drone-ay",
+      "expected": "-9.8100",
+      "status": "PASS"
+    },
+    {
+      "id": "drone-angular",
+      "expected": "0.0000",
+      "status": "PASS"
+    },
+    {
+      "id": "drone-stage-cost",
+      "expected": "3.0500",
+      "status": "PASS"
+    },
+    {
+      "id": "functional-endpoint",
+      "expected": "0.0000",
+      "status": "PASS"
+    },
+    {
+      "id": "pendulum-acceleration",
+      "expected": "-4.9050",
+      "status": "PASS"
+    },
+    {
+      "id": "pendulum-acceleration",
+      "expected": "0.0000",
+      "status": "PASS"
+    },
+    {
+      "id": "reference-valid",
+      "expected": "equilibrio costante",
+      "status": "PASS"
+    },
+    {
+      "id": "pendulum-candidate-total",
+      "expected": "3.2284",
+      "status": "PASS"
+    },
+    {
+      "id": "pendulum-terminal",
+      "expected": "0.0000",
+      "status": "PASS"
+    }
+  ],
+  "updates": [
+    {
+      "target": 0.1,
+      "input_to_completed_plot_ms": 169
+    },
+    {
+      "target": 0.2,
+      "input_to_completed_plot_ms": 121
+    },
+    {
+      "target": 0.3,
+      "input_to_completed_plot_ms": 113
+    },
+    {
+      "target": 0.4,
+      "input_to_completed_plot_ms": 123
+    },
+    {
+      "target": 0.5,
+      "input_to_completed_plot_ms": 192
+    },
+    {
+      "target": 0.6,
+      "input_to_completed_plot_ms": 106
+    },
+    {
+      "target": 0.7,
+      "input_to_completed_plot_ms": 86
+    },
+    {
+      "target": 0.8,
+      "input_to_completed_plot_ms": 120
+    },
+    {
+      "target": 0.9,
+      "input_to_completed_plot_ms": 89
+    },
+    {
+      "target": 1,
+      "input_to_completed_plot_ms": 108
+    },
+    {
+      "target": 1.1,
+      "input_to_completed_plot_ms": 127
+    },
+    {
+      "target": 1.2,
+      "input_to_completed_plot_ms": 107
+    }
+  ],
+  "median_update_ms": 120,
+  "maximum_update_ms": 192,
+  "preserved": {
+    "dom": true,
+    "camera": true
+  },
+  "navigation": [
+    {
+      "page": 28,
+      "scenes": 1,
+      "webglCanvases": 0
+    },
+    {
+      "page": 29,
+      "scenes": 1,
+      "webglCanvases": 1
+    },
+    {
+      "page": 31,
+      "scenes": 1,
+      "webglCanvases": 0
+    },
+    {
+      "page": 32,
+      "scenes": 1,
+      "webglCanvases": 1
+    },
+    {
+      "page": 33,
+      "scenes": 1,
+      "webglCanvases": 1
+    },
+    {
+      "page": 35,
+      "scenes": 1,
+      "webglCanvases": 0
+    },
+    {
+      "page": 36,
+      "scenes": 1,
+      "webglCanvases": 1
+    },
+    {
+      "page": 24,
+      "scenes": 1,
+      "webglCanvases": 0
+    },
+    {
+      "page": 26,
+      "scenes": 0,
+      "webglCanvases": 0
+    },
+    {
+      "page": 2,
+      "scenes": 0,
+      "webglCanvases": 0
+    },
+    {
+      "page": 8,
+      "scenes": 1,
+      "webglCanvases": 0
+    },
+    {
+      "page": 12,
+      "scenes": 1,
+      "webglCanvases": 1
+    },
+    {
+      "page": 16,
+      "scenes": 1,
+      "webglCanvases": 1
+    },
+    {
+      "page": 17,
+      "scenes": 1,
+      "webglCanvases": 0
+    },
+    {
+      "page": 27,
+      "scenes": 1,
+      "webglCanvases": 1
+    },
+    {
+      "page": 30,
+      "scenes": 0,
+      "webglCanvases": 0
+    },
+    {
+      "page": 34,
+      "scenes": 1,
+      "webglCanvases": 1
+    },
+    {
+      "page": 1,
+      "scenes": 0,
+      "webglCanvases": 0
+    }
+  ],
+  "heap_before": 66729957,
+  "heap_after_navigation": 69923722,
+  "limitations": "No forced GC; heap snapshots are observations and do not prove absence of leaks. Not a hardware GPU benchmark.",
+  "errors": [],
+  "success": true
+}

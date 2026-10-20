@@ -81,12 +81,482 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "fc2924a3f3792115a9cea4ea0e24e5d6d77ae2769e0701a8da438d8d2aa85201",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0042",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "753063574d0c66a9e946f4e919945f02b7570c8c9c9c6a962e0d70413d0c09d9",
+        "layout": "f1790968b809f09e7d7bfa466121a635b962d10f76bf85b8b72ede3c76b1a515",
+        "render": "1b01190138482bdba6c54912ad69fd7a35b254bbe04e594e8357fd472a1ada7e"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-f-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0042",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0041",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0043"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0042",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0041",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0043"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0042",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0041",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0043"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Gradient methods: convergence result (Armijo)",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "algorithm",
+          "description": "Il metodo è z^{k+1}=z^k−γ^kD^k∇ℓ(z^k).",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0042",
+            "modality": "both",
+            "text_quote": "a gradient method",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "assumption",
+          "description": "La fonte richiede d₁I≤D^k≤d₂I con costanti positive, Armijo e ℓ continuamente differenziabile.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0042",
+            "modality": "both",
+            "text_quote": "continuously differentiable",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "concept",
+          "description": "Ogni punto limite della sequenza è stazionario; la remark definisce punto limite tramite una sottosuccessione convergente.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0042",
+            "modality": "both",
+            "text_quote": "every limit point",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0042",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Leggere ipotesi uniformi e conclusione sui punti limite, distinguendola dall’esistenza di tali punti.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0041",
+          "role": "previous",
+          "note": "Distinguere limite zero, somma infinita e quadrati sommabili delle successioni di passi."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0043",
+          "role": "next",
+          "note": "Interpretare il passo sufficientemente piccolo e il controesempio lineare senza inventare punti limite."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\nabla\\ell(\\bar z)=0",
+          "meaning": "Con ℓ∈C¹, Armijo e 0<d₁I≤Dᵏ≤d₂I, ogni eventuale punto limite è stazionario.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "z^{k+1}=z^k-\\gamma^kD^k\\nabla\\ell(z^k)",
+          "meaning": "La matrice cambia la direzione; Armijo sceglie il passo a ogni iterazione.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "d_1I\\le D^k\\le d_2I,\\qquad d_1>0,\\ d_2>0",
+          "meaning": "Gli stessi d₁,d₂ valgono per ogni k: nessuna direzione può degenerare o crescere senza controllo.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "structure"
+        ],
+        "rationale": "Scopo e contenuto autonomi."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "Nessuna correzione matematica necessaria dopo confronto con la pagina precedente e successiva.",
+          "Nessuna garanzia di esistenza di punti limite o di minimo globale attribuita alla proposizione.",
+          "D=I verifica d₁=d₂=1. Coercività e convessità appartengono soltanto al costo aggiunto."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Armijo",
+            "why": "Occorre selezionare il primo passo accettato a ogni iterazione.",
+            "origin": "source_context",
+            "page_numbers": [
+              38,
+              39,
+              40
+            ]
+          },
+          {
+            "concept": "D positiva definita",
+            "why": "I limiti uniformi controllano l’intera sequenza.",
+            "origin": "source_context",
+            "page_numbers": [
+              31
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\nabla\\ell(\\bar z)=0",
+            "anchor": "a gradient method",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "z^{k+1}=z^k-\\gamma^kD^k\\nabla\\ell(z^k)",
+            "anchor": "a gradient method",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "d_1I\\le D^k\\le d_2I,\\qquad d_1>0,\\ d_2>0",
+            "anchor": "a gradient method",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Con matrici uniformemente positive e limitate, Armijo porta ogni eventuale punto limite a essere stazionario. Il teorema non promette un punto limite né un minimo globale.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "Quadratica con D=I, β=0.7,c=0.5",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Livelli 2D e superficie 3D del costo quadratico, stessi iterati, selezione k e minimo noto. Valori correnti di costo, norma gradiente e passo usato.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Leggere ipotesi uniformi e conclusione sui punti limite, distinguendola dall’esistenza di tali punti.",
+            "setup": "Quadratica con D=I, β=0.7,c=0.5",
+            "parameters": [],
+            "derivation": [
+              "A z⁰=(1.5,1), g=(1.5,4).",
+              "γ=0.7⁴=0.2401 è il primo accettato.",
+              "z¹=(1.13985,0.0396); si rivalutano gradiente e ricerca."
+            ],
+            "expected_outcome": "Il percorso finito illustra il teorema, non ne dimostra la conclusione infinita.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "FunctionExplorer",
+          "description": "Livelli 2D e superficie 3D del costo quadratico, stessi iterati, selezione k e minimo noto. Valori correnti di costo, norma gradiente e passo usato.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "L’iterazione selezionabile collega punti sul costo, norma gradiente e passi accettati; β cambia la ricerca mantenendo fisso il confronto.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Fattore di riduzione",
+              "symbol": "\\beta",
+              "origin": "enrichment",
+              "range": "{'min': 0.4, 'max': 0.8, 'step': 0.05, 'integer': False}",
+              "default": "0.7",
+              "effect_on_change": "Ricalcola tutte le ricerche di Armijo dal medesimo z⁰; mette in pausa e torna a k=0.",
+              "edge_cases": [
+                "k=0",
+                "Cambio β",
+                "Norma piccola",
+                "Nessun punto limite"
+              ]
+            },
+            {
+              "name": "Iterazione",
+              "symbol": "k",
+              "origin": "enrichment",
+              "range": "0…24",
+              "default": "0",
+              "effect_on_change": "Seleziona l’iterato e i risultati della relativa ricerca, senza cambiare il problema.",
+              "edge_cases": [
+                "k=0",
+                "Cambio β",
+                "Norma piccola",
+                "Nessun punto limite"
+              ]
+            },
+            {
+              "name": "Play/Pausa, Passo, Riparti",
+              "symbol": "k",
+              "origin": "enrichment",
+              "range": "Campioni già calcolati",
+              "default": "In pausa",
+              "effect_on_change": "Avanza l’indice algoritmico, non il tempo fisico.",
+              "edge_cases": [
+                "k=0",
+                "Cambio β",
+                "Norma piccola",
+                "Nessun punto limite"
+              ]
+            }
+          ],
+          "outputs": [
+            "Leggere ipotesi uniformi e conclusione sui punti limite, distinguendola dall’esistenza di tali punti."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "k=0",
+            "expected_behavior": "Il passo precedente non esiste: mostrare un trattino, non un valore inventato.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "Cambio β",
+            "expected_behavior": "Pausa e ritorno a z⁰; stessi costo e punto iniziale.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "Norma piccola",
+            "expected_behavior": "Arresto numerico distinto da stazionarietà esatta.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "Nessun punto limite",
+            "expected_behavior": "Il teorema resta condizionale; il caso lineare della 43 lo mostra.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Leggere ipotesi uniformi e conclusione sui punti limite, distinguendola dall’esistenza di tali punti.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

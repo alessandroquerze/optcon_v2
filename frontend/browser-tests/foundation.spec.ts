@@ -2,6 +2,7 @@ import { test, expect } from '@playwright/test';
 import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 const manifest=JSON.parse(readFileSync(new URL('../../Data/introduction_companion_manifest.json',import.meta.url),'utf8'));
+const screenshots=process.env.STUDY_SCREENSHOT_DIR??'../Docs/F07_assets';
 test('PDF originale, placeholder, sincronizzazione e limiti',async({page,request})=>{
   const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
   await page.goto('/');
@@ -20,7 +21,7 @@ test('PDF originale, placeholder, sincronizzazione e limiti',async({page,request
   await expect(canvas(36)).toBeVisible();await expect(page.getByRole('button',{name:'Pagina successiva'})).toBeDisabled();
   await page.getByLabel('Numero pagina').fill('0');await page.getByRole('button',{name:'Vai alla pagina'}).click();
   await expect(canvas(1)).toBeVisible();
-  await page.screenshot({path:'../Docs/F05_assets/study-shell.png',fullPage:true});
+  await page.screenshot({path:screenshots+'/foundation-study-shell.png',fullPage:true});
   expect(errors).toEqual([]);
 });
 test('render asincrono, divider e viewport ridotta',async({page})=>{
@@ -68,7 +69,7 @@ test('2D, contour, surface 3D, camera, slider e toggle reali',async({page})=>{
   await expect.poll(()=>scene.getAttribute('data-camera')).not.toBe(orbitCamera);
   await scene.getByRole('button',{name:'Ripristina camera'}).click();
   await expect.poll(()=>scene.locator('.js-plotly-plot').evaluate((el:any)=>el.layout.scene.camera.eye.x)).toBeCloseTo(1.6);
-  await page.screenshot({path:'../Docs/F05_assets/combined-2d-3d.png',fullPage:true});
+  await page.screenshot({path:screenshots+'/foundation-combined-2d-3d.png',fullPage:true});
   await page.getByLabel('Presentazione').selectOption('toggle');
   await expect(page.locator('[data-plot-id="wave-3d"]')).toHaveCount(0);
   await page.getByRole('button',{name:'3D',exact:true}).click();
@@ -89,14 +90,14 @@ test('traiettoria 3D, proiezione e playback collegati',async({page})=>{
   await page.getByRole('button',{name:'Play',exact:true}).click();
   await expect(page.getByRole('button',{name:'Pausa',exact:true})).toBeVisible();
   await page.getByRole('button',{name:'Pausa',exact:true}).click();
-  await page.screenshot({path:'../Docs/F05_assets/trajectory-3d.png',fullPage:true});
+  await page.screenshot({path:screenshots+'/foundation-trajectory-3d.png',fullPage:true});
 });
 test('KaTeX, warning locale e componenti testuali',async({page})=>{
   await page.goto('/#/dev');await page.getByRole('button',{name:'Componenti',exact:true}).click();
   await expect(page.locator('.katex').first()).toBeVisible();
   await expect(page.getByRole('note').first()).toContainText('avviso dimostrativo');
   expect(await page.getByRole('note').first().evaluate(el=>getComputedStyle(el).color)).toBe('rgb(167, 45, 50)');
-  await expect(page.getByLabel('Timeline stato ingresso')).toBeVisible();
+  await expect(page.getByRole('list',{name:'Timeline stato ingresso',exact:true})).toBeVisible();
   await expect(page.getByText('correction_reason')).toHaveCount(0);
 });
 test('campi vettoriali 2D e 3D nativi',async({page})=>{

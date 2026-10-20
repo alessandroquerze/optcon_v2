@@ -81,12 +81,427 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "1d2cc7b07d745e45170d85aea1d068fd4d5c586ef9397aac7617fa95a8ee7688",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0057",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "1a45bc45e7887177aa5fa80564364ec8b1cdbf823915e259565aaa1c7491782e",
+        "layout": "1a69365b7fb20902cb799be5110683e0db54d9e204f8ff35642fd7f73f7cff22",
+        "render": "c2fc5aec0a1615bbd505a259b3a98e133194aaf5e7ebf4c651a52d69a0e46386"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-h-2026-10-19"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0057",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0056",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0058"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0057",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0056",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0058"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0057",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0056",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0058"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Active constraints and regular points",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "definition",
+          "description": "A(z) contiene esattamente gli indici j dei g_j(z)=0; la definizione non include tutti i vincoli soddisfatti.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0057",
+            "modality": "both",
+            "text_quote": "Set of active inequality constraints",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "definition",
+          "description": "Regolare significa che ∇h_i(z), per ogni uguaglianza, e ∇g_j(z), solo j∈A(z), sono linearmente indipendenti.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0057",
+            "modality": "both",
+            "text_quote": "Regular point",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0057",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Distinguere vincolo attivo, punto ammissibile e indipendenza lineare dei gradienti pertinenti.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0056",
+          "role": "previous",
+          "note": "Separare costo, disuguaglianze componente per componente e uguaglianze, visualizzandone l’intersezione."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0058",
+          "role": "next",
+          "note": "Interpretare μ e λ senza confondere L con una penalità da minimizzare congiuntamente."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "A(z)=\\{j\\in\\{1,\\ldots,r\\}\\mid g_j(z)=0\\}",
+          "meaning": "Attivi: gⱼ=0. Per la regolarità si aggiungono tutti i gradienti delle uguaglianze, anche se nulli.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\nabla h_i(z),\\ i\\in\\{1,\\ldots,m\\},\\quad\\nabla g_j(z),\\ j\\in A(z)\\quad\\text{linearly independent}",
+          "meaning": "I vettori sono colonne in Rᵈ, secondo la convenzione del corso. Il loro numero non può superare d.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "structure"
+        ],
+        "rationale": "Scopo e contenuto autonomi."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "Nessuna correzione matematica necessaria dopo confronto con la pagina precedente e successiva.",
+          "Il rango numerico è esatto per i vettori assiali del modello; nessuna tolleranza sul residuo cubico crea falsi vincoli attivi.",
+          "Nessuna necessità di un asse 3D per l’indipendenza di vettori nel piano."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Gradiente vettoriale",
+            "why": "Colonne dei gradienti in Rᵈ.",
+            "origin": "source_context",
+            "page_numbers": [
+              7
+            ]
+          },
+          {
+            "concept": "Uguaglianze equivalenti",
+            "why": "La stessa retta può essere lo zero di y oppure y³.",
+            "origin": "source_context",
+            "page_numbers": [
+              13
+            ]
+          },
+          {
+            "concept": "Problema vincolato",
+            "why": "La regolarità non sostituisce l’ammissibilità.",
+            "origin": "source_context",
+            "page_numbers": [
+              56
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "A(z)=\\{j\\in\\{1,\\ldots,r\\}\\mid g_j(z)=0\\}",
+            "anchor": "Set of active inequality constraints",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\nabla h_i(z),\\ i\\in\\{1,\\ldots,m\\},\\quad\\nabla g_j(z),\\ j\\in A(z)\\quad\\text{linearly independent}",
+            "anchor": "Set of active inequality constraints",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Un vincolo di disuguaglianza è attivo quando vale zero. La regolarità richiede gradienti indipendenti delle uguaglianze e delle sole disuguaglianze attive.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "z=(0,0) sul segmento",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Diagramma 2D del segmento e delle normali effettive con frecce di lunghezza reale; elenco dei gradienti inclusi e rango/numero. Vettori nulli segnalati testualmente, senza frecce inventate.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Distinguere vincolo attivo, punto ammissibile e indipendenza lineare dei gradienti pertinenti.",
+            "setup": "z=(0,0) sul segmento",
+            "parameters": [],
+            "derivation": [
+              "Standard: ∇h₁=(0,1), ∇g₁=(−1,0), indipendenti.",
+              "Aggiungendo g₃=−2z₁: tre vettori in R², rango due.",
+              "h₁=z₂³ ha gradiente nullo su tutta la retta; g₁=−z₁³ ha gradiente nullo al bordo sinistro."
+            ],
+            "expected_outcome": "Geometria uguale, regolarità diversa.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "SceneViewport",
+          "description": "Diagramma 2D del segmento e delle normali effettive con frecce di lunghezza reale; elenco dei gradienti inclusi e rango/numero. Vettori nulli segnalati testualmente, senza frecce inventate.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Cambiare punto e rappresentazione distingue attività, rango e geometria senza alterare l’insieme.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Punto sul segmento",
+              "symbol": "z_1",
+              "origin": "enrichment",
+              "range": "{'min': 0, 'max': 1, 'step': 0.1, 'integer': False}",
+              "default": "0",
+              "effect_on_change": "Muove il punto ammissibile; cambia A(z), l’elenco dei gradienti e il loro rango, mantenendo il segmento.",
+              "edge_cases": [
+                "Punto interno",
+                "Tre gradienti in R²",
+                "Gradiente nullo",
+                "Bordo con moltiplicatore nullo"
+              ]
+            },
+            {
+              "name": "Rappresentazione",
+              "symbol": "s",
+              "origin": "enrichment",
+              "range": "Standard / disuguaglianza ridondante / uguaglianza cubica / disuguaglianza cubica",
+              "default": "Standard",
+              "effect_on_change": "Cambia le funzioni dei vincoli e i gradienti, conservando esattamente lo stesso insieme ammissibile.",
+              "edge_cases": [
+                "Punto interno",
+                "Tre gradienti in R²",
+                "Gradiente nullo",
+                "Bordo con moltiplicatore nullo"
+              ]
+            }
+          ],
+          "outputs": [
+            "Distinguere vincolo attivo, punto ammissibile e indipendenza lineare dei gradienti pertinenti."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "Punto interno",
+            "expected_behavior": "Le disuguaglianze non attive non entrano nel test.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "case": "Tre gradienti in R²",
+            "expected_behavior": "Non possono essere indipendenti.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "case": "Gradiente nullo",
+            "expected_behavior": "Rende dipendente una famiglia non vuota.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "case": "Bordo con moltiplicatore nullo",
+            "expected_behavior": "Attività non implica un moltiplicatore strettamente positivo; sviluppato nella 60.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Distinguere vincolo attivo, punto ammissibile e indipendenza lineare dei gradienti pertinenti.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

@@ -1,4 +1,5 @@
 import { z } from 'zod';
+import { courseDocuments,type DocumentKey } from './documents';
 
 export const visualizationModeSchema = z.enum([
   'NONE', '2D_ONLY', '3D_PRIMARY', '2D_PRIMARY_WITH_3D', '3D_PRIMARY_WITH_2D', '2D_AND_3D_EQUAL',
@@ -122,6 +123,9 @@ const pageSchema = z.object({
 }).passthrough();
 export const manifestSchema = z.object({
   schema_version: z.string(), document_id: z.string(), source_page_count: z.number().int().positive(),
+  coverage_mode: z.enum(['complete','incremental']).optional(),
+  source_page_index: z.array(z.object({page_id:z.string(),physical_page_number:z.number().int().positive(),title:z.string().nullable(),pdf_label:z.string().nullable()}).passthrough()).optional(),
+  course_title:z.string().optional(),
   GRAPHICS_REQUIREMENT: z.literal('FULL_2D_AND_3D_SUPPORT'),
   '3D_VISUALIZATION_POLICY': z.string().min(30),
   source_pdf: z.object({ path: z.string(), filename: z.string(), sha256: z.string().regex(/^[a-f0-9]{64}$/) }),
@@ -142,7 +146,14 @@ export const manifestSchema = z.object({
   }).passthrough(),
 }).passthrough().superRefine((m, ctx) => {
   const fail = (message: string) => ctx.addIssue({ code: 'custom', message });
-  if (m.pages.length !== m.source_page_count ||
+  if (m.coverage_mode==='incremental') {
+    const index=m.source_page_index;
+    if(!index||index.length!==m.source_page_count||index.some((p,i)=>p.physical_page_number!==i+1)||new Set(index.map(p=>p.page_id)).size!==index.length)
+      fail('Indice delle pagine fisiche incompleto o duplicato.');
+    if(m.pages.some(p=>p.source_page>m.source_page_count)||m.pages.some((p,i)=>i>0&&p.source_page<=m.pages[i-1].source_page)||new Set(m.pages.map(p=>p.page_id)).size!==m.pages.length)
+      fail('Mapping incrementale duplicato o fuori documento.');
+    for(const p of m.pages)if(index?.[p.source_page-1]?.page_id!==p.page_id)fail('Identità companion diversa dalla pagina sorgente.');
+  } else if (m.pages.length !== m.source_page_count ||
       m.pages.some((p, i) => p.source_page !== i + 1) ||
       new Set(m.pages.map(p => p.page_id)).size !== m.pages.length) fail('Mapping fisico incompleto o duplicato.');
   for (const p of m.pages) {
@@ -183,13 +194,16 @@ export function parseManifest(value: unknown): ManifestRepository {
     },
   };
 }
-let pending: Promise<ManifestRepository> | undefined;
-export function loadManifest(): Promise<ManifestRepository> {
-  return pending ??= fetch(import.meta.env.BASE_URL + 'course-assets/manifest.json')
+const pending = new Map<DocumentKey,Promise<ManifestRepository>>();
+export function loadManifest(documentKey:DocumentKey='introduction'): Promise<ManifestRepository> {
+  const existing=pending.get(documentKey);if(existing)return existing;
+  const filename=courseDocuments.find(d=>d.key===documentKey)!.manifest;
+  const request=fetch(import.meta.env.BASE_URL + 'course-assets/'+filename)
     .then(response => {
       if (!response.ok) throw new Error('Manifest non caricato (' + response.status + ').');
       return response.json();
-    }).then(parseManifest).catch(error => { pending = undefined; throw error; });
+    }).then(parseManifest).catch(error => { pending.delete(documentKey); throw error; });
+  pending.set(documentKey,request);return request;
 }
 /** Explicit UI projection: technical metadata cannot be spread into a banner. */
 export function studentNotices(page: CompanionDefinition): StudentNotice[] {

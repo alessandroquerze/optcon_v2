@@ -4,6 +4,7 @@ import Plotly from 'plotly.js-dist-min';
 import type { Data, Layout, PlotlyHTMLElement, PlotMouseEvent, PlotRelayoutEvent } from 'plotly.js';
 import { useLinkedSelection } from '../shared/ProjectionLink';
 import { numericCopy } from './numericCopy';
+import { GraphicViewport } from './GraphicViewport';
 
 /** The only module importing or calling the graphics backend. */
 export interface PlotTrace { type: string; [key: string]: unknown; }
@@ -21,7 +22,9 @@ function configuredCamera(spec?: CameraSpecification) {
     y: 2 * Math.cos(elevation) * Math.sin(azimuth), z: 2 * Math.sin(elevation) },
     up: { x: 0, y: 0, z: 1 }, projection: { type: spec.projection } };
 }
-const config = { displaylogo: false, responsive: true, scrollZoom: true, plotGlPixelRatio: 1, modeBarButtonsToRemove: ['lasso2d', 'select2d'] as const };
+// ResizeObserver below owns resizing, including fullscreen height changes. Avoid
+// extra window listeners that can run after React has detached the plot ref.
+const config = { displaylogo: false, responsive: false, scrollZoom: true, plotGlPixelRatio: 1, modeBarButtonsToRemove: ['lasso2d', 'select2d'] as const };
 export interface SceneViewportProps {
   id: string; traces: PlotTrace[]; layout: PlotLayout; is3D?: boolean; label: string; height?: number;
   camera?: CameraSpecification; fontSize?: number;
@@ -38,10 +41,13 @@ export const SceneViewport = memo(function SceneViewport({ id, traces, layout, i
   const resetCamera = useMemo(() => configuredCamera(camera), [camera]);
   useEffect(() => {
     if (!ready || !outer.current) return;
-    let width = 0;
+    let width = 0, height = 0;
     const observer = new ResizeObserver(entries => {
-      const next = entries[0].contentRect.width;
-      if (Math.abs(next-width) > 1 && graph.current) { width = next; void Plotly.Plots.resize(graph.current); }
+      const next = entries[0].contentRect;
+      if ((Math.abs(next.width-width) > 1 || Math.abs(next.height-height) > 1) && graph.current?.isConnected && next.width > 0 && next.height > 0) {
+        width = next.width; height = next.height;
+        void Promise.resolve(Plotly.Plots.resize(graph.current)).catch(() => {});
+      }
     });
     observer.observe(outer.current);
     return () => observer.disconnect();
@@ -97,7 +103,7 @@ export const SceneViewport = memo(function SceneViewport({ id, traces, layout, i
       x: (eye.x ?? 1.6) * factor, y: (eye.y ?? 1.6) * factor, z: (eye.z ?? 1.1) * factor,
     } } });
   };
-  return <div className="scene-viewport" ref={outer} data-plot-id={id} data-plot-ready={ready} data-plot-dimension={is3D ? 3 : 2}>
+  return <GraphicViewport label={label} className="scene-graphic"><div className="scene-viewport" ref={outer} data-plot-id={id} data-plot-ready={ready} data-plot-dimension={is3D ? 3 : 2}>
     {is3D && <div className="camera-toolbar" aria-label={'Camera ' + label}>
       <button onClick={() => cameraAction('orbit')}>Ruota</button><button onClick={() => cameraAction('pan')}>Pan</button>
       <button aria-label={'Zoom avanti ' + label} onClick={() => cameraAction('in')}>+</button>
@@ -108,13 +114,13 @@ export const SceneViewport = memo(function SceneViewport({ id, traces, layout, i
       {axisLegend.map((text, i) => <span key={i}>{text}</span>)}
     </div>}
     {error && <p className="error-card" role="alert">{error}</p>}
-    <div role="img" aria-label={label} style={{ height: is3D ? height - 32 : height }}>
+    <div className="plot-surface" role="img" aria-label={label} style={{ height: is3D ? height - 32 : height }}>
       <Plot data={data} layout={figureLayout} config={{ ...config, modeBarButtonsToRemove: [...config.modeBarButtonsToRemove] }}
-        style={{ width: '100%', height: '100%' }} useResizeHandler
+        style={{ width: '100%', height: '100%' }}
         onInitialized={initialized} onUpdate={updated} onRelayout={relayout} onClick={pick}
         onError={reason => setError('Errore del renderer grafico: ' + reason.message)}
         onWebGlContextLost={() => setError('Contesto 3D non disponibile. Puoi continuare nella vista 2D.')}
         onPurge={() => { graph.current = null; }} />
     </div>
-  </div>;
+  </div></GraphicViewport>;
 });

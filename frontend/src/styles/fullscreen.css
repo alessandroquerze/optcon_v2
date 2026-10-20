@@ -1,0 +1,50 @@
+.graphic-viewport { position:relative; min-width:0; max-width:100%; }
+.graphic-expand { position:absolute; right:4px; top:4px; z-index:6; width:32px; height:28px; padding:0; font-size:22px; line-height:1; color:var(--color-accent); background:#fffffff2; }
+.scene-graphic > .graphic-expand { left:6px; right:auto; }
+.graphic-auto-expand { right:auto; }
+.graphic-fullscreen-error { font-size:14px; color:var(--color-warning); }
+.graphic-bars > .graphic-content { padding-right:40px; }
+.companion-page { position:relative; }
+[data-graphic-fullscreen] {
+  position:fixed !important; inset:0 !important; width:100vw !important; height:100dvh !important;
+  max-width:none !important; max-height:none !important; margin:0 !important; padding:16px !important;
+  border:0 !important; border-radius:0 !important; background:white; color:var(--color-ink);
+  display:flex !important; flex-direction:column !important; gap:12px !important; overflow:hidden !important;
+}
+[data-graphic-fullscreen]::backdrop { background:#152b40cc; }
+[data-graphic-fullscreen].companion-page > :not([data-fullscreen-branch]):not([data-fullscreen-target]):not(.block-controls):not([data-fullscreen-ui]) { display:none !important; }
+[data-graphic-fullscreen] [data-fullscreen-branch] > :not([data-fullscreen-branch]):not([data-fullscreen-target]) { display:none !important; }
+[data-graphic-fullscreen] [data-fullscreen-branch] { display:flex !important; flex-direction:column !important; flex:1 1 0 !important; min-height:0 !important; min-width:0; width:100%; margin:0; }
+[data-graphic-fullscreen] [data-fullscreen-target] { flex:1 1 0; min-height:0; min-width:0; width:100%; }
+[data-graphic-fullscreen] .graphic-viewport,
+[data-graphic-fullscreen] .graphic-content,
+[data-graphic-fullscreen] .function-explorer,
+[data-graphic-fullscreen] .plot-cell,
+[data-graphic-fullscreen] .scene-viewport { display:flex; flex-direction:column; flex:1 1 0; min-height:0; min-width:0; width:100%; }
+[data-graphic-fullscreen] .graphic-content { padding:0; }
+[data-graphic-fullscreen] .visualization-views { flex:1 1 0; min-height:0; display:flex; flex-direction:column; }
+/* Composite views may have an arbitrary layout container around SVG/scene
+   children. Let that container share the available height with its graphics. */
+[data-graphic-fullscreen] .plot-cell :where(div,section):has(> .graphic-viewport) { display:flex; flex-direction:column; flex:1 1 0; min-height:0; min-width:0; width:100%; }
+[data-graphic-fullscreen] .visualization-views.combined-plots { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); grid-template-rows:minmax(0,1fr); }
+[data-graphic-fullscreen] .plot-surface { flex:1 1 0; min-height:0; height:auto !important; }
+[data-graphic-fullscreen] .graphic-expand { display:none; }
+[data-graphic-fullscreen] .graphic-fullscreen-header { flex:0 0 auto; order:-1; display:flex; align-items:center; gap:16px; font-size:20px; min-height:40px; }
+.graphic-fullscreen-header > span:first-child { flex:1; min-width:0; }
+.graphic-fullscreen-header button { font-size:16px; flex-shrink:0; }
+.graphic-escape-hint { font-size:14px; color:var(--color-muted); }
+[data-graphic-fullscreen] .block-controls { flex:0 1 auto !important; order:1; width:100%; min-height:0; max-height:34dvh; overflow:auto; padding:8px 0 0; border-top:1px solid var(--color-border); }
+[data-graphic-fullscreen] .graphic-content > svg,
+[data-graphic-fullscreen] svg[data-fullscreen-target] { display:block; width:100% !important; height:100% !important; flex:1; min-height:0; max-height:100%; }
+[data-graphic-fullscreen] .cost-breakdown,
+[data-graphic-fullscreen] .vector-visualizer,
+[data-graphic-fullscreen] .state-timeline { margin:auto; width:100%; max-width:1400px; }
+[data-graphic-fullscreen] .state-timeline { flex-wrap:wrap; overflow:auto; }
+[data-graphic-fullscreen] .cost-row { margin:12px 0; font-size:22px; }
+@media(max-width:700px) {
+  [data-graphic-fullscreen] { padding:8px !important; gap:8px !important; }
+  [data-graphic-fullscreen] .graphic-fullscreen-header { font-size:16px; gap:8px; }
+  .graphic-escape-hint { display:none; }
+  [data-graphic-fullscreen] .visualization-views.combined-plots { grid-template-columns:minmax(0,1fr); grid-template-rows:repeat(2,minmax(0,1fr)); }
+  [data-graphic-fullscreen] .block-controls { max-height:40dvh; }
+}

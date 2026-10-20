@@ -81,12 +81,408 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "da0ee721001ba38ad72149d2ccd103533879811388ddd459c76bff81948a1ece",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0063",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "983fe2345e7f3a90acd904ae2cc40f41512941635352c424b704ecf7d74dd60a",
+        "layout": "1f3f18781ae7e469f7af9475bff552a6039df9c8cbd1bd0c790f77ab17635e7e",
+        "render": "090ecef25d361b376bc8da56482d2ff5227ccd0367a06b3486dbc7d418a297f0"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-i-2026-10-19"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0063",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0062",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0064"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0063",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0062",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0064"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0063",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0062",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0064"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Remarks on Karush-Kuhn-Tucker (KKT) necessary conditions",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "equation",
+          "description": "Espande ∇₁L(z⋆,μ⋆,λ⋆)=0 in ∇ℓ(z⋆)+∑μ⋆_j∇g_j(z⋆)+∑λ⋆_i∇h_i(z⋆)=0.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0063",
+            "modality": "both",
+            "text_quote": "explicitly written",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "definition",
+          "description": "Chiama complementary slackness i prodotti μ⋆_jg⋆_j(z⋆)=0; la stella aggiuntiva su g compare nella remark, mentre g non cambia definizione nel contesto.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0063",
+            "modality": "both",
+            "text_quote": "complementary slackness",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0063",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Leggere il gradiente della Lagrangiana come somma di vettori e distinguere stazionarietà e prodotti complementari.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0062",
+          "role": "previous",
+          "note": "Definizione di punto KKT; necessario non implica minimo."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0064",
+          "role": "next",
+          "note": "Riconoscere che questa prima progressiva ripropone soltanto il primo ordine e le sue ipotesi, prima della nuova condizione nella 65."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\nabla\\ell(z^\\star)+\\sum_{j=1}^r\\mu_j^\\star\\nabla g_j(z^\\star)+\\sum_{i=1}^m\\lambda_i^\\star\\nabla h_i(z^\\star)=0",
+          "meaning": "Si deriva rispetto a z, a moltiplicatori fissati. Il bilancio deve accompagnarsi ad ammissibilità, μ≥0 e complementarità.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\mu_j^\\star g_j^\\star(z^\\star)=0,\\quad j\\in\\{1,\\ldots,r\\}",
+          "meaning": "La remark denomina questa relazione complementarità. Nel contesto gⱼ⋆ indica lo stesso residuo gⱼ valutato in z⋆.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "structure"
+        ],
+        "rationale": "Scopo e contenuto autonomi."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "Nessuna correzione matematica necessaria dopo confronto con la pagina precedente e successiva.",
+          "La stella aggiunta su g nella seconda remark è una differenza tipografica chiarita dal contesto 60/62, senza warning UI inutile; SOURCE_LITERAL resta intatto.",
+          "Pesi perturbati indicati con cappello, non come moltiplicatori ottimi."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Condizioni KKT",
+            "why": "Sono richieste congiuntamente, con fattibilità.",
+            "origin": "source_context",
+            "page_numbers": [
+              60,
+              62
+            ]
+          },
+          {
+            "concept": "Gradiente di una somma",
+            "why": "I moltiplicatori sono coefficienti durante la derivazione in z.",
+            "origin": "source_context",
+            "page_numbers": [
+              58
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\nabla\\ell(z^\\star)+\\sum_{j=1}^r\\mu_j^\\star\\nabla g_j(z^\\star)+\\sum_{i=1}^m\\lambda_i^\\star\\nabla h_i(z^\\star)=0",
+            "anchor": "explicitly written",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\mu_j^\\star g_j^\\star(z^\\star)=0,\\quad j\\in\\{1,\\ldots,r\\}",
+            "anchor": "explicitly written",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "I gradienti di costo e vincoli, pesati dai moltiplicatori, devono sommarsi a zero. Ma un bilancio perfetto può ancora violare la complementarità.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "a=−0.5 e moltiplicatori perturbati",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Poligono 2D dei contributi al gradiente, disegnati testa-coda con lunghezze reali; origine e risultante, prodotti μ₁g₁ e μ₂g₂ distinti. Nessuna superficie senza ruolo aggiuntivo.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Leggere il gradiente della Lagrangiana come somma di vettori e distinguere stazionarietà e prodotti complementari.",
+            "setup": "a=−0.5 e moltiplicatori perturbati",
+            "parameters": [],
+            "derivation": [
+              "Minimo z⋆=(0,0), g₁=0, g₂=−1.",
+              "Da μ⋆=(0.5,0) si passa a μ̂=(0.9,0.4), λ=0.6.",
+              "∇₁L resta zero, ma μ̂₂g₂=−0.4."
+            ],
+            "expected_outcome": "Un poligono chiuso dei contributi non dimostra tutte le KKT.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "SceneViewport",
+          "description": "Poligono 2D dei contributi al gradiente, disegnati testa-coda con lunghezze reali; origine e risultante, prodotti μ₁g₁ e μ₂g₂ distinti. Nessuna superficie senza ruolo aggiuntivo.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Il selettore conserva il bilancio per isolare la complementarità; a cambia quale vincolo è attivo.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Bersaglio orizzontale",
+              "symbol": "a",
+              "origin": "enrichment",
+              "range": "{'min': -0.5, 'max': 1.5, 'step': 0.1, 'integer': False}",
+              "default": "-0.5",
+              "effect_on_change": "Sposta il minimo e il suo insieme attivo; ricalcola i moltiplicatori esatti o entrambi i pesi perturbati.",
+              "edge_cases": [
+                "a=0 o 1",
+                "Pesi perturbati",
+                "Contributo nullo"
+              ]
+            },
+            {
+              "name": "Moltiplicatori",
+              "symbol": "s",
+              "origin": "enrichment",
+              "range": "KKT esatti / bilancio senza complementarità",
+              "default": "KKT esatti",
+              "effect_on_change": "Aggiunge 0.4 a entrambi i moltiplicatori delle disuguaglianze: stazionarietà e segni invariati, prodotti modificati.",
+              "edge_cases": [
+                "a=0 o 1",
+                "Pesi perturbati",
+                "Contributo nullo"
+              ]
+            }
+          ],
+          "outputs": [
+            "Leggere il gradiente della Lagrangiana come somma di vettori e distinguere stazionarietà e prodotti complementari."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "a=0 o 1",
+            "expected_behavior": "Vincolo attivo con moltiplicatore esatto nullo.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "case": "Pesi perturbati",
+            "expected_behavior": "Bilancio nullo e μ≥0, ma complementarità non nulla.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "case": "Contributo nullo",
+            "expected_behavior": "Nessuna freccia con direzione inventata.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Leggere il gradiente della Lagrangiana come somma di vettori e distinguere stazionarietà e prodotti complementari.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

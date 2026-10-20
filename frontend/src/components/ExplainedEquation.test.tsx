@@ -35,5 +35,8 @@ describe('ExplainedEquation', () => {
     expect(readableFormulaLatex(long)).toContain('\\begin{gathered}');
     expect(readableFormulaLatex(long)).toContain('x(0)=x^0');
     expect(readableFormulaLatex('x=0')).toBe('x=0');
+    const response='\\dot x=-ax+u,\\quad y=x;\\quad x(t)=u/a+(x^0-u/a)e^{-at}\\ (a>0);\\quad x(t)=x^0+ut\\ (a=0)';
+    expect(readableFormulaLatex(response)).toContain('\\begin{gathered}');
+    expect(readableFormulaLatex(response)).toContain('x(t)=x^0+ut');
   });
 });

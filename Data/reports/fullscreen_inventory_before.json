@@ -1,0 +1,1386 @@
+{
+  "created_at": "2026-10-18T02:05:57.223490+00:00",
+  "pages": [
+    {
+      "page": 1,
+      "module": "motivation",
+      "renderer": "CourseOrientation",
+      "uses": []
+    },
+    {
+      "page": 2,
+      "module": "concepts",
+      "renderer": "FeedbackLesson",
+      "uses": [
+        {
+          "path": "frontend/src/companion/lessons/concepts.tsx",
+          "line": 16,
+          "function": "FeedbackLesson",
+          "component": "FeedbackDiagram"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "module": "motivation",
+      "renderer": "DomainMotivation",
+      "uses": [
+        {
+          "path": "frontend/src/companion/lessons/motivation.tsx",
+          "line": 41,
+          "function": "DomainMotivation",
+          "component": "svg"
+        },
+        {
+          "path": "frontend/src/companion/lessons/motivation.tsx",
+          "line": 45,
+          "function": "DomainMotivation",
+          "component": "ModelDiagram"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "module": "motivation",
+      "renderer": "DomainMotivation",
+      "uses": [
+        {
+          "path": "frontend/src/companion/lessons/motivation.tsx",
+          "line": 41,
+          "function": "DomainMotivation",
+          "component": "svg"
+        },
+        {
+          "path": "frontend/src/companion/lessons/motivation.tsx",
+          "line": 45,
+          "function": "DomainMotivation",
+          "component": "ModelDiagram"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "module": "motivation",
+      "renderer": "DomainMotivation",
+      "uses": [
+        {
+          "path": "frontend/src/companion/lessons/motivation.tsx",
+          "line": 41,
+          "function": "DomainMotivation",
+          "component": "svg"
+        },
+        {
+          "path": "frontend/src/companion/lessons/motivation.tsx",
+          "line": 45,
+          "function": "DomainMotivation",
+          "component": "ModelDiagram"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "module": "motivation",
+      "renderer": "AerialGeometry",
+      "uses": [
+        {
+          "path": "frontend/src/companion/lessons/motivation.tsx",
+          "line": 57,
+          "function": "AerialGeometry",
+          "component": "TrajectoryViewer"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "module": "motivation",
+      "renderer": "DomainMotivation",
+      "uses": [
+        {
+          "path": "frontend/src/companion/lessons/motivation.tsx",
+          "line": 41,
+          "function": "DomainMotivation",
+          "component": "svg"
+        },
+        {
+          "path": "frontend/src/companion/lessons/motivation.tsx",
+          "line": 45,
+          "function": "DomainMotivation",
+          "component": "ModelDiagram"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "module": "concepts",
+      "renderer": "ContinuousResponseLesson",
+      "uses": [
+        {
+          "path": "frontend/src/companion/lessons/concepts.tsx",
+          "line": 40,
+          "function": "ContinuousResponseLesson",
+          "component": "FunctionExplorer"
+        },
+        {
+          "path": "frontend/src/companion/lessons/concepts.tsx",
+          "line": 43,
+          "function": "ContinuousResponseLesson",
+          "component": "AlignedTimeSeries"
+        },
+        {
+          "path": "frontend/src/companion/lessons/concepts.tsx",
+          "line": 44,
+          "function": "ContinuousResponseLesson",
+          "component": "SurfacePlot3D"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "module": "motivation",
+      "renderer": "DiscreteTransition",
+      "uses": [
+        {
+          "path": "frontend/src/companion/lessons/motivation.tsx",
+          "line": 72,
+          "function": "DiscreteTransition",
+          "component": "CourseExplorer"
+        },
+        {
+          "path": "frontend/src/companion/lessons/motivation.tsx",
+          "line": 73,
+          "function": "DiscreteTransition",
+          "component": "TrajectoryViewer"
+        },
+        {
+          "path": "frontend/src/companion/lessons/motivation.tsx",
+          "line": 74,
+          "function": "DiscreteTransition",
+          "component": "StateInputTimeline"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "module": "decisionFoundations",
+      "renderer": "HorizonInspector",
+      "uses": [
+        {
+          "path": "frontend/src/companion/lessons/decisionFoundations.tsx",
+          "line": 16,
+          "function": "HorizonInspector",
+          "component": "StateInputTimeline"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "module": "decisionFoundations",
+      "renderer": "EquilibriumExplorer",
+      "uses": [
+        {
+          "path": "frontend/src/companion/lessons/decisionFoundations.tsx",
+          "line": 31,
+          "function": "EquilibriumExplorer",
+          "component": "CourseExplorer"
+        },
+        {
+          "path": "frontend/src/companion/lessons/decisionFoundations.tsx",
+          "line": 33,
+          "function": "EquilibriumExplorer",
+          "component": "TrajectoryViewer"
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "module": "optimization",
+      "renderer": "LinearizationLesson",
+      "uses": [
+        {
+          "path": "frontend/src/companion/lessons/optimization.tsx",
+          "line": 21,
+          "function": "LinearizationLesson",
+          "component": "FunctionExplorer"
+        },
+        {
+          "path": "frontend/src/companion/lessons/optimization.tsx",
+          "line": 23,
+          "function": "LinearizationLesson",
+          "component": "SurfacePlot3D"
+        },
+        {
+          "path": "frontend/src/companion/lessons/optimization.tsx",
+          "line": 27,
+          "function": "LinearizationLesson",
+          "component": "TrajectoryViewer"
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "module": "decisionFoundations",
+      "renderer": "ControlRecap",
+      "uses": [
+        {
+          "path": "frontend/src/companion/lessons/decisionFoundations.tsx",
+          "line": 49,
+          "function": "ControlRecap",
+          "component": "ModelDiagram"
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "module": "decisionFoundations",
+      "renderer": "DecisionSetExplorer",
+      "uses": [
+        {
+          "path": "frontend/src/companion/lessons/decisionFoundations.tsx",
+          "line": 62,
+          "function": "DecisionSetExplorer",
+          "component": "CourseExplorer"
+        },
+        {
+          "path": "frontend/src/companion/lessons/decisionFoundations.tsx",
+          "line": 63,
+          "function": "DecisionSetExplorer",
+          "component": "TrajectoryViewer"
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "module": "decisionFoundations",
+      "renderer": "ScalarCostExplorer",
+      "uses": [
+        {
+          "path": "frontend/src/companion/lessons/decisionFoundations.tsx",
+          "line": 75,
+          "function": "ScalarCostExplorer",
+          "component": "TrajectoryViewer"
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "module": "optimization",
+      "renderer": "WeightedCostLesson",
+      "uses": [
+        {
+          "path": "frontend/src/companion/lessons/optimization.tsx",
+          "line": 52,
+          "function": "WeightedCostLesson",
+          "component": "FunctionExplorer"
+        },
+        {
+          "path": "frontend/src/companion/lessons/optimization.tsx",
+          "line": 54,
+          "function": "WeightedCostLesson",
+          "component": "ContourPlot2D"
+        },
+        {
+          "path": "frontend/src/companion/lessons/optimization.tsx",
+          "line": 57,
+          "function": "WeightedCostLesson",
+          "component": "CostBreakdown"
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "module": "optimization",
+      "renderer": "ConstraintSetsLesson",
+      "uses": [
+        {
+          "path": "frontend/src/companion/lessons/optimization.tsx",
+          "line": 83,
+          "function": "ConstraintSetsLesson",
+          "component": "FunctionExplorer"
+        },
+        {
+          "path": "frontend/src/companion/lessons/optimization.tsx",
+          "line": 85,
+          "function": "ConstraintSetsLesson",
+          "component": "ConstraintVisualizer"
+        },
+        {
+          "path": "frontend/src/companion/lessons/optimization.tsx",
+          "line": 92,
+          "function": "ConstraintSetsLesson",
+          "component": "UnitCircleInset"
+        }
+      ]
+    },
+    {
+      "page": 18,
+      "module": "decisionFoundations",
+      "renderer": "ConstrainedMinimumExplorer",
+      "uses": [
+        {
+          "path": "frontend/src/companion/lessons/decisionFoundations.tsx",
+          "line": 89,
+          "function": "ConstrainedMinimumExplorer",
+          "component": "CourseExplorer"
+        },
+        {
+          "path": "frontend/src/companion/lessons/decisionFoundations.tsx",
+          "line": 90,
+          "function": "ConstrainedMinimumExplorer",
+          "component": "TrajectoryViewer"
+        }
+      ]
+    },
+    {
+      "page": 19,
+      "module": "decisionFoundations",
+      "renderer": "DynamicsEqualities",
+      "uses": [
+        {
+          "path": "frontend/src/companion/lessons/decisionFoundations.tsx",
+          "line": 105,
+          "function": "DynamicsEqualities",
+          "component": "CourseExplorer"
+        },
+        {
+          "path": "frontend/src/companion/lessons/decisionFoundations.tsx",
+          "line": 107,
+          "function": "DynamicsEqualities",
+          "component": "TrajectoryViewer"
+        },
+        {
+          "path": "frontend/src/companion/lessons/decisionFoundations.tsx",
+          "line": 109,
+          "function": "DynamicsEqualities",
+          "component": "StateInputTimeline"
+        }
+      ]
+    },
+    {
+      "page": 20,
+      "module": "ocp",
+      "renderer": "StageCostExplorer",
+      "uses": [
+        {
+          "path": "frontend/src/companion/lessons/ocp.tsx",
+          "line": 16,
+          "function": "StageCostExplorer",
+          "component": "CourseExplorer"
+        },
+        {
+          "path": "frontend/src/companion/lessons/ocp.tsx",
+          "line": 17,
+          "function": "StageCostExplorer",
+          "component": "StateInputTimeline"
+        },
+        {
+          "path": "frontend/src/companion/lessons/ocp.tsx",
+          "line": 17,
+          "function": "StageCostExplorer",
+          "component": "CostBreakdown"
+        }
+      ]
+    },
+    {
+      "page": 21,
+      "module": "ocp",
+      "renderer": "EndpointExplorer",
+      "uses": [
+        {
+          "path": "frontend/src/companion/lessons/ocp.tsx",
+          "line": 28,
+          "function": "EndpointExplorer",
+          "component": "CourseExplorer"
+        },
+        {
+          "path": "frontend/src/companion/lessons/ocp.tsx",
+          "line": 30,
+          "function": "EndpointExplorer",
+          "component": "svg"
+        }
+      ]
+    },
+    {
+      "page": 22,
+      "module": "ocp",
+      "renderer": "TrackingExplorer",
+      "uses": [
+        {
+          "path": "frontend/src/companion/lessons/ocp.tsx",
+          "line": 55,
+          "function": "TrackingExplorer",
+          "component": "CourseExplorer"
+        },
+        {
+          "path": "frontend/src/companion/lessons/ocp.tsx",
+          "line": 56,
+          "function": "TrackingExplorer",
+          "component": "TrajectoryViewer"
+        },
+        {
+          "path": "frontend/src/companion/lessons/ocp.tsx",
+          "line": 58,
+          "function": "TrackingExplorer",
+          "component": "StateInputTimeline"
+        },
+        {
+          "path": "frontend/src/companion/lessons/ocp.tsx",
+          "line": 58,
+          "function": "TrackingExplorer",
+          "component": "CostBreakdown"
+        }
+      ]
+    },
+    {
+      "page": 23,
+      "module": "ocp",
+      "renderer": "CompleteOcpExplorer",
+      "uses": [
+        {
+          "path": "frontend/src/companion/lessons/ocp.tsx",
+          "line": 73,
+          "function": "CompleteOcpExplorer",
+          "component": "CourseExplorer"
+        },
+        {
+          "path": "frontend/src/companion/lessons/ocp.tsx",
+          "line": 74,
+          "function": "CompleteOcpExplorer",
+          "component": "TrajectoryViewer"
+        },
+        {
+          "path": "frontend/src/companion/lessons/ocp.tsx",
+          "line": 78,
+          "function": "CompleteOcpExplorer",
+          "component": "StateInputTimeline"
+        }
+      ]
+    },
+    {
+      "page": 24,
+      "module": "ocp",
+      "renderer": "OutputTrajectoryExplorer",
+      "uses": []
+    },
+    {
+      "page": 25,
+      "module": "ocp",
+      "renderer": "TrackingExplorer",
+      "uses": [
+        {
+          "path": "frontend/src/companion/lessons/ocp.tsx",
+          "line": 55,
+          "function": "TrackingExplorer",
+          "component": "CourseExplorer"
+        },
+        {
+          "path": "frontend/src/companion/lessons/ocp.tsx",
+          "line": 56,
+          "function": "TrackingExplorer",
+          "component": "TrajectoryViewer"
+        },
+        {
+          "path": "frontend/src/companion/lessons/ocp.tsx",
+          "line": 58,
+          "function": "TrackingExplorer",
+          "component": "StateInputTimeline"
+        },
+        {
+          "path": "frontend/src/companion/lessons/ocp.tsx",
+          "line": 58,
+          "function": "TrackingExplorer",
+          "component": "CostBreakdown"
+        }
+      ]
+    },
+    {
+      "page": 26,
+      "module": "ocp",
+      "renderer": "DroneForceExplorer",
+      "uses": [
+        {
+          "path": "frontend/src/companion/lessons/ocp.tsx",
+          "line": 124,
+          "function": "DroneForceExplorer",
+          "component": "CourseExplorer"
+        },
+        {
+          "path": "frontend/src/companion/lessons/ocp.tsx",
+          "line": 126,
+          "function": "DroneForceExplorer",
+          "component": "DroneSnapshot"
+        }
+      ]
+    },
+    {
+      "page": 27,
+      "module": "dynamics",
+      "renderer": "EulerDiscretizationLesson",
+      "uses": [
+        {
+          "path": "frontend/src/companion/lessons/dynamics.tsx",
+          "line": 33,
+          "function": "EulerDiscretizationLesson",
+          "component": "VisualizationSwitch"
+        },
+        {
+          "path": "frontend/src/companion/lessons/dynamics.tsx",
+          "line": 34,
+          "function": "EulerDiscretizationLesson",
+          "component": "AlignedTimeSeries"
+        },
+        {
+          "path": "frontend/src/companion/lessons/dynamics.tsx",
+          "line": 35,
+          "function": "EulerDiscretizationLesson",
+          "component": "TrajectoryViewer"
+        }
+      ]
+    },
+    {
+      "page": 28,
+      "module": "continuous",
+      "renderer": "DroneRequirementsExplorer",
+      "uses": [
+        {
+          "path": "frontend/src/companion/lessons/continuous.tsx",
+          "line": 19,
+          "function": "DroneRequirementsExplorer",
+          "component": "VisualizationSwitch"
+        },
+        {
+          "path": "frontend/src/companion/lessons/continuous.tsx",
+          "line": 20,
+          "function": "DroneRequirementsExplorer",
+          "component": "AlignedTimeSeries"
+        },
+        {
+          "path": "frontend/src/companion/lessons/continuous.tsx",
+          "line": 21,
+          "function": "DroneRequirementsExplorer",
+          "component": "TrajectoryViewer"
+        }
+      ]
+    },
+    {
+      "page": 29,
+      "module": "continuous",
+      "renderer": "DroneStageExplorer",
+      "uses": [
+        {
+          "path": "frontend/src/companion/lessons/continuous.tsx",
+          "line": 39,
+          "function": "DroneStageExplorer",
+          "component": "CourseExplorer"
+        },
+        {
+          "path": "frontend/src/companion/lessons/continuous.tsx",
+          "line": 39,
+          "function": "DroneStageExplorer",
+          "component": "CostBreakdown"
+        }
+      ]
+    },
+    {
+      "page": 30,
+      "module": "dynamics",
+      "renderer": "PathConstraintsLesson",
+      "uses": [
+        {
+          "path": "frontend/src/companion/lessons/dynamics.tsx",
+          "line": 72,
+          "function": "PathConstraintsLesson",
+          "component": "FunctionExplorer"
+        },
+        {
+          "path": "frontend/src/companion/lessons/dynamics.tsx",
+          "line": 74,
+          "function": "PathConstraintsLesson",
+          "component": "IntervalBand"
+        },
+        {
+          "path": "frontend/src/companion/lessons/dynamics.tsx",
+          "line": 75,
+          "function": "PathConstraintsLesson",
+          "component": "SurfacePlot3D"
+        },
+        {
+          "path": "frontend/src/companion/lessons/dynamics.tsx",
+          "line": 89,
+          "function": "PathConstraintsLesson",
+          "component": "StateInputTimeline"
+        }
+      ]
+    },
+    {
+      "page": 31,
+      "module": "continuous",
+      "renderer": "ContinuousFunctionalExplorer",
+      "uses": [
+        {
+          "path": "frontend/src/companion/lessons/continuous.tsx",
+          "line": 52,
+          "function": "ContinuousFunctionalExplorer",
+          "component": "CourseExplorer"
+        },
+        {
+          "path": "frontend/src/companion/lessons/continuous.tsx",
+          "line": 53,
+          "function": "ContinuousFunctionalExplorer",
+          "component": "AlignedTimeSeries"
+        },
+        {
+          "path": "frontend/src/companion/lessons/continuous.tsx",
+          "line": 55,
+          "function": "ContinuousFunctionalExplorer",
+          "component": "CostBreakdown"
+        }
+      ]
+    },
+    {
+      "page": 32,
+      "module": "continuous",
+      "renderer": "FunctionSpaceExplorer",
+      "uses": [
+        {
+          "path": "frontend/src/companion/lessons/continuous.tsx",
+          "line": 65,
+          "function": "FunctionSpaceExplorer",
+          "component": "CourseExplorer"
+        },
+        {
+          "path": "frontend/src/companion/lessons/continuous.tsx",
+          "line": 66,
+          "function": "FunctionSpaceExplorer",
+          "component": "AlignedTimeSeries"
+        }
+      ]
+    },
+    {
+      "page": 33,
+      "module": "continuous",
+      "renderer": "PendulumDynamicsExplorer",
+      "uses": [
+        {
+          "path": "frontend/src/companion/lessons/continuous.tsx",
+          "line": 79,
+          "function": "PendulumDynamicsExplorer",
+          "component": "CourseExplorer"
+        },
+        {
+          "path": "frontend/src/companion/lessons/continuous.tsx",
+          "line": 81,
+          "function": "PendulumDynamicsExplorer",
+          "component": "TrajectoryViewer"
+        }
+      ]
+    },
+    {
+      "page": 34,
+      "module": "dynamics",
+      "renderer": "PendulumEquilibriumLesson",
+      "uses": [
+        {
+          "path": "frontend/src/companion/lessons/dynamics.tsx",
+          "line": 111,
+          "function": "PendulumEquilibriumLesson",
+          "component": "VisualizationSwitch"
+        },
+        {
+          "path": "frontend/src/companion/lessons/dynamics.tsx",
+          "line": 113,
+          "function": "PendulumEquilibriumLesson",
+          "component": "TrajectoryViewer"
+        },
+        {
+          "path": "frontend/src/companion/lessons/dynamics.tsx",
+          "line": 115,
+          "function": "PendulumEquilibriumLesson",
+          "component": "EquilibriumPoses"
+        },
+        {
+          "path": "frontend/src/companion/lessons/dynamics.tsx",
+          "line": 116,
+          "function": "PendulumEquilibriumLesson",
+          "component": "TrajectoryViewer"
+        }
+      ]
+    },
+    {
+      "page": 35,
+      "module": "continuous",
+      "renderer": "PendulumReferenceExplorer",
+      "uses": [
+        {
+          "path": "frontend/src/companion/lessons/continuous.tsx",
+          "line": 96,
+          "function": "PendulumReferenceExplorer",
+          "component": "VisualizationSwitch"
+        },
+        {
+          "path": "frontend/src/companion/lessons/continuous.tsx",
+          "line": 97,
+          "function": "PendulumReferenceExplorer",
+          "component": "AlignedTimeSeries"
+        },
+        {
+          "path": "frontend/src/companion/lessons/continuous.tsx",
+          "line": 98,
+          "function": "PendulumReferenceExplorer",
+          "component": "TrajectoryViewer"
+        }
+      ]
+    },
+    {
+      "page": 36,
+      "module": "continuous",
+      "renderer": "PendulumCostExplorer",
+      "uses": [
+        {
+          "path": "frontend/src/companion/lessons/continuous.tsx",
+          "line": 114,
+          "function": "PendulumCostExplorer",
+          "component": "CourseExplorer"
+        },
+        {
+          "path": "frontend/src/companion/lessons/continuous.tsx",
+          "line": 115,
+          "function": "PendulumCostExplorer",
+          "component": "CostBreakdown"
+        }
+      ]
+    }
+  ],
+  "all_graphic_call_sites": [
+    {
+      "path": "frontend/src/companion/courseSupport.tsx",
+      "line": 11,
+      "function": "CourseExplorer",
+      "component": "FunctionExplorer"
+    },
+    {
+      "path": "frontend/src/companion/courseSupport.tsx",
+      "line": 12,
+      "function": "CourseExplorer",
+      "component": "SurfacePlot3D"
+    },
+    {
+      "path": "frontend/src/companion/lessons/concepts.tsx",
+      "line": 16,
+      "function": "FeedbackLesson",
+      "component": "FeedbackDiagram"
+    },
+    {
+      "path": "frontend/src/companion/lessons/concepts.tsx",
+      "line": 40,
+      "function": "ContinuousResponseLesson",
+      "component": "FunctionExplorer"
+    },
+    {
+      "path": "frontend/src/companion/lessons/concepts.tsx",
+      "line": 43,
+      "function": "ContinuousResponseLesson",
+      "component": "AlignedTimeSeries"
+    },
+    {
+      "path": "frontend/src/companion/lessons/concepts.tsx",
+      "line": 44,
+      "function": "ContinuousResponseLesson",
+      "component": "SurfacePlot3D"
+    },
+    {
+      "path": "frontend/src/companion/lessons/continuous.tsx",
+      "line": 19,
+      "function": "DroneRequirementsExplorer",
+      "component": "VisualizationSwitch"
+    },
+    {
+      "path": "frontend/src/companion/lessons/continuous.tsx",
+      "line": 20,
+      "function": "DroneRequirementsExplorer",
+      "component": "AlignedTimeSeries"
+    },
+    {
+      "path": "frontend/src/companion/lessons/continuous.tsx",
+      "line": 21,
+      "function": "DroneRequirementsExplorer",
+      "component": "TrajectoryViewer"
+    },
+    {
+      "path": "frontend/src/companion/lessons/continuous.tsx",
+      "line": 39,
+      "function": "DroneStageExplorer",
+      "component": "CourseExplorer"
+    },
+    {
+      "path": "frontend/src/companion/lessons/continuous.tsx",
+      "line": 39,
+      "function": "DroneStageExplorer",
+      "component": "CostBreakdown"
+    },
+    {
+      "path": "frontend/src/companion/lessons/continuous.tsx",
+      "line": 52,
+      "function": "ContinuousFunctionalExplorer",
+      "component": "CourseExplorer"
+    },
+    {
+      "path": "frontend/src/companion/lessons/continuous.tsx",
+      "line": 53,
+      "function": "ContinuousFunctionalExplorer",
+      "component": "AlignedTimeSeries"
+    },
+    {
+      "path": "frontend/src/companion/lessons/continuous.tsx",
+      "line": 55,
+      "function": "ContinuousFunctionalExplorer",
+      "component": "CostBreakdown"
+    },
+    {
+      "path": "frontend/src/companion/lessons/continuous.tsx",
+      "line": 65,
+      "function": "FunctionSpaceExplorer",
+      "component": "CourseExplorer"
+    },
+    {
+      "path": "frontend/src/companion/lessons/continuous.tsx",
+      "line": 66,
+      "function": "FunctionSpaceExplorer",
+      "component": "AlignedTimeSeries"
+    },
+    {
+      "path": "frontend/src/companion/lessons/continuous.tsx",
+      "line": 79,
+      "function": "PendulumDynamicsExplorer",
+      "component": "CourseExplorer"
+    },
+    {
+      "path": "frontend/src/companion/lessons/continuous.tsx",
+      "line": 81,
+      "function": "PendulumDynamicsExplorer",
+      "component": "TrajectoryViewer"
+    },
+    {
+      "path": "frontend/src/companion/lessons/continuous.tsx",
+      "line": 96,
+      "function": "PendulumReferenceExplorer",
+      "component": "VisualizationSwitch"
+    },
+    {
+      "path": "frontend/src/companion/lessons/continuous.tsx",
+      "line": 97,
+      "function": "PendulumReferenceExplorer",
+      "component": "AlignedTimeSeries"
+    },
+    {
+      "path": "frontend/src/companion/lessons/continuous.tsx",
+      "line": 98,
+      "function": "PendulumReferenceExplorer",
+      "component": "TrajectoryViewer"
+    },
+    {
+      "path": "frontend/src/companion/lessons/continuous.tsx",
+      "line": 114,
+      "function": "PendulumCostExplorer",
+      "component": "CourseExplorer"
+    },
+    {
+      "path": "frontend/src/companion/lessons/continuous.tsx",
+      "line": 115,
+      "function": "PendulumCostExplorer",
+      "component": "CostBreakdown"
+    },
+    {
+      "path": "frontend/src/companion/lessons/decisionFoundations.tsx",
+      "line": 16,
+      "function": "HorizonInspector",
+      "component": "StateInputTimeline"
+    },
+    {
+      "path": "frontend/src/companion/lessons/decisionFoundations.tsx",
+      "line": 31,
+      "function": "EquilibriumExplorer",
+      "component": "CourseExplorer"
+    },
+    {
+      "path": "frontend/src/companion/lessons/decisionFoundations.tsx",
+      "line": 33,
+      "function": "EquilibriumExplorer",
+      "component": "TrajectoryViewer"
+    },
+    {
+      "path": "frontend/src/companion/lessons/decisionFoundations.tsx",
+      "line": 49,
+      "function": "ControlRecap",
+      "component": "ModelDiagram"
+    },
+    {
+      "path": "frontend/src/companion/lessons/decisionFoundations.tsx",
+      "line": 62,
+      "function": "DecisionSetExplorer",
+      "component": "CourseExplorer"
+    },
+    {
+      "path": "frontend/src/companion/lessons/decisionFoundations.tsx",
+      "line": 63,
+      "function": "DecisionSetExplorer",
+      "component": "TrajectoryViewer"
+    },
+    {
+      "path": "frontend/src/companion/lessons/decisionFoundations.tsx",
+      "line": 75,
+      "function": "ScalarCostExplorer",
+      "component": "TrajectoryViewer"
+    },
+    {
+      "path": "frontend/src/companion/lessons/decisionFoundations.tsx",
+      "line": 89,
+      "function": "ConstrainedMinimumExplorer",
+      "component": "CourseExplorer"
+    },
+    {
+      "path": "frontend/src/companion/lessons/decisionFoundations.tsx",
+      "line": 90,
+      "function": "ConstrainedMinimumExplorer",
+      "component": "TrajectoryViewer"
+    },
+    {
+      "path": "frontend/src/companion/lessons/decisionFoundations.tsx",
+      "line": 105,
+      "function": "DynamicsEqualities",
+      "component": "CourseExplorer"
+    },
+    {
+      "path": "frontend/src/companion/lessons/decisionFoundations.tsx",
+      "line": 107,
+      "function": "DynamicsEqualities",
+      "component": "TrajectoryViewer"
+    },
+    {
+      "path": "frontend/src/companion/lessons/decisionFoundations.tsx",
+      "line": 109,
+      "function": "DynamicsEqualities",
+      "component": "StateInputTimeline"
+    },
+    {
+      "path": "frontend/src/companion/lessons/dynamics.tsx",
+      "line": 33,
+      "function": "EulerDiscretizationLesson",
+      "component": "VisualizationSwitch"
+    },
+    {
+      "path": "frontend/src/companion/lessons/dynamics.tsx",
+      "line": 34,
+      "function": "EulerDiscretizationLesson",
+      "component": "AlignedTimeSeries"
+    },
+    {
+      "path": "frontend/src/companion/lessons/dynamics.tsx",
+      "line": 35,
+      "function": "EulerDiscretizationLesson",
+      "component": "TrajectoryViewer"
+    },
+    {
+      "path": "frontend/src/companion/lessons/dynamics.tsx",
+      "line": 72,
+      "function": "PathConstraintsLesson",
+      "component": "FunctionExplorer"
+    },
+    {
+      "path": "frontend/src/companion/lessons/dynamics.tsx",
+      "line": 74,
+      "function": "PathConstraintsLesson",
+      "component": "IntervalBand"
+    },
+    {
+      "path": "frontend/src/companion/lessons/dynamics.tsx",
+      "line": 75,
+      "function": "PathConstraintsLesson",
+      "component": "SurfacePlot3D"
+    },
+    {
+      "path": "frontend/src/companion/lessons/dynamics.tsx",
+      "line": 89,
+      "function": "PathConstraintsLesson",
+      "component": "StateInputTimeline"
+    },
+    {
+      "path": "frontend/src/companion/lessons/dynamics.tsx",
+      "line": 111,
+      "function": "PendulumEquilibriumLesson",
+      "component": "VisualizationSwitch"
+    },
+    {
+      "path": "frontend/src/companion/lessons/dynamics.tsx",
+      "line": 113,
+      "function": "PendulumEquilibriumLesson",
+      "component": "TrajectoryViewer"
+    },
+    {
+      "path": "frontend/src/companion/lessons/dynamics.tsx",
+      "line": 115,
+      "function": "PendulumEquilibriumLesson",
+      "component": "EquilibriumPoses"
+    },
+    {
+      "path": "frontend/src/companion/lessons/dynamics.tsx",
+      "line": 116,
+      "function": "PendulumEquilibriumLesson",
+      "component": "TrajectoryViewer"
+    },
+    {
+      "path": "frontend/src/companion/lessons/motivation.tsx",
+      "line": 41,
+      "function": "DomainMotivation",
+      "component": "svg"
+    },
+    {
+      "path": "frontend/src/companion/lessons/motivation.tsx",
+      "line": 45,
+      "function": "DomainMotivation",
+      "component": "ModelDiagram"
+    },
+    {
+      "path": "frontend/src/companion/lessons/motivation.tsx",
+      "line": 57,
+      "function": "AerialGeometry",
+      "component": "TrajectoryViewer"
+    },
+    {
+      "path": "frontend/src/companion/lessons/motivation.tsx",
+      "line": 72,
+      "function": "DiscreteTransition",
+      "component": "CourseExplorer"
+    },
+    {
+      "path": "frontend/src/companion/lessons/motivation.tsx",
+      "line": 73,
+      "function": "DiscreteTransition",
+      "component": "TrajectoryViewer"
+    },
+    {
+      "path": "frontend/src/companion/lessons/motivation.tsx",
+      "line": 74,
+      "function": "DiscreteTransition",
+      "component": "StateInputTimeline"
+    },
+    {
+      "path": "frontend/src/companion/lessons/ocp.tsx",
+      "line": 16,
+      "function": "StageCostExplorer",
+      "component": "CourseExplorer"
+    },
+    {
+      "path": "frontend/src/companion/lessons/ocp.tsx",
+      "line": 17,
+      "function": "StageCostExplorer",
+      "component": "StateInputTimeline"
+    },
+    {
+      "path": "frontend/src/companion/lessons/ocp.tsx",
+      "line": 17,
+      "function": "StageCostExplorer",
+      "component": "CostBreakdown"
+    },
+    {
+      "path": "frontend/src/companion/lessons/ocp.tsx",
+      "line": 28,
+      "function": "EndpointExplorer",
+      "component": "CourseExplorer"
+    },
+    {
+      "path": "frontend/src/companion/lessons/ocp.tsx",
+      "line": 30,
+      "function": "EndpointExplorer",
+      "component": "svg"
+    },
+    {
+      "path": "frontend/src/companion/lessons/ocp.tsx",
+      "line": 55,
+      "function": "TrackingExplorer",
+      "component": "CourseExplorer"
+    },
+    {
+      "path": "frontend/src/companion/lessons/ocp.tsx",
+      "line": 56,
+      "function": "TrackingExplorer",
+      "component": "TrajectoryViewer"
+    },
+    {
+      "path": "frontend/src/companion/lessons/ocp.tsx",
+      "line": 58,
+      "function": "TrackingExplorer",
+      "component": "StateInputTimeline"
+    },
+    {
+      "path": "frontend/src/companion/lessons/ocp.tsx",
+      "line": 58,
+      "function": "TrackingExplorer",
+      "component": "CostBreakdown"
+    },
+    {
+      "path": "frontend/src/companion/lessons/ocp.tsx",
+      "line": 73,
+      "function": "CompleteOcpExplorer",
+      "component": "CourseExplorer"
+    },
+    {
+      "path": "frontend/src/companion/lessons/ocp.tsx",
+      "line": 74,
+      "function": "CompleteOcpExplorer",
+      "component": "TrajectoryViewer"
+    },
+    {
+      "path": "frontend/src/companion/lessons/ocp.tsx",
+      "line": 78,
+      "function": "CompleteOcpExplorer",
+      "component": "StateInputTimeline"
+    },
+    {
+      "path": "frontend/src/companion/lessons/ocp.tsx",
+      "line": 96,
+      "function": "TrajectoryModes",
+      "component": "VisualizationSwitch"
+    },
+    {
+      "path": "frontend/src/companion/lessons/ocp.tsx",
+      "line": 97,
+      "function": "TrajectoryModes",
+      "component": "TrajectoryViewer"
+    },
+    {
+      "path": "frontend/src/companion/lessons/ocp.tsx",
+      "line": 98,
+      "function": "TrajectoryModes",
+      "component": "TrajectoryViewer"
+    },
+    {
+      "path": "frontend/src/companion/lessons/ocp.tsx",
+      "line": 102,
+      "function": "DroneSnapshot",
+      "component": "svg"
+    },
+    {
+      "path": "frontend/src/companion/lessons/ocp.tsx",
+      "line": 124,
+      "function": "DroneForceExplorer",
+      "component": "CourseExplorer"
+    },
+    {
+      "path": "frontend/src/companion/lessons/ocp.tsx",
+      "line": 126,
+      "function": "DroneForceExplorer",
+      "component": "DroneSnapshot"
+    },
+    {
+      "path": "frontend/src/companion/lessons/optimization.tsx",
+      "line": 21,
+      "function": "LinearizationLesson",
+      "component": "FunctionExplorer"
+    },
+    {
+      "path": "frontend/src/companion/lessons/optimization.tsx",
+      "line": 23,
+      "function": "LinearizationLesson",
+      "component": "SurfacePlot3D"
+    },
+    {
+      "path": "frontend/src/companion/lessons/optimization.tsx",
+      "line": 27,
+      "function": "LinearizationLesson",
+      "component": "TrajectoryViewer"
+    },
+    {
+      "path": "frontend/src/companion/lessons/optimization.tsx",
+      "line": 52,
+      "function": "WeightedCostLesson",
+      "component": "FunctionExplorer"
+    },
+    {
+      "path": "frontend/src/companion/lessons/optimization.tsx",
+      "line": 54,
+      "function": "WeightedCostLesson",
+      "component": "ContourPlot2D"
+    },
+    {
+      "path": "frontend/src/companion/lessons/optimization.tsx",
+      "line": 57,
+      "function": "WeightedCostLesson",
+      "component": "CostBreakdown"
+    },
+    {
+      "path": "frontend/src/companion/lessons/optimization.tsx",
+      "line": 83,
+      "function": "ConstraintSetsLesson",
+      "component": "FunctionExplorer"
+    },
+    {
+      "path": "frontend/src/companion/lessons/optimization.tsx",
+      "line": 85,
+      "function": "ConstraintSetsLesson",
+      "component": "ConstraintVisualizer"
+    },
+    {
+      "path": "frontend/src/companion/lessons/optimization.tsx",
+      "line": 92,
+      "function": "ConstraintSetsLesson",
+      "component": "UnitCircleInset"
+    },
+    {
+      "path": "frontend/src/components/DataViews.tsx",
+      "line": 9,
+      "function": "ModelDiagram",
+      "component": "svg"
+    },
+    {
+      "path": "frontend/src/components/StudyDiagrams.tsx",
+      "line": 5,
+      "function": "FeedbackDiagram",
+      "component": "ModelDiagram"
+    },
+    {
+      "path": "frontend/src/components/StudyDiagrams.tsx",
+      "line": 25,
+      "function": "IntervalBand",
+      "component": "svg"
+    },
+    {
+      "path": "frontend/src/components/StudyDiagrams.tsx",
+      "line": 41,
+      "function": "EquilibriumPoses",
+      "component": "svg"
+    },
+    {
+      "path": "frontend/src/components/StudyDiagrams.tsx",
+      "line": 57,
+      "function": "UnitCircleInset",
+      "component": "svg"
+    },
+    {
+      "path": "frontend/src/dev/DevPlayground.tsx",
+      "line": 27,
+      "function": "SurfaceDemo",
+      "component": "FunctionExplorer"
+    },
+    {
+      "path": "frontend/src/dev/DevPlayground.tsx",
+      "line": 28,
+      "function": "SurfaceDemo",
+      "component": "FunctionPlot2D"
+    },
+    {
+      "path": "frontend/src/dev/DevPlayground.tsx",
+      "line": 29,
+      "function": "SurfaceDemo",
+      "component": "ConstraintVisualizer"
+    },
+    {
+      "path": "frontend/src/dev/DevPlayground.tsx",
+      "line": 43,
+      "function": "TrajectoryContent",
+      "component": "TrajectoryViewer"
+    },
+    {
+      "path": "frontend/src/dev/DevPlayground.tsx",
+      "line": 44,
+      "function": "TrajectoryContent",
+      "component": "TrajectoryViewer"
+    },
+    {
+      "path": "frontend/src/dev/DevPlayground.tsx",
+      "line": 53,
+      "function": "ComponentsDemo",
+      "component": "ModelDiagram"
+    },
+    {
+      "path": "frontend/src/dev/DevPlayground.tsx",
+      "line": 54,
+      "function": "ComponentsDemo",
+      "component": "VectorVisualizer"
+    },
+    {
+      "path": "frontend/src/dev/DevPlayground.tsx",
+      "line": 55,
+      "function": "ComponentsDemo",
+      "component": "CostBreakdown"
+    },
+    {
+      "path": "frontend/src/dev/DevPlayground.tsx",
+      "line": 56,
+      "function": "ComponentsDemo",
+      "component": "StateInputTimeline"
+    },
+    {
+      "path": "frontend/src/dev/DevPlayground.tsx",
+      "line": 64,
+      "function": "FieldsDemo",
+      "component": "VectorField"
+    },
+    {
+      "path": "frontend/src/dev/DevPlayground.tsx",
+      "line": 65,
+      "function": "FieldsDemo",
+      "component": "VectorField"
+    },
+    {
+      "path": "frontend/src/visualization/2d/ContourPlot2D.tsx",
+      "line": 28,
+      "function": "ContourPlot2D",
+      "component": "SceneViewport"
+    },
+    {
+      "path": "frontend/src/visualization/2d/FunctionPlot2D.tsx",
+      "line": 14,
+      "function": "FunctionPlot2D",
+      "component": "SceneViewport"
+    },
+    {
+      "path": "frontend/src/visualization/3d/SurfacePlot3D.tsx",
+      "line": 58,
+      "function": "SurfacePlot3D",
+      "component": "SceneViewport"
+    },
+    {
+      "path": "frontend/src/visualization/shared/AlignedTimeSeries.tsx",
+      "line": 42,
+      "function": "AlignedTimeSeries",
+      "component": "SceneViewport"
+    },
+    {
+      "path": "frontend/src/visualization/shared/ConstraintVisualizer.tsx",
+      "line": 33,
+      "function": "ConstraintVisualizer",
+      "component": "SceneViewport"
+    },
+    {
+      "path": "frontend/src/visualization/shared/FunctionExplorer.tsx",
+      "line": 36,
+      "function": "FunctionExplorer",
+      "component": "VisualizationSwitch"
+    },
+    {
+      "path": "frontend/src/visualization/shared/FunctionExplorer.tsx",
+      "line": 37,
+      "function": "FunctionExplorer",
+      "component": "ContourPlot2D"
+    },
+    {
+      "path": "frontend/src/visualization/shared/FunctionExplorer.tsx",
+      "line": 38,
+      "function": "FunctionExplorer",
+      "component": "SurfacePlot3D"
+    },
+    {
+      "path": "frontend/src/visualization/shared/TrajectoryViewer.tsx",
+      "line": 40,
+      "function": "TrajectoryViewer",
+      "component": "SceneViewport"
+    },
+    {
+      "path": "frontend/src/visualization/shared/VectorField.tsx",
+      "line": 20,
+      "function": "VectorField",
+      "component": "SceneViewport"
+    }
+  ],
+  "scope": "SceneViewport backends, combined/toggle wrappers, reusable SVG, cost bars, vectors, timelines, and inline SVG. Tables and conceptual prose/list cards are not graphics."
+}

@@ -1,0 +1,6 @@
+.descent-lesson .opt-choice { min-width:0; }
+.descent-lesson .opt-choice select { text-overflow:ellipsis; }
+.descent-lesson .live-metrics dd { overflow-wrap:anywhere; }
+.descent-lesson .iteration-picker { min-width:0; }
+.descent-lesson .iteration-buttons { display:flex; gap:8px; margin-top:5px; }
+.descent-lesson .iteration-buttons button { font-size:22px; padding:2px 10px; }

@@ -81,12 +81,464 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "b3957d89f528f8b0bc5e5aef880fff59930778af457157e1b097bd9d1ce45479",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0049",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "d2b489a10cb92273a14281ed9fb67fad6a5791069810d45f9002dd0ab0b804d7",
+        "layout": "88eeeaed3a2a51d075bc136843716a61cbbbfcd73adc8dcc607403c0fe447576",
+        "render": "a015f4994fb1911276470eddb6ec17917bc0037de4df6b38be5c530793dd9632"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-g-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0049",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0048",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0050"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0049",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0048",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0050"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0049",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0048",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0050"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Optimization over convex sets",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "definition",
+          "description": "P_Z(z) è argmin su y∈Z della distanza quadratica ||y−z||².",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0049",
+            "modality": "both",
+            "text_quote": "Projection over a convex set",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "concept",
+          "description": "La fonte enuncia esistenza e unicità e chiede di provarle. La non vacuità è nel contesto della 48.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0049",
+            "modality": "both",
+            "text_quote": "exists and is unique",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "diagram",
+          "description": "Figura qualitativa: ellisse grigia Z, punto rosso esterno z e segmento rosso tratteggiato verso P_Z(z), senza coordinate o dati.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0049",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0049",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Definire e motivare esistenza e unicità della proiezione su un insieme convesso chiuso non vuoto.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0048",
+          "role": "previous",
+          "note": "Interpretare la condizione necessaria vincolata e il suo limite per costi non convessi."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0050",
+          "role": "next",
+          "note": "Separare punto libero, punto proiettato e riduzione del costo."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "P_{\\mathbb Z}(z):=\\operatorname*{arg\\,min}_{y\\in\\mathbb Z}\\|y-z\\|^2",
+          "meaning": "Con Z non vuoto, chiuso e convesso, esiste un solo punto più vicino a z. Se z è già ammissibile, resta invariato.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "structure"
+        ],
+        "rationale": "Scopo e contenuto autonomi."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "Nessuna correzione matematica necessaria dopo confronto con la pagina precedente e successiva.",
+          "Il disegno ellittico della fonte non fornisce parametri: disco e quadrato sono modelli aggiunti.",
+          "Clippare una coordinata sul quadrato è qui l’operatore matematico di proiezione, non una correzione nascosta di risultati."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Insieme chiuso e convesso",
+            "why": "Chiusura per esistenza, convessità per unicità.",
+            "origin": "source_context",
+            "page_numbers": [
+              48
+            ]
+          },
+          {
+            "concept": "Minimizzazione quadratica",
+            "why": "Distanza quadratica strettamente convessa.",
+            "origin": "source_context",
+            "page_numbers": [
+              24
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "P_{\\mathbb Z}(z):=\\operatorname*{arg\\,min}_{y\\in\\mathbb Z}\\|y-z\\|^2",
+            "anchor": "Projection over a convex set",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "La proiezione sceglie il punto ammissibile a distanza minima. La chiusura permette di raggiungere la distanza; la convessità rende unica la soluzione.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "z=(1.5,0.8) e disco unitario",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Regione verde esatta, punto esterno rosso, proiezione arancio, candidato viola e segmenti di distanza. Nessuna altezza di costo inventata: figura 2D.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Definire e motivare esistenza e unicità della proiezione su un insieme convesso chiuso non vuoto.",
+            "setup": "z=(1.5,0.8) e disco unitario",
+            "parameters": [],
+            "derivation": [
+              "||z||=1.7.",
+              "P_Z(z)=(15/17,8/17)≈(0.882353,0.470588).",
+              "Distanza minima 0.7; ogni candidato sul bordo ha distanza non minore."
+            ],
+            "expected_outcome": "Il confronto numerico illustra una proprietà dimostrata dalle ipotesi, non da un campionamento.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "SceneViewport",
+          "description": "Regione verde esatta, punto esterno rosso, proiezione arancio, candidato viola e segmenti di distanza. Nessuna altezza di costo inventata: figura 2D.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Muovere punto, regione e concorrente distingue minima distanza, bordo non liscio e identità sui punti già ammissibili.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Prima coordinata",
+              "symbol": "z_1",
+              "origin": "enrichment",
+              "range": "{'min': -2, 'max': 2, 'step': 0.1, 'integer': False}",
+              "default": "1.5",
+              "effect_on_change": "Muove z e ricalcola proiezione, distanze e segmento; insieme e candidato angolare restano fissi.",
+              "edge_cases": [
+                "z interno o sul bordo",
+                "Angolo del quadrato",
+                "Candidato uguale alla proiezione",
+                "Insieme vuoto o aperto"
+              ]
+            },
+            {
+              "name": "Seconda coordinata",
+              "symbol": "z_2",
+              "origin": "enrichment",
+              "range": "{'min': -2, 'max': 2, 'step': 0.1, 'integer': False}",
+              "default": "0.8",
+              "effect_on_change": "Muove z nella seconda direzione e ricalcola la proiezione.",
+              "edge_cases": [
+                "z interno o sul bordo",
+                "Angolo del quadrato",
+                "Candidato uguale alla proiezione",
+                "Insieme vuoto o aperto"
+              ]
+            },
+            {
+              "name": "Candidato ammissibile",
+              "symbol": "\\theta",
+              "origin": "enrichment",
+              "range": "{'min': -180, 'max': 180, 'step': 15, 'integer': False}",
+              "default": "90",
+              "effect_on_change": "Muove y sul bordo per confrontare la sua distanza con quella minima; non cambia la proiezione.",
+              "edge_cases": [
+                "z interno o sul bordo",
+                "Angolo del quadrato",
+                "Candidato uguale alla proiezione",
+                "Insieme vuoto o aperto"
+              ]
+            },
+            {
+              "name": "Insieme",
+              "symbol": "s",
+              "origin": "enrichment",
+              "range": "Disco / quadrato",
+              "default": "Disco",
+              "effect_on_change": "Cambia regione e operatore di proiezione; preserva z e il parametro del candidato.",
+              "edge_cases": [
+                "z interno o sul bordo",
+                "Angolo del quadrato",
+                "Candidato uguale alla proiezione",
+                "Insieme vuoto o aperto"
+              ]
+            }
+          ],
+          "outputs": [
+            "Definire e motivare esistenza e unicità della proiezione su un insieme convesso chiuso non vuoto."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "z interno o sul bordo",
+            "expected_behavior": "Proiezione identica a z, distanza zero.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "Angolo del quadrato",
+            "expected_behavior": "Proiezione unica anche senza una normale unica al bordo.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "Candidato uguale alla proiezione",
+            "expected_behavior": "Scarto zero; non segnalare una seconda soluzione distinta.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "Insieme vuoto o aperto",
+            "expected_behavior": "Escluso dalle ipotesi; nessuna promessa di proiezione generale.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Definire e motivare esistenza e unicità della proiezione su un insieme convesso chiuso non vuoto.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

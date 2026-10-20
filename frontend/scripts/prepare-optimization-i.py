@@ -1,0 +1,177 @@
+"""Individually inspected text, raster and layout for physical pages 63–68.
+62/69 consulted as neighbors; never implement the next batch here.
+"""
+import importlib.util
+from pathlib import Path
+loader=importlib.util.spec_from_file_location('optimization_authoring',Path(__file__).with_name('optimization-authoring.py'))
+H=importlib.util.module_from_spec(loader);loader.loader.exec_module(H)
+formula,control=H.formula,H.control
+PROBLEM=r'\min_{z\in\mathbb R^d}\ell(z),\quad g_j(z)\le0,\ j=1,\ldots,r,\quad h_i(z)=0,\ i=1,\ldots,m'
+KKT=r'\begin{gathered}\nabla_1L(z^\star,\mu^\star,\lambda^\star)=0\\\mu_j^\star\ge0,\quad\mu_j^\star g_j(z^\star)=0,\quad j\in\{1,\ldots,r\}\end{gathered}'
+CIRCLE=r'\ell(z)=\tfrac\alpha2 z_1^2+\beta z_2,\quad h_1(z)=\tfrac12(z_1^2+z_2^2-1)'
+QP=r'\begin{aligned}\min_{z\in\mathbb R^d}\;&\tfrac12z^TQz+q^Tz\\\text{subj.to }&Az=b\end{aligned}'
+DATA=r'Q=\tfrac12\begin{bmatrix}\nu+\kappa&\nu-\kappa\\\nu-\kappa&\nu+\kappa\end{bmatrix},\quad A=\begin{bmatrix}1&1\end{bmatrix}'
+BASIS=r'n=\tfrac1{\sqrt2}(1,1)^\top,\quad v=\tfrac1{\sqrt2}(1,-1)^\top'
+def ex(n,latex,text):return formula(f'opt{n}-example',latex,text,'Specificare i dati dell’esempio aggiunto.',origin='enrichment')
+def progression(n,added):return dict(assessment='progressive',related_page_ids=[f'{H.DOC}:p{65 if n==64 else 64:04}'],added=[added],removed=[],changed=[],rationale='Stessa slide stampata 57|73: la 64 presenta solo le KKT del primo ordine; la 65 aggiunge ipotesi C², forma quadratica e spazio delle direzioni. Raster e testo verificati individualmente, nessuna pagina eliminata.')
+P={
+63:dict(title='Il bilancio non basta: serve complementarità',objective='Leggere il gradiente della Lagrangiana come somma di vettori e distinguere stazionarietà e prodotti complementari.',
+ explanation='I gradienti di costo e vincoli, pesati dai moltiplicatori, devono sommarsi a zero. Ma un bilancio perfetto può ancora violare la complementarità.',
+ takeaway='Somma zero e μ≥0 non sostituiscono i prodotti μⱼgⱼ=0.',
+ obs=[('equation','Espande ∇₁L(z⋆,μ⋆,λ⋆)=0 in ∇ℓ(z⋆)+∑μ⋆_j∇g_j(z⋆)+∑λ⋆_i∇h_i(z⋆)=0.','explicitly written'),
+  ('definition','Chiama complementary slackness i prodotti μ⋆_jg⋆_j(z⋆)=0; la stella aggiuntiva su g compare nella remark, mentre g non cambia definizione nel contesto.','complementary slackness')],
+ formulas=[formula('opt63-balance',r'\nabla\ell(z^\star)+\sum_{j=1}^r\mu_j^\star\nabla g_j(z^\star)+\sum_{i=1}^m\lambda_i^\star\nabla h_i(z^\star)=0',
+   'Si deriva rispetto a z, a moltiplicatori fissati. Il bilancio deve accompagnarsi ad ammissibilità, μ≥0 e complementarità.','Associare ogni vettore al vincolo pertinente.'),
+  formula('opt63-literal',r'\mu_j^\star g_j^\star(z^\star)=0,\quad j\in\{1,\ldots,r\}','La remark denomina questa relazione complementarità. Nel contesto gⱼ⋆ indica lo stesso residuo gⱼ valutato in z⋆.','Conservare la trascrizione letterale senza introdurre una nuova funzione g⋆.'),
+  ex(63,r'\ell=\tfrac12((z_1-a)^2+(z_2-0.6)^2),\quad 0\le z_1\le1,\ z_2=0','Si usa il problema della 60. g₁=−z₁, g₂=z₁−1, h₁=z₂ e z⋆=(clip(a,0,1),0).'),
+  formula('opt63-perturbation',r'\widehat\mu_1=\mu_1^\star+0.4,\quad\widehat\mu_2=\mu_2^\star+0.4,\quad\widehat\lambda=0.6',
+   'Le due normali opposte cancellano l’aumento dei pesi: la somma resta zero, ma almeno un vincolo inattivo ha μ>0.','Dare un controesempio controllato alla sola stazionarietà.',origin='enrichment')],
+ controls=[control('opt63-a','Bersaglio orizzontale','a',-.5,1.5,-.5,.1,'Sposta il minimo e il suo insieme attivo; ricalcola i moltiplicatori esatti o entrambi i pesi perturbati.')],
+ choices=[('Moltiplicatori','s','KKT esatti / bilancio senza complementarità','KKT esatti','Aggiunge 0.4 a entrambi i moltiplicatori delle disuguaglianze: stazionarietà e segni invariati, prodotti modificati.')],
+ prerequisites=[('Condizioni KKT','Sono richieste congiuntamente, con fattibilità.',[60,62]),('Gradiente di una somma','I moltiplicatori sono coefficienti durante la derivazione in z.',[58])],
+ example=('a=−0.5 e moltiplicatori perturbati',['Minimo z⋆=(0,0), g₁=0, g₂=−1.','Da μ⋆=(0.5,0) si passa a μ̂=(0.9,0.4), λ=0.6.','∇₁L resta zero, ma μ̂₂g₂=−0.4.'],'Un poligono chiuso dei contributi non dimostra tutte le KKT.'),
+ visual='Poligono 2D dei contributi al gradiente, disegnati testa-coda con lunghezze reali; origine e risultante, prodotti μ₁g₁ e μ₂g₂ distinti. Nessuna superficie senza ruolo aggiuntivo.',
+ axes=('Componente 1','Componente 2','decision'),
+ scope=['La stella aggiunta su g nella seconda remark è una differenza tipografica chiarita dal contesto 60/62, senza warning UI inutile; SOURCE_LITERAL resta intatto.','Pesi perturbati indicati con cappello, non come moltiplicatori ottimi.'],
+ edges=[('a=0 o 1','Vincolo attivo con moltiplicatore esatto nullo.'),('Pesi perturbati','Bilancio nullo e μ≥0, ma complementarità non nulla.'),('Contributo nullo','Nessuna freccia con direzione inventata.')],
+ interaction_reason='Il selettore conserva il bilancio per isolare la complementarità; a cambia quale vincolo è attivo.'),
+64:dict(title='Prima del secondo ordine, restano le KKT',objective='Riconoscere che questa prima progressiva ripropone soltanto il primo ordine e le sue ipotesi, prima della nuova condizione nella 65.',
+ explanation='Il titolo anticipa il secondo ordine, ma qui compaiono ancora le KKT con funzioni C¹ e minimo locale regolare. L’informazione sulla curvatura verrà aggiunta nella prossima pagina.',
+ takeaway='Il primo ordine resta un bilancio; la curvatura arriva nella prossima progressiva.',
+ obs=[('assumption','Minimo locale regolare del problema generale con ℓ,g_j,h_i di classe C¹.','regular local minimum'),
+  ('equation','Esistenza e unicità dei moltiplicatori; stazionarietà, non negatività e complementarità sono scritte su una riga.','Lagrange multipliers'),
+  ('structure','Nonostante il titolo second order, il rendering non contiene ancora C² né alcuna Hessiana; la parte bassa è bianca.',None)],
+ formulas=[formula('opt64-kkt',KKT,'Minimo locale regolare e funzioni C¹: esistono moltiplicatori unici. Questa progressiva non mostra ancora il secondo ordine.','Distinguere il titolo dal contenuto effettivamente visibile.'),
+  formula('opt64-problem',PROBLEM,'Rimangono r disuguaglianze e m uguaglianze; le tre righe KKT non sostituiscono l’ammissibilità.','Conservare le ipotesi del teorema.'),
+  ex(64,CIRCLE,'Sola uguaglianza: v=(0,−1) è regolare e KKT con λ=β per ogni α,β.'),
+  formula('opt64-probe',r'z(\theta)=(\sin\theta,-\cos\theta),\quad\ell(z(\theta))-\ell(z^\star)=\tfrac\alpha2\sin^2\theta+\beta(1-\cos\theta)',
+   'La sonda resta esattamente sulla circonferenza. Un costo inferiore confuta il minimo, pur mantenendo le KKT nell’origine della parametrizzazione.','Confrontare primo ordine e un punto ammissibile reale.',origin='enrichment')],
+ controls=[control('opt64-alpha','Curvatura del costo',r'\alpha',-2,2,-.5,.25,'Modifica ℓ e il costo sulla circonferenza. λ=β e stazionarietà in (0,−1) restano invariati.'),
+  control('opt64-beta','Termine verticale',r'\beta',-1,1,1,.25,'Modifica il costo e il moltiplicatore λ=β; il vincolo e la regolarità restano fissi.'),
+  {**control('opt64-theta','Sonda sul vincolo',r'\theta',-180,180,60,15,'Muove soltanto z(θ) sulla circonferenza e aggiorna la variazione di costo; il punto KKT rimane (0,−1).'),'unit':'°'}],choices=[],
+ prerequisites=[('KKT','Derivata in z con λ fissato.',[60,63]),('Regolarità','∇h(0,−1)=(0,−1) è non nullo.',[57])],
+ example=('α=−0.5, β=1, θ=60°',['∇ℓ(0,−1)=(0,1), ∇h(0,−1)=(0,−1), λ=1.','La somma dei gradienti è zero.','La sonda (√3/2,−1/2) ha costo −0.6875 contro −1: differenza 0.3125.'],'Il primo ordine non cambia al variare di α; serve studiare cosa accade sul vincolo.'),
+ visual='Circonferenza ammissibile nei livelli 2D e alla sua altezza reale sul costo 3D; profilo del costo rispetto a θ, punto KKT e sonda comuni. Frecce ∇ℓ e λ∇h in 2D.',
+ axes=('z₁','z₂','decision'),three=True,camera_elevation=55,progressive=True,progression=progression(64,'Solo primo ordine sotto C¹ e regolarità; il secondo ordine non è ancora visibile.'),
+ scope=['Nessun C² o risultato di secondo ordine attribuito alla 64. L’esempio è C∞ per poterlo riusare nella 65.','Il simbolo z⋆ della fonte è usato nel grafico come punto KKT di prova: non dichiararlo minimo per parametri che lo confutano; in UI si usa v=(0,−1).'],
+ edges=[('β cambia segno','λ cambia segno lecitamente.'),('α=β=0','Costo costante, ogni punto del vincolo è minimo.'),('θ=0','Sonda e candidato coincidono, confronto nullo non prova minimo.')],
+ interaction_reason='La famiglia conserva le KKT al candidato mentre il costo sui punti ammissibili cambia.'),
+65:dict(title='La curvatura si misura lungo il vincolo',objective='Usare la Hessiana della Lagrangiana sulle direzioni ortogonali ai gradienti dei vincoli pertinenti, con ipotesi C².',
+ explanation='Per un minimo regolare, la Hessiana della Lagrangiana deve essere non negativa sulle direzioni indicate. Non si richiede che tutta la Hessiana del costo sia positiva.',
+ takeaway='Usare la Hessiana di L e soltanto le direzioni previste: il test resta necessario.',
+ obs=[('assumption','Ripete tutte le ipotesi e condizioni KKT della 64.','Lagrange multipliers'),
+  ('assumption','Aggiunge ℓ,g_j,h_i di classe C².','Moreover'),
+  ('equation','La forma yᵀ∇²₁₁L(z⋆,μ⋆,λ⋆)y è ≥0 per tutte le y ortogonali ai gradienti di tutte le uguaglianze e di tutte le disuguaglianze attive.',None),
+  ('concept','La notazione delle righe dei gradienti usa z e A(z), senza stella; il contesto fissa il punto z=z⋆ del test. Non viene enunciata sufficienza.',None)],
+ formulas=[formula('opt65-second',r'y^\top\nabla^2_{11}L(z^\star,\mu^\star,\lambda^\star)y\ge0',
+   'Con minimo locale regolare e funzioni C², vale sulle y ortogonali a ∇hᵢ e a tutti i ∇gⱼ attivi, valutati in z⋆.','Identificare matrice, direzioni e ipotesi del test.'),
+  formula('opt65-space',r'\nabla h_i(z)^\top y=0,\ i=1,\ldots,m,\qquad\nabla g_j(z)^\top y=0,\ j\in A(z)',
+   'Nel teorema z è il punto z⋆. La fonte restringe il test anche imponendo uguaglianza per tutti i vincoli attivi.','Conservare il sottospazio effettivamente indicato dalla fonte.',details=['È una condizione necessaria valida, potenzialmente più debole del test sul cono critico generale. Non si sostituisce l’uguaglianza con una disuguaglianza senza dichiararlo.','Con vincoli attivi a moltiplicatore nullo, questo sottospazio può escludere direzioni ammissibili verso l’interno. Il test non diventa sufficiente neppure se è vacuo.','Il caso y=0 soddisfa sempre il confronto e non certifica nulla da solo.']),
+  formula('opt65-kkt',KKT,'Le condizioni del primo ordine della progressiva precedente restano richieste.','Non usare la forma quadratica isolata come criterio sufficiente.'),
+  ex(65,CIRCLE,'Al candidato v=(0,−1), λ=β e ∇²₁₁L=diag(α+β,β). Le direzioni del test hanno y₂=0.'),
+  formula('opt65-reduced',r'y=(\cos\varphi,\sin\varphi),\quad y^\top\nabla^2_{11}Ly=(\alpha+\beta)\cos^2\varphi+\beta\sin^2\varphi',
+   'Solo sin φ=0 dà una direzione tangente al punto. Lungo y=(1,0), il valore è α+β e include la curvatura del vincolo.','Confrontare direzioni incluse ed escluse e Hessiana di ℓ contro Hessiana di L.',origin='enrichment',details=['Con α=−0.5, β=1, la curvatura del solo costo lungo x è −0.5; quella della Lagrangiana è +0.5.','Con α=2, β=−1 la Hessiana di L è diag(1,−1), indefinita nello spazio, ma positiva sulla tangente: v è minimo locale sul cerchio.','Con α=−1,β=1 il test tangente è zero, ma il costo sul vincolo cresce come (1−cos θ)²/2: minimo stretto piatto.'])],
+ controls=[control('opt65-alpha','Curvatura del costo',r'\alpha',-2,2,-.5,.25,'Cambia la curvatura del costo lungo x e quella ridotta α+β; il vincolo resta fisso.'),
+  control('opt65-beta','Moltiplicatore esatto',r'\beta',-1,1,1,.25,'Cambia λ=β, il contributo λ∇²h e la forma quadratica.'),
+  {**control('opt65-phi','Direzione da esaminare',r'\varphi',-90,90,0,15,'Ruota la direzione unitaria y: il residuo ∇h(v)ᵀy decide se appartiene al test. Una direzione esclusa non confuta il criterio.'),'unit':'°'}],choices=[],
+ prerequisites=[('Primo ordine e regolarità','Punto e moltiplicatore del modello ricorrente.',[64]),('Hessiana','Forma quadratica e curvatura direzionale.',[6,9])],
+ example=('α=−0.5, β=1, φ=0',['Hessiana di ℓ=diag(−0.5,0), Hessiana di h=I.','λ=1 dà Hessiana di L=diag(0.5,1).','La tangente y=(1,0) ha curvatura 0.5≥0.','Per α=2,β=−1, la normale ha curvatura −1 ma non appartiene al test.'],'Il vincolo curvo contribuisce alla matrice; un vettore non tangente non deve essere usato per respingere la condizione.'),
+ visual='Stessa circonferenza, costo e profilo della 64. In 2D normale e direzione y unitaria, con colore di appartenenza; 3D del costo sul cerchio senza inventare una traiettoria. Readout di ∇hᵀy, forma quadratica e α+β.',
+ axes=('z₁','z₂','decision'),three=True,camera_elevation=55,progressive=True,progression=progression(65,'Aggiunge C², Hessiana della Lagrangiana e sottospazio dei gradienti ortogonali.'),
+ scope=['La mancanza di stelle nelle righe del sottospazio è un’abbreviazione contestuale chiarita in prosa, non un warning rosso utile.','Con sole uguaglianze, il sottospazio della fonte coincide qui con lo spazio tangente; non generalizzare questo caso al cono critico con disuguaglianze.'],
+ edges=[('Direzione normale','Fuori test anche se la forma è negativa.'),('α+β=0','Test nullo e inconclusivo: non etichettare automaticamente non minimo.'),('y=0','Escluso dal selettore unitario, ma discusso nei dettagli.'),('Gradienti attivi in numero d','Il sottospazio può essere {0}; la necessità diventa vacua, non sufficiente.')],
+ interaction_reason='Ruotare y separa un valore negativo da una violazione effettiva; α e β mostrano separatamente costo e contributo del vincolo.'),
+66:dict(title='Il vincolo cambia la geometria del QP',objective='Leggere il QP con uguaglianze lineari e separare simmetria di Q, convessità e curvatura sulle decisioni ammissibili.',
+ explanation='La fonte richiede Q simmetrica, senza imporla positiva. L’uguaglianza limita le decisioni a un insieme affine; il comportamento del costo va letto su quell’insieme.',
+ takeaway='Q indefinita può avere curvatura positiva lungo il vincolo.',
+ obs=[('definition','Definisce il QP con costo zᵀQz/2+qᵀz, uguaglianza Az=b e z∈R^d.','Quadratic program'),
+  ('assumption','Q=Qᵀ∈R^{d×d}, q∈R^d, A∈R^{m×d}, b∈R^m. Non dichiara Q semidefinita né rango pieno di A.','linear equality constraints')],
+ formulas=[formula('opt66-qp',QP,'Q=Qᵀ, q∈Rᵈ, A∈Rᵐˣᵈ e b∈Rᵐ. Per avere una soluzione, Az=b deve essere compatibile.','Associare matrici e dimensioni senza aggiungere convessità alla fonte.'),
+  ex(66,DATA,'Nell’esempio d=2,m=1; q=−v/2, con n=(1,1)/√2 e v=(1,−1)/√2. κ è curvatura tangente, ν normale.'),
+  formula('opt66-basis',BASIS,'Q=κvvᵀ+νnnᵀ. n è normale alla retta e v ne genera le direzioni ammissibili.','Leggere la simmetria e gli autovalori del modello aggiunto.',origin='enrichment'),
+  formula('opt66-profile',r'z(s)=\tfrac b2(1,1)^\top+s\,v,\quad\ell(z(s))=\tfrac\kappa2s^2-\tfrac12s+\tfrac\nu4b^2',
+   'Sul vincolo, ν cambia solo una costante; κ dà la curvatura.','Mostrare il costo effettivamente confrontato sul vincolo.',origin='enrichment')],
+ controls=[control('opt66-kappa','Curvatura tangente',r'\kappa',-1,2,1,.25,'Cambia la curvatura lungo la retta, i livelli e il profilo; non cambia il vincolo.'),
+  control('opt66-nu','Curvatura normale',r'\nu',-2,2,-1,.25,'Cambia Q nelle direzioni normali. Sulla retta modifica solo la costante νb²/4, senza cambiarne la curvatura.'),
+  control('opt66-b','Posizione della retta','b',-1,1,.5,.1,'Trasla la retta z₁+z₂=b; costo e matrici Q,q restano fissi.'),
+  control('opt66-s','Punto sulla retta','s',-1.5,1.5,.5,.1,'Muove la sonda ammissibile e il suo valore sullo stesso profilo; non cambia Q o la retta.')],choices=[],
+ prerequisites=[('QP non vincolato','Ruolo di Q,q e limiti della sola simmetria.',[23,25]),('Uguaglianze','Az=b definisce un insieme affine.',[13,56])],
+ example=('κ=1, ν=−1, b=0.5, s=0.5',['Q ha autovalori 1 e −1: costo non convesso nello spazio.','z(s)≈(0.603553,−0.103553) e Az=b.','Sul vincolo ℓ(s)=s²/2−s/2−0.0625, costo sonda −0.1875.'],'Il profilo sulla retta è convesso anche se Q è indefinita.'),
+ visual='Retta affine e livelli 2D con sonda; accanto profilo del costo rispetto a s. Superficie 3D dello stesso costo, retta sollevata alla sua altezza reale. Nessun dato attribuito alla fonte.',
+ axes=('z₁','z₂','decision'),three=True,camera_elevation=55,
+ scope=['La fonte non garantisce esistenza di una soluzione; κ≤0 con il termine lineare scelto dà costo illimitato inferiormente sul vincolo.','La retta è infinita; il disegno ne mostra soltanto un intervallo fisso, senza sostituirlo con un vincolo di scatola.'],
+ edges=[('κ=0','Profilo lineare non costante: nessun minimo finito.'),('κ<0','Costo quadratico illimitato inferiormente lungo la retta.'),('ν<0,κ>0','Q indefinita, ma profilo vincolato strettamente convesso.'),('b cambia','La retta si sposta; non è un nuovo punto sulla vecchia retta.')],
+ interaction_reason='κ e ν separano direzioni tangenti e normali; b e s distinguono modifica del vincolo e scelta di una decisione.'),
+67:dict(title='Le KKT del QP diventano un sistema lineare',objective='Derivare stazionarietà e ammissibilità del QP senza confondere solvibilità, unicità dei moltiplicatori e minimo.',
+ explanation='Derivare L in z produce il bilancio; derivarla in λ restituisce il vincolo. Le due equazioni formano un sistema lineare, che può anche essere singolare o incompatibile.',
+ takeaway='Un punto KKT del QP va classificato con la curvatura sul vincolo.',
+ obs=[('equation','L(z,λ)=zᵀQz/2+qᵀz+λᵀ(Az−b), λ∈R^m.','Lagrangian'),
+  ('concept','Se z⋆ è minimo esiste λ⋆ che annulla entrambe le derivate; la fonte non promette unicità.','First-order necessary'),
+  ('equation','Le due righe sono Qz⋆+q+Aᵀλ⋆=0 e Az⋆−b=0. ∇₁ deriva in z, ∇₂ in λ.',None)],
+ formulas=[formula('opt67-system',r'\begin{bmatrix}Qz^\star+q+A^\top\lambda^\star\\Az^\star-b\end{bmatrix}=0',
+   'La prima riga è ∇₁L=0; la seconda ∇₂L=0 impone Az=b. λ è libero nel segno.','Distinguere le due variabili di derivazione.'),
+  formula('opt67-lagrangian',r'L(z,\lambda)=\tfrac12z^TQz+q^Tz+\lambda^\top(Az-b)',
+   'Q è simmetrica, quindi il gradiente del costo è Qz+q; la derivata del termine vincolante è Aᵀλ.','Verificare il segno e la trasposizione della stazionarietà.'),
+  formula('opt67-block',r'\begin{bmatrix}Q&A^\top\\A&0\end{bmatrix}\begin{bmatrix}z\\\lambda\end{bmatrix}=\begin{bmatrix}-q\\b\end{bmatrix}',
+   'È la stessa coppia di equazioni raccolta in forma matriciale. Non si usa l’inversa se il sistema è singolare.','Rendere il sistema risolvibile senza ipotesi fittizie.',origin='enrichment'),
+  ex(67,DATA+r',\quad\nu=-1,\ q=\sigma v','Si riusa la famiglia della 66 con v=(1,−1)/√2. Un secondo caso aggiunge il vincolo ridondante 2(z₁+z₂)=2b.'),
+  formula('opt67-reduced',r'\kappa s+\sigma=0,\quad\lambda_{\rm eff}=b/2',
+   'κ≠0 dà s=−σ/κ. κ=0,σ≠0 è incompatibile; κ=σ=0 ammette tutta la retta.','Separare i casi senza dividere per zero.',origin='enrichment',details=['Per la sola riga A=(1,1), λ=λ_eff=b/2. Il determinante della matrice KKT è −2κ, indipendente da ν.','Con A=[[1,1],[2,2]], b_vec=(b,2b), le soluzioni hanno λ₁+2λ₂=b/2. La famiglia (b/2−2τ,τ) è non unica anche se il punto z è unico.','Per vincoli affini l’esistenza dei moltiplicatori in un minimo segue dall’ortogonalità del gradiente a ker(A), senza richiedere rango pieno. Il rango pieno serve all’unicità dei moltiplicatori.','κ<0 può dare un sistema invertibile e un massimo lungo la retta, senza minimo.'])],
+ controls=[control('opt67-kappa','Curvatura tangente',r'\kappa',-1,2,1,.25,'Cambia il sistema ridotto e la sua classificazione; a zero si usano rami espliciti, nessuna divisione per zero.'),
+  control('opt67-sigma','Termine tangente',r'\sigma',-1,1,-.5,.25,'Cambia q e il termine noto del sistema; con κ=0 decide compatibilità o incompatibilità.'),
+  control('opt67-b','Posizione del vincolo','b',-1,1,.5,.1,'Trasla la retta e cambia λ_eff=b/2, senza modificare la curvatura.')],
+ choices=[('Vincoli','s','Singolo / ridondanti','Singolo','Aggiunge la riga (2,2) e il termine noto 2b; geometria e punti KKT invariati, moltiplicatori non unici e matrice KKT singolare.')],
+ prerequisites=[('QP e dimensioni','A ha m righe e d colonne.',[66]),('Moltiplicatori','Unicità sotto regolarità, non per definizione.',[57,60])],
+ example=('κ=1, σ=−0.5, b=0.5',['s⋆=0.5 e z⋆≈(0.603553,−0.103553).','λ=0.25 soddisfa Qz+q+Aᵀλ=0.','Con due righe ridondanti, ogni (λ₁,λ₂)=(0.25−2τ,τ) dà lo stesso z.','κ=0,σ=−0.5 non dà alcun punto KKT; κ=σ=0 dà una retta di soluzioni.'],'La singolarità non equivale automaticamente ad assenza di soluzioni o minimi.'),
+ visual='Stesso QP in livelli/profilo 2D e superficie 3D; candidato KKT solo se il sistema è compatibile. Nessun inverso numerico di matrice singolare; famiglia di moltiplicatori esplicita nel caso ridondante.',
+ axes=('z₁','z₂','decision'),three=True,camera_elevation=55,
+ scope=['A e termine noto diventano 2×2 e (b,2b) nel caso ridondante; non mantenere un vettore b di dimensione errata.','Il punto stazionario con κ<0 non viene chiamato minimo.','Candidato fuori ritaglio dichiarato; il valore calcolato resta nei risultati.'],
+ edges=[('κ=0,σ≠0','Sistema incompatibile e costo illimitato, nessun candidato inventato.'),('κ=0,σ=0','Infinite decisioni stazionarie; con questa famiglia sono tutte minime sul vincolo.'),('Vincoli ridondanti','Stessa retta, moltiplicatori non unici.'),('κ<0','Sistema unico con vincolo singolo, ma nessun minimo.')],
+ interaction_reason='I parametri espongono i tre casi del sistema ridotto; la rappresentazione ridondante isola l’unicità dei moltiplicatori dalla geometria.'),
+68:dict(title='La curvatura del QP si restringe a ker(A)',objective='Correggere la trasposizione della fonte e verificare la forma quadratica soltanto sulle direzioni Ay=0.',
+ explanation='Per un QP con uguaglianze, la Hessiana in z della Lagrangiana è Q. Il test necessario riguarda le direzioni che mantengono Az=b: sono quelle con Ay=0.',
+ takeaway='Contano Q lungo ker(A), la fattibilità e il primo ordine: il solo test di curvatura non basta.',
+ obs=[('equation','Secondo ordine necessario: yᵀ∇²₁₁L(z⋆,λ⋆)y=yᵀQy≥0.','Second-order necessary'),
+  ('equation','La riga ∇h_i(z)ᵀy=0 viene trasformata nella fonte in Aᵀy=0; la frase finale nomina lo spazio nullo di Aᵀ.','null-space'),
+  ('concept','Con A∈R^{m×d} della 66 e h(z)=Az−b della 67, il prodotto corretto è Ay. La versione stampata non è dimensionalmente definita per m≠d.',None)],
+ formulas=[formula('opt68-hessian',r'y^\top\nabla^2_{11}L(z^\star,\lambda^\star)y=y^\top Qy\ge0',
+   'Poiché il vincolo è affine, non aggiunge termini alla Hessiana in z. La condizione necessaria vale soltanto sulle direzioni ammissibili.','Identificare la matrice senza richiedere Q≥0 in tutto Rᵈ.'),
+  formula('opt68-literal',r'\nabla h_i(z)^\top y=0,\ i=1,\ldots,m\ \Longrightarrow\ A^\top y=0,\quad y\in\ker(A^\top)',
+   'Trascrizione della fonte: il passaggio ad Aᵀ è un probabile refuso, conservato solo come riferimento.','Mantenere tracciabile la formula originale senza usarla nei calcoli.'),
+  formula('opt68-corrected',r'y^\top Qy\ge0\quad\forall y\in\ker(A),\qquad Ay=0',
+   'A∈Rᵐˣᵈ agisce su y∈Rᵈ. È Ay=0 a mantenere il vincolo lungo z+ty.','Usare la versione dimensionalmente e matematicamente coerente.',origin='correction',details=['Ogni gradiente ∇h_i è la trasposta della i-esima riga di A. La matrice dei gradienti del corso è ∇h=Aᵀ; quindi le derivate direzionali sono (∇h)ᵀy=Ay.','Nel caso d=2,m=1, A=(1,1): Ay è uno scalare, mentre Aᵀy non è un prodotto compatibile.','Con una base N delle colonne di ker(A), la matrice ridotta è NᵀQN. Non confonderla con Q intera.']),
+  ex(68,DATA+r',\quad b=0,\ q=\sigma v','Si mantiene la famiglia 66–67. v=(1,−1)/√2 genera ker(A), n=(1,1)/√2 ne è normale.'),
+  formula('opt68-direction',r'y=\cos\varphi\,v+\sin\varphi\,n,\quad Ay=\sqrt2\sin\varphi,\quad y^\top Qy=\kappa\cos^2\varphi+\nu\sin^2\varphi',
+   'Solo sin φ=0 dà una direzione del test. κ è la curvatura ridotta; ν può essere negativa senza impedire il minimo sul vincolo.','Separare direzione esclusa e violazione effettiva.',origin='enrichment'),
+  formula('opt68-full-test',r'\kappa\ge0\quad\text{e}\quad\exists s:\ \kappa s+\sigma=0',
+   'Per questa famiglia ammissibile, curvatura ridotta non negativa e primo ordine compatibile danno un minimo globale. κ>0 lo rende unico; κ=σ=0 dà minimi multipli.','Aggiungere una conclusione specifica del QP dichiarandola enrichment, senza attribuire sufficienza alla sola fonte.',origin='enrichment')],
+ controls=[control('opt68-kappa','Curvatura tangente',r'\kappa',-1,2,1,.25,'Cambia la forma su ker(A), il costo sul vincolo e il tipo del punto.'),
+  control('opt68-nu','Curvatura normale',r'\nu',-2,2,-1,.25,'Cambia il costo fuori dal vincolo, ma con b=0 non modifica il profilo ammissibile.'),
+  control('opt68-sigma','Termine lineare',r'\sigma',-1,1,-.5,.25,'Sposta il punto stazionario se κ≠0; per κ=0 separa minimi multipli e costo illimitato.'),
+  {**control('opt68-phi','Direzione di prova',r'\varphi',-90,90,0,15,'Ruota il vettore unitario y fra tangente v e normale n; cambia Ay e la forma, mantenendo Q e il vincolo.'),'unit':'°'}],choices=[],
+ prerequisites=[('Dimensioni del QP','A è m×d, non d×m.',[66]),('Primo ordine','Compatibilità del sistema oltre alla curvatura.',[67]),('Secondo ordine vincolato','Forma quadratica sulle direzioni pertinenti.',[65])],
+ example=('κ=1,ν=−1,σ=−0.5,φ=0',['Q ha autovalori 1 e −1, ma y=v soddisfa Ay=0 e yᵀQy=1.','Il minimo è s=0.5 sul vincolo, nonostante Q indefinita.','Per φ=90°, y=n e yᵀQy=−1, ma Ay=√2≠0: direzione esclusa.','Per κ=0,σ≠0 la curvatura ridotta zero non evita il costo illimitato.'],'Nessun risultato viene calcolato sullo spazio nullo sbagliato.'),
+ visual='Livelli e retta ammissibile 2D, direzione y basata nell’origine e profilo corretto sul vincolo; stessa superficie e retta in 3D. Valori Ay, yᵀQy e κ distinti; freccia solo in 2D e indicatore incluso/escluso.',
+ axes=('z₁','z₂','decision'),three=True,camera_elevation=55,
+ scope=['CORRECTION_WARNING limitato alla trasposizione: usare solo Ay=0 e ker(A) in esempi e grafici.','Tutti i risultati numerici sono della famiglia aggiunta; la fonte enuncia necessità, non la sufficienza specifica spiegata nei dettagli.','La direzione y è una variazione nello spazio delle decisioni, non un nuovo punto da sollevare arbitrariamente sul costo.'],
+ edges=[('ν<0 e κ>0','Q indefinita può dare minimo unico sul vincolo.'),('φ=90°','Valore negativo fuori dal test: non classificare come violazione.'),('κ=0,σ=0','Test nullo e minimi multipli.'),('κ=0,σ≠0','Test nullo ma primo ordine incompatibile, nessun minimo.'),('κ piccolo non nullo','Non trattarlo come zero; candidato fuori ritaglio dichiarato.')],
+ interaction_reason='La rotazione di y distingue geometria e segno della forma; κ,ν e σ separano secondo ordine, direzioni escluse e solvibilità del primo ordine.')
+}
+def warning(n,text):
+ if n==68:return ('CORRECTION_WARNING',r'A^\top y=0;\quad y\in\ker(A^\top)',r'Ay=0;\quad y\in\ker(A)',
+  '⚠ Warning: possibile errore nella slide originale. Qui usiamo Ay=0 e ker(A).',
+  'La 66 dichiara A∈R^{m×d}; la 67 usa h(z)=Az−b e la stazionarietà Qz+q+Aᵀλ=0. I gradienti di h sono colonne della matrice ∇h=Aᵀ, secondo la convenzione d×m della 7. Pertanto il vettore delle derivate direzionali è (∇h)ᵀy=Ay∈R^m. Aᵀy non è dimensionalmente compatibile per y∈R^d quando m≠d e, anche se quadrata, selezionerebbe in generale il sottospazio sbagliato. Il test necessario è yᵀQy≥0 su ker(A). Nel modello esplicito A=(1,1) e ker(A)=span((1,−1)); tutti i calcoli e grafici usano questo spazio. Fonte, raster, testo e SOURCE_LITERAL immutati.')
+ return None
+def visual(n,vis,m):
+ if m.get('three'):
+  vis['threeDRequirements']['trajectory'].update(enabled=False,kind='none')
+  vis['threeDRequirements']['animation'].update(enabled=False)
+  vis['twoDRequirements'].update(plotType='constraint_geometry_and_restricted_cost',relationshipTo3D='Stesso costo, vincolo e punti; a destra profilo del costo su decisioni realmente ammissibili. Le frecce delle variazioni restano nel piano 2D.')
+  vis['visualizationSemantics']['explanation']='Il terzo asse è ℓ(z). Non è tempo, moltiplicatore o terza decisione.'
+  if n>=66:
+   vis['presentation']['camera'].update(initialAzimuthDeg=25,initialElevationDeg=35)
+   vis['visualizationSemantics']['explanation']+=' Asse del costo 3D fisso [−4.5,4.5]; porzioni esterne dichiarate senza clamp dei valori.'
+ if n==63:vis['twoDRequirements']['plotType']='head_to_tail_gradient_balance'
+if __name__=='__main__':
+ H.persist_batch(P,63,68,'I',{62:'Definizione di punto KKT; necessario non implica minimo.',69:'Divisoria degli algoritmi vincolati, letta solo come contesto. Non implementare J.'},
+  'constrainedQpNotes.ts','constrainedQpFormulaNotes',warning_resolver=warning,configure_visualization=visual,analysis_date='2026-10-19')

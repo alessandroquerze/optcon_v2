@@ -81,12 +81,419 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "43bfc18cb20fa6f19b362a32823e79154a97714d27139c7b13b1064016666b1f",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0004",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "66cb0c6f07fad310776975d198c3f6355762fe801ddf023c8b5d5e554ce48aa6",
+        "layout": "96d0d56c520f0ea4a3c339f1c267db372159bed4017de57ffff04757407edeb3",
+        "render": "aabc46acd4e6b890405c1bb602429c4c7187a310d57ce528391938092c41a671"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-a-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0004",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0003",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0005"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0004",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0003",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0005"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0004",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0003",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0005"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Unconstrained optimization: introduction",
+      "observations": [
+        {
+          "id": "s01",
+          "category": "equation",
+          "description": "La fonte ripete min ℓ(z), z∈R^d, e la definizione di costo e decisione.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0004",
+            "modality": "both",
+            "text_quote": "Consider the unconstrained optimization problem",
+            "bbox": [
+              20,
+              28,
+              443.5429992675781,
+              241.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "s02",
+          "category": "diagram",
+          "description": "Il profilo mostra un minimo globale stretto, un massimo locale stretto e un segmento costante etichettato local minima.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0004",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              20,
+              28,
+              443.5429992675781,
+              241.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "s03",
+          "category": "concept",
+          "description": "I massimi sono definibili analogamente e sono minimi della funzione −ℓ.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0004",
+            "modality": "both",
+            "text_quote": "maxima are minima of −ℓ",
+            "bbox": [
+              20,
+              28,
+              443.5429992675781,
+              241.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, disposizione e crediti/footer letti visivamente; nessun dato numerico dedotto dagli elementi decorativi.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0004",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Leggere il grafico qualitativo e il passaggio da minimi a massimi cambiando segno.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0003",
+          "role": "previous",
+          "note": "Distinguere locale/globale e stretto/non stretto con i corretti quantificatori."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0005",
+          "role": "next",
+          "note": "Separare minimizzatore e valore ottimo."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\min_{z\\in\\mathbb R^d}\\ell(z)",
+          "meaning": "Il problema rimane scegliere il costo più basso su tutto lo spazio delle decisioni; la figura ne illustra diversi punti notevoli.",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "progressive",
+        "related_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0003"
+        ],
+        "added": [
+          "Rappresentazione geometrica e remark su −ℓ."
+        ],
+        "removed": [
+          "Elenco testuale delle quattro definizioni."
+        ],
+        "changed": [],
+        "observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "structure"
+        ],
+        "rationale": "La pagina 4 riprende il problema della 3 ma sostituisce le definizioni con una figura e una nuova remark; le due pagine restano distinte."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo o spazio della copertina.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Tutto il contenuto, incluse formule, grafici, affiliazione e remark quando presenti.",
+            "observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer e decorazione, o spazio bianco finale.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Il disegno della fonte è qualitativo: non specifica coordinate, funzione analitica o dati numerici.",
+          "La companion usa un profilo aggiunto con lo stesso ruolo geometrico, non una ricostruzione dei dati originali."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Minimi locali e stretti",
+            "why": "Per interpretare correttamente il plateau.",
+            "origin": "source_context",
+            "page_numbers": [
+              3
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\min_{z\\in\\mathbb R^d}\\ell(z)",
+            "anchor": "Consider the unconstrained optimization problem",
+            "notes": "Trascrizione della fonte; le forme equivalenti aggiunte sono enrichment."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "La figura distingue un minimo globale stretto da un tratto di minimi locali non stretti. Cambiando segno al costo si scambiano minimi e massimi.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Profilo 2D con plateau; selezione dei tre punti e confronto ℓ/−ℓ a scala verticale fissa.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "Tre posizioni sul profilo aggiunto",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli dichiarati nel piano: Profilo 2D con plateau; selezione dei tre punti e confronto ℓ/−ℓ a scala verticale fissa.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Leggere il grafico qualitativo e il passaggio da minimi a massimi cambiando segno.",
+            "setup": "Tre posizioni sul profilo aggiunto",
+            "parameters": [],
+            "derivation": [
+              "ℓ(−2)=0: unico minimo globale e locale stretto.",
+              "ℓ(0)=3: massimo locale stretto.",
+              "ℓ(2.5)=1: minimo locale non stretto; nell’interno del plateau è anche massimo locale non stretto."
+            ],
+            "expected_outcome": "La classificazione dipende dal confronto, non soltanto dalla pendenza nulla.",
+            "limitations": [
+              "Il disegno della fonte è qualitativo: non specifica coordinate, funzione analitica o dati numerici.",
+              "La companion usa un profilo aggiunto con lo stesso ruolo geometrico, non una ricostruzione dei dati originali."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "SceneViewport",
+          "description": "Profilo 2D con plateau; selezione dei tre punti e confronto ℓ/−ℓ a scala verticale fissa.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "L’effetto parametrico isola il concetto della pagina.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Punto del profilo",
+              "symbol": "s",
+              "origin": "enrichment",
+              "range": "−2 / 0 / 2.5",
+              "default": "2.5",
+              "effect_on_change": "Cambia il punto evidenziato, il valore e la classificazione, senza modificare il profilo.",
+              "edge_cases": [
+                "Punto interno al plateau",
+                "−ℓ",
+                "Estremi del plateau"
+              ]
+            },
+            {
+              "name": "Funzione visualizzata",
+              "symbol": "\\sigma",
+              "origin": "enrichment",
+              "range": "ℓ / −ℓ",
+              "default": "ℓ",
+              "effect_on_change": "Inverte il segno del costo e scambia minimi e massimi; coordinate e scala verticale restano fisse.",
+              "edge_cases": [
+                "Punto interno al plateau",
+                "−ℓ",
+                "Estremi del plateau"
+              ]
+            }
+          ],
+          "outputs": [
+            "Leggere il grafico qualitativo e il passaggio da minimi a massimi cambiando segno."
+          ],
+          "invariants": [
+            "Il disegno della fonte è qualitativo: non specifica coordinate, funzione analitica o dati numerici.",
+            "La companion usa un profilo aggiunto con lo stesso ruolo geometrico, non una ricostruzione dei dati originali."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "Punto interno al plateau",
+            "expected_behavior": "È contemporaneamente minimo e massimo locale non stretto.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "structure"
+            ]
+          },
+          {
+            "case": "−ℓ",
+            "expected_behavior": "Il minimo globale stretto di ℓ diventa massimo globale stretto di −ℓ.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "structure"
+            ]
+          },
+          {
+            "case": "Estremi del plateau",
+            "expected_behavior": "Sono minimi locali non stretti, ma non massimi locali come i punti interni.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un focus principale, una figura e dettagli su richiesta consentono una singola companion leggibile; nessuna riduzione tipografica.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Leggere il grafico qualitativo e il passaggio da minimi a massimi cambiando segno.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "visual",
+              "example",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un focus principale, una figura e dettagli su richiesta consentono una singola companion leggibile; nessuna riduzione tipografica.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

@@ -81,12 +81,434 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "1de8f155f0b9b841e26e2118bcc5007318ba6c5d54571a1451f7cb5886cc5e9d",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0017",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "050266d76ba407b7c93cd903a2a23a503ea8bd6c515e2b7ff705c87f67d0c02b",
+        "layout": "051f559549003e875dcb13070c29f1bab93b91430aa2f85b98071e685cd91581",
+        "render": "8599c490ada12f3788207e5b9221efbf5d8bb77a359cce959e2e7aa8eacd247f"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-b-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0017",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0016",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0018"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0017",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0016",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0018"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0017",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0016",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0018"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Convexity and Lipschitz continuity of the gradient",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "assumption",
+          "description": "ℓ è differenziabile e convessa; il gradiente è L-Lipschitz con L>0.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0017",
+            "modality": "both",
+            "text_quote": "Consider a differentiable convex function",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "equation",
+          "description": "Il limite Lipschitz confronta la norma della differenza dei gradienti con L volte la distanza.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0017",
+            "modality": "both",
+            "text_quote": "i.e.,",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "equation",
+          "description": "La fonte enuncia cocoercività con coefficiente 1/L.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0017",
+            "modality": "both",
+            "text_quote": "co-coercive operator",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0017",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Leggere insieme limite Lipschitz e cocoercività per una funzione convessa.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0016",
+          "role": "previous",
+          "note": "Interpretare µ come limite uniforme inferiore e conservare una normalizzazione coerente."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0018",
+          "role": "next",
+          "note": "Valutare i due termini γ₁ e γ₂ senza confondere costanti di curvatura e variabili di decisione."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\|\\nabla\\ell(z_A)-\\nabla\\ell(z_B)\\|\\le L\\|z_A-z_B\\|",
+          "meaning": "L è un limite superiore uniforme alla variazione del gradiente, non necessariamente il valore più piccolo possibile.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "(\\nabla\\ell(z_A)-\\nabla\\ell(z_B))^\\top(z_A-z_B)\\ge\\frac1L\\|\\nabla\\ell(z_A)-\\nabla\\ell(z_B)\\|^2",
+          "meaning": "Per ℓ convessa e differenziabile con gradiente L-Lipschitz, una variazione del gradiente richiede un allineamento quantitativo con lo spostamento.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "progressive",
+        "related_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0016"
+        ],
+        "added": [
+          "Leggere insieme limite Lipschitz e cocoercività per una funzione convessa."
+        ],
+        "removed": [],
+        "changed": [
+          "Ipotesi e limite quantitativo cambiano: conservare entrambe le pagine."
+        ],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "structure"
+        ],
+        "rationale": "Progressione concettuale verificata, non duplicazione eliminabile."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "Nessuna correzione matematica necessaria dopo confronto con la pagina precedente e successiva."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Gradiente monotono",
+            "why": "Cocoercività aggiunge un limite quantitativo.",
+            "origin": "source_context",
+            "page_numbers": [
+              14
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\|\\nabla\\ell(z_A)-\\nabla\\ell(z_B)\\|\\le L\\|z_A-z_B\\|",
+            "anchor": "Consider a differentiable convex function",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "(\\nabla\\ell(z_A)-\\nabla\\ell(z_B))^\\top(z_A-z_B)\\ge\\frac1L\\|\\nabla\\ell(z_A)-\\nabla\\ell(z_B)\\|^2",
+            "anchor": "Consider a differentiable convex function",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "L limita la variazione del gradiente. Con la convessità si ottiene anche un legame fra allineamento e norma: il prodotto è almeno ||Δg||²/L.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "L=3 e φ=π/4",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "2D: vettori δ e Δg/L e disco equivalente; 3D: costo quadratico della stessa coppia e degli stessi parametri.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Leggere insieme limite Lipschitz e cocoercività per una funzione convessa.",
+            "setup": "L=3 e φ=π/4",
+            "parameters": [],
+            "derivation": [
+              "δ=(1/√2,1/√2), Δg=(1/√2,3/√2).",
+              "M=2 e ||Δg||²/L=5/3.",
+              "||Δg||=√5≤3."
+            ],
+            "expected_outcome": "Tutti i valori provengono dalla stessa quadratica; il disco usa Δg/L, non Δg.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "FunctionExplorer",
+          "description": "2D: vettori δ e Δg/L e disco equivalente; 3D: costo quadratico della stessa coppia e degli stessi parametri.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Variare un solo aspetto del confronto mantenendo esplicite le invarianti.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Limite del gradiente",
+              "symbol": "L",
+              "origin": "enrichment",
+              "range": "{'min': 1, 'max': 4, 'step': 0.1, 'integer': False}",
+              "default": "3",
+              "effect_on_change": "Cambia la seconda curvatura, la superficie, Δg/L e i due limiti; distanza e direzione restano fisse.",
+              "edge_cases": [
+                "L=1",
+                "φ=π/2",
+                "L≤0"
+              ]
+            },
+            {
+              "name": "Direzione della coppia",
+              "symbol": "\\varphi",
+              "origin": "enrichment",
+              "range": "{'min': 0, 'max': 1.5707963267948966, 'step': 0.07853981633974483, 'integer': False}",
+              "default": "0.7853981633974483",
+              "effect_on_change": "Ruota una coppia a distanza uno, il disco e i vettori; conserva L.",
+              "edge_cases": [
+                "L=1",
+                "φ=π/2",
+                "L≤0"
+              ]
+            }
+          ],
+          "outputs": [
+            "Leggere insieme limite Lipschitz e cocoercività per una funzione convessa."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "L=1",
+            "expected_behavior": "Quadratica isotropa, Δg/L=δ e cocoercività in uguaglianza.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "φ=π/2",
+            "expected_behavior": "Direzione di curvatura L; entrambi i limiti sono esatti.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "L≤0",
+            "expected_behavior": "Non consentito: nessuna divisione per zero.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Leggere insieme limite Lipschitz e cocoercività per una funzione convessa.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

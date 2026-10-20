@@ -81,12 +81,483 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "6320c5190035052ec04a94fe5f38f03d4612c3b8b529782d0bc95ecad83b5c12",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0074",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "99803aa03d4e68e204666667c0d0cfc44c2b24fd30bffc74a82ed7be22a9524c",
+        "layout": "56cd8c9183a0232ab0b157ac7ad901bb9ef0b364749636af899dd984b3485c7a",
+        "render": "481bad4460bb1a4c54aa532f583b6d03e00ba1f28fd17f68b4cfc2b1220d5ae7"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-j-2026-10-19"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0074",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0073",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0075"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0074",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0073",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0075"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0074",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0073",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0075"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Newton’s Method via Sequential Quadratic Programming (SQP)",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "algorithm",
+          "description": "Parte da z⁰ e ripete il calcolo di ∇ℓ, B^k e ∇h; l’inizializzazione di λ non è esplicitata.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0074",
+            "modality": "both",
+            "text_quote": "Start from",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "equation",
+          "description": "Δz^k minimizza il QP con gradiente del costo e vincolo linearizzato. Il simbolo Δλ_QP^k denomina il moltiplicatore del QP.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0074",
+            "modality": "both",
+            "text_quote": "Lagrange multiplier",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "equation",
+          "description": "Aggiornamenti stampati: z^{k+1}=z^k+Δz^k e λ^{k+1}=Δλ_QP^k. Il secondo è un’assegnazione, non una somma.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0074",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0074",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Seguire il ciclo SQP senza scambiare il moltiplicatore del QP per un incremento da accumulare.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0073",
+          "role": "previous",
+          "note": "Collegare il sistema Newton alle KKT del QP, correggendo l’affermazione di sufficienza priva di ipotesi."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0075",
+          "role": "next",
+          "note": "Merit function e scelta del passo: consultata solo come contesto futuro, non implementata."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\begin{aligned}z^{k+1}&=z^k+\\Delta z^k\\\\\\lambda^{k+1}&=\\Delta\\lambda_{\\mathrm{QP}}^k\\end{aligned}",
+          "meaning": "Δλ_QPᵏ è λᵏ⁺¹: si assegna, senza sommarlo a λᵏ.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\Delta z^k=\\arg\\min_{\\Delta z}\\ \\nabla\\ell(z^k)^\\top\\Delta z+\\tfrac12\\Delta z^\\top B^k\\Delta z\\quad\\text{s.t. }h(z^k)+\\nabla h(z^k)^\\top\\Delta z=0",
+          "meaning": "Il QP deve avere una soluzione; nell’esempio si usa l’esatta Bᵏ di Newton. Se il modello non ha minimo, il ciclo si arresta esplicitamente.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "structure"
+        ],
+        "rationale": "Scopo e contenuto autonomi."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "Nessuna correzione matematica necessaria dopo confronto con la pagina precedente e successiva.",
+          "La definizione di Bᵏ viene dalla 71; λ⁰ è enrichment dichiarato, non un dato originale.",
+          "La notazione Δλ_QP della fonte è corretta con il suo aggiornamento: chiarimento locale, nessun warning rosso inutile.",
+          "Nessun passo di merit function/Armijo e nessuna implementazione delle pagine 75–81.",
+          "Nessuna promessa di discesa del costo o fattibilità esatta a ogni passo pieno."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Equivalenza Newton/QP",
+            "why": "Stesse direzioni se il QP ha minimo unico.",
+            "origin": "source_context",
+            "page_numbers": [
+              73
+            ]
+          },
+          {
+            "concept": "Iterazioni",
+            "why": "k è indice algoritmico, non tempo fisico.",
+            "origin": "source_context",
+            "page_numbers": [
+              27,
+              71
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\begin{aligned}z^{k+1}&=z^k+\\Delta z^k\\\\\\lambda^{k+1}&=\\Delta\\lambda_{\\mathrm{QP}}^k\\end{aligned}",
+            "anchor": "Start from",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\Delta z^k=\\arg\\min_{\\Delta z}\\ \\nabla\\ell(z^k)^\\top\\Delta z+\\tfrac12\\Delta z^\\top B^k\\Delta z\\quad\\text{s.t. }h(z^k)+\\nabla h(z^k)^\\top\\Delta z=0",
+            "anchor": "Start from",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Si aggiornano derivate e QP, poi z avanza del passo e λ prende il valore del moltiplicatore del QP. Il ciclo richiede QP risolvibili; il passo pieno non dà garanzie globali.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "z⁰=(1,1), λ⁰=.2",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Sequenza dei punti SQP sui livelli e sulla superficie del costo, parabola e norma del residuo rispetto a k. Risultati affiancano λ corrente, nuovo moltiplicatore QP e incremento Newton; stato del ciclo sempre esplicito.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Seguire il ciclo SQP senza scambiare il moltiplicatore del QP per un incremento da accumulare.",
+            "setup": "z⁰=(1,1), λ⁰=.2",
+            "parameters": [],
+            "derivation": [
+              "Il primo QP dà Δz=(−5/23,−10/23), Δλ_QP=10/23≈.434783.",
+              "λ¹=.434783, non .2+.434783.",
+              "L’incremento Newton è invece .234783.",
+              "Un avvio con D<0 rende il QP illimitato: nessun passo SQP viene fabbricato."
+            ],
+            "expected_outcome": "La notazione con Δ non cambia il ruolo di moltiplicatore completo del QP.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "FunctionExplorer",
+          "description": "Sequenza dei punti SQP sui livelli e sulla superficie del costo, parabola e norma del residuo rispetto a k. Risultati affiancano λ corrente, nuovo moltiplicatore QP e incremento Newton; stato del ciclo sempre esplicito.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Le iterazioni rendono visibile la sequenza di modelli; il confronto dei moltiplicatori impedisce l’errore della doppia somma.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Ascissa iniziale",
+              "symbol": "z_1^0",
+              "origin": "enrichment",
+              "range": "{'min': -1.2, 'max': 1.2, 'step': 0.1, 'integer': False}",
+              "default": "1",
+              "effect_on_change": "Muove il punto iniziale e ricalcola l’intera sequenza con gli stessi costo e vincolo.",
+              "edge_cases": [
+                "QP illimitato",
+                "QP con minimi multipli",
+                "Residuo piccolo",
+                "Inizializzazione diversa"
+              ]
+            },
+            {
+              "name": "Ordinata iniziale",
+              "symbol": "z_2^0",
+              "origin": "enrichment",
+              "range": "{'min': -0.2, 'max': 1.5, 'step': 0.1, 'integer': False}",
+              "default": "1",
+              "effect_on_change": "Cambia l’ammissibilità iniziale e ricalcola la sequenza; al cambio dei parametri Play si ferma e k torna a zero.",
+              "edge_cases": [
+                "QP illimitato",
+                "QP con minimi multipli",
+                "Residuo piccolo",
+                "Inizializzazione diversa"
+              ]
+            },
+            {
+              "name": "Moltiplicatore iniziale",
+              "symbol": "\\lambda^0",
+              "origin": "enrichment",
+              "range": "{'min': -0.5, 'max': 1.5, 'step': 0.1, 'integer': False}",
+              "default": "0.2",
+              "effect_on_change": "Inizializza anche λ⁰, necessario per B⁰. Cambia i QP e ricalcola la sequenza, senza cambiare ℓ o h.",
+              "edge_cases": [
+                "QP illimitato",
+                "QP con minimi multipli",
+                "Residuo piccolo",
+                "Inizializzazione diversa"
+              ]
+            },
+            {
+              "name": "Iterazione / Play-Pausa / Passo / Riparti",
+              "symbol": "k",
+              "origin": "enrichment",
+              "range": "Campioni disponibili, fino a dodici passi",
+              "default": "k=0",
+              "effect_on_change": "Seleziona gli iterati SQP precalcolati; cambiare l’inizializzazione ferma Play e riporta a k=0.",
+              "edge_cases": [
+                "QP illimitato",
+                "QP con minimi multipli",
+                "Residuo piccolo",
+                "Inizializzazione diversa"
+              ]
+            }
+          ],
+          "outputs": [
+            "Seguire il ciclo SQP senza scambiare il moltiplicatore del QP per un incremento da accumulare."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "QP illimitato",
+            "expected_behavior": "Arresto esplicito, nessuna direzione stazionaria spacciata per argmin.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "QP con minimi multipli",
+            "expected_behavior": "Direzione non unica: arresto con motivazione, senza scelta arbitraria.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "Residuo piccolo",
+            "expected_behavior": "Arresto numerico, non certificazione automatica di minimo.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "Inizializzazione diversa",
+            "expected_behavior": "Possibili radici o fallimenti diversi; nessuna garanzia globale.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Seguire il ciclo SQP senza scambiare il moltiplicatore del QP per un incremento da accumulare.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

@@ -120,12 +120,454 @@
   ],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "93a98cf4949ce3d7b8a02545506610c98a56b8771713646e67ea7170013344bb",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0062",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "56cec7f65d2dd0a10c39797eb72a8cef88bef8c4aecb640e4a75f23e5d2ab3a9",
+        "layout": "c5d4e7f2a5e2ae65f2d395effb6ef4a32374b5bc730c21a912a08d66b71d3dbc",
+        "render": "bcf1e4465d80671152920a345b4717fc704f554c60a8d9b9b8daad38b9cabfc9"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-h-2026-10-19"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0062",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0061",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0063"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0062",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0061",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0063"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0062",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0061",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0063"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Karush-Kuhn-Tucker (KKT) necessary conditions",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "assumption",
+          "description": "Ripete ipotesi, problema, C¹ ed esistenza/unicità dei moltiplicatori della 60.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0062",
+            "modality": "both",
+            "text_quote": "Lagrange multipliers",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "equation",
+          "description": "Mantiene tutte le tre condizioni KKT stampate.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0062",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "definition",
+          "description": "La remark sul secondo ordine della 61 scompare. La nuova Notation definisce KKT points come punti che soddisfano le condizioni necessarie, controparte dei punti stazionari nei problemi vincolati.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0062",
+            "modality": "both",
+            "text_quote": "KKT points",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0062",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Dare significato alla denominazione punto KKT e distinguerla dall’ottimalità.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0061",
+          "role": "previous",
+          "note": "Interpretare il nuovo richiamo al secondo ordine senza attribuire alla fonte un teorema che qui non viene enunciato."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0063",
+          "role": "next",
+          "note": "Espansione di ∇₁L rispetto a z e denominazione complementary slackness; solo verifica di notazione, batch I non implementato."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\begin{aligned}\\nabla_1L(z^\\star,\\mu^\\star,\\lambda^\\star)&=0\\\\\\mu_j^\\star&\\ge0\\\\\\mu_j^\\star g_j(z^\\star)&=0,\\quad j\\in\\{1,\\ldots,r\\}\\end{aligned}",
+          "meaning": "Un punto ammissibile che soddisfa queste condizioni con opportuni moltiplicatori è un punto KKT. Questo da solo non implica minimo.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\begin{aligned}\\min_{z\\in\\mathbb R^d}\\;&\\ell(z)\\\\\\text{subj.to }&g_j(z)\\le0,\\ j\\in\\{1,\\ldots,r\\}\\\\&h_i(z)=0,\\ i\\in\\{1,\\ldots,m\\}\\end{aligned}",
+          "meaning": "Anche un punto KKT deve soddisfare i vincoli originali; le sole tre righe isolate non bastano.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "progressive",
+        "related_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0061"
+        ],
+        "added": [
+          "Definizione dei punti KKT come controparte degli stazionari vincolati."
+        ],
+        "removed": [
+          "Remark sul secondo ordine presente nella 61; non più visibile nella 62."
+        ],
+        "changed": [],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "structure"
+        ],
+        "rationale": "Confronto individuale dei quattro rendering con stessa etichetta 55|73: contenuto comune conservato, aggiunte e rimozioni identificate. Ogni pagina fisica ha un focus proprio."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "Nessuna correzione matematica necessaria dopo confronto con la pagina precedente e successiva.",
+          "Le classificazioni e i costi specifici sono enrichment, non esempi della slide.",
+          "Massimo locale rispetto alla retta ammissibile; nello spazio libero il caso κ=−1 è una sella.",
+          "La regolarità è sufficiente per l’implicazione dal minimo alle KKT, non parte necessaria della definizione generale di punto KKT."
+        ],
+        "prerequisites": [
+          {
+            "concept": "KKT",
+            "why": "Condizioni necessarie e fattibilità.",
+            "origin": "source_context",
+            "page_numbers": [
+              60
+            ]
+          },
+          {
+            "concept": "Curvatura",
+            "why": "Può distinguere punti con stesse KKT.",
+            "origin": "source_context",
+            "page_numbers": [
+              61
+            ]
+          },
+          {
+            "concept": "Punti stazionari",
+            "why": "Analogia tra necessario e sufficiente.",
+            "origin": "source_context",
+            "page_numbers": [
+              8
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\begin{aligned}\\nabla_1L(z^\\star,\\mu^\\star,\\lambda^\\star)&=0\\\\\\mu_j^\\star&\\ge0\\\\\\mu_j^\\star g_j(z^\\star)&=0,\\quad j\\in\\{1,\\ldots,r\\}\\end{aligned}",
+            "anchor": "Lagrange multipliers",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\begin{aligned}\\min_{z\\in\\mathbb R^d}\\;&\\ell(z)\\\\\\text{subj.to }&g_j(z)\\le0,\\ j\\in\\{1,\\ldots,r\\}\\\\&h_i(z)=0,\\ i\\in\\{1,\\ldots,m\\}\\end{aligned}",
+            "anchor": "Lagrange multipliers",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "La slide chiama punti KKT quelli che soddisfano le condizioni necessarie. Come per gli stazionari non vincolati, il nome non certifica che il costo sia minimo.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "κ=−1, z=0 e μ=λ=0",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Quattro costi sugli stessi assi, vincolo di uguaglianza come linea verde e medesima sonda 2D/3D. Il punto viola o soddisfa l’ottimalità ma conserva sempre tutti i residui KKT nulli.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Dare significato alla denominazione punto KKT e distinguerla dall’ottimalità.",
+            "setup": "κ=−1, z=0 e μ=λ=0",
+            "parameters": [],
+            "derivation": [
+              "g₁(0)=−1, h₁(0)=0: ammissibile, disuguaglianza inattiva.",
+              "∇ℓ(0)=0, quindi stazionarietà e complementarità soddisfatte.",
+              "Per t=0.5, il costo è −0.109375<0.",
+              "Il punto è KKT ma è un massimo locale lungo la retta, non un minimo."
+            ],
+            "expected_outcome": "Un controesempio concreto al salto logico KKT⇒minimo.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "FunctionExplorer",
+          "description": "Quattro costi sugli stessi assi, vincolo di uguaglianza come linea verde e medesima sonda 2D/3D. Il punto viola o soddisfa l’ottimalità ma conserva sempre tutti i residui KKT nulli.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Cambiare costo mantenendo invariati vincoli, KKT e punto mostra esattamente che cosa le condizioni non garantiscono.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Sonda ammissibile",
+              "symbol": "t",
+              "origin": "enrichment",
+              "range": "{'min': -1, 'max': 1, 'step': 0.1, 'integer': False}",
+              "default": "0.5",
+              "effect_on_change": "Muove la sonda (t,0) e aggiorna il confronto di costo. KKT e punto selezionato restano quelli dell’origine.",
+              "edge_cases": [
+                "Minimi multipli",
+                "Minimo piatto",
+                "Sonda all’origine"
+              ]
+            },
+            {
+              "name": "Tipo di costo",
+              "symbol": "s",
+              "origin": "enrichment",
+              "range": "Minimo stretto / massimo locale / minimo piatto / minimi multipli",
+              "default": "Massimo locale",
+              "effect_on_change": "Sostituisce soltanto il costo, mantenendo insieme, punto KKT, μ=λ=0 e regolarità.",
+              "edge_cases": [
+                "Minimi multipli",
+                "Minimo piatto",
+                "Sonda all’origine"
+              ]
+            }
+          ],
+          "outputs": [
+            "Dare significato alla denominazione punto KKT e distinguerla dall’ottimalità."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "Minimi multipli",
+            "expected_behavior": "Tutti i punti ammissibili minimizzano il costo; non inventare unicità.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "Minimo piatto",
+            "expected_behavior": "La Hessiana tangente nulla non esclude il minimo.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "Sonda all’origine",
+            "expected_behavior": "Confronto nullo non prova ottimalità.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Dare significato alla denominazione punto KKT e distinguerla dall’ottimalità.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

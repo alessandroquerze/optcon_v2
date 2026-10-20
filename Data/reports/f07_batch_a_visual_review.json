@@ -1,0 +1,22 @@
+{
+  "batch": "A",
+  "reviewed_at": "2026-10-17T22:05:39.342066+00:00",
+  "reviewer": "Codex",
+  "status": "PASS",
+  "screenshots_inspected": [
+    "Docs/F07_assets/page-01-companion.png",
+    "Docs/F07_assets/page-03-companion.png",
+    "Docs/F07_assets/page-04-companion.png",
+    "Docs/F07_assets/page-05-companion.png",
+    "Docs/F07_assets/page-06-companion.png",
+    "Docs/F07_assets/page-07-companion.png",
+    "Docs/F07_assets/page-09-3d.png",
+    "Docs/F07_assets/page-09-companion.png"
+  ],
+  "notes": [
+    "Tutte le sette nuove companion leggibili a 960x1280.",
+    "P6: edificio e percorsi spaziali distinti; h e distanza dal tetto coerenti.",
+    "P9: campioni discreti e stessa mappa in 3D; timeline scorrevole con sei transizioni, valori finali disponibili.",
+    "Nessun overflow delle formule principali o sovrapposizione dei blocchi."
+  ]
+}

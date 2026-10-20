@@ -81,12 +81,481 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
+    "status": "needs_review",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "97eb51bf23beb337f3da87db63e78a76a77467e4d89b3c57328e35bea4819494",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0006",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "0d5e7917f3b60867b6fcbe99ad75c70ba49eadb90fc61e25bd3cbdfa2cbbe121",
+        "layout": "c4fee51a424182526fad0454a37a280b5cc52aaf14482172d34709a2f822efa8",
+        "render": "ecb8dc8b60c3f3a9a70d287481b7046966303c46af3d33de80eba1c21ba87b11"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-a-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0006",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0005",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0007"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0006",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0005",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0007"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0006",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0005",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0007"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Remarks on notation: gradient and Hessian matrix of a function",
+      "observations": [
+        {
+          "id": "s01",
+          "category": "equation",
+          "description": "Per r:R^d→R, ∇r(z) è la colonna delle derivate prime, in R^{d×1}.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0006",
+            "modality": "both",
+            "text_quote": "Gradient of a function",
+            "bbox": [
+              20,
+              28,
+              443.5429992675781,
+              241.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "s02",
+          "category": "equation",
+          "description": "La Hessiana stampata è ∇²(r(z)); l’elemento alto destro usa ∂²r/(∂z₁zₙ), quello basso sinistro ∂r/(∂z_dz₁), con ² mancante.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0006",
+            "modality": "both",
+            "text_quote": "Hessian matrix of a function",
+            "bbox": [
+              20,
+              28,
+              443.5429992675781,
+              241.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "s03",
+          "category": "assumption",
+          "description": "La continuità delle derivate seconde consente lo scambio dell’ordine e rende simmetrica la Hessiana.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0006",
+            "modality": "both",
+            "text_quote": "continuity of the second derivatives",
+            "bbox": [
+              20,
+              28,
+              443.5429992675781,
+              241.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, disposizione e crediti/footer letti visivamente; nessun dato numerico dedotto dagli elementi decorativi.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0006",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Leggere forma e significato delle derivate prime e seconde di un costo scalare.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0005",
+          "role": "previous",
+          "note": "Separare minimizzatore e valore ottimo."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0007",
+          "role": "next",
+          "note": "Conservare la convenzione d×m per una funzione a valori vettoriali."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\nabla r(z)=\\begin{bmatrix}\\frac{\\partial r(z)}{\\partial z_1}\\\\\\vdots\\\\\\frac{\\partial r(z)}{\\partial z_d}\\end{bmatrix}\\in\\mathbb R^{d\\times1}",
+          "meaning": "Ogni componente misura la variazione del valore quando si modifica quella coordinata, mantenendo fisse le altre.",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [
+        {
+          "description": "Refusi visibili nella Hessiana; risolti dalla policy source_warning senza alterare il letterale.",
+          "blocking": false,
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "structure"
+          ]
+        }
+      ],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "structure"
+        ],
+        "rationale": "Contenuto distinto dalle vicine: non eliminare o accorpare la pagina."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo o spazio della copertina.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Tutto il contenuto, incluse formule, grafici, affiliazione e remark quando presenti.",
+            "observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer e decorazione, o spazio bianco finale.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "La fonte riguarda r:R^d→R e richiede continuità delle derivate seconde per la simmetria.",
+          "La matrice stampata contiene z_n dove il dominio usa d e una derivata senza il ²: trascrizione letterale conservata, correzione solo companion."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Derivate parziali e matrici",
+            "why": "Per leggere d×1 e d×d.",
+            "origin": "enrichment",
+            "page_numbers": []
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\nabla r(z)=\\begin{bmatrix}\\frac{\\partial r(z)}{\\partial z_1}\\\\\\vdots\\\\\\frac{\\partial r(z)}{\\partial z_d}\\end{bmatrix}\\in\\mathbb R^{d\\times1}",
+            "anchor": "Gradient of a function",
+            "notes": "Trascrizione della fonte; le forme equivalenti aggiunte sono enrichment."
+          },
+          {
+            "latex": "\\nabla^2(r(z))=\\begin{bmatrix}\\frac{\\partial^2 r(z)}{\\partial z_1^2}&\\cdots&\\frac{\\partial^2r(z)}{\\partial z_1z_n}\\\\\\vdots&\\ddots&\\vdots\\\\\\frac{\\partial r(z)}{\\partial z_dz_1}&\\cdots&\\frac{\\partial^2r(z)}{\\partial z_d^2}\\end{bmatrix}\\in\\mathbb R^{d\\times d}",
+            "anchor": "Hessian matrix of a function",
+            "notes": "SOURCE_LITERAL: mantenuti z_n e numeratore ∂r al posto di ∂²r. Usare la correzione nella companion."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Il gradiente raccoglie le sensibilità alle coordinate in una colonna. La Hessiana descrive come queste sensibilità cambiano, incluse le interazioni fra coordinate.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Superficie/contour condivisi con punto corrente e direzione del gradiente; matrici numeriche.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "z=(0.6,0.4), ρ=0.5",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli dichiarati nel piano: Superficie/contour condivisi con punto corrente e direzione del gradiente; matrici numeriche.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Leggere forma e significato delle derivate prime e seconde di un costo scalare.",
+            "setup": "z=(0.6,0.4), ρ=0.5",
+            "parameters": [],
+            "derivation": [
+              "r(z)=0.46.",
+              "∇r(z)=(0.8,1.1)ᵀ.",
+              "H=[[1,0.5],[0.5,2]], simmetrica e indipendente dal punto."
+            ],
+            "expected_outcome": "La freccia 2D ha lunghezza normalizzata; i valori esatti sono nelle letture.",
+            "limitations": [
+              "La fonte riguarda r:R^d→R e richiede continuità delle derivate seconde per la simmetria.",
+              "La matrice stampata contiene z_n dove il dominio usa d e una derivata senza il ²: trascrizione letterale conservata, correzione solo companion."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "FunctionExplorer",
+          "description": "Superficie/contour condivisi con punto corrente e direzione del gradiente; matrici numeriche.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "L’effetto parametrico isola il concetto della pagina.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Prima coordinata",
+              "symbol": "z_1",
+              "origin": "enrichment",
+              "range": "{'min': -1.5, 'max': 1.5, 'step': 0.1, 'integer': False}",
+              "default": "0.6",
+              "effect_on_change": "Muove il punto e aggiorna r e la colonna del gradiente.",
+              "edge_cases": [
+                "z=0",
+                "ρ=0",
+                "Cambio del punto"
+              ]
+            },
+            {
+              "name": "Seconda coordinata",
+              "symbol": "z_2",
+              "origin": "enrichment",
+              "range": "{'min': -1.5, 'max': 1.5, 'step': 0.1, 'integer': False}",
+              "default": "0.4",
+              "effect_on_change": "Muove il punto e aggiorna r e il gradiente.",
+              "edge_cases": [
+                "z=0",
+                "ρ=0",
+                "Cambio del punto"
+              ]
+            },
+            {
+              "name": "Accoppiamento",
+              "symbol": "\\rho",
+              "origin": "enrichment",
+              "range": "{'min': -1, 'max': 1, 'step': 0.1, 'integer': False}",
+              "default": "0.5",
+              "effect_on_change": "Ruota i livelli e cambia gli elementi fuori diagonale della Hessiana.",
+              "edge_cases": [
+                "z=0",
+                "ρ=0",
+                "Cambio del punto"
+              ]
+            }
+          ],
+          "outputs": [
+            "Leggere forma e significato delle derivate prime e seconde di un costo scalare."
+          ],
+          "invariants": [
+            "La fonte riguarda r:R^d→R e richiede continuità delle derivate seconde per la simmetria.",
+            "La matrice stampata contiene z_n dove il dominio usa d e una derivata senza il ²: trascrizione letterale conservata, correzione solo companion."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "z=0",
+            "expected_behavior": "Il gradiente è nullo: freccia nulla, senza normalizzazione per zero.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "structure"
+            ]
+          },
+          {
+            "case": "ρ=0",
+            "expected_behavior": "Nessun accoppiamento; la Hessiana è diagonale.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "structure"
+            ]
+          },
+          {
+            "case": "Cambio del punto",
+            "expected_behavior": "Non ricalcolare o modificare la Hessiana costante come se dipendesse da z.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un focus principale, una figura e dettagli su richiesta consentono una singola companion leggibile; nessuna riduzione tipografica.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Leggere forma e significato delle derivate prime e seconde di un costo scalare.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "visual",
+              "example",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un focus principale, una figura e dettagli su richiesta consentono una singola companion leggibile; nessuna riduzione tipografica.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1,
+  "source_warning": {
+    "policy_version": "1.0.0",
+    "scope": "companion_only",
+    "type": "CORRECTION_WARNING",
+    "review_status": "resolved",
+    "original_analysis_sha256": "3f809455277c11db37f196b78d2b9218234887de4b3a47313b5da7a236954633",
+    "issues": [
+      {
+        "issue_id": "opt06-hessian-typos",
+        "source_issue_index": 0,
+        "issue": "Indice e ordine di derivazione nella Hessiana",
+        "type": "CORRECTION_WARNING",
+        "source_expression": "\\nabla^2(r(z))=\\begin{bmatrix}\\frac{\\partial^2 r(z)}{\\partial z_1^2}&\\cdots&\\frac{\\partial^2r(z)}{\\partial z_1z_n}\\\\\\vdots&\\ddots&\\vdots\\\\\\frac{\\partial r(z)}{\\partial z_dz_1}&\\cdots&\\frac{\\partial^2r(z)}{\\partial z_d^2}\\end{bmatrix}\\in\\mathbb R^{d\\times d}",
+        "corrected_expression": "\\nabla^2(r(z))=\\left[\\frac{\\partial^2r(z)}{\\partial z_i\\partial z_j}\\right]_{i,j=1}^d\\in\\mathbb R^{d\\times d}",
+        "companion_uses": "\\nabla^2(r(z))=\\left[\\frac{\\partial^2r(z)}{\\partial z_i\\partial z_j}\\right]_{i,j=1}^d\\in\\mathbb R^{d\\times d}",
+        "short_warning": "⚠ Warning: possibile errore nella slide originale. Qui usiamo ∂²r e indice d.",
+        "correction_reason": "La Hessiana di r:R^d→R è indicizzata i,j=1,…,d e contiene esclusivamente derivate seconde. L’elemento alto destro usa z_n senza n definito; quello basso sinistro omette il ² nel numeratore. La formula corretta segue la definizione e la simmetria sotto C² affermata dalla stessa pagina. Nessuna alterazione del letterale o della notazione ∇²(r(z)).",
+        "use_corrected_value_for_examples": true,
+        "use_corrected_value_for_simulation": true,
+        "resolved": true,
+        "source_references": [
+          "analysis/result/didactic_plan/source_math/1"
+        ],
+        "context_pages_consulted": [
+          5,
+          6,
+          7
+        ],
+        "calculation_policy": "Usare solo la Hessiana corretta nei calcoli, conservare SOURCE_LITERAL.",
+        "ui": {
+          "show": true,
+          "color": "red",
+          "placement": "Accanto alla formula della Hessiana",
+          "when": "Formula o esempio Hessiana",
+          "student_text_field": "short_warning"
+        }
+      }
+    ],
+    "companion_overrides": [],
+    "technical_only_legacy_paths": []
   }
 }

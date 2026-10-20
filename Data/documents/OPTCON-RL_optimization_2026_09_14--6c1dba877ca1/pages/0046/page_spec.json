@@ -81,12 +81,513 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "f1cf1e2ba609fb9c2c7acf0a8e978914ebf9c01408f4fc4f33d14fe487d7f326",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0046",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "d492c0232835d392e733a4a393309001d74f49e161f745ba268b61e7560dac33",
+        "layout": "b22987baef5a2e37f6fc6de91fda23f4867dad6cc814dcb48a74cde07cbafcee",
+        "render": "a64bfa108daa146f1fc737dd9ad0b7fdbfa08c4b9206bf972557ed9516973f9e"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-f-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0046",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0045",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0047"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0046",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0045",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0047"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0046",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0045",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0047"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Example: Gradient Method applied to Quadratic Programs",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "definition",
+          "description": "QP non vincolato: min 1/2 zᵀQz+qᵀz con Q=Qᵀ≥0∈R^{d×d}, q∈R^d.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0046",
+            "modality": "both",
+            "text_quote": "Quadratic program",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "algorithm",
+          "description": "Steepest descent usa z^{k+1}=z^k−γ^k∇ℓ(z^k).",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0046",
+            "modality": "both",
+            "text_quote": "Steepest descent",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "equation",
+          "description": "Sostituendo il gradiente si ottiene z^{k+1}=z^k−γ^k(Qz^k+q).",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0046",
+            "modality": "both",
+            "text_quote": "for a Quadratic Program",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0046",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Applicare l’aggiornamento a un costo quadratico senza supporre positività definita o esistenza di un minimo.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0045",
+          "role": "previous",
+          "note": "Separare coercività, stazionarietà e convessità nella conclusione sui minimi globali."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0047",
+          "role": "next",
+          "note": "Divisoria: ottimizzazione su insiemi convessi, solo contesto; nessuna implementazione del batch G."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "z^{k+1}=z^k-\\gamma^k(Qz^k+q)",
+          "meaning": "Qzᵏ+q è il gradiente del QP. Il passo scala questo vettore a ogni aggiornamento.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\min_{z\\in\\mathbb R^d}\\tfrac12z^\\top Qz+q^\\top z,\\qquad Q=Q^\\top\\ge0",
+          "meaning": "La simmetria dà il gradiente Qz+q; la semidefinita positività dà convessità, non automaticamente un minimo.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "z^{k+1}=z^k-\\gamma^k\\nabla\\ell(z^k)",
+          "meaning": "L’espressione generale resta la stessa: cambia solo la disponibilità esplicita del gradiente.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "structure"
+        ],
+        "rationale": "Scopo e contenuto autonomi."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "Nessuna correzione matematica necessaria dopo confronto con la pagina precedente e successiva.",
+          "Nessuna ipotesi Q>0 sostituita a Q≥0 della fonte.",
+          "La quadratica di esempio, il dominio dei controlli e la soglia spettrale sono enrichment.",
+          "La pagina 47 è solo contesto del prossimo batch; nessuna proiezione o algoritmo vincolato implementato."
+        ],
+        "prerequisites": [
+          {
+            "concept": "QP convesso",
+            "why": "Compatibilità e semidefinita positività vanno considerate insieme.",
+            "origin": "source_context",
+            "page_numbers": [
+              23,
+              24,
+              25
+            ]
+          },
+          {
+            "concept": "Scelta del passo",
+            "why": "Un passo troppo grande può annullare la direzione favorevole.",
+            "origin": "source_context",
+            "page_numbers": [
+              38,
+              43
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "z^{k+1}=z^k-\\gamma^k(Qz^k+q)",
+            "anchor": "Quadratic program",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\min_{z\\in\\mathbb R^d}\\tfrac12z^\\top Qz+q^\\top z,\\qquad Q=Q^\\top\\ge0",
+            "anchor": "Quadratic program",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "z^{k+1}=z^k-\\gamma^k\\nabla\\ell(z^k)",
+            "anchor": "Quadratic program",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Per un QP il gradiente è Qz+q: l’iterazione si calcola con un prodotto matrice-vettore. Con Q semidefinita il minimo può non essere unico, oppure può non esistere.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "λ=4,b=0,γ=0.25",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Livelli e superficie del medesimo QP, percorso selezionabile, punto corrente e minimo noto. Nel caso piatto compatibile evidenziare l’intera retta minima; in deriva non mostrare un minimo inventato.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Applicare l’aggiornamento a un costo quadratico senza supporre positività definita o esistenza di un minimo.",
+            "setup": "λ=4,b=0,γ=0.25",
+            "parameters": [],
+            "derivation": [
+              "Da z⁰=(1.5,1), il gradiente è (1.5,4).",
+              "z¹=(1.125,0), costo 0.6328125.",
+              "La componente più curva si azzera al primo passo; la prima decade con fattore 0.75."
+            ],
+            "expected_outcome": "Modificare λ o γ può produrre oscillazioni o divergenza, dichiarate nel grafico.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "FunctionExplorer",
+          "description": "Livelli e superficie del medesimo QP, percorso selezionabile, punto corrente e minimo noto. Nel caso piatto compatibile evidenziare l’intera retta minima; in deriva non mostrare un minimo inventato.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Curvatura, componente lineare e passo separano convergenza, insieme di minimi e deriva; 3D mostra il costo lungo gli stessi iterati.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Seconda curvatura",
+              "symbol": "\\lambda",
+              "origin": "enrichment",
+              "range": "{'min': 0, 'max': 6, 'step': 0.5, 'integer': False}",
+              "default": "4",
+              "effect_on_change": "Cambia Q e il gradiente, ricalcola dal medesimo z⁰; mette in pausa e torna a k=0.",
+              "edge_cases": [
+                "λ=0,b=0",
+                "λ=0,b≠0",
+                "γ al bordo spettrale",
+                "γ oltre soglia",
+                "λ piccolo non nullo"
+              ]
+            },
+            {
+              "name": "Termine lineare",
+              "symbol": "b",
+              "origin": "enrichment",
+              "range": "{'min': -1, 'max': 1, 'step': 0.25, 'integer': False}",
+              "default": "0",
+              "effect_on_change": "Cambia q e il minimo/deriva; conserva Q e ricalcola il percorso da z⁰.",
+              "edge_cases": [
+                "λ=0,b=0",
+                "λ=0,b≠0",
+                "γ al bordo spettrale",
+                "γ oltre soglia",
+                "λ piccolo non nullo"
+              ]
+            },
+            {
+              "name": "Passo costante",
+              "symbol": "\\gamma",
+              "origin": "enrichment",
+              "range": "{'min': 0.05, 'max': 1, 'step': 0.05, 'integer': False}",
+              "default": "0.25",
+              "effect_on_change": "Cambia la ricorrenza mantenendo costo e z⁰; nessuna correzione nascosta di passi instabili.",
+              "edge_cases": [
+                "λ=0,b=0",
+                "λ=0,b≠0",
+                "γ al bordo spettrale",
+                "γ oltre soglia",
+                "λ piccolo non nullo"
+              ]
+            },
+            {
+              "name": "Iterazione",
+              "symbol": "k",
+              "origin": "enrichment",
+              "range": "0…20",
+              "default": "0",
+              "effect_on_change": "Seleziona il campione con controlli Play/Pausa, Passo e Riparti; cambiare parametri torna a k=0.",
+              "edge_cases": [
+                "λ=0,b=0",
+                "λ=0,b≠0",
+                "γ al bordo spettrale",
+                "γ oltre soglia",
+                "λ piccolo non nullo"
+              ]
+            }
+          ],
+          "outputs": [
+            "Applicare l’aggiornamento a un costo quadratico senza supporre positività definita o esistenza di un minimo."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "λ=0,b=0",
+            "expected_behavior": "Retta di minimi; coordinata piatta conservata.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "λ=0,b≠0",
+            "expected_behavior": "Deriva, nessun minimo; direzione piatta non regolarizzata.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "γ al bordo spettrale",
+            "expected_behavior": "Possibile alternanza con costo non decrescente strettamente.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "γ oltre soglia",
+            "expected_behavior": "Iterati e costi fuori ritaglio dichiarati, senza autoscale ingannevole o clamp. I campioni esterni non vengono inviati ai buffer 3D, per evitare che la precisione GPU appiattisca la superficie; i valori reali restano nei risultati numerici.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "λ piccolo non nullo",
+            "expected_behavior": "Minimo calcolato dalla formula, eventualmente fuori ritaglio; mai arrotondare λ a zero.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Applicare l’aggiornamento a un costo quadratico senza supporre positività definita o esistenza di un minimo.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

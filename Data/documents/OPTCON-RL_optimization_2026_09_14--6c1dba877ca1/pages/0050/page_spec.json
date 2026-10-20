@@ -81,12 +81,407 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "f722f6b362df4aac8bf48122b3e174a8d6ecdfb5eec20c418b2fe4ac8b0d395e",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0050",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "62b5d75dbabcc51a4386e30ccd83550cbe20154445dd6f97b20071ff49e66ffb",
+        "layout": "57f4c1ec44425a27d8fa7fbac798ca6573aba41725a160a99639807b2ae05798",
+        "render": "7672fa547eddee685445498ad1e4bd6231ec5de1a1f2107ee5dfa0c4b9067b63"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-g-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0050",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0049",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0051"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0050",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0049",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0051"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0050",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0049",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0051"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Projected gradient",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "algorithm",
+          "description": "La formula proietta z^k−γ^k∇ℓ(z^k) su Z.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0050",
+            "modality": "both",
+            "text_quote": "Projected gradient",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "concept",
+          "description": "Il testo descrive l’idea di generare punti ammissibili che diano discesa e rinvia all’analisi analoga al caso libero.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0050",
+            "modality": "both",
+            "text_quote": "feasible points",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0050",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Separare punto libero, punto proiettato e riduzione del costo.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0049",
+          "role": "previous",
+          "note": "Definire e motivare esistenza e unicità della proiezione su un insieme convesso chiuso non vuoto."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0051",
+          "role": "next",
+          "note": "Distinguere proiezione a passo unitario e rilassamento lungo il segmento ammissibile."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "z^{k+1}=P_{\\mathbb Z}\\big(z^k-\\gamma^k\\nabla\\ell(z^k)\\big)",
+          "meaning": "Si proietta il passo libero sull’insieme. Il risultato è ammissibile; la discesa richiede un passo adeguato.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "structure"
+        ],
+        "rationale": "Scopo e contenuto autonomi."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "Nessuna correzione matematica necessaria dopo confronto con la pagina precedente e successiva.",
+          "Il tentativo w e tutti i dati numerici sono enrichment. La fonte non sceglie un γ numerico.",
+          "Nessun warning di errore della fonte: si esplicitano le condizioni operative del metodo."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Proiezione",
+            "why": "P_Z è univoca nelle ipotesi.",
+            "origin": "source_context",
+            "page_numbers": [
+              49
+            ]
+          },
+          {
+            "concept": "Scelta del passo",
+            "why": "Direzione favorevole non basta per un passo arbitrario.",
+            "origin": "source_context",
+            "page_numbers": [
+              38,
+              43
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "z^{k+1}=P_{\\mathbb Z}\\big(z^k-\\gamma^k\\nabla\\ell(z^k)\\big)",
+            "anchor": "Projected gradient",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "La proiezione mantiene ammissibile il nuovo punto. Per ridurre il costo serve anche scegliere il passo: la formula da sola non garantisce discesa per ogni γ.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "γ=1 su disco o quadrato",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Regione verde, costo e stessi punti in 2D/3D: corrente blu, tentativo libero rosso, proiezione arancio. Segmento del passo e segmento di proiezione distinti.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Separare punto libero, punto proiettato e riduzione del costo.",
+            "setup": "γ=1 su disco o quadrato",
+            "parameters": [],
+            "derivation": [
+              "∇ℓ(0.6,0.8)=(0.6,3.2).",
+              "w=(0,−2.4), proiezione (0,−1).",
+              "Costo iniziale 1.46, costo nuovo 2: ammissibile ma non in discesa.",
+              "Con γ=0.25, il nuovo punto è (0.45,0), costo 0.10125."
+            ],
+            "expected_outcome": "Ammissibilità e diminuzione sono proprietà distinte.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "FunctionExplorer",
+          "description": "Regione verde, costo e stessi punti in 2D/3D: corrente blu, tentativo libero rosso, proiezione arancio. Segmento del passo e segmento di proiezione distinti.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "γ mostra sia casi senza proiezione attiva sia uscita dall’insieme e possibile aumento del costo.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Passo",
+              "symbol": "\\gamma",
+              "origin": "enrichment",
+              "range": "{'min': 0.05, 'max': 1.5, 'step': 0.05, 'integer': False}",
+              "default": "0.6",
+              "effect_on_change": "Sposta w e la sua proiezione; costo, Z e zᵏ restano fissi. Non corregge un passo che aumenta il costo.",
+              "edge_cases": [
+                "Tentativo già in Z",
+                "Passo grande",
+                "Punto fuori dal ritaglio",
+                "Punto fisso proiettato"
+              ]
+            },
+            {
+              "name": "Insieme",
+              "symbol": "s",
+              "origin": "enrichment",
+              "range": "Disco / quadrato",
+              "default": "Disco",
+              "effect_on_change": "Cambia solo la proiezione e la regione; il tentativo libero resta identico.",
+              "edge_cases": [
+                "Tentativo già in Z",
+                "Passo grande",
+                "Punto fuori dal ritaglio",
+                "Punto fisso proiettato"
+              ]
+            }
+          ],
+          "outputs": [
+            "Separare punto libero, punto proiettato e riduzione del costo."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "Tentativo già in Z",
+            "expected_behavior": "Proiezione identica al tentativo.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "case": "Passo grande",
+            "expected_behavior": "Possibile aumento del costo, mostrato onestamente.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "case": "Punto fuori dal ritaglio",
+            "expected_behavior": "Conservare le coordinate nei risultati e un avviso, senza clamp o autoscale.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "case": "Punto fisso proiettato",
+            "expected_behavior": "Non richiede necessariamente gradiente nullo.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Separare punto libero, punto proiettato e riduzione del costo.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

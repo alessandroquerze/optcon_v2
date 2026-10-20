@@ -69,12 +69,237 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "9aeb26b55661c6c7678da8494f17885c1407b91a6e09bab6955d4fc9b8d4cc78",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0002",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "49561f6e8611722a96e435dc95363af4730413b3269ec5c412811cd4a2da6aba",
+        "layout": "b3216afd731482c1e1471901d1d6997a9429cd6896415bb499526f9b37a4d01c",
+        "render": "ef40bb974fb87aea0c79a96063410dc15263199a688bce65d546330810477d7d"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-a-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0002",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0001",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0003"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0002",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0001",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0003"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0002",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0001",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0003"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Unconstrained optimization: definitions, optimality conditions and",
+      "observations": [
+        {
+          "id": "s01",
+          "category": "structure",
+          "description": "La sezione annuncia definizioni, condizioni di ottimalità e classi speciali per ottimizzazione non vincolata.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0002",
+            "modality": "both",
+            "text_quote": "Unconstrained optimization: definitions, optimality conditions and",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, disposizione e crediti/footer letti visivamente; nessun dato numerico dedotto dagli elementi decorativi.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0002",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Separare definire una soluzione, riconoscerla e cercarla.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0001",
+          "role": "previous",
+          "note": "Orientarsi: dal problema alla scelta di un metodo."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0003",
+          "role": "next",
+          "note": "Distinguere locale/globale e stretto/non stretto con i corretti quantificatori."
+        }
+      ],
+      "notation": [],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "s01",
+          "structure"
+        ],
+        "rationale": "Contenuto distinto dalle vicine: non eliminare o accorpare la pagina."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo o spazio della copertina.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Tutto il contenuto, incluse formule, grafici, affiliazione e remark quando presenti.",
+            "observation_ids": [
+              "s01",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer e decorazione, o spazio bianco finale.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Pagina divisoria: solo il titolo della sezione, nessuna condizione matematica già enunciata."
+        ],
+        "prerequisites": [],
+        "source_math": [],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Questa sezione riguarda problemi senza vincoli: definizioni, condizioni di ottimalità e classi particolari di problemi.",
+            "source_observation_ids": [
+              "s01",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Tre riquadri: cosa significa minimo, quali indizi lo caratterizzano, quali ipotesi aiutano; percorso aggiunto.",
+            "source_observation_ids": [
+              "s01",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [],
+        "example_omission_reason": "Copertina/divisorio senza contenuto tecnico da esemplificare numericamente.",
+        "visualization": {
+          "component": "ModelDiagram",
+          "description": "Tre riquadri: cosa significa minimo, quali indizi lo caratterizzano, quali ipotesi aiutano; percorso aggiunto.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "s01",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": false,
+          "rationale": "Mappa concettuale statica: nessuna dinamica inventata.",
+          "component": null,
+          "parameters": [],
+          "outputs": [
+            "Separare definire una soluzione, riconoscerla e cercarla."
+          ],
+          "invariants": [
+            "Pagina divisoria: solo il titolo della sezione, nessuna condizione matematica già enunciata."
+          ],
+          "enrichment_id": null
+        },
+        "edge_cases": [
+          {
+            "case": "Titolo di sezione",
+            "expected_behavior": "Non attribuire alla fonte dimostrazioni, convergenza o esempi non ancora presenti.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un focus principale, una figura e dettagli su richiesta consentono una singola companion leggibile; nessuna riduzione tipografica.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Separare definire una soluzione, riconoscerla e cercarla.",
+            "source_observation_ids": [
+              "s01",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "visual"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un focus principale, una figura e dettagli su richiesta consentono una singola companion leggibile; nessuna riduzione tipografica.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

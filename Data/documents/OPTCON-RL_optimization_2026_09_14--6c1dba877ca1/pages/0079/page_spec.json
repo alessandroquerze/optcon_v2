@@ -69,12 +69,215 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "47563c33da552479bec0feca387b6e9ef7de6cba29f933ba58abdc0e5ea249c0",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0079",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "d259f03b04d6cc9d0a2462d061e4f4cb3afc0bbd42a731f22b96e49f8d2ca671",
+        "layout": "5c472a23be869d2a7a813763c648bd6309bc1e63793495522453c7cdc6b3faaa",
+        "render": "e1b8d6736936d87d4e7c1c3d27ac8b3b5f9e6c23a310147dc8a8540d14287bf1"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-k-2026-10-19"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0079",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0078",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0080"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0079",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0078",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0080"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0079",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0078",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0080"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Concluding Remarks on Notation",
+      "observations": [
+        {
+          "id": "s01",
+          "category": "structure",
+          "description": "Solo titolo centrale Concluding Remarks on Notation; nessuna formula, figura o footer.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0079",
+            "modality": "both",
+            "text_quote": "Concluding Remarks on Notation",
+            "bbox": [
+              20,
+              28,
+              443.5429992675781,
+              241.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Solo titolo centrale su fondo bianco; nessun footer, numero visibile, formula o figura tecnica.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0079",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Preparare la distinzione fra variabile, iterazione e tempo.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0078",
+          "role": "previous",
+          "note": "Capire dominio stretto, limite ε→0 e permanenza del vincolo h=0."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0080",
+          "role": "next",
+          "note": "Distinguere variabile libera e stima numerata nello stesso spazio decisionale."
+        }
+      ],
+      "notation": [],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "s01",
+          "structure"
+        ],
+        "rationale": "Scopo e contenuto autonomi."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Titolo centrale e tutti gli spazi bianchi; assenza di altri elementi verificata.",
+            "observation_ids": [
+              "s01",
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Divisoria: nessun modello dinamico attribuito alla fonte.",
+          "Divisoria: nessun modello dinamico attribuito alla fonte."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Iterazioni degli algoritmi",
+            "why": "k ha contato aggiornamenti, non tempo del sistema.",
+            "origin": "source_context",
+            "page_numbers": [
+              27,
+              77
+            ]
+          }
+        ],
+        "source_math": [],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Nell’ottimizzazione si aggiorna una stima. Nel controllo ottimo ogni stima contiene anche una sequenza nel tempo: leggere gli indici evita di confondere i due avanzamenti.",
+            "source_observation_ids": [
+              "s01",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Tre schede statiche: decisione; iterazione dell’algoritmo; tempo del sistema. La mappa è aggiunta al titolo.",
+            "source_observation_ids": [
+              "s01",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [],
+        "example_omission_reason": "Divisoria: la fonte contiene soltanto il titolo. La companion propone una mappa, senza esempio numerico inventato.",
+        "visualization": {
+          "component": "ModelDiagram",
+          "description": "Tre schede statiche: decisione; iterazione dell’algoritmo; tempo del sistema. La mappa è aggiunta al titolo.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "s01",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": false,
+          "rationale": "Mappa statica sufficiente per orientarsi.",
+          "component": null,
+          "parameters": [],
+          "outputs": [
+            "Preparare la distinzione fra variabile, iterazione e tempo."
+          ],
+          "invariants": [
+            "Divisoria: nessun modello dinamico attribuito alla fonte.",
+            "Divisoria: nessun modello dinamico attribuito alla fonte."
+          ],
+          "enrichment_id": null
+        },
+        "edge_cases": [],
+        "expansion_rationale": "Un focus principale, una figura e dettagli su richiesta consentono una singola companion leggibile; nessuna riduzione tipografica.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Preparare la distinzione fra variabile, iterazione e tempo.",
+            "source_observation_ids": [
+              "s01",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "visual"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un focus principale, una figura e dettagli su richiesta consentono una singola companion leggibile; nessuna riduzione tipografica.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

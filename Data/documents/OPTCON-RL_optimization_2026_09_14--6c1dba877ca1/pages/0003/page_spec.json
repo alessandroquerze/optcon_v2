@@ -81,12 +81,534 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "6073a42df4a7254dcdb779ac27126c704cdb19d185c637a16704c30defa42f5e",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0003",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "e0719473975a67720fadd65b3e145aea075ed7261864974051c5ba14d84c9de2",
+        "layout": "38e8f42f5354673c86bbcd2c28ed6573fdb509e4d7787ac20932d943ca9a70b6",
+        "render": "eac9f9e3fa63039b8776dd19439cb2fe3e1128911f619b4df378fd9a15eae2bd"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-a-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0003",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0002",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0004"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0003",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0002",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0004"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0003",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0002",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0004"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Unconstrained optimization: introduction",
+      "observations": [
+        {
+          "id": "s01",
+          "category": "definition",
+          "description": "Il problema è minimizzare ℓ(z) su R^d, con z vettore decisionale e ℓ:R^d→R.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0003",
+            "modality": "both",
+            "text_quote": "with ℓ: Rd →R a cost function",
+            "bbox": [
+              20,
+              28,
+              443.5429992675781,
+              241.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "s02",
+          "category": "definition",
+          "description": "Minimo globale: ℓ(z⋆)≤ℓ(z) per ogni z; stretto globale: disuguaglianza stretta per z≠z⋆.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0003",
+            "modality": "both",
+            "text_quote": "global minimum if",
+            "bbox": [
+              20,
+              28,
+              443.5429992675781,
+              241.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "s03",
+          "category": "definition",
+          "description": "Minimo locale: esiste ε>0 tale che il confronto valga in B(z⋆,ε)={z:‖z−z⋆‖<ε}.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0003",
+            "modality": "both",
+            "text_quote": "local minimum if there exists",
+            "bbox": [
+              20,
+              28,
+              443.5429992675781,
+              241.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "s04",
+          "category": "definition",
+          "description": "Minimo locale stretto: nello stesso intorno, confronto stretto escludendo il punto stesso.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0003",
+            "modality": "both",
+            "text_quote": "strict local minimum if",
+            "bbox": [
+              20,
+              28,
+              443.5429992675781,
+              241.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, disposizione e crediti/footer letti visivamente; nessun dato numerico dedotto dagli elementi decorativi.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0003",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Distinguere locale/globale e stretto/non stretto con i corretti quantificatori.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0002",
+          "role": "previous",
+          "note": "Separare definire una soluzione, riconoscerla e cercarla."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0004",
+          "role": "next",
+          "note": "Leggere il grafico qualitativo e il passaggio da minimi a massimi cambiando segno."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\min_{z\\in\\mathbb R^d}\\ell(z)",
+          "meaning": "Si sceglie z nello spazio delle decisioni per ottenere il costo più basso; il problema non contiene vincoli aggiuntivi.",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\exists\\epsilon>0:\\quad\\ell(z^\\star)\\le\\ell(z)\\quad\\forall z\\in B(z^\\star,\\epsilon)",
+          "meaning": "Per il minimo locale basta un intorno in cui nessun punto costi meno. Non si stanno confrontando tutte le decisioni.",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "B(z^\\star,\\epsilon)=\\{z\\in\\mathbb R^d:\\|z-z^\\star\\|<\\epsilon\\}",
+          "meaning": "La palla è aperta: il bordo a distanza esattamente ε non appartiene all’intorno.",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\ell(z^\\star)\\le\\ell(z)\\quad\\forall z\\in\\mathbb R^d",
+          "meaning": "Il confronto globale riguarda tutto lo spazio, non soltanto il ritaglio disegnato.",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\ell(z^\\star)<\\ell(z)\\quad\\forall z\\ne z^\\star",
+          "meaning": "La disuguaglianza stretta rende unico il vincitore nel dominio del confronto; per la versione locale quel dominio è l’intorno.",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\exists\\epsilon>0:\\ \\ell(z^\\star)<\\ell(z)\\quad\\forall z\\in B(z^\\star,\\epsilon)\\setminus\\{z^\\star\\}",
+          "meaning": "Ogni altro punto sufficientemente vicino ha un costo maggiore; possono esistere soluzioni lontane migliori o di pari costo.",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "s04",
+          "structure"
+        ],
+        "rationale": "Contenuto distinto dalle vicine: non eliminare o accorpare la pagina."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo o spazio della copertina.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Tutto il contenuto, incluse formule, grafici, affiliazione e remark quando presenti.",
+            "observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer e decorazione, o spazio bianco finale.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "La fonte definisce quattro nozioni senza ipotesi di derivabilità.",
+          "Il doppio pozzo e i suoi valori sono un esempio aggiunto; nessuna verifica su griglia viene presentata come prova globale."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Confronto di valori e intorno",
+            "why": "Per leggere quantificatori e disuguaglianze.",
+            "origin": "enrichment",
+            "page_numbers": []
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\min_{z\\in\\mathbb R^d}\\ell(z)",
+            "anchor": "with ℓ: Rd →R a cost function",
+            "notes": "Trascrizione della fonte; le forme equivalenti aggiunte sono enrichment."
+          },
+          {
+            "latex": "\\exists\\epsilon>0:\\quad\\ell(z^\\star)\\le\\ell(z)\\quad\\forall z\\in B(z^\\star,\\epsilon)",
+            "anchor": "with ℓ: Rd →R a cost function",
+            "notes": "Trascrizione della fonte; le forme equivalenti aggiunte sono enrichment."
+          },
+          {
+            "latex": "B(z^\\star,\\epsilon)=\\{z\\in\\mathbb R^d:\\|z-z^\\star\\|<\\epsilon\\}",
+            "anchor": "with ℓ: Rd →R a cost function",
+            "notes": "Trascrizione della fonte; le forme equivalenti aggiunte sono enrichment."
+          },
+          {
+            "latex": "\\ell(z^\\star)\\le\\ell(z)\\quad\\forall z\\in\\mathbb R^d",
+            "anchor": "with ℓ: Rd →R a cost function",
+            "notes": "Trascrizione della fonte; le forme equivalenti aggiunte sono enrichment."
+          },
+          {
+            "latex": "\\ell(z^\\star)<\\ell(z)\\quad\\forall z\\ne z^\\star",
+            "anchor": "with ℓ: Rd →R a cost function",
+            "notes": "Trascrizione della fonte; le forme equivalenti aggiunte sono enrichment."
+          },
+          {
+            "latex": "\\exists\\epsilon>0:\\ \\ell(z^\\star)<\\ell(z)\\quad\\forall z\\in B(z^\\star,\\epsilon)\\setminus\\{z^\\star\\}",
+            "anchor": "with ℓ: Rd →R a cost function",
+            "notes": "Trascrizione della fonte; le forme equivalenti aggiunte sono enrichment."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Un minimo locale vince nei confronti abbastanza vicini. Un minimo globale vince contro ogni decisione. “Stretto” esclude pareggi con punti distinti.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Curva 2D con tre punti critici, candidato selezionabile e intorno aperto evidenziato.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "Doppio pozzo con τ=0",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli dichiarati nel piano: Curva 2D con tre punti critici, candidato selezionabile e intorno aperto evidenziato.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Distinguere locale/globale e stretto/non stretto con i corretti quantificatori.",
+            "setup": "Doppio pozzo con τ=0",
+            "parameters": [],
+            "derivation": [
+              "I punti −1 e 1 hanno costo 0 e sono entrambi minimi globali e locali stretti.",
+              "Il minimo globale non è stretto: l’altro pozzo pareggia il costo.",
+              "Con τ=0.25 il pozzo sinistro è l’unico minimo globale; il destro rimane locale."
+            ],
+            "expected_outcome": "Parità globale e strettezza locale possono coesistere.",
+            "limitations": [
+              "La fonte definisce quattro nozioni senza ipotesi di derivabilità.",
+              "Il doppio pozzo e i suoi valori sono un esempio aggiunto; nessuna verifica su griglia viene presentata come prova globale."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "SceneViewport",
+          "description": "Curva 2D con tre punti critici, candidato selezionabile e intorno aperto evidenziato.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "s04",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "L’effetto parametrico isola il concetto della pagina.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Inclinazione",
+              "symbol": "\\tau",
+              "origin": "enrichment",
+              "range": "{'min': -0.5, 'max': 0.5, 'step': 0.05, 'integer': False}",
+              "default": "0.25",
+              "effect_on_change": "Muove i punti critici e modifica quale pozzo ha costo globale minore.",
+              "edge_cases": [
+                "τ=0",
+                "Intorno troppo ampio",
+                "Candidato massimo"
+              ]
+            },
+            {
+              "name": "Raggio dell’intorno",
+              "symbol": "\\epsilon",
+              "origin": "enrichment",
+              "range": "{'min': 0.1, 'max': 1.5, 'step': 0.1, 'integer': False}",
+              "default": "0.5",
+              "effect_on_change": "Modifica soltanto la zona evidenziata del confronto locale, non la funzione o i minimi.",
+              "edge_cases": [
+                "τ=0",
+                "Intorno troppo ampio",
+                "Candidato massimo"
+              ]
+            },
+            {
+              "name": "Punto da classificare",
+              "symbol": "s",
+              "origin": "enrichment",
+              "range": "Pozzo sinistro / pozzo destro / cima intermedia",
+              "default": "Pozzo sinistro",
+              "effect_on_change": "Cambia il punto evidenziato, il costo e la classificazione; la funzione e i suoi punti critici restano fissi.",
+              "edge_cases": [
+                "τ=0",
+                "Intorno troppo ampio",
+                "Candidato massimo"
+              ]
+            }
+          ],
+          "outputs": [
+            "Distinguere locale/globale e stretto/non stretto con i corretti quantificatori."
+          ],
+          "invariants": [
+            "La fonte definisce quattro nozioni senza ipotesi di derivabilità.",
+            "Il doppio pozzo e i suoi valori sono un esempio aggiunto; nessuna verifica su griglia viene presentata come prova globale."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "τ=0",
+            "expected_behavior": "Due minimizzatori globali, nessuno dei due stretto globale.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04",
+              "structure"
+            ]
+          },
+          {
+            "case": "Intorno troppo ampio",
+            "expected_behavior": "La definizione richiede l’esistenza di un raggio adatto, non ogni raggio.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04",
+              "structure"
+            ]
+          },
+          {
+            "case": "Candidato massimo",
+            "expected_behavior": "Non classificarlo come minimo neppure quando è stazionario.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un focus principale, una figura e dettagli su richiesta consentono una singola companion leggibile; nessuna riduzione tipografica.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Distinguere locale/globale e stretto/non stretto con i corretti quantificatori.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "s04",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "visual",
+              "example",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un focus principale, una figura e dettagli su richiesta consentono una singola companion leggibile; nessuna riduzione tipografica.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

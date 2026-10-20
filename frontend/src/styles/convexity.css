@@ -1,0 +1,3 @@
+.convexity-lesson .controls-block .opt-choice { min-width:0; }
+.convexity-lesson .opt-choice select { text-overflow:ellipsis; }
+.convexity-lesson .live-metrics dd { overflow-wrap:anywhere; }

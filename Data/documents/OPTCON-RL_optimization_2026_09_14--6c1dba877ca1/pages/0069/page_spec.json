@@ -69,12 +69,216 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "09e9fcbb681fa1d8114ddbe0d98c9a065a01ac366b538e84bb8d7206abc963a2",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0069",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "96414d1d73229128bf6593923605d4ca94b4a540f789d38a98d317c1deee01df",
+        "layout": "31245532d7649875ff4f662989fec255c954611ed1bb1401bc4956d3889435a5",
+        "render": "7c965c7fa535d4846fc8af4f19c187319ec06cb031e25001af167d9f7c9edc16"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-j-2026-10-19"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0069",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0068",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0070"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0069",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0068",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0070"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0069",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0068",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0070"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Constrained optimization (equality and inequality constraints): optimization algorithms",
+      "observations": [
+        {
+          "id": "s01",
+          "category": "structure",
+          "description": "Titolo centrale di sezione: algoritmi con uguaglianze e disuguaglianze; nessuna formula, figura o footer.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0069",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              20,
+              28,
+              443.5429992675781,
+              241.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Solo titolo centrale su fondo bianco; nessun footer, numero visibile, formula o figura tecnica.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0069",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Orientarsi fra residuo KKT, sistema Newton e sequenza di QP locali.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0068",
+          "role": "previous",
+          "note": "Curvatura ridotta dei QP: versione corretta Ay=0 e ker(A)."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0070",
+          "role": "next",
+          "note": "Leggere ∇L come gradiente congiunto in z e λ, composto da stazionarietà e fattibilità."
+        }
+      ],
+      "notation": [],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "s01",
+          "structure"
+        ],
+        "rationale": "Scopo e contenuto autonomi."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Titolo centrale e tutti gli spazi bianchi; assenza di altri elementi verificata.",
+            "observation_ids": [
+              "s01",
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "La fonte contiene solo una divisoria; non attribuirle algoritmi o garanzie tecniche.",
+          "La fonte contiene solo una divisoria; non attribuirle algoritmi o garanzie tecniche."
+        ],
+        "prerequisites": [
+          {
+            "concept": "KKT e QP vincolati",
+            "why": "Ora si costruiscono algoritmi, a partire dalle condizioni già studiate.",
+            "origin": "source_context",
+            "page_numbers": [
+              60,
+              67,
+              68
+            ]
+          }
+        ],
+        "source_math": [],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Le condizioni di ottimalità diventano equazioni da risolvere. Per le uguaglianze, Newton costruisce un sistema lineare; la stessa struttura collega il passo a un QP locale.",
+            "source_observation_ids": [
+              "s01",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Tre schede statiche: residuo da annullare; sistema Newton locale; sequenza di QP e aggiornamenti. Mappa aggiunta al titolo.",
+            "source_observation_ids": [
+              "s01",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [],
+        "example_omission_reason": "Divisoria: la fonte contiene soltanto il titolo. La companion propone una mappa, senza esempio numerico inventato.",
+        "visualization": {
+          "component": "ModelDiagram",
+          "description": "Tre schede statiche: residuo da annullare; sistema Newton locale; sequenza di QP e aggiornamenti. Mappa aggiunta al titolo.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "s01",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": false,
+          "rationale": "Mappa statica sufficiente per orientarsi.",
+          "component": null,
+          "parameters": [],
+          "outputs": [
+            "Orientarsi fra residuo KKT, sistema Newton e sequenza di QP locali."
+          ],
+          "invariants": [
+            "La fonte contiene solo una divisoria; non attribuirle algoritmi o garanzie tecniche.",
+            "La fonte contiene solo una divisoria; non attribuirle algoritmi o garanzie tecniche."
+          ],
+          "enrichment_id": null
+        },
+        "edge_cases": [],
+        "expansion_rationale": "Un focus principale, una figura e dettagli su richiesta consentono una singola companion leggibile; nessuna riduzione tipografica.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Orientarsi fra residuo KKT, sistema Newton e sequenza di QP locali.",
+            "source_observation_ids": [
+              "s01",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "visual"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un focus principale, una figura e dettagli su richiesta consentono una singola companion leggibile; nessuna riduzione tipografica.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

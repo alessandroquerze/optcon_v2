@@ -81,12 +81,423 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "877663d905c4b7a7f7952373757e9b9a834c1537e146cfc0c932629c85a2ccf1",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0014",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "d19e5de54ddac12f3c0d461df3af89a53e600fa372e466277d4e4ca9ea016e4f",
+        "layout": "3c9238e567513663f2b2fdde23a90e6ff05bab6ec884ac04dd5d3960eb276220",
+        "render": "0cd9975f619766484b6b4315d9e89f08f7fbfbbb7ed82223742b2693f75dfc6e"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-b-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0014",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0013",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0015"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0014",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0013",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0015"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0014",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0013",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0015"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Convexity and gradient monotonicity",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "assumption",
+          "description": "Le proprietà richiedono ℓ differenziabile e convessa.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0014",
+            "modality": "both",
+            "text_quote": "If ℓis differentiable and convex",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "equation",
+          "description": "La fonte enuncia il limite affine al punto z_A per il valore in z_B.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0014",
+            "modality": "both",
+            "text_quote": "it holds",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "equation",
+          "description": "Il prodotto delle differenze è non negativo per tutte le coppie; il gradiente è monotono.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0014",
+            "modality": "both",
+            "text_quote": "monotone operator",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0014",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Collegare supporto affine e monotonia del gradiente senza invertirne i segni.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0013",
+          "role": "previous",
+          "note": "Separare insieme affine, sottospazio lineare e rappresentazione nonlineare dello stesso insieme."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0015",
+          "role": "next",
+          "note": "Distinguere monotonia stretta da un limite quadratico uniforme."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\ell(z_B)\\ge\\ell(z_A)+\\nabla\\ell(z_A)^\\top(z_B-z_A)",
+          "meaning": "Per ℓ differenziabile e convessa, la tangente in A usa valore e pendenza locali e non sovrastima il costo in B.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "(\\nabla\\ell(z_A)-\\nabla\\ell(z_B))^\\top(z_A-z_B)\\ge0",
+          "meaning": "Il prodotto scalare mette insieme tutte le coordinate: non richiede un confronto componente per componente dei gradienti.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "structure"
+        ],
+        "rationale": "Pagina distinta per definizione, vincolo o interpretazione; non accorpare."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "Nessuna correzione matematica necessaria dopo confronto con la pagina precedente e successiva."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Convessità differenziabile",
+            "why": "La tangente è il supporto della funzione.",
+            "origin": "source_context",
+            "page_numbers": [
+              11
+            ]
+          },
+          {
+            "concept": "Gradiente colonna",
+            "why": "Il prodotto scalare usa la trasposta della colonna.",
+            "origin": "source_context",
+            "page_numbers": [
+              6
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\ell(z_B)\\ge\\ell(z_A)+\\nabla\\ell(z_A)^\\top(z_B-z_A)",
+            "anchor": "If ℓis differentiable and convex",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "(\\nabla\\ell(z_A)-\\nabla\\ell(z_B))^\\top(z_A-z_B)\\ge0",
+            "anchor": "If ℓis differentiable and convex",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "La funzione convessa sta sopra la sua approssimazione affine in ogni punto. Sommando i confronti nei due versi si ottiene un prodotto non negativo fra differenze di gradiente e decisione.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "z_A=−0.5, z_B=0.9",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Curva 2D, tangente nel punto A, costo in B e tratto verticale dello scarto; lettura del prodotto monotono.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Collegare supporto affine e monotonia del gradiente senza invertirne i segni.",
+            "setup": "z_A=−0.5, z_B=0.9",
+            "parameters": [],
+            "derivation": [
+              "Calcolare ℓ(z_A), ℓ(z_B) e ∇ℓ(z_A).",
+              "Costruire la retta affine nel punto z_A.",
+              "Verificare scarto dal supporto e prodotto monotono non negativi."
+            ],
+            "expected_outcome": "Le coppie coincidenti danno zero in entrambi i confronti.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "SceneViewport",
+          "description": "Curva 2D, tangente nel punto A, costo in B e tratto verticale dello scarto; lettura del prodotto monotono.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Variare un solo aspetto del confronto mantenendo esplicite le invarianti.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Punto di tangenza",
+              "symbol": "z_A",
+              "origin": "enrichment",
+              "range": "{'min': -1, 'max': 1, 'step': 0.1, 'integer': False}",
+              "default": "-0.5",
+              "effect_on_change": "Sposta la tangente e aggiorna gradiente, supporto e prodotto; la funzione resta fissa.",
+              "edge_cases": [
+                "z_A=z_B",
+                "Scambio A/B"
+              ]
+            },
+            {
+              "name": "Punto di confronto",
+              "symbol": "z_B",
+              "origin": "enrichment",
+              "range": "{'min': -1, 'max': 1, 'step': 0.1, 'integer': False}",
+              "default": "0.9",
+              "effect_on_change": "Muove il punto confrontato e il tratto di scarto, conservando la tangente in z_A.",
+              "edge_cases": [
+                "z_A=z_B",
+                "Scambio A/B"
+              ]
+            }
+          ],
+          "outputs": [
+            "Collegare supporto affine e monotonia del gradiente senza invertirne i segni."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "z_A=z_B",
+            "expected_behavior": "Scarto e prodotto sono esattamente zero.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "Scambio A/B",
+            "expected_behavior": "Il prodotto monotono resta uguale; il supporto cambia.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Collegare supporto affine e monotonia del gradiente senza invertirne i segni.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

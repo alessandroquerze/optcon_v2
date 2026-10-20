@@ -1,0 +1,535 @@
+{
+  "reviewed_at": "2026-10-18T16:28:15.786Z",
+  "success": true,
+  "pages": [
+    {
+      "page": 26,
+      "views": [
+        {
+          "view": "static",
+          "screenshot": "Docs/Optimization_D_assets/p26-static.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-explanation",
+              "top": 116.65625,
+              "bottom": 183.84375
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 189.84375,
+              "bottom": 752.171875
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1163.21875,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {}
+        }
+      ]
+    },
+    {
+      "page": 27,
+      "views": [
+        {
+          "view": "2D",
+          "screenshot": "Docs/Optimization_D_assets/p27-2d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 240.8125
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 246.8125,
+              "bottom": 657.40625
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 663.40625,
+              "bottom": 858.984375
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 864.984375,
+              "bottom": 1137.859375
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1163.21875,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt27-k": "0",
+            "opt27-cost": "3.1250",
+            "opt27-drop": "—"
+          }
+        },
+        {
+          "view": "3D",
+          "screenshot": "Docs/Optimization_D_assets/p27-3d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 240.8125
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 246.8125,
+              "bottom": 657.40625
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 663.40625,
+              "bottom": 858.984375
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 864.984375,
+              "bottom": 1137.859375
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1163.21875,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt27-k": "0",
+            "opt27-cost": "3.1250",
+            "opt27-drop": "—"
+          }
+        }
+      ]
+    },
+    {
+      "page": 28,
+      "views": [
+        {
+          "view": "2D",
+          "screenshot": "Docs/Optimization_D_assets/p28-2d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 269.40625
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 275.40625,
+              "bottom": 647
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 653,
+              "bottom": 806.78125
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 812.78125,
+              "bottom": 1114.25
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt28-slope": "-2.2361",
+            "opt28-cost": "0.2704",
+            "opt28-change": "-0.7296"
+          }
+        }
+      ]
+    },
+    {
+      "page": 29,
+      "views": [
+        {
+          "view": "2D",
+          "screenshot": "Docs/Optimization_D_assets/p29-2d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 269.40625
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 275.40625,
+              "bottom": 647
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 653,
+              "bottom": 806.78125
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 812.78125,
+              "bottom": 1114.25
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1163.21875,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt29-linear": "-0.5000",
+            "opt29-rest": "0.1250",
+            "opt29-change": "-0.3750"
+          }
+        }
+      ]
+    },
+    {
+      "page": 30,
+      "views": [
+        {
+          "view": "2D",
+          "screenshot": "Docs/Optimization_D_assets/p30-2d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 269.40625
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 275.40625,
+              "bottom": 647
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 653,
+              "bottom": 806.78125
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 812.78125,
+              "bottom": 1142.84375
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1163.21875,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt30-slope": "-1.5811",
+            "opt30-direction": "discesa",
+            "opt30-change": "-0.3281"
+          }
+        }
+      ]
+    },
+    {
+      "page": 31,
+      "views": [
+        {
+          "view": "2D",
+          "screenshot": "Docs/Optimization_D_assets/p31-2d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 269.40625
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 275.40625,
+              "bottom": 647
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 653,
+              "bottom": 832.5625
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 838.5625,
+              "bottom": 1151.015625
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt31-product": "-4.2410",
+            "opt31-eigenvalue": "0.5000",
+            "opt31-cost": "0.3581"
+          }
+        }
+      ]
+    },
+    {
+      "page": 32,
+      "views": [
+        {
+          "view": "2D",
+          "screenshot": "Docs/Optimization_D_assets/p32-2d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 269.40625
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 275.40625,
+              "bottom": 686
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 692,
+              "bottom": 845.78125
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 851.78125,
+              "bottom": 1124.65625
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1163.21875,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt32-slope": "-7.4813",
+            "opt32-cost": "6.6283",
+            "opt32-change": "5.4859"
+          }
+        },
+        {
+          "view": "3D",
+          "screenshot": "Docs/Optimization_D_assets/p32-3d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 269.40625
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 275.40625,
+              "bottom": 686
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 692,
+              "bottom": 845.78125
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 851.78125,
+              "bottom": 1124.65625
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1163.21875,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt32-slope": "-7.4813",
+            "opt32-cost": "6.6283",
+            "opt32-change": "5.4859"
+          }
+        }
+      ]
+    },
+    {
+      "page": 33,
+      "views": [
+        {
+          "view": "2D",
+          "screenshot": "Docs/Optimization_D_assets/p33-2d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 302.578125
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 308.578125,
+              "bottom": 680.171875
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 686.171875,
+              "bottom": 839.953125
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 845.953125,
+              "bottom": 1118.828125
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1163.21875,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt33-slope": "-1.0607",
+            "opt33-best": "-1.5000",
+            "opt33-gap": "0.4393"
+          }
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "name": "iteration playback reset and fullscreen state",
+      "status": "PASS"
+    },
+    {
+      "name": "direction versus step and orthogonality",
+      "status": "PASS"
+    },
+    {
+      "name": "Taylor remainder zero gradient and equal-cost boundary",
+      "status": "PASS"
+    },
+    {
+      "name": "direction classification remains separate from cost change",
+      "status": "PASS"
+    },
+    {
+      "name": "positive definite transformed direction and zero-gradient guard",
+      "status": "PASS"
+    },
+    {
+      "name": "three methods same initial point and step with finite differences",
+      "status": "PASS"
+    },
+    {
+      "name": "unit direction optimality and undefined normalized gradient",
+      "status": "PASS"
+    },
+    {
+      "name": "previous batches and future placeholder",
+      "status": "PASS"
+    }
+  ],
+  "errors": [],
+  "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+  "manual_visual_review": "PASS: all eight pages, nine graphic views plus static divider, fullscreen, playback and representative edge cases inspected. Original text and rendered source images examined individually in order.",
+  "build": "PASS",
+  "targeted_unit_tests": {
+    "status": "PASS",
+    "test_files": 3,
+    "tests": 25
+  },
+  "integrity": {
+    "status": "PASS",
+    "protected_files": 366,
+    "previous_manifest_definitions_unchanged": 25,
+    "source_artifacts_unchanged": 324,
+    "pdf_unchanged": true,
+    "source_page_count": 81,
+    "authored_pages": 33,
+    "future_pages_pending": 48
+  }
+}

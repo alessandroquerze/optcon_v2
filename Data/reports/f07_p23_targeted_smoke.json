@@ -1,0 +1,9 @@
+{
+  "verified_at": "2026-10-18T01:57:44.654242+00:00",
+  "status": "PASS",
+  "tests": 1,
+  "command": "npm run test:browser -- --grep F07 p23: --output=test-results-f07-final-p23 --reporter=list",
+  "log": "frontend/test-reports/f07-p23-smoke.txt",
+  "log_sha256": "db3a5f386cee71ce9ee8c7118de09a85e93d9d927e31edc471e2f5b9ce52da14",
+  "reason": "Final sampling fix lifts the box boundary to the real quadratic cost, including intermediate edge points. Full suite passed after shared formula reflow; this targeted run checks the only subsequently affected page."
+}

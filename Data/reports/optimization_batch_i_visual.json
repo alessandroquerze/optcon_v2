@@ -1,0 +1,616 @@
+{
+  "reviewed_at": "2026-10-18T23:12:12.837Z",
+  "success": true,
+  "pages": [
+    {
+      "page": 63,
+      "views": [
+        {
+          "view": "2D",
+          "screenshot": "Docs/Optimization_I_assets/p63-2d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 319.453125
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 325.453125,
+              "bottom": 697.046875
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 703.046875,
+              "bottom": 856.828125
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 862.828125,
+              "bottom": 1143.6875
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt63-sum": "0.0000",
+            "opt63-first": "0.0000",
+            "opt63-second": "0.0000"
+          }
+        }
+      ]
+    },
+    {
+      "page": 64,
+      "views": [
+        {
+          "view": "2D",
+          "screenshot": "Docs/Optimization_I_assets/p64-2d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 309.875
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 315.875,
+              "bottom": 726.46875
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 732.46875,
+              "bottom": 886.25
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 892.25,
+              "bottom": 1173.109375
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt64-regular": "1.0000",
+            "opt64-lambda": "1.0000",
+            "opt64-change": "0.3125"
+          }
+        },
+        {
+          "view": "3D",
+          "screenshot": "Docs/Optimization_I_assets/p64-3d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 309.875
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 315.875,
+              "bottom": 726.46875
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 732.46875,
+              "bottom": 886.25
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 892.25,
+              "bottom": 1173.109375
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt64-regular": "1.0000",
+            "opt64-lambda": "1.0000",
+            "opt64-change": "0.3125"
+          }
+        }
+      ]
+    },
+    {
+      "page": 65,
+      "views": [
+        {
+          "view": "2D",
+          "screenshot": "Docs/Optimization_I_assets/p65-2d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 269.40625
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 275.40625,
+              "bottom": 686
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 692,
+              "bottom": 871.5625
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 877.5625,
+              "bottom": 1158.421875
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt65-tangent": "0.0000",
+            "opt65-form": "0.5000",
+            "opt65-reduced": "0.5000"
+          }
+        },
+        {
+          "view": "3D",
+          "screenshot": "Docs/Optimization_I_assets/p65-3d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 269.40625
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 275.40625,
+              "bottom": 686
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 692,
+              "bottom": 871.5625
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 877.5625,
+              "bottom": 1158.421875
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt65-tangent": "0.0000",
+            "opt65-form": "0.5000",
+            "opt65-reduced": "0.5000"
+          }
+        }
+      ]
+    },
+    {
+      "page": 66,
+      "views": [
+        {
+          "view": "2D",
+          "screenshot": "Docs/Optimization_I_assets/p66-2d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 324.140625
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 330.140625,
+              "bottom": 740.734375
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 746.734375,
+              "bottom": 900.515625
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 906.515625,
+              "bottom": 1187.375
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt66-point": "(0.6036, -0.1036)",
+            "opt66-feasible": "≈0",
+            "opt66-cost": "-0.1875"
+          }
+        },
+        {
+          "view": "3D",
+          "screenshot": "Docs/Optimization_I_assets/p66-3d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 324.140625
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 330.140625,
+              "bottom": 740.734375
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 746.734375,
+              "bottom": 900.515625
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 906.515625,
+              "bottom": 1187.375
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt66-point": "(0.6036, -0.1036)",
+            "opt66-feasible": "≈0",
+            "opt66-cost": "-0.1875"
+          }
+        }
+      ]
+    },
+    {
+      "page": 67,
+      "views": [
+        {
+          "view": "2D",
+          "screenshot": "Docs/Optimization_I_assets/p67-2d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 272.5
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 278.5,
+              "bottom": 689.09375
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 695.09375,
+              "bottom": 848.875
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 854.875,
+              "bottom": 1135.734375
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt67-system": "soluzione unica",
+            "opt67-point": "(0.6036, -0.1036)",
+            "opt67-residual": "≈0"
+          }
+        },
+        {
+          "view": "3D",
+          "screenshot": "Docs/Optimization_I_assets/p67-3d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 272.5
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 278.5,
+              "bottom": 689.09375
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 695.09375,
+              "bottom": 848.875
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 854.875,
+              "bottom": 1135.734375
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt67-system": "soluzione unica",
+            "opt67-point": "(0.6036, -0.1036)",
+            "opt67-residual": "≈0"
+          }
+        }
+      ]
+    },
+    {
+      "page": 68,
+      "views": [
+        {
+          "view": "2D",
+          "screenshot": "Docs/Optimization_I_assets/p68-2d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 287.40625
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 293.40625,
+              "bottom": 704
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 710,
+              "bottom": 889.5625
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 895.5625,
+              "bottom": 1114.828125
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1163.21875,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt68-Ay": "0.0000",
+            "opt68-form": "1.0000",
+            "opt68-reduced": "1.0000"
+          }
+        },
+        {
+          "view": "3D",
+          "screenshot": "Docs/Optimization_I_assets/p68-3d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 287.40625
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 293.40625,
+              "bottom": 704
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 710,
+              "bottom": 889.5625
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 895.5625,
+              "bottom": 1114.828125
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1163.21875,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt68-Ay": "0.0000",
+            "opt68-form": "1.0000",
+            "opt68-reduced": "1.0000"
+          }
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "name": "zero stationarity and nonnegative weights do not replace complementarity",
+      "status": "PASS"
+    },
+    {
+      "name": "circle candidate retains first order while finite feasible costs change",
+      "status": "PASS"
+    },
+    {
+      "name": "Lagrangian curvature includes the constraint and only tangent directions are tested",
+      "status": "PASS"
+    },
+    {
+      "name": "QP separates tangent normal curvatures and moving the affine set",
+      "status": "PASS"
+    },
+    {
+      "name": "QP KKT system distinguishes unique incompatible families and redundant multipliers",
+      "status": "PASS"
+    },
+    {
+      "name": "correct nullspace test distinguishes excluded directions from failure of first order",
+      "status": "PASS"
+    },
+    {
+      "name": "fullscreen preserves camera and controls across the same mathematical scene",
+      "status": "PASS"
+    },
+    {
+      "name": "previous companions PDF and next batch placeholder remain intact",
+      "status": "PASS"
+    }
+  ],
+  "errors": [],
+  "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+  "completion": {
+    "batch": "I",
+    "physical_pages": [
+      63,
+      64,
+      65,
+      66,
+      67,
+      68
+    ],
+    "analysis_and_design": "PASS",
+    "build": "PASS",
+    "targeted_tests": {
+      "status": "PASS",
+      "files": 3,
+      "tests": 28
+    },
+    "manual_visual_review": {
+      "status": "PASS",
+      "pages": [
+        63,
+        64,
+        65,
+        66,
+        67,
+        68
+      ],
+      "principal_graphic_views": 11,
+      "static_views": 0,
+      "scope": "Every page and applicable 2D/3D view; final screenshots inspected manually. Gradient polygon and complementary products; circle constraint, fixed candidate, Lagrangian vs cost curvature, excluded directions and flat strict minima; QP tangent/normal curvature, incompatible systems, redundant multiplier families, multiple minima, small nonzero curvature, corrected kernel, fullscreen camera/state. Introduction 12/16/17/27/34 and Optimization 54/58/62 browser-smoked. Text and chart sizes preserved."
+    },
+    "integrity": {
+      "status": "PASS",
+      "protected_files_unchanged": 434,
+      "source_artifacts_unchanged": 324,
+      "previous_manifest_definitions_unchanged": 62,
+      "original_pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea"
+    },
+    "new_correction_warnings": [
+      68
+    ],
+    "new_info_warnings": [],
+    "unresolved_blocking_issues": 0,
+    "companions_complete": 68,
+    "future_page_specs_pending": 13,
+    "next_batch": "J",
+    "next_batch_started": false,
+    "completed_at": "2026-10-18T23:13:07.521813+00:00"
+  }
+}

@@ -125,12 +125,456 @@
   ],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "5b12211a1e5ed72d303ae3a112ec8b4c4fb1bce4bbec75ee493860e9cb2e5623",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0064",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "da36d8a8391562f36743be7799d54ba4bc2dbb1a9a670118e69b7a596ed74e61",
+        "layout": "6ad5ddd5acde7e9b6cddbcbf403502bd86130929232c6b7feae68e0e196688ea",
+        "render": "14644c4efe07b292795759b632e5904ba86dcc17c59f0fc09a9f2135636f981c"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-i-2026-10-19"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0064",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0063",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0065"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0064",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0063",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0065"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0064",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0063",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0065"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Karush-Kuhn-Tucker (KKT) necessary conditions (second order)",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "assumption",
+          "description": "Minimo locale regolare del problema generale con ℓ,g_j,h_i di classe C¹.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0064",
+            "modality": "both",
+            "text_quote": "regular local minimum",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "equation",
+          "description": "Esistenza e unicità dei moltiplicatori; stazionarietà, non negatività e complementarità sono scritte su una riga.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0064",
+            "modality": "both",
+            "text_quote": "Lagrange multipliers",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "structure",
+          "description": "Nonostante il titolo second order, il rendering non contiene ancora C² né alcuna Hessiana; la parte bassa è bianca.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0064",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0064",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Riconoscere che questa prima progressiva ripropone soltanto il primo ordine e le sue ipotesi, prima della nuova condizione nella 65.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0063",
+          "role": "previous",
+          "note": "Leggere il gradiente della Lagrangiana come somma di vettori e distinguere stazionarietà e prodotti complementari."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0065",
+          "role": "next",
+          "note": "Usare la Hessiana della Lagrangiana sulle direzioni ortogonali ai gradienti dei vincoli pertinenti, con ipotesi C²."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\begin{gathered}\\nabla_1L(z^\\star,\\mu^\\star,\\lambda^\\star)=0\\\\\\mu_j^\\star\\ge0,\\quad\\mu_j^\\star g_j(z^\\star)=0,\\quad j\\in\\{1,\\ldots,r\\}\\end{gathered}",
+          "meaning": "Minimo locale regolare e funzioni C¹: esistono moltiplicatori unici. Questa progressiva non mostra ancora il secondo ordine.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\min_{z\\in\\mathbb R^d}\\ell(z),\\quad g_j(z)\\le0,\\ j=1,\\ldots,r,\\quad h_i(z)=0,\\ i=1,\\ldots,m",
+          "meaning": "Rimangono r disuguaglianze e m uguaglianze; le tre righe KKT non sostituiscono l’ammissibilità.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "progressive",
+        "related_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0065"
+        ],
+        "added": [
+          "Solo primo ordine sotto C¹ e regolarità; il secondo ordine non è ancora visibile."
+        ],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "structure"
+        ],
+        "rationale": "Stessa slide stampata 57|73: la 64 presenta solo le KKT del primo ordine; la 65 aggiunge ipotesi C², forma quadratica e spazio delle direzioni. Raster e testo verificati individualmente, nessuna pagina eliminata."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "Nessuna correzione matematica necessaria dopo confronto con la pagina precedente e successiva.",
+          "Nessun C² o risultato di secondo ordine attribuito alla 64. L’esempio è C∞ per poterlo riusare nella 65.",
+          "Il simbolo z⋆ della fonte è usato nel grafico come punto KKT di prova: non dichiararlo minimo per parametri che lo confutano; in UI si usa v=(0,−1)."
+        ],
+        "prerequisites": [
+          {
+            "concept": "KKT",
+            "why": "Derivata in z con λ fissato.",
+            "origin": "source_context",
+            "page_numbers": [
+              60,
+              63
+            ]
+          },
+          {
+            "concept": "Regolarità",
+            "why": "∇h(0,−1)=(0,−1) è non nullo.",
+            "origin": "source_context",
+            "page_numbers": [
+              57
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\begin{gathered}\\nabla_1L(z^\\star,\\mu^\\star,\\lambda^\\star)=0\\\\\\mu_j^\\star\\ge0,\\quad\\mu_j^\\star g_j(z^\\star)=0,\\quad j\\in\\{1,\\ldots,r\\}\\end{gathered}",
+            "anchor": "regular local minimum",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\min_{z\\in\\mathbb R^d}\\ell(z),\\quad g_j(z)\\le0,\\ j=1,\\ldots,r,\\quad h_i(z)=0,\\ i=1,\\ldots,m",
+            "anchor": "regular local minimum",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Il titolo anticipa il secondo ordine, ma qui compaiono ancora le KKT con funzioni C¹ e minimo locale regolare. L’informazione sulla curvatura verrà aggiunta nella prossima pagina.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "α=−0.5, β=1, θ=60°",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Circonferenza ammissibile nei livelli 2D e alla sua altezza reale sul costo 3D; profilo del costo rispetto a θ, punto KKT e sonda comuni. Frecce ∇ℓ e λ∇h in 2D.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Riconoscere che questa prima progressiva ripropone soltanto il primo ordine e le sue ipotesi, prima della nuova condizione nella 65.",
+            "setup": "α=−0.5, β=1, θ=60°",
+            "parameters": [],
+            "derivation": [
+              "∇ℓ(0,−1)=(0,1), ∇h(0,−1)=(0,−1), λ=1.",
+              "La somma dei gradienti è zero.",
+              "La sonda (√3/2,−1/2) ha costo −0.6875 contro −1: differenza 0.3125."
+            ],
+            "expected_outcome": "Il primo ordine non cambia al variare di α; serve studiare cosa accade sul vincolo.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "FunctionExplorer",
+          "description": "Circonferenza ammissibile nei livelli 2D e alla sua altezza reale sul costo 3D; profilo del costo rispetto a θ, punto KKT e sonda comuni. Frecce ∇ℓ e λ∇h in 2D.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "La famiglia conserva le KKT al candidato mentre il costo sui punti ammissibili cambia.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Curvatura del costo",
+              "symbol": "\\alpha",
+              "origin": "enrichment",
+              "range": "{'min': -2, 'max': 2, 'step': 0.25, 'integer': False}",
+              "default": "-0.5",
+              "effect_on_change": "Modifica ℓ e il costo sulla circonferenza. λ=β e stazionarietà in (0,−1) restano invariati.",
+              "edge_cases": [
+                "β cambia segno",
+                "α=β=0",
+                "θ=0"
+              ]
+            },
+            {
+              "name": "Termine verticale",
+              "symbol": "\\beta",
+              "origin": "enrichment",
+              "range": "{'min': -1, 'max': 1, 'step': 0.25, 'integer': False}",
+              "default": "1",
+              "effect_on_change": "Modifica il costo e il moltiplicatore λ=β; il vincolo e la regolarità restano fissi.",
+              "edge_cases": [
+                "β cambia segno",
+                "α=β=0",
+                "θ=0"
+              ]
+            },
+            {
+              "name": "Sonda sul vincolo",
+              "symbol": "\\theta",
+              "origin": "enrichment",
+              "range": "{'min': -180, 'max': 180, 'step': 15, 'integer': False}",
+              "default": "60",
+              "effect_on_change": "Muove soltanto z(θ) sulla circonferenza e aggiorna la variazione di costo; il punto KKT rimane (0,−1).",
+              "edge_cases": [
+                "β cambia segno",
+                "α=β=0",
+                "θ=0"
+              ]
+            }
+          ],
+          "outputs": [
+            "Riconoscere che questa prima progressiva ripropone soltanto il primo ordine e le sue ipotesi, prima della nuova condizione nella 65."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "β cambia segno",
+            "expected_behavior": "λ cambia segno lecitamente.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "α=β=0",
+            "expected_behavior": "Costo costante, ogni punto del vincolo è minimo.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "θ=0",
+            "expected_behavior": "Sonda e candidato coincidono, confronto nullo non prova minimo.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Riconoscere che questa prima progressiva ripropone soltanto il primo ordine e le sue ipotesi, prima della nuova condizione nella 65.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

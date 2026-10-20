@@ -81,12 +81,488 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "595a3c691544193cf5cad929b3817c79f5950e1860ff5d98720cb0ae32c9b3b2",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0029",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "8d0d5d20e8ce0947c202b6429dfba8208b9d1d4f36fad80138a9b837cce615d9",
+        "layout": "816719239094c5ef39b4ae5c12234a42962c6d8cb92fa8644ed523143d886cb4",
+        "render": "d48ceda5ef68161cebe70ce9d256c2f0ee899b7415d6d492e6b23dd93e4175e5"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-d-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0029",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0028",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0030"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0029",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0028",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0030"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0029",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0028",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0030"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Gradient methods: introduction",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "assumption",
+          "description": "La pagina richiede ∇ℓ(z^k)≠0.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0029",
+            "modality": "both",
+            "text_quote": "such that",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "algorithm",
+          "description": "La direzione è d^k=−∇ℓ(z^k), con aggiornamento di gradiente.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0029",
+            "modality": "both",
+            "text_quote": "we choose",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "equation",
+          "description": "Taylor dà ℓ(z^{k+1})=ℓ(z^k)−γ^k||∇ℓ(z^k)||²+o(γ^k).",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0029",
+            "modality": "both",
+            "text_quote": "first order Taylor expansion",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-4",
+          "category": "concept",
+          "description": "Per γ^k>0 sufficientemente piccolo la conclusione è discesa stretta, non per ogni γ positivo.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0029",
+            "modality": "both",
+            "text_quote": "sufficiently small",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0029",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Capire il termine negativo di primo ordine e il ruolo del resto per un passo finito.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0028",
+          "role": "previous",
+          "note": "Separare una scelta locale favorevole dalla lunghezza effettiva dell’aggiornamento."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0030",
+          "role": "next",
+          "note": "Leggere il prodotto scalare come pendenza iniziale e classificare direzioni diverse."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "z^{k+1}=z^k-\\gamma^k\\nabla\\ell(z^k)",
+          "meaning": "Per un costo differenziabile e gradiente non nullo, la direzione opposta al gradiente dà un contributo lineare negativo al costo.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\ell(z^{k+1})=\\ell(z^k)+\\nabla\\ell(z^k)^T(z^{k+1}-z^k)+o(\\|z^{k+1}-z^k\\|)=\\ell(z^k)-\\gamma^k\\|\\nabla\\ell(z^k)\\|^2+o(\\gamma^k)",
+          "meaning": "Il termine lineare è negativo se il gradiente non è zero; il resto è di ordine inferiore al passo quando questo tende a zero, a punto corrente fissato.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "progressive",
+        "related_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0028"
+        ],
+        "added": [
+          "Capire il termine negativo di primo ordine e il ruolo del resto per un passo finito."
+        ],
+        "removed": [],
+        "changed": [
+          "Nuova scelta o caratterizzazione della direzione; mantenere una pagina fisica distinta."
+        ],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "source-4",
+          "structure"
+        ],
+        "rationale": "Progressione concettuale, non duplicato eliminabile."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "Nessuna correzione matematica necessaria dopo confronto con la pagina precedente e successiva.",
+          "L’intervallo della discesa è specifico dell’esempio aggiunto, non un limite universale della fonte."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Taylor al primo ordine",
+            "why": "Il resto descrive ciò che l’approssimazione lineare non cattura.",
+            "origin": "source_context",
+            "page_numbers": [
+              6
+            ]
+          },
+          {
+            "concept": "Direzione e passo",
+            "why": "Una direzione può essere corretta ma il passo eccessivo.",
+            "origin": "source_context",
+            "page_numbers": [
+              28
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "z^{k+1}=z^k-\\gamma^k\\nabla\\ell(z^k)",
+            "anchor": "such that",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\ell(z^{k+1})=\\ell(z^k)+\\nabla\\ell(z^k)^T(z^{k+1}-z^k)+o(\\|z^{k+1}-z^k\\|)=\\ell(z^k)-\\gamma^k\\|\\nabla\\ell(z^k)\\|^2+o(\\gamma^k)",
+            "anchor": "such that",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Con gradiente non nullo, il termine dominante è negativo. Il resto diventa trascurabile per passi piccoli; per un passo grande può cambiare il risultato.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "a=1, γ=0.5",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Costo esatto lungo γ, previsione lineare e costo iniziale; punto del passo scelto. Letture separate del contributo negativo e del resto.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Capire il termine negativo di primo ordine e il ruolo del resto per un passo finito.",
+            "setup": "a=1, γ=0.5",
+            "parameters": [],
+            "derivation": [
+              "Termine lineare −0.5, resto +0.125.",
+              "Variazione esatta −0.375; nuovo costo 0.125.",
+              "Con γ=2 il resto cancella la discesa, con γ>2 la supera."
+            ],
+            "expected_outcome": "Non eliminare il resto nei calcoli finiti.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "SceneViewport",
+          "description": "Costo esatto lungo γ, previsione lineare e costo iniziale; punto del passo scelto. Letture separate del contributo negativo e del resto.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Il confronto esatto con Taylor mostra perché il passo piccolo conta; a=0 verifica l’ipotesi di gradiente non nullo.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Punto corrente",
+              "symbol": "a",
+              "origin": "enrichment",
+              "range": "{'min': -1.5, 'max': 1.5, 'step': 0.25, 'integer': False}",
+              "default": "1",
+              "effect_on_change": "Cambia gradiente e scala del profilo, mantenendo fisso il costo ℓ=z²/2.",
+              "edge_cases": [
+                "a=0",
+                "γ=0",
+                "γ=2",
+                "γ>2"
+              ]
+            },
+            {
+              "name": "Passo del gradiente",
+              "symbol": "\\gamma",
+              "origin": "enrichment",
+              "range": "{'min': 0, 'max': 2.5, 'step': 0.1, 'integer': False}",
+              "default": "0.5",
+              "effect_on_change": "Seleziona il nuovo punto a(1−γ) e aggiorna contributo lineare, resto e variazione esatta.",
+              "edge_cases": [
+                "a=0",
+                "γ=0",
+                "γ=2",
+                "γ>2"
+              ]
+            }
+          ],
+          "outputs": [
+            "Capire il termine negativo di primo ordine e il ruolo del resto per un passo finito."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "a=0",
+            "expected_behavior": "Nessuna discesa stretta; nessuna direzione normalizzata inventata.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "γ=0",
+            "expected_behavior": "Nessun aggiornamento.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "γ=2",
+            "expected_behavior": "Costo uguale al precedente.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "γ>2",
+            "expected_behavior": "Il costo aumenta benché la direzione sia opposta al gradiente.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Capire il termine negativo di primo ordine e il ruolo del resto per un passo finito.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

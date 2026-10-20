@@ -159,7 +159,7 @@ test('p30: T=1, quota violata, banda vuota e warning persistente', async ({page}
   await expect(lesson.locator('[data-plot-ready="true"]')).toHaveCount(1);
   await expect(lesson.getByRole('note')).toContainText('Gli ingressi usano');
 });
-test('sessione: parametri locali, cleanup scene e 28 placeholder invariati', async ({page}) => {
+test('sessione: parametri locali e cleanup delle scene tra lezioni', async ({page}) => {
   const errors: string[] = []; page.on('pageerror', e => errors.push(e.message));
   await openLesson(page, 16);
   await page.getByLabel('Secondo peso valore', {exact:true}).fill('3');
@@ -172,7 +172,7 @@ test('sessione: parametri locali, cleanup scene e 28 placeholder invariati', asy
     expect(await page.locator('.companion-scroll').evaluate(el => el.scrollTop)).toBe(0);
     expect(await page.locator('.scene-viewport').count()).toBeLessThanOrEqual(1);
     if (number === 1) {
-      await expect(page.getByText('Companion pianificata', {exact:true})).toBeVisible();
+      await expect(page.locator('.course-orientation')).toBeVisible();
       await expect(page.locator('.scene-viewport canvas')).toHaveCount(0);
     }
   }

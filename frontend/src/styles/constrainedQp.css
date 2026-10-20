@@ -1,0 +1,2 @@
+.qp-four-controls .controls-block{grid-template-columns:repeat(4,minmax(0,1fr));}
+.constrained-qp-lesson .live-metrics dd{overflow-wrap:anywhere;}

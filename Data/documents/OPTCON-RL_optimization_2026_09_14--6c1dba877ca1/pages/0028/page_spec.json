@@ -81,12 +81,414 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "fa02fb7aa69103852dbbd831208bef234dbc5eaa4c56af823bcc32c40a9e4b9c",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0028",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "6622da0d64520b917af7380ba72510207571cc951ca392e80aab38cf41e0b2dd",
+        "layout": "5054a11b9f0409811d98d96c971db37f009eeb39a2865191e73b9f32624e28b8",
+        "render": "93958fefa4c0220d77a0d8ded2a5bd880d2d5ecb3a23cd27f1f2906904ea1d59"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-d-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0028",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0027",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0029"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0028",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0027",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0029"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0028",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0027",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0029"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Optimization algorithms: two-step procedure",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "algorithm",
+          "description": "Aggiornamento z^{k+1}=z^k+γ^k d^k con γ^k>0 e d^k∈R^d.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0028",
+            "modality": "both",
+            "text_quote": "each γk > 0",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "concept",
+          "description": "La procedura sceglie una direzione per discesa con passi sufficientemente piccoli, poi un passo che garantisca sufficiente diminuzione.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0028",
+            "modality": "both",
+            "text_quote": "sufficient decrease",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "other",
+          "description": "La fonte indica line-search come denominazione usata in altri riferimenti.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0028",
+            "modality": "both",
+            "text_quote": "line-search methods",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0028",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Separare una scelta locale favorevole dalla lunghezza effettiva dell’aggiornamento.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0027",
+          "role": "previous",
+          "note": "Leggere una sequenza di decisioni e il confronto fra costi successivi."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0029",
+          "role": "next",
+          "note": "Capire il termine negativo di primo ordine e il ruolo del resto per un passo finito."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "z^{k+1}=z^k+\\gamma^k d^k,\\quad k=1,2,\\ldots",
+          "meaning": "La direzione stabilisce verso dove andare; il passo positivo ne scala lo spostamento. Occorre scegliere entrambi per ottenere una diminuzione effettiva.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "structure"
+        ],
+        "rationale": "Scopo e contenuto autonomi."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "Nessuna correzione matematica necessaria dopo confronto con la pagina precedente e successiva.",
+          "γ=0 è un caso di confine aggiunto, escluso dal passo positivo della fonte."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Iterazione di discesa",
+            "why": "Confrontare il costo nuovo con quello corrente.",
+            "origin": "source_context",
+            "page_numbers": [
+              27
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "z^{k+1}=z^k+\\gamma^k d^k,\\quad k=1,2,\\ldots",
+            "anchor": "each γk > 0",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Una direzione può essere favorevole vicino al punto corrente. Il passo decide dove arrivare: se è troppo grande, anche quella direzione può aumentare il costo.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "ψ=0 e γ=0.6",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Profilo φ(γ) 2D, tangente in γ=0, livello del costo iniziale e punto del passo scelto; assi γ e costo, non coordinate di z.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Separare una scelta locale favorevole dalla lunghezza effettiva dell’aggiornamento.",
+            "setup": "ψ=0 e γ=0.6",
+            "parameters": [],
+            "derivation": [
+              "g=(1,2), d=−g/√5; pendenza −√5 e curvatura del profilo 17/5.",
+              "φ(0.6)=1−0.6√5+0.6²·17/10≈0.27036.",
+              "Con γ=2 lo stesso d può far aumentare il costo."
+            ],
+            "expected_outcome": "La direzione non garantisce diminuzione per tutti i passi positivi.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "SceneViewport",
+          "description": "Profilo φ(γ) 2D, tangente in γ=0, livello del costo iniziale e punto del passo scelto; assi γ e costo, non coordinate di z.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Cambiare direzione ricostruisce la curva; cambiare passo la percorre senza cambiarla.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Rotazione della direzione",
+              "symbol": "\\psi",
+              "origin": "enrichment",
+              "range": "{'min': -90, 'max': 90, 'step': 15, 'integer': False}",
+              "default": "0",
+              "effect_on_change": "Ruota la direzione unitaria, ricostruisce profilo e pendenza; punto corrente e costo restano fissi.",
+              "edge_cases": [
+                "ψ=±90°",
+                "γ=0",
+                "Passo grande"
+              ]
+            },
+            {
+              "name": "Passo scelto",
+              "symbol": "\\gamma",
+              "origin": "enrichment",
+              "range": "{'min': 0, 'max': 2, 'step': 0.1, 'integer': False}",
+              "default": "0.6",
+              "effect_on_change": "Muove solo il punto sul profilo e aggiorna il costo finale; direzione e curva restano fisse. Zero esplora il confine senza aggiornamento.",
+              "edge_cases": [
+                "ψ=±90°",
+                "γ=0",
+                "Passo grande"
+              ]
+            }
+          ],
+          "outputs": [
+            "Separare una scelta locale favorevole dalla lunghezza effettiva dell’aggiornamento."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "ψ=±90°",
+            "expected_behavior": "Pendenza esattamente zero; nessuna falsa negatività da arrotondamenti.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "γ=0",
+            "expected_behavior": "Nessuno spostamento né diminuzione.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "Passo grande",
+            "expected_behavior": "Mostrare aumento di costo senza cambiare la classificazione locale della direzione.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Separare una scelta locale favorevole dalla lunghezza effettiva dell’aggiornamento.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

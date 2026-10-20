@@ -81,12 +81,475 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "858d721a92ba20e4ccf683c0f4257984c020241e766cbb9796d4cd03336f12cd",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0011",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "36fedeca33896087613f03d0d8391c08d1ebb658a4fe13e3f43047f78a563fa2",
+        "layout": "cb2ed69cb0809ce44f13848f2c634d8b0fa58b2a838f219c22b9c67a862121f6",
+        "render": "5be73a1400a77ff7465dc6e971fc9a8e1aaf0c6e2a1267b764490b9867abbea3"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-b-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0011",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0010",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0012"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0011",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0010",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0012"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0011",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0010",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0012"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Convex functions",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "assumption",
+          "description": "Il dominio Z è convesso.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0011",
+            "modality": "both",
+            "text_quote": "Let Z",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "equation",
+          "description": "La fonte enuncia la disuguaglianza di convessità per tutte le coppie e θ∈[0,1].",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0011",
+            "modality": "both",
+            "text_quote": "A function",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "diagram",
+          "description": "La figura mostra una curva convessa sotto la corda, senza coordinate numeriche.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0011",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-4",
+          "category": "definition",
+          "description": "Concava significa −ℓ convessa; la versione stretta richiede punti distinti e θ interno.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0011",
+            "modality": "both",
+            "text_quote": "Remark",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0011",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Leggere la disuguaglianza di convessità come confronto fra costo interpolato e interpolazione dei costi.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0010",
+          "role": "previous",
+          "note": "Distinguere appartenenza dei due estremi e appartenenza dell'intero segmento."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0012",
+          "role": "next",
+          "note": "Distinguere sottolivello zero, bordo e condizione sufficiente di convessità."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\ell(\\theta z_A+(1-\\theta)z_B)\\le\\theta\\ell(z_A)+(1-\\theta)\\ell(z_B)",
+          "meaning": "Sul dominio convesso, per ogni coppia il costo del punto intermedio non supera la media pesata dei costi: così definiamo ℓ convessa.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\ell(\\theta z_A+(1-\\theta)z_B)<\\theta\\ell(z_A)+(1-\\theta)\\ell(z_B),\\quad z_A\\ne z_B,\\quad0<\\theta<1",
+          "meaning": "La disuguaglianza stretta riguarda punti distinti e pesi interni. Agli estremi il pareggio è inevitabile.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\ell\\ \\text{concava}\\quad\\Longleftrightarrow\\quad-\\ell\\ \\text{convessa}",
+          "meaning": "Cambiare il segno riflette il grafico e scambia sopra e sotto la corda.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "source-4",
+          "structure"
+        ],
+        "rationale": "Pagina distinta per definizione, vincolo o interpretazione; non accorpare."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "Nessuna correzione matematica necessaria dopo confronto con la pagina precedente e successiva."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Insieme convesso",
+            "why": "Garantisce che il punto interpolato appartenga al dominio.",
+            "origin": "source_context",
+            "page_numbers": [
+              10
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\ell(\\theta z_A+(1-\\theta)z_B)\\le\\theta\\ell(z_A)+(1-\\theta)\\ell(z_B)",
+            "anchor": "Let Z",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\ell(\\theta z_A+(1-\\theta)z_B)<\\theta\\ell(z_A)+(1-\\theta)\\ell(z_B),\\quad z_A\\ne z_B,\\quad0<\\theta<1",
+            "anchor": "Let Z",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\ell\\ \\text{concava}\\quad\\Longleftrightarrow\\quad-\\ell\\ \\text{convessa}",
+            "anchor": "Let Z",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Il costo nel punto intermedio non supera la media pesata dei costi agli estremi. La concavità inverte il confronto; la convessità stretta esclude il pareggio all’interno.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "z_A=−1, z_B=1 e θ=0.4",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Curva e corda con stesso asse, punto sulla funzione, punto sulla corda e tratto verticale fra i due.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Leggere la disuguaglianza di convessità come confronto fra costo interpolato e interpolazione dei costi.",
+            "setup": "z_A=−1, z_B=1 e θ=0.4",
+            "parameters": [],
+            "derivation": [
+              "z_θ=0.2.",
+              "Per ℓ=z² il costo è 0.04 e la corda vale 1.",
+              "Il margine 0.96 è positivo."
+            ],
+            "expected_outcome": "Il margine riguarda questa coppia; la classificazione delle funzioni si giustifica analiticamente.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "SceneViewport",
+          "description": "Curva e corda con stesso asse, punto sulla funzione, punto sulla corda e tratto verticale fra i due.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Variare un solo aspetto del confronto mantenendo esplicite le invarianti.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Peso del segmento",
+              "symbol": "\\theta",
+              "origin": "enrichment",
+              "range": "{'min': 0, 'max': 1, 'step': 0.05, 'integer': False}",
+              "default": "0.4",
+              "effect_on_change": "Muove il punto interpolato e aggiorna i due valori del confronto; la funzione e gli estremi restano fissi.",
+              "edge_cases": [
+                "θ=0 o 1",
+                "Caso affine",
+                "Caso concavo"
+              ]
+            },
+            {
+              "name": "Funzione",
+              "symbol": "s",
+              "origin": "enrichment",
+              "range": "z² / z / −z²",
+              "default": "z²",
+              "effect_on_change": "Cambia curva, costi agli estremi e margine, conservando θ e il segmento [−1,1].",
+              "edge_cases": [
+                "θ=0 o 1",
+                "Caso affine",
+                "Caso concavo"
+              ]
+            }
+          ],
+          "outputs": [
+            "Leggere la disuguaglianza di convessità come confronto fra costo interpolato e interpolazione dei costi."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "θ=0 o 1",
+            "expected_behavior": "Margine nullo anche per una funzione strettamente convessa.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "Caso affine",
+            "expected_behavior": "Pareggio per ogni θ.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "Caso concavo",
+            "expected_behavior": "Margine negativo all’interno: non dichiarare convessità.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Leggere la disuguaglianza di convessità come confronto fra costo interpolato e interpolazione dei costi.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

@@ -1,0 +1,594 @@
+{
+  "reviewed_at": "2026-10-18T03:39:02.602Z",
+  "success": true,
+  "pages": [
+    {
+      "page": 1,
+      "views": [
+        {
+          "view": "2D",
+          "screenshot": "Docs/Optimization_A_assets/p01-2d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-explanation",
+              "top": 116.65625,
+              "bottom": 183.84375
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 189.84375,
+              "bottom": 822.578125
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {}
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "views": [
+        {
+          "view": "2D",
+          "screenshot": "Docs/Optimization_A_assets/p02-2d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-explanation",
+              "top": 116.65625,
+              "bottom": 183.84375
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 189.84375,
+              "bottom": 785.765625
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 791.765625,
+              "bottom": 992.140625
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1163.21875,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {}
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "views": [
+        {
+          "view": "2D",
+          "screenshot": "Docs/Optimization_A_assets/p03-2d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 269.234375
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 275.234375,
+              "bottom": 679.21875
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 685.21875,
+              "bottom": 864.78125
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 870.78125,
+              "bottom": 1158.640625
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt03-point": "-1.030",
+            "opt03-left": "-0.254",
+            "opt03-right": "0.246"
+          }
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "views": [
+        {
+          "view": "2D",
+          "screenshot": "Docs/Optimization_A_assets/p04-2d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 283.671875
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 289.671875,
+              "bottom": 676.265625
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 682.265625,
+              "bottom": 804.859375
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 810.859375,
+              "bottom": 1061.71875
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt04-point": "2.5",
+            "opt04-value": "1.00"
+          }
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "views": [
+        {
+          "view": "2D",
+          "screenshot": "Docs/Optimization_A_assets/p05-2d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 282.171875
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 288.171875,
+              "bottom": 667.5625
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 673.5625,
+              "bottom": 827.34375
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 833.34375,
+              "bottom": 1142.796875
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt05-argmin": "1.00",
+            "opt05-min": "0.50",
+            "opt05-zero": "1.50"
+          }
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "views": [
+        {
+          "view": "2D",
+          "screenshot": "Docs/Optimization_A_assets/p06-2d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 349.203125
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 355.203125,
+              "bottom": 720.796875
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 726.796875,
+              "bottom": 880.578125
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 886.578125,
+              "bottom": 1173.75
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt06-value": "0.460"
+          }
+        },
+        {
+          "view": "3D",
+          "screenshot": "Docs/Optimization_A_assets/p06-3d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 349.203125
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 355.203125,
+              "bottom": 720.796875
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 726.796875,
+              "bottom": 880.578125
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 886.578125,
+              "bottom": 1173.75
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt06-value": "0.460"
+          }
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "views": [
+        {
+          "view": "2D",
+          "screenshot": "Docs/Optimization_A_assets/p07-2d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 269.40625
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 275.40625,
+              "bottom": 671.28125
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 677.28125,
+              "bottom": 831.0625
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 837.0625,
+              "bottom": 1146.03125
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {}
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "views": [
+        {
+          "view": "2D",
+          "screenshot": "Docs/Optimization_A_assets/p08-2d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 269.234375
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 275.234375,
+              "bottom": 694.421875
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 700.421875,
+              "bottom": 823.015625
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 829.015625,
+              "bottom": 1129.625
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1163.21875,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt08-first": "sì",
+            "opt08-eigenvalues": "2, -2",
+            "opt08-second": "no"
+          }
+        },
+        {
+          "view": "3D",
+          "screenshot": "Docs/Optimization_A_assets/p08-3d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 269.234375
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 275.234375,
+              "bottom": 694.421875
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 700.421875,
+              "bottom": 823.015625
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 829.015625,
+              "bottom": 1129.625
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1163.21875,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt08-first": "sì",
+            "opt08-eigenvalues": "2, -2",
+            "opt08-second": "no"
+          }
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "views": [
+        {
+          "view": "2D",
+          "screenshot": "Docs/Optimization_A_assets/p09-2d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 269.234375
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 275.234375,
+              "bottom": 650.828125
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 656.828125,
+              "bottom": 810.609375
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 816.609375,
+              "bottom": 1133.0625
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1163.21875,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt09-hessian": "1, 1.0",
+            "opt09-origin": "0",
+            "opt09-comparison": "-0.50"
+          }
+        },
+        {
+          "view": "3D",
+          "screenshot": "Docs/Optimization_A_assets/p09-3d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 269.234375
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 275.234375,
+              "bottom": 650.828125
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 656.828125,
+              "bottom": 810.609375
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 816.609375,
+              "bottom": 1133.0625
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1163.21875,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt09-hessian": "1, 1.0",
+            "opt09-origin": "0",
+            "opt09-comparison": "-0.50"
+          }
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "interactive_edge_cases": "PASS",
+  "multi_document_state": "PASS",
+  "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+  "zero_gradient_and_fullscreen_camera": "PASS",
+  "build": "PASS",
+  "targeted_tests": {
+    "files": 4,
+    "passed": 32
+  },
+  "visual_inspection": {
+    "method": "Browser screenshots inspected individually by Codex",
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "introduction_references": [
+      12,
+      16,
+      17,
+      27,
+      34
+    ],
+    "layout": "960x1280; no overflow; original font sizes and graphic heights retained",
+    "source_warning_pages": [
+      6
+    ]
+  }
+}

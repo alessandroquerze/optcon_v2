@@ -1,0 +1,590 @@
+{
+  "reviewed_at": "2026-10-19T01:27:40.266Z",
+  "success": true,
+  "pages": [
+    {
+      "page": 75,
+      "views": [
+        {
+          "view": "2D",
+          "screenshot": "Docs/Optimization_K_assets/p75-2d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 315.828125
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 321.828125,
+              "bottom": 732.421875
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 738.421875,
+              "bottom": 949
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 955,
+              "bottom": 1145.671875
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt75-cost": "0.5000",
+            "opt75-penalty": "0.0000",
+            "opt75-merit": "0.5000"
+          }
+        },
+        {
+          "view": "3D",
+          "screenshot": "Docs/Optimization_K_assets/p75-3d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 315.828125
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 321.828125,
+              "bottom": 732.421875
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 738.421875,
+              "bottom": 949
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 955,
+              "bottom": 1145.671875
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt75-cost": "0.5000",
+            "opt75-penalty": "0.0000",
+            "opt75-merit": "0.5000"
+          }
+        }
+      ]
+    },
+    {
+      "page": 76,
+      "views": [
+        {
+          "view": "2D",
+          "screenshot": "Docs/Optimization_K_assets/p76-2d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 240.8125
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 246.8125,
+              "bottom": 618.40625
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 624.40625,
+              "bottom": 875.78125
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 881.78125,
+              "bottom": 1072.453125
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt76-gamma": "1.0000",
+            "opt76-gap": "0.0643",
+            "opt76-violation": "0.0473"
+          }
+        }
+      ]
+    },
+    {
+      "page": 77,
+      "views": [
+        {
+          "view": "2D",
+          "screenshot": "Docs/Optimization_K_assets/p77-2d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 284.59375
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 290.59375,
+              "bottom": 701.1875
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 707.1875,
+              "bottom": 960.15625
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 966.15625,
+              "bottom": 1185.421875
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt77-gamma": "0.5000",
+            "opt77-weight": "3.0000",
+            "opt77-next-lambda": "0.3174"
+          }
+        },
+        {
+          "view": "3D",
+          "screenshot": "Docs/Optimization_K_assets/p77-3d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 284.59375
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 290.59375,
+              "bottom": 701.1875
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 707.1875,
+              "bottom": 960.15625
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 966.15625,
+              "bottom": 1185.421875
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt77-gamma": "0.5000",
+            "opt77-weight": "3.0000",
+            "opt77-next-lambda": "0.3174"
+          }
+        }
+      ]
+    },
+    {
+      "page": 78,
+      "views": [
+        {
+          "view": "2D",
+          "screenshot": "Docs/Optimization_K_assets/p78-2d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 323.453125
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 329.453125,
+              "bottom": 740.046875
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 746.046875,
+              "bottom": 956.625
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 962.625,
+              "bottom": 1153.296875
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt78-g": "-0.4000",
+            "opt78-h": "0.6000",
+            "opt78-cost": "1.5265"
+          }
+        },
+        {
+          "view": "3D",
+          "screenshot": "Docs/Optimization_K_assets/p78-3d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 323.453125
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 329.453125,
+              "bottom": 740.046875
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 746.046875,
+              "bottom": 956.625
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 962.625,
+              "bottom": 1153.296875
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt78-g": "-0.4000",
+            "opt78-h": "0.6000",
+            "opt78-cost": "1.5265"
+          }
+        }
+      ]
+    },
+    {
+      "page": 79,
+      "views": [
+        {
+          "view": "static",
+          "screenshot": "Docs/Optimization_K_assets/p79-static.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-explanation",
+              "top": 116.65625,
+              "bottom": 217.4375
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 223.4375,
+              "bottom": 723.578125
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {}
+        }
+      ]
+    },
+    {
+      "page": 80,
+      "views": [
+        {
+          "view": "2D",
+          "screenshot": "Docs/Optimization_K_assets/p80-2d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 240.8125
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 246.8125,
+              "bottom": 618.40625
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 624.40625,
+              "bottom": 778.1875
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 784.1875,
+              "bottom": 974.859375
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt80-probe": "0.5000",
+            "opt80-estimate": "0.2500",
+            "opt80-cost": "0.2813"
+          }
+        }
+      ]
+    },
+    {
+      "page": 81,
+      "views": [
+        {
+          "view": "2D",
+          "screenshot": "Docs/Optimization_K_assets/p81-2d.png",
+          "height": 1280,
+          "scroll": 1280,
+          "blocks": [
+            {
+              "class": "slide-block block-header",
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "class": "slide-block block-formula",
+              "top": 116.65625,
+              "bottom": 282.296875
+            },
+            {
+              "class": "slide-block block-main_visual",
+              "top": 288.296875,
+              "bottom": 659.890625
+            },
+            {
+              "class": "slide-block block-controls",
+              "top": 665.890625,
+              "bottom": 819.671875
+            },
+            {
+              "class": "slide-block block-worked_example",
+              "top": 825.671875,
+              "bottom": 1044.9375
+            },
+            {
+              "class": "slide-block block-takeaway",
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "formula_overflow": [],
+          "alerts": [],
+          "outputs": {
+            "opt81-state": "1.5200",
+            "opt81-input": "-0.4800",
+            "opt81-residual": "0.0000"
+          }
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "name": "penalty threshold preserves infeasible minima and the exact family",
+      "status": "PASS"
+    },
+    {
+      "name": "merit Armijo rejects full steps and exact ties",
+      "status": "PASS"
+    },
+    {
+      "name": "globalized SQP relaxes the complete multiplier and follows KKT residuals",
+      "status": "PASS"
+    },
+    {
+      "name": "merit decrease allows cost increase and does not hide an unbounded QP",
+      "status": "PASS"
+    },
+    {
+      "name": "barrier strict domain does not replace equality feasibility",
+      "status": "PASS"
+    },
+    {
+      "name": "generic decision and iteration estimate are independent",
+      "status": "PASS"
+    },
+    {
+      "name": "time and algorithm indices select different components with no terminal input",
+      "status": "PASS"
+    },
+    {
+      "name": "fullscreen keeps camera penalty and selected iteration",
+      "status": "PASS"
+    },
+    {
+      "name": "all pages authored while completed documents keep rendering",
+      "status": "PASS"
+    }
+  ],
+  "errors": [],
+  "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+  "completion": {
+    "batch": "K",
+    "physical_pages": [
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81
+    ],
+    "analysis_and_design": "PASS",
+    "build": "PASS",
+    "targeted_tests": {
+      "status": "PASS",
+      "files": 3,
+      "tests": 33,
+      "report": "Data/reports/optimization_batch_k_unit.json"
+    },
+    "manual_visual_review": {
+      "status": "PASS",
+      "pages": [
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81
+      ],
+      "principal_graphic_views": 9,
+      "static_views": 1,
+      "scope": "Every new physical page and applicable 2D/3D view manually inspected against Introduction. Exact penalty threshold and family, strict Armijo tie, relaxed multiplier, cost increase with merit decrease, nonminimal KKT roots and unbounded QP stops; strict barrier domain, retained equality and small positive epsilon; decision versus iterate and independent algorithm/time indices with no terminal input. Fullscreen camera/parameter/iteration state preserved. Fixed plot scales verified. Font and chart sizes preserved."
+    },
+    "integrity": {
+      "status": "PASS",
+      "protected_files_unchanged": 458,
+      "source_artifacts_unchanged": 324,
+      "previous_manifest_definitions_unchanged": 74,
+      "original_pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea"
+    },
+    "new_page_specs_validated": [
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81
+    ],
+    "new_correction_warnings": [
+      75
+    ],
+    "new_info_warnings": [
+      78
+    ],
+    "unresolved_blocking_issues": 0,
+    "companions_complete": 81,
+    "future_page_specs_pending": 0,
+    "next_batch": null,
+    "next_batch_started": false,
+    "completed_at": "2026-10-19T01:30:06.572412+00:00",
+    "final_coverage": {
+      "status": "PASS",
+      "coverage_mode": "complete",
+      "physical_pages": 81,
+      "definitions": 81,
+      "implemented": 81,
+      "optimization_renderers": 81,
+      "introduction_renderers": 36,
+      "missing": []
+    }
+  }
+}

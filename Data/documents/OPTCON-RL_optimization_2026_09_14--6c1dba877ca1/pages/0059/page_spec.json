@@ -125,12 +125,402 @@
   ],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "e247425947ac9e88ea7a93bf118d4a6c20421d96d0e3b4f1d9c1d40c78df5834",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0059",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "c17b0607ffcd4fe528b83cf0e1ff7784c18c2a3a59f4696a8288f99efd7113ca",
+        "layout": "ecf0bb19433fdf2e3f9c105b4143505bd449ad709a246239abafe50959901b4d",
+        "render": "efd3fc683d5769a36167caa1f5d395cb745025321f559bb40a94cc8ee2743308"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-h-2026-10-19"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0059",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0058",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0060"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0059",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0058",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0060"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0059",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0058",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0060"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Karush-Kuhn-Tucker (KKT) necessary conditions",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "assumption",
+          "description": "La slide assume che z⋆ sia un minimo locale regolare del problema vincolato.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0059",
+            "modality": "both",
+            "text_quote": "regular local minimum",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "equation",
+          "description": "Ripete il problema con r disuguaglianze e m uguaglianze.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0059",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "assumption",
+          "description": "ℓ, g_j, h_i sono C¹. Questa pagina non contiene ancora la conclusione sui moltiplicatori.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0059",
+            "modality": "both",
+            "text_quote": "C1",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0059",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Riconoscere che il teorema parte da un minimo locale ammissibile e regolare, con tutte le funzioni C¹.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0058",
+          "role": "previous",
+          "note": "Interpretare μ e λ senza confondere L con una penalità da minimizzare congiuntamente."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0060",
+          "role": "next",
+          "note": "Leggere stazionarietà, non negatività e complementarità, ricordando l’ammissibilità del minimo e l’unicità sotto regolarità."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\begin{aligned}\\min_{z\\in\\mathbb R^d}\\;&\\ell(z)\\\\\\text{subj.to }&g_j(z)\\le0,\\ j\\in\\{1,\\ldots,r\\}\\\\&h_i(z)=0,\\ i\\in\\{1,\\ldots,m\\}\\end{aligned}",
+          "meaning": "Il teorema parte da un minimo locale regolare, con ℓ, gⱼ e hᵢ di classe C¹. Qui la conclusione non è ancora comparsa.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "progressive",
+        "related_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0060"
+        ],
+        "added": [
+          "Ipotesi: minimo locale regolare, ℓ,g_j,h_i∈C¹; la conclusione compare solo nella 60."
+        ],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "structure"
+        ],
+        "rationale": "Confronto individuale dei quattro rendering con stessa etichetta 55|73: contenuto comune conservato, aggiunte e rimozioni identificate. Ogni pagina fisica ha un focus proprio."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "Nessuna correzione matematica necessaria dopo confronto con la pagina precedente e successiva.",
+          "Il controesempio e il bilancio espanso sono enrichment, non testo della 59.",
+          "Non mostrare il minimo noto come un candidato generico non verificato."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Regolarità",
+            "why": "Il gradiente nullo di un vincolo attivo rende il punto non regolare.",
+            "origin": "source_context",
+            "page_numbers": [
+              57
+            ]
+          },
+          {
+            "concept": "Lagrangiana",
+            "why": "Il bilancio riguarda la derivata in z.",
+            "origin": "source_context",
+            "page_numbers": [
+              58
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\begin{aligned}\\min_{z\\in\\mathbb R^d}\\;&\\ell(z)\\\\\\text{subj.to }&g_j(z)\\le0,\\ j\\in\\{1,\\ldots,r\\}\\\\&h_i(z)=0,\\ i\\in\\{1,\\ldots,m\\}\\end{aligned}",
+            "anchor": "regular local minimum",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "La prima progressiva enuncia soltanto le ipotesi. La regolarità riguarda la rappresentazione dei vincoli: cambiarla può rendere inapplicabile il teorema anche allo stesso minimo.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "Minimo (0,0) sulla semiretta",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Geometria 2D della semiretta, minimo e gradienti reali; schede ammissibilità, C¹, minimo e regolarità. Nessuna conclusione attribuita alla sola prima progressiva.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Riconoscere che il teorema parte da un minimo locale ammissibile e regolare, con tutte le funzioni C¹.",
+            "setup": "Minimo (0,0) sulla semiretta",
+            "parameters": [],
+            "derivation": [
+              "Con −z₁≤0: normali (−1,0) e (0,1), rango due.",
+              "Con −z₁³≤0: la prima normale è nulla, rango uno.",
+              "La componente orizzontale di ∇ℓ resta 1 e non si cancella con il gradiente nullo."
+            ],
+            "expected_outcome": "Fallire la regolarità non significa fallire il minimo; qui fallisce l’esistenza dei moltiplicatori.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "SceneViewport",
+          "description": "Geometria 2D della semiretta, minimo e gradienti reali; schede ammissibilità, C¹, minimo e regolarità. Nessuna conclusione attribuita alla sola prima progressiva.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Due rappresentazioni dello stesso problema isolano il ruolo dell’ipotesi di regolarità.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Rappresentazione",
+              "symbol": "s",
+              "origin": "enrichment",
+              "range": "Vincolo lineare / stesso vincolo cubico",
+              "default": "Vincolo lineare",
+              "effect_on_change": "Conserva costo, insieme e minimo; cambia il gradiente del vincolo attivo e l’applicabilità del teorema.",
+              "edge_cases": [
+                "Vincolo cubico",
+                "C∞ ma non regolare"
+              ]
+            }
+          ],
+          "outputs": [
+            "Riconoscere che il teorema parte da un minimo locale ammissibile e regolare, con tutte le funzioni C¹."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "Vincolo cubico",
+            "expected_behavior": "Insieme e minimo invariati, ma nessun moltiplicatore KKT nel modello scelto.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "C∞ ma non regolare",
+            "expected_behavior": "La regolarità del punto non coincide con la sola differenziabilità delle funzioni.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Riconoscere che il teorema parte da un minimo locale ammissibile e regolare, con tutte le funzioni C¹.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

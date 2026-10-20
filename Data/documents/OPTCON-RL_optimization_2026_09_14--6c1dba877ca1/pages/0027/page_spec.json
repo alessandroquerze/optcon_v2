@@ -81,12 +81,424 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "43a1760951a2bbd7c9a79141c9c9eb52a7b1db95fe8adc2b244a6750b25368a2",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0027",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "c6d339c4f6d3ab98b4b223df4fa8ed9e022a991b4bb3f2b584136fc99e44a895",
+        "layout": "6924864022daf9b4e05142a4f798025e86dd432b970696fedb03273764713731",
+        "render": "b6d54e04ad30613e82b36eed60c1398aaa9c53a45c6ddc0168155bc82cf7b1c0"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-d-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0027",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0026",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0028"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0027",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0026",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0028"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0027",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0026",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0028"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Optimization algorithms (unconstrained): iterative descent methods",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "definition",
+          "description": "z^k∈R^d è una stima di un minimo locale all’iterazione k; si parte da z⁰.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0027",
+            "modality": "both",
+            "text_quote": "an estimate of a local minimum",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "equation",
+          "description": "La fonte stampa ℓ(z^{k+1})<ℓ(z^k), k=1,2,..., pur descrivendo l’avvio da z⁰.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0027",
+            "modality": "both",
+            "text_quote": "decreased at each iteration",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "diagram",
+          "description": "Livelli ellittici qualitativi, z^k e z^{k+1} blu, z⋆ rosso; nessun costo numerico o formula della figura.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0027",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0027",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Leggere una sequenza di decisioni e il confronto fra costi successivi.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0026",
+          "role": "previous",
+          "note": "Orientarsi nella sezione algoritmi, separando decisioni successive e tempo fisico."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0028",
+          "role": "next",
+          "note": "Separare una scelta locale favorevole dalla lunghezza effettiva dell’aggiornamento."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\ell(z^{k+1})<\\ell(z^k),\\quad k=1,2,\\ldots",
+          "meaning": "La discesa confronta i costi successivi; da sola non garantisce convergenza.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "structure"
+        ],
+        "rationale": "Scopo e contenuto autonomi."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "Nessuna correzione matematica necessaria dopo confronto con la pagina precedente e successiva.",
+          "k è un indice di algoritmo, distinto dal tempo fisico t.",
+          "La formula della figura originale non è nota: la quadratica è enrichment."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Minimo e costo",
+            "why": "Stimare la soluzione non significa averla già raggiunta.",
+            "origin": "source_context",
+            "page_numbers": [
+              3
+            ]
+          },
+          {
+            "concept": "Gradiente della quadratica",
+            "why": "La regola numerica dell’esempio verrà motivata nelle pagine successive.",
+            "origin": "source_context",
+            "page_numbers": [
+              23,
+              24
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\ell(z^{k+1})<\\ell(z^k),\\quad k=1,2,\\ldots",
+            "anchor": "an estimate of a local minimum",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "L’algoritmo parte da z⁰ e produce nuove stime. Discesa significa confrontare il costo prima e dopo ogni aggiornamento; k conta iterazioni, non secondi.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "γ=0.2, z⁰=(1.5,1)",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Livelli 2D e costo 3D identici, percorso discreto blu, iterato corrente arancio, minimo verde; controllo per iterazione e playback.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Leggere una sequenza di decisioni e il confronto fra costi successivi.",
+            "setup": "γ=0.2, z⁰=(1.5,1)",
+            "parameters": [],
+            "derivation": [
+              "ℓ(z⁰)=3.125.",
+              "z¹=(1.2,0.2), ℓ(z¹)=0.8.",
+              "La diminuzione è 2.325; avanzare k seleziona gli aggiornamenti successivi."
+            ],
+            "expected_outcome": "Non presentare la discesa generica della fonte come un teorema di convergenza.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "FunctionExplorer",
+          "description": "Livelli 2D e costo 3D identici, percorso discreto blu, iterato corrente arancio, minimo verde; controllo per iterazione e playback.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Il playback rende verificabile ogni confronto fra iterati; γ cambia il percorso mantenendo costo e punto iniziale.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Passo costante",
+              "symbol": "\\gamma",
+              "origin": "enrichment",
+              "range": "{'min': 0.05, 'max': 0.45, 'step': 0.05, 'integer': False}",
+              "default": "0.2",
+              "effect_on_change": "Ricalcola il percorso dal medesimo z⁰ e mette in pausa a k=0; costo e minimo restano fissi.",
+              "edge_cases": [
+                "k=0",
+                "Cambio γ durante Play",
+                "Arrotondamenti"
+              ]
+            },
+            {
+              "name": "Iterazione",
+              "symbol": "k",
+              "origin": "enrichment",
+              "range": "Interi 0–12; Play/Pausa, Passo, Riparti",
+              "default": "0",
+              "effect_on_change": "Seleziona un iterato già calcolato; aggiorna punto, tratto percorso, costo e diminuzione. Nessun tempo fisico.",
+              "edge_cases": [
+                "k=0",
+                "Cambio γ durante Play",
+                "Arrotondamenti"
+              ]
+            }
+          ],
+          "outputs": [
+            "Leggere una sequenza di decisioni e il confronto fra costi successivi."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "k=0",
+            "expected_behavior": "Mostrare costo iniziale e diminuzione non ancora disponibile.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "Cambio γ durante Play",
+            "expected_behavior": "Mettere in pausa e ricominciare da z⁰, senza campioni obsoleti.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "Arrotondamenti",
+            "expected_behavior": "Conservare i piccoli costi positivi in notazione scientifica; non dichiarare zero esatto.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Leggere una sequenza di decisioni e il confronto fra costi successivi.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

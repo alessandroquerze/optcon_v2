@@ -69,12 +69,215 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "602a552ad5782d347f373237a75ab3ad60083fb85a49df6b564ff80bf01a7777",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0055",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "a2ac7d35ccb826c0320b385553411d52f05a4b800442e0b869c4b93ef1f12789",
+        "layout": "4ebd6827bf1b3fe992f415b7a04c666791df5b04b717b0a42ec9501c25e069bd",
+        "render": "9402d91de4f9573d565fdde57bc8160007e90618ce459c56838bc4098925c061"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-h-2026-10-19"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0055",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0054",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0056"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0055",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0054",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0056"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0055",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0054",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0056"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Constrained optimization (equality and inequality constraints): optimality conditions",
+      "observations": [
+        {
+          "id": "s01",
+          "category": "structure",
+          "description": "Divisoria con il solo titolo centrato su uguaglianze, disuguaglianze e condizioni di ottimalità. Nessun footer, formula o figura.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0055",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              20,
+              28,
+              443.5429992675781,
+              241.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Solo titolo centrale su fondo bianco; nessun footer, numero visibile, formula o figura tecnica.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0055",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Orientarsi nel passaggio dagli algoritmi su insiemi alle condizioni per uguaglianze e disuguaglianze.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0054",
+          "role": "previous",
+          "note": "Barriere per disuguaglianze e loro dominio implicito; chiusura G."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0056",
+          "role": "next",
+          "note": "Separare costo, disuguaglianze componente per componente e uguaglianze, visualizzandone l’intersezione."
+        }
+      ],
+      "notation": [],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "s01",
+          "structure"
+        ],
+        "rationale": "Scopo e contenuto autonomi."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Titolo centrale e tutti gli spazi bianchi; assenza di altri elementi verificata.",
+            "observation_ids": [
+              "s01",
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "La fonte contiene soltanto il titolo della sezione. Nessun enunciato KKT né esempio numerico è presente.",
+          "La fonte contiene soltanto il titolo della sezione. Nessun enunciato KKT né esempio numerico è presente."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Proiezione e barriere",
+            "why": "Finora i vincoli influenzavano gli aggiornamenti; ora si caratterizzano le soluzioni.",
+            "origin": "source_context",
+            "page_numbers": [
+              48,
+              54
+            ]
+          }
+        ],
+        "source_math": [],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Descrivere i vincoli come funzioni permette di collegare la geometria dell’insieme ai gradienti. Da qui si costruiscono le condizioni KKT.",
+            "source_observation_ids": [
+              "s01",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Tre schede di orientamento statiche: insieme ammissibile; vincoli attivi e regolarità; Lagrangiana e condizioni KKT. Tutto il raccordo è enrichment.",
+            "source_observation_ids": [
+              "s01",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [],
+        "example_omission_reason": "Divisoria: la fonte contiene soltanto il titolo. La companion propone una mappa, senza esempio numerico inventato.",
+        "visualization": {
+          "component": "ModelDiagram",
+          "description": "Tre schede di orientamento statiche: insieme ammissibile; vincoli attivi e regolarità; Lagrangiana e condizioni KKT. Tutto il raccordo è enrichment.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "s01",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": false,
+          "rationale": "Mappa statica sufficiente per orientarsi.",
+          "component": null,
+          "parameters": [],
+          "outputs": [
+            "Orientarsi nel passaggio dagli algoritmi su insiemi alle condizioni per uguaglianze e disuguaglianze."
+          ],
+          "invariants": [
+            "La fonte contiene soltanto il titolo della sezione. Nessun enunciato KKT né esempio numerico è presente.",
+            "La fonte contiene soltanto il titolo della sezione. Nessun enunciato KKT né esempio numerico è presente."
+          ],
+          "enrichment_id": null
+        },
+        "edge_cases": [],
+        "expansion_rationale": "Un focus principale, una figura e dettagli su richiesta consentono una singola companion leggibile; nessuna riduzione tipografica.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Orientarsi nel passaggio dagli algoritmi su insiemi alle condizioni per uguaglianze e disuguaglianze.",
+            "source_observation_ids": [
+              "s01",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "visual"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un focus principale, una figura e dettagli su richiesta consentono una singola companion leggibile; nessuna riduzione tipografica.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

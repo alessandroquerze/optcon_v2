@@ -127,12 +127,547 @@
   ],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
+    "status": "needs_review",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "61002d7addff58cb8523e262d02ab82b9db0951220cfb3174a033dec219f292d",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0044",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "b39c3ca961411c473bd04608c471c33df9dc1610e24e670eeab84835f6a826ea",
+        "layout": "0e2bd219d03c5552175778adfd1c4c91ba9e355ec2ac40e6d2831a481dad642f",
+        "render": "1a8854a75c7149740f93db7b81263d5f00a41ccc7b3246e2d4fc25533b2a578b"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-f-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0044",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0043",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0045"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0044",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0043",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0045"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0044",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0043",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0045"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Gradient methods: remarks",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "concept",
+          "description": "La prima remark esclude garanzie di convergenza della sequenza e perfino di esistenza di punti limite.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0044",
+            "modality": "both",
+            "text_quote": "The propositions do not guarantee",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "concept",
+          "description": "Si presentano le alternative costo verso −∞ oppure costo finito e gradiente verso zero; la frase successiva afferma troppo: any subsequence converges.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0044",
+            "modality": "both",
+            "text_quote": "any subsequence",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "assumption",
+          "description": "Coercività/radiale illimitatezza è definita dal costo verso +∞ a norma crescente.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0044",
+            "modality": "both",
+            "text_quote": "radially unbounded",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-4",
+          "category": "concept",
+          "description": "Nel caso non convesso con coercività la conclusione riguarda stazionari, non minimi globali.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0044",
+            "modality": "both",
+            "text_quote": "general (nonconvex)",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-5",
+          "category": "diagram",
+          "description": "La figura rappresenta (−1)^n con punti alternati a ±1 e sottosuccessione pari a +1; non è dichiarata una traiettoria di gradient method.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0044",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0044",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Distinguere convergenza totale e sottosuccessioni, correggendo il quantificatore troppo forte.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0043",
+          "role": "previous",
+          "note": "Interpretare il passo sufficientemente piccolo e il controesempio lineare senza inventare punti limite."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0045",
+          "role": "next",
+          "note": "Separare coercività, stazionarietà e convessità nella conclusione sui minimi globali."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\text{any subsequence }\\{z^{k_p}\\}\\text{ converges to some stationary point }\\bar z",
+          "meaning": "La remark stampata dice ‘any subsequence’. La companion conserva il letterale e precisa ‘ogni sottosuccessione convergente’.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "source-5",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\lim_{\\|z\\|\\to\\infty}\\ell(z)=+\\infty",
+          "meaning": "Lontano dall’origine il costo cresce senza limite. Per un costo continuo questo impedisce ai suoi sottolivelli di estendersi all’infinito.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "source-5",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [
+        {
+          "description": "Discrepanza della fonte esaminata e risolta nella policy companion: La frase ‘any subsequence ... converges’ implica la convergenza della sequenza completa (essa stessa una sottosuccessione) ed è incompatibile con la precedente assenza di garanzia e con la figura alternante della 44. La conclusione corretta delle proposizioni è: ogni punto limite è stazionario, cioè se una sottosuccessione converge, il suo limite ha gradiente nullo. Limitatezza/compattezza garantisce esistenza di sottosuccessioni convergenti, non che ogni sottosuccessione converga. Coercività di un costo continuo dà sottolivelli compatti ed esistenza di minimi. Per dedurre iterati limitati occorre anche contenerli in un sottolivello: ciò vale nel regime di discesa/Armijo pertinente, non per una successione arbitraria. In convessità i limiti stazionari sono globali, senza inferire unicità o convergenza totale. Il grafico (-1)^k è un esempio di successione, non iterati certificati dell’algoritmo. Fonte e letterali rimangono intatti.",
+          "blocking": false,
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "source-5",
+            "structure"
+          ]
+        }
+      ],
+      "progression": {
+        "assessment": "progressive",
+        "related_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0045"
+        ],
+        "added": [
+          "Figura della sequenza alternante."
+        ],
+        "removed": [],
+        "changed": [
+          "Stesse prime tre remark; la quarta e la figura distinguono i due rendering 41/73."
+        ],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "source-4",
+          "source-5",
+          "structure"
+        ],
+        "rationale": "Pagine fisiche distinte della stessa slide progressiva; conservare entrambe con focus didattici complementari."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "source-5",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "La frase ‘any subsequence ... converges’ implica la convergenza della sequenza completa (essa stessa una sottosuccessione) ed è incompatibile con la precedente assenza di garanzia e con la figura alternante della 44. La conclusione corretta delle proposizioni è: ogni punto limite è stazionario, cioè se una sottosuccessione converge, il suo limite ha gradiente nullo. Limitatezza/compattezza garantisce esistenza di sottosuccessioni convergenti, non che ogni sottosuccessione converga. Coercività di un costo continuo dà sottolivelli compatti ed esistenza di minimi. Per dedurre iterati limitati occorre anche contenerli in un sottolivello: ciò vale nel regime di discesa/Armijo pertinente, non per una successione arbitraria. In convessità i limiti stazionari sono globali, senza inferire unicità o convergenza totale. Il grafico (-1)^k è un esempio di successione, non iterati certificati dell’algoritmo. Fonte e letterali rimangono intatti.",
+          "Il testo ‘any subsequence converges’ resta SOURCE_LITERAL, ma la companion limita la conclusione alle sottosuccessioni convergenti.",
+          "Coercività e continuità garantiscono esistenza di minimi; stazionarietà è globalmente sufficiente soltanto sotto convessità.",
+          "Nessuna affermazione di convergenza dell’intera sequenza o unicità viene aggiunta."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Punto limite",
+            "why": "È il limite di una sottosuccessione, non necessariamente di tutta la sequenza.",
+            "origin": "source_context",
+            "page_numbers": [
+              42,
+              43
+            ]
+          },
+          {
+            "concept": "Convessità e ottimalità",
+            "why": "Gradiente nullo è sufficiente al minimo globale sotto convessità.",
+            "origin": "source_context",
+            "page_numbers": [
+              22
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\text{any subsequence }\\{z^{k_p}\\}\\text{ converges to some stationary point }\\bar z",
+            "anchor": "The propositions do not guarantee",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\lim_{\\|z\\|\\to\\infty}\\ell(z)=+\\infty",
+            "anchor": "The propositions do not guarantee",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Le proposizioni non garantiscono convergenza della sequenza intera. La coercività rende compatti i sottolivelli; i limiti di sottosuccessioni convergenti sono stazionari.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "source-5",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "Sequenza alternante",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "source-5",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Grafico discreto di (−1)^k con pari rossi e dispari blu, selezione dell’intera sequenza o di una sottosuccessione. Non è una traiettoria di ottimizzazione.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "source-5",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "source-5",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Distinguere convergenza totale e sottosuccessioni, correggendo il quantificatore troppo forte.",
+            "setup": "Sequenza alternante",
+            "parameters": [],
+            "derivation": [
+              "I termini pari valgono 1 e quelli dispari −1.",
+              "La sequenza completa non converge.",
+              "Le due sottosuccessioni hanno limiti distinti."
+            ],
+            "expected_outcome": "L’esistenza di sottosuccessioni convergenti non dà convergenza di ogni sottosuccessione.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "source-5",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "SceneViewport",
+          "description": "Grafico discreto di (−1)^k con pari rossi e dispari blu, selezione dell’intera sequenza o di una sottosuccessione. Non è una traiettoria di ottimizzazione.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "source-5",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Il filtro pari/dispari mostra la differenza fra sequenza e sottosuccessioni.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Campioni",
+              "symbol": "N",
+              "origin": "enrichment",
+              "range": "{'min': 6, 'max': 40, 'step': 2, 'integer': True}",
+              "default": "16",
+              "effect_on_change": "Estende la sequenza finita, senza cambiare i valori ±1 e i limiti delle sottosuccessioni.",
+              "edge_cases": [
+                "Tutti i campioni",
+                "Solo pari o dispari"
+              ]
+            },
+            {
+              "name": "Campioni mostrati",
+              "symbol": "s",
+              "origin": "enrichment",
+              "range": "Tutti / pari / dispari",
+              "default": "Tutti",
+              "effect_on_change": "Evidenzia l’intera successione o una delle due sottosuccessioni; non cambia la funzione (-1)^k.",
+              "edge_cases": [
+                "Tutti i campioni",
+                "Solo pari o dispari"
+              ]
+            }
+          ],
+          "outputs": [
+            "Distinguere convergenza totale e sottosuccessioni, correggendo il quantificatore troppo forte."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "Tutti i campioni",
+            "expected_behavior": "Nessun limite unico della sequenza alternante.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "source-5",
+              "structure"
+            ]
+          },
+          {
+            "case": "Solo pari o dispari",
+            "expected_behavior": "Sottosuccessioni costanti, limiti +1 oppure −1.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "source-5",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Distinguere convergenza totale e sottosuccessioni, correggendo il quantificatore troppo forte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "source-5",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1,
+  "source_warning": {
+    "policy_version": "1.0.0",
+    "scope": "companion_only",
+    "type": "CORRECTION_WARNING",
+    "review_status": "resolved",
+    "original_analysis_sha256": "5718f4bdd5c680b90117cd293fcddbbf0c73020101ee16aa2d71849d32121f6f",
+    "issues": [
+      {
+        "issue_id": "opt44-source-review",
+        "source_issue_index": 0,
+        "issue": "Una sottosuccessione non è tutta la sequenza",
+        "type": "CORRECTION_WARNING",
+        "source_expression": "\\text{any subsequence }\\{z^{k_p}\\}\\text{ converges to some stationary point }\\bar z",
+        "corrected_expression": "z^{k_p}\\to\\bar z\\quad\\Longrightarrow\\quad\\nabla\\ell(\\bar z)=0",
+        "companion_uses": "z^{k_p}\\to\\bar z\\quad\\Longrightarrow\\quad\\nabla\\ell(\\bar z)=0",
+        "short_warning": "⚠ Warning: possibile errore nella slide originale. La conclusione riguarda sottosuccessioni convergenti.",
+        "correction_reason": "La frase ‘any subsequence ... converges’ implica la convergenza della sequenza completa (essa stessa una sottosuccessione) ed è incompatibile con la precedente assenza di garanzia e con la figura alternante della 44. La conclusione corretta delle proposizioni è: ogni punto limite è stazionario, cioè se una sottosuccessione converge, il suo limite ha gradiente nullo. Limitatezza/compattezza garantisce esistenza di sottosuccessioni convergenti, non che ogni sottosuccessione converga. Coercività di un costo continuo dà sottolivelli compatti ed esistenza di minimi. Per dedurre iterati limitati occorre anche contenerli in un sottolivello: ciò vale nel regime di discesa/Armijo pertinente, non per una successione arbitraria. In convessità i limiti stazionari sono globali, senza inferire unicità o convergenza totale. Il grafico (-1)^k è un esempio di successione, non iterati certificati dell’algoritmo. Fonte e letterali rimangono intatti.",
+        "use_corrected_value_for_examples": true,
+        "use_corrected_value_for_simulation": true,
+        "resolved": true,
+        "source_references": [
+          "analysis/result/observations"
+        ],
+        "context_pages_consulted": [
+          43,
+          44,
+          45
+        ],
+        "calculation_policy": "SOURCE_LITERAL immutabile; esempi e calcoli usano la versione companion dichiarata.",
+        "ui": {
+          "show": true,
+          "color": "red",
+          "placement": "Accanto al concetto interessato",
+          "when": "Concetto pertinente",
+          "student_text_field": "short_warning"
+        }
+      }
+    ],
+    "companion_overrides": [],
+    "technical_only_legacy_paths": []
   }
 }

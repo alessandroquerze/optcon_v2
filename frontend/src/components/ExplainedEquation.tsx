@@ -4,6 +4,7 @@ import { EquationCard, InlineMath } from './CompanionPage';
 export interface FormulaExplanation {
   formulaId: string;
   latex: string;
+  displayLatex?: string;
   conceptualExplanation: string;
   purpose: string;
   symbolDefinitions: readonly { symbol: string; meaning: string }[];
@@ -18,7 +19,7 @@ export interface FormulaExplanation {
 
 /** Line breaks are presentation only; canonical source notation is kept on the element. */
 export function readableFormulaLatex(latex: string) {
-  if (latex.length <= 110 || latex.includes('\\begin{gathered}')) return latex;
+  if (latex.length <= 80 || latex.includes('\\begin{gathered}')) return latex;
   const broken = latex.replace(/([,;])\\q(?:quad|uad)\s*/g, '$1\\\\')
     .replace(/=\\frac12w_1/, '\\\\=\\frac12w_1');
   return broken === latex ? latex : '\\begin{gathered}' + broken + '\\end{gathered}';
@@ -32,7 +33,7 @@ export function ExplainedEquation({ explanation, latex, showFormula = true, chil
   if (!f.conceptualExplanation.trim()) throw new Error('Spiegazione concettuale obbligatoria: ' + f.formulaId);
   return <div className="explained-equation" data-explained-formula-id={f.formulaId} data-formula-origin={f.origin}
     data-canonical-latex={f.latex} data-related-formula-ids={f.relatedFormulaIds.join(' ')}>
-    {showFormula && <EquationCard latex={latex ?? readableFormulaLatex(f.latex)}/>}
+    {showFormula && <EquationCard latex={latex ?? f.displayLatex ?? readableFormulaLatex(f.latex)}/>}
     <p className="formula-concept" id={id}>{f.conceptualExplanation}</p>
     {children}
     <details className="formula-details">

@@ -1,0 +1,1561 @@
+{
+  "numTotalTestSuites": 25,
+  "numPassedTestSuites": 25,
+  "numFailedTestSuites": 0,
+  "numPendingTestSuites": 0,
+  "numTotalTests": 113,
+  "numPassedTests": 113,
+  "numFailedTests": 0,
+  "numPendingTests": 0,
+  "numTodoTests": 0,
+  "snapshot": {
+    "added": 0,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0,
+    "didUpdate": false
+  },
+  "startTime": 1792275997151,
+  "success": true,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "single source of truth"
+          ],
+          "fullName": "single source of truth limita 0 a 1",
+          "status": "passed",
+          "title": "limita 0 a 1",
+          "duration": 2.511700000000019,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "single source of truth"
+          ],
+          "fullName": "single source of truth limita 37 a 36",
+          "status": "passed",
+          "title": "limita 37 a 36",
+          "duration": 0.41180000000031214,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "single source of truth"
+          ],
+          "fullName": "single source of truth limita -5 a 1",
+          "status": "passed",
+          "title": "limita -5 a 1",
+          "duration": 0.21350000000029468,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "single source of truth"
+          ],
+          "fullName": "single source of truth limita 12 a 12",
+          "status": "passed",
+          "title": "limita 12 a 12",
+          "duration": 0.4487999999996646,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "single source of truth"
+          ],
+          "fullName": "single source of truth limita NaN a 1",
+          "status": "passed",
+          "title": "limita NaN a 1",
+          "duration": 0.28379999999970096,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "single source of truth"
+          ],
+          "fullName": "single source of truth interpreta jump interi con bounds e rifiuta testo/decimali",
+          "status": "passed",
+          "title": "interpreta jump interi con bounds e rifiuta testo/decimali",
+          "duration": 0.4954000000002452,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "single source of truth"
+          ],
+          "fullName": "single source of truth sincronizza due consumer, Next, Previous e jump",
+          "status": "passed",
+          "title": "sincronizza due consumer, Next, Previous e jump",
+          "duration": 63.88580000000002,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "single source of truth"
+          ],
+          "fullName": "single source of truth non oltrepassa prima e ultima pagina",
+          "status": "passed",
+          "title": "non oltrepassa prima e ultima pagina",
+          "duration": 6.22400000000016,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1792276003430,
+      "endTime": 1792276003505.224,
+      "status": "passed",
+      "message": "",
+      "name": "C:/Users/querz/Desktop/optconv2/frontend/src/app/PageState.test.tsx"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "fullName": "p1: copertura formule, simboli e parametri F07",
+          "status": "passed",
+          "title": "p1: copertura formule, simboli e parametri F07",
+          "duration": 2.8356000000003405,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "p3: copertura formule, simboli e parametri F07",
+          "status": "passed",
+          "title": "p3: copertura formule, simboli e parametri F07",
+          "duration": 0.1871000000001004,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "p4: copertura formule, simboli e parametri F07",
+          "status": "passed",
+          "title": "p4: copertura formule, simboli e parametri F07",
+          "duration": 0.14210000000002765,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "p5: copertura formule, simboli e parametri F07",
+          "status": "passed",
+          "title": "p5: copertura formule, simboli e parametri F07",
+          "duration": 0.42679999999973006,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "p6: copertura formule, simboli e parametri F07",
+          "status": "passed",
+          "title": "p6: copertura formule, simboli e parametri F07",
+          "duration": 15.311100000000351,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "p7: copertura formule, simboli e parametri F07",
+          "status": "passed",
+          "title": "p7: copertura formule, simboli e parametri F07",
+          "duration": 0.15819999999985157,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "p9: copertura formule, simboli e parametri F07",
+          "status": "passed",
+          "title": "p9: copertura formule, simboli e parametri F07",
+          "duration": 6.4297999999998865,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "p10: copertura formule, simboli e parametri F07",
+          "status": "passed",
+          "title": "p10: copertura formule, simboli e parametri F07",
+          "duration": 6.469200000000001,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "p11: copertura formule, simboli e parametri F07",
+          "status": "passed",
+          "title": "p11: copertura formule, simboli e parametri F07",
+          "duration": 7.272600000000239,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "p13: copertura formule, simboli e parametri F07",
+          "status": "passed",
+          "title": "p13: copertura formule, simboli e parametri F07",
+          "duration": 0.3209999999999127,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "p14: copertura formule, simboli e parametri F07",
+          "status": "passed",
+          "title": "p14: copertura formule, simboli e parametri F07",
+          "duration": 4.3104999999995925,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "p15: copertura formule, simboli e parametri F07",
+          "status": "passed",
+          "title": "p15: copertura formule, simboli e parametri F07",
+          "duration": 1.5960000000000036,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "p18: copertura formule, simboli e parametri F07",
+          "status": "passed",
+          "title": "p18: copertura formule, simboli e parametri F07",
+          "duration": 4.617400000000089,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "p19: copertura formule, simboli e parametri F07",
+          "status": "passed",
+          "title": "p19: copertura formule, simboli e parametri F07",
+          "duration": 2.9787999999998647,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "p20: copertura formule, simboli e parametri F07",
+          "status": "passed",
+          "title": "p20: copertura formule, simboli e parametri F07",
+          "duration": 4.951299999999719,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "p21: copertura formule, simboli e parametri F07",
+          "status": "passed",
+          "title": "p21: copertura formule, simboli e parametri F07",
+          "duration": 2.9056000000000495,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "p22: copertura formule, simboli e parametri F07",
+          "status": "passed",
+          "title": "p22: copertura formule, simboli e parametri F07",
+          "duration": 8.99499999999989,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "p23: copertura formule, simboli e parametri F07",
+          "status": "passed",
+          "title": "p23: copertura formule, simboli e parametri F07",
+          "duration": 5.657400000000052,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "p24: copertura formule, simboli e parametri F07",
+          "status": "passed",
+          "title": "p24: copertura formule, simboli e parametri F07",
+          "duration": 4.165899999999965,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "p25: copertura formule, simboli e parametri F07",
+          "status": "passed",
+          "title": "p25: copertura formule, simboli e parametri F07",
+          "duration": 8.523899999999685,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "p26: copertura formule, simboli e parametri F07",
+          "status": "passed",
+          "title": "p26: copertura formule, simboli e parametri F07",
+          "duration": 3.270299999999679,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1792276003652,
+      "endTime": 1792276003743.2703,
+      "status": "passed",
+      "message": "",
+      "name": "C:/Users/querz/Desktop/optconv2/frontend/src/companion/extendedFormulaNotes.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "contratto permanente delle spiegazioni matematiche"
+          ],
+          "fullName": "contratto permanente delle spiegazioni matematiche limita il catalogo alle otto companion esistenti",
+          "status": "passed",
+          "title": "limita il catalogo alle otto companion esistenti",
+          "duration": 4.5875999999998385,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "contratto permanente delle spiegazioni matematiche"
+          ],
+          "fullName": "contratto permanente delle spiegazioni matematiche p2: copertura della fonte, provenienza e riferimenti risolvibili",
+          "status": "passed",
+          "title": "p2: copertura della fonte, provenienza e riferimenti risolvibili",
+          "duration": 0.838799999999992,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "contratto permanente delle spiegazioni matematiche"
+          ],
+          "fullName": "contratto permanente delle spiegazioni matematiche p8: copertura della fonte, provenienza e riferimenti risolvibili",
+          "status": "passed",
+          "title": "p8: copertura della fonte, provenienza e riferimenti risolvibili",
+          "duration": 2.249499999999898,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "contratto permanente delle spiegazioni matematiche"
+          ],
+          "fullName": "contratto permanente delle spiegazioni matematiche p12: copertura della fonte, provenienza e riferimenti risolvibili",
+          "status": "passed",
+          "title": "p12: copertura della fonte, provenienza e riferimenti risolvibili",
+          "duration": 1.8381999999996879,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "contratto permanente delle spiegazioni matematiche"
+          ],
+          "fullName": "contratto permanente delle spiegazioni matematiche p16: copertura della fonte, provenienza e riferimenti risolvibili",
+          "status": "passed",
+          "title": "p16: copertura della fonte, provenienza e riferimenti risolvibili",
+          "duration": 0.9843999999998232,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "contratto permanente delle spiegazioni matematiche"
+          ],
+          "fullName": "contratto permanente delle spiegazioni matematiche p17: copertura della fonte, provenienza e riferimenti risolvibili",
+          "status": "passed",
+          "title": "p17: copertura della fonte, provenienza e riferimenti risolvibili",
+          "duration": 0.868199999999888,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "contratto permanente delle spiegazioni matematiche"
+          ],
+          "fullName": "contratto permanente delle spiegazioni matematiche p27: copertura della fonte, provenienza e riferimenti risolvibili",
+          "status": "passed",
+          "title": "p27: copertura della fonte, provenienza e riferimenti risolvibili",
+          "duration": 1.0154999999999745,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "contratto permanente delle spiegazioni matematiche"
+          ],
+          "fullName": "contratto permanente delle spiegazioni matematiche p30: copertura della fonte, provenienza e riferimenti risolvibili",
+          "status": "passed",
+          "title": "p30: copertura della fonte, provenienza e riferimenti risolvibili",
+          "duration": 0.5967000000000553,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "contratto permanente delle spiegazioni matematiche"
+          ],
+          "fullName": "contratto permanente delle spiegazioni matematiche p34: copertura della fonte, provenienza e riferimenti risolvibili",
+          "status": "passed",
+          "title": "p34: copertura della fonte, provenienza e riferimenti risolvibili",
+          "duration": 1.2878000000000611,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "contratto permanente delle spiegazioni matematiche"
+          ],
+          "fullName": "contratto permanente delle spiegazioni matematiche rifiuta espressioni non censite, anziché aggiungere una spiegazione generica",
+          "status": "passed",
+          "title": "rifiuta espressioni non censite, anziché aggiungere una spiegazione generica",
+          "duration": 0.7436999999999898,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "contratto permanente delle spiegazioni matematiche"
+          ],
+          "fullName": "contratto permanente delle spiegazioni matematiche mantiene esclusivamente le tre correzioni F03 autorizzate",
+          "status": "passed",
+          "title": "mantiene esclusivamente le tre correzioni F03 autorizzate",
+          "duration": 0.5171999999997752,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1792276003616,
+      "endTime": 1792276003631.7437,
+      "status": "passed",
+      "message": "",
+      "name": "C:/Users/querz/Desktop/optconv2/frontend/src/companion/formulaExplanations.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "fullName": "registro F07 completo per i batch implementati, senza perdere la vertical slice",
+          "status": "passed",
+          "title": "registro F07 completo per i batch implementati, senza perdere la vertical slice",
+          "duration": 4.6676000000002205,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1792276006486,
+      "endTime": 1792276006490.6675,
+      "status": "passed",
+      "message": "",
+      "name": "C:/Users/querz/Desktop/optconv2/frontend/src/companion/registry.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "componenti riusabili"
+          ],
+          "fullName": "componenti riusabili renderizza KaTeX e la rappresentazione MathML",
+          "status": "passed",
+          "title": "renderizza KaTeX e la rappresentazione MathML",
+          "duration": 71.80709999999999,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "componenti riusabili"
+          ],
+          "fullName": "componenti riusabili segnala una formula non valida senza nascondere l’errore",
+          "status": "passed",
+          "title": "segnala una formula non valida senza nascondere l’errore",
+          "duration": 148.92360000000008,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "componenti riusabili"
+          ],
+          "fullName": "componenti riusabili mostra solo warning pertinenti, senza motivazioni editoriali",
+          "status": "passed",
+          "title": "mostra solo warning pertinenti, senza motivazioni editoriali",
+          "duration": 10.40249999999969,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "componenti riusabili"
+          ],
+          "fullName": "componenti riusabili NO_WARNING non produce UI",
+          "status": "passed",
+          "title": "NO_WARNING non produce UI",
+          "duration": 2.1464999999998327,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "componenti riusabili"
+          ],
+          "fullName": "componenti riusabili accetta input fuori dalla griglia slider, ma nel dominio",
+          "status": "passed",
+          "title": "accetta input fuori dalla griglia slider, ma nel dominio",
+          "duration": 84.82499999999982,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "componenti riusabili"
+          ],
+          "fullName": "componenti riusabili rifiuta valori infiniti, fuori dominio e non interi",
+          "status": "passed",
+          "title": "rifiuta valori infiniti, fuori dominio e non interi",
+          "duration": 11.514199999999619,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "componenti riusabili"
+          ],
+          "fullName": "componenti riusabili gestisce parametri discreti",
+          "status": "passed",
+          "title": "gestisce parametri discreti",
+          "duration": 16.210799999999836,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "componenti riusabili"
+          ],
+          "fullName": "componenti riusabili compone blocchi nell’ordine dell’archetipo senza contenuto di pagina hardcoded",
+          "status": "passed",
+          "title": "compone blocchi nell’ordine dell’archetipo senza contenuto di pagina hardcoded",
+          "duration": 2.755800000000363,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "componenti riusabili"
+          ],
+          "fullName": "componenti riusabili timeline T=1 include x0,x1 e solo u0",
+          "status": "passed",
+          "title": "timeline T=1 include x0,x1 e solo u0",
+          "duration": 6.1744000000003325,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1792276000017,
+      "endTime": 1792276000372.1743,
+      "status": "passed",
+      "message": "",
+      "name": "C:/Users/querz/Desktop/optconv2/frontend/src/components/components.test.tsx"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "ExplainedEquation"
+          ],
+          "fullName": "ExplainedEquation mostra il concetto senza richiedere interazione e rende espandibili i dettagli",
+          "status": "passed",
+          "title": "mostra il concetto senza richiedere interazione e rende espandibili i dettagli",
+          "duration": 274.43939999999975,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "ExplainedEquation"
+          ],
+          "fullName": "ExplainedEquation non accetta una spiegazione vuota o solo spazi",
+          "status": "passed",
+          "title": "non accetta una spiegazione vuota o solo spazi",
+          "duration": 12.880400000000009,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "ExplainedEquation"
+          ],
+          "fullName": "ExplainedEquation tratta le spiegazioni come testo, senza HTML eseguibile",
+          "status": "passed",
+          "title": "tratta le spiegazioni come testo, senza HTML eseguibile",
+          "duration": 36.46399999999994,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "ExplainedEquation"
+          ],
+          "fullName": "ExplainedEquation può spiegare un risultato o una formula già presente nel contesto",
+          "status": "passed",
+          "title": "può spiegare un risultato o una formula già presente nel contesto",
+          "duration": 16.739700000000084,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "ExplainedEquation"
+          ],
+          "fullName": "ExplainedEquation spezza soltanto la presentazione di formule lunghe conservando simboli e termini",
+          "status": "passed",
+          "title": "spezza soltanto la presentazione di formule lunghe conservando simboli e termini",
+          "duration": 0.7935999999999694,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1792276000070,
+      "endTime": 1792276000411.7937,
+      "status": "passed",
+      "message": "",
+      "name": "C:/Users/querz/Desktop/optconv2/frontend/src/components/ExplainedEquation.test.tsx"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "manifest F04.1 reale"
+          ],
+          "fullName": "manifest F04.1 reale indicizza tutte le 36 pagine fisiche",
+          "status": "passed",
+          "title": "indicizza tutte le 36 pagine fisiche",
+          "duration": 48.634199999999964,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "manifest F04.1 reale"
+          ],
+          "fullName": "manifest F04.1 reale legge modalità, semantica, camera e interattività F04.1",
+          "status": "passed",
+          "title": "legge modalità, semantica, camera e interattività F04.1",
+          "duration": 14.422300000000178,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "manifest F04.1 reale"
+          ],
+          "fullName": "manifest F04.1 reale rifiuta una pagina mancante",
+          "status": "passed",
+          "title": "rifiuta una pagina mancante",
+          "duration": 16.59920000000011,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "manifest F04.1 reale"
+          ],
+          "fullName": "manifest F04.1 reale rifiuta indici fisici duplicati",
+          "status": "passed",
+          "title": "rifiuta indici fisici duplicati",
+          "duration": 10.919100000000071,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "manifest F04.1 reale"
+          ],
+          "fullName": "manifest F04.1 reale rifiuta 3D senza un terzo asse",
+          "status": "passed",
+          "title": "rifiuta 3D senza un terzo asse",
+          "duration": 10.490199999999732,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "manifest F04.1 reale"
+          ],
+          "fullName": "manifest F04.1 reale proietta soltanto i campi UI autorizzati di F03",
+          "status": "passed",
+          "title": "proietta soltanto i campi UI autorizzati di F03",
+          "duration": 14.550900000000183,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "manifest F04.1 reale"
+          ],
+          "fullName": "manifest F04.1 reale rifiuta warning aggiunti a NO_WARNING",
+          "status": "passed",
+          "title": "rifiuta warning aggiunti a NO_WARNING",
+          "duration": 17.63819999999987,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1792276000220,
+      "endTime": 1792276000353.6382,
+      "status": "passed",
+      "message": "",
+      "name": "C:/Users/querz/Desktop/optconv2/frontend/src/data/manifest.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "batch A: oracoli indipendenti"
+          ],
+          "fullName": "batch A: oracoli indipendenti p9: sei transizioni, equilibrio e casi a=0 / a=1",
+          "status": "passed",
+          "title": "p9: sei transizioni, equilibrio e casi a=0 / a=1",
+          "duration": 3.629899999999907,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "batch A: oracoli indipendenti"
+          ],
+          "fullName": "batch A: oracoli indipendenti p6: ostacolo chiuso, quota sul tetto e percorsi distinti",
+          "status": "passed",
+          "title": "p6: ostacolo chiuso, quota sul tetto e percorsi distinti",
+          "duration": 1.2692000000001826,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1792276006495,
+      "endTime": 1792276006500.2693,
+      "status": "passed",
+      "message": "",
+      "name": "C:/Users/querz/Desktop/optconv2/frontend/src/math/courseFoundations.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "fullName": "p20: contabilità indipendente dei due stadi e del terminale, incluso costo nullo",
+          "status": "passed",
+          "title": "p20: contabilità indipendente dei due stadi e del terminale, incluso costo nullo",
+          "duration": 4.0974999999998545,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "p21: compatibilità, soglia esatta e box degenere senza spessori inventati",
+          "status": "passed",
+          "title": "p21: compatibilità, soglia esatta e box degenere senza spessori inventati",
+          "duration": 2.0389000000000124,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "p22/p25: distinguere costo della candidata fissa e nuovo ottimo dopo cambio di peso",
+          "status": "passed",
+          "title": "p22/p25: distinguere costo della candidata fissa e nuovo ottimo dopo cambio di peso",
+          "duration": 3.7020000000002256,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "p23: soluzione analitica, infeasibilità e limite nullo",
+          "status": "passed",
+          "title": "p23: soluzione analitica, infeasibilità e limite nullo",
+          "duration": 0.7748000000001412,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "p24: gli stessi campioni alimentano uscita ed errore nelle due viste",
+          "status": "passed",
+          "title": "p24: gli stessi campioni alimentano uscita ed errore nelle due viste",
+          "duration": 0.7251999999998588,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "p26: bilancio di hover, differenziale dei rotori e inclinazione senza integrazione",
+          "status": "passed",
+          "title": "p26: bilancio di hover, differenziale dei rotori e inclinazione senza integrazione",
+          "duration": 0.5293000000001484,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1792276003277,
+      "endTime": 1792276003289.5293,
+      "status": "passed",
+      "message": "",
+      "name": "C:/Users/querz/Desktop/optconv2/frontend/src/math/courseOcp.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "batch B: dimensioni, fattibilità e minimi analitici"
+          ],
+          "fullName": "batch B: dimensioni, fattibilità e minimi analitici p10: gli stack escludono il dato iniziale e hanno nT / mT componenti",
+          "status": "passed",
+          "title": "p10: gli stack escludono il dato iniziale e hanno nT / mT componenti",
+          "duration": 4.803699999999935,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "batch B: dimensioni, fattibilità e minimi analitici"
+          ],
+          "fullName": "batch B: dimensioni, fattibilità e minimi analitici p11: f(2,1)=2; cambiare solo ingresso rompe la costanza",
+          "status": "passed",
+          "title": "p11: f(2,1)=2; cambiare solo ingresso rompe la costanza",
+          "duration": 0.791899999999714,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "batch B: dimensioni, fattibilità e minimi analitici"
+          ],
+          "fullName": "batch B: dimensioni, fattibilità e minimi analitici p14: un residuo di uguaglianza nullo non basta se g è positivo",
+          "status": "passed",
+          "title": "p14: un residuo di uguaglianza nullo non basta se g è positivo",
+          "duration": 0.8552000000004227,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "batch B: dimensioni, fattibilità e minimi analitici"
+          ],
+          "fullName": "batch B: dimensioni, fattibilità e minimi analitici p15: simmetria e tre valori dell’esempio sorgente",
+          "status": "passed",
+          "title": "p15: simmetria e tre valori dell’esempio sorgente",
+          "duration": 0.8355000000001382,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "batch B: dimensioni, fattibilità e minimi analitici"
+          ],
+          "fullName": "batch B: dimensioni, fattibilità e minimi analitici p18: minimo libero, attivo e cambio di regime continuo",
+          "status": "passed",
+          "title": "p18: minimo libero, attivo e cambio di regime continuo",
+          "duration": 1.541400000000067,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "batch B: dimensioni, fattibilità e minimi analitici"
+          ],
+          "fullName": "batch B: dimensioni, fattibilità e minimi analitici p19: residui indipendenti e candidato incoerente sulla superficie zero",
+          "status": "passed",
+          "title": "p19: residui indipendenti e candidato incoerente sulla superficie zero",
+          "duration": 0.5084999999999127,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1792276006301,
+      "endTime": 1792276006310.5085,
+      "status": "passed",
+      "message": "",
+      "name": "C:/Users/querz/Desktop/optconv2/frontend/src/math/courseOptimization.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "oracoli indipendenti della vertical slice"
+          ],
+          "fullName": "oracoli indipendenti della vertical slice p8: soluzione esatta, condizione iniziale, integratore ed equilibrio",
+          "status": "passed",
+          "title": "p8: soluzione esatta, condizione iniziale, integratore ed equilibrio",
+          "duration": 2.687800000000152,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "oracoli indipendenti della vertical slice"
+          ],
+          "fullName": "oracoli indipendenti della vertical slice p12: nominale coerente, Jacobiani e oracle .21/.2/.01",
+          "status": "passed",
+          "title": "p12: nominale coerente, Jacobiani e oracle .21/.2/.01",
+          "duration": 1.9375,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "oracoli indipendenti della vertical slice"
+          ],
+          "fullName": "oracoli indipendenti della vertical slice p12: perturbazioni (-0.25,-0.1), errore quadratico",
+          "status": "passed",
+          "title": "p12: perturbazioni (-0.25,-0.1), errore quadratico",
+          "duration": 0.2980000000002292,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "oracoli indipendenti della vertical slice"
+          ],
+          "fullName": "oracoli indipendenti della vertical slice p12: perturbazioni (0,0.1), errore quadratico",
+          "status": "passed",
+          "title": "p12: perturbazioni (0,0.1), errore quadratico",
+          "duration": 0.4652000000000953,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "oracoli indipendenti della vertical slice"
+          ],
+          "fullName": "oracoli indipendenti della vertical slice p12: perturbazioni (0.25,0.1), errore quadratico",
+          "status": "passed",
+          "title": "p12: perturbazioni (0.25,0.1), errore quadratico",
+          "duration": 0.2885000000001128,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "oracoli indipendenti della vertical slice"
+          ],
+          "fullName": "oracoli indipendenti della vertical slice p16: secondo contributo w2, pesi degeneri e simmetria",
+          "status": "passed",
+          "title": "p16: secondo contributo w2, pesi degeneri e simmetria",
+          "duration": 0.5682999999999083,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "oracoli indipendenti della vertical slice"
+          ],
+          "fullName": "oracoli indipendenti della vertical slice p17: i tre punti testano interno, bordo ed esterno",
+          "status": "passed",
+          "title": "p17: i tre punti testano interno, bordo ed esterno",
+          "duration": 0.5709999999999127,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "oracoli indipendenti della vertical slice"
+          ],
+          "fullName": "oracoli indipendenti della vertical slice p17: casi degeneri e non limitati non etichettati come ellissi",
+          "status": "passed",
+          "title": "p17: casi degeneri e non limitati non etichettati come ellissi",
+          "duration": 0.3523000000000138,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "oracoli indipendenti della vertical slice"
+          ],
+          "fullName": "oracoli indipendenti della vertical slice p27: dinamica planare, hover e segni delle accelerazioni",
+          "status": "passed",
+          "title": "p27: dinamica planare, hover e segni delle accelerazioni",
+          "duration": 0.9522000000001754,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "oracoli indipendenti della vertical slice"
+          ],
+          "fullName": "oracoli indipendenti della vertical slice p27: Euler simultaneo e confronto analitico a durata fissa",
+          "status": "passed",
+          "title": "p27: Euler simultaneo e confronto analitico a durata fissa",
+          "duration": 2.4077000000002045,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "oracoli indipendenti della vertical slice"
+          ],
+          "fullName": "oracoli indipendenti della vertical slice p30: T=1 non crea u1; residui, bordo e insieme vuoto",
+          "status": "passed",
+          "title": "p30: T=1 non crea u1; residui, bordo e insieme vuoto",
+          "duration": 0.8056000000001404,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "oracoli indipendenti della vertical slice"
+          ],
+          "fullName": "oracoli indipendenti della vertical slice p34: equilibrio 0, velocità nulla e residui nulli",
+          "status": "passed",
+          "title": "p34: equilibrio 0, velocità nulla e residui nulli",
+          "duration": 0.3669999999997344,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "oracoli indipendenti della vertical slice"
+          ],
+          "fullName": "oracoli indipendenti della vertical slice p34: equilibrio 0.5235987755982988, velocità nulla e residui nulli",
+          "status": "passed",
+          "title": "p34: equilibrio 0.5235987755982988, velocità nulla e residui nulli",
+          "duration": 0.13859999999976935,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "oracoli indipendenti della vertical slice"
+          ],
+          "fullName": "oracoli indipendenti della vertical slice p34: equilibrio -1.5707963267948966, velocità nulla e residui nulli",
+          "status": "passed",
+          "title": "p34: equilibrio -1.5707963267948966, velocità nulla e residui nulli",
+          "duration": 0.11560000000008586,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "oracoli indipendenti della vertical slice"
+          ],
+          "fullName": "oracoli indipendenti della vertical slice p34: π/6 richiede 4.905; senza coppia non è equilibrio",
+          "status": "passed",
+          "title": "p34: π/6 richiede 4.905; senza coppia non è equilibrio",
+          "duration": 0.17009999999982028,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1792276003393,
+      "endTime": 1792276003405.1702,
+      "status": "passed",
+      "message": "",
+      "name": "C:/Users/querz/Desktop/optconv2/frontend/src/math/introduction.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "fullName": "p8: la sezione e la famiglia usano la stessa soluzione analitica",
+          "status": "passed",
+          "title": "p8: la sezione e la famiglia usano la stessa soluzione analitica",
+          "duration": 4.603599999999915,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "p12: superficie e piano contengono esattamente l’oracolo nella griglia",
+          "status": "passed",
+          "title": "p12: superficie e piano contengono esattamente l’oracolo nella griglia",
+          "duration": 3.9911000000001877,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "p16: contour e surface ricevono la stessa griglia corretta al punto candidato",
+          "status": "passed",
+          "title": "p16: contour e surface ricevono la stessa griglia corretta al punto candidato",
+          "duration": 2.244299999999839,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "p17: maschera = segno del residuo, anche nei casi degeneri",
+          "status": "passed",
+          "title": "p17: maschera = segno del residuo, anche nei casi degeneri",
+          "duration": 162.45150000000012,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "p27: ID temporali condivisi, terza coordinata è la velocità esistente",
+          "status": "passed",
+          "title": "p27: ID temporali condivisi, terza coordinata è la velocità esistente",
+          "duration": 9.43730000000005,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "p30: la famiglia dei limiti restituisce .2 a quota 3.2, min=1, max=3",
+          "status": "passed",
+          "title": "p30: la famiglia dei limiti restituisce .2 a quota 3.2, min=1, max=3",
+          "duration": 0.5434000000000196,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "p34: tutto il luogo di equilibrio ha velocità esattamente zero",
+          "status": "passed",
+          "title": "p34: tutto il luogo di equilibrio ha velocità esattamente zero",
+          "duration": 0.6229000000002998,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1792276000011,
+      "endTime": 1792276000194.6228,
+      "status": "passed",
+      "message": "",
+      "name": "C:/Users/querz/Desktop/optconv2/frontend/src/math/introductionData.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "matematica indipendente dalla UI"
+          ],
+          "fullName": "matematica indipendente dalla UI usa ogni peso sulla coordinata corretta e richiede scala esplicita",
+          "status": "passed",
+          "title": "usa ogni peso sulla coordinata corretta e richiede scala esplicita",
+          "duration": 4.548399999999674,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "matematica indipendente dalla UI"
+          ],
+          "fullName": "matematica indipendente dalla UI rifiuta dimensioni o pesi non validi",
+          "status": "passed",
+          "title": "rifiuta dimensioni o pesi non validi",
+          "duration": 1.3164000000001579,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "matematica indipendente dalla UI"
+          ],
+          "fullName": "matematica indipendente dalla UI linearizza variazioni con Jacobiani forniti dal modello",
+          "status": "passed",
+          "title": "linearizza variazioni con Jacobiani forniti dal modello",
+          "duration": 0.5390999999999622,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "matematica indipendente dalla UI"
+          ],
+          "fullName": "matematica indipendente dalla UI mantiene distinti ingressi e stati previsti",
+          "status": "passed",
+          "title": "mantiene distinti ingressi e stati previsti",
+          "duration": 1.029399999999896,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "matematica indipendente dalla UI"
+          ],
+          "fullName": "matematica indipendente dalla UI riconosce bordo, violazione e intervallo vuoto senza riordinare limiti",
+          "status": "passed",
+          "title": "riconosce bordo, violazione e intervallo vuoto senza riordinare limiti",
+          "duration": 1.2622000000001208,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "matematica indipendente dalla UI"
+          ],
+          "fullName": "matematica indipendente dalla UI Euler usa simultaneamente il vecchio stato",
+          "status": "passed",
+          "title": "Euler usa simultaneamente il vecchio stato",
+          "duration": 0.9311999999999898,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "matematica indipendente dalla UI"
+          ],
+          "fullName": "matematica indipendente dalla UI campiona superfici senza inventare valori in punti non definiti",
+          "status": "passed",
+          "title": "campiona superfici senza inventare valori in punti non definiti",
+          "duration": 0.44509999999991123,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "matematica indipendente dalla UI"
+          ],
+          "fullName": "matematica indipendente dalla UI preserva ID e dimensioni nelle proiezioni",
+          "status": "passed",
+          "title": "preserva ID e dimensioni nelle proiezioni",
+          "duration": 0.593000000000302,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1792276006268,
+      "endTime": 1792276006278.593,
+      "status": "passed",
+      "message": "",
+      "name": "C:/Users/querz/Desktop/optconv2/frontend/src/math/math.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "fullName": "una mutazione del backend non raggiunge i dati matematici",
+          "status": "passed",
+          "title": "una mutazione del backend non raggiunge i dati matematici",
+          "duration": 2.5878999999999905,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "un punto aggiornato non invalida il buffer di una superficie invariata",
+          "status": "passed",
+          "title": "un punto aggiornato non invalida il buffer di una superficie invariata",
+          "duration": 1.4160999999999149,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1792276006627,
+      "endTime": 1792276006631.416,
+      "status": "passed",
+      "message": "",
+      "name": "C:/Users/querz/Desktop/optconv2/frontend/src/visualization/core/numericCopy.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "foundation 2D/3D"
+          ],
+          "fullName": "foundation 2D/3D rispetta la vista primaria definita dalla policy",
+          "status": "passed",
+          "title": "rispetta la vista primaria definita dalla policy",
+          "duration": 2.6538000000000466,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "foundation 2D/3D"
+          ],
+          "fullName": "foundation 2D/3D toggle cambia vista senza alterare dati",
+          "status": "passed",
+          "title": "toggle cambia vista senza alterare dati",
+          "duration": 243.59529999999995,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "foundation 2D/3D"
+          ],
+          "fullName": "foundation 2D/3D offre entrambe le viste affiancate",
+          "status": "passed",
+          "title": "offre entrambe le viste affiancate",
+          "duration": 5.426199999999881,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "foundation 2D/3D"
+          ],
+          "fullName": "foundation 2D/3D aggiorna la policy passando a una pagina esclusivamente 2D",
+          "status": "passed",
+          "title": "aggiorna la policy passando a una pagina esclusivamente 2D",
+          "duration": 7.902099999999791,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "foundation 2D/3D"
+          ],
+          "fullName": "foundation 2D/3D sincronizza selezione fra consumer 2D e 3D",
+          "status": "passed",
+          "title": "sincronizza selezione fra consumer 2D e 3D",
+          "duration": 8.190799999999854,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1792276000127,
+      "endTime": 1792276000394.191,
+      "status": "passed",
+      "message": "",
+      "name": "C:/Users/querz/Desktop/optconv2/frontend/src/visualization/shared/explorer.test.tsx"
+    }
+  ]
+}

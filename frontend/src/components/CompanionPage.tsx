@@ -1,6 +1,7 @@
-import { useMemo, type ReactNode } from 'react';
+import { useMemo, useRef, type ReactNode } from 'react';
 import katex from 'katex';
 import type { Archetype, StudentNotice } from '../data/manifest';
+import { AutoGraphicFullscreen } from '../visualization/core/GraphicViewport';
 function mathMarkup(latex: string, displayMode: boolean) {
   try { return { html: katex.renderToString(latex, { displayMode, throwOnError: true, trust: false, strict: 'warn', output: 'htmlAndMathml' }), error: '' }; }
   catch { return { html: '', error: 'Formula non renderizzabile: controllare la notazione.' }; }
@@ -50,9 +51,11 @@ export interface CompanionPageProps {
   className?: string;
 }
 export function CompanionPage({ archetype, blocks, blockOrder, sourcePage, className = '' }: CompanionPageProps) {
-  return <article className={'companion-page archetype-' + archetype.toLowerCase() + ' ' + className} data-source-page={sourcePage}
+  const graphics=useRef<HTMLElement>(null);
+  return <article ref={graphics} className={'companion-page archetype-' + archetype.toLowerCase() + ' ' + className} data-source-page={sourcePage}
     aria-label={sourcePage ? 'Companion pagina ' + sourcePage : 'Companion generica'}>
     {blockOrder.map(name => blocks[name as CompanionSlot] == null ? null :
       <div className={'slide-block block-' + name.toLowerCase()} key={name}>{blocks[name as CompanionSlot]}</div>)}
+    <AutoGraphicFullscreen scope={graphics}/>
   </article>;
 }

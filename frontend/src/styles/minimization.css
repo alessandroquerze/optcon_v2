@@ -1,0 +1,3 @@
+.minimization-lesson .opt-choice { min-width:0; }
+.minimization-lesson .opt-choice select { text-overflow:ellipsis; }
+.minimization-lesson .live-metrics dd { overflow-wrap:anywhere; }

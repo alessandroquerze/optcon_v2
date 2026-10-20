@@ -81,12 +81,514 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "237103f8615d56a4dc4f939a4492c5b96cca7d4e353dd8410d863c1beaac3fce",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0034",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "68bdd4fa79f16f9874c0b024d44117772a723e95900878adc6434187107d8465",
+        "layout": "71ab89b539fcf1105938fdd457111941e5b31799331404a8881f0073c08e1c2e",
+        "render": "db635c885d99b005db4d42947d15e6149e8144d4c7fd233cbdb6e97c4f4e07a9"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-e-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0034",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0033",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0035"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0034",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0033",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0035"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0034",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0033",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0035"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Newton’s method for root finding",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "definition",
+          "description": "La pagina considera il problema non lineare r(z)=0.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0034",
+            "modality": "both",
+            "text_quote": "nonlinear root",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "concept",
+          "description": "Il nuovo punto è uno zero della linearizzazione di r attorno al tentativo corrente, non necessariamente di r.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0034",
+            "modality": "both",
+            "text_quote": "represents a root",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "equation",
+          "description": "La linearizzazione usa ∇r(z^k)^⊤Δz^k e il passo usa l’inversa di questa trasposta.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0034",
+            "modality": "both",
+            "text_quote": "linear approximation",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-4",
+          "category": "algorithm",
+          "description": "L’aggiornamento sottrae (∇r(z^k)^⊤)^{-1}r(z^k); l’inversa presuppone sistema quadrato e Jacobiano invertibile.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0034",
+            "modality": "both",
+            "text_quote": "Thus, the solution is improved",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0034",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Distinguere zero della linearizzazione e zero della funzione originale, con l’inversa correttamente dimensionata.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0033",
+          "role": "previous",
+          "note": "Steepest descent confronta direzioni unitarie; indice k distinto dal tempo fisico."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0035",
+          "role": "next",
+          "note": "Collegare ricerca di radici e ottimizzazione senza confondere punto stazionario e minimo."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "z^{k+1}=z^k-\\big(\\nabla r(z^k)^\\top\\big)^{-1}r(z^k)",
+          "meaning": "Per un sistema quadrato con Jacobiano invertibile, Newton annulla il modello affine. Questo non garantisce che il residuo reale si annulli in un passo.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "r^k(z^k+\\Delta z^k)=r(z^k)+\\nabla r(z^k)^\\top\\Delta z^k",
+          "meaning": "rᵏ è il modello affine costruito all’iterazione k. Il passo annulla questo modello: il residuo originale viene rivalutato dopo l’aggiornamento.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\Delta z^k=-\\big(\\nabla r(z^k)^\\top\\big)^{-1}r(z^k)",
+          "meaning": "Il segno meno risolve l’equazione affine; il vettore ottenuto si somma al punto corrente.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "source-4",
+          "structure"
+        ],
+        "rationale": "Scopo e contenuto autonomi."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "Nessuna correzione matematica necessaria dopo confronto con la pagina precedente e successiva.",
+          "Il sistema generale richiede m=d e Jacobiano invertibile per la formula stampata.",
+          "La parabola è un esempio aggiunto; la fonte non specifica una funzione numerica."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Gradiente di un campo vettoriale",
+            "why": "La trasposta è necessaria per le dimensioni del prodotto.",
+            "origin": "source_context",
+            "page_numbers": [
+              7
+            ]
+          },
+          {
+            "concept": "Iterazioni",
+            "why": "k indica aggiornamenti, non tempo fisico.",
+            "origin": "source_context",
+            "page_numbers": [
+              27,
+              33
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "z^{k+1}=z^k-\\big(\\nabla r(z^k)^\\top\\big)^{-1}r(z^k)",
+            "anchor": "nonlinear root",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "r^k(z^k+\\Delta z^k)=r(z^k)+\\nabla r(z^k)^\\top\\Delta z^k",
+            "anchor": "nonlinear root",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\Delta z^k=-\\big(\\nabla r(z^k)^\\top\\big)^{-1}r(z^k)",
+            "anchor": "nonlinear root",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Si costruisce un modello affine del residuo nel punto corrente, poi se ne cerca lo zero. Il nuovo punto può avere ancora un residuo non nullo nella funzione originale.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "α=1, c=1.5",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Residuo blu, tangente viola, punto corrente e zero affine arancio; confronto col residuo reale nel nuovo punto. Assi z e r(z), non costo.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Distinguere zero della linearizzazione e zero della funzione originale, con l’inversa correttamente dimensionata.",
+            "setup": "α=1, c=1.5",
+            "parameters": [],
+            "derivation": [
+              "r(c)=1.25 e r′(c)=3.",
+              "Δz=−5/12; nuovo punto 13/12≈1.083333.",
+              "Il modello vale zero lì, il residuo reale vale 25/144≈0.173611."
+            ],
+            "expected_outcome": "Lo zero della linearizzazione non è già una radice esatta del residuo non lineare.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "SceneViewport",
+          "description": "Residuo blu, tangente viola, punto corrente e zero affine arancio; confronto col residuo reale nel nuovo punto. Assi z e r(z), non costo.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Muovere il punto mostra come cambia lo zero affine; α e i casi singolari distinguono funzione e modello.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Punto corrente",
+              "symbol": "c",
+              "origin": "enrichment",
+              "range": "{'min': -2, 'max': 2, 'step': 0.1, 'integer': False}",
+              "default": "1.5",
+              "effect_on_change": "Sposta il punto di linearizzazione, la tangente e il suo zero; la funzione resta fissa per α fissato.",
+              "edge_cases": [
+                "c=0,α>0",
+                "c=α=0",
+                "Risultato fuori dal grafico",
+                "Residuo numerico piccolo"
+              ]
+            },
+            {
+              "name": "Parametro del residuo",
+              "symbol": "\\alpha",
+              "origin": "enrichment",
+              "range": "{'min': 0, 'max': 2, 'step': 0.25, 'integer': False}",
+              "default": "1",
+              "effect_on_change": "Sposta la parabola e le sue radici; aggiorna modello e passo mantenendo c.",
+              "edge_cases": [
+                "c=0,α>0",
+                "c=α=0",
+                "Risultato fuori dal grafico",
+                "Residuo numerico piccolo"
+              ]
+            },
+            {
+              "name": "Esegui un passo",
+              "symbol": "k",
+              "origin": "enrichment",
+              "range": "Avanza al nuovo punto se ricalcolabile e dentro [−2,2]",
+              "default": "Punto iniziale scelto",
+              "effect_on_change": "Sostituisce c con il nuovo punto, senza cambiare α; non clampa un risultato fuori intervallo.",
+              "edge_cases": [
+                "c=0,α>0",
+                "c=α=0",
+                "Risultato fuori dal grafico",
+                "Residuo numerico piccolo"
+              ]
+            }
+          ],
+          "outputs": [
+            "Distinguere zero della linearizzazione e zero della funzione originale, con l’inversa correttamente dimensionata."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "c=0,α>0",
+            "expected_behavior": "Sistema affine incompatibile: nessuna divisione per zero o nuovo punto inventato.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "c=α=0",
+            "expected_behavior": "Radice già raggiunta; modello nullo, nessun aggiornamento univoco.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "Risultato fuori dal grafico",
+            "expected_behavior": "Mostrare valore e avviso breve; nessun clamp o cambio automatico di scala.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "Residuo numerico piccolo",
+            "expected_behavior": "Arrestare esplicitamente entro 10⁻¹²; non chiamarlo zero esatto.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Distinguere zero della linearizzazione e zero della funzione originale, con l’inversa correttamente dimensionata.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

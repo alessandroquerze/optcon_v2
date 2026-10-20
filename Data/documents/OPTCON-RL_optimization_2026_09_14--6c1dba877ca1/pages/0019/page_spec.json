@@ -81,12 +81,424 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "512dac7e6b208e315d9e348c4047d4cf02729f6de7e0d3fe2f0abab39865fbc9",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0019",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "ae4495cf7f1d34d8f6f5bb7fc42ce334492346d2371e1f9dfbbf68d48351d668",
+        "layout": "22560dc8c41b76e7097236db47a99a7737be57e8600c478ab74329a1ca35d736",
+        "render": "edbd4592ae8f4b7a3f30eaea76c1a7596625609fe1052a96bb95f320bddb5a0f"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-c-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0019",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0018",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0020"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0019",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0018",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0020"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0019",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0018",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0020"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Graphical interpretation of convexity",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "assumption",
+          "description": "La prima implicazione richiede differenziabilità e convessità; la seconda µ-forte convessità.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0019",
+            "modality": "both",
+            "text_quote": "If ℓis differentiable and convex",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "equation",
+          "description": "La prima disuguaglianza è un supporto affine, la seconda aggiunge µ/2 volte la distanza quadratica.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0019",
+            "modality": "both",
+            "text_quote": "strong convexity imposes a quadratic lower bound",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "diagram",
+          "description": "Curva blu, supporto quadratico rosso e tangente nera tratteggiata condividono il punto (z_A,ℓ(z_A)); nessuna coordinata numerica.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0019",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0019",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Distinguere supporto affine e limite inferiore quadratico, con la stessa tangenza.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0018",
+          "role": "previous",
+          "note": "Forte convessità e gradiente Lipschitz danno un limite congiunto, nella convenzione µ/2."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0020",
+          "role": "next",
+          "note": "Leggere il limite L senza aggiungere un’ipotesi di convessità assente nella fonte."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\ell(z_B)\\ge\\ell(z_A)+\\nabla\\ell(z_A)^\\top(z_B-z_A)",
+          "meaning": "Per una funzione differenziabile e convessa, ogni tangente resta sotto il costo su tutto il dominio convesso.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\ell(z_B)\\ge\\ell(z_A)+\\nabla\\ell(z_A)^\\top(z_B-z_A)+\\frac{\\mu}{2}\\|z_B-z_A\\|^2",
+          "meaning": "Con µ-forte convessità il costo supera la tangente almeno di un termine quadratico. Per punti coincidenti tutti i valori pareggiano.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "structure"
+        ],
+        "rationale": "Pagina con enunciato e scopo autonomi."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "Nessuna correzione matematica necessaria dopo confronto con la pagina precedente e successiva."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Forte convessità",
+            "why": "Normalizzazione µ/2 coerente con la pagina 19, conservando la policy della 16.",
+            "origin": "source_context",
+            "page_numbers": [
+              16,
+              18
+            ]
+          },
+          {
+            "concept": "Supporto affine",
+            "why": "La tangente è un limite inferiore, non una secante.",
+            "origin": "source_context",
+            "page_numbers": [
+              14
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\ell(z_B)\\ge\\ell(z_A)+\\nabla\\ell(z_A)^\\top(z_B-z_A)",
+            "anchor": "If ℓis differentiable and convex",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\ell(z_B)\\ge\\ell(z_A)+\\nabla\\ell(z_A)^\\top(z_B-z_A)+\\frac{\\mu}{2}\\|z_B-z_A\\|^2",
+            "anchor": "If ℓis differentiable and convex",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "La convessità mette il costo sopra la tangente. Con forte convessità, anche una parabola di curvatura µ resta sotto il costo.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "µ=0.5, z_A=−0.4 e z_B=0.9",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Tre curve 2D su assi fissi: costo blu, supporto quadratico rosso e tangente tratteggiata; segmento verticale del margine in B.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Distinguere supporto affine e limite inferiore quadratico, con la stessa tangenza.",
+            "setup": "µ=0.5, z_A=−0.4 e z_B=0.9",
+            "parameters": [],
+            "derivation": [
+              "Calcolare ℓ(z_A)=0.0464 e ∇ℓ(z_A)=−0.264.",
+              "Il supporto quadratico in B vale 0.1257, il costo 0.366525.",
+              "Margine 0.240825≥0."
+            ],
+            "expected_outcome": "La garanzia vale sul dominio intero, non soltanto sui campioni disegnati.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "SceneViewport",
+          "description": "Tre curve 2D su assi fissi: costo blu, supporto quadratico rosso e tangente tratteggiata; segmento verticale del margine in B.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Variare un solo aspetto del confronto mantenendo esplicite le invarianti.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Punto di tangenza",
+              "symbol": "z_A",
+              "origin": "enrichment",
+              "range": "{'min': -0.8, 'max': 0.8, 'step': 0.1, 'integer': False}",
+              "default": "-0.4",
+              "effect_on_change": "Sposta tangente e supporto quadratico; costo e µ restano fissi.",
+              "edge_cases": [
+                "A=B",
+                "µ"
+              ]
+            },
+            {
+              "name": "Punto di confronto",
+              "symbol": "z_B",
+              "origin": "enrichment",
+              "range": "{'min': -1.2, 'max': 1.2, 'step': 0.1, 'integer': False}",
+              "default": "0.9",
+              "effect_on_change": "Muove solo B e aggiorna costo, limite e margine.",
+              "edge_cases": [
+                "A=B",
+                "µ"
+              ]
+            }
+          ],
+          "outputs": [
+            "Distinguere supporto affine e limite inferiore quadratico, con la stessa tangenza."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "A=B",
+            "expected_behavior": "Costo e supporti coincidono, margine zero; nessuna divisione per distanza.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "µ",
+            "expected_behavior": "Il valore è fisso e validato globalmente, non stimato dal ritaglio.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Distinguere supporto affine e limite inferiore quadratico, con la stessa tangenza.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

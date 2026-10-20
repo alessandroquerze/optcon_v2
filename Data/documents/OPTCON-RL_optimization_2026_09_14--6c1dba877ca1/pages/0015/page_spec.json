@@ -81,12 +81,430 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
+    "status": "needs_review",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "149e5a24c57edeb021e0807296a9ea026075ecc22bf0e00e3e891cba22b6cf2d",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0015",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "56ce28c278b6b7f3900c88c85c3127ff4297216849b05aa9533d51eae3ffe2d4",
+        "layout": "6a02421c87e68c661f18d0c1d1fdd8dbe1712a503360248a18250d284fd32fac",
+        "render": "7b5b54cfa1e5fa606d9753c134f9b82b766ef153d23502d572e58de783ec092b"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-b-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0015",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0014",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0016"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0015",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0014",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0016"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0015",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0014",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0016"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Strict convexity and gradient monotonicity",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "definition",
+          "description": "La definizione stretta usa z_A≠z_B e θ∈(0,1).",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0015",
+            "modality": "both",
+            "text_quote": "A function",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "equation",
+          "description": "La fonte stampa il prodotto strettamente positivo seguito da for all z_A,z_B: va mantenuta l’esclusione delle coppie coincidenti.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0015",
+            "modality": "both",
+            "text_quote": "strictly monotone operator",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0015",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Distinguere monotonia stretta da un limite quadratico uniforme.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0014",
+          "role": "previous",
+          "note": "Collegare supporto affine e monotonia del gradiente senza invertirne i segni."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0016",
+          "role": "next",
+          "note": "Interpretare µ come limite uniforme inferiore e conservare una normalizzazione coerente."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\ell(\\theta z_A+(1-\\theta)z_B)<\\theta\\ell(z_A)+(1-\\theta)\\ell(z_B),\\quad z_A\\ne z_B,\\ 0<\\theta<1",
+          "meaning": "Il confronto è stretto soltanto fra punti distinti e lungo la parte interna del segmento.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "(\\nabla\\ell(z_A)-\\nabla\\ell(z_B))^\\top(z_A-z_B)>0\\quad\\forall z_A,z_B\\in\\mathbb Z",
+          "meaning": "La formulazione stampata sottintende punti distinti; presa letteralmente include una coppia per cui il prodotto è zero.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [
+        {
+          "description": "Discrepanza della fonte esaminata e risolta nella policy companion: La definizione iniziale della slide esclude già z_A=z_B. Il successivo for all va letto con la stessa esclusione; con A=B il prodotto è 0. Si precisa il dominio senza cambiare la convenzione del corso.",
+          "blocking": false,
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "structure"
+          ]
+        }
+      ],
+      "progression": {
+        "assessment": "progressive",
+        "related_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0014"
+        ],
+        "added": [
+          "Distinguere monotonia stretta da un limite quadratico uniforme."
+        ],
+        "removed": [],
+        "changed": [
+          "Ipotesi e limite quantitativo cambiano: conservare entrambe le pagine."
+        ],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "structure"
+        ],
+        "rationale": "Progressione concettuale verificata, non duplicazione eliminabile."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "La definizione iniziale della slide esclude già z_A=z_B. Il successivo for all va letto con la stessa esclusione; con A=B il prodotto è 0. Si precisa il dominio senza cambiare la convenzione del corso."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Monotonia del gradiente",
+            "why": "Si passa da non negativo a positivo sulle coppie distinte.",
+            "origin": "source_context",
+            "page_numbers": [
+              14
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\ell(\\theta z_A+(1-\\theta)z_B)<\\theta\\ell(z_A)+(1-\\theta)\\ell(z_B),\\quad z_A\\ne z_B,\\ 0<\\theta<1",
+            "anchor": "A function",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "(\\nabla\\ell(z_A)-\\nabla\\ell(z_B))^\\top(z_A-z_B)>0\\quad\\forall z_A,z_B\\in\\mathbb Z",
+            "anchor": "A function",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Per due punti distinti il prodotto è positivo. Può però diventare arbitrariamente piccolo rispetto alla distanza quadratica: la convessità stretta non implica quella forte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "ℓ=z⁴/4 e punti ±h",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Gradiente z³ con due punti e rettangolo del prodotto; confronto numerico fra M, distanza² e rapporto.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Distinguere monotonia stretta da un limite quadratico uniforme.",
+            "setup": "ℓ=z⁴/4 e punti ±h",
+            "parameters": [],
+            "derivation": [
+              "∇ℓ(z)=z³, M=4h⁴ e distanza²=4h².",
+              "Per h>0 il prodotto è positivo, ma il rapporto è h².",
+              "Per h→0 il rapporto tende a zero."
+            ],
+            "expected_outcome": "Non attribuire al rapporto locale una costante di forte convessità globale.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "SceneViewport",
+          "description": "Gradiente z³ con due punti e rettangolo del prodotto; confronto numerico fra M, distanza² e rapporto.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Variare un solo aspetto del confronto mantenendo esplicite le invarianti.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Semidistanza dei punti",
+              "symbol": "h",
+              "origin": "enrichment",
+              "range": "{'min': 0, 'max': 1, 'step': 0.05, 'integer': False}",
+              "default": "0.6",
+              "effect_on_change": "Avvicina entrambi i punti all’origine; cambia prodotto e rapporto. A h=0 il test stretto non si applica e il rapporto non è definito.",
+              "edge_cases": [
+                "h=0",
+                "h piccolo"
+              ]
+            }
+          ],
+          "outputs": [
+            "Distinguere monotonia stretta da un limite quadratico uniforme."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "h=0",
+            "expected_behavior": "Mostrare prodotto zero, rapporto non definito, precisazione sui punti distinti.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          },
+          {
+            "case": "h piccolo",
+            "expected_behavior": "Conservare valori piccoli senza arrotondarli a una falsa uguaglianza zero.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Distinguere monotonia stretta da un limite quadratico uniforme.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1,
+  "source_warning": {
+    "policy_version": "1.0.0",
+    "scope": "companion_only",
+    "type": "INFO_WARNING",
+    "review_status": "resolved",
+    "original_analysis_sha256": "11acdd61de54be6a500c452c5d3fb2fe2ca9fdf7454a62d9bc2638cbaad42409",
+    "issues": [
+      {
+        "issue_id": "opt15-source-review",
+        "source_issue_index": 0,
+        "issue": "Stretta non significa uniformemente curva",
+        "type": "INFO_WARNING",
+        "source_expression": "(\\nabla\\ell(z_A)-\\nabla\\ell(z_B))^\\top(z_A-z_B)>0\\quad\\forall z_A,z_B\\in\\mathbb Z",
+        "corrected_expression": "(\\nabla\\ell(z_A)-\\nabla\\ell(z_B))^\\top(z_A-z_B)>0,\\quad z_A\\ne z_B",
+        "companion_uses": "(\\nabla\\ell(z_A)-\\nabla\\ell(z_B))^\\top(z_A-z_B)>0,\\quad z_A\\ne z_B",
+        "short_warning": "⚠ Nota: confronto stretto per punti distinti. Punti coincidenti: prodotto zero.",
+        "correction_reason": "La definizione iniziale della slide esclude già z_A=z_B. Il successivo for all va letto con la stessa esclusione; con A=B il prodotto è 0. Si precisa il dominio senza cambiare la convenzione del corso.",
+        "use_corrected_value_for_examples": true,
+        "use_corrected_value_for_simulation": true,
+        "resolved": true,
+        "source_references": [
+          "analysis/result/observations"
+        ],
+        "context_pages_consulted": [
+          14,
+          15,
+          16
+        ],
+        "calculation_policy": "SOURCE_LITERAL immutabile; calcoli basati sulla versione companion e sulle ipotesi dichiarate.",
+        "ui": {
+          "show": true,
+          "color": "red",
+          "placement": "Accanto al concetto interessato",
+          "when": "Enunciato o esempio pertinente",
+          "student_text_field": "short_warning"
+        }
+      }
+    ],
+    "companion_overrides": [],
+    "technical_only_legacy_paths": []
   }
 }

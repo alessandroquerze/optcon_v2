@@ -81,12 +81,457 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "0ed4160e1a885d19407327df90ec2a3f8e00d35f6850cd02ec8b1a27a687554b",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0031",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "ee786ef3018a7ff4d25bd1bf853c02a74c3d1e80e79a6027d8939164916aa512",
+        "layout": "29ca4fa58acbbb20b26690ccfeef5173faf7f9ec90b280d34a1fc7fb6df99e57",
+        "render": "839710841033f8f0b2dee593c08584d0fdbfdc1f2d17c83e160a9e9b874b0306"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-d-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0031",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0030",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0032"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0031",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0030",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0032"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0031",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0030",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0032"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Gradient methods: selecting the descent direction",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "algorithm",
+          "description": "L’aggiornamento è z^{k+1}=z^k−γ^kD^k∇ℓ(z^k).",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0031",
+            "modality": "both",
+            "text_quote": "Several gradient methods",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "assumption",
+          "description": "D^k∈R^{d×d} è simmetrica positiva definita.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0031",
+            "modality": "both",
+            "text_quote": "symmetric positive definite matrix",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "equation",
+          "description": "La fonte stampa −∇ℓ(z^k)^T D^k∇ℓ(z^k)<0 e d^k=−D^k∇ℓ(z^k); il gradiente non nullo è nel contesto di pagina 29.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0031",
+            "modality": "both",
+            "text_quote": "a descent direction",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0031",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Capire perché una trasformazione simmetrica positiva definita preserva una pendenza negativa.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0030",
+          "role": "previous",
+          "note": "Leggere il prodotto scalare come pendenza iniziale e classificare direzioni diverse."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0032",
+          "role": "next",
+          "note": "Confrontare identità, inversa della Hessiana e inversa di un’approssimazione positiva definita."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "-\\nabla\\ell(z^k)^T D^k\\nabla\\ell(z^k)<0",
+          "meaning": "La forma quadratica è positiva per ogni gradiente non nullo; il segno meno dà discesa. A gradiente zero il prodotto è zero, non strettamente negativo.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "z^{k+1}=z^k-\\gamma^kD^k\\nabla\\ell(z^k),\\quad k=1,2,\\ldots",
+          "meaning": "Dᵏ cambia la geometria della direzione; γᵏ ne decide la scala effettiva nell’aggiornamento.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "progressive",
+        "related_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0030"
+        ],
+        "added": [
+          "Capire perché una trasformazione simmetrica positiva definita preserva una pendenza negativa."
+        ],
+        "removed": [],
+        "changed": [
+          "Nuova scelta o caratterizzazione della direzione; mantenere una pagina fisica distinta."
+        ],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "structure"
+        ],
+        "rationale": "Progressione concettuale, non duplicato eliminabile."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "Nessuna correzione matematica necessaria dopo confronto con la pagina precedente e successiva.",
+          "Il caso g=0 è un confine didattico aggiunto; la stretta negatività usa g≠0 dal contesto della 29."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Prodotto di discesa",
+            "why": "Serve un prodotto negativo, non una direzione specifica.",
+            "origin": "source_context",
+            "page_numbers": [
+              30
+            ]
+          },
+          {
+            "concept": "Positiva definitezza",
+            "why": "La forma quadratica è positiva per vettori non nulli.",
+            "origin": "source_context",
+            "page_numbers": [
+              9,
+              24
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "-\\nabla\\ell(z^k)^T D^k\\nabla\\ell(z^k)<0",
+            "anchor": "Several gradient methods",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "z^{k+1}=z^k-\\gamma^kD^k\\nabla\\ell(z^k),\\quad k=1,2,\\ldots",
+            "anchor": "Several gradient methods",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "La matrice può ruotare e riscalare il gradiente. Se Dᵏ è simmetrica positiva definita e il gradiente non è nullo, il prodotto resta negativo.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "s=0.5, β=30°, punto (1,0.5)",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Livelli della stessa quadratica, confronto fra gradiente e direzione trasformata; matrice numerica e pendenza con autovalori positivi.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Capire perché una trasformazione simmetrica positiva definita preserva una pendenza negativa.",
+            "setup": "s=0.5, β=30°, punto (1,0.5)",
+            "parameters": [],
+            "derivation": [
+              "Costruire D=R diag(1,0.5) Rᵀ.",
+              "Calcolare d=−D(1,2)ᵀ e gᵀd<0.",
+              "All’origine g=d=0: il confronto stretto non si applica."
+            ],
+            "expected_outcome": "La qualifica g≠0 conserva il contesto, senza introdurre un warning editoriale superfluo.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "SceneViewport",
+          "description": "Livelli della stessa quadratica, confronto fra gradiente e direzione trasformata; matrice numerica e pendenza con autovalori positivi.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Rotazione e autovalore isolano i due effetti di D; il caso nullo verifica l’ipotesi indispensabile.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Secondo autovalore",
+              "symbol": "s",
+              "origin": "enrichment",
+              "range": "{'min': 0.25, 'max': 2, 'step': 0.25, 'integer': False}",
+              "default": "0.5",
+              "effect_on_change": "Cambia la matrice, direzione e pendenza; rotazione, punto corrente e costo restano fissi.",
+              "edge_cases": [
+                "s=1",
+                "Origine",
+                "γ"
+              ]
+            },
+            {
+              "name": "Rotazione della matrice",
+              "symbol": "\\beta",
+              "origin": "enrichment",
+              "range": "{'min': -90, 'max': 90, 'step': 15, 'integer': False}",
+              "default": "30",
+              "effect_on_change": "Ruota gli assi di D senza cambiarne gli autovalori; aggiorna direzione e passo.",
+              "edge_cases": [
+                "s=1",
+                "Origine",
+                "γ"
+              ]
+            },
+            {
+              "name": "Punto corrente",
+              "symbol": "z",
+              "origin": "enrichment",
+              "range": "(1,0.5) / origine",
+              "default": "(1,0.5)",
+              "effect_on_change": "Cambia gradiente e vettori; all’origine sopprime la normalizzazione e mostra prodotto zero.",
+              "edge_cases": [
+                "s=1",
+                "Origine",
+                "γ"
+              ]
+            }
+          ],
+          "outputs": [
+            "Capire perché una trasformazione simmetrica positiva definita preserva una pendenza negativa."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "s=1",
+            "expected_behavior": "D=I indipendentemente da β: nessuna rotazione artificiale del gradiente.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "Origine",
+            "expected_behavior": "d=0, prodotto zero, nessuna divisione per ||d||.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "γ",
+            "expected_behavior": "Il passo è fisso a 0.2 per il laboratorio; non generalizzarne la validità.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Capire perché una trasformazione simmetrica positiva definita preserva una pendenza negativa.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

@@ -1,9 +1,8 @@
 # Optimal Control & Reinforcement Learning
 
-F06 completata: le companion delle pagine **2, 8, 12, 16, 17, 27, 30, 34**
-sono operative, con formule, esempi, controlli e viste 2D/3D secondo F04.1.
-Le altre 28 restano placeholder; F07 **non è iniziata**. Verificati 116/116 test,
-TypeScript, production build e integrità di 969 file protetti.
+Sono operative tutte le **36/36 companion dell’Introduction**, con formule
+spiegate, esempi e viste 2D/3D secondo F04.1. F07 aggiunge le 28 pagine mancanti
+conservando gli otto renderer F06 e tutte le fonti originali.
 
 Da PowerShell:
 
@@ -17,6 +16,7 @@ Playground tecnico: http://127.0.0.1:5173/#/dev
 
 Report e architettura: [F05_APPLICATION_SHELL](Docs/F05_APPLICATION_SHELL.md).
 Vertical slice, screenshot e verifiche: [F06_VERTICAL_SLICE](Docs/F06_VERTICAL_SLICE.md).
+Copertura completa, gate e audit: [F07_COMPLETE_INTRODUCTION](Docs/F07_COMPLETE_INTRODUCTION.md).
 Comandi frontend e punti di estensione: [frontend/README](frontend/README.md).
 
 ## Pipeline e analisi delle fonti
@@ -100,5 +100,5 @@ di sovrascrivere una revisione già estratta con una configurazione diversa.
 Nel corpus: **3 PDF, 137 pagine e 137 richieste**. Le 36 pagine dell'introduzione
 hanno il proprio PAGE_SPEC analizzato; le altre 101 restano `pending`.
 `verify` positivo certifica l'integrità della pipeline, non l'avvenuta analisi semantica.
-Le immagini archiviate sono prodotte con PyMuPDF; il lettore dell'app futura userà
+Le immagini archiviate sono prodotte con PyMuPDF; il lettore dell'app usa
 PDF.js direttamente sui PDF originali, come descritto nell'architettura.

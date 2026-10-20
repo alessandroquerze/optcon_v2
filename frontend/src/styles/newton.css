@@ -1,0 +1,7 @@
+.newton-lesson .opt-choice { min-width:0; }
+.newton-lesson .opt-choice select { text-overflow:ellipsis; }
+.newton-lesson .live-metrics dd { overflow-wrap:anywhere; }
+.newton-lesson .newton-advance { display:flex; gap:14px; align-items:center; margin-top:5px; }
+.newton-lesson .newton-action { display:flex; flex-direction:column; gap:8px; justify-content:center; }
+.newton-lesson .newton-action span,.newton-lesson .newton-advance span { font-size:22px; color:var(--color-muted); }
+.newton-lesson .newton-action button,.newton-lesson .newton-advance button { font-size:22px; padding:4px 12px; width:fit-content; }

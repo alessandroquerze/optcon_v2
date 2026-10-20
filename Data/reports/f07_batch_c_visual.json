@@ -1,0 +1,944 @@
+{
+  "verified_at": "2026-10-17T22:31:07.280Z",
+  "batch": "C",
+  "base_url": "http://127.0.0.1:4173",
+  "browser": "Chrome / SwiftShader",
+  "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+  "pages": [
+    {
+      "page": 20,
+      "mode": "2D_PRIMARY_WITH_3D",
+      "defaultView": "2D",
+      "loadAndReviewMs": 5582,
+      "geometry": {
+        "height": 1280,
+        "scrollHeight": 1280,
+        "blocks": [
+          {
+            "top": 40,
+            "bottom": 110.65625
+          },
+          {
+            "top": 116.65625,
+            "bottom": 320.296875
+          },
+          {
+            "top": 326.296875,
+            "bottom": 627.265625
+          },
+          {
+            "top": 633.265625,
+            "bottom": 787.046875
+          },
+          {
+            "top": 793.046875,
+            "bottom": 1065.921875
+          },
+          {
+            "top": 1195.609375,
+            "bottom": 1240
+          }
+        ],
+        "bottom": 1240,
+        "overlaps": false,
+        "equations": [
+          {
+            "width": 850,
+            "scrollWidth": 850
+          },
+          {
+            "width": 822,
+            "scrollWidth": 822
+          }
+        ],
+        "orphanEquations": 0,
+        "outputs": {
+          "stage-total": "1.2500"
+        },
+        "warnings": [],
+        "alerts": [],
+        "concepts": [
+          "Si somma un costo per ogni transizione e un costo sullo stato finale. Il terminale non richiede un ingresso u_T.",
+          "I pesi cambiano quanto contano stato, ingresso e arrivo. Qui la candidata resta fissa: cambiare il costo non calcola una nuova traiettoria."
+        ]
+      },
+      "alternatives": [
+        {
+          "view": "3D",
+          "height": 1280,
+          "scrollHeight": 1280,
+          "blocks": [
+            {
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "top": 116.65625,
+              "bottom": 320.296875
+            },
+            {
+              "top": 326.296875,
+              "bottom": 710.484375
+            },
+            {
+              "top": 716.484375,
+              "bottom": 870.265625
+            },
+            {
+              "top": 876.265625,
+              "bottom": 1149.140625
+            },
+            {
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "bottom": 1240,
+          "overlaps": false,
+          "equations": [
+            {
+              "width": 850,
+              "scrollWidth": 850
+            },
+            {
+              "width": 822,
+              "scrollWidth": 822
+            }
+          ],
+          "orphanEquations": 0,
+          "outputs": {
+            "stage-total": "1.2500"
+          },
+          "warnings": [],
+          "alerts": [],
+          "concepts": [
+            "Si somma un costo per ogni transizione e un costo sullo stato finale. Il terminale non richiede un ingresso u_T.",
+            "I pesi cambiano quanto contano stato, ingresso e arrivo. Qui la candidata resta fissa: cambiare il costo non calcola una nuova traiettoria."
+          ]
+        }
+      ],
+      "formulas": [
+        {
+          "formulaId": "p20-source-math-0",
+          "latex": "\\ell(x_0,\\mathbf{x},\\mathbf{u})=\\sum_{t=0}^{T-1}\\ell_t(x_t,u_t)+\\ell_T(x_T)",
+          "conceptualExplanation": "Si somma un costo per ogni transizione e un costo sullo stato finale. Il terminale non richiede un ingresso u_T.",
+          "details": "A cosa serve. Separare contributi distribuiti nel tempo e valutazione finale.ℓt\\ell_tℓt​Costo di stadio, dipende da stato e ingresso.ℓT\\ell_TℓT​Costo terminale, dipende solo dallo stato finale."
+        },
+        {
+          "formulaId": "p20-source-math-1",
+          "latex": "\\ell_t:\\mathbb{R}^n\\times\\mathbb{R}^m\\to\\mathbb{R},\\quad\\ell_T:\\mathbb{R}^n\\to\\mathbb{R}",
+          "conceptualExplanation": "Ogni funzione restituisce un numero reale. Lo stadio riceve stato e ingresso, mentre il terminale riceve solo lo stato.",
+          "details": "A cosa serve. Verificare gli argomenti dei due tipi di costo.n,mn,mn,mDimensioni di stato e ingresso.Vale quando. La forma generale non impone positività o quadraticità."
+        },
+        {
+          "formulaId": "p20-source-math-2",
+          "latex": "x_0=x^0,\\qquad\\ell(\\mathbf{x},\\mathbf{u})=\\sum_{t=0}^{T-1}\\ell_t(x_t,u_t)+\\ell_T(x_T)",
+          "conceptualExplanation": "Assegnato x₀, il costo può essere scritto come funzione dei soli stack di decisioni: il dato iniziale resta presente nella valutazione del primo stadio.",
+          "details": "A cosa serve. Capire perché si omette x₀ dagli argomenti liberi del costo.x0x^0x0Dato iniziale fissato."
+        },
+        {
+          "formulaId": "p20-enrichment-0",
+          "latex": "\\ell_t=\\frac12(\\alpha x_t^2+\\beta u_t^2),\\quad\\ell_T=\\frac12\\gamma x_T^2",
+          "conceptualExplanation": "I pesi cambiano quanto contano stato, ingresso e arrivo. Qui la candidata resta fissa: cambiare il costo non calcola una nuova traiettoria.",
+          "details": "A cosa serve. Valutare gli stessi stati e ingressi con criteri diversi.α,β,γ\\alpha,\\beta,\\gammaα,β,γPesi non negativi aggiunti solo in questo esempio.Vale quando. Integratore scalare, T=2: stati (1,0.5,0.5), ingressi (−0.5,0). Tutti i pesi nulli danno costo nullo, senza provare ottimalità della candidata. La terza coordinata è costo: gli assi orizzontali sono pesi, non decisioni dinamiche.α cambia i contributi dello stato nei due stadi e il punto sulla superficie.β cambia il contributo del primo ingresso e il punto sulla superficie.γ cambia il solo costo terminale e trasla la superficie sui pesi."
+        }
+      ],
+      "formulaOverflow": []
+    },
+    {
+      "page": 21,
+      "mode": "2D_PRIMARY_WITH_3D",
+      "defaultView": "2D",
+      "loadAndReviewMs": 2016,
+      "geometry": {
+        "height": 1280,
+        "scrollHeight": 1280,
+        "blocks": [
+          {
+            "top": 40,
+            "bottom": 110.65625
+          },
+          {
+            "top": 116.65625,
+            "bottom": 269.234375
+          },
+          {
+            "top": 275.234375,
+            "bottom": 608.828125
+          },
+          {
+            "top": 614.828125,
+            "bottom": 768.609375
+          },
+          {
+            "top": 774.609375,
+            "bottom": 1002.78125
+          },
+          {
+            "top": 1195.609375,
+            "bottom": 1240
+          }
+        ],
+        "bottom": 1240,
+        "overlaps": false,
+        "equations": [
+          {
+            "width": 850,
+            "scrollWidth": 850
+          }
+        ],
+        "orphanEquations": 0,
+        "outputs": {
+          "endpoint-feasible": "no",
+          "endpoint-input": "0.4000",
+          "endpoint-residual": "-0.2000"
+        },
+        "warnings": [],
+        "alerts": [],
+        "concepts": [
+          "Il vincolo lega inizio e arrivo. Può fissare uno o entrambi gli estremi oppure metterli in relazione: non è necessariamente un semplice target finale."
+        ]
+      },
+      "alternatives": [
+        {
+          "view": "3D",
+          "height": 1280,
+          "scrollHeight": 1280,
+          "blocks": [
+            {
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "top": 116.65625,
+              "bottom": 269.234375
+            },
+            {
+              "top": 275.234375,
+              "bottom": 630.828125
+            },
+            {
+              "top": 636.828125,
+              "bottom": 790.609375
+            },
+            {
+              "top": 796.609375,
+              "bottom": 1024.78125
+            },
+            {
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "bottom": 1240,
+          "overlaps": false,
+          "equations": [
+            {
+              "width": 850,
+              "scrollWidth": 850
+            }
+          ],
+          "orphanEquations": 0,
+          "outputs": {
+            "endpoint-feasible": "no",
+            "endpoint-input": "0.4000",
+            "endpoint-residual": "-0.2000"
+          },
+          "warnings": [],
+          "alerts": [],
+          "concepts": [
+            "Il vincolo lega inizio e arrivo. Può fissare uno o entrambi gli estremi oppure metterli in relazione: non è necessariamente un semplice target finale."
+          ]
+        }
+      ],
+      "formulas": [
+        {
+          "formulaId": "p21-source-math-0",
+          "latex": "r(x_0,x_T)=0",
+          "conceptualExplanation": "Il vincolo lega inizio e arrivo. Può fissare uno o entrambi gli estremi oppure metterli in relazione: non è necessariamente un semplice target finale.",
+          "details": "A cosa serve. Distinguere condizioni agli estremi e vincoli lungo il percorso.rrrFunzione vettoriale di uguaglianza sugli estremi."
+        },
+        {
+          "formulaId": "p21-source-math-1",
+          "latex": "g_t(x_t,u_t)\\leq0,\\quad t=0,\\ldots,T-1",
+          "conceptualExplanation": "Ogni disuguaglianza limita una coppia stato–ingresso durante il percorso. Gli indici arrivano a T−1: non impongono automaticamente un ulteriore vincolo di percorso su x_T.",
+          "details": "A cosa serve. Leggere correttamente dominio temporale e componenti dei vincoli.gtg_tgt​Funzione vettoriale: ogni componente deve essere non positiva."
+        },
+        {
+          "formulaId": "p21-enrichment-0",
+          "latex": "x_{t+1}=x_t+u_t,\\quad r=\\operatorname{col}(x_0,x_2-1),\\quad g_t=\\operatorname{col}(u_t-b,-u_t-b),\\quad x_2\\in[-2b,2b]",
+          "conceptualExplanation": "Con due comandi limitati il massimo spostamento è 2b. Se il target 1 è fuori dall’intervallo raggiungibile, nessuna scelta degli ingressi soddisfa tutti i vincoli.",
+          "details": "A cosa serve. Verificare la compatibilità congiunta di endpoint e limiti.bbbLimite non negativo sul modulo di ogni ingresso.col⁡\\operatorname{col}colImpilamento delle componenti del vincolo.Vale quando. Integratore scalare con x₀=0 e T=2. Nessun indice di costo: il punto mostrato è un testimone o una sonda, non un ottimo. A b=0 il dominio è un solo punto; nessuno spessore geometrico viene aggiunto ai dati.b allarga il box degli ingressi e l’intervallo raggiungibile; a b=0.5 compare la compatibilità."
+        }
+      ],
+      "formulaOverflow": []
+    },
+    {
+      "page": 22,
+      "mode": "2D_PRIMARY_WITH_3D",
+      "defaultView": "2D",
+      "loadAndReviewMs": 1867,
+      "geometry": {
+        "height": 1280,
+        "scrollHeight": 1280,
+        "blocks": [
+          {
+            "top": 40,
+            "bottom": 110.65625
+          },
+          {
+            "top": 116.65625,
+            "bottom": 436.859375
+          },
+          {
+            "top": 442.859375,
+            "bottom": 738.625
+          },
+          {
+            "top": 744.625,
+            "bottom": 898.40625
+          },
+          {
+            "top": 904.40625,
+            "bottom": 1095.078125
+          },
+          {
+            "top": 1195.609375,
+            "bottom": 1240
+          }
+        ],
+        "bottom": 1240,
+        "overlaps": false,
+        "equations": [
+          {
+            "width": 850,
+            "scrollWidth": 850
+          }
+        ],
+        "orphanEquations": 0,
+        "outputs": {
+          "tracking-command": "0.5000",
+          "tracking-cost": "0.2500",
+          "tracking-error": "-0.5000"
+        },
+        "warnings": [
+          "⚠ Nota: negli esempi il riferimento iniziale coincide con x⁰."
+        ],
+        "alerts": [],
+        "concepts": [
+          "Il costo misura scarti dello stato e dell’ingresso rispetto ai loro riferimenti, poi pesa lo scarto finale separatamente. Valutare una candidata non significa ancora minimizzare."
+        ]
+      },
+      "alternatives": [
+        {
+          "view": "3D",
+          "height": 1280,
+          "scrollHeight": 1280,
+          "blocks": [
+            {
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "top": 116.65625,
+              "bottom": 436.859375
+            },
+            {
+              "top": 442.859375,
+              "bottom": 815.640625
+            },
+            {
+              "top": 821.640625,
+              "bottom": 975.421875
+            },
+            {
+              "top": 981.421875,
+              "bottom": 1172.09375
+            },
+            {
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "bottom": 1240,
+          "overlaps": false,
+          "equations": [
+            {
+              "width": 850,
+              "scrollWidth": 850
+            }
+          ],
+          "orphanEquations": 0,
+          "outputs": {
+            "tracking-command": "0.5000",
+            "tracking-cost": "0.2500",
+            "tracking-error": "-0.5000"
+          },
+          "warnings": [
+            "⚠ Nota: negli esempi il riferimento iniziale coincide con x⁰."
+          ],
+          "alerts": [],
+          "concepts": [
+            "Il costo misura scarti dello stato e dell’ingresso rispetto ai loro riferimenti, poi pesa lo scarto finale separatamente. Valutare una candidata non significa ancora minimizzare."
+          ]
+        }
+      ],
+      "formulas": [
+        {
+          "formulaId": "p22-source-math-0",
+          "latex": "\\ell(\\mathbf{x},\\mathbf{u})=\\sum_{t=0}^{T-1}\\left[\\frac12\\|x_t-x_t^{\\mathrm{des}}\\|_Q^2+\\frac12\\|u_t-u_t^{\\mathrm{des}}\\|_R^2\\right]+\\frac12\\|x_T-x_T^{\\mathrm{des}}\\|_{Q_T}^2",
+          "conceptualExplanation": "Il costo misura scarti dello stato e dell’ingresso rispetto ai loro riferimenti, poi pesa lo scarto finale separatamente. Valutare una candidata non significa ancora minimizzare.",
+          "details": "A cosa serve. Comprendere i tre contributi del costo di tracking.Q,R,QTQ,R,Q_TQ,R,QT​Pesi matriciali di stato, ingresso e stato finale.xtdes,utdesx_t^{\\mathrm{des}},u_t^{\\mathrm{des}}xtdes​,utdes​Riferimenti assegnati, non necessariamente compatibili con la dinamica."
+        },
+        {
+          "formulaId": "p22-source-math-1",
+          "latex": "\\frac12\\|x_t-x_t^{\\mathrm{des}}\\|_Q^2=\\frac12(x_t-x_t^{\\mathrm{des}})^\\top Q(x_t-x_t^{\\mathrm{des}})",
+          "conceptualExplanation": "La norma pesata è una forma quadratica: il peso seleziona direzioni e importanza dello scarto. È una penalità non negativa quando il peso è semidefinito positivo.",
+          "details": "A cosa serve. Collegare la notazione compatta al calcolo effettivo.∥v∥Q2\\|v\\|_Q^2∥v∥Q2​Abbreviazione di vᵀQv.Vale quando. Con Q singolare alcune direzioni non sono penalizzate."
+        },
+        {
+          "formulaId": "p22-source-math-4",
+          "latex": "x_0=x^0",
+          "conceptualExplanation": "Lo stato iniziale è assegnato. Il suo eventuale contributo al costo è costante rispetto alle decisioni, ma serve comunque un riferimento iniziale definito.",
+          "details": "A cosa serve. Evitare di trattare il dato iniziale come decisione libera.x0x^0x0Stato iniziale noto."
+        },
+        {
+          "formulaId": "p22-enrichment-0",
+          "latex": "x_0^{\\mathrm{des}}=x^0=0,\\quad Q=0,\\quad T=1",
+          "conceptualExplanation": "L’esempio assegna esplicitamente il riferimento iniziale e non pesa lo stato intermedio. Resta un solo comando, ma qui lo teniamo fissato a 0.5.",
+          "details": "A cosa serve. Definire interamente la candidata prima di calcolarne il costo.T=1T=1T=1Una transizione: x₀=0 e x₁=u₀.Vale quando. Target finale 1, ingresso desiderato 0. Il desiderato (x₁,u₀)=(1,0) è incompatibile con la dinamica. La superficie esplora coppie (u₀,x₁); solo il piano x₁=u₀ rappresenta la dinamica. Con Q_T=0 il costo non dipende da x₁. Nessun ottimo viene dichiarato in questa pagina.R cambia il costo di ingresso; il comando resta 0.5.Q_T cambia il costo terminale; lo stato finale resta 0.5."
+        }
+      ],
+      "formulaOverflow": []
+    },
+    {
+      "page": 23,
+      "mode": "3D_PRIMARY_WITH_2D",
+      "defaultView": "3D",
+      "loadAndReviewMs": 2841,
+      "geometry": {
+        "height": 1280,
+        "scrollHeight": 1280,
+        "blocks": [
+          {
+            "top": 40,
+            "bottom": 110.65625
+          },
+          {
+            "top": 116.65625,
+            "bottom": 362.296875
+          },
+          {
+            "top": 368.296875,
+            "bottom": 752.484375
+          },
+          {
+            "top": 758.484375,
+            "bottom": 912.265625
+          },
+          {
+            "top": 918.265625,
+            "bottom": 1103.546875
+          },
+          {
+            "top": 1195.609375,
+            "bottom": 1240
+          }
+        ],
+        "bottom": 1240,
+        "overlaps": false,
+        "equations": [
+          {
+            "width": 850,
+            "scrollWidth": 850
+          }
+        ],
+        "orphanEquations": 0,
+        "outputs": {
+          "ocp-feasible": "sì",
+          "ocp-input": "0.5000",
+          "ocp-cost": "0.2500"
+        },
+        "warnings": [],
+        "alerts": [],
+        "concepts": [
+          "Si minimizza il costo confrontando soltanto sequenze che rispettano dinamica, estremi e disuguaglianze. Un costo piccolo non compensa un vincolo violato."
+        ]
+      },
+      "alternatives": [
+        {
+          "view": "2D",
+          "height": 1280,
+          "scrollHeight": 1280,
+          "blocks": [
+            {
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "top": 116.65625,
+              "bottom": 362.296875
+            },
+            {
+              "top": 368.296875,
+              "bottom": 732.484375
+            },
+            {
+              "top": 738.484375,
+              "bottom": 892.265625
+            },
+            {
+              "top": 898.265625,
+              "bottom": 1083.546875
+            },
+            {
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "bottom": 1240,
+          "overlaps": false,
+          "equations": [
+            {
+              "width": 850,
+              "scrollWidth": 850
+            }
+          ],
+          "orphanEquations": 0,
+          "outputs": {
+            "ocp-feasible": "sì",
+            "ocp-input": "0.5000",
+            "ocp-cost": "0.2500"
+          },
+          "warnings": [],
+          "alerts": [],
+          "concepts": [
+            "Si minimizza il costo confrontando soltanto sequenze che rispettano dinamica, estremi e disuguaglianze. Un costo piccolo non compensa un vincolo violato."
+          ]
+        }
+      ],
+      "formulas": [
+        {
+          "formulaId": "p23-source-math-0",
+          "latex": "\\begin{aligned}\\min_{\\substack{x_0,x_1,\\ldots,x_T\\\\u_0,\\ldots,u_{T-1}}}\\;&\\sum_{t=0}^{T-1}\\ell_t(x_t,u_t)+\\ell_T(x_T)\\\\\\text{subj.to }&x_{t+1}=f_t(x_t,u_t),\\quad t=0,\\ldots,T-1\\\\&r(x_0,x_T)=0\\\\&g_t(x_t,u_t)\\leq0,\\quad t=0,\\ldots,T-1\\end{aligned}",
+          "conceptualExplanation": "Si minimizza il costo confrontando soltanto sequenze che rispettano dinamica, estremi e disuguaglianze. Un costo piccolo non compensa un vincolo violato.",
+          "details": "A cosa serve. Riunire i tre ingredienti dell’OCP discreto.ftf_tft​Modello della transizione.r,gtr,g_tr,gt​Vincoli agli estremi e lungo il percorso.Vale quando. In questa formulazione anche x₀ è elencato: se va fissato, lo si può imporre tramite r. Non si assume convessità o esistenza di un ottimo nel problema generale."
+        },
+        {
+          "formulaId": "p23-source-math-1",
+          "latex": "\\ell_t:\\mathbb{R}^n\\times\\mathbb{R}^m\\to\\mathbb{R},\\quad\\ell_T:\\mathbb{R}^n\\to\\mathbb{R}",
+          "conceptualExplanation": "Lo stadio valuta stato e ingresso; il terminale valuta soltanto lo stato di arrivo. Le funzioni generali possono essere diverse a ogni passo.",
+          "details": "A cosa serve. Controllare gli argomenti dell’obiettivo completo.ℓt,ℓT\\ell_t,\\ell_Tℓt​,ℓT​Funzioni reali di stadio e terminale."
+        },
+        {
+          "formulaId": "p23-enrichment-0",
+          "latex": "u_0^\\star=u_1^\\star=\\frac{d_{\\mathrm{target}}}{2},\\quad\\ell^\\star=\\frac{d_{\\mathrm{target}}^2}{4}\\quad\\text{if }|d_{\\mathrm{target}}|\\le2b",
+          "conceptualExplanation": "In questo esempio distribuire lo spostamento in parti uguali minimizza la somma dei quadrati. La soluzione esiste solo se ogni metà rispetta il limite b.",
+          "details": "A cosa serve. Risolvere analiticamente una piccola istanza con tutti i vincoli.dtargetd_{\\mathrm{target}}dtarget​Stato finale richiesto dall’esempio.bbbLimite su ciascun ingresso.Vale quando. T=2, xₜ₊₁=xₜ+uₜ, r=col(x₀,x₂−d_target), costo ½(u₀²+u₁²), terminale nullo. Il box con b=0 ammette solo gli ingressi nulli; è compatibile solo col target zero. La formula non è un risolutore generale dell’OCP.Il target muove il piano di endpoint e, se ammissibile, il minimo.b modifica il box ammissibile: se il target esce dal raggiungibile, minimo e costo ottimo non sono definiti."
+        }
+      ],
+      "formulaOverflow": []
+    },
+    {
+      "page": 24,
+      "mode": "2D_PRIMARY_WITH_3D",
+      "defaultView": "2D",
+      "loadAndReviewMs": 1644,
+      "geometry": {
+        "height": 1280,
+        "scrollHeight": 1280,
+        "blocks": [
+          {
+            "top": 40,
+            "bottom": 110.65625
+          },
+          {
+            "top": 116.65625,
+            "bottom": 500.84375
+          },
+          {
+            "top": 506.84375,
+            "bottom": 659.59375
+          },
+          {
+            "top": 665.59375,
+            "bottom": 819.375
+          },
+          {
+            "top": 825.375,
+            "bottom": 1131.8125
+          },
+          {
+            "top": 1163.21875,
+            "bottom": 1240
+          }
+        ],
+        "bottom": 1240,
+        "overlaps": false,
+        "equations": [
+          {
+            "width": 850,
+            "scrollWidth": 850
+          }
+        ],
+        "orphanEquations": 0,
+        "outputs": {
+          "output-final": "2.0000",
+          "output-first-error": "-1.0000"
+        },
+        "warnings": [],
+        "alerts": [],
+        "concepts": [
+          "Il simbolo ≈ esprime un obiettivo di inseguimento, senza assegnare da solo una misura dello scarto, una tolleranza o un algoritmo."
+        ]
+      },
+      "alternatives": [
+        {
+          "view": "3D",
+          "height": 1280,
+          "scrollHeight": 1280,
+          "blocks": [
+            {
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "top": 116.65625,
+              "bottom": 500.84375
+            },
+            {
+              "top": 506.84375,
+              "bottom": 659.59375
+            },
+            {
+              "top": 665.59375,
+              "bottom": 819.375
+            },
+            {
+              "top": 825.375,
+              "bottom": 1131.8125
+            },
+            {
+              "top": 1163.21875,
+              "bottom": 1240
+            }
+          ],
+          "bottom": 1240,
+          "overlaps": false,
+          "equations": [
+            {
+              "width": 850,
+              "scrollWidth": 850
+            }
+          ],
+          "orphanEquations": 0,
+          "outputs": {
+            "output-final": "2.0000",
+            "output-first-error": "-1.0000"
+          },
+          "warnings": [],
+          "alerts": [],
+          "concepts": [
+            "Il simbolo ≈ esprime un obiettivo di inseguimento, senza assegnare da solo una misura dello scarto, una tolleranza o un algoritmo."
+          ]
+        }
+      ],
+      "formulas": [
+        {
+          "formulaId": "p24-source-math-0",
+          "latex": "x_{t+1}=f_t(x_t,u_t),\\quad t\\in\\mathbb{N}_0",
+          "conceptualExplanation": "Gli ingressi generano stati successivi secondo il modello: una curva desiderata non può sostituire queste transizioni.",
+          "details": "A cosa serve. Separare generazione dinamica e disegno del riferimento.ftf_tft​Mappa di evoluzione discreta."
+        },
+        {
+          "formulaId": "p24-source-math-1",
+          "latex": "y_t=h_t(x_t,u_t),\\quad t\\in\\mathbb{N}_0",
+          "conceptualExplanation": "L’uscita è ciò che si vuole osservare o seguire. Può dipendere sia dallo stato sia dall’ingresso e non coincide necessariamente con tutto lo stato.",
+          "details": "A cosa serve. Distinguere uscita da stato nel task di tracking.hth_tht​Mappa di uscita.yty_tyt​Variabile osservata al passo t."
+        },
+        {
+          "formulaId": "p24-source-math-2",
+          "latex": "y_t\\approx y_t^{\\mathrm{des}},\\quad t\\in\\mathbb{N}_0",
+          "conceptualExplanation": "Il simbolo ≈ esprime un obiettivo di inseguimento, senza assegnare da solo una misura dello scarto, una tolleranza o un algoritmo.",
+          "details": "A cosa serve. Capire perché servono un criterio e i vincoli del modello.ytdesy_t^{\\mathrm{des}}ytdes​Uscita desiderata."
+        },
+        {
+          "formulaId": "p24-example",
+          "latex": "x_{t+1}=x_t+u_t,\\quad y_t=x_t,\\quad e_t=y_t-y_t^{\\mathrm{des}}",
+          "conceptualExplanation": "Il comando costante c produce le uscite (0,c,2c), mentre il desiderato è (0,2,2). Nessun c consentito realizza il salto al primo passo: lo scarto lo rende visibile.",
+          "details": "A cosa serve. Confrontare campioni realizzabili e desiderati sullo stesso tempo.ete_tet​Errore firmato aggiunto nell’esempio.cccIngresso costante tra 0 e 1.Vale quando. Dati discreti: i segmenti eventualmente mostrati sono solo guide. Il terzo asse (errore) è un embedding, non una coordinata spaziale. La candidata è ammissibile al limite |u|≤1, senza ottimalità dichiarata.c aggiorna entrambi gli ingressi, le uscite e gli errori; il desiderato rimane fisso."
+        }
+      ],
+      "formulaOverflow": []
+    },
+    {
+      "page": 25,
+      "mode": "2D_AND_3D_EQUAL",
+      "defaultView": "2D",
+      "loadAndReviewMs": 1775,
+      "geometry": {
+        "height": 1280,
+        "scrollHeight": 1280,
+        "blocks": [
+          {
+            "top": 40,
+            "bottom": 110.65625
+          },
+          {
+            "top": 116.65625,
+            "bottom": 296.375
+          },
+          {
+            "top": 302.375,
+            "bottom": 656.5625
+          },
+          {
+            "top": 662.5625,
+            "bottom": 842.125
+          },
+          {
+            "top": 848.125,
+            "bottom": 1095.984375
+          },
+          {
+            "top": 1195.609375,
+            "bottom": 1240
+          }
+        ],
+        "bottom": 1240,
+        "overlaps": false,
+        "equations": [
+          {
+            "width": 850,
+            "scrollWidth": 850
+          }
+        ],
+        "orphanEquations": 0,
+        "outputs": {
+          "tracking-command": "0.5000",
+          "tracking-cost": "0.2500",
+          "tracking-error": "-0.5000"
+        },
+        "warnings": [],
+        "alerts": [],
+        "concepts": [
+          "La soluzione bilancia lo sforzo e lo scarto finale. A differenza di p22, cambiando i pesi cambia anche il comando ottimo, non soltanto il suo costo."
+        ]
+      },
+      "alternatives": [
+        {
+          "view": "3D",
+          "height": 1280,
+          "scrollHeight": 1280,
+          "blocks": [
+            {
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "top": 116.65625,
+              "bottom": 296.375
+            },
+            {
+              "top": 302.375,
+              "bottom": 686.5625
+            },
+            {
+              "top": 692.5625,
+              "bottom": 872.125
+            },
+            {
+              "top": 878.125,
+              "bottom": 1125.984375
+            },
+            {
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "bottom": 1240,
+          "overlaps": false,
+          "equations": [
+            {
+              "width": 850,
+              "scrollWidth": 850
+            }
+          ],
+          "orphanEquations": 0,
+          "outputs": {
+            "tracking-command": "0.5000",
+            "tracking-cost": "0.2500",
+            "tracking-error": "-0.5000"
+          },
+          "warnings": [],
+          "alerts": [],
+          "concepts": [
+            "La soluzione bilancia lo sforzo e lo scarto finale. A differenza di p22, cambiando i pesi cambia anche il comando ottimo, non soltanto il suo costo."
+          ]
+        }
+      ],
+      "formulas": [
+        {
+          "formulaId": "p25-source-math-0",
+          "latex": "\\begin{aligned}\\min_{\\mathbf{x}\\in\\mathbb{R}^{nT},\\mathbf{u}\\in\\mathbb{R}^{mT}}\\;&\\sum_{t=0}^{T-1}\\left[\\frac12\\|x_t-x_t^{\\mathrm{des}}\\|_Q^2+\\frac12\\|u_t-u_t^{\\mathrm{des}}\\|_R^2\\right]+\\frac12\\|x_T-x_T^{\\mathrm{des}}\\|_{Q_T}^2\\\\\\text{subj.to }&x_{t+1}=f_t(x_t,u_t),\\quad t=0,\\ldots,T-1\\\\&x_0=x^0\\end{aligned}",
+          "conceptualExplanation": "Ora stati e ingressi sono scelti minimizzando il tracking, sotto la dinamica e con partenza assegnata. Il desiderato può restare irrealizzabile: l’ottimo cerca un compromesso.",
+          "details": "A cosa serve. Passare dalla valutazione di p22 alla scelta di una candidata.x,u\\mathbf x,\\mathbf ux,uStack delle decisioni: x₁,…,x_T e u₀,…,u_T₋₁.Q,R,QTQ,R,Q_TQ,R,QT​Pesi degli scarti.Vale quando. Le formule generali non autorizzano a presumere unicità per modelli non lineari."
+        },
+        {
+          "formulaId": "p25-source-math-1",
+          "latex": "y_t^{\\mathrm{des}}=h_t(x_t^{\\mathrm{des}},u_t^{\\mathrm{des}}),\\quad t\\in\\mathbb{N}_0",
+          "conceptualExplanation": "Il riferimento d’uscita è espresso tramite riferimenti di stato e ingresso. Questa relazione non dimostra che tali riferimenti esistano in modo unico o rispettino la dinamica.",
+          "details": "A cosa serve. Separare compatibilità con la mappa di uscita e fattibilità dinamica.hth_tht​Mappa di uscita del modello."
+        },
+        {
+          "formulaId": "p25-enrichment-0",
+          "latex": "\\ell(u_0)=\\frac12Ru_0^2+\\frac12Q_T(u_0-a)^2,\\quad u_0^\\star=\\frac{Q_Ta}{R+Q_T}",
+          "conceptualExplanation": "La soluzione bilancia lo sforzo e lo scarto finale. A differenza di p22, cambiando i pesi cambia anche il comando ottimo, non soltanto il suo costo.",
+          "details": "A cosa serve. Calcolare un compromesso ottimo esatto nel solo esempio scalare.R>0,QT≥0R>0,Q_T\\ge0R>0,QT​≥0Pesi dell’esempio.aaaTarget finale assegnato.Vale quando. T=1, x₀=x₀des=0, x₁=u₀, u₀des=0, Q=0. R>0 rende positivo il denominatore in questa istanza. La finestra grafica non aggiunge vincoli all’OCP.R aumenta il costo dello sforzo e richiama il comando ottimo verso zero.Q_T cambia il peso finale; a zero il comando ottimo è zero.a sposta il target, la superficie e il minimo lungo x₁=u₀."
+        }
+      ],
+      "formulaOverflow": []
+    },
+    {
+      "page": 26,
+      "mode": "2D_PRIMARY_WITH_3D",
+      "defaultView": "2D",
+      "loadAndReviewMs": 2112,
+      "geometry": {
+        "height": 1280,
+        "scrollHeight": 1280,
+        "blocks": [
+          {
+            "top": 40,
+            "bottom": 110.65625
+          },
+          {
+            "top": 116.65625,
+            "bottom": 353.828125
+          },
+          {
+            "top": 359.828125,
+            "bottom": 750.609375
+          },
+          {
+            "top": 756.609375,
+            "bottom": 910.390625
+          },
+          {
+            "top": 916.390625,
+            "bottom": 1135.65625
+          },
+          {
+            "top": 1195.609375,
+            "bottom": 1240
+          }
+        ],
+        "bottom": 1240,
+        "overlaps": false,
+        "equations": [
+          {
+            "width": 850,
+            "scrollWidth": 850
+          }
+        ],
+        "orphanEquations": 0,
+        "outputs": {
+          "drone-ax": "0.0000",
+          "drone-ay": "0.0000",
+          "drone-angular": "0.0000"
+        },
+        "warnings": [
+          "⚠ Nota: il modello usato qui è planare, in due dimensioni."
+        ],
+        "alerts": [],
+        "concepts": [
+          "La componente verticale della spinta deve compensare la gravità. La sola accelerazione verticale nulla non basta per dichiarare hover."
+        ]
+      },
+      "alternatives": [
+        {
+          "view": "3D",
+          "height": 1280,
+          "scrollHeight": 1280,
+          "blocks": [
+            {
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "top": 116.65625,
+              "bottom": 353.828125
+            },
+            {
+              "top": 359.828125,
+              "bottom": 772.609375
+            },
+            {
+              "top": 778.609375,
+              "bottom": 932.390625
+            },
+            {
+              "top": 938.390625,
+              "bottom": 1157.65625
+            },
+            {
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "bottom": 1240,
+          "overlaps": false,
+          "equations": [
+            {
+              "width": 850,
+              "scrollWidth": 850
+            }
+          ],
+          "orphanEquations": 0,
+          "outputs": {
+            "drone-ax": "0.0000",
+            "drone-ay": "0.0000",
+            "drone-angular": "0.0000"
+          },
+          "warnings": [
+            "⚠ Nota: il modello usato qui è planare, in due dimensioni."
+          ],
+          "alerts": [],
+          "concepts": [
+            "La componente verticale della spinta deve compensare la gravità. La sola accelerazione verticale nulla non basta per dichiarare hover."
+          ]
+        }
+      ],
+      "formulas": [
+        {
+          "formulaId": "p26-source-math-0",
+          "latex": "\\ddot p_x=-\\frac{u_1+u_2}{M}\\sin\\theta",
+          "conceptualExplanation": "La spinta totale inclinata produce accelerazione orizzontale. Con angolo zero la componente orizzontale è nulla; un angolo positivo dà accelerazione negativa nel verso p_x.",
+          "details": "A cosa serve. Collegare inclinazione e componente orizzontale della spinta.MMMMassa nel modello.θ\\thetaθAngolo del modello.u1,u2u_1,u_2u1​,u2​Ingressi di spinta.θ ruota il vettore di spinta e aggiorna l’intera superficie di accelerazione verticale."
+        },
+        {
+          "formulaId": "p26-source-math-1",
+          "latex": "\\ddot p_y=\\frac{u_1+u_2}{M}\\cos\\theta-g",
+          "conceptualExplanation": "La componente verticale della spinta deve compensare la gravità. La sola accelerazione verticale nulla non basta per dichiarare hover.",
+          "details": "A cosa serve. Valutare il bilancio verticale nell’istante corrente.gggAccelerazione di gravità.Vale quando. M=1 kg, g=9.81 m/s² aggiunti. Il terzo asse della vista è accelerazione verticale, non p_z.u₁ muove il punto sulla superficie e cambia somma e differenza degli ingressi.u₂ muove il punto e cambia somma e differenza: la coppia angolare varia con segno opposto a u₁."
+        },
+        {
+          "formulaId": "p26-source-math-2",
+          "latex": "\\ddot\\theta=\\frac{L}{2J}(u_1-u_2)",
+          "conceptualExplanation": "Ingressi uguali annullano l’accelerazione angolare; una differenza produce una rotazione. Non è una legge di velocità angolare né una prova di stabilità.",
+          "details": "A cosa serve. Distinguere il ruolo della differenza da quello della somma degli ingressi.L,JL,JL,JBraccio complessivo e momento d’inerzia nell’interpretazione aggiunta.Vale quando. L=0.4 m e J=0.02 kg m². Si calcola un’istantanea: nessuna integrazione temporale."
+        },
+        {
+          "formulaId": "p26-source-math-3",
+          "latex": "y_t=\\begin{bmatrix}p_{x,t}\\\\p_{y,t}\\end{bmatrix},\\quad t\\in\\mathbb{N}_0",
+          "conceptualExplanation": "L’uscita raccoglie le due posizioni nel piano. La visualizzazione 3D degli ingressi e dell’accelerazione non aggiunge una posizione fuori piano al drone.",
+          "details": "A cosa serve. Delimitare l’ambito fisico del modello planare.px,t,py,tp_{x,t},p_{y,t}px,t​,py,t​Coordinate planari del centro del drone.Vale quando. Il modello continuo sarà discretizzato nella pagina successiva."
+        }
+      ],
+      "formulaOverflow": []
+    }
+  ],
+  "errors": [],
+  "failed_requests": [],
+  "success": true
+}

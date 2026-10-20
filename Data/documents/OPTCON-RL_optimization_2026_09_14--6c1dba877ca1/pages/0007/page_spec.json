@@ -81,12 +81,383 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "90c9ec2753d0a76219330ca542c31658db35254df3250e0c8650af3f82d7ae2a",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0007",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "47fbce10a4379649945098ea87d074c6ad04cc0a319e6f40ca88651c9a31433b",
+        "layout": "016b2a7c41edb4576f3d711790b683088c5b6cba9939be19367c246caa6d944d",
+        "render": "1a907af42e303e0876557564cc09806e26bd44bd2ae6162836bd8e10d0c7439a"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-a-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0007",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0006",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0008"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0007",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0006",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0008"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0007",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0006",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0008"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Remarks on notation: gradient of a vector-valued function",
+      "observations": [
+        {
+          "id": "s01",
+          "category": "equation",
+          "description": "Per r:R^d→R^m, il corso definisce ∇r(z)=[∇r₁(z) … ∇r_m(z)]∈R^{d×m}.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0007",
+            "modality": "both",
+            "text_quote": "For a vector field r : Rd →Rm",
+            "bbox": [
+              20,
+              28,
+              443.5429992675781,
+              241.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "s02",
+          "category": "concept",
+          "description": "Questa matrice è la trasposta del Jacobiano di r.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0007",
+            "modality": "both",
+            "text_quote": "transpose of the Jacobian",
+            "bbox": [
+              20,
+              28,
+              443.5429992675781,
+              241.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, disposizione e crediti/footer letti visivamente; nessun dato numerico dedotto dagli elementi decorativi.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0007",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Conservare la convenzione d×m per una funzione a valori vettoriali.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0006",
+          "role": "previous",
+          "note": "Leggere forma e significato delle derivate prime e seconde di un costo scalare."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0008",
+          "role": "next",
+          "note": "Interpretare le condizioni necessarie senza invertirne l’implicazione."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\nabla r(z)=[\\nabla r_1(z)\\ \\cdots\\ \\nabla r_m(z)]\\in\\mathbb R^{d\\times m}",
+          "meaning": "Le colonne seguono le componenti in uscita; le righe seguono le variabili di ingresso. La forma della matrice è parte della convenzione del corso.",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "s01",
+          "s02",
+          "structure"
+        ],
+        "rationale": "Contenuto distinto dalle vicine: non eliminare o accorpare la pagina."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo o spazio della copertina.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Tutto il contenuto, incluse formule, grafici, affiliazione e remark quando presenti.",
+            "observation_ids": [
+              "s01",
+              "s02",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer e decorazione, o spazio bianco finale.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "La fonte sceglie esplicitamente la trasposta del Jacobiano: non è un errore da correggere.",
+          "L’esempio d=2,m=3 serve a rendere visibile l’orientamento rettangolare."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Gradiente scalare colonna",
+            "why": "Ogni colonna della nuova matrice è il gradiente di una componente.",
+            "origin": "source_context",
+            "page_numbers": [
+              6
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\nabla r(z)=[\\nabla r_1(z)\\ \\cdots\\ \\nabla r_m(z)]\\in\\mathbb R^{d\\times m}",
+            "anchor": "For a vector field r : Rd →Rm",
+            "notes": "Trascrizione della fonte; le forme equivalenti aggiunte sono enrichment."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Ogni componente rⱼ ha un gradiente colonna. Affiancando queste colonne si ottiene la matrice d×m del corso, trasposta rispetto al Jacobiano usuale m×d.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Due matrici numeriche affiancate con righe/colonne etichettate e selezione collegata di celle trasposte.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "z=(1,0.5), d=2, m=3",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli dichiarati nel piano: Due matrici numeriche affiancate con righe/colonne etichettate e selezione collegata di celle trasposte.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Conservare la convenzione d×m per una funzione a valori vettoriali.",
+            "setup": "z=(1,0.5), d=2, m=3",
+            "parameters": [],
+            "derivation": [
+              "∇r=[[2,0.5,0],[1,1,2]], forma 2×3.",
+              "J_r=[[2,1],[0.5,1],[0,2]], forma 3×2.",
+              "Per m=1 si ritrova la colonna del gradiente scalare."
+            ],
+            "expected_outcome": "Stessa informazione, orientamento diverso.",
+            "limitations": [
+              "La fonte sceglie esplicitamente la trasposta del Jacobiano: non è un errore da correggere.",
+              "L’esempio d=2,m=3 serve a rendere visibile l’orientamento rettangolare."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "MatrixVisualizer",
+          "description": "Due matrici numeriche affiancate con righe/colonne etichettate e selezione collegata di celle trasposte.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "s01",
+            "s02",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "L’effetto parametrico isola il concetto della pagina.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Prima coordinata",
+              "symbol": "z_1",
+              "origin": "enrichment",
+              "range": "{'min': -2, 'max': 2, 'step': 0.1, 'integer': False}",
+              "default": "1",
+              "effect_on_change": "Aggiorna ∂r₁/∂z₁ e ∂r₂/∂z₂, mantenendo la corrispondenza trasposta.",
+              "edge_cases": [
+                "d=m",
+                "Derivata zero"
+              ]
+            },
+            {
+              "name": "Seconda coordinata",
+              "symbol": "z_2",
+              "origin": "enrichment",
+              "range": "{'min': -2, 'max': 2, 'step': 0.1, 'integer': False}",
+              "default": "0.5",
+              "effect_on_change": "Aggiorna ∂r₂/∂z₁ nella matrice del corso e nella sua trasposta.",
+              "edge_cases": [
+                "d=m",
+                "Derivata zero"
+              ]
+            },
+            {
+              "name": "Cella selezionata",
+              "symbol": "(i,j)",
+              "origin": "enrichment",
+              "range": "i=1,2; j=1,2,3",
+              "default": "(1,2)",
+              "effect_on_change": "Evidenzia la derivata (i,j) nel gradiente del corso e (j,i) nel Jacobiano; i valori matematici restano invariati.",
+              "edge_cases": [
+                "d=m",
+                "Derivata zero"
+              ]
+            }
+          ],
+          "outputs": [
+            "Conservare la convenzione d×m per una funzione a valori vettoriali."
+          ],
+          "invariants": [
+            "La fonte sceglie esplicitamente la trasposta del Jacobiano: non è un errore da correggere.",
+            "L’esempio d=2,m=3 serve a rendere visibile l’orientamento rettangolare."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "d=m",
+            "expected_behavior": "Una matrice quadrata può mascherare l’errore di trasposizione: usare d≠m nell’esempio.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "structure"
+            ]
+          },
+          {
+            "case": "Derivata zero",
+            "expected_behavior": "Conservare lo zero e la posizione: non eliminare righe o colonne.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un focus principale, una figura e dettagli su richiesta consentono una singola companion leggibile; nessuna riduzione tipografica.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Conservare la convenzione d×m per una funzione a valori vettoriali.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "visual",
+              "example",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un focus principale, una figura e dettagli su richiesta consentono una singola companion leggibile; nessuna riduzione tipografica.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

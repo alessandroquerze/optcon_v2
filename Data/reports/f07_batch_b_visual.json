@@ -1,0 +1,758 @@
+{
+  "verified_at": "2026-10-17T22:17:19.334Z",
+  "batch": "B",
+  "base_url": "http://127.0.0.1:4173",
+  "browser": "Chrome / SwiftShader",
+  "pdf_sha256": "ae169f3492dc0915d0777d62e90184107d7017aee03b8620bbfe0aee9bd3a469",
+  "pages": [
+    {
+      "page": 10,
+      "mode": "2D_ONLY",
+      "defaultView": "2D",
+      "loadAndReviewMs": 2904,
+      "geometry": {
+        "height": 1280,
+        "scrollHeight": 1280,
+        "blocks": [
+          {
+            "top": 40,
+            "bottom": 110.65625
+          },
+          {
+            "top": 116.65625,
+            "bottom": 270.234375
+          },
+          {
+            "top": 276.234375,
+            "bottom": 530.5
+          },
+          {
+            "top": 536.5,
+            "bottom": 716.0625
+          },
+          {
+            "top": 722.0625,
+            "bottom": 955.828125
+          },
+          {
+            "top": 1193.203125,
+            "bottom": 1240
+          }
+        ],
+        "bottom": 1240,
+        "overlaps": false,
+        "equations": [
+          {
+            "width": 850,
+            "scrollWidth": 850
+          },
+          {
+            "width": 850,
+            "scrollWidth": 850
+          },
+          {
+            "width": 822,
+            "scrollWidth": 822
+          }
+        ],
+        "orphanEquations": 0,
+        "outputs": {
+          "horizon-nodes": "4",
+          "horizon-states": "3",
+          "horizon-inputs": "3"
+        },
+        "warnings": [],
+        "alerts": [],
+        "concepts": [
+          "Gli stack raccolgono verticalmente le decisioni: gli stati partono da x₁, gli ingressi da u₀. Il dato x₀ rimane fuori dallo stack degli stati.",
+          "Ogni stato previsto porta n componenti e ogni ingresso m: la dimensione degli stack cresce quindi con l’orizzonte.",
+          "Ogni ingresso aggiunge il proprio incremento allo stato precedente. Qui i tre comandi producono quattro stati contando la partenza."
+        ]
+      },
+      "alternatives": [],
+      "formulas": [
+        {
+          "formulaId": "p10-source-math-0",
+          "latex": "x_{t+1}=f_t(x_t,u_t),\\quad x_0=x^0,\\quad t=0,\\ldots,T-1\\tag{1}",
+          "conceptualExplanation": "L’orizzonte T conta le transizioni, non i nodi: ogni comando porta a un nuovo stato e lo stato iniziale è già assegnato.",
+          "details": "A cosa serve. Contare correttamente stati e ingressi su un intervallo finito.TTTNumero intero positivo di transizioni.x0x^0x0Dato iniziale, non decisione libera.T aggiunge o rimuove transizioni nell’ispettore; non cambia l’esempio scalare fisso."
+        },
+        {
+          "formulaId": "p10-source-math-1",
+          "latex": "\\mathbf{x}\\in\\mathbb{R}^{nT},\\quad \\mathbf{u}\\in\\mathbb{R}^{mT}",
+          "conceptualExplanation": "Ogni stato previsto porta n componenti e ogni ingresso m: la dimensione degli stack cresce quindi con l’orizzonte.",
+          "details": "A cosa serve. Determinare quante variabili contengono le due sequenze impilate.n,mn,mn,mDimensioni di stato e ingresso.x,u\\mathbf x,\\mathbf ux,uStack degli stati previsti e degli ingressi.n cambia la dimensione di ogni stato e quindi nT, non il numero di nodi.m cambia la dimensione di ciascun comando e quindi mT, non il numero di transizioni."
+        },
+        {
+          "formulaId": "p10-source-math-2",
+          "latex": "\\mathbf{x}:=\\operatorname{col}(x_1,\\ldots,x_T),\\qquad\\mathbf{u}:=\\operatorname{col}(u_0,\\ldots,u_{T-1})",
+          "conceptualExplanation": "Gli stack raccolgono verticalmente le decisioni: gli stati partono da x₁, gli ingressi da u₀. Il dato x₀ rimane fuori dallo stack degli stati.",
+          "details": "A cosa serve. Associare la notazione compatta alla timeline.col⁡\\operatorname{col}colConcatenazione in un unico vettore colonna."
+        },
+        {
+          "formulaId": "p10-example",
+          "latex": "x_{t+1}=x_t+u_t,\\quad\\mathbf u=\\operatorname{col}(0.5,-0.25,0)",
+          "conceptualExplanation": "Ogni ingresso aggiunge il proprio incremento allo stato precedente. Qui i tre comandi producono quattro stati contando la partenza.",
+          "details": "A cosa serve. Verificare gli indici con una successione numerica distinta dall’ispettore simbolico.x0=1x_0=1x0​=1Partenza dell’esempio fisso con n=m=1 e T=3.Vale quando. Questo esempio rimane fisso quando si cambiano T, n e m dell’ispettore."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "mode": "2D_AND_3D_EQUAL",
+      "defaultView": "2D",
+      "loadAndReviewMs": 2343,
+      "geometry": {
+        "height": 1280,
+        "scrollHeight": 1280,
+        "blocks": [
+          {
+            "top": 40,
+            "bottom": 110.65625
+          },
+          {
+            "top": 116.65625,
+            "bottom": 269.234375
+          },
+          {
+            "top": 275.234375,
+            "bottom": 630.828125
+          },
+          {
+            "top": 636.828125,
+            "bottom": 790.609375
+          },
+          {
+            "top": 796.609375,
+            "bottom": 1065.65625
+          },
+          {
+            "top": 1195.609375,
+            "bottom": 1240
+          }
+        ],
+        "bottom": 1240,
+        "overlaps": false,
+        "equations": [
+          {
+            "width": 850,
+            "scrollWidth": 850
+          }
+        ],
+        "orphanEquations": 0,
+        "outputs": {
+          "equilibrium-prediction": "2.0000",
+          "equilibrium-residual": "0.0000",
+          "equilibrium-valid": "sì"
+        },
+        "warnings": [],
+        "alerts": [],
+        "concepts": [
+          "Il modello deve restituire lo stesso stato da cui parte: così la coppia può rimanere costante. Questo non dimostra stabilità o ottimalità."
+        ]
+      },
+      "alternatives": [
+        {
+          "view": "3D",
+          "height": 1280,
+          "scrollHeight": 1280,
+          "blocks": [
+            {
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "top": 116.65625,
+              "bottom": 269.234375
+            },
+            {
+              "top": 275.234375,
+              "bottom": 630.828125
+            },
+            {
+              "top": 636.828125,
+              "bottom": 790.609375
+            },
+            {
+              "top": 796.609375,
+              "bottom": 1065.65625
+            },
+            {
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "bottom": 1240,
+          "overlaps": false,
+          "equations": [
+            {
+              "width": 850,
+              "scrollWidth": 850
+            }
+          ],
+          "orphanEquations": 0,
+          "outputs": {
+            "equilibrium-prediction": "2.0000",
+            "equilibrium-residual": "0.0000",
+            "equilibrium-valid": "sì"
+          },
+          "warnings": [],
+          "alerts": [],
+          "concepts": [
+            "Il modello deve restituire lo stesso stato da cui parte: così la coppia può rimanere costante. Questo non dimostra stabilità o ottimalità."
+          ]
+        }
+      ],
+      "formulas": [
+        {
+          "formulaId": "p11-source-math-0",
+          "latex": "(\\bar{\\mathbf{x}},\\bar{\\mathbf{u}})\\in\\mathbb{R}^{nT}\\times\\mathbb{R}^{mT},\\qquad\\bar{x}_{t+1}=f_t(\\bar{x}_t,\\bar{u}_t),\\quad t=0,\\ldots,T-1",
+          "conceptualExplanation": "Una sequenza è una traiettoria soltanto se ogni stato è quello prodotto dall’aggiornamento precedente. La barra indica la sequenza scelta, senza dichiararla ottima.",
+          "details": "A cosa serve. Distinguere una lista arbitraria di stati da un’evoluzione compatibile con il modello.xˉ,uˉ\\bar{\\mathbf x},\\bar{\\mathbf u}xˉ,uˉCoppia di sequenze impilate.ftf_tft​Mappa dinamica della transizione t."
+        },
+        {
+          "formulaId": "p11-source-math-1",
+          "latex": "(x_e,u_e)\\in\\mathbb{R}^n\\times\\mathbb{R}^m,\\qquad(x_t,u_t)=(x_e,u_e),\\quad t\\in\\mathbb{N}_0",
+          "conceptualExplanation": "Un equilibrio ripete sempre la stessa coppia stato–ingresso. Per mantenerlo occorre partire proprio da quello stato e applicare l’ingresso corrispondente.",
+          "details": "A cosa serve. Riconoscere la traiettoria costante come caso particolare.xe,uex_e,u_exe​,ue​Stato e ingresso costanti di equilibrio."
+        },
+        {
+          "formulaId": "p11-source-math-2",
+          "latex": "x_e=f(x_e,u_e)",
+          "conceptualExplanation": "Il modello deve restituire lo stesso stato da cui parte: così la coppia può rimanere costante. Questo non dimostra stabilità o ottimalità.",
+          "details": "A cosa serve. Verificare una coppia di equilibrio per una dinamica time-invariant.fffMappa senza dipendenza esplicita dall’indice temporale.Vale quando. Per mappe time-varying la stessa coppia deve soddisfare tutte le fₜ."
+        },
+        {
+          "formulaId": "p11-enrichment-0",
+          "latex": "f(x,u)=0.5x+u,\\quad x_e-f(x_e,u_e)=0.5x_e-u_e",
+          "conceptualExplanation": "Il residuo confronta lo stato candidato con quello previsto: zero significa equilibrio. La linea uₑ=0.5xₑ raccoglie tutte le coppie compatibili di questo esempio.",
+          "details": "A cosa serve. Misurare quanto una coppia viola la condizione di stato costante.re=xe−f(xe,ue)r_e=x_e-f(x_e,u_e)re​=xe​−f(xe​,ue​)Residuo firmato, in unità di stato.Vale quando. La traiettoria da x₀=0 con u=1 è un confronto fisso, diverso dal candidato corrente.xₑ muove il candidato e cambia il residuo; non forza la coppia sulla linea di equilibrio.uₑ cambia lo stato previsto e il residuo, mantenendo fisso xₑ."
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "mode": "2D_ONLY",
+      "defaultView": "2D",
+      "loadAndReviewMs": 597,
+      "geometry": {
+        "height": 1280,
+        "scrollHeight": 1280,
+        "blocks": [
+          {
+            "top": 40,
+            "bottom": 110.65625
+          },
+          {
+            "top": 116.65625,
+            "bottom": 183.84375
+          },
+          {
+            "top": 189.84375,
+            "bottom": 614.1875
+          },
+          {
+            "top": 620.1875,
+            "bottom": 801.359375
+          },
+          {
+            "top": 1195.609375,
+            "bottom": 1240
+          }
+        ],
+        "bottom": 1240,
+        "overlaps": false,
+        "equations": [],
+        "orphanEquations": 0,
+        "outputs": {},
+        "warnings": [],
+        "alerts": [],
+        "concepts": []
+      },
+      "alternatives": [],
+      "formulas": []
+    },
+    {
+      "page": 14,
+      "mode": "2D_AND_3D_EQUAL",
+      "defaultView": "2D",
+      "loadAndReviewMs": 1815,
+      "geometry": {
+        "height": 1280,
+        "scrollHeight": 1280,
+        "blocks": [
+          {
+            "top": 40,
+            "bottom": 110.65625
+          },
+          {
+            "top": 116.65625,
+            "bottom": 500.84375
+          },
+          {
+            "top": 506.84375,
+            "bottom": 692.1875
+          },
+          {
+            "top": 698.1875,
+            "bottom": 851.96875
+          },
+          {
+            "top": 857.96875,
+            "bottom": 1138.828125
+          },
+          {
+            "top": 1195.609375,
+            "bottom": 1240
+          }
+        ],
+        "bottom": 1240,
+        "overlaps": false,
+        "equations": [
+          {
+            "width": 850,
+            "scrollWidth": 850
+          },
+          {
+            "width": 822,
+            "scrollWidth": 822
+          }
+        ],
+        "orphanEquations": 0,
+        "outputs": {
+          "decision-cost": "0.25",
+          "decision-residuals": "0.00, -0.50",
+          "decision-feasible": "sì"
+        },
+        "warnings": [
+          "⚠ Nota: d e n indicano qui la stessa dimensione."
+        ],
+        "alerts": [],
+        "concepts": [
+          "Il costo confronta le decisioni; uguaglianze e disequazioni selezionano quelle ammesse. Un costo piccolo non rende ammissibile un punto che viola un vincolo.",
+          "Il costo cresce lontano dall’origine; la retta richiede somma uno e la disequazione esclude z₁ negativi. I controlli possono lasciare la retta: il punto non viene proiettato automaticamente."
+        ]
+      },
+      "alternatives": [
+        {
+          "view": "3D",
+          "height": 1280,
+          "scrollHeight": 1280,
+          "blocks": [
+            {
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "top": 116.65625,
+              "bottom": 500.84375
+            },
+            {
+              "top": 506.84375,
+              "bottom": 692.1875
+            },
+            {
+              "top": 698.1875,
+              "bottom": 851.96875
+            },
+            {
+              "top": 857.96875,
+              "bottom": 1138.828125
+            },
+            {
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "bottom": 1240,
+          "overlaps": false,
+          "equations": [
+            {
+              "width": 850,
+              "scrollWidth": 850
+            },
+            {
+              "width": 822,
+              "scrollWidth": 822
+            }
+          ],
+          "orphanEquations": 0,
+          "outputs": {
+            "decision-cost": "0.25",
+            "decision-residuals": "0.00, -0.50",
+            "decision-feasible": "sì"
+          },
+          "warnings": [
+            "⚠ Nota: d e n indicano qui la stessa dimensione."
+          ],
+          "alerts": [],
+          "concepts": [
+            "Il costo confronta le decisioni; uguaglianze e disequazioni selezionano quelle ammesse. Un costo piccolo non rende ammissibile un punto che viola un vincolo.",
+            "Il costo cresce lontano dall’origine; la retta richiede somma uno e la disequazione esclude z₁ negativi. I controlli possono lasciare la retta: il punto non viene proiettato automaticamente."
+          ]
+        }
+      ],
+      "formulas": [
+        {
+          "formulaId": "p14-dimension",
+          "latex": "z\\in\\mathbb R^d,\\quad \\ell:\\mathbb R^d\\to\\mathbb R,\\quad Z=\\{z\\in\\mathbb R^d:h(z)=0,\\ g(z)\\le0\\},\\quad h:\\mathbb R^d\\to\\mathbb R^m,\\quad g:\\mathbb R^d\\to\\mathbb R^r",
+          "conceptualExplanation": "Il costo confronta le decisioni; uguaglianze e disequazioni selezionano quelle ammesse. Un costo piccolo non rende ammissibile un punto che viola un vincolo.",
+          "details": "A cosa serve. Separare decisione, preferenza e insieme ammissibile.z∈Rdz\\in\\mathbb R^dz∈RdDecisione con d componenti.ℓ\\ellℓCosto scalare.h,gh,gh,gStack di uguaglianze e disequazioni, queste ultime lette componente per componente.m,rm,rm,rNumeri di vincoli; qui m non è la dimensione dell’ingresso.Vale quando. La companion identifica localmente n e d secondo F03; la slide originale resta invariata."
+        },
+        {
+          "formulaId": "p14-example",
+          "latex": "\\ell=\\tfrac12(z_1^2+z_2^2),\\quad h=z_1+z_2-1,\\quad g=-z_1",
+          "conceptualExplanation": "Il costo cresce lontano dall’origine; la retta richiede somma uno e la disequazione esclude z₁ negativi. I controlli possono lasciare la retta: il punto non viene proiettato automaticamente.",
+          "details": "A cosa serve. Verificare separatamente costo, uguaglianza e disequazione su un candidato.z1,z2z_1,z_2z1​,z2​Due decisioni dell’esempio aggiunto.Vale quando. Z è una semiretta non limitata: il riquadro ne mostra soltanto una parte. L’altezza 3D è il costo, non una nuova decisione.z₁ muove il candidato, cambia entrambi i residui e il costo.z₂ cambia costo e uguaglianza, ma non il residuo g=−z₁."
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "mode": "2D_ONLY",
+      "defaultView": "2D",
+      "loadAndReviewMs": 721,
+      "geometry": {
+        "height": 1280,
+        "scrollHeight": 1280,
+        "blocks": [
+          {
+            "top": 40,
+            "bottom": 110.65625
+          },
+          {
+            "top": 116.65625,
+            "bottom": 289.84375
+          },
+          {
+            "top": 295.84375,
+            "bottom": 637.84375
+          },
+          {
+            "top": 643.84375,
+            "bottom": 797.625
+          },
+          {
+            "top": 803.625,
+            "bottom": 994.296875
+          },
+          {
+            "top": 1195.609375,
+            "bottom": 1240
+          }
+        ],
+        "bottom": 1240,
+        "overlaps": false,
+        "equations": [
+          {
+            "width": 850,
+            "scrollWidth": 850
+          }
+        ],
+        "orphanEquations": 0,
+        "outputs": {
+          "scalar-cost-current": "2.0000",
+          "scalar-cost-zero": "2.0000",
+          "scalar-cost-three": "0.5000"
+        },
+        "warnings": [],
+        "alerts": [],
+        "concepts": [
+          "Allontanarsi dal riferimento costa nello stesso modo nei due versi. Il quadrato rende più pesanti gli scarti grandi; cambiare il riferimento sposta l’intera parabola."
+        ]
+      },
+      "alternatives": [],
+      "formulas": [
+        {
+          "formulaId": "p15-source-math-0",
+          "latex": "d=1,\\quad z\\in\\mathbb{R}^d=\\mathbb{R}",
+          "conceptualExplanation": "Una decisione scalare ha una sola componente: possiamo rappresentare direttamente il suo costo sopra una retta di decisioni.",
+          "details": "A cosa serve. Passare dal vettore decisionale al caso di una sola variabile.d=1d=1d=1Dimensione dello spazio decisionale."
+        },
+        {
+          "formulaId": "p15-source-math-1",
+          "latex": "\\ell(z)=\\frac12(z-\\bar z)^2,\\qquad\\bar z\\in\\mathbb{R}",
+          "conceptualExplanation": "Allontanarsi dal riferimento costa nello stesso modo nei due versi. Il quadrato rende più pesanti gli scarti grandi; cambiare il riferimento sposta l’intera parabola.",
+          "details": "A cosa serve. Misurare la deviazione da un punto assegnato.zzzDecisione corrente.zˉ\\bar zzˉPunto assegnato, non un vincolo.Vale quando. Nessun vincolo su z in questa pagina; il minimo in z̄ è una deduzione dalla formula.z muove soltanto il punto sulla parabola e il suo costo.z̄ trasla la parabola e cambia tutti i costi mostrati."
+        }
+      ]
+    },
+    {
+      "page": 18,
+      "mode": "2D_PRIMARY_WITH_3D",
+      "defaultView": "2D",
+      "loadAndReviewMs": 1469,
+      "geometry": {
+        "height": 1280,
+        "scrollHeight": 1280,
+        "blocks": [
+          {
+            "top": 40,
+            "bottom": 110.65625
+          },
+          {
+            "top": 116.65625,
+            "bottom": 280.234375
+          },
+          {
+            "top": 286.234375,
+            "bottom": 670.421875
+          },
+          {
+            "top": 676.421875,
+            "bottom": 830.203125
+          },
+          {
+            "top": 836.203125,
+            "bottom": 1117.0625
+          },
+          {
+            "top": 1195.609375,
+            "bottom": 1240
+          }
+        ],
+        "bottom": 1240,
+        "overlaps": false,
+        "equations": [
+          {
+            "width": 850,
+            "scrollWidth": 850
+          },
+          {
+            "width": 822,
+            "scrollWidth": 822
+          }
+        ],
+        "orphanEquations": 0,
+        "outputs": {
+          "constrained-minimizer": "1.0000",
+          "constrained-cost": "0.5000",
+          "constrained-free": "no"
+        },
+        "warnings": [],
+        "alerts": [],
+        "concepts": [
+          "Minimizzare significa confrontare il costo soltanto fra decisioni che rispettano tutti i vincoli. Le forme estesa e compatta descrivono lo stesso insieme ammissibile.",
+          "Se il riferimento è ammesso, si può raggiungerlo a costo zero; altrimenti il punto ammesso più vicino è il bordo b. La regola del minimo vale per questo solo problema scalare."
+        ]
+      },
+      "alternatives": [
+        {
+          "view": "3D",
+          "height": 1280,
+          "scrollHeight": 1280,
+          "blocks": [
+            {
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "top": 116.65625,
+              "bottom": 280.234375
+            },
+            {
+              "top": 286.234375,
+              "bottom": 670.421875
+            },
+            {
+              "top": 676.421875,
+              "bottom": 830.203125
+            },
+            {
+              "top": 836.203125,
+              "bottom": 1117.0625
+            },
+            {
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "bottom": 1240,
+          "overlaps": false,
+          "equations": [
+            {
+              "width": 850,
+              "scrollWidth": 850
+            },
+            {
+              "width": 822,
+              "scrollWidth": 822
+            }
+          ],
+          "orphanEquations": 0,
+          "outputs": {
+            "constrained-minimizer": "1.0000",
+            "constrained-cost": "0.5000",
+            "constrained-free": "no"
+          },
+          "warnings": [],
+          "alerts": [],
+          "concepts": [
+            "Minimizzare significa confrontare il costo soltanto fra decisioni che rispettano tutti i vincoli. Le forme estesa e compatta descrivono lo stesso insieme ammissibile.",
+            "Se il riferimento è ammesso, si può raggiungerlo a costo zero; altrimenti il punto ammesso più vicino è il bordo b. La regola del minimo vale per questo solo problema scalare."
+          ]
+        }
+      ],
+      "formulas": [
+        {
+          "formulaId": "p18-source-math-2",
+          "latex": "\\begin{aligned}\\min_{z\\in\\mathbb{R}^d}\\;&\\ell(z)\\\\\\text{subj.to }&h(z)=0\\\\&g(z)\\leq0\\end{aligned}",
+          "conceptualExplanation": "Minimizzare significa confrontare il costo soltanto fra decisioni che rispettano tutti i vincoli. Le forme estesa e compatta descrivono lo stesso insieme ammissibile.",
+          "details": "A cosa serve. Scrivere insieme obiettivo e condizioni di ammissibilità.z,ℓz,\\ellz,ℓDecisione e costo.h=0,g≤0h=0,g\\le0h=0,g≤0Uguaglianze e disequazioni da soddisfare insieme.Vale quando. La sola formulazione non garantisce esistenza, unicità o un algoritmo di soluzione."
+        },
+        {
+          "formulaId": "p18-source-math-3",
+          "latex": "h:\\mathbb{R}^d\\to\\mathbb{R}^m,\\quad g:\\mathbb{R}^d\\to\\mathbb{R}^r",
+          "conceptualExplanation": "Ogni mappa raccoglie più vincoli scalari: h restituisce m residui di uguaglianza, g restituisce r residui di disequazione.",
+          "details": "A cosa serve. Leggere correttamente il confronto componente per componente.dddDimensione della decisione.m,rm,rm,rNumeri di uguaglianze e disequazioni."
+        },
+        {
+          "formulaId": "p18-enrichment-0",
+          "latex": "\\min_{z\\le b}\\frac12(z-\\bar z)^2,\\quad z^\\star=\\min(\\bar z,b)",
+          "conceptualExplanation": "Se il riferimento è ammesso, si può raggiungerlo a costo zero; altrimenti il punto ammesso più vicino è il bordo b. La regola del minimo vale per questo solo problema scalare.",
+          "details": "A cosa serve. Confrontare minimo libero e minimo vincolato in un caso risolvibile esattamente.bbbMassima decisione ammessa.z⋆z^\\starz⋆Minimo dell’esempio, non del problema astratto generale.Vale quando. Il secondo asse 3D è un riferimento parametrico, non una seconda decisione.z̄ sceglie una nuova sezione della superficie e può attivare o disattivare il vincolo.b sposta il limite e la curva dei minimi della famiglia; non taglia l’asse verticale del costo."
+        }
+      ]
+    },
+    {
+      "page": 19,
+      "mode": "3D_PRIMARY_WITH_2D",
+      "defaultView": "3D",
+      "loadAndReviewMs": 2267,
+      "geometry": {
+        "height": 1280,
+        "scrollHeight": 1280,
+        "blocks": [
+          {
+            "top": 40,
+            "bottom": 110.65625
+          },
+          {
+            "top": 116.65625,
+            "bottom": 341.828125
+          },
+          {
+            "top": 347.828125,
+            "bottom": 790.8125
+          },
+          {
+            "top": 796.8125,
+            "bottom": 950.59375
+          },
+          {
+            "top": 956.59375,
+            "bottom": 1143.265625
+          },
+          {
+            "top": 1195.609375,
+            "bottom": 1240
+          }
+        ],
+        "bottom": 1240,
+        "overlaps": false,
+        "equations": [
+          {
+            "width": 850,
+            "scrollWidth": 850
+          }
+        ],
+        "orphanEquations": 0,
+        "outputs": {
+          "dynamics-first": "0.0000",
+          "dynamics-second": "0.0000",
+          "dynamics-valid": "sì"
+        },
+        "warnings": [
+          "⚠ Nota: ogni transizione usa la propria mappa f_t."
+        ],
+        "alerts": [],
+        "concepts": [
+          "Sottrarre lo stato candidato dalla previsione produce un residuo per ogni transizione. Devono annullarsi tutti: soddisfare solo l’ultima riga non basta."
+        ]
+      },
+      "alternatives": [
+        {
+          "view": "2D",
+          "height": 1280,
+          "scrollHeight": 1280,
+          "blocks": [
+            {
+              "top": 40,
+              "bottom": 110.65625
+            },
+            {
+              "top": 116.65625,
+              "bottom": 341.828125
+            },
+            {
+              "top": 347.828125,
+              "bottom": 770.8125
+            },
+            {
+              "top": 776.8125,
+              "bottom": 930.59375
+            },
+            {
+              "top": 936.59375,
+              "bottom": 1123.265625
+            },
+            {
+              "top": 1195.609375,
+              "bottom": 1240
+            }
+          ],
+          "bottom": 1240,
+          "overlaps": false,
+          "equations": [
+            {
+              "width": 850,
+              "scrollWidth": 850
+            }
+          ],
+          "orphanEquations": 0,
+          "outputs": {
+            "dynamics-first": "0.0000",
+            "dynamics-second": "0.0000",
+            "dynamics-valid": "sì"
+          },
+          "warnings": [
+            "⚠ Nota: ogni transizione usa la propria mappa f_t."
+          ],
+          "alerts": [],
+          "concepts": [
+            "Sottrarre lo stato candidato dalla previsione produce un residuo per ogni transizione. Devono annullarsi tutti: soddisfare solo l’ultima riga non basta."
+          ]
+        }
+      ],
+      "formulas": [
+        {
+          "formulaId": "p19-source-math-0",
+          "latex": "x_{t+1}=f_t(x_t,u_t),\\quad t=0,\\ldots,T-1",
+          "conceptualExplanation": "Ogni aggiornamento limita la scelta dello stato successivo. T uguaglianze vettoriali equivalgono a nT uguaglianze scalari per uno stato con n componenti.",
+          "details": "A cosa serve. Riconoscere la dinamica come vincolo del problema di ottimizzazione.ftf_tft​Mappa della transizione t.TTTNumero di transizioni dell’orizzonte finito."
+        },
+        {
+          "formulaId": "p19-source-math-1",
+          "latex": "0<T<+\\infty,\\qquad T=+\\infty\\ \\text{in alcuni casi}",
+          "conceptualExplanation": "L’orizzonte può essere finito oppure, in altri problemi, estendersi senza termine. Sono due formulazioni alternative, non due condizioni simultanee.",
+          "details": "A cosa serve. Distinguere il numero finito di vincoli dal caso di orizzonte infinito.TTTOrizzonte temporale.Vale quando. La sola notazione per l’orizzonte infinito non garantisce convergenza del costo."
+        },
+        {
+          "formulaId": "p19-enrichment-0",
+          "latex": "f_0(x_0,u_0)-x_1=0,\\quad f_1(x_1,u_1)-x_2=0",
+          "conceptualExplanation": "Sottrarre lo stato candidato dalla previsione produce un residuo per ogni transizione. Devono annullarsi tutti: soddisfare solo l’ultima riga non basta.",
+          "details": "A cosa serve. Verificare se una candidata è una traiettoria del modello.f0,f1f_0,f_1f0​,f1​Mappe della prima e della seconda transizione.x₂ cambia soltanto il secondo residuo; primo stato e ingressi restano assegnati."
+        },
+        {
+          "formulaId": "p19-example",
+          "latex": "r_0=1-x_1,\\quad r_1^{\\rm dyn}=x_1-0.5-x_2,\\quad x_1=1",
+          "conceptualExplanation": "Il primo aggiornamento impone x₁=1; il secondo seleziona poi x₂=0.5. Cambiare solo x₂ rompe la seconda uguaglianza, anche se il primo residuo resta zero.",
+          "details": "A cosa serve. Leggere l’intersezione dei due vincoli nel semplice integratore.r0,r1dynr_0,r_1^{\\rm dyn}r0​,r1dyn​Residui delle due transizioni, in unità di stato.Vale quando. x₀=0, u₀=1, u₁=−0.5 sono fissi. La superficie esplora anche candidati non dinamicamente ammissibili. Il terzo asse è un residuo, non uno stato aggiuntivo."
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "failed_requests": [],
+  "success": true
+}

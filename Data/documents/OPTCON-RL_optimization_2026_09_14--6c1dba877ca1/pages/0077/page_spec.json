@@ -81,12 +81,517 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "46fac91739379aa43c4b7d3c067feabfb807c307827d16ea6c5bd80fb2350880",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0077",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "3223810cabe4bd30421d56aa0930ef0e1db25c339fdad3b0662f826e4801788d",
+        "layout": "412dd8048cf94add6feb9cc2bb567356e9cec2ab3251098d7fe0fd9f1e169a70",
+        "render": "1f4ee3662b16bf1d4a002f033d7c3e5f576800050fa74b50e84eee83f2981cda"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-k-2026-10-19"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0077",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0076",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0078"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0077",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0076",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0078"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0077",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0076",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0078"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Sequential Quadratic Programming (SQP)",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "algorithm",
+          "description": "Riprende il QP con vincolo linearizzato della 74, rinumerato (3), e aggiunge la scelta Armijo del passo su M₁.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0077",
+            "modality": "both",
+            "text_quote": "Choose",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "equation",
+          "description": "Aggiorna z^{k+1}=z^k+γ^kΔz^k e λ^{k+1}=(1−γ^k)λ^k+γ^kΔλ_QP^k. Δλ_QP è il moltiplicatore completo.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0077",
+            "modality": "both",
+            "text_quote": "Update",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "concept",
+          "description": "Non specifica inizializzazione di λ, tolleranze, scelta numerica del peso o regolarizzazione di B; questi non sono dati della fonte.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0077",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0077",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Seguire un passo SQP globalizzato e l’aggiornamento rilassato del moltiplicatore.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0076",
+          "role": "previous",
+          "note": "Seguire il backtracking con M₁ e distinguere tentativo i da iterazione k."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0078",
+          "role": "next",
+          "note": "Capire dominio stretto, limite ε→0 e permanenza del vincolo h=0."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\begin{aligned}z^{k+1}&=z^k+\\gamma^k\\Delta z^k\\\\\\lambda^{k+1}&=(1-\\gamma^k)\\lambda^k+\\gamma^k\\Delta\\lambda_{\\mathrm{QP}}^k\\end{aligned}",
+          "meaning": "Δλ_QPᵏ è il moltiplicatore completo, non l’incremento Newton.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\min_{\\Delta z}\\ \\nabla\\ell(z^k)^\\top\\Delta z+\\tfrac12\\Delta z^\\top B^k\\Delta z\\quad\\text{s.t. }h(z^k)+\\nabla h(z^k)^\\top\\Delta z=0",
+          "meaning": "Il QP deve avere un minimo. Resta valida la condizione di curvatura chiarita nella 73.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\gamma^k:\\ \\text{Armijo su }M_1(z^k+\\gamma\\Delta z^k;s)",
+          "meaning": "Il peso rimane fisso nei tentativi della singola ricerca; può cambiare all’iterazione successiva.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [
+          "Armijo sulla merit function e γᵏ in entrambi gli aggiornamenti."
+        ],
+        "removed": [],
+        "changed": [
+          "Rispetto al prerequisito 74: QP rinumerato (3); λ passa da assegnazione piena a rilassamento."
+        ],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "structure"
+        ],
+        "rationale": "Ripresa dell’algoritmo dopo due pagine sul passo: non è un overlay progressivo adiacente. Il confronto con la 74 è registrato anche nei prerequisiti e nelle osservazioni."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "Nessuna correzione matematica necessaria dopo confronto con la pagina precedente e successiva.",
+          "Nessuna modifica alla Hessiana originale dell’esempio.",
+          "La scelta sᵏ, λ⁰, cap di dodici passi e tolleranza KKT 10⁻¹⁰ sono enrichment.",
+          "Armijo non certifica un minimo: una radice KKT può essere non minimale; i fallimenti del QP restano visibili."
+        ],
+        "prerequisites": [
+          {
+            "concept": "SQP a passo pieno",
+            "why": "Il moltiplicatore del QP si assegna con γ=1.",
+            "origin": "source_context",
+            "page_numbers": [
+              74
+            ]
+          },
+          {
+            "concept": "Merit e Armijo",
+            "why": "Test e peso provengono da 75–76.",
+            "origin": "source_context",
+            "page_numbers": [
+              75,
+              76
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\begin{aligned}z^{k+1}&=z^k+\\gamma^k\\Delta z^k\\\\\\lambda^{k+1}&=(1-\\gamma^k)\\lambda^k+\\gamma^k\\Delta\\lambda_{\\mathrm{QP}}^k\\end{aligned}",
+            "anchor": "Choose",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\min_{\\Delta z}\\ \\nabla\\ell(z^k)^\\top\\Delta z+\\tfrac12\\Delta z^\\top B^k\\Delta z\\quad\\text{s.t. }h(z^k)+\\nabla h(z^k)^\\top\\Delta z=0",
+            "anchor": "Choose",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\gamma^k:\\ \\text{Armijo su }M_1(z^k+\\gamma\\Delta z^k;s)",
+            "anchor": "Choose",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Si risolve il QP, si sceglie γᵏ con Armijo su M₁, poi si applica lo stesso γᵏ alle decisioni e all’aggiornamento duale.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "z⁰=(1,1), λ⁰=.2, s_min=3",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Livelli/superficie M₁ con peso sᵏ corrente, stessa parabola e iterati; a destra norma KKT contro k, non valori di merit con pesi diversi. Stato di arresto e rilassamento λ leggibili.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Seguire un passo SQP globalizzato e l’aggiornamento rilassato del moltiplicatore.",
+            "setup": "z⁰=(1,1), λ⁰=.2, s_min=3",
+            "parameters": [],
+            "derivation": [
+              "Il QP dà Δz=(−5/23,−10/23), moltiplicatore 10/23.",
+              "Armijo rifiuta γ=1 e accetta γ=.5.",
+              "z¹=(41/46,18/23), λ¹≈.317391, h(z¹)=−25/2116.",
+              "Da (.4,1.1) la merit function può scendere mentre il costo aumenta.",
+              "Da (.1,1) con peso minimo .1, un successivo QP può diventare illimitato; il ciclo si arresta."
+            ],
+            "expected_outcome": "Il grafico segue il criterio reale del solver, non una promessa di convergenza a un minimo.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "FunctionExplorer",
+          "description": "Livelli/superficie M₁ con peso sᵏ corrente, stessa parabola e iterati; a destra norma KKT contro k, non valori di merit con pesi diversi. Stato di arresto e rilassamento λ leggibili.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Punto iniziale e peso cambiano la sequenza e mostrano il ruolo reale della merit function.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Ascissa iniziale",
+              "symbol": "z_1^0",
+              "origin": "enrichment",
+              "range": "{'min': -1.2, 'max': 1.2, 'step': 0.1, 'integer': False}",
+              "default": "1",
+              "effect_on_change": "Ricalcola l’intera sequenza con λ⁰=.2; ferma Play e torna a k=0.",
+              "edge_cases": [
+                "γ=1",
+                "γ<1",
+                "Costo aumenta",
+                "QP senza minimo unico",
+                "Radice al massimo"
+              ]
+            },
+            {
+              "name": "Ordinata iniziale",
+              "symbol": "z_2^0",
+              "origin": "enrichment",
+              "range": "{'min': 0.1, 'max': 1.5, 'step': 0.1, 'integer': False}",
+              "default": "1",
+              "effect_on_change": "Cambia fattibilità e QP iniziali; non cambia il problema.",
+              "edge_cases": [
+                "γ=1",
+                "γ<1",
+                "Costo aumenta",
+                "QP senza minimo unico",
+                "Radice al massimo"
+              ]
+            },
+            {
+              "name": "Peso minimo",
+              "symbol": "s_{\\min}",
+              "origin": "enrichment",
+              "range": "{'min': 0.1, 'max': 4, 'step': 0.1, 'integer': False}",
+              "default": "3",
+              "effect_on_change": "Cambia il peso adattivo e i passi Armijo; costo e vincolo restano fissi.",
+              "edge_cases": [
+                "γ=1",
+                "γ<1",
+                "Costo aumenta",
+                "QP senza minimo unico",
+                "Radice al massimo"
+              ]
+            },
+            {
+              "name": "Iterazione / Play / Passo / Riparti",
+              "symbol": "k",
+              "origin": "enrichment",
+              "range": "Fino a dodici passi",
+              "default": "k=0",
+              "effect_on_change": "Seleziona un iterato e il suo peso, mantenendo distinta la norma KKT dalla merit function.",
+              "edge_cases": [
+                "γ=1",
+                "γ<1",
+                "Costo aumenta",
+                "QP senza minimo unico",
+                "Radice al massimo"
+              ]
+            }
+          ],
+          "outputs": [
+            "Seguire un passo SQP globalizzato e l’aggiornamento rilassato del moltiplicatore."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "γ=1",
+            "expected_behavior": "Assegnazione piena del moltiplicatore QP, come nella 74.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "γ<1",
+            "expected_behavior": "Rilassare anche λ, senza doppia somma.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "Costo aumenta",
+            "expected_behavior": "Consentito se il test sulla stessa M₁ accetta.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "QP senza minimo unico",
+            "expected_behavior": "Arresto esplicito.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "Radice al massimo",
+            "expected_behavior": "Residuo nullo non certifica minimo.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Seguire un passo SQP globalizzato e l’aggiornamento rilassato del moltiplicatore.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

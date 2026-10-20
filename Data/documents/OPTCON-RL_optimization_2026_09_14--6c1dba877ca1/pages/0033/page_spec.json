@@ -81,12 +81,443 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "1eac0dab3031c044eece563c1d633f9d185cc942c1b4dcecd4cf1128b94c558f",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0033",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "1740ef3b44539c639954309da0ca2086d062ee1d26ed2c8c2ead42f3866b92f5",
+        "layout": "b52638eda73bbb62355a222beb062a38e7f4cbcb38a381bedfaa6290bc367fe6",
+        "render": "f1d96bd12e44c097d6a65494148cf249e5bc4f2647767110c7bbc5c37d4927d6"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-d-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0033",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0032",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0034"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0033",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0032",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0034"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0033",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0032",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0034"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Steepest descent (gradient method)",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "algorithm",
+          "description": "Con D^k=I l’aggiornamento è quello del gradiente, detto steepest descent.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0033",
+            "modality": "both",
+            "text_quote": "The update rule obtained",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "equation",
+          "description": "La direzione normalizzata è −∇ℓ(z^k)/||∇ℓ(z^k)||; richiede gradiente non nullo.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0033",
+            "modality": "both",
+            "text_quote": "normalized negative gradient direction",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "concept",
+          "description": "Questa direzione minimizza ∇ℓ(z^k)^T d fra tutte le direzioni normalizzate.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0033",
+            "modality": "both",
+            "text_quote": "among all normalized directions",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0033",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Comprendere la minimizzazione della pendenza sulle direzioni unitarie e il limite del gradiente nullo.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0032",
+          "role": "previous",
+          "note": "Confrontare identità, inversa della Hessiana e inversa di un’approssimazione positiva definita."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0034",
+          "role": "next",
+          "note": "Newton per ricerca di radici: linearizzazione e Jacobiano trasposto nella convenzione del corso. Solo contesto del batch E."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "d^k=-\\frac{\\nabla\\ell(z^k)}{\\|\\nabla\\ell(z^k)\\|}",
+          "meaning": "Con gradiente non nullo, questa è la direzione unitaria di pendenza minima. La normalizzazione serve al confronto; il passo resta da scegliere.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "z^{k+1}=z^k-\\gamma^k\\nabla\\ell(z^k)",
+          "meaning": "Nell’aggiornamento della fonte si usa il gradiente non normalizzato. Il passo scala anche la sua norma, mentre il confronto geometrico usa norma unitaria.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "progressive",
+        "related_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0032"
+        ],
+        "added": [
+          "Comprendere la minimizzazione della pendenza sulle direzioni unitarie e il limite del gradiente nullo."
+        ],
+        "removed": [],
+        "changed": [
+          "Nuova scelta o caratterizzazione della direzione; mantenere una pagina fisica distinta."
+        ],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "structure"
+        ],
+        "rationale": "Progressione concettuale, non duplicato eliminabile."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "Nessuna correzione matematica necessaria dopo confronto con la pagina precedente e successiva.",
+          "r=0 è un caso di confine aggiunto; il denominatore nullo non viene calcolato."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Prodotto scalare",
+            "why": "La pendenza dipende dall’angolo e dalle norme.",
+            "origin": "source_context",
+            "page_numbers": [
+              30
+            ]
+          },
+          {
+            "concept": "Identità come D",
+            "why": "Steepest descent è una scelta della famiglia matriciale.",
+            "origin": "source_context",
+            "page_numbers": [
+              32
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "d^k=-\\frac{\\nabla\\ell(z^k)}{\\|\\nabla\\ell(z^k)\\|}",
+            "anchor": "The update rule obtained",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "z^{k+1}=z^k-\\gamma^k\\nabla\\ell(z^k)",
+            "anchor": "The update rule obtained",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Per confrontare soltanto l’orientamento imponiamo norma uno. Il gradiente negativo normalizzato dà la pendenza minima; il passo dell’algoritmo resta una scelta distinta.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "r=1.5 e ψ=135°",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Cerchio delle direzioni unitarie, prova viola, gradiente normalizzato rosso e direzione migliore verde se g≠0; lettura delle pendenze.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Comprendere la minimizzazione della pendenza sulle direzioni unitarie e il limite del gradiente nullo.",
+            "setup": "r=1.5 e ψ=135°",
+            "parameters": [],
+            "derivation": [
+              "La pendenza di prova vale −1.5/√2≈−1.06066.",
+              "Il minimo è −1.5, raggiunto a ψ=180°.",
+              "Lo scarto è circa 0.43934; per r=0 tutte le direzioni hanno pendenza zero."
+            ],
+            "expected_outcome": "A r=0 la formula normalizzata non è definita: non disegnare un unico miglior orientamento.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "SceneViewport",
+          "description": "Cerchio delle direzioni unitarie, prova viola, gradiente normalizzato rosso e direzione migliore verde se g≠0; lettura delle pendenze.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Il cerchio separa orientamento e lunghezza; r=0 verifica il limite della normalizzazione.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Norma del gradiente",
+              "symbol": "r",
+              "origin": "enrichment",
+              "range": "{'min': 0, 'max': 2, 'step': 0.25, 'integer': False}",
+              "default": "1.5",
+              "effect_on_change": "Muove il punto corrente (r,0) e scala tutte le pendenze; il cerchio delle direzioni resta unitario.",
+              "edge_cases": [
+                "ψ=180°",
+                "ψ=90° o 270°",
+                "r=0"
+              ]
+            },
+            {
+              "name": "Direzione di prova",
+              "symbol": "\\psi",
+              "origin": "enrichment",
+              "range": "{'min': 0, 'max': 360, 'step': 15, 'integer': False}",
+              "default": "135",
+              "effect_on_change": "Ruota solo il vettore unitario di prova e aggiorna pendenza e scarto dal minimo; g resta fisso.",
+              "edge_cases": [
+                "ψ=180°",
+                "ψ=90° o 270°",
+                "r=0"
+              ]
+            }
+          ],
+          "outputs": [
+            "Comprendere la minimizzazione della pendenza sulle direzioni unitarie e il limite del gradiente nullo."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "ψ=180°",
+            "expected_behavior": "Pendenza minima e scarto zero.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "ψ=90° o 270°",
+            "expected_behavior": "Pendenza zero esatta.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "r=0",
+            "expected_behavior": "Tutte le pendenze nulle; direzione normalizzata non definita, nessun vettore inventato.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Comprendere la minimizzazione della pendenza sulle direzioni unitarie e il limite del gradiente nullo.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

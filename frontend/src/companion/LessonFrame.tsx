@@ -6,6 +6,7 @@ import { CompanionHeader, CompanionPage, ControlsBlock, ExampleBlock, InlineMath
 import { ParameterControl } from '../components/ParameterControl';
 import { ExplainedEquation } from '../components/ExplainedEquation';
 import { formulaExplanation, pageFormulaExplanations } from './formulaExplanations';
+import { courseDocuments,documentFromId } from '../data/documents';
 
 type Values = Readonly<Record<string, number>>;
 const sessionValues = new Map<string, Values>();
@@ -77,19 +78,19 @@ export function LiveMetrics({ items }: { items: readonly { label: ReactNode; val
   return <dl className="live-metrics">{items.map(item => <div key={item.id}><dt>{item.label}</dt>
     <dd><output data-testid={item.id}>{item.value}</output></dd></div>)}</dl>;
 }
-export function LessonFrame({ definition, formula, visual, controls, example, explanation, legend, takeaway }: {
+export function LessonFrame({ definition, formula, visual, controls, example, explanation, legend, takeaway,className='' }: {
   definition: CompanionDefinition; formula?: ReactNode; visual: ReactNode; controls?: ReactNode;
-  example: ReactNode; explanation?: ReactNode; legend?: ReactNode; takeaway?: ReactNode;
+  example?: ReactNode; explanation?: ReactNode; legend?: ReactNode; takeaway?: ReactNode;className?:string;
 }) {
-  return <CompanionPage className="lesson-page" sourcePage={definition.source_page} archetype={definition.layout.archetype}
+  return <CompanionPage className={'lesson-page'+(className?' '+className:'')} sourcePage={definition.source_page} archetype={definition.layout.archetype}
     blockOrder={definition.layout.visual_block_order}
     blocks={{
-      HEADER: <CompanionHeader subtitle={'INTRODUCTION · PAGINA ' + String(definition.source_page).padStart(2, '0')} title={definition.title}/>,
+      HEADER: <CompanionHeader subtitle={courseDocuments.find(d=>d.key===documentFromId(definition.page_id))!.label+' · PAGINA ' + String(definition.source_page).padStart(2, '0')} title={definition.title}/>,
       EXPLANATION: explanation === null ? undefined : <ExplanationBlock><p>{explanation ?? definition.intuitive_explanation}</p></ExplanationBlock>,
       FORMULA: formula,
       MAIN_VISUAL: <div className="lesson-visual">{legend && <div className="lesson-caption visual-legend">{legend}</div>}{visual}</div>,
       CONTROLS: controls,
-      WORKED_EXAMPLE: <ExampleBlock>{example}</ExampleBlock>,
+      WORKED_EXAMPLE: example==null?undefined:<ExampleBlock>{example}</ExampleBlock>,
       TAKEAWAY: <TakeawayBlock>{takeaway ?? definition.takeaway}</TakeawayBlock>,
     }}/>;
 }

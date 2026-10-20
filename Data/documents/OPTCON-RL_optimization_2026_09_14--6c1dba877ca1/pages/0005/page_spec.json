@@ -81,12 +81,382 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "1125a8b2a1e9bfb28ec35433669440b84372f2ffd3028833b98df14115b71bd1",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0005",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "fb66c40270a576d38c824114cd76b2d0ae60bdd8f08a1353960330e9cbaffbac",
+        "layout": "c5a36d12d11e0bbb1874dff6f777ef6fb787ca0cb2564f655c431037034f6de7",
+        "render": "7ca86e1e05eabac9960edff1d914aa06a1c93f7063766b1c63e0be46c2f6e049"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-a-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0005",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0004",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0006"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0005",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0004",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0006"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0005",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0004",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0006"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Notation",
+      "observations": [
+        {
+          "id": "s01",
+          "category": "definition",
+          "description": "ℓ(z*) è il valore ottimo, uguale al minimo del costo.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0005",
+            "modality": "both",
+            "text_quote": "We denote ℓ(z∗) the optimal",
+            "bbox": [
+              20,
+              28,
+              443.5429992675781,
+              241.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "s02",
+          "category": "definition",
+          "description": "z* è il punto minimizzatore indicato mediante argmin.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0005",
+            "modality": "both",
+            "text_quote": "where z∗is the minimum point",
+            "bbox": [
+              20,
+              28,
+              443.5429992675781,
+              241.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, disposizione e crediti/footer letti visivamente; nessun dato numerico dedotto dagli elementi decorativi.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0005",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Separare minimizzatore e valore ottimo.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0004",
+          "role": "previous",
+          "note": "Leggere il grafico qualitativo e il passaggio da minimi a massimi cambiando segno."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0006",
+          "role": "next",
+          "note": "Leggere forma e significato delle derivate prime e seconde di un costo scalare."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\ell(z^*)=\\min_{z\\in\\mathbb R^d}\\ell(z)",
+          "meaning": "Min restituisce il costo più basso, una quantità scalare: l’altezza del minimo nel grafico.",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "z^*=\\operatorname*{arg\\,min}_{z\\in\\mathbb R^d}\\ell(z)",
+          "meaning": "Argmin identifica dove si ottiene il valore minimo. Qui il minimizzatore è unico; con più soluzioni si considera l’insieme dei minimizzatori.",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "s01",
+          "s02",
+          "structure"
+        ],
+        "rationale": "Contenuto distinto dalle vicine: non eliminare o accorpare la pagina."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo o spazio della copertina.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Tutto il contenuto, incluse formule, grafici, affiliazione e remark quando presenti.",
+            "observation_ids": [
+              "s01",
+              "s02",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer e decorazione, o spazio bianco finale.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "La fonte usa la notazione di un singolo minimizzatore. In generale argmin può essere un insieme o essere vuoto; l’esempio ha sempre soluzione unica."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Minimo globale",
+            "why": "Per distinguere il punto dal costo che vi si ottiene.",
+            "origin": "source_context",
+            "page_numbers": [
+              3
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\ell(z^*)=\\min_{z\\in\\mathbb R^d}\\ell(z)",
+            "anchor": "We denote ℓ(z∗) the optimal",
+            "notes": "Trascrizione della fonte; le forme equivalenti aggiunte sono enrichment."
+          },
+          {
+            "latex": "z^*=\\operatorname*{arg\\,min}_{z\\in\\mathbb R^d}\\ell(z)",
+            "anchor": "We denote ℓ(z∗) the optimal",
+            "notes": "Trascrizione della fonte; le forme equivalenti aggiunte sono enrichment."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "La soluzione z* dice dove scegliere. Il valore ℓ(z*) dice quanto costa quella scelta. Sono oggetti diversi, anche quando entrambi sono numeri.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Parabola 2D, vertice e proiezioni sulle coordinate; letture separate z* e ℓ(z*).",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "a=1, c=0.5",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli dichiarati nel piano: Parabola 2D, vertice e proiezioni sulle coordinate; letture separate z* e ℓ(z*).",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Separare minimizzatore e valore ottimo.",
+            "setup": "a=1, c=0.5",
+            "parameters": [],
+            "derivation": [
+              "La scelta ottima è z*=1.",
+              "Il valore ottimo è ℓ(1)=0.5.",
+              "Il costo in z=0 è 1.5: non è il valore ottimo."
+            ],
+            "expected_outcome": "Un costo ottimo negativo è ammesso: non è una distanza se si aggiunge c<0.",
+            "limitations": [
+              "La fonte usa la notazione di un singolo minimizzatore. In generale argmin può essere un insieme o essere vuoto; l’esempio ha sempre soluzione unica."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "SceneViewport",
+          "description": "Parabola 2D, vertice e proiezioni sulle coordinate; letture separate z* e ℓ(z*).",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "s01",
+            "s02",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "L’effetto parametrico isola il concetto della pagina.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Posizione del minimo",
+              "symbol": "a",
+              "origin": "enrichment",
+              "range": "{'min': -2, 'max': 2, 'step': 0.1, 'integer': False}",
+              "default": "1",
+              "effect_on_change": "Trasla la parabola orizzontalmente: cambia z*, resta fisso il valore ottimo.",
+              "edge_cases": [
+                "Più minimizzatori in altri problemi",
+                "Minimo non raggiunto"
+              ]
+            },
+            {
+              "name": "Valore minimo",
+              "symbol": "c",
+              "origin": "enrichment",
+              "range": "{'min': -1, 'max': 3, 'step': 0.1, 'integer': False}",
+              "default": "0.5",
+              "effect_on_change": "Trasla verticalmente: cambia ℓ(z*), resta fisso z*.",
+              "edge_cases": [
+                "Più minimizzatori in altri problemi",
+                "Minimo non raggiunto"
+              ]
+            }
+          ],
+          "outputs": [
+            "Separare minimizzatore e valore ottimo."
+          ],
+          "invariants": [
+            "La fonte usa la notazione di un singolo minimizzatore. In generale argmin può essere un insieme o essere vuoto; l’esempio ha sempre soluzione unica."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "Più minimizzatori in altri problemi",
+            "expected_behavior": "Argmin è in generale un insieme; non dedurre unicità dalla sola notazione.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "structure"
+            ]
+          },
+          {
+            "case": "Minimo non raggiunto",
+            "expected_behavior": "Infimo e minimo non sono intercambiabili; l’esempio coercivo raggiunge sempre il minimo.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un focus principale, una figura e dettagli su richiesta consentono una singola companion leggibile; nessuna riduzione tipografica.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Separare minimizzatore e valore ottimo.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "visual",
+              "example",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un focus principale, una figura e dettagli su richiesta consentono una singola companion leggibile; nessuna riduzione tipografica.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

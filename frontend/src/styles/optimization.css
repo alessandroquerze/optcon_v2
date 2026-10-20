@@ -1,0 +1,31 @@
+.optimization-lesson .opt-orientation ol { gap:14px; margin:28px 0; }
+.optimization-lesson .opt-orientation li { padding:18px; }
+.optimization-lesson .opt-orientation li p { margin-top:5px; font-size:22px; }
+.optimization-lesson .opt-section-cards { display:grid; gap:18px; margin:18px 0; }
+.opt-section-cards section { padding:22px 26px; background:#edf5f6; border-left:4px solid var(--color-accent); }
+.opt-section-cards h2 { font-size:28px; margin:0 0 8px; }
+.opt-section-cards p { font-size:24px; }
+.opt-step-number { float:right; font-size:36px; color:#84a8b0; }
+.optimization-lesson .opt-comparison-strip { display:flex; gap:24px; font-size:22px; margin:4px 0 8px; }
+.optimization-lesson .opt-choice { display:flex; flex-direction:column; gap:7px; font-size:22px; }
+.optimization-lesson .opt-choice select { font-size:22px; min-height:42px; width:100%; }
+.optimization-lesson .opt-verdict { font-size:24px; color:var(--color-accent); font-weight:600; margin-top:6px; }
+.optimization-lesson .opt-derivative-values { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; margin-top:10px; }
+.opt-reading { display:flex; flex-direction:column; gap:6px; }
+.opt-reading strong { font-size:22px; color:var(--color-muted); font-weight:400; }
+.opt-reading > span { font-size:27px; color:var(--color-accent); }
+.opt-matrix-pair { display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+.opt-matrix-pair section { min-width:0; }
+.opt-matrix-pair h2 { font-size:23px; margin:6px 0; }
+.opt-matrix-pair p { font-size:22px; color:var(--color-muted); }
+.opt-matrix-pair .matrix-diagram { height:260px; }
+.matrix-diagram { display:block; width:100%; font:22px 'Segoe UI',sans-serif; fill:#223d50; }
+.matrix-axis-label { fill:#6b7d89; }
+.matrix-entry rect { fill:#eaf4f4; stroke:#c1d9de; }
+.matrix-entry.selected rect { fill:#fff0e2; stroke:#cf6b24; stroke-width:2; }
+.matrix-entry[role=button] { cursor:pointer; }
+.matrix-entry:focus { outline:none; }
+.matrix-entry:focus rect { stroke:#126879; stroke-width:3; }
+[data-graphic-fullscreen] .opt-matrix-pair { flex:1; align-items:stretch; min-height:0; }
+[data-graphic-fullscreen] .opt-matrix-pair section { display:flex; flex-direction:column; min-height:0; }
+[data-graphic-fullscreen] .opt-matrix-pair h2 { font-size:24px; }

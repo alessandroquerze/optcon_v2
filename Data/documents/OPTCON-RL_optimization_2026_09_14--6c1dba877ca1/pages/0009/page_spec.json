@@ -81,12 +81,429 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "53877dd1cc262ad75b5455a96ac163b8037b7e9ac7b6507519e0ead9869792c1",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0009",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "48b1c460f745e0ab3e2397fa9350d9b0823e1318de41319008aac078b5363f3d",
+        "layout": "92569ecf0abb11fed1d6c9e7438b100542d6743b23335c0446427c435d37f8ff",
+        "render": "d69862d417479f99f3551f5dfecc42c806974df3d5f07efef8ab852c551e0983"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-a-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0009",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0008",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0010"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0009",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0008",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0010"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0009",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0008",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0010"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Second order sufficient conditions of optimality",
+      "observations": [
+        {
+          "id": "s01",
+          "category": "assumption",
+          "description": "ℓ è due volte continuamente differenziabile in B(z⋆,ε).",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0009",
+            "modality": "both",
+            "text_quote": "Let ℓ: Rd →R be twice continuously differentiable",
+            "bbox": [
+              20,
+              28,
+              443.5429992675781,
+              241.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "s02",
+          "category": "equation",
+          "description": "Le ipotesi puntuali sono ∇ℓ(z⋆)=0 e ∇²ℓ(z⋆)>0, con >0 inteso definita positiva.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0009",
+            "modality": "both",
+            "text_quote": "positive definite",
+            "bbox": [
+              20,
+              28,
+              443.5429992675781,
+              241.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "s03",
+          "category": "concept",
+          "description": "La conclusione è che z⋆ è un minimo locale stretto non vincolato.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0009",
+            "modality": "both",
+            "text_quote": "strict (unconstrained) local minimum",
+            "bbox": [
+              20,
+              28,
+              443.5429992675781,
+              241.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, disposizione e crediti/footer letti visivamente; nessun dato numerico dedotto dagli elementi decorativi.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0009",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Applicare la sufficienza del secondo ordine e riconoscerne i limiti.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0008",
+          "role": "previous",
+          "note": "Interpretare le condizioni necessarie senza invertirne l’implicazione."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0010",
+          "role": "next",
+          "note": "La pagina 10 introduce gli insiemi convessi; non è ancora contenuto della pagina 9."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\nabla\\ell(z^\\star)=0,\\quad\\nabla^2\\ell(z^\\star)>0\\quad\\Longrightarrow\\quad z^\\star\\text{ minimo locale stretto}",
+          "meaning": "La curvatura è positiva in ogni direzione non nulla: vicino al punto domina i termini di ordine superiore e fa aumentare il costo.",
+          "observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "s01",
+          "s02",
+          "s03",
+          "structure"
+        ],
+        "rationale": "Contenuto distinto dalle vicine: non eliminare o accorpare la pagina."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo o spazio della copertina.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Tutto il contenuto, incluse formule, grafici, affiliazione e remark quando presenti.",
+            "observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer e decorazione, o spazio bianco finale.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "La fonte enuncia sufficienza locale sotto C²; non richiede convessità globale e non enuncia un algoritmo."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Condizioni necessarie",
+            "why": "Per distinguere la nuova implicazione sufficiente.",
+            "origin": "source_context",
+            "page_numbers": [
+              8
+            ]
+          },
+          {
+            "concept": "Positività definita",
+            "why": "Significa curvatura positiva in ogni direzione.",
+            "origin": "enrichment",
+            "page_numbers": []
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\nabla\\ell(z^\\star)=0,\\quad\\nabla^2\\ell(z^\\star)>0\\quad\\Longrightarrow\\quad z^\\star\\text{ minimo locale stretto}",
+            "anchor": "Let ℓ: Rd →R be twice continuously differentiable",
+            "notes": "Trascrizione della fonte; le forme equivalenti aggiunte sono enrichment."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Se ℓ∈C², il gradiente è nullo e la Hessiana è definita positiva, il punto è un minimo locale stretto. La conclusione non promette un minimo globale.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Superficie/contour della stessa famiglia con origine e punto di confronto (0,1); autovalori e conclusione locale.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "α=1, β=−1",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli dichiarati nel piano: Superficie/contour della stessa famiglia con origine e punto di confronto (0,1); autovalori e conclusione locale.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Applicare la sufficienza del secondo ordine e riconoscerne i limiti.",
+            "setup": "α=1, β=−1",
+            "parameters": [],
+            "derivation": [
+              "H(0)=diag(1,1)>0: origine minimo locale stretto.",
+              "ℓ(0,1)=−0.5<ℓ(0,0)=0: non è globale.",
+              "Con α=0, β>0 l’origine è comunque minimo stretto, ma il test sufficiente è inconclusivo."
+            ],
+            "expected_outcome": "La proprietà è locale e il fallimento del test non nega automaticamente il minimo.",
+            "limitations": [
+              "La fonte enuncia sufficienza locale sotto C²; non richiede convessità globale e non enuncia un algoritmo."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "FunctionExplorer",
+          "description": "Superficie/contour della stessa famiglia con origine e punto di confronto (0,1); autovalori e conclusione locale.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "s01",
+            "s02",
+            "s03",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "L’effetto parametrico isola il concetto della pagina.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Curvatura al punto",
+              "symbol": "\\alpha",
+              "origin": "enrichment",
+              "range": "{'min': -1, 'max': 2, 'step': 0.1, 'integer': False}",
+              "default": "1",
+              "effect_on_change": "Modifica il secondo autovalore della Hessiana e la validità della condizione sufficiente.",
+              "edge_cases": [
+                "α=0, β>0",
+                "α=0, β=0",
+                "α<0",
+                "α>0, β<0"
+              ]
+            },
+            {
+              "name": "Termine di ordine quattro",
+              "symbol": "\\beta",
+              "origin": "enrichment",
+              "range": "{'min': -1, 'max': 1, 'step': 0.1, 'integer': False}",
+              "default": "-1",
+              "effect_on_change": "Cambia la forma lontano dall’origine senza cambiare gradiente e Hessiana nell’origine.",
+              "edge_cases": [
+                "α=0, β>0",
+                "α=0, β=0",
+                "α<0",
+                "α>0, β<0"
+              ]
+            }
+          ],
+          "outputs": [
+            "Applicare la sufficienza del secondo ordine e riconoscerne i limiti."
+          ],
+          "invariants": [
+            "La fonte enuncia sufficienza locale sotto C²; non richiede convessità globale e non enuncia un algoritmo."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "α=0, β>0",
+            "expected_behavior": "Minimo stretto con Hessiana solo semidefinita: sufficienza non necessaria.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "structure"
+            ]
+          },
+          {
+            "case": "α=0, β=0",
+            "expected_behavior": "Minimi non stretti lungo z₁=0.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "structure"
+            ]
+          },
+          {
+            "case": "α<0",
+            "expected_behavior": "Sella nell’origine, qualunque β.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "structure"
+            ]
+          },
+          {
+            "case": "α>0, β<0",
+            "expected_behavior": "Minimo locale stretto ma costo non limitato inferiormente.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un focus principale, una figura e dettagli su richiesta consentono una singola companion leggibile; nessuna riduzione tipografica.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Applicare la sufficienza del secondo ordine e riconoscerne i limiti.",
+            "source_observation_ids": [
+              "s01",
+              "s02",
+              "s03",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "visual",
+              "example",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un focus principale, una figura e dettagli su richiesta consentono una singola companion leggibile; nessuna riduzione tipografica.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

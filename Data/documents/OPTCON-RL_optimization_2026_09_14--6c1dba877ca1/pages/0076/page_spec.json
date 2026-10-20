@@ -81,12 +81,525 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "8a3a6e2cc34eeccd5b497703cfe9c04320b3fab09b9185ed1be69ab8e5dd8b5a",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0076",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "ee88c76be7886a2964c683c6c990967a9f0d596ff43759758efbb0a9b997f64e",
+        "layout": "fc2088621310f84e3401b63cc5f6d73b18bd94dddddb3911c6ec2c2dceab398a",
+        "render": "166f86afc343d4dce6a56ea22d7cf750c9a86f816ace00022865c5f2c4c17cdb"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-k-2026-10-19"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0076",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0075",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0077"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0076",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0075",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0077"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0076",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0075",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0077"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Stepsize selection for constrained optimization (II): Armijo rule",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "algorithm",
+          "description": "Fissa γ̄⁰>0, β∈(0,1), c∈(0,1); riduce γ̄^{i+1}=βγ̄^i finché vale il confronto ≥.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0076",
+            "modality": "both",
+            "text_quote": "Backtracking line-search",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "equation",
+          "description": "La quantità chiamata derivata direzionale è ∇ℓ(z^k)^T d^k−s||h(z^k)||₁. È valida per direzioni che soddisfano la fattibilità linearizzata nel contesto SQP.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0076",
+            "modality": "both",
+            "text_quote": "derivative of M1",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "concept",
+          "description": "Suggerisce di adattare s^k>||λ^k||∞; è good practice, non una prova di esattezza con il moltiplicatore ottimo sconosciuto.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0076",
+            "modality": "both",
+            "text_quote": "Good practice",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0076",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Seguire il backtracking con M₁ e distinguere tentativo i da iterazione k.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0075",
+          "role": "previous",
+          "note": "Leggere una penalità esatta senza confondere diminuzione della merit function e diminuzione separata di costo e vincolo."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0077",
+          "role": "next",
+          "note": "Seguire un passo SQP globalizzato e l’aggiornamento rilassato del moltiplicatore."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "M_1(z^k+\\bar\\gamma^i d^k;s)<M_1(z^k;s)+c\\bar\\gamma^i D M_1",
+          "meaning": "DM₁ è la derivata direzionale; si accetta sotto la soglia.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "D M_1=\\nabla\\ell(z^k)^\\top d^k-s\\|h(z^k)\\|_1",
+          "meaning": "Derivata unilaterale lungo dᵏ, se ∇h(zᵏ)ᵀdᵏ=−h(zᵏ). In generale non è la derivata per una direzione arbitraria.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\bar\\gamma^{i+1}=\\beta\\bar\\gamma^i,\\quad\\gamma^k=\\bar\\gamma^i",
+          "meaning": "i è il contatore interno, k l’iterazione esterna.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "s^k>\\|\\lambda^k\\|_\\infty",
+          "meaning": "La fonte lo suggerisce come adattamento pratico; λᵏ non è necessariamente λ⋆.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "structure"
+        ],
+        "rationale": "Scopo e contenuto autonomi."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "Nessuna correzione matematica necessaria dopo confronto con la pagina precedente e successiva.",
+          "Nessuna superficie 3D per un profilo scalare.",
+          "La formula direzionale richiede la fattibilità linearizzata; la fonte la usa nel contesto SQP.",
+          "Sessanta tentativi massimi e arresti numerici sono scelte operative, non teoremi di fallimento."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Merit function corretta",
+            "why": "Si penalizza h, come chiarito nella 75.",
+            "origin": "source_context",
+            "page_numbers": [
+              75
+            ]
+          },
+          {
+            "concept": "Direzione Newton/SQP",
+            "why": "d è la direzione della 72–74.",
+            "origin": "source_context",
+            "page_numbers": [
+              72,
+              74
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "M_1(z^k+\\bar\\gamma^i d^k;s)<M_1(z^k;s)+c\\bar\\gamma^i D M_1",
+            "anchor": "Backtracking line-search",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "D M_1=\\nabla\\ell(z^k)^\\top d^k-s\\|h(z^k)\\|_1",
+            "anchor": "Backtracking line-search",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\bar\\gamma^{i+1}=\\beta\\bar\\gamma^i,\\quad\\gamma^k=\\bar\\gamma^i",
+            "anchor": "Backtracking line-search",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "s^k>\\|\\lambda^k\\|_\\infty",
+            "anchor": "Backtracking line-search",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Il problema e la direzione restano fissi durante la ricerca. Si riduce γ̄ finché la merit function scende strettamente sotto la soglia lineare.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "s=3, β=.5, c=.1",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Profilo 2D di M₁ lungo γ e soglia Armijo, candidati colorati e selezione i; nessun asse 3D artificiale. Letture del passo, gap e violazione reale.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Seguire il backtracking con M₁ e distinguere tentativo i da iterazione k.",
+            "setup": "s=3, β=.5, c=.1",
+            "parameters": [],
+            "derivation": [
+              "γ=1: gap=68/1058>0, rifiutato.",
+              "γ=.5: gap<0, accettato.",
+              "Con s=.95,c=.25, γ=1 dà gap=0 ed è rifiutato."
+            ],
+            "expected_outcome": "La ricerca cambia la lunghezza del passo; non cambia il QP o il peso durante i tentativi.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "SceneViewport",
+          "description": "Profilo 2D di M₁ lungo γ e soglia Armijo, candidati colorati e selezione i; nessun asse 3D artificiale. Letture del passo, gap e violazione reale.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Il candidato selezionato e la soglia mostrano perché ogni riduzione è accettata o rifiutata.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Peso della penalità",
+              "symbol": "s",
+              "origin": "enrichment",
+              "range": "{'min': 0.1, 'max': 6, 'step': 0.05, 'integer': False}",
+              "default": "3",
+              "effect_on_change": "Cambia il profilo M₁ e il numero di rifiuti; punto e direzione restano fissi.",
+              "edge_cases": [
+                "Gap=0",
+                "β piccolo",
+                "s aumenta",
+                "Direzione non di discesa"
+              ]
+            },
+            {
+              "name": "Fattore di riduzione",
+              "symbol": "\\beta",
+              "origin": "enrichment",
+              "range": "{'min': 0.2, 'max': 0.8, 'step': 0.1, 'integer': False}",
+              "default": "0.5",
+              "effect_on_change": "Cambia la sequenza dei candidati; non cambia curva o soglia come funzioni di γ.",
+              "edge_cases": [
+                "Gap=0",
+                "β piccolo",
+                "s aumenta",
+                "Direzione non di discesa"
+              ]
+            },
+            {
+              "name": "Diminuzione richiesta",
+              "symbol": "c",
+              "origin": "enrichment",
+              "range": "{'min': 0.05, 'max': 0.9, 'step': 0.05, 'integer': False}",
+              "default": "0.1",
+              "effect_on_change": "Cambia la soglia lineare; β non cambia la sua pendenza.",
+              "edge_cases": [
+                "Gap=0",
+                "β piccolo",
+                "s aumenta",
+                "Direzione non di discesa"
+              ]
+            },
+            {
+              "name": "Tentativo / Play / Passo / Riparti",
+              "symbol": "i",
+              "origin": "enrichment",
+              "range": "Tentativi disponibili, fino a sessanta",
+              "default": "i=0",
+              "effect_on_change": "Seleziona un candidato precalcolato, non un nuovo iterato z^k.",
+              "edge_cases": [
+                "Gap=0",
+                "β piccolo",
+                "s aumenta",
+                "Direzione non di discesa"
+              ]
+            },
+            {
+              "name": "Pareggio Armijo",
+              "symbol": "preset",
+              "origin": "enrichment",
+              "range": "s=.95,c=.25",
+              "default": "s=3,c=.1",
+              "effect_on_change": "Fa coincidere esattamente il candidato γ=1 con la soglia; il while lo rifiuta.",
+              "edge_cases": [
+                "Gap=0",
+                "β piccolo",
+                "s aumenta",
+                "Direzione non di discesa"
+              ]
+            }
+          ],
+          "outputs": [
+            "Seguire il backtracking con M₁ e distinguere tentativo i da iterazione k."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "Gap=0",
+            "expected_behavior": "Rifiutato, come il while ≥ della fonte.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "β piccolo",
+            "expected_behavior": "Candidati più distanti; il primo accettato può essere più piccolo.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "s aumenta",
+            "expected_behavior": "Può servire un passo minore perché il resto nonlineare del vincolo costa di più.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          },
+          {
+            "case": "Direzione non di discesa",
+            "expected_behavior": "Il solver generale si arresta esplicitamente; nessuna ricerca infinita.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Seguire il backtracking con M₁ e distinguere tentativo i da iterazione k.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

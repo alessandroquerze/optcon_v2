@@ -8,7 +8,7 @@ const pages = [2,8,12,16,17,27,30,34];
 describe('contratto permanente delle spiegazioni matematiche', () => {
   it('limita il catalogo alle otto companion esistenti', () => {
     expect(Object.keys(introductionFormulaNotes).map(Number)).toEqual(pages);
-    expect(() => pageFormulaExplanations(repository.getPage(1))).toThrow('non disponibile');
+    expect(() => pageFormulaExplanations({...repository.getPage(1),source_page:99})).toThrow('non disponibile');
   });
   for (const page of pages) it('p' + page + ': copertura della fonte, provenienza e riferimenti risolvibili', () => {
     const definition = repository.getPage(page), formulas = pageFormulaExplanations(definition);

@@ -81,12 +81,500 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "677a9d4c66127a309fbe2e75f0c62de26e97bb9c637cfa7a52e3a1cb88e3e419",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0051",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "d7dd4c9c5930f01ad8b7486559751b68886b45ad50bb6c7132df93f3477ad88b",
+        "layout": "f097bfea81b004af6aee23c9659d15c872218055d9e1147fc8ee41ede68b2924",
+        "render": "31851381ca7a19ad27e034d75866311d2afe2dcea0923f78ebc257b03a58a516"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-g-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0051",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0050",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0052"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0051",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0050",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0052"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0051",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0050",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0052"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Feasible direction method",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "equation",
+          "description": "Il QP su Z usa il gradiente e 1/2(z−z^k)ᵀ(z−z^k); la costante ℓ(z^k) appare barrata perché irrilevante per l’argmin.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0051",
+            "modality": "both",
+            "text_quote": "Find",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "algorithm",
+          "description": "Si aggiorna z^{k+1}=z^k+γ^k(tilde z−z^k); la graffa identifica la direzione ammissibile.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0051",
+            "modality": "both",
+            "text_quote": "Update the solution",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "concept",
+          "description": "La nota afferma ammissibilità per γ sufficientemente piccolo e la riscrittura finale mostra la combinazione convessa.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0051",
+            "modality": "both",
+            "text_quote": "sufficiently small",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-4",
+          "category": "diagram",
+          "description": "Figura con Z convesso, punto corrente, tilde z e nuovo punto sul segmento. Non rappresenta un tempo fisico.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0051",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0051",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Distinguere proiezione a passo unitario e rilassamento lungo il segmento ammissibile.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0050",
+          "role": "previous",
+          "note": "Separare punto libero, punto proiettato e riduzione del costo."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0052",
+          "role": "next",
+          "note": "Applicare il gradiente proiettato a un QP convesso, compresi minimi al bordo e non unici."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "z^{k+1}=z^k+\\gamma^k(\\tilde z-z^k)",
+          "meaning": "Si percorre il segmento verso z̃. La convessità garantisce ammissibilità per 0≤γᵏ≤1; non garantisce diminuzione per ogni γ.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\tilde z=\\operatorname*{argmin}_{z\\in\\mathbb Z}\\ell(z^k)+\\nabla\\ell(z^k)^\\top(z-z^k)+\\tfrac12(z-z^k)^\\top(z-z^k)",
+          "meaning": "La costante barrata non cambia il minimizzatore; il termine quadratico rende unico il problema del punto ammissibile.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "z^{k+1}=(1-\\gamma^k)z^k+\\gamma^k\\tilde z",
+          "meaning": "Con pesi non negativi che sommano a uno, ogni punto sul segmento appartiene a Z.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "source-4",
+          "structure"
+        ],
+        "rationale": "Scopo e contenuto autonomi."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "Nessuna correzione matematica necessaria dopo confronto con la pagina precedente e successiva.",
+          "La nota sufficiently small è corretta; la companion esplicita la sufficienza di 0≤γ≤1 per la sola ammissibilità.",
+          "La proiezione equivalente e il limite sul prodotto sono derivazioni aggiunte, non trascrizioni della slide."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Proiezione",
+            "why": "Il QP equivale a una proiezione a passo unitario.",
+            "origin": "source_context",
+            "page_numbers": [
+              49,
+              50
+            ]
+          },
+          {
+            "concept": "Combinazioni convesse",
+            "why": "Pesi tra zero e uno mantengono il segmento dentro.",
+            "origin": "source_context",
+            "page_numbers": [
+              10
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "z^{k+1}=z^k+\\gamma^k(\\tilde z-z^k)",
+            "anchor": "Find",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\tilde z=\\operatorname*{argmin}_{z\\in\\mathbb Z}\\ell(z^k)+\\nabla\\ell(z^k)^\\top(z-z^k)+\\tfrac12(z-z^k)^\\top(z-z^k)",
+            "anchor": "Find",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "z^{k+1}=(1-\\gamma^k)z^k+\\gamma^k\\tilde z",
+            "anchor": "Find",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Prima si trova un punto ammissibile dal modello quadratico. Poi si percorre una frazione del segmento che lo collega al punto corrente. Il fattore γ è esterno alla proiezione.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "γ=0.5",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Costo e regione comuni alla 50, segmento zᵏ→z̃ viola, nuovo punto arancio. Per γ>1 mostrare l’estrapolazione e verificarne l’ammissibilità.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Distinguere proiezione a passo unitario e rilassamento lungo il segmento ammissibile.",
+            "setup": "γ=0.5",
+            "parameters": [],
+            "derivation": [
+              "z̃=(0,−1), d=(−0.6,−1.8).",
+              "z nuovo=(0.3,−0.1), costo 0.065<1.46.",
+              "γ=1 dà un punto ammissibile ma costo 2; oltre 1 può perdere ammissibilità."
+            ],
+            "expected_outcome": "Direzione, ammissibilità e lunghezza del passo hanno ruoli diversi.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "FunctionExplorer",
+          "description": "Costo e regione comuni alla 50, segmento zᵏ→z̃ viola, nuovo punto arancio. Per γ>1 mostrare l’estrapolazione e verificarne l’ammissibilità.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "Spostare γ entro e oltre il segmento separa discesa, convessità del dominio ed estrapolazione.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Frazione del segmento",
+              "symbol": "\\gamma",
+              "origin": "enrichment",
+              "range": "{'min': 0, 'max': 1.4, 'step': 0.1, 'integer': False}",
+              "default": "0.5",
+              "effect_on_change": "Muove il nuovo punto lungo e poi oltre il segmento; zᵏ, z̃ e direzione restano fissi.",
+              "edge_cases": [
+                "γ=0",
+                "γ=1",
+                "γ>1",
+                "d=0"
+              ]
+            },
+            {
+              "name": "Insieme",
+              "symbol": "s",
+              "origin": "enrichment",
+              "range": "Disco / quadrato",
+              "default": "Disco",
+              "effect_on_change": "Cambia la regione e il calcolo di z̃; per i dati scelti z̃=(0,−1) in entrambi i casi.",
+              "edge_cases": [
+                "γ=0",
+                "γ=1",
+                "γ>1",
+                "d=0"
+              ]
+            }
+          ],
+          "outputs": [
+            "Distinguere proiezione a passo unitario e rilassamento lungo il segmento ammissibile."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "γ=0",
+            "expected_behavior": "Nessun aggiornamento, nessuna discesa stretta.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "γ=1",
+            "expected_behavior": "Arrivo a z̃ ammissibile, ma costo non necessariamente minore.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "γ>1",
+            "expected_behavior": "Estrapolazione: possibile uscita dall’insieme.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "d=0",
+            "expected_behavior": "Punto fisso proiettato; nessuna direzione normalizzata inventata.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Distinguere proiezione a passo unitario e rilassamento lungo il segmento ammissibile.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

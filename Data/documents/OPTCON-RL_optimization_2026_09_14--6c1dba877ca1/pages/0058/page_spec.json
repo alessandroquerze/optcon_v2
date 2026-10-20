@@ -81,12 +81,541 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
+    "status": "needs_review",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "eced7d77bbd99e3b000c72e38e51eac5b9228f959ad37d7acc7a13f7537d5551",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0058",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "bc1651d87dd0f000e38503eb982725fc21820d20a037da7f3545cfdb56da43dc",
+        "layout": "9d25881045a8779f558d456c59374b02fec9f7465bd987d3824e43389c7d6618",
+        "render": "c9ff6fd47b2785e456bcc118fccc718e38342db29d4617a4d59005da962c3765"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-h-2026-10-19"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0058",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0057",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0059"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0058",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0057",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0059"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0058",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0057",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0059"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Lagrangian function",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "concept",
+          "description": "La Lagrangiana è introdotta per enunciare condizioni necessarie del primo ordine per uguaglianze e disuguaglianze.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0058",
+            "modality": "both",
+            "text_quote": "first-order necessary conditions",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "equation",
+          "description": "L(z,μ,λ)=ℓ(z)+∑μ_jg_j(z)+∑λ_ih_i(z), con z∈R^d, μ∈R^r e λ∈R^m. Qui non è ancora imposto μ≥0.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0058",
+            "modality": "both",
+            "text_quote": "Lagrangian function",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "concept",
+          "description": "I moltiplicatori sono descritti come prezzi della violazione dei vincoli.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0058",
+            "modality": "both",
+            "text_quote": "prices",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-4",
+          "category": "concept",
+          "description": "La seconda remark dice senza precisare le variabili che non si può minimizzare la Lagrangiana. È necessaria un’interpretazione contestuale; non vieta inf_z L a μ,λ fissati.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0058",
+            "modality": "both",
+            "text_quote": "cannot minimize the Lagrangian",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0058",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Interpretare μ e λ senza confondere L con una penalità da minimizzare congiuntamente.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0057",
+          "role": "previous",
+          "note": "Distinguere vincolo attivo, punto ammissibile e indipendenza lineare dei gradienti pertinenti."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0059",
+          "role": "next",
+          "note": "Riconoscere che il teorema parte da un minimo locale ammissibile e regolare, con tutte le funzioni C¹."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "L(z,\\mu,\\lambda)=\\ell(z)+\\sum_{j=1}^r\\mu_j g_j(z)+\\sum_{i=1}^m\\lambda_i h_i(z)",
+          "meaning": "μ e λ sono “prezzi” dei residui: μ∈Rʳ e λ∈Rᵐ. Il requisito μ≥0 delle KKT arriva dopo.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [
+        {
+          "description": "Discrepanza della fonte esaminata e risolta nella policy companion: La frase stampata non precisa rispetto a quali variabili. Interpretata letteralmente come divieto di minimizzare in z sarebbe falsa: nel modello mostrato la Hessiana in z è I e il minimo esiste per ogni μ,λ fissati. La minimizzazione libera congiunta, invece, non impone i vincoli e può essere illimitata inferiormente: per z=(1,0), g=−1 e μ→+∞ si ha L→−∞ anche imponendo μ≥0. λ libero dà analoga illimitatezza quando h≠0. Non si corregge alcuna formula originale; INFO_WARNING risolve l’ambiguità della remark e rende esplicite le variabili fissate. Non viene introdotto un algoritmo duale né un problema di sella generale.",
+          "blocking": false,
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        }
+      ],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "source-4",
+          "structure"
+        ],
+        "rationale": "Scopo e contenuto autonomi."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "La frase stampata non precisa rispetto a quali variabili. Interpretata letteralmente come divieto di minimizzare in z sarebbe falsa: nel modello mostrato la Hessiana in z è I e il minimo esiste per ogni μ,λ fissati. La minimizzazione libera congiunta, invece, non impone i vincoli e può essere illimitata inferiormente: per z=(1,0), g=−1 e μ→+∞ si ha L→−∞ anche imponendo μ≥0. λ libero dà analoga illimitatezza quando h≠0. Non si corregge alcuna formula originale; INFO_WARNING risolve l’ambiguità della remark e rende esplicite le variabili fissate. Non viene introdotto un algoritmo duale né un problema di sella generale.",
+          "La remark assoluta sulla minimizzazione riceve INFO_WARNING: precisare la minimizzazione congiunta, senza sostituire formule corrette.",
+          "La semiretta non ha il vincolo superiore delle 56–57; è un esempio distinto dichiarato.",
+          "Il grafico non prova un teorema sui prezzi ombra."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Residui dei vincoli",
+            "why": "Il segno g≤0 e l’uguaglianza h=0 hanno ruoli distinti.",
+            "origin": "source_context",
+            "page_numbers": [
+              56
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "L(z,\\mu,\\lambda)=\\ell(z)+\\sum_{j=1}^r\\mu_j g_j(z)+\\sum_{i=1}^m\\lambda_i h_i(z)",
+            "anchor": "first-order necessary conditions",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Ogni residuo entra con il proprio moltiplicatore. A moltiplicatori fissati si ottiene una funzione di z; questo non equivale a risolvere il problema vincolato.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "μ=0.5, λ=0.6 e sonda (0.5,0)",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Livelli e superficie dello stesso L(z,μ,λ), semiretta ammissibile del problema originale, minimo a prezzi fissati e sonda. Asse verticale e colori indicano L, non ℓ.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Interpretare μ e λ senza confondere L con una penalità da minimizzare congiuntamente.",
+            "setup": "μ=0.5, λ=0.6 e sonda (0.5,0)",
+            "parameters": [],
+            "derivation": [
+              "ℓ=0.68, μg=−0.25, λh=0, L=0.43.",
+              "Minimo di L a prezzi fissati (0,0), uguale al minimo vincolato per questa coppia.",
+              "Con μ=0 il minimo libero di L ha z₁=−0.5 e viola g≤0."
+            ],
+            "expected_outcome": "L non è una somma di penalità positive; la coincidenza dei minimi dipende dai moltiplicatori.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "FunctionExplorer",
+          "description": "Livelli e superficie dello stesso L(z,μ,λ), semiretta ammissibile del problema originale, minimo a prezzi fissati e sonda. Asse verticale e colori indicano L, non ℓ.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "I moltiplicatori inclinano la funzione; la sonda separa costo e contributi senza cambiare i vincoli.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Moltiplicatore disuguaglianza",
+              "symbol": "\\mu",
+              "origin": "enrichment",
+              "range": "{'min': -1, 'max': 2, 'step': 0.1, 'integer': False}",
+              "default": "0.5",
+              "effect_on_change": "Inclina L rispetto a z₁ e muove il suo minimo libero; il costo originale e il vincolo restano fissi. Qui μ è reale, come nella definizione.",
+              "edge_cases": [
+                "μ negativo",
+                "Minimo libero inammissibile",
+                "μg negativo",
+                "Minimo fuori ritaglio"
+              ]
+            },
+            {
+              "name": "Moltiplicatore uguaglianza",
+              "symbol": "\\lambda",
+              "origin": "enrichment",
+              "range": "{'min': -1, 'max': 2, 'step': 0.1, 'integer': False}",
+              "default": "0.6",
+              "effect_on_change": "Inclina L rispetto a z₂; nessun vincolo di segno su λ.",
+              "edge_cases": [
+                "μ negativo",
+                "Minimo libero inammissibile",
+                "μg negativo",
+                "Minimo fuori ritaglio"
+              ]
+            },
+            {
+              "name": "Ascissa della sonda",
+              "symbol": "z_1",
+              "origin": "enrichment",
+              "range": "{'min': -0.5, 'max': 1.5, 'step': 0.1, 'integer': False}",
+              "default": "0.5",
+              "effect_on_change": "Cambia costo, termine μg e valore L alla sonda.",
+              "edge_cases": [
+                "μ negativo",
+                "Minimo libero inammissibile",
+                "μg negativo",
+                "Minimo fuori ritaglio"
+              ]
+            },
+            {
+              "name": "Ordinata della sonda",
+              "symbol": "z_2",
+              "origin": "enrichment",
+              "range": "{'min': -1, 'max': 1, 'step': 0.1, 'integer': False}",
+              "default": "0",
+              "effect_on_change": "Cambia residuo h, termine λh e valore L alla sonda.",
+              "edge_cases": [
+                "μ negativo",
+                "Minimo libero inammissibile",
+                "μg negativo",
+                "Minimo fuori ritaglio"
+              ]
+            }
+          ],
+          "outputs": [
+            "Interpretare μ e λ senza confondere L con una penalità da minimizzare congiuntamente."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "μ negativo",
+            "expected_behavior": "Consentito nella definizione di L; non soddisfa la condizione duale KKT.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "Minimo libero inammissibile",
+            "expected_behavior": "Non presentarlo come soluzione vincolata.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "μg negativo",
+            "expected_behavior": "Preservare il segno senza tagliarlo a zero.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "Minimo fuori ritaglio",
+            "expected_behavior": "Dichiararlo e conservarne i valori nei readout.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Interpretare μ e λ senza confondere L con una penalità da minimizzare congiuntamente.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1,
+  "source_warning": {
+    "policy_version": "1.0.0",
+    "scope": "companion_only",
+    "type": "INFO_WARNING",
+    "review_status": "resolved",
+    "original_analysis_sha256": "b53d9f992e3be64361604bb5b39f3af6a903981eed49e45c3438e4b784406d26",
+    "issues": [
+      {
+        "issue_id": "opt58-source-review",
+        "source_issue_index": 0,
+        "issue": "Lagrangiana: vincoli pesati nel costo",
+        "type": "INFO_WARNING",
+        "source_expression": "We are relaxing the constrained problem, but we cannot minimize the Lagrangian.",
+        "corrected_expression": "Non minimizzare congiuntamente in z, μ, λ; inf_z L a μ,λ fissati è un’operazione lecita e distinta.",
+        "companion_uses": "Non minimizzare congiuntamente in z, μ, λ; inf_z L a μ,λ fissati è un’operazione lecita e distinta.",
+        "short_warning": "Nota: L non si minimizza liberamente in tutte le variabili. Qui μ e λ sono fissati.",
+        "correction_reason": "La frase stampata non precisa rispetto a quali variabili. Interpretata letteralmente come divieto di minimizzare in z sarebbe falsa: nel modello mostrato la Hessiana in z è I e il minimo esiste per ogni μ,λ fissati. La minimizzazione libera congiunta, invece, non impone i vincoli e può essere illimitata inferiormente: per z=(1,0), g=−1 e μ→+∞ si ha L→−∞ anche imponendo μ≥0. λ libero dà analoga illimitatezza quando h≠0. Non si corregge alcuna formula originale; INFO_WARNING risolve l’ambiguità della remark e rende esplicite le variabili fissate. Non viene introdotto un algoritmo duale né un problema di sella generale.",
+        "use_corrected_value_for_examples": true,
+        "use_corrected_value_for_simulation": true,
+        "resolved": true,
+        "source_references": [
+          "analysis/result/observations"
+        ],
+        "context_pages_consulted": [
+          57,
+          58,
+          59
+        ],
+        "calculation_policy": "SOURCE_LITERAL immutabile; esempi e calcoli usano la versione companion dichiarata.",
+        "ui": {
+          "show": true,
+          "color": "red",
+          "placement": "Accanto al concetto interessato",
+          "when": "Concetto pertinente",
+          "student_text_field": "short_warning"
+        }
+      }
+    ],
+    "companion_overrides": [],
+    "technical_only_legacy_paths": []
   }
 }

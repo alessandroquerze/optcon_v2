@@ -81,12 +81,599 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
+    "status": "needs_review",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "7a1ab31905fd3a3d914a30774963b0c9e9b4b9122abf7b79030282f2bc7ea111",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0073",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "38583c0de350f0621771b32b91c14ec2d087208a722d0446e82c21d5a6424307",
+        "layout": "1742d7480993b4a6679316df258f2fdbf7af0613a75607f5a2a7b139de83641d",
+        "render": "8b93498f2ef135748d267986ba23226f212fc20e2092aff396486d7295855f8d"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-j-2026-10-19"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0073",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0072",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0074"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0073",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0072",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0074"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0073",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0072",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0074"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Newton’s method via Quadratic Programming",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "equation",
+          "description": "Riscrive le due righe del sistema e sostituisce λ^k+Δλ^k con λ^{k+1}.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0073",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "equation",
+          "description": "Introduce il QP con costo ∇ℓ(z^k)ᵀΔz+ΔzᵀB^kΔz/2 e vincolo linearizzato.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0073",
+            "modality": "both",
+            "text_quote": "Quadratic Program",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "concept",
+          "description": "Afferma necessary and sufficient senza esplicitare la semidefinitezza di B^k sulle direzioni del vincolo lineare; B^k=∇²₁₁L non la garantisce.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0073",
+            "modality": "both",
+            "text_quote": "necessary and sufficient",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-4",
+          "category": "concept",
+          "description": "Conclude che Newton può ottenere (Δz^k,λ^{k+1}) risolvendo il QP: questa interpretazione richiede che il QP abbia un minimo.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0073",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0073",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Collegare il sistema Newton alle KKT del QP, correggendo l’affermazione di sufficienza priva di ipotesi.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0072",
+          "role": "previous",
+          "note": "Leggere le due righe del sistema Newton e distinguere fattibilità linearizzata e fattibilità dopo il passo."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0074",
+          "role": "next",
+          "note": "Seguire il ciclo SQP senza scambiare il moltiplicatore del QP per un incremento da accumulare."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\begin{aligned}\\min_{\\Delta z}\\;&\\nabla\\ell(z^k)^\\top\\Delta z+\\tfrac12\\Delta z^\\top B^k\\Delta z\\\\\\text{subj.to }&h(z^k)+\\nabla h(z^k)^\\top\\Delta z=0\\end{aligned}",
+          "meaning": "Moltiplicatore: λᵏ⁺¹. Verde h=0; rosso vincolo affine; viola stazionario.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\begin{aligned}\\nabla\\ell(z^k)+B^k\\Delta z+\\nabla h(z^k)\\lambda&=0\\\\h(z^k)+\\nabla h(z^k)^\\top\\Delta z&=0\\end{aligned}",
+          "meaning": "Sono le equazioni stazionarie del QP. La fonte le chiama necessarie e sufficienti senza la condizione di curvatura.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\text{necessary and sufficient optimality conditions for the QP}",
+          "meaning": "Trascrizione della frase problematica, conservata nei riferimenti; non viene usata come garanzia senza ipotesi.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\lambda^{k+1}=\\lambda^k+\\Delta\\lambda^k",
+          "meaning": "L’incremento Newton e il moltiplicatore del QP sono due quantità diverse.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [
+        {
+          "description": "Discrepanza della fonte esaminata e risolta nella policy companion: Le due equazioni sono sempre le condizioni stazionarie del QP affine, ma la fonte non assume B^k positiva semidefinita sullo spazio nullo di ∇h(z^k)ᵀ. B^k=∇²₁₁L può essere indefinita. Su un insieme affine compatibile, la non negatività della forma ridotta rende le KKT sufficienti al minimo globale del QP; con stretta positività si ha unicità. Nel modello aggiunto, z=(0,0),λ=1 produce B=diag(−1,1), vincolo Δz₂=0 e costo −(Δz₁)²/2: il sistema Newton è invertibile e ha soluzione zero, ma il QP è illimitato. Il criterio dichiarato e tutti gli esempi distinguono D>0, D<0 e i due casi D=0. Non viene regolarizzata la Hessiana per nascondere il problema. Fonte e SOURCE_LITERAL restano intatti.",
+          "blocking": false,
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        }
+      ],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "source-4",
+          "structure"
+        ],
+        "rationale": "Scopo e contenuto autonomi."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "Le due equazioni sono sempre le condizioni stazionarie del QP affine, ma la fonte non assume B^k positiva semidefinita sullo spazio nullo di ∇h(z^k)ᵀ. B^k=∇²₁₁L può essere indefinita. Su un insieme affine compatibile, la non negatività della forma ridotta rende le KKT sufficienti al minimo globale del QP; con stretta positività si ha unicità. Nel modello aggiunto, z=(0,0),λ=1 produce B=diag(−1,1), vincolo Δz₂=0 e costo −(Δz₁)²/2: il sistema Newton è invertibile e ha soluzione zero, ma il QP è illimitato. Il criterio dichiarato e tutti gli esempi distinguono D>0, D<0 e i due casi D=0. Non viene regolarizzata la Hessiana per nascondere il problema. Fonte e SOURCE_LITERAL restano intatti.",
+          "CORRECTION_WARNING sulla sufficienza e sull’interpretazione come argmin. Nessuna modifica a formule, testo o PDF originali.",
+          "Non regolarizzare B di nascosto per forzare un QP convesso; se il QP è illimitato, dichiararlo."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Sistema Newton",
+            "why": "Passo e incremento λ dalla 72.",
+            "origin": "source_context",
+            "page_numbers": [
+              72
+            ]
+          },
+          {
+            "concept": "Curvatura dei QP",
+            "why": "Serve non negatività sulle direzioni del vincolo.",
+            "origin": "source_context",
+            "page_numbers": [
+              67,
+              68
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\begin{aligned}\\min_{\\Delta z}\\;&\\nabla\\ell(z^k)^\\top\\Delta z+\\tfrac12\\Delta z^\\top B^k\\Delta z\\\\\\text{subj.to }&h(z^k)+\\nabla h(z^k)^\\top\\Delta z=0\\end{aligned}",
+            "anchor": "Quadratic Program",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\begin{aligned}\\nabla\\ell(z^k)+B^k\\Delta z+\\nabla h(z^k)\\lambda&=0\\\\h(z^k)+\\nabla h(z^k)^\\top\\Delta z&=0\\end{aligned}",
+            "anchor": "Quadratic Program",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\text{necessary and sufficient optimality conditions for the QP}",
+            "anchor": "Quadratic Program",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\lambda^{k+1}=\\lambda^k+\\Delta\\lambda^k",
+            "anchor": "Quadratic Program",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Il moltiplicatore del QP è λᵏ⁺¹=λᵏ+Δλᵏ. Le equazioni del QP sono necessarie; diventano sufficienti al minimo con curvatura non negativa sulle direzioni ammissibili.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "z=(1,1), λ=.2",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Geometria del passo e costo originale in 2D/3D; profilo del modello QP lungo tutte le direzioni linearizzate, con stazionario e curvatura ridotta. Minimo, massimo e assenza di un punto unico distinti.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Collegare il sistema Newton alle KKT del QP, correggendo l’affermazione di sufficienza priva di ipotesi.",
+            "setup": "z=(1,1), λ=.2",
+            "parameters": [],
+            "derivation": [
+              "D=4.6>0: minimo unico del QP.",
+              "Δz₁=−5/23; λ_QP=10/23≈0.434783.",
+              "Δλ_Newton=λ_QP−0.2≈0.234783.",
+              "Nel controesempio z=0,λ=1, D=−1: sistema unico ma QP illimitato.",
+              "Con z=0,λ=.5 il QP ha minimi Δz=(s,0), ma moltiplicatore unico λ_QP=1."
+            ],
+            "expected_outcome": "Equivalenza al minimo del QP soltanto sotto l’ipotesi dichiarata.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "FunctionExplorer",
+          "description": "Geometria del passo e costo originale in 2D/3D; profilo del modello QP lungo tutte le direzioni linearizzate, con stazionario e curvatura ridotta. Minimo, massimo e assenza di un punto unico distinti.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "I parametri cambiano la curvatura ridotta e il modello; i preset separano invertibilità del sistema ed esistenza del minimo.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Ascissa corrente",
+              "symbol": "z_1^k",
+              "origin": "enrichment",
+              "range": "{'min': -1.2, 'max': 1.2, 'step': 0.1, 'integer': False}",
+              "default": "1",
+              "effect_on_change": "Cambia punto, gradiente del vincolo, residuo e sistema locale; non cambia il problema.",
+              "edge_cases": [
+                "D<0",
+                "D=0, termine lineare nonzero",
+                "D=0, termine lineare zero",
+                "B indefinita ma D>0"
+              ]
+            },
+            {
+              "name": "Ordinata corrente",
+              "symbol": "z_2^k",
+              "origin": "enrichment",
+              "range": "{'min': -0.2, 'max': 1.5, 'step': 0.1, 'integer': False}",
+              "default": "1",
+              "effect_on_change": "Modifica h e il termine noto; il vincolo linearizzato corregge il residuo solo al primo ordine.",
+              "edge_cases": [
+                "D<0",
+                "D=0, termine lineare nonzero",
+                "D=0, termine lineare zero",
+                "B indefinita ma D>0"
+              ]
+            },
+            {
+              "name": "Moltiplicatore corrente",
+              "symbol": "\\lambda^k",
+              "origin": "enrichment",
+              "range": "{'min': -0.5, 'max': 1.5, 'step': 0.1, 'integer': False}",
+              "default": "0.2",
+              "effect_on_change": "Cambia B=diag(1−2λ,1), il residuo di stazionarietà e la direzione; costo e vincolo restano fissi.",
+              "edge_cases": [
+                "D<0",
+                "D=0, termine lineare nonzero",
+                "D=0, termine lineare zero",
+                "B indefinita ma D>0"
+              ]
+            },
+            {
+              "name": "Preset del modello",
+              "symbol": "preset",
+              "origin": "enrichment",
+              "range": "QP illimitato / D=0 compatibile / D=0 incompatibile",
+              "default": "Punto (1,1), λ=.2",
+              "effect_on_change": "Imposta casi analitici del sistema e del QP senza modificare ℓ o h.",
+              "edge_cases": [
+                "D<0",
+                "D=0, termine lineare nonzero",
+                "D=0, termine lineare zero",
+                "B indefinita ma D>0"
+              ]
+            }
+          ],
+          "outputs": [
+            "Collegare il sistema Newton alle KKT del QP, correggendo l’affermazione di sufficienza priva di ipotesi."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "D<0",
+            "expected_behavior": "QP illimitato, stazionario Newton eventualmente unico.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "D=0, termine lineare nonzero",
+            "expected_behavior": "QP illimitato e KKT incompatibili.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "D=0, termine lineare zero",
+            "expected_behavior": "Famiglia di minimi del QP, direzione non unica. Per z₁=0 il moltiplicatore è comunque unico: λ_QP=1.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "B indefinita ma D>0",
+            "expected_behavior": "QP vincolato con minimo unico: la positività globale non serve.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Collegare il sistema Newton alle KKT del QP, correggendo l’affermazione di sufficienza priva di ipotesi.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1,
+  "source_warning": {
+    "policy_version": "1.0.0",
+    "scope": "companion_only",
+    "type": "CORRECTION_WARNING",
+    "review_status": "resolved",
+    "original_analysis_sha256": "4b90164f1d440f03fbc22a4e8d2581d267ab2ff2ab1dc2b8d992a793224eb415",
+    "issues": [
+      {
+        "issue_id": "opt73-source-review",
+        "source_issue_index": 0,
+        "issue": "Il QP locale richiede la curvatura giusta",
+        "type": "CORRECTION_WARNING",
+        "source_expression": "are the necessary and sufficient optimality conditions for the Quadratic Program (QP)",
+        "corrected_expression": "\\text{KKT sufficienti se }y^\\top B^k y\\ge0\\ \\forall y:\\nabla h(z^k)^\\top y=0",
+        "companion_uses": "\\text{KKT sufficienti se }y^\\top B^k y\\ge0\\ \\forall y:\\nabla h(z^k)^\\top y=0",
+        "short_warning": "⚠ Warning: possibile errore nella slide originale. Serve curvatura non negativa sulle direzioni ammissibili.",
+        "correction_reason": "Le due equazioni sono sempre le condizioni stazionarie del QP affine, ma la fonte non assume B^k positiva semidefinita sullo spazio nullo di ∇h(z^k)ᵀ. B^k=∇²₁₁L può essere indefinita. Su un insieme affine compatibile, la non negatività della forma ridotta rende le KKT sufficienti al minimo globale del QP; con stretta positività si ha unicità. Nel modello aggiunto, z=(0,0),λ=1 produce B=diag(−1,1), vincolo Δz₂=0 e costo −(Δz₁)²/2: il sistema Newton è invertibile e ha soluzione zero, ma il QP è illimitato. Il criterio dichiarato e tutti gli esempi distinguono D>0, D<0 e i due casi D=0. Non viene regolarizzata la Hessiana per nascondere il problema. Fonte e SOURCE_LITERAL restano intatti.",
+        "use_corrected_value_for_examples": true,
+        "use_corrected_value_for_simulation": true,
+        "resolved": true,
+        "source_references": [
+          "/analysis/result/observations"
+        ],
+        "context_pages_consulted": [
+          72,
+          73,
+          74
+        ],
+        "calculation_policy": "SOURCE_LITERAL immutabile; esempi e calcoli usano la versione companion dichiarata.",
+        "ui": {
+          "show": true,
+          "color": "red",
+          "placement": "Accanto al concetto interessato",
+          "when": "Concetto pertinente",
+          "student_text_field": "short_warning"
+        }
+      }
+    ],
+    "companion_overrides": [],
+    "technical_only_legacy_paths": []
   }
 }

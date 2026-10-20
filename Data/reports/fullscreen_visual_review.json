@@ -1,0 +1,20 @@
+{
+  "review_date": "2026-10-18",
+  "method": "Ispezione delle immagini renderizzate nel browser con view_image, dopo l'assestamento del resize Plotly.",
+  "browser": "Chrome headless / SwiftShader",
+  "screenshots": [
+    {"file": "Docs/fullscreen_assets/p04-inline-svg-fullscreen.png", "result": "PASS", "observations": "SVG inline ingrandito, proporzioni preservate, titolo e uscita visibili."},
+    {"file": "Docs/fullscreen_assets/p16-3d-fullscreen.png", "result": "PASS", "observations": "Superficie 3D ridimensionata realmente; legenda, colorbar, camera, toggle e parametri accessibili."},
+    {"file": "Docs/fullscreen_assets/p16-restored.png", "result": "PASS", "observations": "Ripristino delle due colonne PDF/companion; plot ritornato alle dimensioni della slide, warning e contenuti originali presenti."},
+    {"file": "Docs/fullscreen_assets/p16-example-bars-fullscreen.png", "result": "PASS", "observations": "Grafico dell'esempio espanso; etichette, valori e controlli leggibili senza sovrapposizioni."},
+    {"file": "Docs/fullscreen_assets/p17-example-circle-fullscreen.png", "result": "PASS", "observations": "Diagramma dell'esempio visibile e proporzionato, nessun ritaglio della circonferenza o delle etichette."},
+    {"file": "Docs/fullscreen_assets/p20-cost-and-timeline-fullscreen.png", "result": "PASS", "observations": "Timeline e barre di costo entrambe visibili nella vista composta, parametri disponibili."},
+    {"file": "Docs/fullscreen_assets/p10-timeline-fullscreen.png", "result": "PASS", "observations": "Timeline espansa e leggibile, comandi di parametro disponibili e uscita evidente."},
+    {"file": "Docs/fullscreen_assets/p27-simulation-fullscreen.png", "result": "PASS", "observations": "Grafico 3D della simulazione ridimensionato, assi e camera leggibili, Play/Restart e campione accessibili."},
+    {"file": "Docs/fullscreen_assets/p34-equilibrium-poses-and-curve-fullscreen.png", "result": "PASS", "observations": "SVG e curva 2D entrambi presenti e leggibili; risolta nel CSS comune la compressione del contenitore composto."},
+    {"file": "Docs/fullscreen_assets/p15-2d-zoom-resized-fullscreen.png", "result": "PASS", "observations": "Vista 2D con zoom conservato e viewport ridotta in altezza; assi e parametri leggibili."},
+    {"file": "Docs/fullscreen_assets/future-combined-2d-3d-fullscreen.png", "result": "PASS", "observations": "Entrambi i plot affiancati occupano lo spazio disponibile, con un unico comando di uscita e strumenti grafici accessibili."}
+  ],
+  "remaining_visual_issues": [],
+  "success": true
+}

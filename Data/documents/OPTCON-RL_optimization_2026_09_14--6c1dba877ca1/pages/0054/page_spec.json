@@ -81,12 +81,531 @@
   "relations": [],
   "companion_mapping": {
     "default_count": 1,
-    "decision": "pending_analysis",
+    "decision": "proposed_after_analysis",
     "subpages": [],
     "split_rationale": null
   },
   "analysis": {
-    "status": "pending",
-    "result": null
-  }
+    "status": "analyzed",
+    "result": {
+      "protocol_version": "1.0.0",
+      "request_sha256": "aec93a7c4f0a0ff89c477be99a688bf90f186bee284997b8e170b9cb030d3564",
+      "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0054",
+      "pdf_sha256": "6c1dba877ca102f055845618f73205b71450b819e0cc09e149e1150017e458ea",
+      "artifact_sha256": {
+        "text": "97eb83d458b5c7d612e5366d3d2f7d762b25ad327b5ae66bdf184e300228f0b3",
+        "layout": "f24c5a67ac1bae4cf8f54ec27ec8c84cd247038bdf1fb53e1470cb0e28ff5e0a",
+        "render": "fd4bcacad88a200f4bde05384f9a0c818d90d9ba19ce716b8b4903ca912ac7a4"
+      },
+      "agent": {
+        "provider": "OpenAI",
+        "model": "GPT-6 (Codex session)",
+        "run_id": "optimization-batch-g-2026-10-18"
+      },
+      "inspection": {
+        "text_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0054",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0053",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0055"
+        ],
+        "layout_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0054",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0053",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0055"
+        ],
+        "image_page_ids": [
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0054",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0053",
+          "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0055"
+        ],
+        "source_content_treated_as_data": true
+      },
+      "title": "Barrier function strategy for inequality constraints",
+      "observations": [
+        {
+          "id": "source-1",
+          "category": "definition",
+          "description": "Problema min ℓ(z) con g_j(z)≤0, j=1,…,r.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0054",
+            "modality": "both",
+            "text_quote": "inequality constrained",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-2",
+          "category": "equation",
+          "description": "La formulazione aggiunge ε∑_{j=1}^r−log(−g_j(z)) al costo.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0054",
+            "modality": "both",
+            "text_quote": "resulting unconstrained problem",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-3",
+          "category": "concept",
+          "description": "L’indicazione implementativa è ridurre ε ogni poche iterazioni.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0054",
+            "modality": "both",
+            "text_quote": "Implementation",
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "source-4",
+          "category": "diagram",
+          "description": "Figura qualitativa di −εlog(z), dominio positivo e famiglia con ε→0; il bordo resta una singolarità.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0054",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        },
+        {
+          "id": "structure",
+          "category": "structure",
+          "description": "Titolo, impaginazione, eventuale figura, footer e numerazione fisica/visibile controllati sul rendering.",
+          "confidence": 1,
+          "evidence": {
+            "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0054",
+            "modality": "visual",
+            "text_quote": null,
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              255.1179962158203
+            ]
+          }
+        }
+      ],
+      "contextual_role": "Spiegare dominio stretto, peso ε e avvicinamento al bordo nel modello logaritmico.",
+      "context_notes": [
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0053",
+          "role": "previous",
+          "note": "Esplorare tutte le quattro funzioni della fonte senza supporre convessità comune."
+        },
+        {
+          "page_id": "OPTCON-RL_optimization_2026_09_14--6c1dba877ca1:p0055",
+          "role": "next",
+          "note": "Divisoria su vincoli di uguaglianza e disuguaglianza, solo contesto del batch H."
+        }
+      ],
+      "notation": [
+        {
+          "symbol": "\\min_{z\\in\\mathbb R^d}\\ell(z)+\\varepsilon\\sum_{j=1}^r-\\log(-g_j(z))",
+          "meaning": "Il problema non ha vincoli espliciti, ma il log impone gⱼ(z)<0. Con ε>0 il bordo resta escluso.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "\\min_{z\\in\\mathbb R^d}\\ell(z),\\qquad g_j(z)\\le0,\\quad j\\in\\{1,\\ldots,r\\}",
+          "meaning": "Il problema originale ammette anche il bordo gⱼ=0; il modello logaritmico lavora nell’interno.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        {
+          "symbol": "-\\varepsilon\\log(z)",
+          "meaning": "La figura della fonte usa lo slack positivo z, non direttamente un residuo g≤0.",
+          "observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        }
+      ],
+      "uncertainties": [],
+      "progression": {
+        "assessment": "unique",
+        "related_page_ids": [],
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "observation_ids": [
+          "source-1",
+          "source-2",
+          "source-3",
+          "source-4",
+          "structure"
+        ],
+        "rationale": "Scopo e contenuto autonomi."
+      },
+      "coverage": {
+        "all_visible_regions_accounted_for": true,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              453.5429992675781,
+              28
+            ],
+            "description": "Titolo.",
+            "observation_ids": [
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              28,
+              453.5429992675781,
+              241.1179962158203
+            ],
+            "description": "Enunciati, formule, remark ed eventuali figure letti individualmente.",
+            "observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "bbox": [
+              0,
+              241.1179962158203,
+              453.5429992675781,
+              255.1179962158203
+            ],
+            "description": "Footer, numerazione e crediti.",
+            "observation_ids": [
+              "structure"
+            ]
+          }
+        ]
+      },
+      "companionPageCount": 1,
+      "didactic_plan": {
+        "source_scope_limits": [
+          "Le formule e i grafici numerici dell’esempio sono enrichment, non dati della fonte.",
+          "Z e le costanti mantengono il ruolo del corso; indici di coordinate distinti da iterazioni e tempo.",
+          "Nessuna correzione matematica necessaria dopo confronto con la pagina precedente e successiva.",
+          "Funzione scalare e soluzione analitica sono enrichment; nessuna implementazione di un solver barriera generale.",
+          "La scritta unconstrained della fonte va letta con il dominio implicito del log; non è un errore da segnalare con warning.",
+          "Pagina 55 è solo contesto: nessuna implementazione del batch H."
+        ],
+        "prerequisites": [
+          {
+            "concept": "Vincolo di disuguaglianza",
+            "why": "Lo slack è −g_j, positivo nell’interno.",
+            "origin": "source_context",
+            "page_numbers": [
+              12
+            ]
+          },
+          {
+            "concept": "Strategia con vincoli",
+            "why": "Alternativa alla proiezione: dominio stretto del costo modificato.",
+            "origin": "source_context",
+            "page_numbers": [
+              50,
+              52
+            ]
+          }
+        ],
+        "source_math": [
+          {
+            "latex": "\\min_{z\\in\\mathbb R^d}\\ell(z)+\\varepsilon\\sum_{j=1}^r-\\log(-g_j(z))",
+            "anchor": "inequality constrained",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "\\min_{z\\in\\mathbb R^d}\\ell(z),\\qquad g_j(z)\\le0,\\quad j\\in\\{1,\\ldots,r\\}",
+            "anchor": "inequality constrained",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          },
+          {
+            "latex": "-\\varepsilon\\log(z)",
+            "anchor": "inequality constrained",
+            "notes": "SOURCE_LITERAL: formula o enunciato della fonte; nessuna correzione applicata a questa trascrizione."
+          }
+        ],
+        "enrichments": [
+          {
+            "id": "explanation",
+            "label": "enrichment",
+            "type": "explanation",
+            "proposal": "Il termine −log(−g_j) è definito solo per g_j<0 e cresce senza limite vicino al bordo. Ridurre ε ne attenua il peso, senza rendere valutabili punti esterni.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "example",
+            "label": "enrichment",
+            "type": "worked_example",
+            "proposal": "ε=0.2, g=−z",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "visual",
+            "label": "enrichment",
+            "type": "visualization_design",
+            "proposal": "Costo originale blu, termine barriera rosso e costo totale viola; semiasse escluso ombreggiato, minimo originale al bordo e minimo interno distinti. Scale fisse, asintoto z=0.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "id": "interaction",
+            "label": "enrichment",
+            "type": "interaction_design",
+            "proposal": "Controlli e selettori dichiarati di seguito; nessun parametro attribuito alla fonte.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "id": "example-1",
+            "origin": "enrichment",
+            "purpose": "Spiegare dominio stretto, peso ε e avvicinamento al bordo nel modello logaritmico.",
+            "setup": "ε=0.2, g=−z",
+            "parameters": [],
+            "derivation": [
+              "Minimo originale z=0, costo 0.5.",
+              "Minimo con barriera zε≈0.170820393>0.",
+              "Per ε→0 il minimo di questa famiglia si avvicina a 0.",
+              "A z=0 o z<0 il log non viene valutato."
+            ],
+            "expected_outcome": "Avvicinarsi al bordo non equivale a includerlo nel dominio della barriera.",
+            "limitations": [
+              "Esempio esplicito: non sostituisce una prova della proprietà per funzioni generiche."
+            ],
+            "enrichment_id": "example",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "example_omission_reason": null,
+        "visualization": {
+          "component": "SceneViewport",
+          "description": "Costo originale blu, termine barriera rosso e costo totale viola; semiasse escluso ombreggiato, minimo originale al bordo e minimo interno distinti. Scale fisse, asintoto z=0.",
+          "origin": "enrichment",
+          "source_observation_ids": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "structure"
+          ]
+        },
+        "interactivity": {
+          "recommended": true,
+          "rationale": "ε mostra come cambia la distanza dal bordo; la sonda espone dominio stretto e valori negativi della barriera senza artifici.",
+          "component": "ParameterControl",
+          "parameters": [
+            {
+              "name": "Peso della barriera",
+              "symbol": "\\varepsilon",
+              "origin": "enrichment",
+              "range": "{'min': 0.001, 'max': 1, 'step': 0.01, 'integer': False}",
+              "default": "0.2",
+              "effect_on_change": "Cambia barriera, costo totale e minimo interno; costo originale e vincolo restano fissi.",
+              "edge_cases": [
+                "z=0 o z<0",
+                "ε piccolo positivo",
+                "z>1",
+                "Interno vuoto",
+                "Limite del controllo ε"
+              ]
+            },
+            {
+              "name": "Punto da valutare",
+              "symbol": "z",
+              "origin": "enrichment",
+              "range": "{'min': -0.25, 'max': 2, 'step': 0.05, 'integer': False}",
+              "default": "0.5",
+              "effect_on_change": "Valuta una sonda, anche al bordo o fuori dominio per chiarire la distinzione; non modifica il minimo interno.",
+              "edge_cases": [
+                "z=0 o z<0",
+                "ε piccolo positivo",
+                "z>1",
+                "Interno vuoto",
+                "Limite del controllo ε"
+              ]
+            },
+            {
+              "name": "Riduci ε",
+              "symbol": "\\varepsilon/2",
+              "origin": "enrichment",
+              "range": "Finché il parametro resta nel dominio del controllo",
+              "default": "ε=0.2",
+              "effect_on_change": "Dimezza ε e aggiorna il minimo analitico; non modifica il punto sonda o il vincolo.",
+              "edge_cases": [
+                "z=0 o z<0",
+                "ε piccolo positivo",
+                "z>1",
+                "Interno vuoto",
+                "Limite del controllo ε"
+              ]
+            }
+          ],
+          "outputs": [
+            "Spiegare dominio stretto, peso ε e avvicinamento al bordo nel modello logaritmico."
+          ],
+          "invariants": [
+            "PDF, testo e trascrizioni originali immutabili.",
+            "Stesso modello numerico nelle viste 2D/3D."
+          ],
+          "enrichment_id": "interaction"
+        },
+        "edge_cases": [
+          {
+            "case": "z=0 o z<0",
+            "expected_behavior": "Mostrare fuori dominio, nessun log di zero o numero negativo.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "ε piccolo positivo",
+            "expected_behavior": "Usare radice stabile, senza sostituire ε=0.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "z>1",
+            "expected_behavior": "La barriera è negativa: mantenerla.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "Interno vuoto",
+            "expected_behavior": "La strategia logaritmica standard non ha dominio; non promettere applicabilità generale.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          },
+          {
+            "case": "Limite del controllo ε",
+            "expected_behavior": "Non dimezzare sotto il minimo consentito né introdurre un valore fuori dominio.",
+            "origin": "enrichment",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ]
+          }
+        ],
+        "expansion_rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "blueprint": [
+          {
+            "companion_suffix": null,
+            "focus": "Spiegare dominio stretto, peso ε e avvicinamento al bordo nel modello logaritmico.",
+            "source_observation_ids": [
+              "source-1",
+              "source-2",
+              "source-3",
+              "source-4",
+              "structure"
+            ],
+            "enrichment_ids": [
+              "explanation",
+              "example",
+              "visual",
+              "interaction"
+            ]
+          }
+        ]
+      },
+      "mapping_recommendation": {
+        "mode": "one_to_one",
+        "rationale": "Un concetto principale per pagina, grafico leggibile e dettagli contestuali espandibili. Una companion, senza ridurre caratteri o grafici.",
+        "subpages": []
+      }
+    }
+  },
+  "companionPageCount": 1
 }

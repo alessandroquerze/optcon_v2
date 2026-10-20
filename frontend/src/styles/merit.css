@@ -1,0 +1,7 @@
+.merit-four-controls .controls-block{grid-template-columns:repeat(4,minmax(0,1fr));}
+.merit-presets{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end;}
+.merit-presets button,.merit-buttons button{font:inherit;font-size:22px;padding:4px 10px;color:#174960;background:#eef5f8;border:1px solid #a8c1cc;border-radius:6px;cursor:pointer;}
+.merit-buttons{display:flex;gap:4px;flex-wrap:wrap;}
+.merit-buttons button:disabled,.merit-presets button:disabled{opacity:.5;cursor:default;}
+.merit-no-step{font-size:22px;color:#a34132;align-self:center;}
+.merit-lesson .live-metrics dd{overflow-wrap:anywhere;}

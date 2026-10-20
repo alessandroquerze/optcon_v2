@@ -1,0 +1,170 @@
+{
+  "verified_at": "2026-10-17T22:32:59.916Z",
+  "base_url": "http://127.0.0.1:4173",
+  "environment": "Chrome headless / SwiftShader; software rendering, includes browser automation",
+  "checks": [
+    {
+      "id": "endpoint-feasible",
+      "expected": "no",
+      "status": "PASS"
+    },
+    {
+      "id": "endpoint-residual",
+      "expected": "-1.0000",
+      "status": "PASS"
+    },
+    {
+      "id": "endpoint-feasible",
+      "expected": "sì",
+      "status": "PASS"
+    },
+    {
+      "id": "endpoint-residual",
+      "expected": "0.0000",
+      "status": "PASS"
+    },
+    {
+      "id": "ocp-feasible",
+      "expected": "no",
+      "status": "PASS"
+    },
+    {
+      "id": "ocp-cost",
+      "expected": "non disponibile",
+      "status": "PASS"
+    },
+    {
+      "id": "ocp-feasible",
+      "expected": "sì",
+      "status": "PASS"
+    },
+    {
+      "id": "ocp-cost",
+      "expected": "0.0000",
+      "status": "PASS"
+    },
+    {
+      "id": "tracking-command",
+      "expected": "0.0000",
+      "status": "PASS"
+    },
+    {
+      "id": "tracking-cost",
+      "expected": "0.0000",
+      "status": "PASS"
+    },
+    {
+      "id": "drone-ay",
+      "expected": "-9.8100",
+      "status": "PASS"
+    },
+    {
+      "id": "drone-angular",
+      "expected": "0.0000",
+      "status": "PASS"
+    }
+  ],
+  "updates": [
+    {
+      "target": 0.1,
+      "input_to_completed_plot_ms": 153
+    },
+    {
+      "target": 0.2,
+      "input_to_completed_plot_ms": 96
+    },
+    {
+      "target": 0.3,
+      "input_to_completed_plot_ms": 92
+    },
+    {
+      "target": 0.4,
+      "input_to_completed_plot_ms": 93
+    },
+    {
+      "target": 0.5,
+      "input_to_completed_plot_ms": 89
+    },
+    {
+      "target": 0.6,
+      "input_to_completed_plot_ms": 92
+    },
+    {
+      "target": 0.7,
+      "input_to_completed_plot_ms": 138
+    },
+    {
+      "target": 0.8,
+      "input_to_completed_plot_ms": 93
+    },
+    {
+      "target": 0.9,
+      "input_to_completed_plot_ms": 117
+    },
+    {
+      "target": 1,
+      "input_to_completed_plot_ms": 95
+    },
+    {
+      "target": 1.1,
+      "input_to_completed_plot_ms": 103
+    },
+    {
+      "target": 1.2,
+      "input_to_completed_plot_ms": 116
+    }
+  ],
+  "median_update_ms": 96,
+  "maximum_update_ms": 153,
+  "preserved": {
+    "dom": true,
+    "camera": true
+  },
+  "navigation": [
+    {
+      "page": 20,
+      "scenes": 0,
+      "webglCanvases": 0
+    },
+    {
+      "page": 21,
+      "scenes": 0,
+      "webglCanvases": 0
+    },
+    {
+      "page": 22,
+      "scenes": 0,
+      "webglCanvases": 0
+    },
+    {
+      "page": 23,
+      "scenes": 1,
+      "webglCanvases": 1
+    },
+    {
+      "page": 24,
+      "scenes": 1,
+      "webglCanvases": 0
+    },
+    {
+      "page": 25,
+      "scenes": 1,
+      "webglCanvases": 0
+    },
+    {
+      "page": 26,
+      "scenes": 0,
+      "webglCanvases": 0
+    },
+    {
+      "page": 1,
+      "scenes": 0,
+      "webglCanvases": 0
+    }
+  ],
+  "heap_before": 39485134,
+  "heap_after_navigation": 50334519,
+  "limitations": "No forced GC; heap snapshots are observations and do not prove absence of leaks. Not a hardware GPU benchmark.",
+  "errors": [],
+  "success": true
+}
